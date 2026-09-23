@@ -1,0 +1,15 @@
+{
+  "name": "knowledge-graph-of-industrial-music",
+  "version": "0.1.0",
+  "private": true,
+  "description": "An interactive knowledge graph of industrial music.",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "validate": "node scripts/validate-graph.mjs"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  }
+}
