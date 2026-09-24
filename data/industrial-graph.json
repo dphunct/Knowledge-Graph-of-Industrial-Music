@@ -20,15 +20,15 @@
         "entity": "artist",
         "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
         "verifiedByRuns": [
-          "pass-1",
-          "pass-2"
+          "pass-4",
+          "pass-5"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
-          "note": "Exact match confirmed in pass-1 and pass-2."
+          "note": "Exact match confirmed in pass-4 and pass-5."
         }
       ]
     },
@@ -46,15 +46,15 @@
         "entity": "artist",
         "url": "https://musicbrainz.org/artist/5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
         "verifiedByRuns": [
-          "pass-1",
-          "pass-2"
+          "pass-4",
+          "pass-5"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Skinny Puppy",
           "url": "https://musicbrainz.org/artist/5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
-          "note": "Exact match confirmed in pass-1 and pass-2."
+          "note": "Exact match confirmed in pass-4 and pass-5."
         }
       ]
     },
@@ -71,15 +71,15 @@
         "entity": "artist",
         "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626",
         "verifiedByRuns": [
-          "pass-1",
-          "pass-2"
+          "pass-4",
+          "pass-5"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Front 242",
           "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626",
-          "note": "Exact match confirmed in pass-1 and pass-2."
+          "note": "Exact match confirmed in pass-4 and pass-5."
         }
       ]
     },
@@ -96,15 +96,15 @@
         "entity": "artist",
         "url": "https://musicbrainz.org/artist/b847e9d2-c931-4daf-900c-42c7b2c42e16",
         "verifiedByRuns": [
-          "pass-1",
-          "pass-2"
+          "pass-4",
+          "pass-5"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Front Line Assembly",
           "url": "https://musicbrainz.org/artist/b847e9d2-c931-4daf-900c-42c7b2c42e16",
-          "note": "Exact match confirmed in pass-1 and pass-2."
+          "note": "Exact match confirmed in pass-4 and pass-5."
         }
       ]
     },
@@ -121,15 +121,15 @@
         "entity": "artist",
         "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
         "verifiedByRuns": [
-          "pass-1",
-          "pass-2"
+          "pass-4",
+          "pass-5"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: KMFDM",
           "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
-          "note": "Exact match confirmed in pass-1 and pass-2."
+          "note": "Exact match confirmed in pass-4 and pass-5."
         }
       ]
     },
@@ -146,15 +146,15 @@
         "entity": "artist",
         "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
         "verifiedByRuns": [
-          "pass-1",
-          "pass-2"
+          "pass-4",
+          "pass-5"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Revolting Cocks",
           "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
-          "note": "Exact match confirmed in pass-1 and pass-2."
+          "note": "Exact match confirmed in pass-4 and pass-5."
         }
       ]
     },
@@ -173,15 +173,15 @@
         "entity": "artist",
         "url": "https://musicbrainz.org/artist/6c0dadab-266a-4601-8394-5b8e19e90def",
         "verifiedByRuns": [
-          "pass-1",
-          "pass-2"
+          "pass-4",
+          "pass-5"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Al Jourgensen",
           "url": "https://musicbrainz.org/artist/6c0dadab-266a-4601-8394-5b8e19e90def",
-          "note": "Exact match confirmed in pass-1 and pass-2."
+          "note": "Exact match confirmed in pass-4 and pass-5."
         }
       ]
     },
@@ -198,15 +198,15 @@
         "entity": "artist",
         "url": "https://musicbrainz.org/artist/5bec856f-b78b-4216-8af5-1c0c6365bcbe",
         "verifiedByRuns": [
-          "pass-1",
-          "pass-2"
+          "pass-4",
+          "pass-5"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Paul Barker",
           "url": "https://musicbrainz.org/artist/5bec856f-b78b-4216-8af5-1c0c6365bcbe",
-          "note": "Exact match confirmed in pass-1 and pass-2."
+          "note": "Exact match confirmed in pass-4 and pass-5."
         }
       ]
     },
@@ -223,15 +223,15 @@
         "entity": "artist",
         "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
         "verifiedByRuns": [
-          "pass-1",
-          "pass-2"
+          "pass-4",
+          "pass-5"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: cEvin Key",
           "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
-          "note": "Exact match confirmed in pass-1 and pass-2."
+          "note": "Exact match confirmed in pass-4 and pass-5."
         }
       ]
     },
@@ -242,7 +242,23 @@
       "aliases": [
         "Kevin Ogilvie"
       ],
-      "summary": "Vocalist and co-founder of Skinny Puppy."
+      "summary": "Vocalist and co-founder of Skinny Puppy.",
+      "musicbrainz": {
+        "id": "5778f668-1a4c-482f-beb9-08b15b0f861c",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/5778f668-1a4c-482f-beb9-08b15b0f861c",
+        "verifiedByRuns": [
+          "pass-4",
+          "pass-5"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nivek Ogre",
+          "url": "https://musicbrainz.org/artist/5778f668-1a4c-482f-beb9-08b15b0f861c",
+          "note": "Exact match confirmed in pass-4 and pass-5."
+        }
+      ]
     },
     {
       "id": "bill-leeb",
@@ -257,15 +273,15 @@
         "entity": "artist",
         "url": "https://musicbrainz.org/artist/e10b76e5-dc32-4e9f-83b9-4f717400b19f",
         "verifiedByRuns": [
-          "pass-1",
-          "pass-2"
+          "pass-4",
+          "pass-5"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Bill Leeb",
           "url": "https://musicbrainz.org/artist/e10b76e5-dc32-4e9f-83b9-4f717400b19f",
-          "note": "Exact match confirmed in pass-1 and pass-2."
+          "note": "Exact match confirmed in pass-4 and pass-5."
         }
       ]
     },
@@ -279,15 +295,15 @@
         "entity": "artist",
         "url": "https://musicbrainz.org/artist/7ee30fce-cd3d-437d-9ff0-b2ef195bda33",
         "verifiedByRuns": [
-          "pass-1",
-          "pass-2"
+          "pass-4",
+          "pass-5"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Rhys Fulber",
           "url": "https://musicbrainz.org/artist/7ee30fce-cd3d-437d-9ff0-b2ef195bda33",
-          "note": "Exact match confirmed in pass-1 and pass-2."
+          "note": "Exact match confirmed in pass-4 and pass-5."
         }
       ]
     },
@@ -301,15 +317,15 @@
         "entity": "artist",
         "url": "https://musicbrainz.org/artist/8d2b70fb-a338-4702-8ce2-3211a4704d6f",
         "verifiedByRuns": [
-          "pass-1",
-          "pass-2"
+          "pass-4",
+          "pass-5"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Sascha Konietzko",
           "url": "https://musicbrainz.org/artist/8d2b70fb-a338-4702-8ce2-3211a4704d6f",
-          "note": "Exact match confirmed in pass-1 and pass-2."
+          "note": "Exact match confirmed in pass-4 and pass-5."
         }
       ]
     },
@@ -323,15 +339,15 @@
         "entity": "artist",
         "url": "https://musicbrainz.org/artist/49197759-80b0-4f46-934c-c5d2fed17ac3",
         "verifiedByRuns": [
-          "pass-1",
-          "pass-2"
+          "pass-4",
+          "pass-5"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Richard 23",
           "url": "https://musicbrainz.org/artist/49197759-80b0-4f46-934c-c5d2fed17ac3",
-          "note": "Exact match confirmed in pass-1 and pass-2."
+          "note": "Exact match confirmed in pass-4 and pass-5."
         }
       ]
     },
@@ -348,15 +364,15 @@
         "entity": "release-group",
         "url": "https://musicbrainz.org/release-group/7a18b986-afcc-359c-add1-7aa3a79104a2",
         "verifiedByRuns": [
-          "pass-1",
-          "pass-2"
+          "pass-4",
+          "pass-5"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: The Land of Rape and Honey",
           "url": "https://musicbrainz.org/release-group/7a18b986-afcc-359c-add1-7aa3a79104a2",
-          "note": "Exact match confirmed in pass-1 and pass-2."
+          "note": "Exact match confirmed in pass-4 and pass-5."
         }
       ]
     },
@@ -373,15 +389,15 @@
         "entity": "release-group",
         "url": "https://musicbrainz.org/release-group/ffd7f995-6354-38df-9c84-902769328a1e",
         "verifiedByRuns": [
-          "pass-1",
-          "pass-2"
+          "pass-4",
+          "pass-5"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Stigmata",
           "url": "https://musicbrainz.org/release-group/ffd7f995-6354-38df-9c84-902769328a1e",
-          "note": "Exact match confirmed in pass-1 and pass-2."
+          "note": "Exact match confirmed in pass-4 and pass-5."
         }
       ]
     },
@@ -398,15 +414,15 @@
         "entity": "release-group",
         "url": "https://musicbrainz.org/release-group/3e823e3f-4993-36d8-8c74-3ceaf68959e7",
         "verifiedByRuns": [
-          "pass-1",
-          "pass-2"
+          "pass-4",
+          "pass-5"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Big Sexy Land",
           "url": "https://musicbrainz.org/release-group/3e823e3f-4993-36d8-8c74-3ceaf68959e7",
-          "note": "Exact match confirmed in pass-1 and pass-2."
+          "note": "Exact match confirmed in pass-4 and pass-5."
         }
       ]
     },
@@ -423,15 +439,15 @@
         "entity": "release-group",
         "url": "https://musicbrainz.org/release-group/b316cc6e-edf7-3394-9c89-1a116ba2dc62",
         "verifiedByRuns": [
-          "pass-1",
-          "pass-2"
+          "pass-4",
+          "pass-5"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Beers, Steers & Queers",
           "url": "https://musicbrainz.org/release-group/b316cc6e-edf7-3394-9c89-1a116ba2dc62",
-          "note": "Exact match confirmed in pass-1 and pass-2."
+          "note": "Exact match confirmed in pass-4 and pass-5."
         }
       ]
     },
@@ -448,15 +464,15 @@
         "entity": "release-group",
         "url": "https://musicbrainz.org/release-group/611e2a82-9f19-3ad0-98a8-42397143b09d",
         "verifiedByRuns": [
-          "pass-1",
-          "pass-2"
+          "pass-4",
+          "pass-5"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Tactical Neural Implant",
           "url": "https://musicbrainz.org/release-group/611e2a82-9f19-3ad0-98a8-42397143b09d",
-          "note": "Exact match confirmed in pass-1 and pass-2."
+          "note": "Exact match confirmed in pass-4 and pass-5."
         }
       ]
     },
@@ -473,15 +489,15 @@
         "entity": "release-group",
         "url": "https://musicbrainz.org/release-group/f7329a5b-8972-38f0-8f4a-1a90b79829db",
         "verifiedByRuns": [
-          "pass-1",
-          "pass-2"
+          "pass-4",
+          "pass-5"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Mindphaser",
           "url": "https://musicbrainz.org/release-group/f7329a5b-8972-38f0-8f4a-1a90b79829db",
-          "note": "Exact match confirmed in pass-1 and pass-2."
+          "note": "Exact match confirmed in pass-4 and pass-5."
         }
       ]
     },
@@ -496,15 +512,15 @@
         "entity": "artist",
         "url": "https://musicbrainz.org/artist/4c44479c-8fde-4754-b9e2-5129eb6fb28d",
         "verifiedByRuns": [
-          "pass-1",
-          "pass-2"
+          "pass-4",
+          "pass-5"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: 1000 Homo DJs",
           "url": "https://musicbrainz.org/artist/4c44479c-8fde-4754-b9e2-5129eb6fb28d",
-          "note": "Exact match confirmed in pass-1 and pass-2."
+          "note": "Exact match confirmed in pass-4 and pass-5."
         }
       ]
     },
@@ -519,15 +535,15 @@
         "entity": "artist",
         "url": "https://musicbrainz.org/artist/bc880664-6751-4998-984d-ebdbff15d229",
         "verifiedByRuns": [
-          "pass-1",
-          "pass-2"
+          "pass-4",
+          "pass-5"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Trent Reznor",
           "url": "https://musicbrainz.org/artist/bc880664-6751-4998-984d-ebdbff15d229",
-          "note": "Exact match confirmed in pass-1 and pass-2."
+          "note": "Exact match confirmed in pass-4 and pass-5."
         }
       ]
     },
@@ -542,15 +558,15 @@
         "entity": "release-group",
         "url": "https://musicbrainz.org/release-group/6a928917-424c-38b2-b4c1-5de2d741d039",
         "verifiedByRuns": [
-          "pass-1",
-          "pass-2"
+          "pass-4",
+          "pass-5"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Supernaut",
           "url": "https://musicbrainz.org/release-group/6a928917-424c-38b2-b4c1-5de2d741d039",
-          "note": "Exact match confirmed in pass-1 and pass-2."
+          "note": "Exact match confirmed in pass-4 and pass-5."
         }
       ]
     }
