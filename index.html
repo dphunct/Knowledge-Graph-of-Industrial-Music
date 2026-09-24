@@ -33,7 +33,7 @@
 
       <section class="controls" aria-label="Graph controls">
         <label class="search"><span>Find a person or project <button class="help-button" type="button" data-help="Searches names and recorded aliases in the selected view. It does not invent or fetch new relationships.">?</button></span><input id="search" type="search" placeholder="e.g. Ministry, cEvin Key" /></label>
-        <label class="metric-control"><span>Size nodes by <button class="help-button" type="button" data-help="Direct connections is the default: more recorded relationships make a node larger. Graph influence combines several topology signals. Bridge importance estimates how much a node connects clusters. PageRank rewards connections to well-connected nodes.">?</button></span><select id="size-metric"><option value="degree" selected>Direct connections</option><option value="composite">Graph influence</option><option value="betweenness">Bridge importance</option><option value="pageRank">PageRank</option></select></label>
+        <label class="metric-control"><span>Size spheres by <button class="help-button" type="button" data-help="Direct connections is the default: more recorded relationships make a sphere larger. Graph influence combines several topology signals. Bridge importance estimates how much a person or project connects groups. PageRank rewards connections to well-connected people, projects, or releases.">?</button></span><select id="size-metric"><option value="degree" selected>Direct connections</option><option value="composite">Graph influence</option><option value="betweenness">Bridge importance</option><option value="pageRank">PageRank</option></select></label>
         <div class="view-controls" role="group" aria-label="Graph view">
           <button class="active" type="button" data-view="all">Everything</button><button class="help-button" type="button" data-help="People and Projects retain projected compound links so the selected type remains connected. Releases shows recorded release-to-release relationships.">?</button>
           <button type="button" data-view="people">People</button>
@@ -43,9 +43,9 @@
           <button type="button" data-action="dimension">2D / 3D</button><button class="help-button" type="button" data-help="2D is the current working view. The 3D control is a depth preview while the planned renderer with orbit controls is being built.">?</button>
         </div>
       </section>
-      <section class="neighborhood-controls" aria-label="Selected node neighborhood controls">
-        <label>Show up to <select id="degree-limit"><option value="all" selected>all degrees</option><option value="1">1 degree</option><option value="2">2 degrees</option><option value="3">3 degrees</option><option value="4">4 degrees</option><option value="5">5 degrees</option><option value="6">6 degrees</option></select> from selected node <button class="help-button" type="button" data-help="After selecting a node, this hides nodes farther away than the chosen number of recorded relationship hops. “All degrees” leaves the current view unchanged.">?</button></label>
-        <label>Fade to gray over <select id="fade-distance"><option value="1">1 degree</option><option value="2">2 degrees</option><option value="3">3 degrees</option><option value="4" selected>4 degrees</option><option value="5">5 degrees</option><option value="6">6 degrees</option></select> <button class="help-button" type="button" data-help="After selecting a node, this controls how gradually more-distant relationships fade. Nodes beyond this distance use the subdued gray state.">?</button></label>
+      <section class="neighborhood-controls" aria-label="Selected sphere neighborhood controls">
+        <label>Show up to <select id="degree-limit"><option value="all" selected>all degrees</option><option value="1">1 degree</option><option value="2">2 degrees</option><option value="3">3 degrees</option><option value="4">4 degrees</option><option value="5">5 degrees</option><option value="6">6 degrees</option></select> from selected sphere <button class="help-button" type="button" data-help="After selecting a sphere, this hides spheres farther away than the chosen number of recorded connection steps. “All degrees” leaves the current view unchanged.">?</button></label>
+        <label>Fade to gray over <select id="fade-distance"><option value="1">1 degree</option><option value="2">2 degrees</option><option value="3">3 degrees</option><option value="4" selected>4 degrees</option><option value="5">5 degrees</option><option value="6">6 degrees</option></select> <button class="help-button" type="button" data-help="After selecting a sphere, this controls how gradually more-distant spheres fade. Spheres beyond this distance use the subdued gray state.">?</button></label>
       </section>
       <label class="year-control"><span>Show relationships active by <output id="year-value">2026</output> <button class="help-button" type="button" data-help="The year control filters items with recorded start and end years. Items without researched dates remain visible so unknown does not become false absence.">?</button></span><input id="year" type="range" min="1975" max="2026" value="2026" step="1" /></label>
       <div id="control-tooltip" class="control-tooltip" role="tooltip" hidden></div>
@@ -65,7 +65,7 @@
         </div>
         <aside id="detail" class="detail" aria-live="polite">
           <p class="eyebrow">Start exploring</p>
-          <h2>Select a node</h2>
+          <h2>Select a sphere or line</h2>
           <p>Each relationship carries a role and source status. The graph is intentionally small until individual facts are verified and sourced.</p>
         </aside>
       </section>
@@ -73,14 +73,14 @@
       <section class="query-panel" aria-labelledby="path-title">
         <div>
           <p class="eyebrow">Path finder</p>
-          <h2 id="path-title">How are two nodes connected?</h2>
+          <h2 id="path-title">How are two people or projects connected?</h2>
         </div>
         <form id="path-form">
           <label>From <select id="path-from"></select></label>
           <label>To <select id="path-to"></select></label>
           <button type="submit">Reveal path</button>
         </form>
-        <p id="path-result" class="path-result">Choose two nodes to find their shortest known connection.</p>
+        <p id="path-result" class="path-result">Choose two items to find their shortest known connection.</p>
       </section>
 
       <section class="feedback" aria-labelledby="feedback-title">
@@ -95,9 +95,9 @@
         <h2 id="explainer-title">Ask the graph</h2>
         <p>Ask about a selected person, project, release, or path. You can turn on the answer helper if your browser supports it; it works only with the information currently shown in this graph.</p>
         <button id="enable-llm" type="button">Turn on answer helper</button>
-        <p id="llm-status" class="llm-status">Choose a node or path, then ask a question.</p>
+        <p id="llm-status" class="llm-status">Choose a sphere or path, then ask a question.</p>
         <form id="llm-form"><label>What is your question? <input id="llm-question" type="text" placeholder="How are these artists connected?" /></label><button type="submit">Ask</button></form>
-        <p id="llm-answer" class="llm-answer">Select a node or reveal a path, then ask a question.</p>
+        <p id="llm-answer" class="llm-answer">Select a sphere or reveal a path, then ask a question.</p>
       </section>
     </main>
     <script type="module" src="/src/main.js"></script>

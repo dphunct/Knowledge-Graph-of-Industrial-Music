@@ -127,7 +127,7 @@ function renderGraph() {
     graphElement.onclick = null;
     graphElement.onpointerdown = null;
     renderThreeGraph(nodes, edges, width, height, distances);
-    status.textContent = `${context ? "Edge context · " : ""}${nodes.length} visible nodes · ${edges.length} relationships · drag to orbit, scroll to zoom`;
+    status.textContent = `${context ? "Connection details · " : ""}${nodes.length} visible spheres · ${edges.length} connection lines · drag to orbit, scroll to zoom`;
     return;
   }
   const lines = edges.map((edge) => {
@@ -160,8 +160,8 @@ function renderGraph() {
   graphElement.onpointerdown = (event) => { if (!event.target.closest?.(".node")) beginPan(event); };
   graphElement.classList.toggle("three-d", dimension === "3d");
   status.textContent = context
-    ? `Edge context · ${nodes.length} nodes · ${edges.length} recorded relationships · click the canvas to return`
-    : `${nodes.length} visible nodes · ${edges.length} visible relationships · drag nodes to explore`;
+    ? `Connection details · ${nodes.length} spheres · ${edges.length} recorded relationships · click the canvas to return`
+    : `${nodes.length} visible spheres · ${edges.length} visible connection lines · drag spheres to explore`;
 
   redrawGraph = () => {
     for (const { edge, line } of lines) {
@@ -235,7 +235,7 @@ function renderThreeGraph(nodes, edges, width, height, distances) {
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
   renderer.setSize(width, height);
   renderer.domElement.className = "three-canvas";
-  renderer.domElement.setAttribute("aria-label", "Interactive 3D knowledge graph. Drag to orbit and scroll to zoom.");
+  renderer.domElement.setAttribute("aria-label", "Interactive 3D relationship map. Drag to orbit the spheres and scroll to zoom.");
   renderer.domElement.setAttribute("role", "img");
   graphElement.replaceChildren(renderer.domElement);
   const controls = new OrbitControls(camera, renderer.domElement);
@@ -313,14 +313,14 @@ function showEdge(edge) {
   const context = edgeContext(edge);
   const shared = context.shared.length ? `<p><strong>Shared intermediaries</strong> ${context.shared.map(labelFor).join(", ")}</p>` : "";
   const citations = related.map(provenanceLinks).filter(Boolean).join("<br />");
-  detail.innerHTML = `<p class="eyebrow">relationship context</p><h2>${labelFor(edge.source)} ↔ ${labelFor(edge.target)}</h2><p>${related.length ? related.map((item) => `${item.type.replace("_", " ")}${item.roles.length ? ` — ${item.roles.join(", ")}` : ""}`).join("<br />") : "Projected compound relationship in this filtered view."}</p>${citations ? `<p class="provenance"><strong>Sources</strong><br />${citations}</p>` : ""}${shared}<p>The graph now shows the surrounding recorded people, projects, and releases for this connection.</p><button class="return-graph" type="button" data-reset-graph>Return to full graph</button>`;
+  detail.innerHTML = `<p class="eyebrow">connection details</p><h2>${labelFor(edge.source)} ↔ ${labelFor(edge.target)}</h2><p>${related.length ? related.map((item) => `${item.type.replace("_", " ")}${item.roles.length ? ` — ${item.roles.join(", ")}` : ""}`).join("<br />") : "Projected compound relationship in this filtered view."}</p>${citations ? `<p class="provenance"><strong>Sources</strong><br />${citations}</p>` : ""}${shared}<p>The map now shows the surrounding recorded people, projects, and releases for this connection.</p><button class="return-graph" type="button" data-reset-graph>Return to full map</button>`;
   detail.querySelector("[data-reset-graph]").addEventListener("click", resetSelection);
   renderGraph();
 }
 
 function resetSelection() {
   selectedId = null; highlightedPath = []; focusedEdge = null;
-  detail.innerHTML = `<p class="eyebrow">Start exploring</p><h2>Select a node or edge</h2><p>Click a node to inspect its relationships, or an edge to inspect the connection. Click the canvas to reset.</p>`;
+  detail.innerHTML = `<p class="eyebrow">Start exploring</p><h2>Select a sphere or line</h2><p>Click a sphere to inspect its relationships, or a line to inspect the connection. Click the background to reset.</p>`;
   renderGraph();
 }
 
@@ -413,7 +413,7 @@ function deterministicContext() {
       const other = edge.source === selectedId ? edge.target : edge.source;
       return `${node.label} ${edge.type.replace("_", " ")} ${labelFor(other)}${edge.roles?.length ? ` (${edge.roles.join(", ")})` : ""}`;
     });
-    return `Selected node: ${node.label}. Recorded relationships: ${relationships.join("; ") || "none"}.`;
+    return `Selected sphere: ${node.label}. Recorded relationships: ${relationships.join("; ") || "none"}.`;
   }
   return document.querySelector("#path-result").textContent;
 }
@@ -436,7 +436,7 @@ document.querySelector("#llm-form").addEventListener("submit", async (event) => 
   event.preventDefault();
   const question = document.querySelector("#llm-question").value.trim() || "Explain this recorded graph result.";
   const context = deterministicContext();
-  const limitedAnswer = "I am only a simple bot with limited resources and can't handle this request. Try selecting a node or revealing a path first.";
+  const limitedAnswer = "I am only a simple bot with limited resources and can't handle this request. Try selecting a sphere or revealing a path first.";
   if (!localEngine) { llmAnswer.textContent = selectedId || highlightedPath.length ? context : limitedAnswer; return; }
   llmAnswer.textContent = "Looking through the recorded connections…";
   try {
@@ -449,7 +449,7 @@ document.querySelector("#path-form").addEventListener("submit", (event) => {
   event.preventDefault();
   const path = shortestPath(pathFrom.value, pathTo.value);
   document.querySelector("#path-result").innerHTML = path
-    ? `Browser explanation: <strong>${path.map(labelFor).join(" → ")}</strong>. This is the shortest recorded connection in the local graph; select a node to inspect roles and provenance status.`
+    ? `Browser explanation: <strong>${path.map(labelFor).join(" → ")}</strong>. This is the shortest recorded connection in the local map; select a sphere to inspect roles and provenance status.`
     : "No connecting path has been recorded in this seed graph.";
   if (path) {
     highlightedPath = path;
