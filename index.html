@@ -33,7 +33,7 @@
 
       <section class="controls" aria-label="Graph controls">
         <label class="search"><span>Find a person or project <button class="help-button" type="button" data-help="Searches names and recorded aliases in the selected view. It does not invent or fetch new relationships.">?</button></span><input id="search" type="search" placeholder="e.g. Ministry, cEvin Key" /></label>
-        <label class="metric-control"><span>Size spheres by <button class="help-button" type="button" data-help="Direct connections is the default: more recorded relationships make a sphere larger. Graph influence combines several topology signals. Bridge importance estimates how much a person or project connects groups. PageRank rewards connections to well-connected people, projects, or releases.">?</button></span><select id="size-metric"><option value="degree" selected>Direct connections</option><option value="composite">Graph influence</option><option value="betweenness">Bridge importance</option><option value="pageRank">PageRank</option></select></label>
+        <label class="metric-control"><span>Size spheres by <button class="help-button" type="button" data-help="Scores compare only the spheres in the current view. Direct connections is the default. Composite score equally combines direct connections, bridge importance, and PageRank. Bridge importance estimates how much a person or project connects groups. PageRank rewards connections to well-connected people, projects, or releases.">?</button></span><select id="size-metric"><option value="degree" selected>Direct connections</option><option value="composite">Composite score</option><option value="betweenness">Bridge importance</option><option value="pageRank">PageRank</option></select></label>
         <div class="view-controls" role="group" aria-label="Graph view">
           <button class="active" type="button" data-view="all">Everything</button><button class="help-button" type="button" data-help="People and Projects retain projected compound links so the selected type remains connected. Releases shows recorded release-to-release relationships.">?</button>
           <button type="button" data-view="people">People</button>
@@ -93,11 +93,12 @@
       <section class="local-explainer" aria-labelledby="explainer-title">
         <p class="eyebrow">Optional answer helper</p>
         <h2 id="explainer-title">Ask the graph</h2>
-        <p>Ask about a selected person, project, release, or path. You can turn on the answer helper if your browser supports it; it works only with the information currently shown in this graph.</p>
+        <p>Ask about people, projects, releases, connections, or rankings in the current view. Simple graph questions are answered locally. You can turn on the answer helper if your browser supports it for a fuller explanation of the information currently shown.</p>
         <button id="enable-llm" type="button">Turn on answer helper</button>
         <p id="llm-status" class="llm-status">Choose a sphere or path, then ask a question.</p>
-        <form id="llm-form"><label>What is your question? <input id="llm-question" type="text" placeholder="How are these artists connected?" /></label><button type="submit">Ask</button></form>
-        <p id="llm-answer" class="llm-answer">Select a sphere or reveal a path, then ask a question.</p>
+        <form id="llm-form"><label>What is your question? <input id="llm-question" type="text" placeholder="How is Al Jourgensen related to Marilyn Manson?" /></label><button type="submit">Ask</button><button id="ask-chatgpt" class="secondary-action" type="button">Continue in ChatGPT</button></form>
+        <p id="llm-answer" class="llm-answer">Try “Who has the highest composite score?” or “Tell me about Al Jourgensen.”</p>
+        <p class="chatgpt-note">Opens ChatGPT in a new tab with your question and a link to this public JSON file. ChatGPT uses your own signed-in session; this site does not receive your account information. <a id="download-graph-data" href="data/industrial-graph.json" download>Download the graph data</a> if you want to attach the file directly.</p>
       </section>
     </main>
     <script type="module" src="/src/main.js"></script>
