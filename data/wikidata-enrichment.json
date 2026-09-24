@@ -1,11 +1,12 @@
 {
   "provider": "Wikidata API",
-  "retrievedAt": "2026-09-24T15:24:18.564Z",
+  "retrievedAt": "2026-09-24T17:59:25.342Z",
   "pacingMs": 1100,
   "batch": {
-    "offset": 128,
+    "offset": 0,
     "limit": 20,
-    "totalEligible": 127
+    "missingOnly": true,
+    "totalEligible": 150
   },
   "method": "Exact MusicBrainz identifier verification after label search; only exact mapped P463 membership claims are imported.",
   "mappedEntities": [
@@ -1104,6 +1105,39 @@
   ],
   "importedRelationships": [
     {
+      "source": "trent-reznor",
+      "target": "nine-inch-nails",
+      "provenance": [
+        {
+          "title": "Wikidata membership claim: Trent Reznor → Nine Inch Nails",
+          "url": "https://www.wikidata.org/wiki/Q282722",
+          "note": "Exact mapped Wikidata entities state a membership or has-part relationship."
+        }
+      ]
+    },
+    {
+      "source": "burton-c-bell",
+      "target": "fear-factory",
+      "provenance": [
+        {
+          "title": "Wikidata membership claim: Burton C. Bell → Fear Factory",
+          "url": "https://www.wikidata.org/wiki/Q1017117",
+          "note": "Exact mapped Wikidata entities state a membership or has-part relationship."
+        }
+      ]
+    },
+    {
+      "source": "tony-campos",
+      "target": "fear-factory",
+      "provenance": [
+        {
+          "title": "Wikidata membership claim: Tony Campos → Fear Factory",
+          "url": "https://www.wikidata.org/wiki/Q713854",
+          "note": "Exact mapped Wikidata entities state a membership or has-part relationship."
+        }
+      ]
+    },
+    {
       "source": "wilhelm-schroeder",
       "target": "front-line-assembly",
       "provenance": [
@@ -1137,39 +1171,6 @@
       ]
     },
     {
-      "source": "trent-reznor",
-      "target": "nine-inch-nails",
-      "provenance": [
-        {
-          "title": "Wikidata membership claim: Trent Reznor → Nine Inch Nails",
-          "url": "https://www.wikidata.org/wiki/Q282722",
-          "note": "Exact mapped Wikidata entities state a membership or has-part relationship."
-        }
-      ]
-    },
-    {
-      "source": "tony-campos",
-      "target": "fear-factory",
-      "provenance": [
-        {
-          "title": "Wikidata membership claim: Tony Campos → Fear Factory",
-          "url": "https://www.wikidata.org/wiki/Q713854",
-          "note": "Exact mapped Wikidata entities state a membership or has-part relationship."
-        }
-      ]
-    },
-    {
-      "source": "burton-c-bell",
-      "target": "fear-factory",
-      "provenance": [
-        {
-          "title": "Wikidata membership claim: Burton C. Bell → Fear Factory",
-          "url": "https://www.wikidata.org/wiki/Q1017117",
-          "note": "Exact mapped Wikidata entities state a membership or has-part relationship."
-        }
-      ]
-    },
-    {
       "source": "wilhelm-schroeder",
       "target": "delerium",
       "provenance": [
@@ -1181,5 +1182,66 @@
       ]
     }
   ],
-  "skipped": []
+  "skipped": [
+    {
+      "id": "mindphaser",
+      "label": "Mindphaser",
+      "candidate": "Q6863901",
+      "reason": "Candidate does not carry the exact P436 MusicBrainz identifier"
+    },
+    {
+      "id": "supernaut",
+      "label": "Supernaut",
+      "candidate": "Q39075017",
+      "reason": "Candidate does not carry the exact P436 MusicBrainz identifier"
+    },
+    {
+      "id": "mark-baker",
+      "label": "Mark Baker",
+      "candidate": "Q2069211",
+      "reason": "Candidate does not carry the exact P434 MusicBrainz identifier"
+    },
+    {
+      "id": "cesar-soto",
+      "label": "Cesar Soto",
+      "candidate": "Q1032038",
+      "reason": "Candidate does not carry the exact P434 MusicBrainz identifier"
+    },
+    {
+      "id": "derek-abrams",
+      "label": "Derek Abrams",
+      "candidate": "Q123104130",
+      "reason": "Candidate does not carry the exact P434 MusicBrainz identifier"
+    },
+    {
+      "id": "john-davis",
+      "label": "John Davis",
+      "candidate": "Q311652",
+      "reason": "Candidate does not carry the exact P434 MusicBrainz identifier"
+    },
+    {
+      "id": "shay-jones",
+      "label": "Shay Jones",
+      "candidate": "Q119538394",
+      "reason": "Candidate does not carry the exact P434 MusicBrainz identifier"
+    },
+    {
+      "id": "robert-roberts",
+      "label": "Robert Roberts",
+      "candidate": "Q10499403",
+      "reason": "Candidate does not carry the exact P434 MusicBrainz identifier"
+    },
+    {
+      "id": "matthew-setzer",
+      "label": "Matthew Setzer",
+      "candidate": "Q6791212",
+      "reason": "Candidate does not carry the exact P434 MusicBrainz identifier"
+    },
+    {
+      "id": "andy-selway",
+      "label": "Andy Selway",
+      "candidate": "Q4761308",
+      "reason": "Candidate does not carry the exact P434 MusicBrainz identifier"
+    }
+  ]
 }
