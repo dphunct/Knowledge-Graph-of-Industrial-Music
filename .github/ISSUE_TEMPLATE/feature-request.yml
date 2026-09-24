@@ -1,0 +1,19 @@
+name: Request a feature
+description: Suggest an improvement to the explorer, research workflow, or accessibility.
+title: "Feature: "
+labels: ["feature-request"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would this make easier?
+      description: Describe the question or task you are trying to accomplish.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Proposed feature
+      description: Explain the interaction or outcome you would like to see.
+    validations:
+      required: true

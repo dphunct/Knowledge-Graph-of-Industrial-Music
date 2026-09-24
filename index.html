@@ -31,17 +31,19 @@
       </section>
 
       <section class="controls" aria-label="Graph controls">
-        <label class="search"><span>Find a person or project</span><input id="search" type="search" placeholder="e.g. Ministry, cEvin Key" /></label>
-        <label class="metric-control"><span>Size nodes by</span><select id="size-metric"><option value="composite">Graph influence</option><option value="degree">Direct connections</option><option value="betweenness">Bridge importance</option><option value="pageRank">PageRank</option></select></label>
+        <label class="search"><span>Find a person or project <button class="help-button" type="button" data-help="Searches names and recorded aliases in the selected view. It does not invent or fetch new relationships.">?</button></span><input id="search" type="search" placeholder="e.g. Ministry, cEvin Key" /></label>
+        <label class="metric-control"><span>Size nodes by <button class="help-button" type="button" data-help="Graph influence combines several topology signals. Direct connections counts recorded links. Bridge importance estimates how much a node connects clusters. PageRank rewards connections to well-connected nodes.">?</button></span><select id="size-metric"><option value="composite">Graph influence</option><option value="degree">Direct connections</option><option value="betweenness">Bridge importance</option><option value="pageRank">PageRank</option></select></label>
         <div class="view-controls" role="group" aria-label="Graph view">
-          <button class="active" type="button" data-view="all">Everything</button>
+          <button class="active" type="button" data-view="all">Everything</button><button class="help-button" type="button" data-help="People and Projects retain projected compound links so the selected type remains connected. Releases shows recorded release-to-release relationships.">?</button>
           <button type="button" data-view="people">People</button>
           <button type="button" data-view="projects">Projects</button>
           <button type="button" data-view="releases">Releases</button>
           <button type="button" data-action="rearrange">Rearrange</button>
-          <button type="button" data-action="dimension">2D / 3D</button>
+          <button type="button" data-action="dimension">2D / 3D</button><button class="help-button" type="button" data-help="2D is the current working view. The 3D control is a depth preview while the planned renderer with orbit controls is being built.">?</button>
         </div>
       </section>
+      <label class="year-control"><span>Show relationships active by <output id="year-value">2026</output> <button class="help-button" type="button" data-help="The year control filters items with recorded start and end years. Items without researched dates remain visible so unknown does not become false absence.">?</button></span><input id="year" type="range" min="1975" max="2026" value="2026" step="1" /></label>
+      <p id="help-text" class="help-text" aria-live="polite">Hover or activate a ? for a short explanation of a control.</p>
 
       <section class="workspace">
         <div class="graph-panel">
@@ -67,6 +69,23 @@
           <button type="submit">Reveal path</button>
         </form>
         <p id="path-result" class="path-result">Choose two nodes to find their shortest known connection.</p>
+      </section>
+
+      <section class="feedback" aria-labelledby="feedback-title">
+        <p class="eyebrow">Help improve the record</p>
+        <h2 id="feedback-title">Correct the graph or request a feature</h2>
+        <p>Factual corrections and additions need at least one cited source. Unsupported claims remain in the research queue rather than being silently added.</p>
+        <div><a class="feedback-link" href="https://github.com/dphunct/Knowledge-Graph-of-Industrial-Music/issues/new?template=graph-fact.yml">Correct or add information</a><a class="feedback-link" href="https://github.com/dphunct/Knowledge-Graph-of-Industrial-Music/issues/new?template=feature-request.yml">Request a feature</a></div>
+      </section>
+
+      <section class="local-explainer" aria-labelledby="explainer-title">
+        <p class="eyebrow">Optional local explanation</p>
+        <h2 id="explainer-title">Ask the graph</h2>
+        <p>Path finding and graph facts stay deterministic. Optionally load a small WebLLM model in this browser to turn those results into prose; it needs WebGPU, downloads a model only after you opt in, and sends no graph data to a server.</p>
+        <button id="enable-llm" type="button">Enable local explainer</button>
+        <p id="llm-status" class="llm-status">Deterministic graph explanations are available without a model.</p>
+        <form id="llm-form"><label>Question <input id="llm-question" type="text" placeholder="Explain the selected node's recorded relationships" /></label><button type="submit">Explain</button></form>
+        <p id="llm-answer" class="llm-answer">Select a node or reveal a path, then ask for an explanation.</p>
       </section>
     </main>
     <script type="module" src="/src/main.js"></script>

@@ -11,5 +11,9 @@
   },
   "devDependencies": {
     "vite": "^7.0.0"
+  },
+  "dependencies": {
+    "@mlc-ai/web-llm": "^0.2.85",
+    "three": "^0.186.0"
   }
 }
