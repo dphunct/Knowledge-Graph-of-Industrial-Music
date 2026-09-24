@@ -35,6 +35,7 @@ let localEngine = null;
 let graphZoom = Number(zoomSlider.value);
 let threeCamera = null;
 let threeControls = null;
+let graphPan = { x: 0, y: 0 };
 
 const nodeEdges = (id) => graph.edges.filter((edge) => edge.source === id || edge.target === id);
 const labelFor = (id) => byId.get(id).label;
@@ -99,7 +100,7 @@ function renderGraph() {
   cancelAnimationFrame(animationFrame);
   layout = new Map(nodes.map((node, index) => {
     const angle = index * 2.399963229728653;
-    const radius = Math.min(width, height) * (0.2 + (index % 4) * 0.075);
+    const radius = Math.max(width, height) * (0.22 + (index % 4) * 0.09);
     return [node.id, { x: width / 2 + Math.cos(angle) * radius, y: height / 2 + Math.sin(angle) * radius, z: Math.sin(angle * 1.7) * 90, vx: 0, vy: 0, pinned: false }];
   }));
 
@@ -133,13 +134,14 @@ function renderGraph() {
     }
     button.setAttribute("role", "listitem");
     button.innerHTML = `<span>${node.label}</span><small>${node.type}${node.relevance ? ` · ${node.relevance}` : ""}</small>`;
-    button.style.width = `${80 + metrics.get(node.id)[sizeMetric.value] * 48}px`;
+    button.style.width = `${Math.min(80 + metrics.get(node.id)[sizeMetric.value] * 48, width < 520 ? 88 : 140)}px`;
     button.addEventListener("click", () => selectNode(node.id));
     button.addEventListener("pointerdown", (event) => beginDrag(event, node.id, nodeRadius, width, height));
     return [node.id, button];
   }));
   graphElement.replaceChildren(svg, ...buttons.values());
   graphElement.onclick = (event) => { if (event.target === graphElement || event.target === svg) resetSelection(); };
+  graphElement.onpointerdown = (event) => { if (event.target === graphElement || event.target === svg) beginPan(event); };
   graphElement.classList.toggle("three-d", dimension === "3d");
   status.textContent = context
     ? `Edge context · ${nodes.length} nodes · ${edges.length} recorded relationships · click the canvas to return`
@@ -149,18 +151,18 @@ function renderGraph() {
     for (const { edge, line } of lines) {
       const source = layout.get(edge.source);
       const target = layout.get(edge.target);
-      const sourceX = width / 2 + (source.x - width / 2) * graphZoom;
-      const sourceY = height / 2 + (source.y - height / 2) * graphZoom;
-      const targetX = width / 2 + (target.x - width / 2) * graphZoom;
-      const targetY = height / 2 + (target.y - height / 2) * graphZoom;
+      const sourceX = width / 2 + (source.x - width / 2) * graphZoom + graphPan.x;
+      const sourceY = height / 2 + (source.y - height / 2) * graphZoom + graphPan.y;
+      const targetX = width / 2 + (target.x - width / 2) * graphZoom + graphPan.x;
+      const targetY = height / 2 + (target.y - height / 2) * graphZoom + graphPan.y;
       line.setAttribute("x1", sourceX); line.setAttribute("y1", sourceY);
       line.setAttribute("x2", targetX); line.setAttribute("y2", targetY);
     }
     for (const [id, button] of buttons) {
       const point = layout.get(id);
-      button.style.left = `${width / 2 + (point.x - width / 2) * graphZoom}px`;
-      button.style.top = `${height / 2 + (point.y - height / 2) * graphZoom}px`;
-      button.style.transform = `translate(-50%, -50%) scale(${graphZoom})`;
+      button.style.left = `${width / 2 + (point.x - width / 2) * graphZoom + graphPan.x}px`;
+      button.style.top = `${height / 2 + (point.y - height / 2) * graphZoom + graphPan.y}px`;
+      button.style.transform = "translate(-50%, -50%)";
     }
   };
 
@@ -172,7 +174,7 @@ function renderGraph() {
         const dx = b.x - a.x; const dy = b.y - a.y;
         const distance = Math.hypot(dx, dy) || 0.01;
         const unitX = dx / distance; const unitY = dy / distance;
-        const push = (9500 / (distance * distance)) + Math.max(0, nodeRadius * 2 - distance) * 0.15;
+        const push = (18000 / (distance * distance)) + Math.max(0, nodeRadius * 2 - distance) * 0.7;
         if (!a.pinned) { a.vx -= unitX * push; a.vy -= unitY * push; }
         if (!b.pinned) { b.vx += unitX * push; b.vy += unitY * push; }
       }
@@ -181,16 +183,16 @@ function renderGraph() {
       const a = layout.get(edge.source); const b = layout.get(edge.target);
       const dx = b.x - a.x; const dy = b.y - a.y;
       const distance = Math.hypot(dx, dy) || 0.01;
-      const pull = (distance - 185) * 0.012;
+      const pull = (distance - (width < 520 ? 165 : 235)) * 0.008;
       const unitX = dx / distance; const unitY = dy / distance;
       if (!a.pinned) { a.vx += unitX * pull; a.vy += unitY * pull; }
       if (!b.pinned) { b.vx -= unitX * pull; b.vy -= unitY * pull; }
     }
     for (const point of points) {
       if (point.pinned) continue;
-      point.vx += (width / 2 - point.x) * 0.0015;
-      point.vy += (height / 2 - point.y) * 0.0015;
-      point.vx *= 0.72; point.vy *= 0.72;
+      point.vx += (width / 2 - point.x) * 0.00035;
+      point.vy += (height / 2 - point.y) * 0.00035;
+      point.vx *= 0.78; point.vy *= 0.78;
       point.x = Math.max(nodeRadius, Math.min(width - nodeRadius, point.x + point.vx * heat));
       point.y = Math.max(nodeRadius, Math.min(height - nodeRadius, point.y + point.vy * heat));
     }
@@ -282,6 +284,14 @@ function resetSelection() {
   renderGraph();
 }
 
+function beginPan(event) {
+  const start = { x: event.clientX, y: event.clientY, panX: graphPan.x, panY: graphPan.y };
+  graphElement.setPointerCapture(event.pointerId);
+  const move = (moveEvent) => { graphPan = { x: start.panX + moveEvent.clientX - start.x, y: start.panY + moveEvent.clientY - start.y }; redrawGraph(); };
+  const release = () => { graphElement.removeEventListener("pointermove", move); graphElement.removeEventListener("pointerup", release); graphElement.removeEventListener("pointercancel", release); };
+  graphElement.addEventListener("pointermove", move); graphElement.addEventListener("pointerup", release); graphElement.addEventListener("pointercancel", release);
+}
+
 function beginDrag(event, id, nodeRadius, width, height) {
   const point = layout.get(id);
   if (!point) return;
@@ -290,8 +300,8 @@ function beginDrag(event, id, nodeRadius, width, height) {
   point.pinned = true;
   const move = (moveEvent) => {
     const bounds = graphElement.getBoundingClientRect();
-    point.x = Math.max(nodeRadius, Math.min(width - nodeRadius, width / 2 + (moveEvent.clientX - bounds.left - width / 2) / graphZoom));
-    point.y = Math.max(nodeRadius, Math.min(height - nodeRadius, height / 2 + (moveEvent.clientY - bounds.top - height / 2) / graphZoom));
+    point.x = Math.max(nodeRadius, Math.min(width - nodeRadius, width / 2 + (moveEvent.clientX - bounds.left - width / 2 - graphPan.x) / graphZoom));
+    point.y = Math.max(nodeRadius, Math.min(height - nodeRadius, height / 2 + (moveEvent.clientY - bounds.top - height / 2 - graphPan.y) / graphZoom));
     point.vx = 0; point.vy = 0;
     redrawGraph();
   };
@@ -313,13 +323,14 @@ function selectNode(id) {
   const node = byId.get(id);
   const connections = nodeEdges(id);
   const aliases = node.aliases?.length ? `<p><strong>Also known as</strong> ${node.aliases.join(", ")}</p>` : "";
+  const sources = provenanceLinks(node) ? `<p class="provenance"><strong>Sources</strong><br />${provenanceLinks(node)}</p>` : "";
   const related = connections.map((edge) => {
     const other = edge.source === id ? edge.target : edge.source;
     const role = edge.roles.length ? ` — ${edge.roles.join(", ")}` : "";
     return `<li><button type="button" data-node="${other}">${labelFor(other)}</button><span>${edge.type.replace("_", " ")}${role} · ${edge.sourceStatus.replace("-", " ")}</span>${provenanceLinks(edge) ? `<span class="provenance">${provenanceLinks(edge)}</span>` : ""}</li>`;
   }).join("");
   const metric = metrics.get(id); const score = (value) => Math.round(value * 100);
-  detail.innerHTML = `<p class="eyebrow">${node.type}${node.relevance ? ` · ${node.relevance} relevance` : ""}</p><h2>${node.label}</h2><p>${node.summary || "No description recorded yet."}</p>${node.years ? `<p><strong>Active</strong> ${node.years}</p>` : ""}${aliases}<h3>Graph influence</h3><p>Composite ${score(metric.composite)} · connections ${score(metric.degree)} · bridge ${score(metric.betweenness)} · PageRank ${score(metric.pageRank)}</p><h3>Known relationships</h3><ul class="relationships">${related || "<li>No relationships recorded.</li>"}</ul>`;
+  detail.innerHTML = `<p class="eyebrow">${node.type}${node.relevance ? ` · ${node.relevance} relevance` : ""}</p><h2>${node.label}</h2><p>${node.summary || "No description recorded yet."}</p>${node.years ? `<p><strong>Active</strong> ${node.years}</p>` : ""}${aliases}${sources}<h3>Graph influence</h3><p>Composite ${score(metric.composite)} · connections ${score(metric.degree)} · bridge ${score(metric.betweenness)} · PageRank ${score(metric.pageRank)}</p><h3>Known relationships</h3><ul class="relationships">${related || "<li>No relationships recorded.</li>"}</ul>`;
   detail.querySelectorAll("[data-node]").forEach((button) => button.addEventListener("click", () => selectNode(button.dataset.node)));
   renderGraph();
 }
@@ -360,15 +371,15 @@ function deterministicContext() {
 }
 
 document.querySelector("#enable-llm").addEventListener("click", async (event) => {
-  if (!navigator.gpu) { llmStatus.textContent = "WebGPU is unavailable in this browser, so the deterministic explanation remains active."; return; }
+  if (!navigator.gpu) { llmStatus.textContent = "This browser cannot turn on the answer helper. You can still explore the recorded relationships."; return; }
   event.currentTarget.disabled = true;
-  llmStatus.textContent = "Preparing the local model download…";
+  llmStatus.textContent = "Getting the answer helper ready…";
   try {
     const { CreateMLCEngine } = await import("@mlc-ai/web-llm");
     localEngine = await CreateMLCEngine("Llama-3.2-1B-Instruct-q4f16_1-MLC", { initProgressCallback: (report) => { llmStatus.textContent = report.text; } });
-    llmStatus.textContent = "Local explainer ready. The model runs in this browser.";
+    llmStatus.textContent = "Answer helper ready.";
   } catch (error) {
-    llmStatus.textContent = `Local model unavailable: ${error.message}. Deterministic explanations remain available.`;
+    llmStatus.textContent = "The answer helper could not start. You can still explore the recorded relationships.";
     event.currentTarget.disabled = false;
   }
 });
@@ -377,12 +388,13 @@ document.querySelector("#llm-form").addEventListener("submit", async (event) => 
   event.preventDefault();
   const question = document.querySelector("#llm-question").value.trim() || "Explain this recorded graph result.";
   const context = deterministicContext();
-  if (!localEngine) { llmAnswer.textContent = `${context} Enable the local explainer to turn this deterministic result into additional prose.`; return; }
-  llmAnswer.textContent = "Writing from the recorded graph result…";
+  const limitedAnswer = "I am only a simple bot with limited resources and can't handle this request. Try selecting a node or revealing a path first.";
+  if (!localEngine) { llmAnswer.textContent = selectedId || highlightedPath.length ? context : limitedAnswer; return; }
+  llmAnswer.textContent = "Looking through the recorded connections…";
   try {
-    const result = await localEngine.chat.completions.create({ messages: [{ role: "system", content: "Explain only the supplied graph facts. Do not add people, releases, dates, sources, or relationships. State uncertainty when data is missing." }, { role: "user", content: `Question: ${question}\n\nRecorded graph result: ${context}` }] });
-    llmAnswer.textContent = result.choices[0]?.message?.content || context;
-  } catch (error) { llmAnswer.textContent = `${context} Local explanation failed: ${error.message}`; }
+    const result = await localEngine.chat.completions.create({ messages: [{ role: "system", content: "Answer only from the supplied graph facts. Do not add people, releases, dates, sources, or relationships. If the facts do not answer the question, say exactly: I am only a simple bot with limited resources and can't handle this request." }, { role: "user", content: `Question: ${question}\n\nRecorded graph result: ${context}` }] });
+    llmAnswer.textContent = result.choices[0]?.message?.content || limitedAnswer;
+  } catch { llmAnswer.textContent = limitedAnswer; }
 });
 
 document.querySelector("#path-form").addEventListener("submit", (event) => {
@@ -433,7 +445,7 @@ yearSlider.addEventListener("input", () => { activeYear = Number(yearSlider.valu
 zoomSlider.addEventListener("input", () => setGraphZoom(Number(zoomSlider.value)));
 document.querySelector("[data-action='zoom-in']").addEventListener("click", () => setGraphZoom(graphZoom + .1));
 document.querySelector("[data-action='zoom-out']").addEventListener("click", () => setGraphZoom(graphZoom - .1));
-document.querySelector("[data-action='zoom-reset']").addEventListener("click", () => setGraphZoom(1));
+document.querySelector("[data-action='zoom-reset']").addEventListener("click", () => { graphPan = { x: 0, y: 0 }; setGraphZoom(1); });
 window.addEventListener("resize", renderGraph);
 populatePathSelects();
 renderGraph();
