@@ -352,6 +352,30 @@
       ]
     },
     {
+      "id": "dwayne-goettel",
+      "label": "Dwayne Goettel",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a Skinny Puppy member from 1986 until 1995.",
+      "musicbrainz": { "id": "528d8a44-92f0-4614-aeb4-cb3516c0f2cd", "entity": "artist", "url": "https://musicbrainz.org/artist/528d8a44-92f0-4614-aeb4-cb3516c0f2cd" },
+      "provenance": [{ "title": "MusicBrainz: Skinny Puppy", "url": "https://musicbrainz.org/artist/5a24bc1a-c093-4a82-84ed-8d7f2da0570d", "note": "Lists Dwayne Rudolph Goettel as a member from 1986 to 1995-08-23." }]
+    },
+    {
+      "id": "luc-van-acker",
+      "label": "Luc Van Acker",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a Revolting Cocks member from 1985 to 1993.",
+      "musicbrainz": { "id": "be6d9ea3-adfb-47ea-9064-4302b00f9e27", "entity": "artist", "url": "https://musicbrainz.org/artist/be6d9ea3-adfb-47ea-9064-4302b00f9e27" },
+      "provenance": [{ "title": "MusicBrainz: Revolting Cocks", "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0", "note": "Lists Luc Van Acker as a member from 1985 to 1993." }]
+    },
+    {
+      "id": "chris-connelly",
+      "label": "Chris Connelly",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a Revolting Cocks member from 1988 to 1994.",
+      "musicbrainz": { "id": "ecb41014-1d7a-4987-a107-df49b2d8d77c", "entity": "artist", "url": "https://musicbrainz.org/artist/ecb41014-1d7a-4987-a107-df49b2d8d77c" },
+      "provenance": [{ "title": "MusicBrainz: Revolting Cocks", "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0", "note": "Lists Chris Connelly as a member from 1988 to 1994." }]
+    },
+    {
       "id": "land-of-rape-and-honey",
       "label": "The Land of Rape and Honey",
       "type": "release",
@@ -1059,6 +1083,36 @@
       "validFrom": 2024,
       "sourceStatus": "verified",
       "provenance": [{ "title": "MusicBrainz: Rhys Fulber", "url": "https://musicbrainz.org/artist/7ee30fce-cd3d-437d-9ff0-b2ef195bda33", "note": "Lists Rhys Fulber as a Cyberaktif member from 2024." }]
+    },
+    {
+      "source": "dwayne-goettel",
+      "target": "skinny-puppy",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1986,
+      "validTo": 1995,
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: Skinny Puppy", "url": "https://musicbrainz.org/artist/5a24bc1a-c093-4a82-84ed-8d7f2da0570d", "note": "Lists Dwayne Rudolph Goettel as a member from 1986 to 1995-08-23." }]
+    },
+    {
+      "source": "luc-van-acker",
+      "target": "revolting-cocks",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1985,
+      "validTo": 1993,
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: Revolting Cocks", "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0", "note": "Lists Luc Van Acker as a member from 1985 to 1993." }]
+    },
+    {
+      "source": "chris-connelly",
+      "target": "revolting-cocks",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1988,
+      "validTo": 1994,
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: Revolting Cocks", "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0", "note": "Lists Chris Connelly as a member from 1988 to 1994." }]
     },
     {
       "source": "ministry",
