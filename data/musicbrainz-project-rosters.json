@@ -1,6 +1,6 @@
 {
   "provider": "MusicBrainz",
-  "retrievedAt": "2026-09-24T13:07:53.960Z",
+  "retrievedAt": "2026-09-24T15:08:31.521Z",
   "pacingMs": 1100,
   "projects": [
     {
@@ -1055,6 +1055,1566 @@
           "label": "Frenchie L'Amour",
           "begin": null,
           "end": null
+        }
+      ]
+    },
+    {
+      "id": "nine-inch-nails",
+      "label": "Nine Inch Nails",
+      "musicbrainzId": "b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+      "members": [
+        {
+          "id": "0923598e-2b97-4527-b984-5feed94c168d",
+          "label": "Chris Vrenna",
+          "begin": "1988-10",
+          "end": "1990"
+        },
+        {
+          "id": "0923598e-2b97-4527-b984-5feed94c168d",
+          "label": "Chris Vrenna",
+          "begin": "1988-10",
+          "end": "1990"
+        },
+        {
+          "id": "0923598e-2b97-4527-b984-5feed94c168d",
+          "label": "Chris Vrenna",
+          "begin": "1988-10",
+          "end": "1990"
+        },
+        {
+          "id": "0923598e-2b97-4527-b984-5feed94c168d",
+          "label": "Chris Vrenna",
+          "begin": "1988-10",
+          "end": "1990"
+        },
+        {
+          "id": "031e4b1f-460d-487d-ab01-9bae0992d4bc",
+          "label": "Ron Musarra",
+          "begin": "1988",
+          "end": "1988"
+        },
+        {
+          "id": "bc880664-6751-4998-984d-ebdbff15d229",
+          "label": "Trent Reznor",
+          "begin": "1988",
+          "end": null
+        },
+        {
+          "id": "bc880664-6751-4998-984d-ebdbff15d229",
+          "label": "Trent Reznor",
+          "begin": "1988",
+          "end": null
+        },
+        {
+          "id": "bc880664-6751-4998-984d-ebdbff15d229",
+          "label": "Trent Reznor",
+          "begin": "1988",
+          "end": null
+        },
+        {
+          "id": "bc880664-6751-4998-984d-ebdbff15d229",
+          "label": "Trent Reznor",
+          "begin": "1988",
+          "end": null
+        },
+        {
+          "id": "bc880664-6751-4998-984d-ebdbff15d229",
+          "label": "Trent Reznor",
+          "begin": "1988",
+          "end": null
+        },
+        {
+          "id": "bc880664-6751-4998-984d-ebdbff15d229",
+          "label": "Trent Reznor",
+          "begin": "1988",
+          "end": null
+        },
+        {
+          "id": "bc880664-6751-4998-984d-ebdbff15d229",
+          "label": "Trent Reznor",
+          "begin": "1988",
+          "end": null
+        },
+        {
+          "id": "bc880664-6751-4998-984d-ebdbff15d229",
+          "label": "Trent Reznor",
+          "begin": "1988",
+          "end": null
+        },
+        {
+          "id": "bc880664-6751-4998-984d-ebdbff15d229",
+          "label": "Trent Reznor",
+          "begin": "1988",
+          "end": null
+        },
+        {
+          "id": "4d4e2261-02d2-4796-83bf-5bbadcbba629",
+          "label": "Nick Rushe",
+          "begin": "1989",
+          "end": "1989"
+        },
+        {
+          "id": "2cd8c19a-d942-456e-86de-72d581662ff9",
+          "label": "Gary Talpas",
+          "begin": "1989",
+          "end": "1989"
+        },
+        {
+          "id": "5bcda370-1cd4-40ce-89a5-6ec6a0a7fc79",
+          "label": "Richard Patrick",
+          "begin": "1989",
+          "end": "1993"
+        },
+        {
+          "id": "5bcda370-1cd4-40ce-89a5-6ec6a0a7fc79",
+          "label": "Richard Patrick",
+          "begin": "1989",
+          "end": "1993"
+        },
+        {
+          "id": "2014c417-f5ca-4f7e-b616-ba835608b5b6",
+          "label": "David Haymes",
+          "begin": "1990",
+          "end": "1990"
+        },
+        {
+          "id": "40adef79-bcdd-4bd3-a2ee-1e2d371cd6bc",
+          "label": "Lee Mars",
+          "begin": "1990",
+          "end": "1991"
+        },
+        {
+          "id": "90023d8a-3907-45ec-a2aa-b8da61a6d0bd",
+          "label": "Jeff Ward",
+          "begin": "1990",
+          "end": "1991"
+        },
+        {
+          "id": "4fdcc071-4125-433c-9b57-de2084d8d48f",
+          "label": "Martin Atkins",
+          "begin": "1991",
+          "end": "1991"
+        },
+        {
+          "id": "1f4ffb9e-2425-40fb-b054-68e80e2ef83d",
+          "label": "James Woolley",
+          "begin": "1991",
+          "end": "1994"
+        },
+        {
+          "id": "1f4ffb9e-2425-40fb-b054-68e80e2ef83d",
+          "label": "James Woolley",
+          "begin": "1991",
+          "end": "1994"
+        },
+        {
+          "id": "1f4ffb9e-2425-40fb-b054-68e80e2ef83d",
+          "label": "James Woolley",
+          "begin": "1991",
+          "end": "1994"
+        },
+        {
+          "id": "0923598e-2b97-4527-b984-5feed94c168d",
+          "label": "Chris Vrenna",
+          "begin": "1992",
+          "end": "1997"
+        },
+        {
+          "id": "0923598e-2b97-4527-b984-5feed94c168d",
+          "label": "Chris Vrenna",
+          "begin": "1992",
+          "end": "1997"
+        },
+        {
+          "id": "0923598e-2b97-4527-b984-5feed94c168d",
+          "label": "Chris Vrenna",
+          "begin": "1992",
+          "end": "1997"
+        },
+        {
+          "id": "0923598e-2b97-4527-b984-5feed94c168d",
+          "label": "Chris Vrenna",
+          "begin": "1992",
+          "end": "1997"
+        },
+        {
+          "id": "136b2664-686f-4ae4-acf9-6f34446636d4",
+          "label": "Danny Lohner",
+          "begin": "1993",
+          "end": "2003"
+        },
+        {
+          "id": "136b2664-686f-4ae4-acf9-6f34446636d4",
+          "label": "Danny Lohner",
+          "begin": "1993",
+          "end": "2003"
+        },
+        {
+          "id": "136b2664-686f-4ae4-acf9-6f34446636d4",
+          "label": "Danny Lohner",
+          "begin": "1993",
+          "end": "2003"
+        },
+        {
+          "id": "136b2664-686f-4ae4-acf9-6f34446636d4",
+          "label": "Danny Lohner",
+          "begin": "1993",
+          "end": "2003"
+        },
+        {
+          "id": "136b2664-686f-4ae4-acf9-6f34446636d4",
+          "label": "Danny Lohner",
+          "begin": "1993",
+          "end": "2003"
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "1994",
+          "end": "1996"
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "1994",
+          "end": "1996"
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "1994",
+          "end": "1996"
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "1994",
+          "end": "1996"
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "1994",
+          "end": "1996"
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "1994",
+          "end": "1996"
+        },
+        {
+          "id": "2947dcd0-e65f-4293-af4b-3fe309e0dea0",
+          "label": "Charlie Clouser",
+          "begin": "1994",
+          "end": "2001"
+        },
+        {
+          "id": "2947dcd0-e65f-4293-af4b-3fe309e0dea0",
+          "label": "Charlie Clouser",
+          "begin": "1994",
+          "end": "2001"
+        },
+        {
+          "id": "2947dcd0-e65f-4293-af4b-3fe309e0dea0",
+          "label": "Charlie Clouser",
+          "begin": "1994",
+          "end": "2001"
+        },
+        {
+          "id": "2947dcd0-e65f-4293-af4b-3fe309e0dea0",
+          "label": "Charlie Clouser",
+          "begin": "1994",
+          "end": "2001"
+        },
+        {
+          "id": "2947dcd0-e65f-4293-af4b-3fe309e0dea0",
+          "label": "Charlie Clouser",
+          "begin": "1994",
+          "end": "2001"
+        },
+        {
+          "id": "28128435-f8c0-401c-a60d-ab3536cd573a",
+          "label": "Kevin McMahon",
+          "begin": "1996",
+          "end": "1996"
+        },
+        {
+          "id": "28128435-f8c0-401c-a60d-ab3536cd573a",
+          "label": "Kevin McMahon",
+          "begin": "1996",
+          "end": "1996"
+        },
+        {
+          "id": "ddd579af-9ca1-41ff-96a4-6e55212923c0",
+          "label": "Keith Hillebrandt",
+          "begin": "1997",
+          "end": "1999"
+        },
+        {
+          "id": "ddd579af-9ca1-41ff-96a4-6e55212923c0",
+          "label": "Keith Hillebrandt",
+          "begin": "1997",
+          "end": "1999"
+        },
+        {
+          "id": "9007d5ec-8abb-496d-9f49-8c89b9ba1381",
+          "label": "Dave Ogilvie",
+          "begin": "1997",
+          "end": "1999"
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "1999",
+          "end": "2000"
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "1999",
+          "end": "2000"
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "1999",
+          "end": "2000"
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "1999",
+          "end": "2000"
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "1999",
+          "end": "2000"
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "1999",
+          "end": "2000"
+        },
+        {
+          "id": "e45b9930-0363-4a20-86f4-2ff05544d0a9",
+          "label": "Jerome Dillon",
+          "begin": "1999",
+          "end": "2005-10-01"
+        },
+        {
+          "id": "e45b9930-0363-4a20-86f4-2ff05544d0a9",
+          "label": "Jerome Dillon",
+          "begin": "1999",
+          "end": "2005-10-01"
+        },
+        {
+          "id": "1fefa8b3-806b-4ab9-a066-66574b22aa16",
+          "label": "Atticus Ross",
+          "begin": "2004",
+          "end": null
+        },
+        {
+          "id": "1fefa8b3-806b-4ab9-a066-66574b22aa16",
+          "label": "Atticus Ross",
+          "begin": "2004",
+          "end": null
+        },
+        {
+          "id": "1fefa8b3-806b-4ab9-a066-66574b22aa16",
+          "label": "Atticus Ross",
+          "begin": "2004",
+          "end": null
+        },
+        {
+          "id": "1fefa8b3-806b-4ab9-a066-66574b22aa16",
+          "label": "Atticus Ross",
+          "begin": "2004",
+          "end": null
+        },
+        {
+          "id": "d735f972-f612-49e6-8815-f32994dad1af",
+          "label": "Alex Carapetis",
+          "begin": "2005-10-07",
+          "end": "2005-12-01"
+        },
+        {
+          "id": "2fd475b9-4a31-4b8c-8368-7b71118f2d71",
+          "label": "Aaron North",
+          "begin": "2005",
+          "end": "2007"
+        },
+        {
+          "id": "2fd475b9-4a31-4b8c-8368-7b71118f2d71",
+          "label": "Aaron North",
+          "begin": "2005",
+          "end": "2007"
+        },
+        {
+          "id": "ab4625d4-9947-481c-af95-5955b0b13023",
+          "label": "Jeordie White",
+          "begin": "2005",
+          "end": "2007"
+        },
+        {
+          "id": "ab4625d4-9947-481c-af95-5955b0b13023",
+          "label": "Jeordie White",
+          "begin": "2005",
+          "end": "2007"
+        },
+        {
+          "id": "ab4625d4-9947-481c-af95-5955b0b13023",
+          "label": "Jeordie White",
+          "begin": "2005",
+          "end": "2007"
+        },
+        {
+          "id": "ab4625d4-9947-481c-af95-5955b0b13023",
+          "label": "Jeordie White",
+          "begin": "2005",
+          "end": "2007"
+        },
+        {
+          "id": "ab4625d4-9947-481c-af95-5955b0b13023",
+          "label": "Jeordie White",
+          "begin": "2005",
+          "end": "2007"
+        },
+        {
+          "id": "7b88250d-891d-4186-9b16-b94c930be1b2",
+          "label": "Alessandro Cortini",
+          "begin": "2005",
+          "end": "2008-12"
+        },
+        {
+          "id": "7b88250d-891d-4186-9b16-b94c930be1b2",
+          "label": "Alessandro Cortini",
+          "begin": "2005",
+          "end": "2008-12"
+        },
+        {
+          "id": "7b88250d-891d-4186-9b16-b94c930be1b2",
+          "label": "Alessandro Cortini",
+          "begin": "2005",
+          "end": "2008-12"
+        },
+        {
+          "id": "7b88250d-891d-4186-9b16-b94c930be1b2",
+          "label": "Alessandro Cortini",
+          "begin": "2005",
+          "end": "2008-12"
+        },
+        {
+          "id": "7b88250d-891d-4186-9b16-b94c930be1b2",
+          "label": "Alessandro Cortini",
+          "begin": "2005",
+          "end": "2008-12"
+        },
+        {
+          "id": "1ba97964-8d70-4b33-a361-d1a4ed222672",
+          "label": "Josh Freese",
+          "begin": "2005",
+          "end": "2008-12"
+        },
+        {
+          "id": "1ba97964-8d70-4b33-a361-d1a4ed222672",
+          "label": "Josh Freese",
+          "begin": "2005",
+          "end": "2008-12"
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "2008",
+          "end": "2009"
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "2008",
+          "end": "2009"
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "2008",
+          "end": "2009"
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "2008",
+          "end": "2009"
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "2008",
+          "end": "2009"
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "2008",
+          "end": "2009"
+        },
+        {
+          "id": "673f2360-45c1-43d3-b0d2-cf6d798b2fdd",
+          "label": "Justin Meldal‐Johnsen",
+          "begin": "2008",
+          "end": "2009"
+        },
+        {
+          "id": "673f2360-45c1-43d3-b0d2-cf6d798b2fdd",
+          "label": "Justin Meldal‐Johnsen",
+          "begin": "2008",
+          "end": "2009"
+        },
+        {
+          "id": "673f2360-45c1-43d3-b0d2-cf6d798b2fdd",
+          "label": "Justin Meldal‐Johnsen",
+          "begin": "2008",
+          "end": "2009"
+        },
+        {
+          "id": "673f2360-45c1-43d3-b0d2-cf6d798b2fdd",
+          "label": "Justin Meldal‐Johnsen",
+          "begin": "2008",
+          "end": "2009"
+        },
+        {
+          "id": "673f2360-45c1-43d3-b0d2-cf6d798b2fdd",
+          "label": "Justin Meldal‐Johnsen",
+          "begin": "2008",
+          "end": "2009"
+        },
+        {
+          "id": "6b76ebd2-c44e-4059-b5ff-2854ccef92c1",
+          "label": "Ilan Rubin",
+          "begin": "2008",
+          "end": "2009"
+        },
+        {
+          "id": "6b76ebd2-c44e-4059-b5ff-2854ccef92c1",
+          "label": "Ilan Rubin",
+          "begin": "2008",
+          "end": "2009"
+        },
+        {
+          "id": "6b76ebd2-c44e-4059-b5ff-2854ccef92c1",
+          "label": "Ilan Rubin",
+          "begin": "2008",
+          "end": "2009"
+        },
+        {
+          "id": "6b76ebd2-c44e-4059-b5ff-2854ccef92c1",
+          "label": "Ilan Rubin",
+          "begin": "2008",
+          "end": "2009"
+        },
+        {
+          "id": "6b76ebd2-c44e-4059-b5ff-2854ccef92c1",
+          "label": "Ilan Rubin",
+          "begin": "2008",
+          "end": "2009"
+        },
+        {
+          "id": "73c3f499-60e2-44e1-81dd-7fe2191461fa",
+          "label": "Adrian Belew",
+          "begin": "2013",
+          "end": "2013"
+        },
+        {
+          "id": "73c3f499-60e2-44e1-81dd-7fe2191461fa",
+          "label": "Adrian Belew",
+          "begin": "2013",
+          "end": "2013"
+        },
+        {
+          "id": "73c3f499-60e2-44e1-81dd-7fe2191461fa",
+          "label": "Adrian Belew",
+          "begin": "2013",
+          "end": "2013"
+        },
+        {
+          "id": "3b5ed43f-9dfa-494b-a8f1-b152b6e75512",
+          "label": "Joshua Eustis",
+          "begin": "2013",
+          "end": "2013"
+        },
+        {
+          "id": "3b5ed43f-9dfa-494b-a8f1-b152b6e75512",
+          "label": "Joshua Eustis",
+          "begin": "2013",
+          "end": "2013"
+        },
+        {
+          "id": "3b5ed43f-9dfa-494b-a8f1-b152b6e75512",
+          "label": "Joshua Eustis",
+          "begin": "2013",
+          "end": "2013"
+        },
+        {
+          "id": "3b5ed43f-9dfa-494b-a8f1-b152b6e75512",
+          "label": "Joshua Eustis",
+          "begin": "2013",
+          "end": "2013"
+        },
+        {
+          "id": "3b5ed43f-9dfa-494b-a8f1-b152b6e75512",
+          "label": "Joshua Eustis",
+          "begin": "2013",
+          "end": "2013"
+        },
+        {
+          "id": "3b5ed43f-9dfa-494b-a8f1-b152b6e75512",
+          "label": "Joshua Eustis",
+          "begin": "2013",
+          "end": "2013"
+        },
+        {
+          "id": "3b5ed43f-9dfa-494b-a8f1-b152b6e75512",
+          "label": "Joshua Eustis",
+          "begin": "2013",
+          "end": "2013"
+        },
+        {
+          "id": "3b5ed43f-9dfa-494b-a8f1-b152b6e75512",
+          "label": "Joshua Eustis",
+          "begin": "2013",
+          "end": "2013"
+        },
+        {
+          "id": "f887110a-ddd9-4a4e-b9ea-e567523ef6e2",
+          "label": "Lisa Fischer",
+          "begin": "2013",
+          "end": "2013"
+        },
+        {
+          "id": "844bdcef-7a35-41a2-ae27-c30ef94e7c03",
+          "label": "Sharlotte Gibson",
+          "begin": "2013",
+          "end": "2013"
+        },
+        {
+          "id": "0dfd6aab-9056-4764-89b0-80bee7c9f998",
+          "label": "Pino Palladino",
+          "begin": "2013",
+          "end": "2013"
+        },
+        {
+          "id": "6b76ebd2-c44e-4059-b5ff-2854ccef92c1",
+          "label": "Ilan Rubin",
+          "begin": "2013",
+          "end": "2025"
+        },
+        {
+          "id": "6b76ebd2-c44e-4059-b5ff-2854ccef92c1",
+          "label": "Ilan Rubin",
+          "begin": "2013",
+          "end": "2025"
+        },
+        {
+          "id": "6b76ebd2-c44e-4059-b5ff-2854ccef92c1",
+          "label": "Ilan Rubin",
+          "begin": "2013",
+          "end": "2025"
+        },
+        {
+          "id": "6b76ebd2-c44e-4059-b5ff-2854ccef92c1",
+          "label": "Ilan Rubin",
+          "begin": "2013",
+          "end": "2025"
+        },
+        {
+          "id": "6b76ebd2-c44e-4059-b5ff-2854ccef92c1",
+          "label": "Ilan Rubin",
+          "begin": "2013",
+          "end": "2025"
+        },
+        {
+          "id": "6b76ebd2-c44e-4059-b5ff-2854ccef92c1",
+          "label": "Ilan Rubin",
+          "begin": "2013",
+          "end": "2025"
+        },
+        {
+          "id": "6b76ebd2-c44e-4059-b5ff-2854ccef92c1",
+          "label": "Ilan Rubin",
+          "begin": "2013",
+          "end": "2025"
+        },
+        {
+          "id": "7b88250d-891d-4186-9b16-b94c930be1b2",
+          "label": "Alessandro Cortini",
+          "begin": "2013",
+          "end": "2026-01"
+        },
+        {
+          "id": "7b88250d-891d-4186-9b16-b94c930be1b2",
+          "label": "Alessandro Cortini",
+          "begin": "2013",
+          "end": "2026-01"
+        },
+        {
+          "id": "7b88250d-891d-4186-9b16-b94c930be1b2",
+          "label": "Alessandro Cortini",
+          "begin": "2013",
+          "end": "2026-01"
+        },
+        {
+          "id": "7b88250d-891d-4186-9b16-b94c930be1b2",
+          "label": "Alessandro Cortini",
+          "begin": "2013",
+          "end": "2026-01"
+        },
+        {
+          "id": "7b88250d-891d-4186-9b16-b94c930be1b2",
+          "label": "Alessandro Cortini",
+          "begin": "2013",
+          "end": "2026-01"
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "2013",
+          "end": null
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "2013",
+          "end": null
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "2013",
+          "end": null
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "2013",
+          "end": null
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "2013",
+          "end": null
+        },
+        {
+          "id": "30343313-1e24-4758-950f-4a96309d7893",
+          "label": "Robin Finck",
+          "begin": "2013",
+          "end": null
+        },
+        {
+          "id": "1ba97964-8d70-4b33-a361-d1a4ed222672",
+          "label": "Josh Freese",
+          "begin": "2025",
+          "end": null
+        },
+        {
+          "id": "2d8e6fbf-d30d-47e2-89f9-76eba6b1860e",
+          "label": "Stu Brooks",
+          "begin": "2026-02",
+          "end": null
+        },
+        {
+          "id": "2d8e6fbf-d30d-47e2-89f9-76eba6b1860e",
+          "label": "Stu Brooks",
+          "begin": "2026-02",
+          "end": null
+        },
+        {
+          "id": "2d8e6fbf-d30d-47e2-89f9-76eba6b1860e",
+          "label": "Stu Brooks",
+          "begin": "2026-02",
+          "end": null
+        },
+        {
+          "id": "2d8e6fbf-d30d-47e2-89f9-76eba6b1860e",
+          "label": "Stu Brooks",
+          "begin": "2026-02",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "depeche-mode",
+      "label": "Depeche Mode",
+      "musicbrainzId": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+      "members": [
+        {
+          "id": "6ef12fc1-40f4-41ea-ac52-f487840255bd",
+          "label": "Vince Clarke",
+          "begin": "1980",
+          "end": "1981"
+        },
+        {
+          "id": "0042aa4d-a972-4a2a-b7cf-8044d09bbc67",
+          "label": "Andrew Fletcher",
+          "begin": "1980",
+          "end": "2022-05-26"
+        },
+        {
+          "id": "d547b148-cf1f-421b-9464-ce7411ba44b8",
+          "label": "Dave Gahan",
+          "begin": "1980",
+          "end": null
+        },
+        {
+          "id": "e08ac443-f1d2-4666-abd1-fa5859592981",
+          "label": "Martin L. Gore",
+          "begin": "1980",
+          "end": null
+        },
+        {
+          "id": "9785d4c6-0922-408b-9ca7-bf46c0548f71",
+          "label": "Alan Wilder",
+          "begin": "1982",
+          "end": "1995-06"
+        }
+      ]
+    },
+    {
+      "id": "marilyn-manson",
+      "label": "Marilyn Manson",
+      "musicbrainzId": "5dfdca28-9ddc-4853-933c-8bc97d87beec",
+      "members": [
+        {
+          "id": "91cf97ed-350e-48e4-a0c4-d6aa69dcb439",
+          "label": "Olivia Newton Bundy",
+          "begin": "1989",
+          "end": "1990"
+        },
+        {
+          "id": "d0c854d8-b878-4633-9422-badcdf452d04",
+          "label": "Zsa Zsa Speck",
+          "begin": "1989",
+          "end": "1990"
+        },
+        {
+          "id": "e9a9acf3-673e-441a-90a6-8d05e8e1e892",
+          "label": "Daisy Berkowitz",
+          "begin": "1989",
+          "end": "1996"
+        },
+        {
+          "id": "80cadd99-f560-41e3-babd-16292bbd248a",
+          "label": "Marilyn Manson",
+          "begin": "1989",
+          "end": null
+        },
+        {
+          "id": "80cadd99-f560-41e3-babd-16292bbd248a",
+          "label": "Marilyn Manson",
+          "begin": "1989",
+          "end": null
+        },
+        {
+          "id": "5057eba4-da15-45df-9948-8b8899c3b3ee",
+          "label": "Gidget Gein",
+          "begin": "1990",
+          "end": "1993-12"
+        },
+        {
+          "id": "60c083b5-e3c9-4410-9f9a-0b5f4b4d5c2c",
+          "label": "Madonna Wayne Gacy",
+          "begin": "1990",
+          "end": "2007"
+        },
+        {
+          "id": "47284622-a77f-48df-bb1c-3320c8cb6f33",
+          "label": "Sara Lee Lucas",
+          "begin": "1991",
+          "end": "1995"
+        },
+        {
+          "id": "ab4625d4-9947-481c-af95-5955b0b13023",
+          "label": "Jeordie White",
+          "begin": "1994",
+          "end": "2002"
+        },
+        {
+          "id": "8bb2d3b9-efce-49cc-b26f-3f1cb29d2eb0",
+          "label": "Ginger Fish",
+          "begin": "1995",
+          "end": "2004"
+        },
+        {
+          "id": "54869a23-d2b2-476f-9fc8-aed594b8eed5",
+          "label": "Zim Zum",
+          "begin": "1996",
+          "end": "1998"
+        },
+        {
+          "id": "66ac10d4-37cc-4b84-91dd-4863e3dc9a32",
+          "label": "John 5",
+          "begin": "1998",
+          "end": "2004"
+        },
+        {
+          "id": "66d8b7c7-8096-4096-b528-04489969e452",
+          "label": "Skold",
+          "begin": "2002",
+          "end": "2006"
+        },
+        {
+          "id": "34795fb6-83c2-4a3a-9c76-be75de22c761",
+          "label": "Mark Chaussee",
+          "begin": "2004",
+          "end": "2005"
+        },
+        {
+          "id": "0923598e-2b97-4527-b984-5feed94c168d",
+          "label": "Chris Vrenna",
+          "begin": "2004",
+          "end": "2005"
+        },
+        {
+          "id": "66d8b7c7-8096-4096-b528-04489969e452",
+          "label": "Skold",
+          "begin": "2006",
+          "end": "2008"
+        },
+        {
+          "id": "8bb2d3b9-efce-49cc-b26f-3f1cb29d2eb0",
+          "label": "Ginger Fish",
+          "begin": "2006",
+          "end": "2011-02-23"
+        },
+        {
+          "id": "6eb510ad-dc0e-4b12-b501-1a4a9b70867c",
+          "label": "Rob Holliday",
+          "begin": "2007",
+          "end": "2008"
+        },
+        {
+          "id": "0923598e-2b97-4527-b984-5feed94c168d",
+          "label": "Chris Vrenna",
+          "begin": "2007",
+          "end": "2011-11"
+        },
+        {
+          "id": "ab4625d4-9947-481c-af95-5955b0b13023",
+          "label": "Jeordie White",
+          "begin": "2008-01",
+          "end": "2017-10-24"
+        },
+        {
+          "id": "6ed22d35-c6fd-4846-8108-1f71d1ee0f82",
+          "label": "Wes Borland",
+          "begin": "2008",
+          "end": "2008"
+        },
+        {
+          "id": "ebc1e655-c5b1-47cd-abab-0075ff580092",
+          "label": "Andy Gerold",
+          "begin": "2009",
+          "end": "2009"
+        },
+        {
+          "id": "338d8fd9-d595-410d-8762-4e5286da3cbe",
+          "label": "Fred Sablan",
+          "begin": "2010-07",
+          "end": "2014"
+        },
+        {
+          "id": "71799f19-2e9e-4562-a6af-924ae33e726e",
+          "label": "Gil Sharone",
+          "begin": "2013",
+          "end": "2019-03-27"
+        },
+        {
+          "id": "03cfec4a-9885-444c-9e74-5fbab5861106",
+          "label": "Tyler Bates",
+          "begin": "2014",
+          "end": "2018"
+        },
+        {
+          "id": "03cfec4a-9885-444c-9e74-5fbab5861106",
+          "label": "Tyler Bates",
+          "begin": "2014",
+          "end": "2018"
+        },
+        {
+          "id": "03cfec4a-9885-444c-9e74-5fbab5861106",
+          "label": "Tyler Bates",
+          "begin": "2014",
+          "end": "2018"
+        },
+        {
+          "id": "9b50efa7-a1b4-4136-88d6-513163546848",
+          "label": "Juan Alderete",
+          "begin": "2017-11-05",
+          "end": "2020"
+        },
+        {
+          "id": "31713871-0bfb-4a7c-b82b-2657670dd19d",
+          "label": "Brandon Pertzborn",
+          "begin": "2019-06-18",
+          "end": "2020"
+        },
+        {
+          "id": "03cfec4a-9885-444c-9e74-5fbab5861106",
+          "label": "Tyler Bates",
+          "begin": "2024",
+          "end": "2026-01"
+        },
+        {
+          "id": "03cfec4a-9885-444c-9e74-5fbab5861106",
+          "label": "Tyler Bates",
+          "begin": "2024",
+          "end": "2026-01"
+        },
+        {
+          "id": "03cfec4a-9885-444c-9e74-5fbab5861106",
+          "label": "Tyler Bates",
+          "begin": "2024",
+          "end": "2026-01"
+        },
+        {
+          "id": "e30333ae-4220-4466-a50e-056e888ffe0e",
+          "label": "Reba Meyers",
+          "begin": "2024",
+          "end": "2026"
+        },
+        {
+          "id": "e30333ae-4220-4466-a50e-056e888ffe0e",
+          "label": "Reba Meyers",
+          "begin": "2024",
+          "end": "2026"
+        },
+        {
+          "id": "92a0f3b8-65a0-4205-8869-7c2af67aa974",
+          "label": "Piggy D.",
+          "begin": "2024",
+          "end": null
+        },
+        {
+          "id": "92a0f3b8-65a0-4205-8869-7c2af67aa974",
+          "label": "Piggy D.",
+          "begin": "2024",
+          "end": null
+        },
+        {
+          "id": "71799f19-2e9e-4562-a6af-924ae33e726e",
+          "label": "Gil Sharone",
+          "begin": "2024",
+          "end": null
+        },
+        {
+          "id": "66d8b7c7-8096-4096-b528-04489969e452",
+          "label": "Skold",
+          "begin": "2026-02",
+          "end": null
+        },
+        {
+          "id": "6976af55-fc14-470f-a4d8-11697b32c1d1",
+          "label": "Nick Annis",
+          "begin": "2026-04",
+          "end": null
+        },
+        {
+          "id": "6976af55-fc14-470f-a4d8-11697b32c1d1",
+          "label": "Nick Annis",
+          "begin": "2026-04",
+          "end": null
+        },
+        {
+          "id": "33088fea-8359-4e82-b099-6d051dcc9224",
+          "label": "Paul Wiley",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "54869a23-d2b2-476f-9fc8-aed594b8eed5",
+          "label": "Zim Zum",
+          "begin": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "wumpscut",
+      "label": ":wumpscut:",
+      "musicbrainzId": "e4e79264-c1ec-490c-b823-b2918204cd4f",
+      "members": [
+        {
+          "id": "3d1c0b65-8650-4db6-a1c2-2da7ef5744bf",
+          "label": "Rudy Ratzinger",
+          "begin": "1991-05",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "rammstein",
+      "label": "Rammstein",
+      "musicbrainzId": "b2d122f9-eadb-4930-a196-8f221eeb0c66",
+      "members": [
+        {
+          "id": "2c449bbd-b19e-456b-af78-f2e592ff2245",
+          "label": "Richard Z. Kruspe",
+          "begin": "1994-02",
+          "end": null
+        },
+        {
+          "id": "438cfe24-e99c-4b74-94ff-7289ede0bb46",
+          "label": "Paul Landers",
+          "begin": "1994-02",
+          "end": null
+        },
+        {
+          "id": "f71f8e0d-c109-4a50-9826-2559981d915e",
+          "label": "Till Lindemann",
+          "begin": "1994-02",
+          "end": null
+        },
+        {
+          "id": "11f64d5e-77a6-48f7-ac1f-6d17b3ac2ba9",
+          "label": "Christian Lorenz",
+          "begin": "1994-02",
+          "end": null
+        },
+        {
+          "id": "730e20a5-66d3-4052-9143-a3ea7b56f568",
+          "label": "Oliver Riedel",
+          "begin": "1994-02",
+          "end": null
+        },
+        {
+          "id": "bb9fe2b7-87fa-43e6-95ca-bc4592d8d5bc",
+          "label": "Christoph Schneider",
+          "begin": "1994-02",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "7-minutes-of-nausea",
+      "label": "7 Minutes of Nausea",
+      "musicbrainzId": "96843ba2-97ec-4120-8c25-044e001e95ed",
+      "members": [
+        {
+          "id": "55638639-ef78-4f4e-a96b-ec6e68f5472e",
+          "label": "Mick Hollows",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "0f281666-1cdf-491c-9379-ca47bed40a80",
+          "label": "Scut",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "40b77382-5e24-4cd8-bc43-c0bdcf8bbc83",
+          "label": "Matthias Weigand",
+          "begin": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "killing-joke",
+      "label": "Killing Joke",
+      "musicbrainzId": "f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
+      "members": [
+        {
+          "id": "0a1811e9-4251-4669-b5ab-0534c145806f",
+          "label": "Youth",
+          "begin": "1979",
+          "end": "1982"
+        },
+        {
+          "id": "beffec12-3c55-4a31-a666-2726c1f173c1",
+          "label": "Paul Ferguson",
+          "begin": "1979",
+          "end": "1986"
+        },
+        {
+          "id": "282de6ac-ba23-41f3-9fef-67c531b56167",
+          "label": "Jaz Coleman",
+          "begin": "1979",
+          "end": null
+        },
+        {
+          "id": "ec5f36d7-ebe5-461e-afd6-c2839f0f3325",
+          "label": "Paul Raven",
+          "begin": "1983",
+          "end": "1986"
+        },
+        {
+          "id": "4fdcc071-4125-433c-9b57-de2084d8d48f",
+          "label": "Martin Atkins",
+          "begin": "1990",
+          "end": "1990"
+        },
+        {
+          "id": "ec5f36d7-ebe5-461e-afd6-c2839f0f3325",
+          "label": "Paul Raven",
+          "begin": "1990",
+          "end": "1991"
+        },
+        {
+          "id": "0a1811e9-4251-4669-b5ab-0534c145806f",
+          "label": "Youth",
+          "begin": "1992",
+          "end": null
+        },
+        {
+          "id": "ec5f36d7-ebe5-461e-afd6-c2839f0f3325",
+          "label": "Paul Raven",
+          "begin": "2002",
+          "end": "2007"
+        },
+        {
+          "id": "24a3a217-7405-4fed-9d76-6f7d708b6dcf",
+          "label": "Reza Udhin",
+          "begin": "2005",
+          "end": null
+        },
+        {
+          "id": "f8cec1ac-ade6-46af-96c8-b600b10374eb",
+          "label": "Geordie Walker",
+          "begin": null,
+          "end": "2023-11-26"
+        },
+        {
+          "id": "136b2664-686f-4ae4-acf9-6f34446636d4",
+          "label": "Danny Lohner",
+          "begin": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "laibach",
+      "label": "Laibach",
+      "musicbrainzId": "c779e090-909f-4403-a90e-c1d08cdbb719",
+      "members": [
+        {
+          "id": "50c35596-7d04-4292-8459-82f60f484d6a",
+          "label": "Dejan Knez",
+          "begin": "1980-06-01",
+          "end": "2004"
+        },
+        {
+          "id": "ed14263e-d8b8-4f84-9d17-06e8a3f65b83",
+          "label": "Srečko Bajda",
+          "begin": "1980-06-01",
+          "end": null
+        },
+        {
+          "id": "e49d4e83-4023-4b89-99d0-1cde59303aef",
+          "label": "Andrej Lupinc",
+          "begin": "1980-06-01",
+          "end": null
+        },
+        {
+          "id": "2152e040-46c6-4b48-b51d-970f2ae571a2",
+          "label": "Bine Zerko",
+          "begin": "1980-06-01",
+          "end": null
+        },
+        {
+          "id": "2696805e-6021-413d-9ace-033e639c7e9c",
+          "label": "Tomaž Hostnik",
+          "begin": "1980",
+          "end": "1982-12-21"
+        },
+        {
+          "id": "b12eb96c-dea8-42d3-88f0-12a0899eeefc",
+          "label": "Milan Fras",
+          "begin": "1983",
+          "end": null
+        },
+        {
+          "id": "c158ee2e-a59d-446e-9fe8-6b8ae7be55b9",
+          "label": "Janez Gabrič",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "6991bca5-0a66-4893-aca6-bd86c9aa5020",
+          "label": "Luka Jamnik",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "258fc0e2-5817-47f6-b9ec-15af9125653e",
+          "label": "Ivan Novak",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "4e135c09-ade6-443d-b89c-8f0a11f39b3c",
+          "label": "Sašo Vollmaier",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "edcc9731-a2b0-4ab1-965a-0c045c3614b3",
+          "label": "Damjan Bizilj",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "23556ab0-fb06-44fa-8cf6-1be31f638e68",
+          "label": "Tone Dimnik",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "44beed20-55a4-48f1-8ba0-733b3bac1f66",
+          "label": "Ervin Markošek",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "a04a19c2-1982-4731-8fdb-74c9ad8ba61e",
+          "label": "Matej Mršnik",
+          "begin": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "fear-factory",
+      "label": "Fear Factory",
+      "musicbrainzId": "c17f08f4-2542-46fb-97f3-3202d60c225a",
+      "members": [
+        {
+          "id": "b59e865f-4e5a-48dd-83e3-37a4575b4290",
+          "label": "Dave Gibney",
+          "begin": "1989",
+          "end": "1991"
+        },
+        {
+          "id": "ebd0f3b6-48f2-4e5c-a72b-6ac34696ef35",
+          "label": "Dino Cazares",
+          "begin": "1989",
+          "end": "2002"
+        },
+        {
+          "id": "bc933f46-f045-454a-b2e6-7e64811947a0",
+          "label": "Raymond Herrera",
+          "begin": "1989",
+          "end": "2009"
+        },
+        {
+          "id": "d0ec013f-6b1e-4f9a-b964-dccfe75f294e",
+          "label": "Burton C. Bell",
+          "begin": "1989",
+          "end": "2020-09"
+        },
+        {
+          "id": "d99d495a-8aec-4180-8863-8d5e1468e1f7",
+          "label": "Andy Romero",
+          "begin": "1991",
+          "end": "1992"
+        },
+        {
+          "id": "90553281-0b27-4ee6-975e-e05f6d650633",
+          "label": "Andrew Shives",
+          "begin": "1992",
+          "end": "1993"
+        },
+        {
+          "id": "f2d39886-29ba-4254-bc70-d9a6f8cba26e",
+          "label": "Christian Olde Wolbers",
+          "begin": "1993",
+          "end": "2002"
+        },
+        {
+          "id": "f2d39886-29ba-4254-bc70-d9a6f8cba26e",
+          "label": "Christian Olde Wolbers",
+          "begin": "2003",
+          "end": "2009"
+        },
+        {
+          "id": "eeb2d9ef-e5d7-41da-87ce-82926b611ec0",
+          "label": "Byron Stroud",
+          "begin": "2003",
+          "end": "2012"
+        },
+        {
+          "id": "b007f65c-c831-442c-bbf4-378638b236a4",
+          "label": "Gene Hoglan",
+          "begin": "2009",
+          "end": "2012"
+        },
+        {
+          "id": "ebd0f3b6-48f2-4e5c-a72b-6ac34696ef35",
+          "label": "Dino Cazares",
+          "begin": "2009",
+          "end": null
+        },
+        {
+          "id": "5e6bfa5d-e635-4ca4-ae36-758b019f25a2",
+          "label": "Matt DeVries",
+          "begin": "2012",
+          "end": null
+        },
+        {
+          "id": "552dca97-18c4-401a-81a1-f4d811a40a49",
+          "label": "Mike Heller",
+          "begin": "2012",
+          "end": null
+        },
+        {
+          "id": "19183df5-e496-4fe3-b670-b299549ab317",
+          "label": "Tony Campos",
+          "begin": "2015",
+          "end": null
+        },
+        {
+          "id": "a27c91c9-ec0e-488d-b831-dbd90cc32389",
+          "label": "Milo Silvestro",
+          "begin": "2023",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "einst-rzende-neubauten",
+      "label": "Einstürzende Neubauten",
+      "musicbrainzId": "6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+      "members": [
+        {
+          "id": "009778db-cc8b-4f58-aae5-2c34da688a98",
+          "label": "Beate Bartel",
+          "begin": "1980",
+          "end": "1980"
+        },
+        {
+          "id": "22e67027-3c07-44d5-8501-8eed7b13286b",
+          "label": "Gudrun Gut",
+          "begin": "1980",
+          "end": "1980"
+        },
+        {
+          "id": "b6471e10-c91e-482d-8eb6-2bfe5cf737e5",
+          "label": "Blixa Bargeld",
+          "begin": "1980",
+          "end": null
+        },
+        {
+          "id": "76533eaf-5df9-4f80-a21a-fbcf551dec42",
+          "label": "Andrew Chudy",
+          "begin": "1980",
+          "end": null
+        },
+        {
+          "id": "64710735-6c39-44e8-8d5b-ffced2a98991",
+          "label": "Alexander Hacke",
+          "begin": "1980",
+          "end": null
+        },
+        {
+          "id": "7f7b89cf-3fda-404d-8772-e0d970f8cc1d",
+          "label": "N.U. Unruh",
+          "begin": "1980",
+          "end": null
+        },
+        {
+          "id": "3ae3afb8-9ee3-4230-8558-827ca1fb74da",
+          "label": "Mark Chung",
+          "begin": "1981",
+          "end": "1994"
+        },
+        {
+          "id": "63a3b285-3cec-444c-ab76-5b1e306c7011",
+          "label": "F.M. Einheit",
+          "begin": "1981",
+          "end": "1995"
+        },
+        {
+          "id": "89d87aa7-a40c-4f15-b308-533130a5ba7f",
+          "label": "Roland Wolf",
+          "begin": "1995",
+          "end": "1995"
+        },
+        {
+          "id": "5982653b-c55d-4c6c-93ae-18d740e02501",
+          "label": "Jochen Arbeit",
+          "begin": "1996",
+          "end": null
+        },
+        {
+          "id": "bc6e9371-dc4a-49c5-97c2-4d1b495dc595",
+          "label": "Rudi Moser",
+          "begin": "1996",
+          "end": null
+        },
+        {
+          "id": "a7b0cbb3-3d1b-4432-8758-77b0677e4337",
+          "label": "Ash Wednesday",
+          "begin": "1997",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "hocico",
+      "label": "Hocico",
+      "musicbrainzId": "b16fd684-831e-4128-8120-6626e76f88c6",
+      "members": [
+        {
+          "id": "c4d0cdff-c371-4ee1-8818-c86ad287aa64",
+          "label": "Racso Agroyam",
+          "begin": "1993",
+          "end": null
+        },
+        {
+          "id": "1ae50b34-1e5f-4c80-8c88-176d78a2cb2b",
+          "label": "Erk Aicrag",
+          "begin": "1993",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "severed-heads",
+      "label": "Severed Heads",
+      "musicbrainzId": "4976edcf-58c3-49b6-b6f1-2d8277e60d26",
+      "members": [
+        {
+          "id": "8bfc65b9-f0b0-4d2e-836e-cc98602543c5",
+          "label": "Richard Fielding",
+          "begin": "1979",
+          "end": "1982"
+        },
+        {
+          "id": "e551cffd-296d-4232-a95d-6ceae879162d",
+          "label": "Tom Ellard",
+          "begin": "1979",
+          "end": null
+        },
+        {
+          "id": "ca57924c-3d48-4bb5-90b5-a0717e665175",
+          "label": "Garry Bradbury",
+          "begin": "1981",
+          "end": "1985"
+        },
+        {
+          "id": "50137659-39b3-4eb7-80c7-b29f65ed1c6e",
+          "label": "Simon Knuckey",
+          "begin": "1982",
+          "end": "1984"
+        },
+        {
+          "id": "1e72415b-dc52-4484-b8b2-10e8de03748a",
+          "label": "Paul Deering",
+          "begin": "1984",
+          "end": "1985"
         }
       ]
     }
