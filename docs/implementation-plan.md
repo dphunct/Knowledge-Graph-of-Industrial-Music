@@ -35,6 +35,8 @@ The following pull requests implement the current application work and must be m
 3. Add per-fact provenance URLs and confidence notes.
 4. Populate relationship validity periods for the future year view.
 
+The discovery pass uses a bounded MusicBrainz search for group artists whose canonical record explicitly carries the `industrial` tag. New projects remain unconnected until separate, cited relationship research is available.
+
 ## Next: explorer depth
 
 The current review chain implements focused relationship context, temporal filtering, orbitable WebGL 3D, and control help. A later refinement should add relationship-specific evidence panels and richer 3D layout controls.
