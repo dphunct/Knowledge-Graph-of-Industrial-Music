@@ -1,0 +1,1069 @@
+{
+  "provider": "MusicBrainz",
+  "retrievedAt": "2026-09-24T13:07:53.960Z",
+  "pacingMs": 1100,
+  "projects": [
+    {
+      "id": "ministry",
+      "label": "Ministry",
+      "musicbrainzId": "13df2a46-f72f-40e7-aa63-26fcf62c7048",
+      "members": [
+        {
+          "id": "754fa1fd-84d6-4f07-b70e-f39df342fe33",
+          "label": "Stephen George",
+          "begin": "1981",
+          "end": "1984"
+        },
+        {
+          "id": "6c0dadab-266a-4601-8394-5b8e19e90def",
+          "label": "Al Jourgensen",
+          "begin": "1981",
+          "end": null
+        },
+        {
+          "id": "f40bf2d1-1da5-4146-96ab-865242554a66",
+          "label": "Bill Rieflin",
+          "begin": "1986",
+          "end": "1995-02"
+        },
+        {
+          "id": "5bec856f-b78b-4216-8af5-1c0c6365bcbe",
+          "label": "Paul Barker",
+          "begin": "1986",
+          "end": "2004-01"
+        },
+        {
+          "id": "ecb41014-1d7a-4987-a107-df49b2d8d77c",
+          "label": "Chris Connelly",
+          "begin": "1987",
+          "end": "1991"
+        },
+        {
+          "id": "7e557e6e-e9b6-4041-b407-3290224465a0",
+          "label": "Michael Balch",
+          "begin": "1991",
+          "end": "1993"
+        },
+        {
+          "id": "05af9acb-49ef-4c1f-9431-06a4ea3909bf",
+          "label": "Louis Svitek",
+          "begin": "1992",
+          "end": "2003"
+        },
+        {
+          "id": "9acbaf6a-9101-43ce-a749-c137dbfb1127",
+          "label": "Max Brody",
+          "begin": "2003",
+          "end": "2004"
+        },
+        {
+          "id": "d4df74ef-312c-4302-a768-78140cf1a630",
+          "label": "John Monte",
+          "begin": "2004-01",
+          "end": "2004-09"
+        },
+        {
+          "id": "4ad95d38-a326-4f41-953a-63e84de39ab4",
+          "label": "Mark Baker",
+          "begin": "2004",
+          "end": "2005"
+        },
+        {
+          "id": "56edb00b-c5d5-426a-a756-993f64b6ad2e",
+          "label": "Tommy Victor",
+          "begin": "2005",
+          "end": null
+        },
+        {
+          "id": "ec5f36d7-ebe5-461e-afd6-c2839f0f3325",
+          "label": "Paul Raven",
+          "begin": "2006",
+          "end": "2007"
+        },
+        {
+          "id": "3b1c8626-31d0-4f1e-97be-99449a411c3c",
+          "label": "Sin Quirin",
+          "begin": "2006",
+          "end": null
+        },
+        {
+          "id": "19183df5-e496-4fe3-b670-b299549ab317",
+          "label": "Tony Campos",
+          "begin": "2007",
+          "end": "2008"
+        },
+        {
+          "id": "d0ec013f-6b1e-4f9a-b964-dccfe75f294e",
+          "label": "Burton C. Bell",
+          "begin": "2007",
+          "end": null
+        },
+        {
+          "id": "c117e211-c0f0-4062-a86b-7fa7df4bd460",
+          "label": "Aaron Rossi",
+          "begin": "2008",
+          "end": "2008"
+        },
+        {
+          "id": "19183df5-e496-4fe3-b670-b299549ab317",
+          "label": "Tony Campos",
+          "begin": "2011",
+          "end": "2013"
+        },
+        {
+          "id": "19183df5-e496-4fe3-b670-b299549ab317",
+          "label": "Tony Campos",
+          "begin": "2014",
+          "end": "2015"
+        },
+        {
+          "id": "ceb53e53-8ff1-4328-ae74-09d3a5d7515c",
+          "label": "Cesar Soto",
+          "begin": "2015",
+          "end": null
+        },
+        {
+          "id": "2a512157-d31c-4ebd-bbb4-c965ab8e58b6",
+          "label": "Derek Abrams",
+          "begin": "2017-09",
+          "end": null
+        },
+        {
+          "id": "19183df5-e496-4fe3-b670-b299549ab317",
+          "label": "Tony Campos",
+          "begin": "2017",
+          "end": "2019"
+        },
+        {
+          "id": "a3198035-1a65-4a48-8b48-0dc83e0325a9",
+          "label": "John Bechdel",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "406189b8-6147-4ff5-b1b0-cb59b1c4f9d5",
+          "label": "John Davis",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "e6ecaed1-63f1-45d2-be0d-c5122f971f1c",
+          "label": "Shay Jones",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "302786f8-2c0f-41bb-9b7c-336e3844197c",
+          "label": "Robert Roberts",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "f152f783-eebe-4523-ade3-450508ef461e",
+          "label": "Martin Sorenson",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "9ac3cf69-a8ea-48dd-b281-69d44d2bb6d2",
+          "label": "Tia Sprocket",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "7b505163-5792-47fa-9800-253fad24a8ac",
+          "label": "William Tucker",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "90023d8a-3907-45ec-a2aa-b8da61a6d0bd",
+          "label": "Jeff Ward",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "33b09380-db28-4c9c-9fdd-ab5c20049c61",
+          "label": "Rey Washam",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "44df943b-832d-49f9-89c3-cb592dc0e9a3",
+          "label": "Mike Scaccia",
+          "begin": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "skinny-puppy",
+      "label": "Skinny Puppy",
+      "musicbrainzId": "5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
+      "members": [
+        {
+          "id": "e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
+          "label": "cEvin Key",
+          "begin": "1982",
+          "end": "1996"
+        },
+        {
+          "id": "5778f668-1a4c-482f-beb9-08b15b0f861c",
+          "label": "Ogre",
+          "begin": "1982",
+          "end": "1996"
+        },
+        {
+          "id": "201da624-a67d-4ba9-87c0-39136e78ccf3",
+          "label": "Wilhelm Schroeder",
+          "begin": "1984",
+          "end": "1986"
+        },
+        {
+          "id": "528d8a44-92f0-4614-aeb4-cb3516c0f2cd",
+          "label": "Dwayne Rudolph Goettel",
+          "begin": "1986",
+          "end": "1995-08-23"
+        },
+        {
+          "id": "e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
+          "label": "cEvin Key",
+          "begin": "2003",
+          "end": "2023-12-05"
+        },
+        {
+          "id": "5778f668-1a4c-482f-beb9-08b15b0f861c",
+          "label": "Ogre",
+          "begin": "2003",
+          "end": "2023-12-05"
+        },
+        {
+          "id": "241cfb26-6834-4387-8898-d4bdc84a30ea",
+          "label": "Mark Walk",
+          "begin": "2003",
+          "end": "2023-12-05"
+        },
+        {
+          "id": "e23650c5-46dd-47be-b177-068311415b5e",
+          "label": "Justin Bennett",
+          "begin": "2004",
+          "end": "2023-12-05"
+        },
+        {
+          "id": "12016484-6011-479e-82ad-00cec78a5481",
+          "label": "Matthew Setzer",
+          "begin": "2015",
+          "end": "2023-12-05"
+        }
+      ]
+    },
+    {
+      "id": "front-242",
+      "label": "Front 242",
+      "musicbrainzId": "8fb6c00f-61d8-4f27-98f9-53e1ba481626",
+      "members": [
+        {
+          "id": "be2f9727-b880-47a5-9235-5347027b3f08",
+          "label": "Dirk Bergen",
+          "begin": "1981",
+          "end": "1983"
+        },
+        {
+          "id": "319cc50d-a877-49a3-8f87-8efe22f60e09",
+          "label": "Daniel Bressanutti",
+          "begin": "1981",
+          "end": null
+        },
+        {
+          "id": "70adfe31-83d6-43d9-b9f4-7ab5eff483f4",
+          "label": "Patrick Codenys",
+          "begin": "1982",
+          "end": null
+        },
+        {
+          "id": "2c444dd6-75b6-42e0-9f7e-a0a086c48ba9",
+          "label": "Jean-Luc de Meyer",
+          "begin": "1982",
+          "end": null
+        },
+        {
+          "id": "49197759-80b0-4f46-934c-c5d2fed17ac3",
+          "label": "Richard 23",
+          "begin": "1983",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "front-line-assembly",
+      "label": "Front Line Assembly",
+      "musicbrainzId": "b847e9d2-c931-4daf-900c-42c7b2c42e16",
+      "members": [
+        {
+          "id": "7e557e6e-e9b6-4041-b407-3290224465a0",
+          "label": "Michael Balch",
+          "begin": "1988",
+          "end": "1989"
+        },
+        {
+          "id": "93e8c41e-8e4f-4d08-bbf5-bc1a903b2423",
+          "label": "Devin Townsend",
+          "begin": "1994",
+          "end": "1995"
+        },
+        {
+          "id": "bca263b8-ff61-4a06-a0f2-f3a163c33e25",
+          "label": "Jed Simon",
+          "begin": "1995",
+          "end": "1999"
+        },
+        {
+          "id": "8ce6ef90-0e4b-4864-ae23-98b52da5c1cc",
+          "label": "Adrian White",
+          "begin": "1995",
+          "end": "2002"
+        },
+        {
+          "id": "5d86aa2f-35fd-4801-b810-2fe4fb5bc6f5",
+          "label": "Chris Peterson",
+          "begin": "1997",
+          "end": "2003"
+        },
+        {
+          "id": "beb40247-76e3-471a-be5b-249feff5ac3b",
+          "label": "Jeremy Inkel",
+          "begin": "2005",
+          "end": "2018-01-11"
+        },
+        {
+          "id": "8ce6ef90-0e4b-4864-ae23-98b52da5c1cc",
+          "label": "Adrian White",
+          "begin": "2006",
+          "end": "2008"
+        },
+        {
+          "id": "5d86aa2f-35fd-4801-b810-2fe4fb5bc6f5",
+          "label": "Chris Peterson",
+          "begin": "2006",
+          "end": null
+        },
+        {
+          "id": "fe54b169-947c-4c0d-89ac-3623f147c51e",
+          "label": "Jared Slingerland",
+          "begin": "2006",
+          "end": null
+        },
+        {
+          "id": "3f2cdb0c-41a2-449c-bd7c-a2cdb242c692",
+          "label": "Jason Filipchuk",
+          "begin": "2009",
+          "end": null
+        },
+        {
+          "id": "7ee30fce-cd3d-437d-9ff0-b2ef195bda33",
+          "label": "Rhys Fulber",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "e10b76e5-dc32-4e9f-83b9-4f717400b19f",
+          "label": "Bill Leeb",
+          "begin": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "kmfdm",
+      "label": "KMFDM",
+      "musicbrainzId": "45074d7c-5307-44a8-854f-ae072e1622ae",
+      "members": [
+        {
+          "id": "9549f633-19ec-439e-b5d9-37be68efc5ae",
+          "label": "Udo Sturm",
+          "begin": "1984-02-29",
+          "end": "1984"
+        },
+        {
+          "id": "8d2b70fb-a338-4702-8ce2-3211a4704d6f",
+          "label": "Sascha Konietzko",
+          "begin": "1984-02-29",
+          "end": null
+        },
+        {
+          "id": "6a0ce9fd-5cda-4b3e-9b32-e411f2c2a57f",
+          "label": "Raymond Watts",
+          "begin": "1984",
+          "end": "1988"
+        },
+        {
+          "id": "cbb01256-174d-495c-bbdd-a08baca46b89",
+          "label": "Rudolf Naomi",
+          "begin": "1985",
+          "end": "1986"
+        },
+        {
+          "id": "e3537eb6-fdd0-4015-a854-705222eb4731",
+          "label": "En Esch",
+          "begin": "1985",
+          "end": "1999-01-22"
+        },
+        {
+          "id": "cbb01256-174d-495c-bbdd-a08baca46b89",
+          "label": "Rudolf Naomi",
+          "begin": "1989",
+          "end": "1991"
+        },
+        {
+          "id": "e49d3c7d-87eb-481a-a4ab-1acca304879c",
+          "label": "Günter Schulz",
+          "begin": "1989",
+          "end": "1999-01-22"
+        },
+        {
+          "id": "85b5bf43-4fe0-4748-bcf9-b38345e9b387",
+          "label": "Mark Durante",
+          "begin": "1992",
+          "end": "1997"
+        },
+        {
+          "id": "6a0ce9fd-5cda-4b3e-9b32-e411f2c2a57f",
+          "label": "Raymond Watts",
+          "begin": "1994",
+          "end": "1995"
+        },
+        {
+          "id": "f40bf2d1-1da5-4146-96ab-865242554a66",
+          "label": "Bill Rieflin",
+          "begin": "1995",
+          "end": "1999"
+        },
+        {
+          "id": "6a0ce9fd-5cda-4b3e-9b32-e411f2c2a57f",
+          "label": "Raymond Watts",
+          "begin": "1997",
+          "end": "1997"
+        },
+        {
+          "id": "6a0ce9fd-5cda-4b3e-9b32-e411f2c2a57f",
+          "label": "Raymond Watts",
+          "begin": "1997",
+          "end": "1997"
+        },
+        {
+          "id": "66d8b7c7-8096-4096-b528-04489969e452",
+          "label": "Skold",
+          "begin": "1997",
+          "end": "1999"
+        },
+        {
+          "id": "66d8b7c7-8096-4096-b528-04489969e452",
+          "label": "Skold",
+          "begin": "2002",
+          "end": "2002"
+        },
+        {
+          "id": "66d8b7c7-8096-4096-b528-04489969e452",
+          "label": "Skold",
+          "begin": "2002",
+          "end": "2002"
+        },
+        {
+          "id": "66d8b7c7-8096-4096-b528-04489969e452",
+          "label": "Skold",
+          "begin": "2002",
+          "end": "2002"
+        },
+        {
+          "id": "66d8b7c7-8096-4096-b528-04489969e452",
+          "label": "Skold",
+          "begin": "2002",
+          "end": "2002"
+        },
+        {
+          "id": "f40bf2d1-1da5-4146-96ab-865242554a66",
+          "label": "Bill Rieflin",
+          "begin": "2002",
+          "end": "2003"
+        },
+        {
+          "id": "f40bf2d1-1da5-4146-96ab-865242554a66",
+          "label": "Bill Rieflin",
+          "begin": "2002",
+          "end": "2003"
+        },
+        {
+          "id": "f40bf2d1-1da5-4146-96ab-865242554a66",
+          "label": "Bill Rieflin",
+          "begin": "2002",
+          "end": "2003"
+        },
+        {
+          "id": "f40bf2d1-1da5-4146-96ab-865242554a66",
+          "label": "Bill Rieflin",
+          "begin": "2002",
+          "end": "2003"
+        },
+        {
+          "id": "6a0ce9fd-5cda-4b3e-9b32-e411f2c2a57f",
+          "label": "Raymond Watts",
+          "begin": "2002",
+          "end": "2004"
+        },
+        {
+          "id": "26aed065-8e9f-4fe8-95f7-eeb4a49500eb",
+          "label": "Jules Hodgson",
+          "begin": "2002",
+          "end": "2016"
+        },
+        {
+          "id": "9ad0ca72-92b1-4a12-9d8a-0ba12fd5874b",
+          "label": "Lucia Cifarelli",
+          "begin": "2002",
+          "end": null
+        },
+        {
+          "id": "a47c092f-d0cf-4369-a730-7722cd0442e8",
+          "label": "Andy Selway",
+          "begin": "2002",
+          "end": null
+        },
+        {
+          "id": "c1a08e7b-6d7d-4d7c-9bff-2502375549a8",
+          "label": "Steve White",
+          "begin": "2003",
+          "end": "2015"
+        },
+        {
+          "id": "66d8b7c7-8096-4096-b528-04489969e452",
+          "label": "Skold",
+          "begin": "2009",
+          "end": "2009"
+        },
+        {
+          "id": "66d8b7c7-8096-4096-b528-04489969e452",
+          "label": "Skold",
+          "begin": "2009",
+          "end": "2009"
+        },
+        {
+          "id": "66d8b7c7-8096-4096-b528-04489969e452",
+          "label": "Skold",
+          "begin": "2009",
+          "end": "2009"
+        },
+        {
+          "id": "66d8b7c7-8096-4096-b528-04489969e452",
+          "label": "Skold",
+          "begin": "2009",
+          "end": "2009"
+        },
+        {
+          "id": "54966f8b-c2e6-4544-beb5-8efb3fa4ffd3",
+          "label": "Andee Blacksugar",
+          "begin": "2017",
+          "end": null
+        },
+        {
+          "id": "1d056e94-70e1-4a08-9adf-fc451582c355",
+          "label": "Tidor Nieddu",
+          "begin": "2025",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "revolting-cocks",
+      "label": "Revolting Cocks",
+      "musicbrainzId": "2865730a-5757-4005-875e-84d6274cb1c0",
+      "members": [
+        {
+          "id": "49197759-80b0-4f46-934c-c5d2fed17ac3",
+          "label": "Richard 23",
+          "begin": "1985",
+          "end": "1987"
+        },
+        {
+          "id": "be6d9ea3-adfb-47ea-9064-4302b00f9e27",
+          "label": "Luc Van Acker",
+          "begin": "1985",
+          "end": "1993"
+        },
+        {
+          "id": "ecb41014-1d7a-4987-a107-df49b2d8d77c",
+          "label": "Chris Connelly",
+          "begin": "1988",
+          "end": "1994"
+        },
+        {
+          "id": "3b1c8626-31d0-4f1e-97be-99449a411c3c",
+          "label": "Sin Quirin",
+          "begin": "2006",
+          "end": null
+        },
+        {
+          "id": "5797aba7-6168-450e-baae-d6c6a3befc0f",
+          "label": "Stevie Banch",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "5bec856f-b78b-4216-8af5-1c0c6365bcbe",
+          "label": "Paul Barker",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "b1791ace-26fd-4b7c-94ff-04da7984afac",
+          "label": "Josh Bradford",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "6a22c1ff-42c8-4c53-afa8-58f4766b9096",
+          "label": "Duane Denison",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "6c0dadab-266a-4601-8394-5b8e19e90def",
+          "label": "Al Jourgensen",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "d1099784-fd8f-4204-94a8-1fa956fd7d39",
+          "label": "Sean Joyce",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "dc047664-dd07-428d-8f3a-b50db87a6bc9",
+          "label": "Phil Owen",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "f40bf2d1-1da5-4146-96ab-865242554a66",
+          "label": "Bill Rieflin",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "7b505163-5792-47fa-9800-253fad24a8ac",
+          "label": "William Tucker",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "90023d8a-3907-45ec-a2aa-b8da61a6d0bd",
+          "label": "Jeff Ward",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "9c94f186-6c21-4cd0-bf1a-a2a044a6b043",
+          "label": "Clayton Worbeck",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "44df943b-832d-49f9-89c3-cb592dc0e9a3",
+          "label": "Mike Scaccia",
+          "begin": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "a-chud-convention",
+      "label": "A Chud Convention",
+      "musicbrainzId": "14c43e52-0267-453f-bcc6-c2201aac2c82",
+      "members": [
+        {
+          "id": "fd5f0dd3-5a83-428f-8f02-68a19322983a",
+          "label": "J3 sEUQCAJ",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
+          "label": "cEvin Key",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "5778f668-1a4c-482f-beb9-08b15b0f861c",
+          "label": "Ogre",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "4a836c98-4918-4f96-8b2b-9fb29a568d84",
+          "label": "S3 eVETS",
+          "begin": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "hilt",
+      "label": "Hilt",
+      "musicbrainzId": "42509bd3-6fa1-459a-8e40-127a3ef8663b",
+      "members": [
+        {
+          "id": "49266a79-78c5-4ceb-8671-06a697478d12",
+          "label": "Don Harrison",
+          "begin": "1989",
+          "end": "1989"
+        },
+        {
+          "id": "1ab87aa5-d2cc-43f8-ab1a-7580423230d9",
+          "label": "Alan Nelson",
+          "begin": null,
+          "end": "2000-02-01"
+        },
+        {
+          "id": "528d8a44-92f0-4614-aeb4-cb3516c0f2cd",
+          "label": "Dwayne Rudolph Goettel",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
+          "label": "cEvin Key",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "9007d5ec-8abb-496d-9f49-8c89b9ba1381",
+          "label": "Dave Ogilvie",
+          "begin": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "doubting-thomas",
+      "label": "Doubting Thomas",
+      "musicbrainzId": "66331dd7-5279-4e8f-8e41-1aec4f143638",
+      "members": [
+        {
+          "id": "528d8a44-92f0-4614-aeb4-cb3516c0f2cd",
+          "label": "Dwayne Rudolph Goettel",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
+          "label": "cEvin Key",
+          "begin": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "download",
+      "label": "Download",
+      "musicbrainzId": "a31c5ea9-b550-447a-b2ee-99b08e8c4825",
+      "members": [
+        {
+          "id": "528d8a44-92f0-4614-aeb4-cb3516c0f2cd",
+          "label": "Dwayne Rudolph Goettel",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
+          "label": "cEvin Key",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "55d72bde-0387-42f1-b829-738ff47da699",
+          "label": "Ryan Moore",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "a2edc27d-1a43-48e0-a61d-7563641c3a5b",
+          "label": "Mark Spybey",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "726995e9-1c54-4bcc-838c-3cbeb55ce730",
+          "label": "Anthony Valcic",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "291767b4-b137-452f-8547-b578cd029fa4",
+          "label": "Phil Western",
+          "begin": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "1000-homo-djs",
+      "label": "1000 Homo DJs",
+      "musicbrainzId": "4c44479c-8fde-4754-b9e2-5129eb6fb28d",
+      "members": [
+        {
+          "id": "5bec856f-b78b-4216-8af5-1c0c6365bcbe",
+          "label": "Paul Barker",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "6c0dadab-266a-4601-8394-5b8e19e90def",
+          "label": "Al Jourgensen",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "bc880664-6751-4998-984d-ebdbff15d229",
+          "label": "Trent Reznor",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "f40bf2d1-1da5-4146-96ab-865242554a66",
+          "label": "Bill Rieflin",
+          "begin": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "lard",
+      "label": "Lard",
+      "musicbrainzId": "4430600b-0fdb-43a1-be52-c81aa7ab1682",
+      "members": [
+        {
+          "id": "90023d8a-3907-45ec-a2aa-b8da61a6d0bd",
+          "label": "Jeff Ward",
+          "begin": "1988",
+          "end": "1993"
+        },
+        {
+          "id": "5bec856f-b78b-4216-8af5-1c0c6365bcbe",
+          "label": "Paul Barker",
+          "begin": "1988",
+          "end": null
+        },
+        {
+          "id": "2280ca0e-6968-4349-8c36-cb0cbd6ee95f",
+          "label": "Jello Biafra",
+          "begin": "1988",
+          "end": null
+        },
+        {
+          "id": "6c0dadab-266a-4601-8394-5b8e19e90def",
+          "label": "Al Jourgensen",
+          "begin": "1988",
+          "end": null
+        },
+        {
+          "id": "f40bf2d1-1da5-4146-96ab-865242554a66",
+          "label": "Bill Rieflin",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "33b09380-db28-4c9c-9fdd-ab5c20049c61",
+          "label": "Rey Washam",
+          "begin": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "delerium",
+      "label": "Delerium",
+      "musicbrainzId": "4279aba0-1bde-40a9-8fb2-c63d165dc554",
+      "members": [
+        {
+          "id": "7e557e6e-e9b6-4041-b407-3290224465a0",
+          "label": "Michael Balch",
+          "begin": "1987",
+          "end": "1987"
+        },
+        {
+          "id": "e10b76e5-dc32-4e9f-83b9-4f717400b19f",
+          "label": "Bill Leeb",
+          "begin": "1987",
+          "end": null
+        },
+        {
+          "id": "7ee30fce-cd3d-437d-9ff0-b2ef195bda33",
+          "label": "Rhys Fulber",
+          "begin": "1989",
+          "end": "2000"
+        },
+        {
+          "id": "5d86aa2f-35fd-4801-b810-2fe4fb5bc6f5",
+          "label": "Chris Peterson",
+          "begin": "2000",
+          "end": "2002"
+        },
+        {
+          "id": "7ee30fce-cd3d-437d-9ff0-b2ef195bda33",
+          "label": "Rhys Fulber",
+          "begin": "2002",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "noise-unit",
+      "label": "Noise Unit",
+      "musicbrainzId": "7dd6f063-dcac-47e7-98d1-26eaeaac2971",
+      "members": [
+        {
+          "id": "e6d22027-273b-40eb-891f-5e46c59fce0a",
+          "label": "Marc Verhaeghen",
+          "begin": "1989",
+          "end": "1990"
+        },
+        {
+          "id": "e10b76e5-dc32-4e9f-83b9-4f717400b19f",
+          "label": "Bill Leeb",
+          "begin": "1989",
+          "end": null
+        },
+        {
+          "id": "7ee30fce-cd3d-437d-9ff0-b2ef195bda33",
+          "label": "Rhys Fulber",
+          "begin": "1990",
+          "end": "1997"
+        },
+        {
+          "id": "e6d22027-273b-40eb-891f-5e46c59fce0a",
+          "label": "Marc Verhaeghen",
+          "begin": "1997",
+          "end": "1997"
+        },
+        {
+          "id": "5d86aa2f-35fd-4801-b810-2fe4fb5bc6f5",
+          "label": "Chris Peterson",
+          "begin": "2004",
+          "end": null
+        },
+        {
+          "id": "c72846d9-066f-495a-9ca3-8ca7256ac2b6",
+          "label": "Daniel Myer",
+          "begin": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "cyberaktif",
+      "label": "Cyberaktif",
+      "musicbrainzId": "6967bbb5-d814-40e9-84be-eef3d10b6662",
+      "members": [
+        {
+          "id": "7ee30fce-cd3d-437d-9ff0-b2ef195bda33",
+          "label": "Rhys Fulber",
+          "begin": "2024",
+          "end": null
+        },
+        {
+          "id": "528d8a44-92f0-4614-aeb4-cb3516c0f2cd",
+          "label": "Dwayne Rudolph Goettel",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
+          "label": "cEvin Key",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "201da624-a67d-4ba9-87c0-39136e78ccf3",
+          "label": "Wilhelm Schroeder",
+          "begin": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "acid-horse",
+      "label": "Acid Horse",
+      "musicbrainzId": "ea9ea256-362b-41b7-9ad6-cc308d9909a2",
+      "members": [
+        {
+          "id": "ecb41014-1d7a-4987-a107-df49b2d8d77c",
+          "label": "Chris Connelly",
+          "begin": "1989",
+          "end": "1989"
+        },
+        {
+          "id": "6c0dadab-266a-4601-8394-5b8e19e90def",
+          "label": "Al Jourgensen",
+          "begin": "1989",
+          "end": "1989"
+        },
+        {
+          "id": "39fe04bf-ba1a-481d-9836-b96beb549033",
+          "label": "Richard H. Kirk",
+          "begin": "1989",
+          "end": "1989"
+        },
+        {
+          "id": "adad4d39-c1e6-4533-b4dc-76e6ac328299",
+          "label": "Stephen Mallinder",
+          "begin": "1989",
+          "end": "1989"
+        },
+        {
+          "id": "f40bf2d1-1da5-4146-96ab-865242554a66",
+          "label": "Bill Rieflin",
+          "begin": "1989",
+          "end": "1989"
+        }
+      ]
+    },
+    {
+      "id": "lead-into-gold",
+      "label": "Lead Into Gold",
+      "musicbrainzId": "aedd2d07-66ca-4496-8156-ac6cde7e87b4",
+      "members": [
+        {
+          "id": "5bec856f-b78b-4216-8af5-1c0c6365bcbe",
+          "label": "Paul Barker",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "edae6e50-ecce-4f15-a15c-37cff05d4a54",
+          "label": "Flowering Blight",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "6c0dadab-266a-4601-8394-5b8e19e90def",
+          "label": "Al Jourgensen",
+          "begin": null,
+          "end": null
+        },
+        {
+          "id": "5dbd3f77-05a0-41fd-b6a1-f9466bb98fe2",
+          "label": "Frenchie L'Amour",
+          "begin": null,
+          "end": null
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "id": "ptp",
+      "label": "PTP",
+      "reason": "No verified MusicBrainz artist identity"
+    }
+  ]
+}
