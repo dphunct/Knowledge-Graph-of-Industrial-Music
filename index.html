@@ -76,11 +76,12 @@
           <h2 id="path-title">How are two people or projects connected?</h2>
         </div>
         <form id="path-form">
-          <label>From <select id="path-from"></select></label>
-          <label>To <select id="path-to"></select></label>
+          <label>From <input id="path-from" type="search" list="path-options" autocomplete="off" placeholder="Type a name" /></label>
+          <label>To <input id="path-to" type="search" list="path-options" autocomplete="off" placeholder="Type a name" /></label>
+          <datalist id="path-options"></datalist>
           <button type="submit">Reveal path</button>
         </form>
-        <p id="path-result" class="path-result">Choose two items to find their shortest known connection.</p>
+        <p id="path-result" class="path-result">Type a name in each field, choose a suggestion, then reveal their shortest known connection.</p>
       </section>
 
       <section class="feedback" aria-labelledby="feedback-title">
