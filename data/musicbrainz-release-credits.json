@@ -1,0 +1,162 @@
+{
+  "provider": "MusicBrainz",
+  "retrievedAt": "2026-09-24T14:07:28.358Z",
+  "pacingMs": 1100,
+  "releases": [
+    {
+      "id": "faces-forms-and-illusions",
+      "label": "Faces, Forms and Illusions",
+      "musicbrainzId": "2a7d5dfb-7943-3679-983a-abc8acaa2757",
+      "firstReleaseDate": "1989-01-06",
+      "matchedArtists": [
+        {
+          "id": "delerium",
+          "label": "Delerium",
+          "musicbrainzId": "4279aba0-1bde-40a9-8fb2-c63d165dc554"
+        }
+      ],
+      "unmatchedArtistCredits": []
+    },
+    {
+      "id": "grinding-into-emptiness",
+      "label": "Grinding Into Emptiness",
+      "musicbrainzId": "4ca20df2-1806-3517-af8f-4364aa4962ca",
+      "firstReleaseDate": "1989",
+      "matchedArtists": [
+        {
+          "id": "noise-unit",
+          "label": "Noise Unit",
+          "musicbrainzId": "7dd6f063-dcac-47e7-98d1-26eaeaac2971"
+        }
+      ],
+      "unmatchedArtistCredits": []
+    },
+    {
+      "id": "tenebrae-vision",
+      "label": "Tenebrae Vision",
+      "musicbrainzId": "35e19a8c-9c10-377b-9e0e-cc4a2cb87e5d",
+      "firstReleaseDate": "1990",
+      "matchedArtists": [
+        {
+          "id": "cyberaktif",
+          "label": "Cyberaktif",
+          "musicbrainzId": "6967bbb5-d814-40e9-84be-eef3d10b6662"
+        }
+      ],
+      "unmatchedArtistCredits": []
+    },
+    {
+      "id": "no-name-no-slogan",
+      "label": "No Name, No Slogan",
+      "musicbrainzId": "af3aad81-b6ff-312e-a42a-3805b445f110",
+      "firstReleaseDate": "1989",
+      "matchedArtists": [
+        {
+          "id": "acid-horse",
+          "label": "Acid Horse",
+          "musicbrainzId": "ea9ea256-362b-41b7-9ad6-cc308d9909a2"
+        }
+      ],
+      "unmatchedArtistCredits": []
+    },
+    {
+      "id": "land-of-rape-and-honey",
+      "label": "The Land of Rape and Honey",
+      "musicbrainzId": "7a18b986-afcc-359c-add1-7aa3a79104a2",
+      "firstReleaseDate": "1988-10-11",
+      "matchedArtists": [
+        {
+          "id": "ministry",
+          "label": "Ministry",
+          "musicbrainzId": "13df2a46-f72f-40e7-aa63-26fcf62c7048"
+        }
+      ],
+      "unmatchedArtistCredits": []
+    },
+    {
+      "id": "stigmata",
+      "label": "Stigmata",
+      "musicbrainzId": "ffd7f995-6354-38df-9c84-902769328a1e",
+      "firstReleaseDate": "1988",
+      "matchedArtists": [
+        {
+          "id": "ministry",
+          "label": "Ministry",
+          "musicbrainzId": "13df2a46-f72f-40e7-aa63-26fcf62c7048"
+        }
+      ],
+      "unmatchedArtistCredits": []
+    },
+    {
+      "id": "big-sexy-land",
+      "label": "Big Sexy Land",
+      "musicbrainzId": "3e823e3f-4993-36d8-8c74-3ceaf68959e7",
+      "firstReleaseDate": "1986-11",
+      "matchedArtists": [
+        {
+          "id": "revolting-cocks",
+          "label": "Revolting Cocks",
+          "musicbrainzId": "2865730a-5757-4005-875e-84d6274cb1c0"
+        }
+      ],
+      "unmatchedArtistCredits": []
+    },
+    {
+      "id": "beers-steers-and-queers",
+      "label": "Beers, Steers & Queers",
+      "musicbrainzId": "b316cc6e-edf7-3394-9c89-1a116ba2dc62",
+      "firstReleaseDate": "1990-05",
+      "matchedArtists": [
+        {
+          "id": "revolting-cocks",
+          "label": "Revolting Cocks",
+          "musicbrainzId": "2865730a-5757-4005-875e-84d6274cb1c0"
+        }
+      ],
+      "unmatchedArtistCredits": []
+    },
+    {
+      "id": "tactical-neural-implant",
+      "label": "Tactical Neural Implant",
+      "musicbrainzId": "611e2a82-9f19-3ad0-98a8-42397143b09d",
+      "firstReleaseDate": "1992-04-21",
+      "matchedArtists": [
+        {
+          "id": "front-line-assembly",
+          "label": "Front Line Assembly",
+          "musicbrainzId": "b847e9d2-c931-4daf-900c-42c7b2c42e16"
+        }
+      ],
+      "unmatchedArtistCredits": []
+    },
+    {
+      "id": "mindphaser",
+      "label": "Mindphaser",
+      "musicbrainzId": "f7329a5b-8972-38f0-8f4a-1a90b79829db",
+      "firstReleaseDate": "1992-03",
+      "matchedArtists": [
+        {
+          "id": "front-line-assembly",
+          "label": "Front Line Assembly",
+          "musicbrainzId": "b847e9d2-c931-4daf-900c-42c7b2c42e16"
+        }
+      ],
+      "unmatchedArtistCredits": []
+    },
+    {
+      "id": "supernaut",
+      "label": "Supernaut",
+      "musicbrainzId": "6a928917-424c-38b2-b4c1-5de2d741d039",
+      "firstReleaseDate": "1991",
+      "matchedArtists": [
+        {
+          "id": "1000-homo-djs",
+          "label": "1000 Homo DJs",
+          "musicbrainzId": "4c44479c-8fde-4754-b9e2-5129eb6fb28d"
+        }
+      ],
+      "unmatchedArtistCredits": []
+    }
+  ],
+  "skipped": []
+}
