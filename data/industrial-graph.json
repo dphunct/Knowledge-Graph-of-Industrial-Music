@@ -376,6 +376,30 @@
       "provenance": [{ "title": "MusicBrainz: Revolting Cocks", "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0", "note": "Lists Chris Connelly as a member from 1988 to 1994." }]
     },
     {
+      "id": "daniel-bressanutti",
+      "label": "Daniel Bressanutti",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a Front 242 member from 1981.",
+      "musicbrainz": { "id": "319cc50d-a877-49a3-8f87-8efe22f60e09", "entity": "artist", "url": "https://musicbrainz.org/artist/319cc50d-a877-49a3-8f87-8efe22f60e09" },
+      "provenance": [{ "title": "MusicBrainz: Front 242", "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626", "note": "Lists Daniel Bressanutti as a member from 1981." }]
+    },
+    {
+      "id": "patrick-codenys",
+      "label": "Patrick Codenys",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a Front 242 member from 1982.",
+      "musicbrainz": { "id": "70adfe31-83d6-43d9-b9f4-7ab5eff483f4", "entity": "artist", "url": "https://musicbrainz.org/artist/70adfe31-83d6-43d9-b9f4-7ab5eff483f4" },
+      "provenance": [{ "title": "MusicBrainz: Front 242", "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626", "note": "Lists Patrick Codenys as a member from 1982." }]
+    },
+    {
+      "id": "jean-luc-de-meyer",
+      "label": "Jean-Luc de Meyer",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a Front 242 member from 1982.",
+      "musicbrainz": { "id": "2c444dd6-75b6-42e0-9f7e-a0a086c48ba9", "entity": "artist", "url": "https://musicbrainz.org/artist/2c444dd6-75b6-42e0-9f7e-a0a086c48ba9" },
+      "provenance": [{ "title": "MusicBrainz: Front 242", "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626", "note": "Lists Jean-Luc de Meyer as a member from 1982." }]
+    },
+    {
       "id": "land-of-rape-and-honey",
       "label": "The Land of Rape and Honey",
       "type": "release",
@@ -1113,6 +1137,33 @@
       "validTo": 1994,
       "sourceStatus": "verified",
       "provenance": [{ "title": "MusicBrainz: Revolting Cocks", "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0", "note": "Lists Chris Connelly as a member from 1988 to 1994." }]
+    },
+    {
+      "source": "daniel-bressanutti",
+      "target": "front-242",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1981,
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: Front 242", "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626", "note": "Lists Daniel Bressanutti as a member from 1981." }]
+    },
+    {
+      "source": "patrick-codenys",
+      "target": "front-242",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1982,
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: Front 242", "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626", "note": "Lists Patrick Codenys as a member from 1982." }]
+    },
+    {
+      "source": "jean-luc-de-meyer",
+      "target": "front-242",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1982,
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: Front 242", "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626", "note": "Lists Jean-Luc de Meyer as a member from 1982." }]
     },
     {
       "source": "ministry",
