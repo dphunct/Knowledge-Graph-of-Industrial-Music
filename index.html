@@ -32,7 +32,7 @@
       </section>
 
       <section class="controls" aria-label="Graph controls">
-        <label class="search"><span>Find a person or project <button class="help-button" type="button" data-help="Searches names and recorded aliases in the selected view. It does not invent or fetch new relationships.">?</button></span><input id="search" type="search" placeholder="e.g. Ministry, cEvin Key" /></label>
+        <label class="search"><span>Find a person, project, or alias <button class="help-button" type="button" data-help="Searches names and recorded aliases in the selected view. An alias takes you to its canonical person; it does not invent or fetch new relationships.">?</button></span><input id="search" type="search" placeholder="e.g. Ministry, cEvin Key, Hypo Luxa" /></label>
         <label class="metric-control"><span>Size spheres by <button class="help-button" type="button" data-help="Scores compare only the spheres in the current view. Direct connections is the default. Composite score equally combines direct connections, bridge importance, and PageRank. Bridge importance estimates how much a person or project connects groups. PageRank rewards connections to well-connected people, projects, or releases.">?</button></span><select id="size-metric"><option value="degree" selected>Direct connections</option><option value="composite">Composite score</option><option value="betweenness">Bridge importance</option><option value="pageRank">PageRank</option></select></label>
         <div class="view-controls" role="group" aria-label="Graph view">
           <button class="active" type="button" data-view="all">Everything</button><button class="help-button" type="button" data-help="People and Projects retain projected compound links so the selected type remains connected. Releases shows recorded release-to-release relationships.">?</button>
@@ -77,8 +77,8 @@
           <h2 id="path-title">How are two people or projects connected?</h2>
         </div>
         <form id="path-form">
-          <label>From <input id="path-from" type="search" list="path-options" autocomplete="off" placeholder="Type a name" /></label>
-          <label>To <input id="path-to" type="search" list="path-options" autocomplete="off" placeholder="Type a name" /></label>
+          <label>From <input id="path-from" type="search" list="path-options" autocomplete="off" placeholder="Type a name or alias" /></label>
+          <label>To <input id="path-to" type="search" list="path-options" autocomplete="off" placeholder="Type a name or alias" /></label>
           <datalist id="path-options"></datalist>
           <button type="submit">Reveal path</button>
         </form>
