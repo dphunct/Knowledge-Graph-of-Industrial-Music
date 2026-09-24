@@ -77,6 +77,16 @@
         <p>Factual corrections and additions need at least one cited source. Unsupported claims remain in the research queue rather than being silently added.</p>
         <div><a class="feedback-link" href="https://github.com/dphunct/Knowledge-Graph-of-Industrial-Music/issues/new?template=graph-fact.yml">Correct or add information</a><a class="feedback-link" href="https://github.com/dphunct/Knowledge-Graph-of-Industrial-Music/issues/new?template=feature-request.yml">Request a feature</a></div>
       </section>
+
+      <section class="local-explainer" aria-labelledby="explainer-title">
+        <p class="eyebrow">Optional local explanation</p>
+        <h2 id="explainer-title">Ask the graph</h2>
+        <p>Path finding and graph facts stay deterministic. Optionally load a small WebLLM model in this browser to turn those results into prose; it needs WebGPU, downloads a model only after you opt in, and sends no graph data to a server.</p>
+        <button id="enable-llm" type="button">Enable local explainer</button>
+        <p id="llm-status" class="llm-status">Deterministic graph explanations are available without a model.</p>
+        <form id="llm-form"><label>Question <input id="llm-question" type="text" placeholder="Explain the selected node's recorded relationships" /></label><button type="submit">Explain</button></form>
+        <p id="llm-answer" class="llm-answer">Select a node or reveal a path, then ask for an explanation.</p>
+      </section>
     </main>
     <script type="module" src="/src/main.js"></script>
   </body>
