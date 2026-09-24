@@ -2527,6 +2527,2094 @@
           "note": "Canonical artist record explicitly carries the industrial tag."
         }
       ]
+    },
+    {
+      "id": "chris-vrenna",
+      "label": "Chris Vrenna",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "0923598e-2b97-4527-b984-5feed94c168d",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/0923598e-2b97-4527-b984-5feed94c168d"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Chris Vrenna as a member from 1988-10 to 1990."
+        }
+      ]
+    },
+    {
+      "id": "ron-musarra",
+      "label": "Ron Musarra",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "031e4b1f-460d-487d-ab01-9bae0992d4bc",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/031e4b1f-460d-487d-ab01-9bae0992d4bc"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Ron Musarra as a member from 1988 to 1988."
+        }
+      ]
+    },
+    {
+      "id": "nick-rushe",
+      "label": "Nick Rushe",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "4d4e2261-02d2-4796-83bf-5bbadcbba629",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/4d4e2261-02d2-4796-83bf-5bbadcbba629"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Nick Rushe as a member from 1989 to 1989."
+        }
+      ]
+    },
+    {
+      "id": "gary-talpas",
+      "label": "Gary Talpas",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "2cd8c19a-d942-456e-86de-72d581662ff9",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/2cd8c19a-d942-456e-86de-72d581662ff9"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Gary Talpas as a member from 1989 to 1989."
+        }
+      ]
+    },
+    {
+      "id": "richard-patrick",
+      "label": "Richard Patrick",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "5bcda370-1cd4-40ce-89a5-6ec6a0a7fc79",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/5bcda370-1cd4-40ce-89a5-6ec6a0a7fc79"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Richard Patrick as a member from 1989 to 1993."
+        }
+      ]
+    },
+    {
+      "id": "david-haymes",
+      "label": "David Haymes",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "2014c417-f5ca-4f7e-b616-ba835608b5b6",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/2014c417-f5ca-4f7e-b616-ba835608b5b6"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists David Haymes as a member from 1990 to 1990."
+        }
+      ]
+    },
+    {
+      "id": "lee-mars",
+      "label": "Lee Mars",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "40adef79-bcdd-4bd3-a2ee-1e2d371cd6bc",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/40adef79-bcdd-4bd3-a2ee-1e2d371cd6bc"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Lee Mars as a member from 1990 to 1991."
+        }
+      ]
+    },
+    {
+      "id": "martin-atkins",
+      "label": "Martin Atkins",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "4fdcc071-4125-433c-9b57-de2084d8d48f",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/4fdcc071-4125-433c-9b57-de2084d8d48f"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Martin Atkins as a member from 1991 to 1991."
+        }
+      ]
+    },
+    {
+      "id": "james-woolley",
+      "label": "James Woolley",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "1f4ffb9e-2425-40fb-b054-68e80e2ef83d",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/1f4ffb9e-2425-40fb-b054-68e80e2ef83d"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists James Woolley as a member from 1991 to 1994."
+        }
+      ]
+    },
+    {
+      "id": "danny-lohner",
+      "label": "Danny Lohner",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "136b2664-686f-4ae4-acf9-6f34446636d4",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/136b2664-686f-4ae4-acf9-6f34446636d4"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Danny Lohner as a member from 1993 to 2003."
+        }
+      ]
+    },
+    {
+      "id": "robin-finck",
+      "label": "Robin Finck",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "30343313-1e24-4758-950f-4a96309d7893",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/30343313-1e24-4758-950f-4a96309d7893"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Robin Finck as a member from 1994 to 1996."
+        }
+      ]
+    },
+    {
+      "id": "charlie-clouser",
+      "label": "Charlie Clouser",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "2947dcd0-e65f-4293-af4b-3fe309e0dea0",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/2947dcd0-e65f-4293-af4b-3fe309e0dea0"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Charlie Clouser as a member from 1994 to 2001."
+        }
+      ]
+    },
+    {
+      "id": "kevin-mcmahon",
+      "label": "Kevin McMahon",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "28128435-f8c0-401c-a60d-ab3536cd573a",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/28128435-f8c0-401c-a60d-ab3536cd573a"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Kevin McMahon as a member from 1996 to 1996."
+        }
+      ]
+    },
+    {
+      "id": "keith-hillebrandt",
+      "label": "Keith Hillebrandt",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "ddd579af-9ca1-41ff-96a4-6e55212923c0",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/ddd579af-9ca1-41ff-96a4-6e55212923c0"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Keith Hillebrandt as a member from 1997 to 1999."
+        }
+      ]
+    },
+    {
+      "id": "jerome-dillon",
+      "label": "Jerome Dillon",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "e45b9930-0363-4a20-86f4-2ff05544d0a9",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/e45b9930-0363-4a20-86f4-2ff05544d0a9"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Jerome Dillon as a member from 1999 to 2005-10-01."
+        }
+      ]
+    },
+    {
+      "id": "atticus-ross",
+      "label": "Atticus Ross",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "1fefa8b3-806b-4ab9-a066-66574b22aa16",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/1fefa8b3-806b-4ab9-a066-66574b22aa16"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Atticus Ross as a member from 2004."
+        }
+      ]
+    },
+    {
+      "id": "alex-carapetis",
+      "label": "Alex Carapetis",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "d735f972-f612-49e6-8815-f32994dad1af",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/d735f972-f612-49e6-8815-f32994dad1af"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Alex Carapetis as a member from 2005-10-07 to 2005-12-01."
+        }
+      ]
+    },
+    {
+      "id": "aaron-north",
+      "label": "Aaron North",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "2fd475b9-4a31-4b8c-8368-7b71118f2d71",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/2fd475b9-4a31-4b8c-8368-7b71118f2d71"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Aaron North as a member from 2005 to 2007."
+        }
+      ]
+    },
+    {
+      "id": "jeordie-white",
+      "label": "Jeordie White",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "ab4625d4-9947-481c-af95-5955b0b13023",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/ab4625d4-9947-481c-af95-5955b0b13023"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Jeordie White as a member from 2005 to 2007."
+        }
+      ]
+    },
+    {
+      "id": "alessandro-cortini",
+      "label": "Alessandro Cortini",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "7b88250d-891d-4186-9b16-b94c930be1b2",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/7b88250d-891d-4186-9b16-b94c930be1b2"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Alessandro Cortini as a member from 2005 to 2008-12."
+        }
+      ]
+    },
+    {
+      "id": "josh-freese",
+      "label": "Josh Freese",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "1ba97964-8d70-4b33-a361-d1a4ed222672",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/1ba97964-8d70-4b33-a361-d1a4ed222672"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Josh Freese as a member from 2005 to 2008-12."
+        }
+      ]
+    },
+    {
+      "id": "justin-meldal-johnsen",
+      "label": "Justin Meldal‐Johnsen",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "673f2360-45c1-43d3-b0d2-cf6d798b2fdd",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/673f2360-45c1-43d3-b0d2-cf6d798b2fdd"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Justin Meldal‐Johnsen as a member from 2008 to 2009."
+        }
+      ]
+    },
+    {
+      "id": "ilan-rubin",
+      "label": "Ilan Rubin",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "6b76ebd2-c44e-4059-b5ff-2854ccef92c1",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/6b76ebd2-c44e-4059-b5ff-2854ccef92c1"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Ilan Rubin as a member from 2008 to 2009."
+        }
+      ]
+    },
+    {
+      "id": "adrian-belew",
+      "label": "Adrian Belew",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "73c3f499-60e2-44e1-81dd-7fe2191461fa",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/73c3f499-60e2-44e1-81dd-7fe2191461fa"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Adrian Belew as a member from 2013 to 2013."
+        }
+      ]
+    },
+    {
+      "id": "joshua-eustis",
+      "label": "Joshua Eustis",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "3b5ed43f-9dfa-494b-a8f1-b152b6e75512",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/3b5ed43f-9dfa-494b-a8f1-b152b6e75512"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Joshua Eustis as a member from 2013 to 2013."
+        }
+      ]
+    },
+    {
+      "id": "lisa-fischer",
+      "label": "Lisa Fischer",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "f887110a-ddd9-4a4e-b9ea-e567523ef6e2",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/f887110a-ddd9-4a4e-b9ea-e567523ef6e2"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Lisa Fischer as a member from 2013 to 2013."
+        }
+      ]
+    },
+    {
+      "id": "sharlotte-gibson",
+      "label": "Sharlotte Gibson",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "844bdcef-7a35-41a2-ae27-c30ef94e7c03",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/844bdcef-7a35-41a2-ae27-c30ef94e7c03"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Sharlotte Gibson as a member from 2013 to 2013."
+        }
+      ]
+    },
+    {
+      "id": "pino-palladino",
+      "label": "Pino Palladino",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "0dfd6aab-9056-4764-89b0-80bee7c9f998",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/0dfd6aab-9056-4764-89b0-80bee7c9f998"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Pino Palladino as a member from 2013 to 2013."
+        }
+      ]
+    },
+    {
+      "id": "stu-brooks",
+      "label": "Stu Brooks",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Nine Inch Nails.",
+      "musicbrainz": {
+        "id": "2d8e6fbf-d30d-47e2-89f9-76eba6b1860e",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/2d8e6fbf-d30d-47e2-89f9-76eba6b1860e"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Stu Brooks as a member from 2026-02."
+        }
+      ]
+    },
+    {
+      "id": "vince-clarke",
+      "label": "Vince Clarke",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Depeche Mode.",
+      "musicbrainz": {
+        "id": "6ef12fc1-40f4-41ea-ac52-f487840255bd",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/6ef12fc1-40f4-41ea-ac52-f487840255bd"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Depeche Mode",
+          "url": "https://musicbrainz.org/artist/8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+          "note": "Lists Vince Clarke as a member from 1980 to 1981."
+        }
+      ]
+    },
+    {
+      "id": "andrew-fletcher",
+      "label": "Andrew Fletcher",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Depeche Mode.",
+      "musicbrainz": {
+        "id": "0042aa4d-a972-4a2a-b7cf-8044d09bbc67",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/0042aa4d-a972-4a2a-b7cf-8044d09bbc67"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Depeche Mode",
+          "url": "https://musicbrainz.org/artist/8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+          "note": "Lists Andrew Fletcher as a member from 1980 to 2022-05-26."
+        }
+      ]
+    },
+    {
+      "id": "dave-gahan",
+      "label": "Dave Gahan",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Depeche Mode.",
+      "musicbrainz": {
+        "id": "d547b148-cf1f-421b-9464-ce7411ba44b8",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/d547b148-cf1f-421b-9464-ce7411ba44b8"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Depeche Mode",
+          "url": "https://musicbrainz.org/artist/8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+          "note": "Lists Dave Gahan as a member from 1980."
+        }
+      ]
+    },
+    {
+      "id": "martin-l-gore",
+      "label": "Martin L. Gore",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Depeche Mode.",
+      "musicbrainz": {
+        "id": "e08ac443-f1d2-4666-abd1-fa5859592981",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/e08ac443-f1d2-4666-abd1-fa5859592981"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Depeche Mode",
+          "url": "https://musicbrainz.org/artist/8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+          "note": "Lists Martin L. Gore as a member from 1980."
+        }
+      ]
+    },
+    {
+      "id": "alan-wilder",
+      "label": "Alan Wilder",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Depeche Mode.",
+      "musicbrainz": {
+        "id": "9785d4c6-0922-408b-9ca7-bf46c0548f71",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/9785d4c6-0922-408b-9ca7-bf46c0548f71"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Depeche Mode",
+          "url": "https://musicbrainz.org/artist/8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+          "note": "Lists Alan Wilder as a member from 1982 to 1995-06."
+        }
+      ]
+    },
+    {
+      "id": "olivia-newton-bundy",
+      "label": "Olivia Newton Bundy",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "91cf97ed-350e-48e4-a0c4-d6aa69dcb439",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/91cf97ed-350e-48e4-a0c4-d6aa69dcb439"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Olivia Newton Bundy as a member from 1989 to 1990."
+        }
+      ]
+    },
+    {
+      "id": "zsa-zsa-speck",
+      "label": "Zsa Zsa Speck",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "d0c854d8-b878-4633-9422-badcdf452d04",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/d0c854d8-b878-4633-9422-badcdf452d04"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Zsa Zsa Speck as a member from 1989 to 1990."
+        }
+      ]
+    },
+    {
+      "id": "daisy-berkowitz",
+      "label": "Daisy Berkowitz",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "e9a9acf3-673e-441a-90a6-8d05e8e1e892",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/e9a9acf3-673e-441a-90a6-8d05e8e1e892"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Daisy Berkowitz as a member from 1989 to 1996."
+        }
+      ]
+    },
+    {
+      "id": "marilyn-manson-80cadd99",
+      "label": "Marilyn Manson",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "80cadd99-f560-41e3-babd-16292bbd248a",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/80cadd99-f560-41e3-babd-16292bbd248a"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Marilyn Manson as a member from 1989."
+        }
+      ]
+    },
+    {
+      "id": "gidget-gein",
+      "label": "Gidget Gein",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "5057eba4-da15-45df-9948-8b8899c3b3ee",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/5057eba4-da15-45df-9948-8b8899c3b3ee"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Gidget Gein as a member from 1990 to 1993-12."
+        }
+      ]
+    },
+    {
+      "id": "madonna-wayne-gacy",
+      "label": "Madonna Wayne Gacy",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "60c083b5-e3c9-4410-9f9a-0b5f4b4d5c2c",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/60c083b5-e3c9-4410-9f9a-0b5f4b4d5c2c"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Madonna Wayne Gacy as a member from 1990 to 2007."
+        }
+      ]
+    },
+    {
+      "id": "sara-lee-lucas",
+      "label": "Sara Lee Lucas",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "47284622-a77f-48df-bb1c-3320c8cb6f33",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/47284622-a77f-48df-bb1c-3320c8cb6f33"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Sara Lee Lucas as a member from 1991 to 1995."
+        }
+      ]
+    },
+    {
+      "id": "ginger-fish",
+      "label": "Ginger Fish",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "8bb2d3b9-efce-49cc-b26f-3f1cb29d2eb0",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/8bb2d3b9-efce-49cc-b26f-3f1cb29d2eb0"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Ginger Fish as a member from 1995 to 2004."
+        }
+      ]
+    },
+    {
+      "id": "zim-zum",
+      "label": "Zim Zum",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "54869a23-d2b2-476f-9fc8-aed594b8eed5",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/54869a23-d2b2-476f-9fc8-aed594b8eed5"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Zim Zum as a member from 1996 to 1998."
+        }
+      ]
+    },
+    {
+      "id": "john-5",
+      "label": "John 5",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "66ac10d4-37cc-4b84-91dd-4863e3dc9a32",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/66ac10d4-37cc-4b84-91dd-4863e3dc9a32"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists John 5 as a member from 1998 to 2004."
+        }
+      ]
+    },
+    {
+      "id": "mark-chaussee",
+      "label": "Mark Chaussee",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "34795fb6-83c2-4a3a-9c76-be75de22c761",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/34795fb6-83c2-4a3a-9c76-be75de22c761"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Mark Chaussee as a member from 2004 to 2005."
+        }
+      ]
+    },
+    {
+      "id": "rob-holliday",
+      "label": "Rob Holliday",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "6eb510ad-dc0e-4b12-b501-1a4a9b70867c",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/6eb510ad-dc0e-4b12-b501-1a4a9b70867c"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Rob Holliday as a member from 2007 to 2008."
+        }
+      ]
+    },
+    {
+      "id": "wes-borland",
+      "label": "Wes Borland",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "6ed22d35-c6fd-4846-8108-1f71d1ee0f82",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/6ed22d35-c6fd-4846-8108-1f71d1ee0f82"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Wes Borland as a member from 2008 to 2008."
+        }
+      ]
+    },
+    {
+      "id": "andy-gerold",
+      "label": "Andy Gerold",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "ebc1e655-c5b1-47cd-abab-0075ff580092",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/ebc1e655-c5b1-47cd-abab-0075ff580092"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Andy Gerold as a member from 2009 to 2009."
+        }
+      ]
+    },
+    {
+      "id": "fred-sablan",
+      "label": "Fred Sablan",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "338d8fd9-d595-410d-8762-4e5286da3cbe",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/338d8fd9-d595-410d-8762-4e5286da3cbe"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Fred Sablan as a member from 2010-07 to 2014."
+        }
+      ]
+    },
+    {
+      "id": "gil-sharone",
+      "label": "Gil Sharone",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "71799f19-2e9e-4562-a6af-924ae33e726e",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/71799f19-2e9e-4562-a6af-924ae33e726e"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Gil Sharone as a member from 2013 to 2019-03-27."
+        }
+      ]
+    },
+    {
+      "id": "tyler-bates",
+      "label": "Tyler Bates",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "03cfec4a-9885-444c-9e74-5fbab5861106",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/03cfec4a-9885-444c-9e74-5fbab5861106"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Tyler Bates as a member from 2014 to 2018."
+        }
+      ]
+    },
+    {
+      "id": "juan-alderete",
+      "label": "Juan Alderete",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "9b50efa7-a1b4-4136-88d6-513163546848",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/9b50efa7-a1b4-4136-88d6-513163546848"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Juan Alderete as a member from 2017-11-05 to 2020."
+        }
+      ]
+    },
+    {
+      "id": "brandon-pertzborn",
+      "label": "Brandon Pertzborn",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "31713871-0bfb-4a7c-b82b-2657670dd19d",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/31713871-0bfb-4a7c-b82b-2657670dd19d"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Brandon Pertzborn as a member from 2019-06-18 to 2020."
+        }
+      ]
+    },
+    {
+      "id": "reba-meyers",
+      "label": "Reba Meyers",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "e30333ae-4220-4466-a50e-056e888ffe0e",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/e30333ae-4220-4466-a50e-056e888ffe0e"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Reba Meyers as a member from 2024 to 2026."
+        }
+      ]
+    },
+    {
+      "id": "piggy-d",
+      "label": "Piggy D.",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "92a0f3b8-65a0-4205-8869-7c2af67aa974",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/92a0f3b8-65a0-4205-8869-7c2af67aa974"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Piggy D. as a member from 2024."
+        }
+      ]
+    },
+    {
+      "id": "nick-annis",
+      "label": "Nick Annis",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "6976af55-fc14-470f-a4d8-11697b32c1d1",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/6976af55-fc14-470f-a4d8-11697b32c1d1"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Nick Annis as a member from 2026-04."
+        }
+      ]
+    },
+    {
+      "id": "paul-wiley",
+      "label": "Paul Wiley",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Marilyn Manson.",
+      "musicbrainz": {
+        "id": "33088fea-8359-4e82-b099-6d051dcc9224",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/33088fea-8359-4e82-b099-6d051dcc9224"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Paul Wiley as a member."
+        }
+      ]
+    },
+    {
+      "id": "rudy-ratzinger",
+      "label": "Rudy Ratzinger",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of :wumpscut:.",
+      "musicbrainz": {
+        "id": "3d1c0b65-8650-4db6-a1c2-2da7ef5744bf",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/3d1c0b65-8650-4db6-a1c2-2da7ef5744bf"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: :wumpscut:",
+          "url": "https://musicbrainz.org/artist/e4e79264-c1ec-490c-b823-b2918204cd4f",
+          "note": "Lists Rudy Ratzinger as a member from 1991-05."
+        }
+      ]
+    },
+    {
+      "id": "richard-z-kruspe",
+      "label": "Richard Z. Kruspe",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Rammstein.",
+      "musicbrainz": {
+        "id": "2c449bbd-b19e-456b-af78-f2e592ff2245",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/2c449bbd-b19e-456b-af78-f2e592ff2245"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Rammstein",
+          "url": "https://musicbrainz.org/artist/b2d122f9-eadb-4930-a196-8f221eeb0c66",
+          "note": "Lists Richard Z. Kruspe as a member from 1994-02."
+        }
+      ]
+    },
+    {
+      "id": "paul-landers",
+      "label": "Paul Landers",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Rammstein.",
+      "musicbrainz": {
+        "id": "438cfe24-e99c-4b74-94ff-7289ede0bb46",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/438cfe24-e99c-4b74-94ff-7289ede0bb46"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Rammstein",
+          "url": "https://musicbrainz.org/artist/b2d122f9-eadb-4930-a196-8f221eeb0c66",
+          "note": "Lists Paul Landers as a member from 1994-02."
+        }
+      ]
+    },
+    {
+      "id": "till-lindemann",
+      "label": "Till Lindemann",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Rammstein.",
+      "musicbrainz": {
+        "id": "f71f8e0d-c109-4a50-9826-2559981d915e",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/f71f8e0d-c109-4a50-9826-2559981d915e"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Rammstein",
+          "url": "https://musicbrainz.org/artist/b2d122f9-eadb-4930-a196-8f221eeb0c66",
+          "note": "Lists Till Lindemann as a member from 1994-02."
+        }
+      ]
+    },
+    {
+      "id": "christian-lorenz",
+      "label": "Christian Lorenz",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Rammstein.",
+      "musicbrainz": {
+        "id": "11f64d5e-77a6-48f7-ac1f-6d17b3ac2ba9",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/11f64d5e-77a6-48f7-ac1f-6d17b3ac2ba9"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Rammstein",
+          "url": "https://musicbrainz.org/artist/b2d122f9-eadb-4930-a196-8f221eeb0c66",
+          "note": "Lists Christian Lorenz as a member from 1994-02."
+        }
+      ]
+    },
+    {
+      "id": "oliver-riedel",
+      "label": "Oliver Riedel",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Rammstein.",
+      "musicbrainz": {
+        "id": "730e20a5-66d3-4052-9143-a3ea7b56f568",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/730e20a5-66d3-4052-9143-a3ea7b56f568"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Rammstein",
+          "url": "https://musicbrainz.org/artist/b2d122f9-eadb-4930-a196-8f221eeb0c66",
+          "note": "Lists Oliver Riedel as a member from 1994-02."
+        }
+      ]
+    },
+    {
+      "id": "christoph-schneider",
+      "label": "Christoph Schneider",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Rammstein.",
+      "musicbrainz": {
+        "id": "bb9fe2b7-87fa-43e6-95ca-bc4592d8d5bc",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/bb9fe2b7-87fa-43e6-95ca-bc4592d8d5bc"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Rammstein",
+          "url": "https://musicbrainz.org/artist/b2d122f9-eadb-4930-a196-8f221eeb0c66",
+          "note": "Lists Christoph Schneider as a member from 1994-02."
+        }
+      ]
+    },
+    {
+      "id": "mick-hollows",
+      "label": "Mick Hollows",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of 7 Minutes of Nausea.",
+      "musicbrainz": {
+        "id": "55638639-ef78-4f4e-a96b-ec6e68f5472e",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/55638639-ef78-4f4e-a96b-ec6e68f5472e"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: 7 Minutes of Nausea",
+          "url": "https://musicbrainz.org/artist/96843ba2-97ec-4120-8c25-044e001e95ed",
+          "note": "Lists Mick Hollows as a member."
+        }
+      ]
+    },
+    {
+      "id": "scut",
+      "label": "Scut",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of 7 Minutes of Nausea.",
+      "musicbrainz": {
+        "id": "0f281666-1cdf-491c-9379-ca47bed40a80",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/0f281666-1cdf-491c-9379-ca47bed40a80"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: 7 Minutes of Nausea",
+          "url": "https://musicbrainz.org/artist/96843ba2-97ec-4120-8c25-044e001e95ed",
+          "note": "Lists Scut as a member."
+        }
+      ]
+    },
+    {
+      "id": "matthias-weigand",
+      "label": "Matthias Weigand",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of 7 Minutes of Nausea.",
+      "musicbrainz": {
+        "id": "40b77382-5e24-4cd8-bc43-c0bdcf8bbc83",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/40b77382-5e24-4cd8-bc43-c0bdcf8bbc83"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: 7 Minutes of Nausea",
+          "url": "https://musicbrainz.org/artist/96843ba2-97ec-4120-8c25-044e001e95ed",
+          "note": "Lists Matthias Weigand as a member."
+        }
+      ]
+    },
+    {
+      "id": "youth",
+      "label": "Youth",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Killing Joke.",
+      "musicbrainz": {
+        "id": "0a1811e9-4251-4669-b5ab-0534c145806f",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/0a1811e9-4251-4669-b5ab-0534c145806f"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Killing Joke",
+          "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
+          "note": "Lists Youth as a member from 1979 to 1982."
+        }
+      ]
+    },
+    {
+      "id": "paul-ferguson",
+      "label": "Paul Ferguson",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Killing Joke.",
+      "musicbrainz": {
+        "id": "beffec12-3c55-4a31-a666-2726c1f173c1",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/beffec12-3c55-4a31-a666-2726c1f173c1"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Killing Joke",
+          "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
+          "note": "Lists Paul Ferguson as a member from 1979 to 1986."
+        }
+      ]
+    },
+    {
+      "id": "jaz-coleman",
+      "label": "Jaz Coleman",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Killing Joke.",
+      "musicbrainz": {
+        "id": "282de6ac-ba23-41f3-9fef-67c531b56167",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/282de6ac-ba23-41f3-9fef-67c531b56167"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Killing Joke",
+          "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
+          "note": "Lists Jaz Coleman as a member from 1979."
+        }
+      ]
+    },
+    {
+      "id": "reza-udhin",
+      "label": "Reza Udhin",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Killing Joke.",
+      "musicbrainz": {
+        "id": "24a3a217-7405-4fed-9d76-6f7d708b6dcf",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/24a3a217-7405-4fed-9d76-6f7d708b6dcf"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Killing Joke",
+          "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
+          "note": "Lists Reza Udhin as a member from 2005."
+        }
+      ]
+    },
+    {
+      "id": "geordie-walker",
+      "label": "Geordie Walker",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Killing Joke.",
+      "musicbrainz": {
+        "id": "f8cec1ac-ade6-46af-96c8-b600b10374eb",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/f8cec1ac-ade6-46af-96c8-b600b10374eb"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Killing Joke",
+          "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
+          "note": "Lists Geordie Walker as a member from 2023-11-26."
+        }
+      ]
+    },
+    {
+      "id": "dejan-knez",
+      "label": "Dejan Knez",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Laibach.",
+      "musicbrainz": {
+        "id": "50c35596-7d04-4292-8459-82f60f484d6a",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/50c35596-7d04-4292-8459-82f60f484d6a"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Dejan Knez as a member from 1980-06-01 to 2004."
+        }
+      ]
+    },
+    {
+      "id": "sre-ko-bajda",
+      "label": "Srečko Bajda",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Laibach.",
+      "musicbrainz": {
+        "id": "ed14263e-d8b8-4f84-9d17-06e8a3f65b83",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/ed14263e-d8b8-4f84-9d17-06e8a3f65b83"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Srečko Bajda as a member from 1980-06-01."
+        }
+      ]
+    },
+    {
+      "id": "andrej-lupinc",
+      "label": "Andrej Lupinc",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Laibach.",
+      "musicbrainz": {
+        "id": "e49d4e83-4023-4b89-99d0-1cde59303aef",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/e49d4e83-4023-4b89-99d0-1cde59303aef"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Andrej Lupinc as a member from 1980-06-01."
+        }
+      ]
+    },
+    {
+      "id": "bine-zerko",
+      "label": "Bine Zerko",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Laibach.",
+      "musicbrainz": {
+        "id": "2152e040-46c6-4b48-b51d-970f2ae571a2",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/2152e040-46c6-4b48-b51d-970f2ae571a2"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Bine Zerko as a member from 1980-06-01."
+        }
+      ]
+    },
+    {
+      "id": "toma-hostnik",
+      "label": "Tomaž Hostnik",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Laibach.",
+      "musicbrainz": {
+        "id": "2696805e-6021-413d-9ace-033e639c7e9c",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/2696805e-6021-413d-9ace-033e639c7e9c"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Tomaž Hostnik as a member from 1980 to 1982-12-21."
+        }
+      ]
+    },
+    {
+      "id": "milan-fras",
+      "label": "Milan Fras",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Laibach.",
+      "musicbrainz": {
+        "id": "b12eb96c-dea8-42d3-88f0-12a0899eeefc",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/b12eb96c-dea8-42d3-88f0-12a0899eeefc"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Milan Fras as a member from 1983."
+        }
+      ]
+    },
+    {
+      "id": "janez-gabri",
+      "label": "Janez Gabrič",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Laibach.",
+      "musicbrainz": {
+        "id": "c158ee2e-a59d-446e-9fe8-6b8ae7be55b9",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/c158ee2e-a59d-446e-9fe8-6b8ae7be55b9"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Janez Gabrič as a member."
+        }
+      ]
+    },
+    {
+      "id": "luka-jamnik",
+      "label": "Luka Jamnik",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Laibach.",
+      "musicbrainz": {
+        "id": "6991bca5-0a66-4893-aca6-bd86c9aa5020",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/6991bca5-0a66-4893-aca6-bd86c9aa5020"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Luka Jamnik as a member."
+        }
+      ]
+    },
+    {
+      "id": "ivan-novak",
+      "label": "Ivan Novak",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Laibach.",
+      "musicbrainz": {
+        "id": "258fc0e2-5817-47f6-b9ec-15af9125653e",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/258fc0e2-5817-47f6-b9ec-15af9125653e"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Ivan Novak as a member."
+        }
+      ]
+    },
+    {
+      "id": "sa-o-vollmaier",
+      "label": "Sašo Vollmaier",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Laibach.",
+      "musicbrainz": {
+        "id": "4e135c09-ade6-443d-b89c-8f0a11f39b3c",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/4e135c09-ade6-443d-b89c-8f0a11f39b3c"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Sašo Vollmaier as a member."
+        }
+      ]
+    },
+    {
+      "id": "damjan-bizilj",
+      "label": "Damjan Bizilj",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Laibach.",
+      "musicbrainz": {
+        "id": "edcc9731-a2b0-4ab1-965a-0c045c3614b3",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/edcc9731-a2b0-4ab1-965a-0c045c3614b3"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Damjan Bizilj as a member."
+        }
+      ]
+    },
+    {
+      "id": "tone-dimnik",
+      "label": "Tone Dimnik",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Laibach.",
+      "musicbrainz": {
+        "id": "23556ab0-fb06-44fa-8cf6-1be31f638e68",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/23556ab0-fb06-44fa-8cf6-1be31f638e68"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Tone Dimnik as a member."
+        }
+      ]
+    },
+    {
+      "id": "ervin-marko-ek",
+      "label": "Ervin Markošek",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Laibach.",
+      "musicbrainz": {
+        "id": "44beed20-55a4-48f1-8ba0-733b3bac1f66",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/44beed20-55a4-48f1-8ba0-733b3bac1f66"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Ervin Markošek as a member."
+        }
+      ]
+    },
+    {
+      "id": "matej-mr-nik",
+      "label": "Matej Mršnik",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Laibach.",
+      "musicbrainz": {
+        "id": "a04a19c2-1982-4731-8fdb-74c9ad8ba61e",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/a04a19c2-1982-4731-8fdb-74c9ad8ba61e"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Matej Mršnik as a member."
+        }
+      ]
+    },
+    {
+      "id": "dave-gibney",
+      "label": "Dave Gibney",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Fear Factory.",
+      "musicbrainz": {
+        "id": "b59e865f-4e5a-48dd-83e3-37a4575b4290",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/b59e865f-4e5a-48dd-83e3-37a4575b4290"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Dave Gibney as a member from 1989 to 1991."
+        }
+      ]
+    },
+    {
+      "id": "dino-cazares",
+      "label": "Dino Cazares",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Fear Factory.",
+      "musicbrainz": {
+        "id": "ebd0f3b6-48f2-4e5c-a72b-6ac34696ef35",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/ebd0f3b6-48f2-4e5c-a72b-6ac34696ef35"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Dino Cazares as a member from 1989 to 2002."
+        }
+      ]
+    },
+    {
+      "id": "raymond-herrera",
+      "label": "Raymond Herrera",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Fear Factory.",
+      "musicbrainz": {
+        "id": "bc933f46-f045-454a-b2e6-7e64811947a0",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/bc933f46-f045-454a-b2e6-7e64811947a0"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Raymond Herrera as a member from 1989 to 2009."
+        }
+      ]
+    },
+    {
+      "id": "andy-romero",
+      "label": "Andy Romero",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Fear Factory.",
+      "musicbrainz": {
+        "id": "d99d495a-8aec-4180-8863-8d5e1468e1f7",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/d99d495a-8aec-4180-8863-8d5e1468e1f7"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Andy Romero as a member from 1991 to 1992."
+        }
+      ]
+    },
+    {
+      "id": "andrew-shives",
+      "label": "Andrew Shives",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Fear Factory.",
+      "musicbrainz": {
+        "id": "90553281-0b27-4ee6-975e-e05f6d650633",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/90553281-0b27-4ee6-975e-e05f6d650633"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Andrew Shives as a member from 1992 to 1993."
+        }
+      ]
+    },
+    {
+      "id": "christian-olde-wolbers",
+      "label": "Christian Olde Wolbers",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Fear Factory.",
+      "musicbrainz": {
+        "id": "f2d39886-29ba-4254-bc70-d9a6f8cba26e",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/f2d39886-29ba-4254-bc70-d9a6f8cba26e"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Christian Olde Wolbers as a member from 1993 to 2002."
+        }
+      ]
+    },
+    {
+      "id": "byron-stroud",
+      "label": "Byron Stroud",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Fear Factory.",
+      "musicbrainz": {
+        "id": "eeb2d9ef-e5d7-41da-87ce-82926b611ec0",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/eeb2d9ef-e5d7-41da-87ce-82926b611ec0"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Byron Stroud as a member from 2003 to 2012."
+        }
+      ]
+    },
+    {
+      "id": "gene-hoglan",
+      "label": "Gene Hoglan",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Fear Factory.",
+      "musicbrainz": {
+        "id": "b007f65c-c831-442c-bbf4-378638b236a4",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/b007f65c-c831-442c-bbf4-378638b236a4"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Gene Hoglan as a member from 2009 to 2012."
+        }
+      ]
+    },
+    {
+      "id": "matt-devries",
+      "label": "Matt DeVries",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Fear Factory.",
+      "musicbrainz": {
+        "id": "5e6bfa5d-e635-4ca4-ae36-758b019f25a2",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/5e6bfa5d-e635-4ca4-ae36-758b019f25a2"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Matt DeVries as a member from 2012."
+        }
+      ]
+    },
+    {
+      "id": "mike-heller",
+      "label": "Mike Heller",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Fear Factory.",
+      "musicbrainz": {
+        "id": "552dca97-18c4-401a-81a1-f4d811a40a49",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/552dca97-18c4-401a-81a1-f4d811a40a49"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Mike Heller as a member from 2012."
+        }
+      ]
+    },
+    {
+      "id": "milo-silvestro",
+      "label": "Milo Silvestro",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Fear Factory.",
+      "musicbrainz": {
+        "id": "a27c91c9-ec0e-488d-b831-dbd90cc32389",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/a27c91c9-ec0e-488d-b831-dbd90cc32389"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Milo Silvestro as a member from 2023."
+        }
+      ]
+    },
+    {
+      "id": "beate-bartel",
+      "label": "Beate Bartel",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Einstürzende Neubauten.",
+      "musicbrainz": {
+        "id": "009778db-cc8b-4f58-aae5-2c34da688a98",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/009778db-cc8b-4f58-aae5-2c34da688a98"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists Beate Bartel as a member from 1980 to 1980."
+        }
+      ]
+    },
+    {
+      "id": "gudrun-gut",
+      "label": "Gudrun Gut",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Einstürzende Neubauten.",
+      "musicbrainz": {
+        "id": "22e67027-3c07-44d5-8501-8eed7b13286b",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/22e67027-3c07-44d5-8501-8eed7b13286b"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists Gudrun Gut as a member from 1980 to 1980."
+        }
+      ]
+    },
+    {
+      "id": "blixa-bargeld",
+      "label": "Blixa Bargeld",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Einstürzende Neubauten.",
+      "musicbrainz": {
+        "id": "b6471e10-c91e-482d-8eb6-2bfe5cf737e5",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/b6471e10-c91e-482d-8eb6-2bfe5cf737e5"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists Blixa Bargeld as a member from 1980."
+        }
+      ]
+    },
+    {
+      "id": "andrew-chudy",
+      "label": "Andrew Chudy",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Einstürzende Neubauten.",
+      "musicbrainz": {
+        "id": "76533eaf-5df9-4f80-a21a-fbcf551dec42",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/76533eaf-5df9-4f80-a21a-fbcf551dec42"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists Andrew Chudy as a member from 1980."
+        }
+      ]
+    },
+    {
+      "id": "alexander-hacke",
+      "label": "Alexander Hacke",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Einstürzende Neubauten.",
+      "musicbrainz": {
+        "id": "64710735-6c39-44e8-8d5b-ffced2a98991",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/64710735-6c39-44e8-8d5b-ffced2a98991"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists Alexander Hacke as a member from 1980."
+        }
+      ]
+    },
+    {
+      "id": "n-u-unruh",
+      "label": "N.U. Unruh",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Einstürzende Neubauten.",
+      "musicbrainz": {
+        "id": "7f7b89cf-3fda-404d-8772-e0d970f8cc1d",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/7f7b89cf-3fda-404d-8772-e0d970f8cc1d"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists N.U. Unruh as a member from 1980."
+        }
+      ]
+    },
+    {
+      "id": "mark-chung",
+      "label": "Mark Chung",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Einstürzende Neubauten.",
+      "musicbrainz": {
+        "id": "3ae3afb8-9ee3-4230-8558-827ca1fb74da",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/3ae3afb8-9ee3-4230-8558-827ca1fb74da"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists Mark Chung as a member from 1981 to 1994."
+        }
+      ]
+    },
+    {
+      "id": "f-m-einheit",
+      "label": "F.M. Einheit",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Einstürzende Neubauten.",
+      "musicbrainz": {
+        "id": "63a3b285-3cec-444c-ab76-5b1e306c7011",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/63a3b285-3cec-444c-ab76-5b1e306c7011"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists F.M. Einheit as a member from 1981 to 1995."
+        }
+      ]
+    },
+    {
+      "id": "roland-wolf",
+      "label": "Roland Wolf",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Einstürzende Neubauten.",
+      "musicbrainz": {
+        "id": "89d87aa7-a40c-4f15-b308-533130a5ba7f",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/89d87aa7-a40c-4f15-b308-533130a5ba7f"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists Roland Wolf as a member from 1995 to 1995."
+        }
+      ]
+    },
+    {
+      "id": "jochen-arbeit",
+      "label": "Jochen Arbeit",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Einstürzende Neubauten.",
+      "musicbrainz": {
+        "id": "5982653b-c55d-4c6c-93ae-18d740e02501",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/5982653b-c55d-4c6c-93ae-18d740e02501"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists Jochen Arbeit as a member from 1996."
+        }
+      ]
+    },
+    {
+      "id": "rudi-moser",
+      "label": "Rudi Moser",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Einstürzende Neubauten.",
+      "musicbrainz": {
+        "id": "bc6e9371-dc4a-49c5-97c2-4d1b495dc595",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/bc6e9371-dc4a-49c5-97c2-4d1b495dc595"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists Rudi Moser as a member from 1996."
+        }
+      ]
+    },
+    {
+      "id": "ash-wednesday",
+      "label": "Ash Wednesday",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Einstürzende Neubauten.",
+      "musicbrainz": {
+        "id": "a7b0cbb3-3d1b-4432-8758-77b0677e4337",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/a7b0cbb3-3d1b-4432-8758-77b0677e4337"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists Ash Wednesday as a member from 1997."
+        }
+      ]
+    },
+    {
+      "id": "racso-agroyam",
+      "label": "Racso Agroyam",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Hocico.",
+      "musicbrainz": {
+        "id": "c4d0cdff-c371-4ee1-8818-c86ad287aa64",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/c4d0cdff-c371-4ee1-8818-c86ad287aa64"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Hocico",
+          "url": "https://musicbrainz.org/artist/b16fd684-831e-4128-8120-6626e76f88c6",
+          "note": "Lists Racso Agroyam as a member from 1993."
+        }
+      ]
+    },
+    {
+      "id": "erk-aicrag",
+      "label": "Erk Aicrag",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Hocico.",
+      "musicbrainz": {
+        "id": "1ae50b34-1e5f-4c80-8c88-176d78a2cb2b",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/1ae50b34-1e5f-4c80-8c88-176d78a2cb2b"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Hocico",
+          "url": "https://musicbrainz.org/artist/b16fd684-831e-4128-8120-6626e76f88c6",
+          "note": "Lists Erk Aicrag as a member from 1993."
+        }
+      ]
+    },
+    {
+      "id": "richard-fielding",
+      "label": "Richard Fielding",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Severed Heads.",
+      "musicbrainz": {
+        "id": "8bfc65b9-f0b0-4d2e-836e-cc98602543c5",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/8bfc65b9-f0b0-4d2e-836e-cc98602543c5"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Severed Heads",
+          "url": "https://musicbrainz.org/artist/4976edcf-58c3-49b6-b6f1-2d8277e60d26",
+          "note": "Lists Richard Fielding as a member from 1979 to 1982."
+        }
+      ]
+    },
+    {
+      "id": "tom-ellard",
+      "label": "Tom Ellard",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Severed Heads.",
+      "musicbrainz": {
+        "id": "e551cffd-296d-4232-a95d-6ceae879162d",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/e551cffd-296d-4232-a95d-6ceae879162d"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Severed Heads",
+          "url": "https://musicbrainz.org/artist/4976edcf-58c3-49b6-b6f1-2d8277e60d26",
+          "note": "Lists Tom Ellard as a member from 1979."
+        }
+      ]
+    },
+    {
+      "id": "garry-bradbury",
+      "label": "Garry Bradbury",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Severed Heads.",
+      "musicbrainz": {
+        "id": "ca57924c-3d48-4bb5-90b5-a0717e665175",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/ca57924c-3d48-4bb5-90b5-a0717e665175"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Severed Heads",
+          "url": "https://musicbrainz.org/artist/4976edcf-58c3-49b6-b6f1-2d8277e60d26",
+          "note": "Lists Garry Bradbury as a member from 1981 to 1985."
+        }
+      ]
+    },
+    {
+      "id": "simon-knuckey",
+      "label": "Simon Knuckey",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Severed Heads.",
+      "musicbrainz": {
+        "id": "50137659-39b3-4eb7-80c7-b29f65ed1c6e",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/50137659-39b3-4eb7-80c7-b29f65ed1c6e"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Severed Heads",
+          "url": "https://musicbrainz.org/artist/4976edcf-58c3-49b6-b6f1-2d8277e60d26",
+          "note": "Lists Simon Knuckey as a member from 1982 to 1984."
+        }
+      ]
+    },
+    {
+      "id": "paul-deering",
+      "label": "Paul Deering",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a member of Severed Heads.",
+      "musicbrainz": {
+        "id": "1e72415b-dc52-4484-b8b2-10e8de03748a",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/1e72415b-dc52-4484-b8b2-10e8de03748a"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Severed Heads",
+          "url": "https://musicbrainz.org/artist/4976edcf-58c3-49b6-b6f1-2d8277e60d26",
+          "note": "Lists Paul Deering as a member from 1984 to 1985."
+        }
+      ]
     }
   ],
   "edges": [
@@ -5209,6 +7297,2288 @@
           "title": "MusicBrainz: Mindphaser",
           "url": "https://musicbrainz.org/release-group/f7329a5b-8972-38f0-8f4a-1a90b79829db",
           "note": "Release-group artist credit lists Front Line Assembly."
+        }
+      ]
+    },
+    {
+      "source": "chris-vrenna",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1988,
+      "validTo": 1990,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Chris Vrenna as a member from 1988-10 to 1990."
+        }
+      ]
+    },
+    {
+      "source": "ron-musarra",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1988,
+      "validTo": 1988,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Ron Musarra as a member from 1988 to 1988."
+        }
+      ]
+    },
+    {
+      "source": "trent-reznor",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1988,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Trent Reznor as a member from 1988."
+        }
+      ]
+    },
+    {
+      "source": "nick-rushe",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1989,
+      "validTo": 1989,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Nick Rushe as a member from 1989 to 1989."
+        }
+      ]
+    },
+    {
+      "source": "gary-talpas",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1989,
+      "validTo": 1989,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Gary Talpas as a member from 1989 to 1989."
+        }
+      ]
+    },
+    {
+      "source": "richard-patrick",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1989,
+      "validTo": 1993,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Richard Patrick as a member from 1989 to 1993."
+        }
+      ]
+    },
+    {
+      "source": "david-haymes",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1990,
+      "validTo": 1990,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists David Haymes as a member from 1990 to 1990."
+        }
+      ]
+    },
+    {
+      "source": "lee-mars",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1990,
+      "validTo": 1991,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Lee Mars as a member from 1990 to 1991."
+        }
+      ]
+    },
+    {
+      "source": "jeff-ward",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1990,
+      "validTo": 1991,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Jeff Ward as a member from 1990 to 1991."
+        }
+      ]
+    },
+    {
+      "source": "martin-atkins",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1991,
+      "validTo": 1991,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Martin Atkins as a member from 1991 to 1991."
+        }
+      ]
+    },
+    {
+      "source": "james-woolley",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1991,
+      "validTo": 1994,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists James Woolley as a member from 1991 to 1994."
+        }
+      ]
+    },
+    {
+      "source": "chris-vrenna",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1992,
+      "validTo": 1997,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Chris Vrenna as a member from 1992 to 1997."
+        }
+      ]
+    },
+    {
+      "source": "danny-lohner",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1993,
+      "validTo": 2003,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Danny Lohner as a member from 1993 to 2003."
+        }
+      ]
+    },
+    {
+      "source": "robin-finck",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1994,
+      "validTo": 1996,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Robin Finck as a member from 1994 to 1996."
+        }
+      ]
+    },
+    {
+      "source": "charlie-clouser",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1994,
+      "validTo": 2001,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Charlie Clouser as a member from 1994 to 2001."
+        }
+      ]
+    },
+    {
+      "source": "kevin-mcmahon",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1996,
+      "validTo": 1996,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Kevin McMahon as a member from 1996 to 1996."
+        }
+      ]
+    },
+    {
+      "source": "keith-hillebrandt",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1997,
+      "validTo": 1999,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Keith Hillebrandt as a member from 1997 to 1999."
+        }
+      ]
+    },
+    {
+      "source": "dave-ogilvie",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1997,
+      "validTo": 1999,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Dave Ogilvie as a member from 1997 to 1999."
+        }
+      ]
+    },
+    {
+      "source": "robin-finck",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1999,
+      "validTo": 2000,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Robin Finck as a member from 1999 to 2000."
+        }
+      ]
+    },
+    {
+      "source": "jerome-dillon",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1999,
+      "validTo": 2005,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Jerome Dillon as a member from 1999 to 2005-10-01."
+        }
+      ]
+    },
+    {
+      "source": "atticus-ross",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2004,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Atticus Ross as a member from 2004."
+        }
+      ]
+    },
+    {
+      "source": "alex-carapetis",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2005,
+      "validTo": 2005,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Alex Carapetis as a member from 2005-10-07 to 2005-12-01."
+        }
+      ]
+    },
+    {
+      "source": "aaron-north",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2005,
+      "validTo": 2007,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Aaron North as a member from 2005 to 2007."
+        }
+      ]
+    },
+    {
+      "source": "jeordie-white",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2005,
+      "validTo": 2007,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Jeordie White as a member from 2005 to 2007."
+        }
+      ]
+    },
+    {
+      "source": "alessandro-cortini",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2005,
+      "validTo": 2008,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Alessandro Cortini as a member from 2005 to 2008-12."
+        }
+      ]
+    },
+    {
+      "source": "josh-freese",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2005,
+      "validTo": 2008,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Josh Freese as a member from 2005 to 2008-12."
+        }
+      ]
+    },
+    {
+      "source": "robin-finck",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2008,
+      "validTo": 2009,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Robin Finck as a member from 2008 to 2009."
+        }
+      ]
+    },
+    {
+      "source": "justin-meldal-johnsen",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2008,
+      "validTo": 2009,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Justin Meldal‐Johnsen as a member from 2008 to 2009."
+        }
+      ]
+    },
+    {
+      "source": "ilan-rubin",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2008,
+      "validTo": 2009,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Ilan Rubin as a member from 2008 to 2009."
+        }
+      ]
+    },
+    {
+      "source": "adrian-belew",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2013,
+      "validTo": 2013,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Adrian Belew as a member from 2013 to 2013."
+        }
+      ]
+    },
+    {
+      "source": "joshua-eustis",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2013,
+      "validTo": 2013,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Joshua Eustis as a member from 2013 to 2013."
+        }
+      ]
+    },
+    {
+      "source": "lisa-fischer",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2013,
+      "validTo": 2013,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Lisa Fischer as a member from 2013 to 2013."
+        }
+      ]
+    },
+    {
+      "source": "sharlotte-gibson",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2013,
+      "validTo": 2013,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Sharlotte Gibson as a member from 2013 to 2013."
+        }
+      ]
+    },
+    {
+      "source": "pino-palladino",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2013,
+      "validTo": 2013,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Pino Palladino as a member from 2013 to 2013."
+        }
+      ]
+    },
+    {
+      "source": "ilan-rubin",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2013,
+      "validTo": 2025,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Ilan Rubin as a member from 2013 to 2025."
+        }
+      ]
+    },
+    {
+      "source": "alessandro-cortini",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2013,
+      "validTo": 2026,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Alessandro Cortini as a member from 2013 to 2026-01."
+        }
+      ]
+    },
+    {
+      "source": "robin-finck",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2013,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Robin Finck as a member from 2013."
+        }
+      ]
+    },
+    {
+      "source": "josh-freese",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2025,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Josh Freese as a member from 2025."
+        }
+      ]
+    },
+    {
+      "source": "stu-brooks",
+      "target": "nine-inch-nails",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2026,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Lists Stu Brooks as a member from 2026-02."
+        }
+      ]
+    },
+    {
+      "source": "vince-clarke",
+      "target": "depeche-mode",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1980,
+      "validTo": 1981,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Depeche Mode",
+          "url": "https://musicbrainz.org/artist/8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+          "note": "Lists Vince Clarke as a member from 1980 to 1981."
+        }
+      ]
+    },
+    {
+      "source": "andrew-fletcher",
+      "target": "depeche-mode",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1980,
+      "validTo": 2022,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Depeche Mode",
+          "url": "https://musicbrainz.org/artist/8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+          "note": "Lists Andrew Fletcher as a member from 1980 to 2022-05-26."
+        }
+      ]
+    },
+    {
+      "source": "dave-gahan",
+      "target": "depeche-mode",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1980,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Depeche Mode",
+          "url": "https://musicbrainz.org/artist/8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+          "note": "Lists Dave Gahan as a member from 1980."
+        }
+      ]
+    },
+    {
+      "source": "martin-l-gore",
+      "target": "depeche-mode",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1980,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Depeche Mode",
+          "url": "https://musicbrainz.org/artist/8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+          "note": "Lists Martin L. Gore as a member from 1980."
+        }
+      ]
+    },
+    {
+      "source": "alan-wilder",
+      "target": "depeche-mode",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1982,
+      "validTo": 1995,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Depeche Mode",
+          "url": "https://musicbrainz.org/artist/8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+          "note": "Lists Alan Wilder as a member from 1982 to 1995-06."
+        }
+      ]
+    },
+    {
+      "source": "olivia-newton-bundy",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1989,
+      "validTo": 1990,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Olivia Newton Bundy as a member from 1989 to 1990."
+        }
+      ]
+    },
+    {
+      "source": "zsa-zsa-speck",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1989,
+      "validTo": 1990,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Zsa Zsa Speck as a member from 1989 to 1990."
+        }
+      ]
+    },
+    {
+      "source": "daisy-berkowitz",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1989,
+      "validTo": 1996,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Daisy Berkowitz as a member from 1989 to 1996."
+        }
+      ]
+    },
+    {
+      "source": "marilyn-manson-80cadd99",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1989,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Marilyn Manson as a member from 1989."
+        }
+      ]
+    },
+    {
+      "source": "gidget-gein",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1990,
+      "validTo": 1993,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Gidget Gein as a member from 1990 to 1993-12."
+        }
+      ]
+    },
+    {
+      "source": "madonna-wayne-gacy",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1990,
+      "validTo": 2007,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Madonna Wayne Gacy as a member from 1990 to 2007."
+        }
+      ]
+    },
+    {
+      "source": "sara-lee-lucas",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1991,
+      "validTo": 1995,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Sara Lee Lucas as a member from 1991 to 1995."
+        }
+      ]
+    },
+    {
+      "source": "jeordie-white",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1994,
+      "validTo": 2002,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Jeordie White as a member from 1994 to 2002."
+        }
+      ]
+    },
+    {
+      "source": "ginger-fish",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1995,
+      "validTo": 2004,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Ginger Fish as a member from 1995 to 2004."
+        }
+      ]
+    },
+    {
+      "source": "zim-zum",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1996,
+      "validTo": 1998,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Zim Zum as a member from 1996 to 1998."
+        }
+      ]
+    },
+    {
+      "source": "john-5",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1998,
+      "validTo": 2004,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists John 5 as a member from 1998 to 2004."
+        }
+      ]
+    },
+    {
+      "source": "skold",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2002,
+      "validTo": 2006,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Skold as a member from 2002 to 2006."
+        }
+      ]
+    },
+    {
+      "source": "mark-chaussee",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2004,
+      "validTo": 2005,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Mark Chaussee as a member from 2004 to 2005."
+        }
+      ]
+    },
+    {
+      "source": "chris-vrenna",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2004,
+      "validTo": 2005,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Chris Vrenna as a member from 2004 to 2005."
+        }
+      ]
+    },
+    {
+      "source": "skold",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2006,
+      "validTo": 2008,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Skold as a member from 2006 to 2008."
+        }
+      ]
+    },
+    {
+      "source": "ginger-fish",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2006,
+      "validTo": 2011,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Ginger Fish as a member from 2006 to 2011-02-23."
+        }
+      ]
+    },
+    {
+      "source": "rob-holliday",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2007,
+      "validTo": 2008,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Rob Holliday as a member from 2007 to 2008."
+        }
+      ]
+    },
+    {
+      "source": "chris-vrenna",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2007,
+      "validTo": 2011,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Chris Vrenna as a member from 2007 to 2011-11."
+        }
+      ]
+    },
+    {
+      "source": "jeordie-white",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2008,
+      "validTo": 2017,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Jeordie White as a member from 2008-01 to 2017-10-24."
+        }
+      ]
+    },
+    {
+      "source": "wes-borland",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2008,
+      "validTo": 2008,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Wes Borland as a member from 2008 to 2008."
+        }
+      ]
+    },
+    {
+      "source": "andy-gerold",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2009,
+      "validTo": 2009,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Andy Gerold as a member from 2009 to 2009."
+        }
+      ]
+    },
+    {
+      "source": "fred-sablan",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2010,
+      "validTo": 2014,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Fred Sablan as a member from 2010-07 to 2014."
+        }
+      ]
+    },
+    {
+      "source": "gil-sharone",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2013,
+      "validTo": 2019,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Gil Sharone as a member from 2013 to 2019-03-27."
+        }
+      ]
+    },
+    {
+      "source": "tyler-bates",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2014,
+      "validTo": 2018,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Tyler Bates as a member from 2014 to 2018."
+        }
+      ]
+    },
+    {
+      "source": "juan-alderete",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2017,
+      "validTo": 2020,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Juan Alderete as a member from 2017-11-05 to 2020."
+        }
+      ]
+    },
+    {
+      "source": "brandon-pertzborn",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2019,
+      "validTo": 2020,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Brandon Pertzborn as a member from 2019-06-18 to 2020."
+        }
+      ]
+    },
+    {
+      "source": "tyler-bates",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2024,
+      "validTo": 2026,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Tyler Bates as a member from 2024 to 2026-01."
+        }
+      ]
+    },
+    {
+      "source": "reba-meyers",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2024,
+      "validTo": 2026,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Reba Meyers as a member from 2024 to 2026."
+        }
+      ]
+    },
+    {
+      "source": "piggy-d",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2024,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Piggy D. as a member from 2024."
+        }
+      ]
+    },
+    {
+      "source": "gil-sharone",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2024,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Gil Sharone as a member from 2024."
+        }
+      ]
+    },
+    {
+      "source": "skold",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2026,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Skold as a member from 2026-02."
+        }
+      ]
+    },
+    {
+      "source": "nick-annis",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2026,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Nick Annis as a member from 2026-04."
+        }
+      ]
+    },
+    {
+      "source": "paul-wiley",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Paul Wiley as a member."
+        }
+      ]
+    },
+    {
+      "source": "zim-zum",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Zim Zum as a member."
+        }
+      ]
+    },
+    {
+      "source": "rudy-ratzinger",
+      "target": "wumpscut",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1991,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: :wumpscut:",
+          "url": "https://musicbrainz.org/artist/e4e79264-c1ec-490c-b823-b2918204cd4f",
+          "note": "Lists Rudy Ratzinger as a member from 1991-05."
+        }
+      ]
+    },
+    {
+      "source": "richard-z-kruspe",
+      "target": "rammstein",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1994,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Rammstein",
+          "url": "https://musicbrainz.org/artist/b2d122f9-eadb-4930-a196-8f221eeb0c66",
+          "note": "Lists Richard Z. Kruspe as a member from 1994-02."
+        }
+      ]
+    },
+    {
+      "source": "paul-landers",
+      "target": "rammstein",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1994,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Rammstein",
+          "url": "https://musicbrainz.org/artist/b2d122f9-eadb-4930-a196-8f221eeb0c66",
+          "note": "Lists Paul Landers as a member from 1994-02."
+        }
+      ]
+    },
+    {
+      "source": "till-lindemann",
+      "target": "rammstein",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1994,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Rammstein",
+          "url": "https://musicbrainz.org/artist/b2d122f9-eadb-4930-a196-8f221eeb0c66",
+          "note": "Lists Till Lindemann as a member from 1994-02."
+        }
+      ]
+    },
+    {
+      "source": "christian-lorenz",
+      "target": "rammstein",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1994,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Rammstein",
+          "url": "https://musicbrainz.org/artist/b2d122f9-eadb-4930-a196-8f221eeb0c66",
+          "note": "Lists Christian Lorenz as a member from 1994-02."
+        }
+      ]
+    },
+    {
+      "source": "oliver-riedel",
+      "target": "rammstein",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1994,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Rammstein",
+          "url": "https://musicbrainz.org/artist/b2d122f9-eadb-4930-a196-8f221eeb0c66",
+          "note": "Lists Oliver Riedel as a member from 1994-02."
+        }
+      ]
+    },
+    {
+      "source": "christoph-schneider",
+      "target": "rammstein",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1994,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Rammstein",
+          "url": "https://musicbrainz.org/artist/b2d122f9-eadb-4930-a196-8f221eeb0c66",
+          "note": "Lists Christoph Schneider as a member from 1994-02."
+        }
+      ]
+    },
+    {
+      "source": "mick-hollows",
+      "target": "7-minutes-of-nausea",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: 7 Minutes of Nausea",
+          "url": "https://musicbrainz.org/artist/96843ba2-97ec-4120-8c25-044e001e95ed",
+          "note": "Lists Mick Hollows as a member."
+        }
+      ]
+    },
+    {
+      "source": "scut",
+      "target": "7-minutes-of-nausea",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: 7 Minutes of Nausea",
+          "url": "https://musicbrainz.org/artist/96843ba2-97ec-4120-8c25-044e001e95ed",
+          "note": "Lists Scut as a member."
+        }
+      ]
+    },
+    {
+      "source": "matthias-weigand",
+      "target": "7-minutes-of-nausea",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: 7 Minutes of Nausea",
+          "url": "https://musicbrainz.org/artist/96843ba2-97ec-4120-8c25-044e001e95ed",
+          "note": "Lists Matthias Weigand as a member."
+        }
+      ]
+    },
+    {
+      "source": "youth",
+      "target": "killing-joke",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1979,
+      "validTo": 1982,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Killing Joke",
+          "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
+          "note": "Lists Youth as a member from 1979 to 1982."
+        }
+      ]
+    },
+    {
+      "source": "paul-ferguson",
+      "target": "killing-joke",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1979,
+      "validTo": 1986,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Killing Joke",
+          "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
+          "note": "Lists Paul Ferguson as a member from 1979 to 1986."
+        }
+      ]
+    },
+    {
+      "source": "jaz-coleman",
+      "target": "killing-joke",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1979,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Killing Joke",
+          "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
+          "note": "Lists Jaz Coleman as a member from 1979."
+        }
+      ]
+    },
+    {
+      "source": "paul-raven",
+      "target": "killing-joke",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1983,
+      "validTo": 1986,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Killing Joke",
+          "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
+          "note": "Lists Paul Raven as a member from 1983 to 1986."
+        }
+      ]
+    },
+    {
+      "source": "martin-atkins",
+      "target": "killing-joke",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1990,
+      "validTo": 1990,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Killing Joke",
+          "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
+          "note": "Lists Martin Atkins as a member from 1990 to 1990."
+        }
+      ]
+    },
+    {
+      "source": "paul-raven",
+      "target": "killing-joke",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1990,
+      "validTo": 1991,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Killing Joke",
+          "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
+          "note": "Lists Paul Raven as a member from 1990 to 1991."
+        }
+      ]
+    },
+    {
+      "source": "youth",
+      "target": "killing-joke",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1992,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Killing Joke",
+          "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
+          "note": "Lists Youth as a member from 1992."
+        }
+      ]
+    },
+    {
+      "source": "paul-raven",
+      "target": "killing-joke",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2002,
+      "validTo": 2007,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Killing Joke",
+          "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
+          "note": "Lists Paul Raven as a member from 2002 to 2007."
+        }
+      ]
+    },
+    {
+      "source": "reza-udhin",
+      "target": "killing-joke",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2005,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Killing Joke",
+          "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
+          "note": "Lists Reza Udhin as a member from 2005."
+        }
+      ]
+    },
+    {
+      "source": "geordie-walker",
+      "target": "killing-joke",
+      "type": "member_of",
+      "roles": [],
+      "validTo": 2023,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Killing Joke",
+          "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
+          "note": "Lists Geordie Walker as a member from 2023-11-26."
+        }
+      ]
+    },
+    {
+      "source": "danny-lohner",
+      "target": "killing-joke",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Killing Joke",
+          "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
+          "note": "Lists Danny Lohner as a member."
+        }
+      ]
+    },
+    {
+      "source": "dejan-knez",
+      "target": "laibach",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1980,
+      "validTo": 2004,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Dejan Knez as a member from 1980-06-01 to 2004."
+        }
+      ]
+    },
+    {
+      "source": "sre-ko-bajda",
+      "target": "laibach",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1980,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Srečko Bajda as a member from 1980-06-01."
+        }
+      ]
+    },
+    {
+      "source": "andrej-lupinc",
+      "target": "laibach",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1980,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Andrej Lupinc as a member from 1980-06-01."
+        }
+      ]
+    },
+    {
+      "source": "bine-zerko",
+      "target": "laibach",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1980,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Bine Zerko as a member from 1980-06-01."
+        }
+      ]
+    },
+    {
+      "source": "toma-hostnik",
+      "target": "laibach",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1980,
+      "validTo": 1982,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Tomaž Hostnik as a member from 1980 to 1982-12-21."
+        }
+      ]
+    },
+    {
+      "source": "milan-fras",
+      "target": "laibach",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1983,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Milan Fras as a member from 1983."
+        }
+      ]
+    },
+    {
+      "source": "janez-gabri",
+      "target": "laibach",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Janez Gabrič as a member."
+        }
+      ]
+    },
+    {
+      "source": "luka-jamnik",
+      "target": "laibach",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Luka Jamnik as a member."
+        }
+      ]
+    },
+    {
+      "source": "ivan-novak",
+      "target": "laibach",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Ivan Novak as a member."
+        }
+      ]
+    },
+    {
+      "source": "sa-o-vollmaier",
+      "target": "laibach",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Sašo Vollmaier as a member."
+        }
+      ]
+    },
+    {
+      "source": "damjan-bizilj",
+      "target": "laibach",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Damjan Bizilj as a member."
+        }
+      ]
+    },
+    {
+      "source": "tone-dimnik",
+      "target": "laibach",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Tone Dimnik as a member."
+        }
+      ]
+    },
+    {
+      "source": "ervin-marko-ek",
+      "target": "laibach",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Ervin Markošek as a member."
+        }
+      ]
+    },
+    {
+      "source": "matej-mr-nik",
+      "target": "laibach",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Lists Matej Mršnik as a member."
+        }
+      ]
+    },
+    {
+      "source": "dave-gibney",
+      "target": "fear-factory",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1989,
+      "validTo": 1991,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Dave Gibney as a member from 1989 to 1991."
+        }
+      ]
+    },
+    {
+      "source": "dino-cazares",
+      "target": "fear-factory",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1989,
+      "validTo": 2002,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Dino Cazares as a member from 1989 to 2002."
+        }
+      ]
+    },
+    {
+      "source": "raymond-herrera",
+      "target": "fear-factory",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1989,
+      "validTo": 2009,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Raymond Herrera as a member from 1989 to 2009."
+        }
+      ]
+    },
+    {
+      "source": "burton-c-bell",
+      "target": "fear-factory",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1989,
+      "validTo": 2020,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Burton C. Bell as a member from 1989 to 2020-09."
+        }
+      ]
+    },
+    {
+      "source": "andy-romero",
+      "target": "fear-factory",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1991,
+      "validTo": 1992,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Andy Romero as a member from 1991 to 1992."
+        }
+      ]
+    },
+    {
+      "source": "andrew-shives",
+      "target": "fear-factory",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1992,
+      "validTo": 1993,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Andrew Shives as a member from 1992 to 1993."
+        }
+      ]
+    },
+    {
+      "source": "christian-olde-wolbers",
+      "target": "fear-factory",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1993,
+      "validTo": 2002,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Christian Olde Wolbers as a member from 1993 to 2002."
+        }
+      ]
+    },
+    {
+      "source": "christian-olde-wolbers",
+      "target": "fear-factory",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2003,
+      "validTo": 2009,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Christian Olde Wolbers as a member from 2003 to 2009."
+        }
+      ]
+    },
+    {
+      "source": "byron-stroud",
+      "target": "fear-factory",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2003,
+      "validTo": 2012,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Byron Stroud as a member from 2003 to 2012."
+        }
+      ]
+    },
+    {
+      "source": "gene-hoglan",
+      "target": "fear-factory",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2009,
+      "validTo": 2012,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Gene Hoglan as a member from 2009 to 2012."
+        }
+      ]
+    },
+    {
+      "source": "dino-cazares",
+      "target": "fear-factory",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2009,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Dino Cazares as a member from 2009."
+        }
+      ]
+    },
+    {
+      "source": "matt-devries",
+      "target": "fear-factory",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2012,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Matt DeVries as a member from 2012."
+        }
+      ]
+    },
+    {
+      "source": "mike-heller",
+      "target": "fear-factory",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2012,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Mike Heller as a member from 2012."
+        }
+      ]
+    },
+    {
+      "source": "tony-campos",
+      "target": "fear-factory",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2015,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Tony Campos as a member from 2015."
+        }
+      ]
+    },
+    {
+      "source": "milo-silvestro",
+      "target": "fear-factory",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2023,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Lists Milo Silvestro as a member from 2023."
+        }
+      ]
+    },
+    {
+      "source": "beate-bartel",
+      "target": "einst-rzende-neubauten",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1980,
+      "validTo": 1980,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists Beate Bartel as a member from 1980 to 1980."
+        }
+      ]
+    },
+    {
+      "source": "gudrun-gut",
+      "target": "einst-rzende-neubauten",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1980,
+      "validTo": 1980,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists Gudrun Gut as a member from 1980 to 1980."
+        }
+      ]
+    },
+    {
+      "source": "blixa-bargeld",
+      "target": "einst-rzende-neubauten",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1980,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists Blixa Bargeld as a member from 1980."
+        }
+      ]
+    },
+    {
+      "source": "andrew-chudy",
+      "target": "einst-rzende-neubauten",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1980,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists Andrew Chudy as a member from 1980."
+        }
+      ]
+    },
+    {
+      "source": "alexander-hacke",
+      "target": "einst-rzende-neubauten",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1980,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists Alexander Hacke as a member from 1980."
+        }
+      ]
+    },
+    {
+      "source": "n-u-unruh",
+      "target": "einst-rzende-neubauten",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1980,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists N.U. Unruh as a member from 1980."
+        }
+      ]
+    },
+    {
+      "source": "mark-chung",
+      "target": "einst-rzende-neubauten",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1981,
+      "validTo": 1994,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists Mark Chung as a member from 1981 to 1994."
+        }
+      ]
+    },
+    {
+      "source": "f-m-einheit",
+      "target": "einst-rzende-neubauten",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1981,
+      "validTo": 1995,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists F.M. Einheit as a member from 1981 to 1995."
+        }
+      ]
+    },
+    {
+      "source": "roland-wolf",
+      "target": "einst-rzende-neubauten",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1995,
+      "validTo": 1995,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists Roland Wolf as a member from 1995 to 1995."
+        }
+      ]
+    },
+    {
+      "source": "jochen-arbeit",
+      "target": "einst-rzende-neubauten",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1996,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists Jochen Arbeit as a member from 1996."
+        }
+      ]
+    },
+    {
+      "source": "rudi-moser",
+      "target": "einst-rzende-neubauten",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1996,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists Rudi Moser as a member from 1996."
+        }
+      ]
+    },
+    {
+      "source": "ash-wednesday",
+      "target": "einst-rzende-neubauten",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1997,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Lists Ash Wednesday as a member from 1997."
+        }
+      ]
+    },
+    {
+      "source": "racso-agroyam",
+      "target": "hocico",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1993,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Hocico",
+          "url": "https://musicbrainz.org/artist/b16fd684-831e-4128-8120-6626e76f88c6",
+          "note": "Lists Racso Agroyam as a member from 1993."
+        }
+      ]
+    },
+    {
+      "source": "erk-aicrag",
+      "target": "hocico",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1993,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Hocico",
+          "url": "https://musicbrainz.org/artist/b16fd684-831e-4128-8120-6626e76f88c6",
+          "note": "Lists Erk Aicrag as a member from 1993."
+        }
+      ]
+    },
+    {
+      "source": "richard-fielding",
+      "target": "severed-heads",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1979,
+      "validTo": 1982,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Severed Heads",
+          "url": "https://musicbrainz.org/artist/4976edcf-58c3-49b6-b6f1-2d8277e60d26",
+          "note": "Lists Richard Fielding as a member from 1979 to 1982."
+        }
+      ]
+    },
+    {
+      "source": "tom-ellard",
+      "target": "severed-heads",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1979,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Severed Heads",
+          "url": "https://musicbrainz.org/artist/4976edcf-58c3-49b6-b6f1-2d8277e60d26",
+          "note": "Lists Tom Ellard as a member from 1979."
+        }
+      ]
+    },
+    {
+      "source": "garry-bradbury",
+      "target": "severed-heads",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1981,
+      "validTo": 1985,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Severed Heads",
+          "url": "https://musicbrainz.org/artist/4976edcf-58c3-49b6-b6f1-2d8277e60d26",
+          "note": "Lists Garry Bradbury as a member from 1981 to 1985."
+        }
+      ]
+    },
+    {
+      "source": "simon-knuckey",
+      "target": "severed-heads",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1982,
+      "validTo": 1984,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Severed Heads",
+          "url": "https://musicbrainz.org/artist/4976edcf-58c3-49b6-b6f1-2d8277e60d26",
+          "note": "Lists Simon Knuckey as a member from 1982 to 1984."
+        }
+      ]
+    },
+    {
+      "source": "paul-deering",
+      "target": "severed-heads",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1984,
+      "validTo": 1985,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Severed Heads",
+          "url": "https://musicbrainz.org/artist/4976edcf-58c3-49b6-b6f1-2d8277e60d26",
+          "note": "Lists Paul Deering as a member from 1984 to 1985."
         }
       ]
     }
