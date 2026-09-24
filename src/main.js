@@ -19,6 +19,7 @@ let layout = new Map();
 let redrawGraph = () => {};
 let restartSimulation = () => {};
 let dimension = "2d";
+let focusedEdge = null;
 
 const nodeEdges = (id) => graph.edges.filter((edge) => edge.source === id || edge.target === id);
 const labelFor = (id) => byId.get(id).label;
@@ -53,9 +54,25 @@ function visibleEdges(nodes) {
   return [...compound.values()];
 }
 
+function edgeContext(edge) {
+  const ids = new Set([edge.source, edge.target]);
+  const sourceNeighbors = new Set(nodeEdges(edge.source).map((item) => item.source === edge.source ? item.target : item.source));
+  const targetNeighbors = new Set(nodeEdges(edge.target).map((item) => item.source === edge.target ? item.target : item.source));
+  const shared = [...sourceNeighbors].filter((id) => targetNeighbors.has(id));
+  for (const id of shared) ids.add(id);
+  for (const item of graph.edges) {
+    if (item.source === edge.source || item.target === edge.source || item.source === edge.target || item.target === edge.target) {
+      ids.add(item.source); ids.add(item.target);
+    }
+  }
+  return { ids, shared };
+}
+
 function renderGraph() {
   const term = search.value.trim().toLowerCase();
-  const nodes = visibleNodes().filter((node) => !term || `${node.label} ${(node.aliases || []).join(" ")}`.toLowerCase().includes(term));
+  let nodes = visibleNodes().filter((node) => !term || `${node.label} ${(node.aliases || []).join(" ")}`.toLowerCase().includes(term));
+  const context = focusedEdge ? edgeContext(focusedEdge) : null;
+  if (context) nodes = graph.nodes.filter((node) => context.ids.has(node.id));
   const visibleIds = new Set(nodes.map(({ id }) => id));
   const width = graphElement.clientWidth || 760;
   const height = graphElement.clientHeight || 450;
@@ -71,7 +88,7 @@ function renderGraph() {
   svg.classList.add("edges");
   svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
   svg.setAttribute("aria-hidden", "true");
-  const edges = visibleEdges(nodes);
+  const edges = context ? graph.edges.filter((edge) => visibleIds.has(edge.source) && visibleIds.has(edge.target)) : visibleEdges(nodes);
   const distances = selectedId ? hopDistances(selectedId) : new Map();
   const lines = edges.map((edge) => {
     const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
@@ -100,7 +117,9 @@ function renderGraph() {
   graphElement.replaceChildren(svg, ...buttons.values());
   graphElement.onclick = (event) => { if (event.target === graphElement || event.target === svg) resetSelection(); };
   graphElement.classList.toggle("three-d", dimension === "3d");
-  status.textContent = `${nodes.length} visible nodes · ${edges.length} visible relationships · drag nodes to explore`;
+  status.textContent = context
+    ? `Edge context · ${nodes.length} nodes · ${edges.length} recorded relationships · click the canvas to return`
+    : `${nodes.length} visible nodes · ${edges.length} visible relationships · drag nodes to explore`;
 
   redrawGraph = () => {
     for (const { edge, line } of lines) {
@@ -159,11 +178,17 @@ function renderGraph() {
 
 function showEdge(edge) {
   const related = graph.edges.filter((item) => (item.source === edge.source && item.target === edge.target) || (item.source === edge.target && item.target === edge.source));
-  detail.innerHTML = `<p class="eyebrow">relationship</p><h2>${labelFor(edge.source)} ↔ ${labelFor(edge.target)}</h2><p>${related.length ? related.map((item) => `${item.type.replace("_", " ")}${item.roles.length ? ` — ${item.roles.join(", ")}` : ""}`).join("<br />") : "Compound relationship in this filtered view. Select either node to inspect the shared connections."}</p>`;
+  focusedEdge = edge;
+  selectedId = null;
+  const context = edgeContext(edge);
+  const shared = context.shared.length ? `<p><strong>Shared intermediaries</strong> ${context.shared.map(labelFor).join(", ")}</p>` : "";
+  detail.innerHTML = `<p class="eyebrow">relationship context</p><h2>${labelFor(edge.source)} ↔ ${labelFor(edge.target)}</h2><p>${related.length ? related.map((item) => `${item.type.replace("_", " ")}${item.roles.length ? ` — ${item.roles.join(", ")}` : ""}`).join("<br />") : "Projected compound relationship in this filtered view."}</p>${shared}<p>The graph now shows the surrounding recorded people, projects, and releases for this connection.</p><button class="return-graph" type="button" data-reset-graph>Return to full graph</button>`;
+  detail.querySelector("[data-reset-graph]").addEventListener("click", resetSelection);
+  renderGraph();
 }
 
 function resetSelection() {
-  selectedId = null; highlightedPath = [];
+  selectedId = null; highlightedPath = []; focusedEdge = null;
   detail.innerHTML = `<p class="eyebrow">Start exploring</p><h2>Select a node or edge</h2><p>Click a node to inspect its relationships, or an edge to inspect the connection. Click the canvas to reset.</p>`;
   renderGraph();
 }
@@ -195,7 +220,7 @@ function beginDrag(event, id, nodeRadius, width, height) {
 
 function selectNode(id) {
   selectedId = id;
-  highlightedPath = [];
+  highlightedPath = []; focusedEdge = null;
   const node = byId.get(id);
   const connections = nodeEdges(id);
   const aliases = node.aliases?.length ? `<p><strong>Also known as</strong> ${node.aliases.join(", ")}</p>` : "";
@@ -251,6 +276,9 @@ document.querySelectorAll("[data-view]").forEach((button) => button.addEventList
   highlightedPath = [];
   document.querySelectorAll("[data-view]").forEach((item) => item.classList.toggle("active", item === button));
   renderGraph();
+}));
+document.querySelectorAll("[data-help]").forEach((button) => button.addEventListener("click", () => {
+  document.querySelector("#help-text").textContent = button.dataset.help;
 }));
 document.querySelector("[data-action='rearrange']").addEventListener("click", renderGraph);
 document.querySelector("[data-action='dimension']").addEventListener("click", () => { dimension = dimension === "2d" ? "3d" : "2d"; renderGraph(); });
