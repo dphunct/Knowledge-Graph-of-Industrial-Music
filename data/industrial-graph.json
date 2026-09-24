@@ -3017,7 +3017,8 @@
           "url": "https://musicbrainz.org/release-group/7a18b986-afcc-359c-add1-7aa3a79104a2",
           "note": "Release group lists Ministry as artist and 1988 as the release year."
         }
-      ]
+      ],
+      "validFrom": 1988
     },
     {
       "source": "land-of-rape-and-honey",
@@ -3275,7 +3276,8 @@
           "url": "https://musicbrainz.org/release/f40133d1-e9c5-4343-8ec0-710f310de645",
           "note": "The tracklist credits 1000 Homo DJs for Supernaut (Trent Reznor vocal version)."
         }
-      ]
+      ],
+      "validFrom": 1991
     },
     {
       "source": "trent-reznor",
@@ -4949,6 +4951,36 @@
           "title": "MusicBrainz: Lead Into Gold",
           "url": "https://musicbrainz.org/artist/aedd2d07-66ca-4496-8156-ac6cde7e87b4",
           "note": "Lists Frenchie L'Amour as a member."
+        }
+      ]
+    },
+    {
+      "source": "ministry",
+      "target": "stigmata",
+      "type": "released",
+      "roles": [],
+      "validFrom": 1988,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Stigmata",
+          "url": "https://musicbrainz.org/release-group/ffd7f995-6354-38df-9c84-902769328a1e",
+          "note": "Release-group artist credit lists Ministry."
+        }
+      ]
+    },
+    {
+      "source": "front-line-assembly",
+      "target": "mindphaser",
+      "type": "released",
+      "roles": [],
+      "validFrom": 1992,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Mindphaser",
+          "url": "https://musicbrainz.org/release-group/f7329a5b-8972-38f0-8f4a-1a90b79829db",
+          "note": "Release-group artist credit lists Front Line Assembly."
         }
       ]
     }
