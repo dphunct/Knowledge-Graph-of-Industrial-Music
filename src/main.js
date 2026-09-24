@@ -11,6 +11,10 @@ const pathTo = document.querySelector("#path-to");
 let activeView = "all";
 let selectedId = null;
 let highlightedPath = [];
+let animationFrame;
+let layout = new Map();
+let redrawGraph = () => {};
+let restartSimulation = () => {};
 
 const nodeEdges = (id) => graph.edges.filter((edge) => edge.source === id || edge.target === id);
 const labelFor = (id) => byId.get(id).label;
@@ -19,51 +23,121 @@ function visibleNodes() {
   return graph.nodes.filter((node) => activeView === "all" || (activeView === "people" ? node.type === "person" : node.type === "project"));
 }
 
-function nodePositions(nodes) {
-  const byType = Object.groupBy(nodes, ({ type }) => type);
-  const columns = { person: 180, project: 500, release: 820 };
-  const positions = new Map();
-  for (const [type, group] of Object.entries(byType)) {
-    group.sort((a, b) => a.label.localeCompare(b.label)).forEach((node, index) => {
-      positions.set(node.id, { x: columns[type], y: 90 + (index + 1) * (480 / (group.length + 1)) });
-    });
-  }
-  return positions;
-}
-
 function renderGraph() {
   const term = search.value.trim().toLowerCase();
   const nodes = visibleNodes().filter((node) => !term || `${node.label} ${(node.aliases || []).join(" ")}`.toLowerCase().includes(term));
-  const positions = nodePositions(nodes);
   const visibleIds = new Set(nodes.map(({ id }) => id));
+  const width = graphElement.clientWidth || 760;
+  const height = graphElement.clientHeight || 450;
+  const nodeRadius = 62;
+  cancelAnimationFrame(animationFrame);
+  layout = new Map(nodes.map((node, index) => {
+    const angle = index * 2.399963229728653;
+    const radius = Math.min(width, height) * (0.2 + (index % 4) * 0.075);
+    return [node.id, { x: width / 2 + Math.cos(angle) * radius, y: height / 2 + Math.sin(angle) * radius, vx: 0, vy: 0, pinned: false }];
+  }));
+
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.classList.add("edges");
-  svg.setAttribute("viewBox", "0 0 1000 660");
+  svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
   svg.setAttribute("aria-hidden", "true");
-  graph.edges.filter((edge) => visibleIds.has(edge.source) && visibleIds.has(edge.target)).forEach((edge) => {
-    const source = positions.get(edge.source);
-    const target = positions.get(edge.target);
+  const edges = graph.edges.filter((edge) => visibleIds.has(edge.source) && visibleIds.has(edge.target));
+  const lines = edges.map((edge) => {
     const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
-    const isHighlighted = highlightedPath.includes(edge.source) && highlightedPath.includes(edge.target);
-    line.setAttribute("x1", source.x); line.setAttribute("y1", source.y);
-    line.setAttribute("x2", target.x); line.setAttribute("y2", target.y);
-    line.classList.add(isHighlighted ? "highlighted" : "edge");
+    line.classList.add(highlightedPath.includes(edge.source) && highlightedPath.includes(edge.target) ? "highlighted" : "edge");
     svg.append(line);
+    return { edge, line };
   });
-  const buttons = nodes.map((node) => {
+  const buttons = new Map(nodes.map((node) => {
     const button = document.createElement("button");
     button.type = "button";
     button.className = `node ${node.type} ${selectedId === node.id ? "selected" : ""}`;
     button.setAttribute("role", "listitem");
     button.innerHTML = `<span>${node.label}</span><small>${node.type}${node.relevance ? ` · ${node.relevance}` : ""}</small>`;
-    const point = positions.get(node.id);
-    button.style.left = `${point.x / 10}%`;
-    button.style.top = `${point.y / 6.6}%`;
     button.addEventListener("click", () => selectNode(node.id));
-    return button;
-  });
-  graphElement.replaceChildren(svg, ...buttons);
-  status.textContent = `${nodes.length} visible nodes · ${graph.edges.length} recorded relationships`;
+    button.addEventListener("pointerdown", (event) => beginDrag(event, node.id, nodeRadius, width, height));
+    return [node.id, button];
+  }));
+  graphElement.replaceChildren(svg, ...buttons.values());
+  status.textContent = `${nodes.length} visible nodes · ${edges.length} visible relationships · drag nodes to explore`;
+
+  redrawGraph = () => {
+    for (const { edge, line } of lines) {
+      const source = layout.get(edge.source);
+      const target = layout.get(edge.target);
+      line.setAttribute("x1", source.x); line.setAttribute("y1", source.y);
+      line.setAttribute("x2", target.x); line.setAttribute("y2", target.y);
+    }
+    for (const [id, button] of buttons) {
+      const point = layout.get(id);
+      button.style.left = `${point.x}px`;
+      button.style.top = `${point.y}px`;
+    }
+  };
+
+  const simulate = (heat = 1) => {
+    const points = [...layout.values()];
+    for (let left = 0; left < points.length; left += 1) {
+      for (let right = left + 1; right < points.length; right += 1) {
+        const a = points[left]; const b = points[right];
+        const dx = b.x - a.x; const dy = b.y - a.y;
+        const distance = Math.hypot(dx, dy) || 0.01;
+        const unitX = dx / distance; const unitY = dy / distance;
+        const push = (9500 / (distance * distance)) + Math.max(0, nodeRadius * 2 - distance) * 0.15;
+        if (!a.pinned) { a.vx -= unitX * push; a.vy -= unitY * push; }
+        if (!b.pinned) { b.vx += unitX * push; b.vy += unitY * push; }
+      }
+    }
+    for (const edge of edges) {
+      const a = layout.get(edge.source); const b = layout.get(edge.target);
+      const dx = b.x - a.x; const dy = b.y - a.y;
+      const distance = Math.hypot(dx, dy) || 0.01;
+      const pull = (distance - 185) * 0.012;
+      const unitX = dx / distance; const unitY = dy / distance;
+      if (!a.pinned) { a.vx += unitX * pull; a.vy += unitY * pull; }
+      if (!b.pinned) { b.vx -= unitX * pull; b.vy -= unitY * pull; }
+    }
+    for (const point of points) {
+      if (point.pinned) continue;
+      point.vx += (width / 2 - point.x) * 0.0015;
+      point.vy += (height / 2 - point.y) * 0.0015;
+      point.vx *= 0.72; point.vy *= 0.72;
+      point.x = Math.max(nodeRadius, Math.min(width - nodeRadius, point.x + point.vx * heat));
+      point.y = Math.max(nodeRadius, Math.min(height - nodeRadius, point.y + point.vy * heat));
+    }
+    redrawGraph();
+    if (heat > 0.015) animationFrame = requestAnimationFrame(() => simulate(heat * 0.985));
+  };
+  restartSimulation = () => {
+    cancelAnimationFrame(animationFrame);
+    simulate(0.45);
+  };
+  simulate();
+}
+
+function beginDrag(event, id, nodeRadius, width, height) {
+  const point = layout.get(id);
+  if (!point) return;
+  const button = event.currentTarget;
+  button.setPointerCapture(event.pointerId);
+  point.pinned = true;
+  const move = (moveEvent) => {
+    const bounds = graphElement.getBoundingClientRect();
+    point.x = Math.max(nodeRadius, Math.min(width - nodeRadius, moveEvent.clientX - bounds.left));
+    point.y = Math.max(nodeRadius, Math.min(height - nodeRadius, moveEvent.clientY - bounds.top));
+    point.vx = 0; point.vy = 0;
+    redrawGraph();
+  };
+  const release = () => {
+    point.pinned = false;
+    button.removeEventListener("pointermove", move);
+    button.removeEventListener("pointerup", release);
+    button.removeEventListener("pointercancel", release);
+    restartSimulation();
+  };
+  button.addEventListener("pointermove", move);
+  button.addEventListener("pointerup", release);
+  button.addEventListener("pointercancel", release);
 }
 
 function selectNode(id) {
@@ -124,6 +198,8 @@ document.querySelectorAll("[data-view]").forEach((button) => button.addEventList
   document.querySelectorAll("[data-view]").forEach((item) => item.classList.toggle("active", item === button));
   renderGraph();
 }));
+document.querySelector("[data-action='rearrange']").addEventListener("click", renderGraph);
 search.addEventListener("input", renderGraph);
+window.addEventListener("resize", renderGraph);
 populatePathSelects();
 renderGraph();
