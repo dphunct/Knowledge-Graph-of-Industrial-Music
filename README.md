@@ -25,7 +25,7 @@ Codespaces automatically forwards the preview on port 4173. Run `npm run build` 
 
 The first working explorer is a static Vite application. Its portable graph lives in `data/industrial-graph.json` and is bundled at build time; no database, server, or hosted application is required. Run `npm run validate` before changing graph data, then `npm run dev` to explore it locally.
 
-The seed graph is intentionally small and labels every relationship as `needs-citation` until its evidence is curated. See `docs/product-scope.md` for the industrial relevance boundary and data rules.
+The graph is evidence-backed rather than dependent on a single database. MusicBrainz provides structured credits, while Wikidata provides independently maintained cross-references and exact mapped relationship claims. Official artist, label, and release pages may also be cited. Discogs links are retained as catalog cross-references; its API content is not bulk-imported without the required attribution and credentials.
 
 See `docs/knowledge-model.md` for the canonical node, relationship, provenance, and temporal conventions.
 

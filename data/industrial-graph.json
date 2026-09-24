@@ -29,8 +29,26 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Exact match confirmed in pass-8 and pass-9."
+        },
+        {
+          "title": "Wikidata: Ministry",
+          "url": "https://www.wikidata.org/wiki/Q425772",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Ministry",
+          "url": "https://www.discogs.com/artist/12209",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q425772",
+        "url": "https://www.wikidata.org/wiki/Q425772"
+      },
+      "discogs": {
+        "artistId": "12209",
+        "url": "https://www.discogs.com/artist/12209"
+      }
     },
     {
       "id": "skinny-puppy",
@@ -55,8 +73,26 @@
           "title": "MusicBrainz: Skinny Puppy",
           "url": "https://musicbrainz.org/artist/5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
           "note": "Exact match confirmed in pass-8 and pass-9."
+        },
+        {
+          "title": "Wikidata: Skinny Puppy",
+          "url": "https://www.wikidata.org/wiki/Q371535",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Skinny Puppy",
+          "url": "https://www.discogs.com/artist/11192",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q371535",
+        "url": "https://www.wikidata.org/wiki/Q371535"
+      },
+      "discogs": {
+        "artistId": "11192",
+        "url": "https://www.discogs.com/artist/11192"
+      }
     },
     {
       "id": "front-242",
@@ -80,8 +116,26 @@
           "title": "MusicBrainz: Front 242",
           "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626",
           "note": "Exact match confirmed in pass-8 and pass-9."
+        },
+        {
+          "title": "Wikidata: Front 242",
+          "url": "https://www.wikidata.org/wiki/Q527787",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Front 242",
+          "url": "https://www.discogs.com/artist/4655",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q527787",
+        "url": "https://www.wikidata.org/wiki/Q527787"
+      },
+      "discogs": {
+        "artistId": "4655",
+        "url": "https://www.discogs.com/artist/4655"
+      }
     },
     {
       "id": "front-line-assembly",
@@ -105,8 +159,26 @@
           "title": "MusicBrainz: Front Line Assembly",
           "url": "https://musicbrainz.org/artist/b847e9d2-c931-4daf-900c-42c7b2c42e16",
           "note": "Exact match confirmed in pass-8 and pass-9."
+        },
+        {
+          "title": "Wikidata: Front Line Assembly",
+          "url": "https://www.wikidata.org/wiki/Q1470010",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Front Line Assembly",
+          "url": "https://www.discogs.com/artist/10656",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q1470010",
+        "url": "https://www.wikidata.org/wiki/Q1470010"
+      },
+      "discogs": {
+        "artistId": "10656",
+        "url": "https://www.discogs.com/artist/10656"
+      }
     },
     {
       "id": "kmfdm",
@@ -130,8 +202,26 @@
           "title": "MusicBrainz: KMFDM",
           "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
           "note": "Exact match confirmed in pass-8 and pass-9."
+        },
+        {
+          "title": "Wikidata: KMFDM",
+          "url": "https://www.wikidata.org/wiki/Q1351424",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: KMFDM",
+          "url": "https://www.discogs.com/artist/11606",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q1351424",
+        "url": "https://www.wikidata.org/wiki/Q1351424"
+      },
+      "discogs": {
+        "artistId": "11606",
+        "url": "https://www.discogs.com/artist/11606"
+      }
     },
     {
       "id": "revolting-cocks",
@@ -155,8 +245,26 @@
           "title": "MusicBrainz: Revolting Cocks",
           "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
           "note": "Exact match confirmed in pass-8 and pass-9."
+        },
+        {
+          "title": "Wikidata: Revolting Cocks",
+          "url": "https://www.wikidata.org/wiki/Q1473918",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Revolting Cocks",
+          "url": "https://www.discogs.com/artist/21350",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q1473918",
+        "url": "https://www.wikidata.org/wiki/Q1473918"
+      },
+      "discogs": {
+        "artistId": "21350",
+        "url": "https://www.discogs.com/artist/21350"
+      }
     },
     {
       "id": "al-jourgensen",
@@ -182,8 +290,31 @@
           "title": "MusicBrainz: Al Jourgensen",
           "url": "https://musicbrainz.org/artist/6c0dadab-266a-4601-8394-5b8e19e90def",
           "note": "Exact match confirmed in pass-6 and pass-7."
+        },
+        {
+          "title": "Wikidata: Al Jourgensen",
+          "url": "https://www.wikidata.org/wiki/Q713807",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Al Jourgensen",
+          "url": "https://www.discogs.com/artist/86726",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "Discogs artist entry: Al Jourgensen",
+          "url": "https://www.discogs.com/artist/174864",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q713807",
+        "url": "https://www.wikidata.org/wiki/Q713807"
+      },
+      "discogs": {
+        "artistId": "174864",
+        "url": "https://www.discogs.com/artist/174864"
+      }
     },
     {
       "id": "paul-barker",
@@ -207,8 +338,31 @@
           "title": "MusicBrainz: Paul Barker",
           "url": "https://musicbrainz.org/artist/5bec856f-b78b-4216-8af5-1c0c6365bcbe",
           "note": "Exact match confirmed in pass-6 and pass-7."
+        },
+        {
+          "title": "Wikidata: Paul Barker",
+          "url": "https://www.wikidata.org/wiki/Q4590538",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Paul Barker",
+          "url": "https://www.discogs.com/artist/100041",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "Discogs artist entry: Paul Barker",
+          "url": "https://www.discogs.com/artist/1298641",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q4590538",
+        "url": "https://www.wikidata.org/wiki/Q4590538"
+      },
+      "discogs": {
+        "artistId": "1298641",
+        "url": "https://www.discogs.com/artist/1298641"
+      }
     },
     {
       "id": "cevin-key",
@@ -232,8 +386,26 @@
           "title": "MusicBrainz: cEvin Key",
           "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
           "note": "Exact match confirmed in pass-6 and pass-7."
+        },
+        {
+          "title": "Wikidata: cEvin Key",
+          "url": "https://www.wikidata.org/wiki/Q290867",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: cEvin Key",
+          "url": "https://www.discogs.com/artist/9863",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q290867",
+        "url": "https://www.wikidata.org/wiki/Q290867"
+      },
+      "discogs": {
+        "artistId": "9863",
+        "url": "https://www.discogs.com/artist/9863"
+      }
     },
     {
       "id": "nivek-ogre",
@@ -257,8 +429,31 @@
           "title": "MusicBrainz: Nivek Ogre",
           "url": "https://musicbrainz.org/artist/5778f668-1a4c-482f-beb9-08b15b0f861c",
           "note": "Exact match confirmed in pass-6 and pass-7."
+        },
+        {
+          "title": "Wikidata: Nivek Ogre",
+          "url": "https://www.wikidata.org/wiki/Q3046801",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Nivek Ogre",
+          "url": "https://www.discogs.com/artist/70019",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "Discogs artist entry: Nivek Ogre",
+          "url": "https://www.discogs.com/artist/503984",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q3046801",
+        "url": "https://www.wikidata.org/wiki/Q3046801"
+      },
+      "discogs": {
+        "artistId": "503984",
+        "url": "https://www.discogs.com/artist/503984"
+      }
     },
     {
       "id": "bill-leeb",
@@ -282,8 +477,31 @@
           "title": "MusicBrainz: Bill Leeb",
           "url": "https://musicbrainz.org/artist/e10b76e5-dc32-4e9f-83b9-4f717400b19f",
           "note": "Exact match confirmed in pass-6 and pass-7."
+        },
+        {
+          "title": "Wikidata: Bill Leeb",
+          "url": "https://www.wikidata.org/wiki/Q4909880",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Bill Leeb",
+          "url": "https://www.discogs.com/artist/26680",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "Discogs artist entry: Bill Leeb",
+          "url": "https://www.discogs.com/artist/81282",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q4909880",
+        "url": "https://www.wikidata.org/wiki/Q4909880"
+      },
+      "discogs": {
+        "artistId": "81282",
+        "url": "https://www.discogs.com/artist/81282"
+      }
     },
     {
       "id": "rhys-fulber",
@@ -304,8 +522,26 @@
           "title": "MusicBrainz: Rhys Fulber",
           "url": "https://musicbrainz.org/artist/7ee30fce-cd3d-437d-9ff0-b2ef195bda33",
           "note": "Exact match confirmed in pass-6 and pass-7."
+        },
+        {
+          "title": "Wikidata: Rhys Fulber",
+          "url": "https://www.wikidata.org/wiki/Q4356235",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Rhys Fulber",
+          "url": "https://www.discogs.com/artist/10658",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q4356235",
+        "url": "https://www.wikidata.org/wiki/Q4356235"
+      },
+      "discogs": {
+        "artistId": "10658",
+        "url": "https://www.discogs.com/artist/10658"
+      }
     },
     {
       "id": "sascha-konietzko",
@@ -326,8 +562,26 @@
           "title": "MusicBrainz: Sascha Konietzko",
           "url": "https://musicbrainz.org/artist/8d2b70fb-a338-4702-8ce2-3211a4704d6f",
           "note": "Exact match confirmed in pass-6 and pass-7."
+        },
+        {
+          "title": "Wikidata: Sascha Konietzko",
+          "url": "https://www.wikidata.org/wiki/Q2579371",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Sascha Konietzko",
+          "url": "https://www.discogs.com/artist/56841",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q2579371",
+        "url": "https://www.wikidata.org/wiki/Q2579371"
+      },
+      "discogs": {
+        "artistId": "56841",
+        "url": "https://www.discogs.com/artist/56841"
+      }
     },
     {
       "id": "richard-23",
@@ -348,8 +602,31 @@
           "title": "MusicBrainz: Richard 23",
           "url": "https://musicbrainz.org/artist/49197759-80b0-4f46-934c-c5d2fed17ac3",
           "note": "Exact match confirmed in pass-6 and pass-7."
+        },
+        {
+          "title": "Wikidata: Richard 23",
+          "url": "https://www.wikidata.org/wiki/Q366408",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Richard 23",
+          "url": "https://www.discogs.com/artist/610302",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "Discogs artist entry: Richard 23",
+          "url": "https://www.discogs.com/artist/232851",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q366408",
+        "url": "https://www.wikidata.org/wiki/Q366408"
+      },
+      "discogs": {
+        "artistId": "232851",
+        "url": "https://www.discogs.com/artist/232851"
+      }
     },
     {
       "id": "dwayne-goettel",
@@ -366,8 +643,26 @@
           "title": "MusicBrainz: Skinny Puppy",
           "url": "https://musicbrainz.org/artist/5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
           "note": "Lists Dwayne Rudolph Goettel as a member from 1986 to 1995-08-23."
+        },
+        {
+          "title": "Wikidata: Dwayne Goettel",
+          "url": "https://www.wikidata.org/wiki/Q5317990",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Dwayne Goettel",
+          "url": "https://www.discogs.com/artist/136932",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q5317990",
+        "url": "https://www.wikidata.org/wiki/Q5317990"
+      },
+      "discogs": {
+        "artistId": "136932",
+        "url": "https://www.discogs.com/artist/136932"
+      }
     },
     {
       "id": "luc-van-acker",
@@ -384,8 +679,26 @@
           "title": "MusicBrainz: Revolting Cocks",
           "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
           "note": "Lists Luc Van Acker as a member from 1985 to 1993."
+        },
+        {
+          "title": "Wikidata: Luc Van Acker",
+          "url": "https://www.wikidata.org/wiki/Q2238154",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Luc Van Acker",
+          "url": "https://www.discogs.com/artist/29223",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q2238154",
+        "url": "https://www.wikidata.org/wiki/Q2238154"
+      },
+      "discogs": {
+        "artistId": "29223",
+        "url": "https://www.discogs.com/artist/29223"
+      }
     },
     {
       "id": "chris-connelly",
@@ -402,8 +715,31 @@
           "title": "MusicBrainz: Revolting Cocks",
           "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
           "note": "Lists Chris Connelly as a member from 1988 to 1994."
+        },
+        {
+          "title": "Wikidata: Chris Connelly",
+          "url": "https://www.wikidata.org/wiki/Q1773505",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Chris Connelly",
+          "url": "https://www.discogs.com/artist/37940",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "Discogs artist entry: Chris Connelly",
+          "url": "https://www.discogs.com/artist/565103",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q1773505",
+        "url": "https://www.wikidata.org/wiki/Q1773505"
+      },
+      "discogs": {
+        "artistId": "565103",
+        "url": "https://www.discogs.com/artist/565103"
+      }
     },
     {
       "id": "daniel-bressanutti",
@@ -420,8 +756,31 @@
           "title": "MusicBrainz: Front 242",
           "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626",
           "note": "Lists Daniel Bressanutti as a member from 1981."
+        },
+        {
+          "title": "Wikidata: Daniel Bressanutti",
+          "url": "https://www.wikidata.org/wiki/Q123337049",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Daniel Bressanutti",
+          "url": "https://www.discogs.com/artist/43841",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "Discogs artist entry: Daniel Bressanutti",
+          "url": "https://www.discogs.com/artist/148769",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q123337049",
+        "url": "https://www.wikidata.org/wiki/Q123337049"
+      },
+      "discogs": {
+        "artistId": "148769",
+        "url": "https://www.discogs.com/artist/148769"
+      }
     },
     {
       "id": "patrick-codenys",
@@ -456,8 +815,26 @@
           "title": "MusicBrainz: Front 242",
           "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626",
           "note": "Lists Jean-Luc de Meyer as a member from 1982."
+        },
+        {
+          "title": "Wikidata: Jean-Luc de Meyer",
+          "url": "https://www.wikidata.org/wiki/Q3167120",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Jean-Luc de Meyer",
+          "url": "https://www.discogs.com/artist/92674",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q3167120",
+        "url": "https://www.wikidata.org/wiki/Q3167120"
+      },
+      "discogs": {
+        "artistId": "92674",
+        "url": "https://www.discogs.com/artist/92674"
+      }
     },
     {
       "id": "raymond-watts",
@@ -474,8 +851,26 @@
           "title": "MusicBrainz: KMFDM",
           "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
           "note": "Lists Raymond Watts in several KMFDM membership periods."
+        },
+        {
+          "title": "Wikidata: Raymond Watts",
+          "url": "https://www.wikidata.org/wiki/Q6233396",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Raymond Watts",
+          "url": "https://www.discogs.com/artist/101943",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q6233396",
+        "url": "https://www.wikidata.org/wiki/Q6233396"
+      },
+      "discogs": {
+        "artistId": "101943",
+        "url": "https://www.discogs.com/artist/101943"
+      }
     },
     {
       "id": "en-esch",
@@ -492,8 +887,26 @@
           "title": "MusicBrainz: KMFDM",
           "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
           "note": "Lists En Esch as a member from 1985 to 1999-01-22."
+        },
+        {
+          "title": "Wikidata: En Esch",
+          "url": "https://www.wikidata.org/wiki/Q552649",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: En Esch",
+          "url": "https://www.discogs.com/artist/74966",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q552649",
+        "url": "https://www.wikidata.org/wiki/Q552649"
+      },
+      "discogs": {
+        "artistId": "74966",
+        "url": "https://www.discogs.com/artist/74966"
+      }
     },
     {
       "id": "michael-balch",
@@ -510,8 +923,26 @@
           "title": "MusicBrainz: Front Line Assembly",
           "url": "https://musicbrainz.org/artist/b847e9d2-c931-4daf-900c-42c7b2c42e16",
           "note": "Lists Michael Balch as a member from 1988 to 1989."
+        },
+        {
+          "title": "Wikidata: Michael Balch",
+          "url": "https://www.wikidata.org/wiki/Q29555982",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Michael Balch",
+          "url": "https://www.discogs.com/artist/101570",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q29555982",
+        "url": "https://www.wikidata.org/wiki/Q29555982"
+      },
+      "discogs": {
+        "artistId": "101570",
+        "url": "https://www.discogs.com/artist/101570"
+      }
     },
     {
       "id": "faces-forms-and-illusions",
@@ -535,8 +966,17 @@
           "title": "MusicBrainz: Faces, Forms and Illusions",
           "url": "https://musicbrainz.org/release-group/2a7d5dfb-7943-3679-983a-abc8acaa2757",
           "note": "Exact match confirmed in pass-14 and pass-15."
+        },
+        {
+          "title": "Wikidata: Faces, Forms and Illusions",
+          "url": "https://www.wikidata.org/wiki/Q5428482",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q5428482",
+        "url": "https://www.wikidata.org/wiki/Q5428482"
+      }
     },
     {
       "id": "grinding-into-emptiness",
@@ -560,8 +1000,17 @@
           "title": "MusicBrainz: Grinding Into Emptiness",
           "url": "https://musicbrainz.org/release-group/4ca20df2-1806-3517-af8f-4364aa4962ca",
           "note": "Exact match confirmed in pass-14 and pass-15."
+        },
+        {
+          "title": "Wikidata: Grinding Into Emptiness",
+          "url": "https://www.wikidata.org/wiki/Q5609443",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q5609443",
+        "url": "https://www.wikidata.org/wiki/Q5609443"
+      }
     },
     {
       "id": "tenebrae-vision",
@@ -585,8 +1034,17 @@
           "title": "MusicBrainz: Tenebrae Vision",
           "url": "https://musicbrainz.org/release-group/35e19a8c-9c10-377b-9e0e-cc4a2cb87e5d",
           "note": "Exact match confirmed in pass-14 and pass-15."
+        },
+        {
+          "title": "Wikidata: Tenebrae Vision",
+          "url": "https://www.wikidata.org/wiki/Q124791148",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q124791148",
+        "url": "https://www.wikidata.org/wiki/Q124791148"
+      }
     },
     {
       "id": "no-name-no-slogan",
@@ -648,8 +1106,26 @@
           "title": "MusicBrainz: cEvin Key",
           "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
           "note": "Lists cEvin Key as a member."
+        },
+        {
+          "title": "Wikidata: Hilt",
+          "url": "https://www.wikidata.org/wiki/Q16843333",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Hilt",
+          "url": "https://www.discogs.com/artist/20398",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q16843333",
+        "url": "https://www.wikidata.org/wiki/Q16843333"
+      },
+      "discogs": {
+        "artistId": "20398",
+        "url": "https://www.discogs.com/artist/20398"
+      }
     },
     {
       "id": "doubting-thomas",
@@ -667,8 +1143,26 @@
           "title": "MusicBrainz: cEvin Key",
           "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
           "note": "Lists cEvin Key as a member."
+        },
+        {
+          "title": "Wikidata: Doubting Thomas",
+          "url": "https://www.wikidata.org/wiki/Q5300196",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Doubting Thomas",
+          "url": "https://www.discogs.com/artist/8219",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q5300196",
+        "url": "https://www.wikidata.org/wiki/Q5300196"
+      },
+      "discogs": {
+        "artistId": "8219",
+        "url": "https://www.discogs.com/artist/8219"
+      }
     },
     {
       "id": "download",
@@ -686,8 +1180,26 @@
           "title": "MusicBrainz: cEvin Key",
           "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
           "note": "Lists cEvin Key as a member."
+        },
+        {
+          "title": "Wikidata: Download",
+          "url": "https://www.wikidata.org/wiki/Q4357549",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Download",
+          "url": "https://www.discogs.com/artist/9900",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q4357549",
+        "url": "https://www.wikidata.org/wiki/Q4357549"
+      },
+      "discogs": {
+        "artistId": "9900",
+        "url": "https://www.discogs.com/artist/9900"
+      }
     },
     {
       "id": "land-of-rape-and-honey",
@@ -711,8 +1223,17 @@
           "title": "MusicBrainz: The Land of Rape and Honey",
           "url": "https://musicbrainz.org/release-group/7a18b986-afcc-359c-add1-7aa3a79104a2",
           "note": "Exact match confirmed in pass-14 and pass-15."
+        },
+        {
+          "title": "Wikidata: The Land of Rape and Honey",
+          "url": "https://www.wikidata.org/wiki/Q1941908",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q1941908",
+        "url": "https://www.wikidata.org/wiki/Q1941908"
+      }
     },
     {
       "id": "stigmata",
@@ -736,8 +1257,17 @@
           "title": "MusicBrainz: Stigmata",
           "url": "https://musicbrainz.org/release-group/ffd7f995-6354-38df-9c84-902769328a1e",
           "note": "Exact match confirmed in pass-14 and pass-15."
+        },
+        {
+          "title": "Wikidata: Stigmata",
+          "url": "https://www.wikidata.org/wiki/Q7616488",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q7616488",
+        "url": "https://www.wikidata.org/wiki/Q7616488"
+      }
     },
     {
       "id": "big-sexy-land",
@@ -761,8 +1291,17 @@
           "title": "MusicBrainz: Big Sexy Land",
           "url": "https://musicbrainz.org/release-group/3e823e3f-4993-36d8-8c74-3ceaf68959e7",
           "note": "Exact match confirmed in pass-14 and pass-15."
+        },
+        {
+          "title": "Wikidata: Big Sexy Land",
+          "url": "https://www.wikidata.org/wiki/Q4906310",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q4906310",
+        "url": "https://www.wikidata.org/wiki/Q4906310"
+      }
     },
     {
       "id": "beers-steers-and-queers",
@@ -786,8 +1325,17 @@
           "title": "MusicBrainz: Beers, Steers & Queers",
           "url": "https://musicbrainz.org/release-group/b316cc6e-edf7-3394-9c89-1a116ba2dc62",
           "note": "Exact match confirmed in pass-14 and pass-15."
+        },
+        {
+          "title": "Wikidata: Beers, Steers & Queers",
+          "url": "https://www.wikidata.org/wiki/Q4880074",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q4880074",
+        "url": "https://www.wikidata.org/wiki/Q4880074"
+      }
     },
     {
       "id": "tactical-neural-implant",
@@ -811,8 +1359,17 @@
           "title": "MusicBrainz: Tactical Neural Implant",
           "url": "https://musicbrainz.org/release-group/611e2a82-9f19-3ad0-98a8-42397143b09d",
           "note": "Exact match confirmed in pass-14 and pass-15."
+        },
+        {
+          "title": "Wikidata: Tactical Neural Implant",
+          "url": "https://www.wikidata.org/wiki/Q7674080",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q7674080",
+        "url": "https://www.wikidata.org/wiki/Q7674080"
+      }
     },
     {
       "id": "mindphaser",
@@ -859,8 +1416,26 @@
           "title": "MusicBrainz: 1000 Homo DJs",
           "url": "https://musicbrainz.org/artist/4c44479c-8fde-4754-b9e2-5129eb6fb28d",
           "note": "Exact match confirmed in pass-8 and pass-9."
+        },
+        {
+          "title": "Wikidata: 1000 Homo DJs",
+          "url": "https://www.wikidata.org/wiki/Q2806624",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: 1000 Homo DJs",
+          "url": "https://www.discogs.com/artist/27454",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q2806624",
+        "url": "https://www.wikidata.org/wiki/Q2806624"
+      },
+      "discogs": {
+        "artistId": "27454",
+        "url": "https://www.discogs.com/artist/27454"
+      }
     },
     {
       "id": "lard",
@@ -874,6 +1449,16 @@
           "title": "MusicBrainz: Lard",
           "url": "https://musicbrainz.org/artist/4430600b-0fdb-43a1-be52-c81aa7ab1682",
           "note": "Exact match confirmed in pass-8 and pass-9."
+        },
+        {
+          "title": "Wikidata: Lard",
+          "url": "https://www.wikidata.org/wiki/Q371372",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Lard",
+          "url": "https://www.discogs.com/artist/91860",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
       ],
       "musicbrainz": {
@@ -884,6 +1469,14 @@
           "pass-8",
           "pass-9"
         ]
+      },
+      "wikidata": {
+        "id": "Q371372",
+        "url": "https://www.wikidata.org/wiki/Q371372"
+      },
+      "discogs": {
+        "artistId": "91860",
+        "url": "https://www.discogs.com/artist/91860"
       }
     },
     {
@@ -903,8 +1496,26 @@
           "title": "MusicBrainz: Bill Leeb",
           "url": "https://musicbrainz.org/artist/e10b76e5-dc32-4e9f-83b9-4f717400b19f",
           "note": "Lists Bill Leeb as a Delerium member from 1987."
+        },
+        {
+          "title": "Wikidata: Delerium",
+          "url": "https://www.wikidata.org/wiki/Q903496",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Delerium",
+          "url": "https://www.discogs.com/artist/2077",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q903496",
+        "url": "https://www.wikidata.org/wiki/Q903496"
+      },
+      "discogs": {
+        "artistId": "2077",
+        "url": "https://www.discogs.com/artist/2077"
+      }
     },
     {
       "id": "noise-unit",
@@ -923,8 +1534,26 @@
           "title": "MusicBrainz: Bill Leeb",
           "url": "https://musicbrainz.org/artist/e10b76e5-dc32-4e9f-83b9-4f717400b19f",
           "note": "Lists Bill Leeb as a Noise Unit member from 1989."
+        },
+        {
+          "title": "Wikidata: Noise Unit",
+          "url": "https://www.wikidata.org/wiki/Q2293106",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Noise Unit",
+          "url": "https://www.discogs.com/artist/21251",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q2293106",
+        "url": "https://www.wikidata.org/wiki/Q2293106"
+      },
+      "discogs": {
+        "artistId": "21251",
+        "url": "https://www.discogs.com/artist/21251"
+      }
     },
     {
       "id": "cyberaktif",
@@ -942,8 +1571,26 @@
           "title": "MusicBrainz: cEvin Key",
           "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
           "note": "Lists cEvin Key as a Cyberaktif member."
+        },
+        {
+          "title": "Wikidata: Cyberaktif",
+          "url": "https://www.wikidata.org/wiki/Q5197755",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Cyberaktif",
+          "url": "https://www.discogs.com/artist/25984",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q5197755",
+        "url": "https://www.wikidata.org/wiki/Q5197755"
+      },
+      "discogs": {
+        "artistId": "25984",
+        "url": "https://www.discogs.com/artist/25984"
+      }
     },
     {
       "id": "acid-horse",
@@ -958,6 +1605,16 @@
           "title": "MusicBrainz: Acid Horse",
           "url": "https://musicbrainz.org/artist/ea9ea256-362b-41b7-9ad6-cc308d9909a2",
           "note": "Exact match confirmed in pass-8 and pass-9."
+        },
+        {
+          "title": "Wikidata: Acid Horse",
+          "url": "https://www.wikidata.org/wiki/Q4674043",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Acid Horse",
+          "url": "https://www.discogs.com/artist/28524",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
       ],
       "musicbrainz": {
@@ -968,6 +1625,14 @@
           "pass-8",
           "pass-9"
         ]
+      },
+      "wikidata": {
+        "id": "Q4674043",
+        "url": "https://www.wikidata.org/wiki/Q4674043"
+      },
+      "discogs": {
+        "artistId": "28524",
+        "url": "https://www.discogs.com/artist/28524"
       }
     },
     {
@@ -981,6 +1646,16 @@
           "title": "MusicBrainz: Lead Into Gold",
           "url": "https://musicbrainz.org/artist/aedd2d07-66ca-4496-8156-ac6cde7e87b4",
           "note": "Exact match confirmed in pass-8 and pass-9."
+        },
+        {
+          "title": "Wikidata: Lead Into Gold",
+          "url": "https://www.wikidata.org/wiki/Q6508361",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Lead Into Gold",
+          "url": "https://www.discogs.com/artist/54234",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
       ],
       "musicbrainz": {
@@ -991,6 +1666,14 @@
           "pass-8",
           "pass-9"
         ]
+      },
+      "wikidata": {
+        "id": "Q6508361",
+        "url": "https://www.wikidata.org/wiki/Q6508361"
+      },
+      "discogs": {
+        "artistId": "54234",
+        "url": "https://www.discogs.com/artist/54234"
       }
     },
     {
@@ -1032,8 +1715,26 @@
           "title": "MusicBrainz: Trent Reznor",
           "url": "https://musicbrainz.org/artist/bc880664-6751-4998-984d-ebdbff15d229",
           "note": "Exact match confirmed in pass-6 and pass-7."
+        },
+        {
+          "title": "Wikidata: Trent Reznor",
+          "url": "https://www.wikidata.org/wiki/Q282722",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Trent Reznor",
+          "url": "https://www.discogs.com/artist/27457",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q282722",
+        "url": "https://www.wikidata.org/wiki/Q282722"
+      },
+      "discogs": {
+        "artistId": "27457",
+        "url": "https://www.discogs.com/artist/27457"
+      }
     },
     {
       "id": "supernaut",
@@ -1073,8 +1774,26 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists Stephen George as a member from 1981 to 1984."
+        },
+        {
+          "title": "Wikidata: Stephen George",
+          "url": "https://www.wikidata.org/wiki/Q7609307",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Stephen George",
+          "url": "https://www.discogs.com/artist/139779",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q7609307",
+        "url": "https://www.wikidata.org/wiki/Q7609307"
+      },
+      "discogs": {
+        "artistId": "139779",
+        "url": "https://www.discogs.com/artist/139779"
+      }
     },
     {
       "id": "bill-rieflin",
@@ -1091,8 +1810,26 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists Bill Rieflin as a member from 1986 to 1995-02."
+        },
+        {
+          "title": "Wikidata: Bill Rieflin",
+          "url": "https://www.wikidata.org/wiki/Q2517349",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Bill Rieflin",
+          "url": "https://www.discogs.com/artist/132196",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q2517349",
+        "url": "https://www.wikidata.org/wiki/Q2517349"
+      },
+      "discogs": {
+        "artistId": "132196",
+        "url": "https://www.discogs.com/artist/132196"
+      }
     },
     {
       "id": "louis-svitek",
@@ -1109,8 +1846,26 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists Louis Svitek as a member from 1992 to 2003."
+        },
+        {
+          "title": "Wikidata: Louis Svitek",
+          "url": "https://www.wikidata.org/wiki/Q6688238",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Louis Svitek",
+          "url": "https://www.discogs.com/artist/79643",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q6688238",
+        "url": "https://www.wikidata.org/wiki/Q6688238"
+      },
+      "discogs": {
+        "artistId": "79643",
+        "url": "https://www.discogs.com/artist/79643"
+      }
     },
     {
       "id": "max-brody",
@@ -1127,8 +1882,26 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists Max Brody as a member from 2003 to 2004."
+        },
+        {
+          "title": "Wikidata: Max Brody",
+          "url": "https://www.wikidata.org/wiki/Q6794617",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Max Brody",
+          "url": "https://www.discogs.com/artist/314536",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q6794617",
+        "url": "https://www.wikidata.org/wiki/Q6794617"
+      },
+      "discogs": {
+        "artistId": "314536",
+        "url": "https://www.discogs.com/artist/314536"
+      }
     },
     {
       "id": "john-monte",
@@ -1145,8 +1918,26 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists John Monte as a member from 2004-01 to 2004-09."
+        },
+        {
+          "title": "Wikidata: John Monte",
+          "url": "https://www.wikidata.org/wiki/Q6249188",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: John Monte",
+          "url": "https://www.discogs.com/artist/419845",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q6249188",
+        "url": "https://www.wikidata.org/wiki/Q6249188"
+      },
+      "discogs": {
+        "artistId": "419845",
+        "url": "https://www.discogs.com/artist/419845"
+      }
     },
     {
       "id": "mark-baker",
@@ -1181,8 +1972,26 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists Tommy Victor as a member from 2005."
+        },
+        {
+          "title": "Wikidata: Tommy Victor",
+          "url": "https://www.wikidata.org/wiki/Q2441120",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Tommy Victor",
+          "url": "https://www.discogs.com/artist/185073",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q2441120",
+        "url": "https://www.wikidata.org/wiki/Q2441120"
+      },
+      "discogs": {
+        "artistId": "185073",
+        "url": "https://www.discogs.com/artist/185073"
+      }
     },
     {
       "id": "paul-raven",
@@ -1199,8 +2008,26 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists Paul Raven as a member from 2006 to 2007."
+        },
+        {
+          "title": "Wikidata: Paul Raven",
+          "url": "https://www.wikidata.org/wiki/Q1375657",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Paul Raven",
+          "url": "https://www.discogs.com/artist/22534",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q1375657",
+        "url": "https://www.wikidata.org/wiki/Q1375657"
+      },
+      "discogs": {
+        "artistId": "22534",
+        "url": "https://www.discogs.com/artist/22534"
+      }
     },
     {
       "id": "sin-quirin",
@@ -1217,8 +2044,26 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists Sin Quirin as a member from 2006."
+        },
+        {
+          "title": "Wikidata: Sin Quirin",
+          "url": "https://www.wikidata.org/wiki/Q7521578",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Sin Quirin",
+          "url": "https://www.discogs.com/artist/908109",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q7521578",
+        "url": "https://www.wikidata.org/wiki/Q7521578"
+      },
+      "discogs": {
+        "artistId": "908109",
+        "url": "https://www.discogs.com/artist/908109"
+      }
     },
     {
       "id": "tony-campos",
@@ -1235,8 +2080,26 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists Tony Campos as a member from 2007 to 2008."
+        },
+        {
+          "title": "Wikidata: Tony Campos",
+          "url": "https://www.wikidata.org/wiki/Q713854",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Tony Campos",
+          "url": "https://www.discogs.com/artist/514478",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q713854",
+        "url": "https://www.wikidata.org/wiki/Q713854"
+      },
+      "discogs": {
+        "artistId": "514478",
+        "url": "https://www.discogs.com/artist/514478"
+      }
     },
     {
       "id": "burton-c-bell",
@@ -1253,8 +2116,26 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists Burton C. Bell as a member from 2007."
+        },
+        {
+          "title": "Wikidata: Burton C. Bell",
+          "url": "https://www.wikidata.org/wiki/Q1017117",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Burton C. Bell",
+          "url": "https://www.discogs.com/artist/252676",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q1017117",
+        "url": "https://www.wikidata.org/wiki/Q1017117"
+      },
+      "discogs": {
+        "artistId": "252676",
+        "url": "https://www.discogs.com/artist/252676"
+      }
     },
     {
       "id": "aaron-rossi",
@@ -1271,8 +2152,26 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists Aaron Rossi as a member from 2008 to 2008."
+        },
+        {
+          "title": "Wikidata: Aaron Rossi",
+          "url": "https://www.wikidata.org/wiki/Q4662380",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Aaron Rossi",
+          "url": "https://www.discogs.com/artist/1021076",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q4662380",
+        "url": "https://www.wikidata.org/wiki/Q4662380"
+      },
+      "discogs": {
+        "artistId": "1021076",
+        "url": "https://www.discogs.com/artist/1021076"
+      }
     },
     {
       "id": "cesar-soto",
@@ -1325,8 +2224,26 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists John Bechdel as a member."
+        },
+        {
+          "title": "Wikidata: John Bechdel",
+          "url": "https://www.wikidata.org/wiki/Q3181024",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: John Bechdel",
+          "url": "https://www.discogs.com/artist/371783",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q3181024",
+        "url": "https://www.wikidata.org/wiki/Q3181024"
+      },
+      "discogs": {
+        "artistId": "371783",
+        "url": "https://www.discogs.com/artist/371783"
+      }
     },
     {
       "id": "john-davis",
@@ -1433,8 +2350,26 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists William Tucker as a member."
+        },
+        {
+          "title": "Wikidata: William Tucker",
+          "url": "https://www.wikidata.org/wiki/Q8019550",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: William Tucker",
+          "url": "https://www.discogs.com/artist/79621",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q8019550",
+        "url": "https://www.wikidata.org/wiki/Q8019550"
+      },
+      "discogs": {
+        "artistId": "79621",
+        "url": "https://www.discogs.com/artist/79621"
+      }
     },
     {
       "id": "jeff-ward",
@@ -1451,8 +2386,26 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists Jeff Ward as a member."
+        },
+        {
+          "title": "Wikidata: Jeff Ward",
+          "url": "https://www.wikidata.org/wiki/Q718673",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Jeff Ward",
+          "url": "https://www.discogs.com/artist/428861",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q718673",
+        "url": "https://www.wikidata.org/wiki/Q718673"
+      },
+      "discogs": {
+        "artistId": "428861",
+        "url": "https://www.discogs.com/artist/428861"
+      }
     },
     {
       "id": "rey-washam",
@@ -1469,8 +2422,26 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists Rey Washam as a member."
+        },
+        {
+          "title": "Wikidata: Rey Washam",
+          "url": "https://www.wikidata.org/wiki/Q2400711",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Rey Washam",
+          "url": "https://www.discogs.com/artist/274329",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q2400711",
+        "url": "https://www.wikidata.org/wiki/Q2400711"
+      },
+      "discogs": {
+        "artistId": "274329",
+        "url": "https://www.discogs.com/artist/274329"
+      }
     },
     {
       "id": "mike-scaccia",
@@ -1487,8 +2458,26 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists Mike Scaccia as a member."
+        },
+        {
+          "title": "Wikidata: Mike Scaccia",
+          "url": "https://www.wikidata.org/wiki/Q6848705",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Mike Scaccia",
+          "url": "https://www.discogs.com/artist/264545",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q6848705",
+        "url": "https://www.wikidata.org/wiki/Q6848705"
+      },
+      "discogs": {
+        "artistId": "264545",
+        "url": "https://www.discogs.com/artist/264545"
+      }
     },
     {
       "id": "wilhelm-schroeder",
@@ -1505,8 +2494,31 @@
           "title": "MusicBrainz: Skinny Puppy",
           "url": "https://musicbrainz.org/artist/5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
           "note": "Lists Wilhelm Schroeder as a member from 1984 to 1986."
+        },
+        {
+          "title": "Wikidata: Wilhelm Schroeder",
+          "url": "https://www.wikidata.org/wiki/Q4909880",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Wilhelm Schroeder",
+          "url": "https://www.discogs.com/artist/26680",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "Discogs artist entry: Wilhelm Schroeder",
+          "url": "https://www.discogs.com/artist/81282",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q4909880",
+        "url": "https://www.wikidata.org/wiki/Q4909880"
+      },
+      "discogs": {
+        "artistId": "81282",
+        "url": "https://www.discogs.com/artist/81282"
+      }
     },
     {
       "id": "mark-walk",
@@ -1523,8 +2535,26 @@
           "title": "MusicBrainz: Skinny Puppy",
           "url": "https://musicbrainz.org/artist/5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
           "note": "Lists Mark Walk as a member from 2003 to 2023-12-05."
+        },
+        {
+          "title": "Wikidata: Mark Walk",
+          "url": "https://www.wikidata.org/wiki/Q6770196",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Mark Walk",
+          "url": "https://www.discogs.com/artist/46826",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q6770196",
+        "url": "https://www.wikidata.org/wiki/Q6770196"
+      },
+      "discogs": {
+        "artistId": "46826",
+        "url": "https://www.discogs.com/artist/46826"
+      }
     },
     {
       "id": "justin-bennett",
@@ -1541,8 +2571,26 @@
           "title": "MusicBrainz: Skinny Puppy",
           "url": "https://musicbrainz.org/artist/5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
           "note": "Lists Justin Bennett as a member from 2004 to 2023-12-05."
+        },
+        {
+          "title": "Wikidata: Justin Bennett",
+          "url": "https://www.wikidata.org/wiki/Q6317353",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Justin Bennett",
+          "url": "https://www.discogs.com/artist/664170",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q6317353",
+        "url": "https://www.wikidata.org/wiki/Q6317353"
+      },
+      "discogs": {
+        "artistId": "664170",
+        "url": "https://www.discogs.com/artist/664170"
+      }
     },
     {
       "id": "matthew-setzer",
@@ -1595,8 +2643,26 @@
           "title": "MusicBrainz: Front Line Assembly",
           "url": "https://musicbrainz.org/artist/b847e9d2-c931-4daf-900c-42c7b2c42e16",
           "note": "Lists Devin Townsend as a member from 1994 to 1995."
+        },
+        {
+          "title": "Wikidata: Devin Townsend",
+          "url": "https://www.wikidata.org/wiki/Q335629",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Devin Townsend",
+          "url": "https://www.discogs.com/artist/251249",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q335629",
+        "url": "https://www.wikidata.org/wiki/Q335629"
+      },
+      "discogs": {
+        "artistId": "251249",
+        "url": "https://www.discogs.com/artist/251249"
+      }
     },
     {
       "id": "jed-simon",
@@ -1613,8 +2679,26 @@
           "title": "MusicBrainz: Front Line Assembly",
           "url": "https://musicbrainz.org/artist/b847e9d2-c931-4daf-900c-42c7b2c42e16",
           "note": "Lists Jed Simon as a member from 1995 to 1999."
+        },
+        {
+          "title": "Wikidata: Jed Simon",
+          "url": "https://www.wikidata.org/wiki/Q4351629",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Jed Simon",
+          "url": "https://www.discogs.com/artist/373766",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q4351629",
+        "url": "https://www.wikidata.org/wiki/Q4351629"
+      },
+      "discogs": {
+        "artistId": "373766",
+        "url": "https://www.discogs.com/artist/373766"
+      }
     },
     {
       "id": "adrian-white",
@@ -1631,8 +2715,26 @@
           "title": "MusicBrainz: Front Line Assembly",
           "url": "https://musicbrainz.org/artist/b847e9d2-c931-4daf-900c-42c7b2c42e16",
           "note": "Lists Adrian White as a member from 1995 to 2002."
+        },
+        {
+          "title": "Wikidata: Adrian White",
+          "url": "https://www.wikidata.org/wiki/Q4685434",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Adrian White",
+          "url": "https://www.discogs.com/artist/506000",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q4685434",
+        "url": "https://www.wikidata.org/wiki/Q4685434"
+      },
+      "discogs": {
+        "artistId": "506000",
+        "url": "https://www.discogs.com/artist/506000"
+      }
     },
     {
       "id": "chris-peterson",
@@ -1649,8 +2751,26 @@
           "title": "MusicBrainz: Front Line Assembly",
           "url": "https://musicbrainz.org/artist/b847e9d2-c931-4daf-900c-42c7b2c42e16",
           "note": "Lists Chris Peterson as a member from 1997 to 2003."
+        },
+        {
+          "title": "Wikidata: Chris Peterson",
+          "url": "https://www.wikidata.org/wiki/Q5107748",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Chris Peterson",
+          "url": "https://www.discogs.com/artist/81283",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q5107748",
+        "url": "https://www.wikidata.org/wiki/Q5107748"
+      },
+      "discogs": {
+        "artistId": "81283",
+        "url": "https://www.discogs.com/artist/81283"
+      }
     },
     {
       "id": "jeremy-inkel",
@@ -1667,8 +2787,26 @@
           "title": "MusicBrainz: Front Line Assembly",
           "url": "https://musicbrainz.org/artist/b847e9d2-c931-4daf-900c-42c7b2c42e16",
           "note": "Lists Jeremy Inkel as a member from 2005 to 2018-01-11."
+        },
+        {
+          "title": "Wikidata: Jeremy Inkel",
+          "url": "https://www.wikidata.org/wiki/Q6181524",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Jeremy Inkel",
+          "url": "https://www.discogs.com/artist/337501",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q6181524",
+        "url": "https://www.wikidata.org/wiki/Q6181524"
+      },
+      "discogs": {
+        "artistId": "337501",
+        "url": "https://www.discogs.com/artist/337501"
+      }
     },
     {
       "id": "jared-slingerland",
@@ -1685,8 +2823,26 @@
           "title": "MusicBrainz: Front Line Assembly",
           "url": "https://musicbrainz.org/artist/b847e9d2-c931-4daf-900c-42c7b2c42e16",
           "note": "Lists Jared Slingerland as a member from 2006."
+        },
+        {
+          "title": "Wikidata: Jared Slingerland",
+          "url": "https://www.wikidata.org/wiki/Q6160098",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Jared Slingerland",
+          "url": "https://www.discogs.com/artist/535877",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q6160098",
+        "url": "https://www.wikidata.org/wiki/Q6160098"
+      },
+      "discogs": {
+        "artistId": "535877",
+        "url": "https://www.discogs.com/artist/535877"
+      }
     },
     {
       "id": "jason-filipchuk",
@@ -1757,8 +2913,26 @@
           "title": "MusicBrainz: KMFDM",
           "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
           "note": "Lists Günter Schulz as a member from 1989 to 1999-01-22."
+        },
+        {
+          "title": "Wikidata: Günter Schulz",
+          "url": "https://www.wikidata.org/wiki/Q5627025",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Günter Schulz",
+          "url": "https://www.discogs.com/artist/36585",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q5627025",
+        "url": "https://www.wikidata.org/wiki/Q5627025"
+      },
+      "discogs": {
+        "artistId": "36585",
+        "url": "https://www.discogs.com/artist/36585"
+      }
     },
     {
       "id": "mark-durante",
@@ -1775,8 +2949,26 @@
           "title": "MusicBrainz: KMFDM",
           "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
           "note": "Lists Mark Durante as a member from 1992 to 1997."
+        },
+        {
+          "title": "Wikidata: Mark Durante",
+          "url": "https://www.wikidata.org/wiki/Q6767438",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Mark Durante",
+          "url": "https://www.discogs.com/artist/234171",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q6767438",
+        "url": "https://www.wikidata.org/wiki/Q6767438"
+      },
+      "discogs": {
+        "artistId": "234171",
+        "url": "https://www.discogs.com/artist/234171"
+      }
     },
     {
       "id": "skold",
@@ -1793,8 +2985,31 @@
           "title": "MusicBrainz: KMFDM",
           "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
           "note": "Lists Skold as a member from 1997 to 1999."
+        },
+        {
+          "title": "Wikidata: Skold",
+          "url": "https://www.wikidata.org/wiki/Q363596",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Skold",
+          "url": "https://www.discogs.com/artist/41444",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "Discogs artist entry: Skold",
+          "url": "https://www.discogs.com/artist/378806",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q363596",
+        "url": "https://www.wikidata.org/wiki/Q363596"
+      },
+      "discogs": {
+        "artistId": "378806",
+        "url": "https://www.discogs.com/artist/378806"
+      }
     },
     {
       "id": "jules-hodgson",
@@ -1811,8 +3026,26 @@
           "title": "MusicBrainz: KMFDM",
           "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
           "note": "Lists Jules Hodgson as a member from 2002 to 2016."
+        },
+        {
+          "title": "Wikidata: Jules Hodgson",
+          "url": "https://www.wikidata.org/wiki/Q16226045",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Jules Hodgson",
+          "url": "https://www.discogs.com/artist/309912",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q16226045",
+        "url": "https://www.wikidata.org/wiki/Q16226045"
+      },
+      "discogs": {
+        "artistId": "309912",
+        "url": "https://www.discogs.com/artist/309912"
+      }
     },
     {
       "id": "lucia-cifarelli",
@@ -1829,8 +3062,26 @@
           "title": "MusicBrainz: KMFDM",
           "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
           "note": "Lists Lucia Cifarelli as a member from 2002."
+        },
+        {
+          "title": "Wikidata: Lucia Cifarelli",
+          "url": "https://www.wikidata.org/wiki/Q4516709",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Lucia Cifarelli",
+          "url": "https://www.discogs.com/artist/496835",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q4516709",
+        "url": "https://www.wikidata.org/wiki/Q4516709"
+      },
+      "discogs": {
+        "artistId": "496835",
+        "url": "https://www.discogs.com/artist/496835"
+      }
     },
     {
       "id": "andy-selway",
@@ -1865,8 +3116,26 @@
           "title": "MusicBrainz: KMFDM",
           "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
           "note": "Lists Steve White as a member from 2003 to 2015."
+        },
+        {
+          "title": "Wikidata: Steve White",
+          "url": "https://www.wikidata.org/wiki/Q7614288",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Steve White",
+          "url": "https://www.discogs.com/artist/228375",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q7614288",
+        "url": "https://www.wikidata.org/wiki/Q7614288"
+      },
+      "discogs": {
+        "artistId": "228375",
+        "url": "https://www.discogs.com/artist/228375"
+      }
     },
     {
       "id": "andee-blacksugar",
@@ -1955,8 +3224,31 @@
           "title": "MusicBrainz: Revolting Cocks",
           "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
           "note": "Lists Duane Denison as a member."
+        },
+        {
+          "title": "Wikidata: Duane Denison",
+          "url": "https://www.wikidata.org/wiki/Q2032805",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Duane Denison",
+          "url": "https://www.discogs.com/artist/79656",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "Discogs artist entry: Duane Denison",
+          "url": "https://www.discogs.com/artist/400594",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q2032805",
+        "url": "https://www.wikidata.org/wiki/Q2032805"
+      },
+      "discogs": {
+        "artistId": "79656",
+        "url": "https://www.discogs.com/artist/79656"
+      }
     },
     {
       "id": "sean-joyce",
@@ -2009,8 +3301,26 @@
           "title": "MusicBrainz: Revolting Cocks",
           "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
           "note": "Lists Clayton Worbeck as a member."
+        },
+        {
+          "title": "Wikidata: Clayton Worbeck",
+          "url": "https://www.wikidata.org/wiki/Q5130368",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Clayton Worbeck",
+          "url": "https://www.discogs.com/artist/765918",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q5130368",
+        "url": "https://www.wikidata.org/wiki/Q5130368"
+      },
+      "discogs": {
+        "artistId": "765918",
+        "url": "https://www.discogs.com/artist/765918"
+      }
     },
     {
       "id": "j3-seuqcaj",
@@ -2099,8 +3409,26 @@
           "title": "MusicBrainz: Hilt",
           "url": "https://musicbrainz.org/artist/42509bd3-6fa1-459a-8e40-127a3ef8663b",
           "note": "Lists Dave Ogilvie as a member."
+        },
+        {
+          "title": "Wikidata: Dave Ogilvie",
+          "url": "https://www.wikidata.org/wiki/Q4810578",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Dave Ogilvie",
+          "url": "https://www.discogs.com/artist/50753",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q4810578",
+        "url": "https://www.wikidata.org/wiki/Q4810578"
+      },
+      "discogs": {
+        "artistId": "50753",
+        "url": "https://www.discogs.com/artist/50753"
+      }
     },
     {
       "id": "ryan-moore",
@@ -2153,8 +3481,26 @@
           "title": "MusicBrainz: Download",
           "url": "https://musicbrainz.org/artist/a31c5ea9-b550-447a-b2ee-99b08e8c4825",
           "note": "Lists Anthony Valcic as a member."
+        },
+        {
+          "title": "Wikidata: Anthony Valcic",
+          "url": "https://www.wikidata.org/wiki/Q60561821",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Anthony Valcic",
+          "url": "https://www.discogs.com/artist/72803",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q60561821",
+        "url": "https://www.wikidata.org/wiki/Q60561821"
+      },
+      "discogs": {
+        "artistId": "72803",
+        "url": "https://www.discogs.com/artist/72803"
+      }
     },
     {
       "id": "phil-western",
@@ -2171,8 +3517,26 @@
           "title": "MusicBrainz: Download",
           "url": "https://musicbrainz.org/artist/a31c5ea9-b550-447a-b2ee-99b08e8c4825",
           "note": "Lists Phil Western as a member."
+        },
+        {
+          "title": "Wikidata: Phil Western",
+          "url": "https://www.wikidata.org/wiki/Q7182538",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Phil Western",
+          "url": "https://www.discogs.com/artist/9862",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q7182538",
+        "url": "https://www.wikidata.org/wiki/Q7182538"
+      },
+      "discogs": {
+        "artistId": "9862",
+        "url": "https://www.discogs.com/artist/9862"
+      }
     },
     {
       "id": "jello-biafra",
@@ -2189,8 +3553,26 @@
           "title": "MusicBrainz: Lard",
           "url": "https://musicbrainz.org/artist/4430600b-0fdb-43a1-be52-c81aa7ab1682",
           "note": "Lists Jello Biafra as a member from 1988."
+        },
+        {
+          "title": "Wikidata: Jello Biafra",
+          "url": "https://www.wikidata.org/wiki/Q334288",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Jello Biafra",
+          "url": "https://www.discogs.com/artist/37752",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q334288",
+        "url": "https://www.wikidata.org/wiki/Q334288"
+      },
+      "discogs": {
+        "artistId": "37752",
+        "url": "https://www.discogs.com/artist/37752"
+      }
     },
     {
       "id": "marc-verhaeghen",
@@ -2243,8 +3625,31 @@
           "title": "MusicBrainz: Acid Horse",
           "url": "https://musicbrainz.org/artist/ea9ea256-362b-41b7-9ad6-cc308d9909a2",
           "note": "Lists Richard H. Kirk as a member from 1989 to 1989."
+        },
+        {
+          "title": "Wikidata: Richard H. Kirk",
+          "url": "https://www.wikidata.org/wiki/Q547635",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Richard H. Kirk",
+          "url": "https://www.discogs.com/artist/2238",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "Discogs artist entry: Richard H. Kirk",
+          "url": "https://www.discogs.com/artist/2001847",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q547635",
+        "url": "https://www.wikidata.org/wiki/Q547635"
+      },
+      "discogs": {
+        "artistId": "2238",
+        "url": "https://www.discogs.com/artist/2238"
+      }
     },
     {
       "id": "stephen-mallinder",
@@ -2261,8 +3666,26 @@
           "title": "MusicBrainz: Acid Horse",
           "url": "https://musicbrainz.org/artist/ea9ea256-362b-41b7-9ad6-cc308d9909a2",
           "note": "Lists Stephen Mallinder as a member from 1989 to 1989."
+        },
+        {
+          "title": "Wikidata: Stephen Mallinder",
+          "url": "https://www.wikidata.org/wiki/Q7609884",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Stephen Mallinder",
+          "url": "https://www.discogs.com/artist/24050",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q7609884",
+        "url": "https://www.wikidata.org/wiki/Q7609884"
+      },
+      "discogs": {
+        "artistId": "24050",
+        "url": "https://www.discogs.com/artist/24050"
+      }
     },
     {
       "id": "flowering-blight",
@@ -2279,8 +3702,31 @@
           "title": "MusicBrainz: Lead Into Gold",
           "url": "https://musicbrainz.org/artist/aedd2d07-66ca-4496-8156-ac6cde7e87b4",
           "note": "Lists Flowering Blight as a member."
+        },
+        {
+          "title": "Wikidata: Flowering Blight",
+          "url": "https://www.wikidata.org/wiki/Q4590538",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Flowering Blight",
+          "url": "https://www.discogs.com/artist/100041",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "Discogs artist entry: Flowering Blight",
+          "url": "https://www.discogs.com/artist/1298641",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q4590538",
+        "url": "https://www.wikidata.org/wiki/Q4590538"
+      },
+      "discogs": {
+        "artistId": "1298641",
+        "url": "https://www.discogs.com/artist/1298641"
+      }
     },
     {
       "id": "frenchie-l-amour",
@@ -2316,8 +3762,26 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Canonical artist record explicitly carries the industrial tag."
+        },
+        {
+          "title": "Wikidata: Nine Inch Nails",
+          "url": "https://www.wikidata.org/wiki/Q11647",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Nine Inch Nails",
+          "url": "https://www.discogs.com/artist/3857",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q11647",
+        "url": "https://www.wikidata.org/wiki/Q11647"
+      },
+      "discogs": {
+        "artistId": "3857",
+        "url": "https://www.discogs.com/artist/3857"
+      }
     },
     {
       "id": "depeche-mode",
@@ -2335,8 +3799,26 @@
           "title": "MusicBrainz: Depeche Mode",
           "url": "https://musicbrainz.org/artist/8538e728-ca0b-4321-b7e5-cff6565dd4c0",
           "note": "Canonical artist record explicitly carries the industrial tag."
+        },
+        {
+          "title": "Wikidata: Depeche Mode",
+          "url": "https://www.wikidata.org/wiki/Q482964",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Depeche Mode",
+          "url": "https://www.discogs.com/artist/2725",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q482964",
+        "url": "https://www.wikidata.org/wiki/Q482964"
+      },
+      "discogs": {
+        "artistId": "2725",
+        "url": "https://www.discogs.com/artist/2725"
+      }
     },
     {
       "id": "marilyn-manson",
@@ -2354,8 +3836,31 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Canonical artist record explicitly carries the industrial tag."
+        },
+        {
+          "title": "Wikidata: Marilyn Manson",
+          "url": "https://www.wikidata.org/wiki/Q485893",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Marilyn Manson",
+          "url": "https://www.discogs.com/artist/229973",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "Discogs artist entry: Marilyn Manson",
+          "url": "https://www.discogs.com/artist/12208",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q485893",
+        "url": "https://www.wikidata.org/wiki/Q485893"
+      },
+      "discogs": {
+        "artistId": "12208",
+        "url": "https://www.discogs.com/artist/12208"
+      }
     },
     {
       "id": "wumpscut",
@@ -2373,8 +3878,26 @@
           "title": "MusicBrainz: :wumpscut:",
           "url": "https://musicbrainz.org/artist/e4e79264-c1ec-490c-b823-b2918204cd4f",
           "note": "Canonical artist record explicitly carries the industrial tag."
+        },
+        {
+          "title": "Wikidata: :wumpscut:",
+          "url": "https://www.wikidata.org/wiki/Q596117",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: :wumpscut:",
+          "url": "https://www.discogs.com/artist/15023",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q596117",
+        "url": "https://www.wikidata.org/wiki/Q596117"
+      },
+      "discogs": {
+        "artistId": "15023",
+        "url": "https://www.discogs.com/artist/15023"
+      }
     },
     {
       "id": "rammstein",
@@ -2392,8 +3915,26 @@
           "title": "MusicBrainz: Rammstein",
           "url": "https://musicbrainz.org/artist/b2d122f9-eadb-4930-a196-8f221eeb0c66",
           "note": "Canonical artist record explicitly carries the industrial tag."
+        },
+        {
+          "title": "Wikidata: Rammstein",
+          "url": "https://www.wikidata.org/wiki/Q25177",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Rammstein",
+          "url": "https://www.discogs.com/artist/11771",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q25177",
+        "url": "https://www.wikidata.org/wiki/Q25177"
+      },
+      "discogs": {
+        "artistId": "11771",
+        "url": "https://www.discogs.com/artist/11771"
+      }
     },
     {
       "id": "7-minutes-of-nausea",
@@ -2411,8 +3952,26 @@
           "title": "MusicBrainz: 7 Minutes of Nausea",
           "url": "https://musicbrainz.org/artist/96843ba2-97ec-4120-8c25-044e001e95ed",
           "note": "Canonical artist record explicitly carries the industrial tag."
+        },
+        {
+          "title": "Wikidata: 7 Minutes of Nausea",
+          "url": "https://www.wikidata.org/wiki/Q23786494",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: 7 Minutes of Nausea",
+          "url": "https://www.discogs.com/artist/356596",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q23786494",
+        "url": "https://www.wikidata.org/wiki/Q23786494"
+      },
+      "discogs": {
+        "artistId": "356596",
+        "url": "https://www.discogs.com/artist/356596"
+      }
     },
     {
       "id": "killing-joke",
@@ -2430,8 +3989,26 @@
           "title": "MusicBrainz: Killing Joke",
           "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
           "note": "Canonical artist record explicitly carries the industrial tag."
+        },
+        {
+          "title": "Wikidata: Killing Joke",
+          "url": "https://www.wikidata.org/wiki/Q250421",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Killing Joke",
+          "url": "https://www.discogs.com/artist/13408",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q250421",
+        "url": "https://www.wikidata.org/wiki/Q250421"
+      },
+      "discogs": {
+        "artistId": "13408",
+        "url": "https://www.discogs.com/artist/13408"
+      }
     },
     {
       "id": "laibach",
@@ -2449,8 +4026,26 @@
           "title": "MusicBrainz: Laibach",
           "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
           "note": "Canonical artist record explicitly carries the industrial tag."
+        },
+        {
+          "title": "Wikidata: Laibach",
+          "url": "https://www.wikidata.org/wiki/Q325359",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Laibach",
+          "url": "https://www.discogs.com/artist/25404",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q325359",
+        "url": "https://www.wikidata.org/wiki/Q325359"
+      },
+      "discogs": {
+        "artistId": "25404",
+        "url": "https://www.discogs.com/artist/25404"
+      }
     },
     {
       "id": "fear-factory",
@@ -2468,8 +4063,26 @@
           "title": "MusicBrainz: Fear Factory",
           "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
           "note": "Canonical artist record explicitly carries the industrial tag."
+        },
+        {
+          "title": "Wikidata: Fear Factory",
+          "url": "https://www.wikidata.org/wiki/Q128010",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Fear Factory",
+          "url": "https://www.discogs.com/artist/11610",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q128010",
+        "url": "https://www.wikidata.org/wiki/Q128010"
+      },
+      "discogs": {
+        "artistId": "11610",
+        "url": "https://www.discogs.com/artist/11610"
+      }
     },
     {
       "id": "einst-rzende-neubauten",
@@ -2487,8 +4100,26 @@
           "title": "MusicBrainz: Einstürzende Neubauten",
           "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
           "note": "Canonical artist record explicitly carries the industrial tag."
+        },
+        {
+          "title": "Wikidata: Einstürzende Neubauten",
+          "url": "https://www.wikidata.org/wiki/Q11898",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Einstürzende Neubauten",
+          "url": "https://www.discogs.com/artist/38794",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q11898",
+        "url": "https://www.wikidata.org/wiki/Q11898"
+      },
+      "discogs": {
+        "artistId": "38794",
+        "url": "https://www.discogs.com/artist/38794"
+      }
     },
     {
       "id": "hocico",
@@ -2506,8 +4137,26 @@
           "title": "MusicBrainz: Hocico",
           "url": "https://musicbrainz.org/artist/b16fd684-831e-4128-8120-6626e76f88c6",
           "note": "Canonical artist record explicitly carries the industrial tag."
+        },
+        {
+          "title": "Wikidata: Hocico",
+          "url": "https://www.wikidata.org/wiki/Q1431398",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Hocico",
+          "url": "https://www.discogs.com/artist/69226",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q1431398",
+        "url": "https://www.wikidata.org/wiki/Q1431398"
+      },
+      "discogs": {
+        "artistId": "69226",
+        "url": "https://www.discogs.com/artist/69226"
+      }
     },
     {
       "id": "severed-heads",
@@ -2525,8 +4174,26 @@
           "title": "MusicBrainz: Severed Heads",
           "url": "https://musicbrainz.org/artist/4976edcf-58c3-49b6-b6f1-2d8277e60d26",
           "note": "Canonical artist record explicitly carries the industrial tag."
+        },
+        {
+          "title": "Wikidata: Severed Heads",
+          "url": "https://www.wikidata.org/wiki/Q2495158",
+          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
+        },
+        {
+          "title": "Discogs artist entry: Severed Heads",
+          "url": "https://www.discogs.com/artist/26212",
+          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
         }
-      ]
+      ],
+      "wikidata": {
+        "id": "Q2495158",
+        "url": "https://www.wikidata.org/wiki/Q2495158"
+      },
+      "discogs": {
+        "artistId": "26212",
+        "url": "https://www.discogs.com/artist/26212"
+      }
     },
     {
       "id": "chris-vrenna",
@@ -7344,6 +9011,11 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Trent Reznor as a member from 1988."
+        },
+        {
+          "title": "Wikidata membership claim: Trent Reznor → Nine Inch Nails",
+          "url": "https://www.wikidata.org/wiki/Q282722",
+          "note": "Exact mapped Wikidata entities state a membership or has-part relationship."
         }
       ]
     },
@@ -9114,6 +10786,11 @@
           "title": "MusicBrainz: Fear Factory",
           "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
           "note": "Lists Burton C. Bell as a member from 1989 to 2020-09."
+        },
+        {
+          "title": "Wikidata membership claim: Burton C. Bell → Fear Factory",
+          "url": "https://www.wikidata.org/wiki/Q1017117",
+          "note": "Exact mapped Wikidata entities state a membership or has-part relationship."
         }
       ]
     },
@@ -9270,6 +10947,11 @@
           "title": "MusicBrainz: Fear Factory",
           "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
           "note": "Lists Tony Campos as a member from 2015."
+        },
+        {
+          "title": "Wikidata membership claim: Tony Campos → Fear Factory",
+          "url": "https://www.wikidata.org/wiki/Q713854",
+          "note": "Exact mapped Wikidata entities state a membership or has-part relationship."
         }
       ]
     },
@@ -9579,6 +11261,62 @@
           "title": "MusicBrainz: Severed Heads",
           "url": "https://musicbrainz.org/artist/4976edcf-58c3-49b6-b6f1-2d8277e60d26",
           "note": "Lists Paul Deering as a member from 1984 to 1985."
+        }
+      ]
+    },
+    {
+      "source": "wilhelm-schroeder",
+      "target": "front-line-assembly",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "Wikidata membership claim: Wilhelm Schroeder → Front Line Assembly",
+          "url": "https://www.wikidata.org/wiki/Q4909880",
+          "note": "Exact mapped Wikidata entities state a membership or has-part relationship."
+        }
+      ]
+    },
+    {
+      "source": "wilhelm-schroeder",
+      "target": "noise-unit",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "Wikidata membership claim: Wilhelm Schroeder → Noise Unit",
+          "url": "https://www.wikidata.org/wiki/Q4909880",
+          "note": "Exact mapped Wikidata entities state a membership or has-part relationship."
+        }
+      ]
+    },
+    {
+      "source": "flowering-blight",
+      "target": "acid-horse",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "Wikidata membership claim: Flowering Blight → Acid Horse",
+          "url": "https://www.wikidata.org/wiki/Q4590538",
+          "note": "Exact mapped Wikidata entities state a membership or has-part relationship."
+        }
+      ]
+    },
+    {
+      "source": "wilhelm-schroeder",
+      "target": "delerium",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "Wikidata membership claim: Wilhelm Schroeder → Delerium",
+          "url": "https://www.wikidata.org/wiki/Q4909880",
+          "note": "Exact mapped Wikidata entities state a membership or has-part relationship."
         }
       ]
     }
