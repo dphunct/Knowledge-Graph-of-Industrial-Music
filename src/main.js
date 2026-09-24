@@ -14,6 +14,8 @@ const pathTo = document.querySelector("#path-to");
 const sizeMetric = document.querySelector("#size-metric");
 const yearSlider = document.querySelector("#year");
 const yearValue = document.querySelector("#year-value");
+const zoomSlider = document.querySelector("#graph-zoom");
+const zoomValue = document.querySelector("#zoom-value");
 const llmStatus = document.querySelector("#llm-status");
 const llmAnswer = document.querySelector("#llm-answer");
 const metrics = graphMetrics(graph.nodes, graph.edges);
@@ -29,6 +31,9 @@ let focusedEdge = null;
 let disposeThree = () => {};
 let activeYear = Number(yearSlider.value);
 let localEngine = null;
+let graphZoom = Number(zoomSlider.value);
+let threeCamera = null;
+let threeControls = null;
 
 const nodeEdges = (id) => graph.edges.filter((edge) => edge.source === id || edge.target === id);
 const labelFor = (id) => byId.get(id).label;
@@ -143,14 +148,18 @@ function renderGraph() {
     for (const { edge, line } of lines) {
       const source = layout.get(edge.source);
       const target = layout.get(edge.target);
-      line.setAttribute("x1", source.x); line.setAttribute("y1", source.y);
-      line.setAttribute("x2", target.x); line.setAttribute("y2", target.y);
+      const sourceX = width / 2 + (source.x - width / 2) * graphZoom;
+      const sourceY = height / 2 + (source.y - height / 2) * graphZoom;
+      const targetX = width / 2 + (target.x - width / 2) * graphZoom;
+      const targetY = height / 2 + (target.y - height / 2) * graphZoom;
+      line.setAttribute("x1", sourceX); line.setAttribute("y1", sourceY);
+      line.setAttribute("x2", targetX); line.setAttribute("y2", targetY);
     }
     for (const [id, button] of buttons) {
       const point = layout.get(id);
-      button.style.left = `${point.x}px`;
-      button.style.top = `${point.y}px`;
-      button.style.transform = dimension === "3d" ? `translate(-50%, -50%) translateZ(${point.z}px) scale(${1 + point.z / 700})` : "translate(-50%, -50%)";
+      button.style.left = `${width / 2 + (point.x - width / 2) * graphZoom}px`;
+      button.style.top = `${height / 2 + (point.y - height / 2) * graphZoom}px`;
+      button.style.transform = `translate(-50%, -50%) scale(${graphZoom})`;
     }
   };
 
@@ -208,6 +217,8 @@ function renderThreeGraph(nodes, edges, width, height) {
   const controls = new OrbitControls(camera, renderer.domElement);
   controls.enableDamping = true;
   controls.minDistance = 260; controls.maxDistance = 1100;
+  threeCamera = camera; threeControls = controls;
+  applyThreeZoom();
   const raycaster = new THREE.Raycaster(); const pointer = new THREE.Vector2();
   const meshes = [];
   const colors = { person: 0xee946d, project: 0x80b7a6, release: 0xa79ada, song: 0xedaa85 };
@@ -235,7 +246,21 @@ function renderThreeGraph(nodes, edges, width, height) {
   let frame;
   const draw = () => { controls.update(); renderer.render(scene, camera); frame = requestAnimationFrame(draw); };
   draw();
-  disposeThree = () => { cancelAnimationFrame(frame); controls.dispose(); renderer.dispose(); renderer.domElement.removeEventListener("click", click); };
+  disposeThree = () => { cancelAnimationFrame(frame); controls.dispose(); renderer.dispose(); renderer.domElement.removeEventListener("click", click); threeCamera = null; threeControls = null; };
+}
+
+function applyThreeZoom() {
+  if (!threeCamera || !threeControls) return;
+  const direction = threeCamera.position.clone().sub(threeControls.target).normalize();
+  threeCamera.position.copy(threeControls.target.clone().add(direction.multiplyScalar(680 / graphZoom)));
+  threeControls.update();
+}
+
+function setGraphZoom(next) {
+  graphZoom = Math.max(.6, Math.min(2, Math.round(next * 20) / 20));
+  zoomSlider.value = graphZoom;
+  zoomValue.textContent = `${Math.round(graphZoom * 100)}%`;
+  if (dimension === "3d") applyThreeZoom(); else redrawGraph();
 }
 
 function showEdge(edge) {
@@ -264,8 +289,8 @@ function beginDrag(event, id, nodeRadius, width, height) {
   point.pinned = true;
   const move = (moveEvent) => {
     const bounds = graphElement.getBoundingClientRect();
-    point.x = Math.max(nodeRadius, Math.min(width - nodeRadius, moveEvent.clientX - bounds.left));
-    point.y = Math.max(nodeRadius, Math.min(height - nodeRadius, moveEvent.clientY - bounds.top));
+    point.x = Math.max(nodeRadius, Math.min(width - nodeRadius, width / 2 + (moveEvent.clientX - bounds.left - width / 2) / graphZoom));
+    point.y = Math.max(nodeRadius, Math.min(height - nodeRadius, height / 2 + (moveEvent.clientY - bounds.top - height / 2) / graphZoom));
     point.vx = 0; point.vy = 0;
     redrawGraph();
   };
@@ -386,6 +411,10 @@ document.querySelector("[data-action='dimension']").addEventListener("click", (e
 sizeMetric.addEventListener("change", renderGraph);
 search.addEventListener("input", renderGraph);
 yearSlider.addEventListener("input", () => { activeYear = Number(yearSlider.value); yearValue.textContent = activeYear; focusedEdge = null; renderGraph(); });
+zoomSlider.addEventListener("input", () => setGraphZoom(Number(zoomSlider.value)));
+document.querySelector("[data-action='zoom-in']").addEventListener("click", () => setGraphZoom(graphZoom + .1));
+document.querySelector("[data-action='zoom-out']").addEventListener("click", () => setGraphZoom(graphZoom - .1));
+document.querySelector("[data-action='zoom-reset']").addEventListener("click", () => setGraphZoom(1));
 window.addEventListener("resize", renderGraph);
 populatePathSelects();
 renderGraph();
