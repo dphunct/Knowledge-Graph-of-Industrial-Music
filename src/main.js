@@ -114,6 +114,10 @@ function renderGraph() {
   svg.setAttribute("aria-hidden", "true");
   const edges = context ? graph.edges.filter((edge) => visibleIds.has(edge.source) && visibleIds.has(edge.target) && activeAtYear(edge)) : visibleEdges(nodes);
   if (dimension === "3d") {
+    // Remove 2D canvas handlers left from the prior mode. Otherwise a drag to
+    // orbit also begins a 2D pan and can be mistaken for a reset click.
+    graphElement.onclick = null;
+    graphElement.onpointerdown = null;
     renderThreeGraph(nodes, edges, width, height);
     status.textContent = `${context ? "Edge context · " : ""}${nodes.length} visible nodes · ${edges.length} relationships · drag to orbit, scroll to zoom`;
     return;
@@ -228,6 +232,9 @@ function renderThreeGraph(nodes, edges, width, height) {
   controls.minDistance = 260; controls.maxDistance = 1100;
   threeCamera = camera; threeControls = controls;
   applyThreeZoom();
+  let orbitMoved = false;
+  controls.addEventListener("start", () => { orbitMoved = false; });
+  controls.addEventListener("change", () => { orbitMoved = true; });
   const raycaster = new THREE.Raycaster(); const pointer = new THREE.Vector2();
   const meshes = [];
   const colors = { person: 0xee946d, project: 0x80b7a6, release: 0xa79ada, song: 0xedaa85 };
@@ -247,6 +254,9 @@ function renderThreeGraph(nodes, edges, width, height) {
     sprite.position.copy(mesh.position); sprite.position.y -= 34; sprite.scale.set(112, 22, 1); scene.add(sprite);
   }
   const click = (event) => {
+    // OrbitControls emits a click after a rotation. Keep the rotated camera
+    // intact; only a genuine tap selects a node or resets the selection.
+    if (orbitMoved) { orbitMoved = false; return; }
     const rect = renderer.domElement.getBoundingClientRect(); pointer.x = ((event.clientX - rect.left) / rect.width) * 2 - 1; pointer.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
     raycaster.setFromCamera(pointer, camera); const hit = raycaster.intersectObjects(meshes)[0];
     if (hit) selectNode(hit.object.userData.nodeId); else resetSelection();
