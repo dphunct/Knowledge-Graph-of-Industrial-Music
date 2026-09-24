@@ -24,7 +24,20 @@ const nodeEdges = (id) => graph.edges.filter((edge) => edge.source === id || edg
 const labelFor = (id) => byId.get(id).label;
 
 function visibleNodes() {
-  return graph.nodes.filter((node) => activeView === "all" || (activeView === "people" ? node.type === "person" : node.type === "project"));
+  return graph.nodes.filter((node) => activeView === "all" || node.type === activeView.slice(0, -1));
+}
+
+function visibleEdges(nodes) {
+  const ids = new Set(nodes.map(({ id }) => id));
+  const direct = graph.edges.filter((edge) => ids.has(edge.source) && ids.has(edge.target));
+  if (activeView === "all" || activeView === "releases") return direct;
+  const compound = new Map();
+  const pivotType = activeView === "people" ? "project" : "person";
+  for (const pivot of graph.nodes.filter((node) => node.type === pivotType)) {
+    const members = graph.edges.filter((edge) => edge.target === pivot.id || edge.source === pivot.id).map((edge) => edge.source === pivot.id ? edge.target : edge.source).filter((id) => ids.has(id));
+    for (let left = 0; left < members.length; left += 1) for (let right = left + 1; right < members.length; right += 1) compound.set([members[left], members[right]].sort().join("|"), { source: members[left], target: members[right], type: "compound" });
+  }
+  return [...compound.values()];
 }
 
 function renderGraph() {
@@ -45,7 +58,8 @@ function renderGraph() {
   svg.classList.add("edges");
   svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
   svg.setAttribute("aria-hidden", "true");
-  const edges = graph.edges.filter((edge) => visibleIds.has(edge.source) && visibleIds.has(edge.target));
+  const edges = visibleEdges(nodes);
+  const firstDegree = new Set(selectedId ? nodeEdges(selectedId).map((edge) => edge.source === selectedId ? edge.target : edge.source) : []);
   const lines = edges.map((edge) => {
     const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
     line.classList.add(highlightedPath.includes(edge.source) && highlightedPath.includes(edge.target) ? "highlighted" : "edge");
@@ -55,7 +69,7 @@ function renderGraph() {
   const buttons = new Map(nodes.map((node) => {
     const button = document.createElement("button");
     button.type = "button";
-    button.className = `node ${node.type} ${selectedId === node.id ? "selected" : ""}`;
+    button.className = `node ${node.type} ${selectedId === node.id ? "selected" : ""} ${selectedId && node.id !== selectedId && !firstDegree.has(node.id) ? "dimmed" : ""}`;
     button.setAttribute("role", "listitem");
     button.innerHTML = `<span>${node.label}</span><small>${node.type}${node.relevance ? ` · ${node.relevance}` : ""}</small>`;
     button.style.width = `${80 + metrics.get(node.id)[sizeMetric.value] * 48}px`;
