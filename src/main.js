@@ -24,7 +24,20 @@ const nodeEdges = (id) => graph.edges.filter((edge) => edge.source === id || edg
 const labelFor = (id) => byId.get(id).label;
 
 function visibleNodes() {
-  return graph.nodes.filter((node) => activeView === "all" || node.type === activeView.slice(0, -1));
+  const typeForView = { people: "person", projects: "project", releases: "release" };
+  return graph.nodes.filter((node) => activeView === "all" || node.type === typeForView[activeView]);
+}
+
+function hopDistances(start) {
+  const distances = new Map([[start, 0]]); const queue = [start];
+  while (queue.length) {
+    const current = queue.shift();
+    for (const edge of nodeEdges(current)) {
+      const next = edge.source === current ? edge.target : edge.source;
+      if (!distances.has(next)) { distances.set(next, distances.get(current) + 1); queue.push(next); }
+    }
+  }
+  return distances;
 }
 
 function visibleEdges(nodes) {
@@ -59,17 +72,24 @@ function renderGraph() {
   svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
   svg.setAttribute("aria-hidden", "true");
   const edges = visibleEdges(nodes);
-  const firstDegree = new Set(selectedId ? nodeEdges(selectedId).map((edge) => edge.source === selectedId ? edge.target : edge.source) : []);
+  const distances = selectedId ? hopDistances(selectedId) : new Map();
   const lines = edges.map((edge) => {
     const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
     line.classList.add(highlightedPath.includes(edge.source) && highlightedPath.includes(edge.target) ? "highlighted" : "edge");
+    line.style.pointerEvents = "stroke";
+    line.addEventListener("click", (event) => { event.stopPropagation(); showEdge(edge); });
     svg.append(line);
     return { edge, line };
   });
   const buttons = new Map(nodes.map((node) => {
     const button = document.createElement("button");
     button.type = "button";
-    button.className = `node ${node.type} ${selectedId === node.id ? "selected" : ""} ${selectedId && node.id !== selectedId && !firstDegree.has(node.id) ? "dimmed" : ""}`;
+    const distance = distances.get(node.id);
+    button.className = `node ${node.type} ${selectedId === node.id ? "selected" : ""}`;
+    if (selectedId) {
+      const opacity = distance === undefined || distance > 4 ? .16 : distance <= 1 ? 1 : 1 - (distance - 1) * .25;
+      button.style.opacity = `${opacity}`;
+    }
     button.setAttribute("role", "listitem");
     button.innerHTML = `<span>${node.label}</span><small>${node.type}${node.relevance ? ` · ${node.relevance}` : ""}</small>`;
     button.style.width = `${80 + metrics.get(node.id)[sizeMetric.value] * 48}px`;
@@ -78,6 +98,7 @@ function renderGraph() {
     return [node.id, button];
   }));
   graphElement.replaceChildren(svg, ...buttons.values());
+  graphElement.onclick = (event) => { if (event.target === graphElement || event.target === svg) resetSelection(); };
   graphElement.classList.toggle("three-d", dimension === "3d");
   status.textContent = `${nodes.length} visible nodes · ${edges.length} visible relationships · drag nodes to explore`;
 
@@ -134,6 +155,17 @@ function renderGraph() {
     simulate(0.45);
   };
   simulate();
+}
+
+function showEdge(edge) {
+  const related = graph.edges.filter((item) => (item.source === edge.source && item.target === edge.target) || (item.source === edge.target && item.target === edge.source));
+  detail.innerHTML = `<p class="eyebrow">relationship</p><h2>${labelFor(edge.source)} ↔ ${labelFor(edge.target)}</h2><p>${related.length ? related.map((item) => `${item.type.replace("_", " ")}${item.roles.length ? ` — ${item.roles.join(", ")}` : ""}`).join("<br />") : "Compound relationship in this filtered view. Select either node to inspect the shared connections."}</p>`;
+}
+
+function resetSelection() {
+  selectedId = null; highlightedPath = [];
+  detail.innerHTML = `<p class="eyebrow">Start exploring</p><h2>Select a node or edge</h2><p>Click a node to inspect its relationships, or an edge to inspect the connection. Click the canvas to reset.</p>`;
+  renderGraph();
 }
 
 function beginDrag(event, id, nodeRadius, width, height) {
