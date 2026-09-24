@@ -29,6 +29,8 @@ The graph is evidence-backed rather than dependent on a single database. MusicBr
 
 See `docs/knowledge-model.md` for the canonical node, relationship, provenance, and temporal conventions.
 
+See `docs/chatgpt-setup.md` for the optional ChatGPT companion workflow and a workspace-eligible custom GPT configuration.
+
 ## Publishing
 
 Merges to `main` build and deploy the site through GitHub Pages. In the repository settings, set **Pages → Build and deployment → Source** to **GitHub Actions** once. The public site will then be available at `https://dphunct.github.io/Knowledge-Graph-of-Industrial-Music/`.
