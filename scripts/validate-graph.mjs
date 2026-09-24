@@ -12,5 +12,9 @@ for (const edge of graph.edges) {
   if (!ids.has(edge.source) || !ids.has(edge.target)) throw new Error(`Edge references an unknown node: ${edge.source} → ${edge.target}`);
   if (!Array.isArray(edge.roles) || !edge.sourceStatus) throw new Error(`Edge lacks roles or source status: ${edge.source} → ${edge.target}`);
   if (edge.validFrom && (!Number.isInteger(edge.validFrom) || edge.validFrom < 1900)) throw new Error(`Invalid temporal edge data: ${edge.source} → ${edge.target}`);
+  if (edge.sourceStatus === "verified" && !edge.provenance?.length) throw new Error(`Verified edge lacks provenance: ${edge.source} → ${edge.target}`);
+  for (const source of edge.provenance || []) {
+    if (!source.title || !/^https:\/\//.test(source.url || "")) throw new Error(`Invalid provenance on edge: ${edge.source} → ${edge.target}`);
+  }
 }
 console.log(`Graph valid: ${graph.nodes.length} nodes, ${graph.edges.length} edges.`);

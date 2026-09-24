@@ -33,6 +33,7 @@ let localEngine = null;
 const nodeEdges = (id) => graph.edges.filter((edge) => edge.source === id || edge.target === id);
 const labelFor = (id) => byId.get(id).label;
 const activeAtYear = (item) => (!item.validFrom || Number(item.validFrom) <= activeYear) && (!item.validTo || Number(item.validTo) >= activeYear);
+const provenanceLinks = (item) => (item.provenance || []).map((source) => `<a href="${source.url}" target="_blank" rel="noopener noreferrer">${source.title} ↗</a>${source.note ? ` <span>${source.note}</span>` : ""}`).join("<br />");
 
 function visibleNodes() {
   const typeForView = { people: "person", projects: "project", releases: "release" };
@@ -243,7 +244,8 @@ function showEdge(edge) {
   selectedId = null;
   const context = edgeContext(edge);
   const shared = context.shared.length ? `<p><strong>Shared intermediaries</strong> ${context.shared.map(labelFor).join(", ")}</p>` : "";
-  detail.innerHTML = `<p class="eyebrow">relationship context</p><h2>${labelFor(edge.source)} ↔ ${labelFor(edge.target)}</h2><p>${related.length ? related.map((item) => `${item.type.replace("_", " ")}${item.roles.length ? ` — ${item.roles.join(", ")}` : ""}`).join("<br />") : "Projected compound relationship in this filtered view."}</p>${shared}<p>The graph now shows the surrounding recorded people, projects, and releases for this connection.</p><button class="return-graph" type="button" data-reset-graph>Return to full graph</button>`;
+  const citations = related.map(provenanceLinks).filter(Boolean).join("<br />");
+  detail.innerHTML = `<p class="eyebrow">relationship context</p><h2>${labelFor(edge.source)} ↔ ${labelFor(edge.target)}</h2><p>${related.length ? related.map((item) => `${item.type.replace("_", " ")}${item.roles.length ? ` — ${item.roles.join(", ")}` : ""}`).join("<br />") : "Projected compound relationship in this filtered view."}</p>${citations ? `<p class="provenance"><strong>Sources</strong><br />${citations}</p>` : ""}${shared}<p>The graph now shows the surrounding recorded people, projects, and releases for this connection.</p><button class="return-graph" type="button" data-reset-graph>Return to full graph</button>`;
   detail.querySelector("[data-reset-graph]").addEventListener("click", resetSelection);
   renderGraph();
 }
@@ -288,7 +290,7 @@ function selectNode(id) {
   const related = connections.map((edge) => {
     const other = edge.source === id ? edge.target : edge.source;
     const role = edge.roles.length ? ` — ${edge.roles.join(", ")}` : "";
-    return `<li><button type="button" data-node="${other}">${labelFor(other)}</button><span>${edge.type.replace("_", " ")}${role} · ${edge.sourceStatus.replace("-", " ")}</span></li>`;
+    return `<li><button type="button" data-node="${other}">${labelFor(other)}</button><span>${edge.type.replace("_", " ")}${role} · ${edge.sourceStatus.replace("-", " ")}</span>${provenanceLinks(edge) ? `<span class="provenance">${provenanceLinks(edge)}</span>` : ""}</li>`;
   }).join("");
   const metric = metrics.get(id); const score = (value) => Math.round(value * 100);
   detail.innerHTML = `<p class="eyebrow">${node.type}${node.relevance ? ` · ${node.relevance} relevance` : ""}</p><h2>${node.label}</h2><p>${node.summary || "No description recorded yet."}</p>${node.years ? `<p><strong>Active</strong> ${node.years}</p>` : ""}${aliases}<h3>Graph influence</h3><p>Composite ${score(metric.composite)} · connections ${score(metric.degree)} · bridge ${score(metric.betweenness)} · PageRank ${score(metric.pageRank)}</p><h3>Known relationships</h3><ul class="relationships">${related || "<li>No relationships recorded.</li>"}</ul>`;

@@ -6,6 +6,6 @@
   "properties": {
     "meta": {"type": "object"},
     "nodes": {"type": "array", "items": {"type": "object", "required": ["id", "label", "type"], "properties": {"type": {"enum": ["person", "project", "release"]}, "relevance": {"enum": ["core", "adjacent", "boundary"]}, "validFrom": {"type": "integer"}, "validTo": {"type": ["integer", "null"]}}}},
-    "edges": {"type": "array", "items": {"type": "object", "required": ["source", "target", "type", "roles", "sourceStatus"], "properties": {"validFrom": {"type": "integer"}, "validTo": {"type": ["integer", "null"]}, "provenance": {"type": "array"}}}}
+    "edges": {"type": "array", "items": {"type": "object", "required": ["source", "target", "type", "roles", "sourceStatus"], "properties": {"validFrom": {"type": "integer"}, "validTo": {"type": ["integer", "null"]}, "sourceStatus": {"enum": ["needs-citation", "verified", "disputed"]}, "provenance": {"type": "array", "items": {"type": "object", "required": ["url", "title"], "properties": {"url": {"type": "string", "format": "uri"}, "title": {"type": "string"}, "note": {"type": "string"}}}}}}}
   }
 }
