@@ -1,4 +1,6 @@
 import "./style.css";
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import graph from "../data/industrial-graph.json";
 import { graphMetrics } from "./metrics.js";
 
@@ -10,6 +12,8 @@ const search = document.querySelector("#search");
 const pathFrom = document.querySelector("#path-from");
 const pathTo = document.querySelector("#path-to");
 const sizeMetric = document.querySelector("#size-metric");
+const yearSlider = document.querySelector("#year");
+const yearValue = document.querySelector("#year-value");
 const metrics = graphMetrics(graph.nodes, graph.edges);
 let activeView = "all";
 let selectedId = null;
@@ -20,13 +24,16 @@ let redrawGraph = () => {};
 let restartSimulation = () => {};
 let dimension = "2d";
 let focusedEdge = null;
+let disposeThree = () => {};
+let activeYear = Number(yearSlider.value);
 
 const nodeEdges = (id) => graph.edges.filter((edge) => edge.source === id || edge.target === id);
 const labelFor = (id) => byId.get(id).label;
+const activeAtYear = (item) => (!item.validFrom || Number(item.validFrom) <= activeYear) && (!item.validTo || Number(item.validTo) >= activeYear);
 
 function visibleNodes() {
   const typeForView = { people: "person", projects: "project", releases: "release" };
-  return graph.nodes.filter((node) => activeView === "all" || node.type === typeForView[activeView]);
+  return graph.nodes.filter((node) => (activeView === "all" || node.type === typeForView[activeView]) && activeAtYear(node));
 }
 
 function hopDistances(start) {
@@ -43,12 +50,12 @@ function hopDistances(start) {
 
 function visibleEdges(nodes) {
   const ids = new Set(nodes.map(({ id }) => id));
-  const direct = graph.edges.filter((edge) => ids.has(edge.source) && ids.has(edge.target));
+  const direct = graph.edges.filter((edge) => ids.has(edge.source) && ids.has(edge.target) && activeAtYear(edge));
   if (activeView === "all" || activeView === "releases") return direct;
   const compound = new Map();
   const pivotType = activeView === "people" ? "project" : "person";
   for (const pivot of graph.nodes.filter((node) => node.type === pivotType)) {
-    const members = graph.edges.filter((edge) => edge.target === pivot.id || edge.source === pivot.id).map((edge) => edge.source === pivot.id ? edge.target : edge.source).filter((id) => ids.has(id));
+    const members = graph.edges.filter((edge) => activeAtYear(edge) && (edge.target === pivot.id || edge.source === pivot.id)).map((edge) => edge.source === pivot.id ? edge.target : edge.source).filter((id) => ids.has(id));
     for (let left = 0; left < members.length; left += 1) for (let right = left + 1; right < members.length; right += 1) compound.set([members[left], members[right]].sort().join("|"), { source: members[left], target: members[right], type: "compound" });
   }
   return [...compound.values()];
@@ -69,6 +76,8 @@ function edgeContext(edge) {
 }
 
 function renderGraph() {
+  disposeThree();
+  disposeThree = () => {};
   const term = search.value.trim().toLowerCase();
   let nodes = visibleNodes().filter((node) => !term || `${node.label} ${(node.aliases || []).join(" ")}`.toLowerCase().includes(term));
   const context = focusedEdge ? edgeContext(focusedEdge) : null;
@@ -88,7 +97,12 @@ function renderGraph() {
   svg.classList.add("edges");
   svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
   svg.setAttribute("aria-hidden", "true");
-  const edges = context ? graph.edges.filter((edge) => visibleIds.has(edge.source) && visibleIds.has(edge.target)) : visibleEdges(nodes);
+  const edges = context ? graph.edges.filter((edge) => visibleIds.has(edge.source) && visibleIds.has(edge.target) && activeAtYear(edge)) : visibleEdges(nodes);
+  if (dimension === "3d") {
+    renderThreeGraph(nodes, edges, width, height);
+    status.textContent = `${context ? "Edge context · " : ""}${nodes.length} visible nodes · ${edges.length} relationships · drag to orbit, scroll to zoom`;
+    return;
+  }
   const distances = selectedId ? hopDistances(selectedId) : new Map();
   const lines = edges.map((edge) => {
     const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
@@ -174,6 +188,50 @@ function renderGraph() {
     simulate(0.45);
   };
   simulate();
+}
+
+function renderThreeGraph(nodes, edges, width, height) {
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(48, width / height, 1, 2000);
+  camera.position.set(0, 0, 680);
+  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.setSize(width, height);
+  renderer.domElement.className = "three-canvas";
+  renderer.domElement.setAttribute("aria-label", "Interactive 3D knowledge graph. Drag to orbit and scroll to zoom.");
+  renderer.domElement.setAttribute("role", "img");
+  graphElement.replaceChildren(renderer.domElement);
+  const controls = new OrbitControls(camera, renderer.domElement);
+  controls.enableDamping = true;
+  controls.minDistance = 260; controls.maxDistance = 1100;
+  const raycaster = new THREE.Raycaster(); const pointer = new THREE.Vector2();
+  const meshes = [];
+  const colors = { person: 0xee946d, project: 0x80b7a6, release: 0xa79ada, song: 0xedaa85 };
+  const points = new Map();
+  for (const [id, point] of layout) points.set(id, new THREE.Vector3((point.x - width / 2) * 1.1, (height / 2 - point.y) * 1.1, point.z * 1.8));
+  for (const edge of edges) {
+    const geometry = new THREE.BufferGeometry().setFromPoints([points.get(edge.source), points.get(edge.target)]);
+    scene.add(new THREE.Line(geometry, new THREE.LineBasicMaterial({ color: 0x806d62, transparent: true, opacity: .7 })));
+  }
+  for (const node of nodes) {
+    const metric = metrics.get(node.id)[sizeMetric.value];
+    const mesh = new THREE.Mesh(new THREE.SphereGeometry(16 + metric * 22, 20, 20), new THREE.MeshBasicMaterial({ color: colors[node.type], transparent: true, opacity: selectedId && selectedId !== node.id ? .45 : 1 }));
+    mesh.position.copy(points.get(node.id)); mesh.userData.nodeId = node.id; scene.add(mesh); meshes.push(mesh);
+    const label = document.createElement("canvas"); label.width = 320; label.height = 64;
+    const context2d = label.getContext("2d"); context2d.fillStyle = "#f5f0e8"; context2d.font = "700 30px Manrope"; context2d.textAlign = "center"; context2d.fillText(node.label, 160, 42);
+    const sprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: new THREE.CanvasTexture(label), transparent: true }));
+    sprite.position.copy(mesh.position); sprite.position.y -= 34; sprite.scale.set(112, 22, 1); scene.add(sprite);
+  }
+  const click = (event) => {
+    const rect = renderer.domElement.getBoundingClientRect(); pointer.x = ((event.clientX - rect.left) / rect.width) * 2 - 1; pointer.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+    raycaster.setFromCamera(pointer, camera); const hit = raycaster.intersectObjects(meshes)[0];
+    if (hit) selectNode(hit.object.userData.nodeId); else resetSelection();
+  };
+  renderer.domElement.addEventListener("click", click);
+  let frame;
+  const draw = () => { controls.update(); renderer.render(scene, camera); frame = requestAnimationFrame(draw); };
+  draw();
+  disposeThree = () => { cancelAnimationFrame(frame); controls.dispose(); renderer.dispose(); renderer.domElement.removeEventListener("click", click); };
 }
 
 function showEdge(edge) {
@@ -281,9 +339,10 @@ document.querySelectorAll("[data-help]").forEach((button) => button.addEventList
   document.querySelector("#help-text").textContent = button.dataset.help;
 }));
 document.querySelector("[data-action='rearrange']").addEventListener("click", renderGraph);
-document.querySelector("[data-action='dimension']").addEventListener("click", () => { dimension = dimension === "2d" ? "3d" : "2d"; renderGraph(); });
+document.querySelector("[data-action='dimension']").addEventListener("click", (event) => { dimension = dimension === "2d" ? "3d" : "2d"; event.currentTarget.textContent = dimension === "3d" ? "3D / 2D" : "2D / 3D"; renderGraph(); });
 sizeMetric.addEventListener("change", renderGraph);
 search.addEventListener("input", renderGraph);
+yearSlider.addEventListener("input", () => { activeYear = Number(yearSlider.value); yearValue.textContent = activeYear; focusedEdge = null; renderGraph(); });
 window.addEventListener("resize", renderGraph);
 populatePathSelects();
 renderGraph();
