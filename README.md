@@ -4,6 +4,12 @@ Wax Trax posted it as a meme.
 
 I made the first iteration.  If you know how GitHub works, and have something to contribute, let me know.
 
+## The meme that triggered this project
+
+[![The industrial music relationship meme](public/assets/waxtraxmeme.jpg)](https://www.facebook.com/groups/WaxTraxRecords1980/posts/2594226704425911/)
+
+This project began by reverse-engineering and expanding the relationship web in the image above. [View the original post on Facebook.](https://www.facebook.com/groups/WaxTraxRecords1980/posts/2594226704425911/)
+
 ## Cloud development
 
 This repository is ready for [GitHub Codespaces](https://github.com/features/codespaces).
