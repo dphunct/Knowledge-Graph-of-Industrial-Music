@@ -549,6 +549,35 @@
       }
     },
     {
+      "id": "delerium",
+      "label": "Delerium",
+      "type": "project",
+      "relevance": "core",
+      "validFrom": 1987,
+      "summary": "Industrial project documented in MusicBrainz membership data for Bill Leeb and Rhys Fulber.",
+      "musicbrainz": { "id": "4279aba0-1bde-40a9-8fb2-c63d165dc554", "entity": "artist", "url": "https://musicbrainz.org/artist/4279aba0-1bde-40a9-8fb2-c63d165dc554" },
+      "provenance": [{ "title": "MusicBrainz: Bill Leeb", "url": "https://musicbrainz.org/artist/e10b76e5-dc32-4e9f-83b9-4f717400b19f", "note": "Lists Bill Leeb as a Delerium member from 1987." }]
+    },
+    {
+      "id": "noise-unit",
+      "label": "Noise Unit",
+      "type": "project",
+      "relevance": "core",
+      "validFrom": 1989,
+      "summary": "Industrial project documented in MusicBrainz membership data for Bill Leeb and Rhys Fulber.",
+      "musicbrainz": { "id": "7dd6f063-dcac-47e7-98d1-26eaeaac2971", "entity": "artist", "url": "https://musicbrainz.org/artist/7dd6f063-dcac-47e7-98d1-26eaeaac2971" },
+      "provenance": [{ "title": "MusicBrainz: Bill Leeb", "url": "https://musicbrainz.org/artist/e10b76e5-dc32-4e9f-83b9-4f717400b19f", "note": "Lists Bill Leeb as a Noise Unit member from 1989." }]
+    },
+    {
+      "id": "cyberaktif",
+      "label": "Cyberaktif",
+      "type": "project",
+      "relevance": "core",
+      "summary": "Industrial project documented in MusicBrainz membership data for cEvin Key and Rhys Fulber.",
+      "musicbrainz": { "id": "6967bbb5-d814-40e9-84be-eef3d10b6662", "entity": "artist", "url": "https://musicbrainz.org/artist/6967bbb5-d814-40e9-84be-eef3d10b6662" },
+      "provenance": [{ "title": "MusicBrainz: cEvin Key", "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd", "note": "Lists cEvin Key as a Cyberaktif member." }]
+    },
+    {
       "id": "acid-horse",
       "label": "Acid Horse",
       "type": "project",
@@ -975,6 +1004,61 @@
           "note": "Lists Nivek Ogre as a vocal supporting musician for KMFDM from 1997 to 1999."
         }
       ]
+    },
+    {
+      "source": "bill-leeb",
+      "target": "delerium",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1987,
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: Bill Leeb", "url": "https://musicbrainz.org/artist/e10b76e5-dc32-4e9f-83b9-4f717400b19f", "note": "Lists Bill Leeb as a Delerium member from 1987." }]
+    },
+    {
+      "source": "rhys-fulber",
+      "target": "delerium",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1989,
+      "validTo": 2000,
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: Rhys Fulber", "url": "https://musicbrainz.org/artist/7ee30fce-cd3d-437d-9ff0-b2ef195bda33", "note": "Lists Rhys Fulber as a Delerium member from 1989 to 2000." }]
+    },
+    {
+      "source": "bill-leeb",
+      "target": "noise-unit",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1989,
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: Bill Leeb", "url": "https://musicbrainz.org/artist/e10b76e5-dc32-4e9f-83b9-4f717400b19f", "note": "Lists Bill Leeb as a Noise Unit member from 1989." }]
+    },
+    {
+      "source": "rhys-fulber",
+      "target": "noise-unit",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1990,
+      "validTo": 1997,
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: Rhys Fulber", "url": "https://musicbrainz.org/artist/7ee30fce-cd3d-437d-9ff0-b2ef195bda33", "note": "Lists Rhys Fulber as a Noise Unit member from 1990 to 1997." }]
+    },
+    {
+      "source": "cevin-key",
+      "target": "cyberaktif",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: cEvin Key", "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd", "note": "Lists cEvin Key as a Cyberaktif member; MusicBrainz does not provide dates." }]
+    },
+    {
+      "source": "rhys-fulber",
+      "target": "cyberaktif",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2024,
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: Rhys Fulber", "url": "https://musicbrainz.org/artist/7ee30fce-cd3d-437d-9ff0-b2ef195bda33", "note": "Lists Rhys Fulber as a Cyberaktif member from 2024." }]
     },
     {
       "source": "ministry",
