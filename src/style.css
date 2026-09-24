@@ -22,7 +22,7 @@ h1, h2, h3, p { margin-top: 0; } h1 { font: 400 clamp(3.5rem, 9vw, 7rem)/.8 "Ins
 .graph-status { margin: 0; color: #92867d; font: .72rem "DM Mono", monospace; }
 .detail { padding: 1.8rem; background: #1a1613; } .detail h2, .query-panel h2 { font: 400 2rem/1 "Instrument Serif", serif; } .detail h3 { margin-top: 2rem; font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; }.detail p { color:#c2b8ae; font-size:.87rem; line-height:1.65; }.relationships { padding: 0; list-style: none; }.relationships li { display: grid; gap: .18rem; padding: .65rem 0; border-bottom: 1px solid #403731; }.relationships button { padding: 0; border: 0; background: none; color:#ee946d; text-align: left; font-weight: 800; }.relationships span { color:#a89d92; font-size:.72rem; }
 .query-panel { align-items: center; margin: 2rem 0 0; padding: 1.5rem; background: #2b211d; border-left: 3px solid #e57550; }.query-panel h2 { margin-bottom:0; }.query-panel form { display:flex; gap:.65rem; align-items:end; }.query-panel label { display:grid; gap:.35rem; color:#bcb1a5; font-size:.7rem; }.path-result { flex-basis:100%; color:#c7b9af; margin: 0; font-size:.85rem; }
-@media (max-width: 760px) { .app-shell { padding-top: 2.5rem; }.origin { grid-template-columns: 1fr; }.origin img { max-height: 120px; }.controls, .query-panel, .query-panel form { align-items: stretch; flex-direction: column; }.workspace { grid-template-columns: 1fr; }.graph-panel { border-right: 0; border-bottom: 1px solid #493f38; }.search input { width: 100%; }.graph { min-height: 540px; }.node { width: 82px; }.edges { display: none; } }
+@media (max-width: 760px) { .app-shell { padding-top: 2.5rem; }.origin { grid-template-columns: 1fr; }.origin img { max-height: 120px; }.controls, .query-panel, .query-panel form { align-items: stretch; flex-direction: column; }.workspace { grid-template-columns: 1fr; }.graph-panel { border-right: 0; border-bottom: 1px solid #493f38; }.search input { width: 100%; }.graph { min-height: 540px; }.node { width: 82px; } }
 
 /* Graph-first presentation overrides */
 .app-shell { width: min(1540px, calc(100% - 2rem)); }
@@ -33,3 +33,25 @@ h1, h2, h3, p { margin-top: 0; } h1 { font: 400 clamp(3.5rem, 9vw, 7rem)/.8 "Ins
 .node.dimmed { opacity: .16; filter: grayscale(1); }
 .origin { max-width: 620px; margin: 2rem 0 0; padding: .7rem; grid-template-columns: 110px 1fr; }
 .origin img { max-height: 110px; }.origin h2 { font-size: 1.55rem; }.origin p:not(.eyebrow) { margin-bottom: .45rem; }
+
+/* Responsive tiers: phone 3–4in, portrait tablet 6–8in, small landscape 10–12in, standard 15–16in, and extra large. */
+@media (max-width: 480px) {
+  .app-shell { width: min(100% - 1rem, 1540px); padding: 1.25rem 0; }.masthead { margin-bottom: 1.25rem; } h1 { font-size: 3.3rem; }.title-break { display: block; }
+  .controls { gap: .65rem; }.view-controls { flex-wrap: wrap; }.view-controls button { flex: 1 1 42%; }.workspace { grid-template-columns: 1fr; }.graph-panel, .graph { min-height: 460px; padding: .6rem; }.detail { padding: 1rem; }.origin { grid-template-columns: 80px 1fr; }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .app-shell { width: min(100% - 2rem, 1540px); padding: 2rem 0; }.title-break { display: block; }.controls { flex-wrap: wrap; }.workspace { grid-template-columns: 1fr; }.graph-panel, .graph { min-height: 600px; }.detail { border-top: 1px solid #493f38; }
+}
+@media (min-width: 769px) and (max-width: 1280px) {
+  .title-break { display: none; } h1 { white-space: nowrap; font-size: clamp(3.8rem, 7vw, 5.4rem); }.workspace { grid-template-columns: minmax(0, 1fr) 290px; }.graph-panel, .graph { min-height: 620px; }
+}
+@media (min-width: 1281px) and (max-width: 1728px) {
+  .title-break { display: none; } h1 { white-space: nowrap; }.app-shell { width: min(1540px, calc(100% - 4rem)); }.graph-panel, .graph { min-height: 680px; }
+}
+@media (min-width: 1729px) {
+  .title-break { display: none; } h1 { white-space: nowrap; }.app-shell { width: min(1840px, calc(100% - 6rem)); }.workspace { grid-template-columns: minmax(0, 1fr) 360px; }.graph-panel, .graph { min-height: 760px; }
+}
+
+.help-button { display:inline-grid; width:1.15rem; height:1.15rem; padding:0; place-items:center; border:1px solid #806b5f; border-radius:50%; background:transparent; color:#edaa85; font:700 .7rem/1 "DM Mono", monospace; vertical-align:middle; }.help-button:hover, .help-button:focus-visible { background:#edaa85; color:#201310; }.help-text { min-height:1.5rem; margin:.15rem 0 1rem; color:#ac9f94; font-size:.75rem; }.return-graph { border:1px solid #e57550; background:transparent; color:#f0a178; padding:.5rem .7rem; font-weight:800; }.feedback { margin:2rem 0 0; padding:1.5rem; border:1px solid #493f38; background:#1c1815; }.feedback h2 { margin-bottom:.6rem; font:400 2rem/1 "Instrument Serif", serif; }.feedback p:not(.eyebrow) { max-width:720px; color:#c2b8ae; line-height:1.65; }.feedback div { display:flex; flex-wrap:wrap; gap:.65rem; }.feedback-link { border:1px solid #685248; color:#ee946d; padding:.65rem .85rem; font-weight:800; text-decoration:none; }.feedback-link:hover { background:#38251f; }
+.year-control { display:grid; width:min(420px, 100%); gap:.4rem; margin:0 0 .35rem; color:#bcb1a5; font-size:.78rem; }.year-control output { color:#ee946d; font-weight:800; }.year-control input { min-height:auto; padding:0; accent-color:#e57550; }.three-canvas { display:block; width:100%; height:100%; cursor:grab; }.three-canvas:active { cursor:grabbing; }
+.local-explainer { margin:2rem 0 0; padding:1.5rem; border:1px solid #493f38; background:#1c1815; }.local-explainer h2 { margin-bottom:.6rem; font:400 2rem/1 "Instrument Serif", serif; }.local-explainer p { max-width:760px; color:#c2b8ae; line-height:1.65; }.local-explainer button { border:1px solid #e57550; background:#e57550; color:#201310; padding:.6rem .85rem; font-weight:800; }.local-explainer form { display:flex; flex-wrap:wrap; gap:.65rem; align-items:end; margin-top:1rem; }.local-explainer label { display:grid; flex:1 1 300px; gap:.35rem; color:#bcb1a5; font-size:.75rem; }.llm-status, .llm-answer { font-size:.8rem; }.llm-answer { border-left:2px solid #685248; padding-left:.8rem; }

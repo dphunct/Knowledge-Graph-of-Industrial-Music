@@ -1,0 +1,34 @@
+name: Correct or add graph information
+description: Submit a sourced correction, addition, or interpretation for the graph.
+title: "Graph record: "
+labels: ["graph-data", "needs-review"]
+body:
+  - type: dropdown
+    id: contribution
+    attributes:
+      label: Contribution type
+      options: [Correction to an existing fact, New factual relationship, Interpretation or context]
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: Claim or correction
+      description: Identify the people, projects, releases, or songs involved and the relationship, role, and dates when known.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source URL
+      description: At least one directly supporting source is required for factual claims.
+      placeholder: https://...
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Evidence notes
+      description: Quote, page reference, uncertainty, or explanation of why the source supports the claim.
+    validations:
+      required: true
