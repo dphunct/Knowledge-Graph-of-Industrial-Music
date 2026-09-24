@@ -40,7 +40,7 @@
           <button type="button" data-view="projects">Projects</button>
           <button type="button" data-view="releases">Releases</button>
           <button type="button" data-action="rearrange">Rearrange</button>
-          <button type="button" data-action="dimension">2D / 3D</button><button class="help-button" type="button" data-help="2D is the current working view. The 3D control is a depth preview while the planned renderer with orbit controls is being built.">?</button>
+          <button type="button" data-action="dimension">2D / 3D</button><button class="help-button" type="button" data-help="Switch between the working 2D map and the 3D view. In 3D, drag to orbit and scroll to zoom.">?</button>
         </div>
       </section>
       <section class="neighborhood-controls" aria-label="Selected sphere neighborhood controls">
@@ -59,9 +59,10 @@
             <label>Zoom <input id="graph-zoom" type="range" min="0.4" max="3" value="1" step="0.05" /></label>
             <button type="button" data-action="zoom-in" aria-label="Zoom in">+</button>
             <button type="button" data-action="zoom-reset">Reset zoom</button>
+            <button type="button" data-action="fullscreen" aria-pressed="false">Full screen</button><button class="help-button" type="button" data-help="Focus the map with Full screen or press F. Press Escape or use Exit full screen to return. The map rearranges itself for the available space, and its wider working area gives you room to pan and zoom.">?</button>
             <output id="zoom-value">100%</output>
           </div>
-          <p id="graph-status" class="graph-status"></p>
+          <p id="graph-status" class="graph-status">Tip: drag the background to pan; Full screen or F opens a focused map view.</p>
         </div>
         <aside id="detail" class="detail" aria-live="polite">
           <p class="eyebrow">Start exploring</p>

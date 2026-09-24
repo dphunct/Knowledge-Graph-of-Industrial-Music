@@ -6,6 +6,7 @@ import { graphMetrics } from "./metrics.js";
 
 const byId = new Map(graph.nodes.map((node) => [node.id, node]));
 const graphElement = document.querySelector("#graph");
+const graphPanel = document.querySelector(".graph-panel");
 const detail = document.querySelector("#detail");
 const status = document.querySelector("#graph-status");
 const search = document.querySelector("#search");
@@ -20,6 +21,7 @@ const yearValue = document.querySelector("#year-value");
 const zoomSlider = document.querySelector("#graph-zoom");
 const zoomValue = document.querySelector("#zoom-value");
 const controlTooltip = document.querySelector("#control-tooltip");
+const fullscreenButton = document.querySelector("[data-action='fullscreen']");
 const llmStatus = document.querySelector("#llm-status");
 const llmAnswer = document.querySelector("#llm-answer");
 let metrics = graphMetrics(graph.nodes, graph.edges);
@@ -42,6 +44,7 @@ let threeCamera = null;
 let threeControls = null;
 let graphPan = { x: 0, y: 0 };
 let suppressCanvasClick = false;
+let resizeTimer;
 
 const nodeEdges = (id) => graph.edges.filter((edge) => edge.source === id || edge.target === id);
 const labelFor = (id) => byId.get(id).label;
@@ -120,7 +123,10 @@ function renderGraph() {
   cancelAnimationFrame(animationFrame);
   layout = new Map(nodes.map((node, index) => {
     const angle = index * 2.399963229728653;
-    const radius = Math.sqrt(index + 1) * Math.min(width, height) * .14;
+    // The map's working area is 50% wider and taller than the visible frame
+    // in every direction. This avoids a hard wall of spheres at the viewport
+    // edge and leaves meaningful territory to discover by panning and zooming.
+    const radius = Math.sqrt((index + 1) / Math.max(nodes.length, 1)) * Math.min(width, height) * .92;
     const depth = (((index * 0.61803398875) % 1) * 2 - 1) * Math.min(width, height) * .65;
     const isSelected = node.id === selectedId;
     // A selection becomes the stable center of the force layout. The rest of
@@ -219,19 +225,19 @@ function renderGraph() {
       const a = layout.get(edge.source); const b = layout.get(edge.target);
       const dx = b.x - a.x; const dy = b.y - a.y;
       const distance = Math.hypot(dx, dy) || 0.01;
-      const pull = (distance - (width < 520 ? 150 : 220)) * 0.006;
+      const pull = (distance - (width < 520 ? 180 : 280)) * 0.0045;
       const unitX = dx / distance; const unitY = dy / distance;
       if (!a.pinned) { a.vx += unitX * pull; a.vy += unitY * pull; }
       if (!b.pinned) { b.vx -= unitX * pull; b.vy -= unitY * pull; }
     }
     for (const [pointIndex, point] of points.entries()) {
       if (point.pinned) continue;
-      point.vx += (width / 2 - point.x) * 0.00035;
-      point.vy += (height / 2 - point.y) * 0.00035;
+      point.vx += (width / 2 - point.x) * 0.00008;
+      point.vy += (height / 2 - point.y) * 0.00008;
       point.vx *= 0.78; point.vy *= 0.78;
       const radius = sizeFor(nodes[pointIndex]) / 2;
-      point.x = Math.max(radius, Math.min(width - radius, point.x + point.vx * heat));
-      point.y = Math.max(radius, Math.min(height - radius, point.y + point.vy * heat));
+      point.x = Math.max(-width * .5 + radius, Math.min(width * 1.5 - radius, point.x + point.vx * heat));
+      point.y = Math.max(-height * .5 + radius, Math.min(height * 1.5 - radius, point.y + point.vy * heat));
     }
     redrawGraph();
     if (heat > 0.015) animationFrame = requestAnimationFrame(() => simulate(heat * 0.985));
@@ -367,8 +373,8 @@ function beginDrag(event, id, nodeRadius, width, height) {
   point.pinned = true;
   const move = (moveEvent) => {
     const bounds = graphElement.getBoundingClientRect();
-    point.x = Math.max(nodeRadius, Math.min(width - nodeRadius, width / 2 + (moveEvent.clientX - bounds.left - width / 2 - graphPan.x) / graphZoom));
-    point.y = Math.max(nodeRadius, Math.min(height - nodeRadius, height / 2 + (moveEvent.clientY - bounds.top - height / 2 - graphPan.y) / graphZoom));
+    point.x = Math.max(-width * .5 + nodeRadius, Math.min(width * 1.5 - nodeRadius, width / 2 + (moveEvent.clientX - bounds.left - width / 2 - graphPan.x) / graphZoom));
+    point.y = Math.max(-height * .5 + nodeRadius, Math.min(height * 1.5 - nodeRadius, height / 2 + (moveEvent.clientY - bounds.top - height / 2 - graphPan.y) / graphZoom));
     point.vx = 0; point.vy = 0;
     redrawGraph();
   };
@@ -597,6 +603,35 @@ zoomSlider.addEventListener("input", () => setGraphZoom(Number(zoomSlider.value)
 document.querySelector("[data-action='zoom-in']").addEventListener("click", () => setGraphZoom(graphZoom + .1));
 document.querySelector("[data-action='zoom-out']").addEventListener("click", () => setGraphZoom(graphZoom - .1));
 document.querySelector("[data-action='zoom-reset']").addEventListener("click", () => { graphPan = { x: 0, y: 0 }; setGraphZoom(1); });
-window.addEventListener("resize", renderGraph);
+function updateFullscreenControls() {
+  const isFullscreen = document.fullscreenElement === graphPanel;
+  fullscreenButton.textContent = isFullscreen ? "Exit full screen" : "Full screen";
+  fullscreenButton.setAttribute("aria-pressed", String(isFullscreen));
+}
+
+async function toggleFullscreen() {
+  if (document.fullscreenElement === graphPanel) await document.exitFullscreen();
+  else await graphPanel.requestFullscreen();
+}
+
+fullscreenButton.addEventListener("click", () => {
+  toggleFullscreen().catch(() => { status.textContent = "Full screen is unavailable in this browser. You can still pan and zoom the map."; });
+});
+document.addEventListener("fullscreenchange", () => {
+  updateFullscreenControls();
+  window.requestAnimationFrame(renderGraph);
+});
+window.addEventListener("keydown", (event) => {
+  if (event.key.toLowerCase() !== "f" || event.metaKey || event.ctrlKey || event.altKey || event.target.matches("input, select, textarea, button")) return;
+  event.preventDefault();
+  toggleFullscreen().catch(() => { status.textContent = "Full screen is unavailable in this browser. You can still pan and zoom the map."; });
+});
+const refreshForViewport = () => {
+  window.clearTimeout(resizeTimer);
+  resizeTimer = window.setTimeout(renderGraph, 80);
+};
+new ResizeObserver(refreshForViewport).observe(graphPanel);
+window.addEventListener("resize", refreshForViewport);
 populatePathSelects();
+updateFullscreenControls();
 renderGraph();
