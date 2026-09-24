@@ -400,6 +400,30 @@
       "provenance": [{ "title": "MusicBrainz: Front 242", "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626", "note": "Lists Jean-Luc de Meyer as a member from 1982." }]
     },
     {
+      "id": "raymond-watts",
+      "label": "Raymond Watts",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a KMFDM member in several periods between 1984 and 2004.",
+      "musicbrainz": { "id": "6a0ce9fd-5cda-4b3e-9b32-e411f2c2a57f", "entity": "artist", "url": "https://musicbrainz.org/artist/6a0ce9fd-5cda-4b3e-9b32-e411f2c2a57f" },
+      "provenance": [{ "title": "MusicBrainz: KMFDM", "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae", "note": "Lists Raymond Watts in several KMFDM membership periods." }]
+    },
+    {
+      "id": "en-esch",
+      "label": "En Esch",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a KMFDM member from 1985 to 1999.",
+      "musicbrainz": { "id": "e3537eb6-fdd0-4015-a854-705222eb4731", "entity": "artist", "url": "https://musicbrainz.org/artist/e3537eb6-fdd0-4015-a854-705222eb4731" },
+      "provenance": [{ "title": "MusicBrainz: KMFDM", "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae", "note": "Lists En Esch as a member from 1985 to 1999-01-22." }]
+    },
+    {
+      "id": "michael-balch",
+      "label": "Michael Balch",
+      "type": "person",
+      "summary": "Musician documented by MusicBrainz as a Front Line Assembly member from 1988 to 1989.",
+      "musicbrainz": { "id": "7e557e6e-e9b6-4041-b407-3290224465a0", "entity": "artist", "url": "https://musicbrainz.org/artist/7e557e6e-e9b6-4041-b407-3290224465a0" },
+      "provenance": [{ "title": "MusicBrainz: Front Line Assembly", "url": "https://musicbrainz.org/artist/b847e9d2-c931-4daf-900c-42c7b2c42e16", "note": "Lists Michael Balch as a member from 1988 to 1989." }]
+    },
+    {
       "id": "land-of-rape-and-honey",
       "label": "The Land of Rape and Honey",
       "type": "release",
@@ -1164,6 +1188,56 @@
       "validFrom": 1982,
       "sourceStatus": "verified",
       "provenance": [{ "title": "MusicBrainz: Front 242", "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626", "note": "Lists Jean-Luc de Meyer as a member from 1982." }]
+    },
+    {
+      "source": "raymond-watts",
+      "target": "kmfdm",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1984,
+      "validTo": 1988,
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: KMFDM", "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae", "note": "Lists Raymond Watts as a member from 1984 to 1988." }]
+    },
+    {
+      "source": "raymond-watts",
+      "target": "kmfdm",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1994,
+      "validTo": 1995,
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: KMFDM", "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae", "note": "Lists Raymond Watts as a member from 1994 to 1995." }]
+    },
+    {
+      "source": "raymond-watts",
+      "target": "kmfdm",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 2002,
+      "validTo": 2004,
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: KMFDM", "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae", "note": "Lists Raymond Watts as a member from 2002 to 2004." }]
+    },
+    {
+      "source": "en-esch",
+      "target": "kmfdm",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1985,
+      "validTo": 1999,
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: KMFDM", "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae", "note": "Lists En Esch as a member from 1985 to 1999-01-22." }]
+    },
+    {
+      "source": "michael-balch",
+      "target": "front-line-assembly",
+      "type": "member_of",
+      "roles": [],
+      "validFrom": 1988,
+      "validTo": 1989,
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: Front Line Assembly", "url": "https://musicbrainz.org/artist/b847e9d2-c931-4daf-900c-42c7b2c42e16", "note": "Lists Michael Balch as a member from 1988 to 1989." }]
     },
     {
       "source": "ministry",
