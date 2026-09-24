@@ -35,6 +35,7 @@ let localEngine = null;
 let graphZoom = Number(zoomSlider.value);
 let threeCamera = null;
 let threeControls = null;
+let graphPan = { x: 0, y: 0 };
 
 const nodeEdges = (id) => graph.edges.filter((edge) => edge.source === id || edge.target === id);
 const labelFor = (id) => byId.get(id).label;
@@ -99,7 +100,7 @@ function renderGraph() {
   cancelAnimationFrame(animationFrame);
   layout = new Map(nodes.map((node, index) => {
     const angle = index * 2.399963229728653;
-    const radius = Math.min(width, height) * (0.2 + (index % 4) * 0.075);
+    const radius = Math.max(width, height) * (0.22 + (index % 4) * 0.09);
     return [node.id, { x: width / 2 + Math.cos(angle) * radius, y: height / 2 + Math.sin(angle) * radius, z: Math.sin(angle * 1.7) * 90, vx: 0, vy: 0, pinned: false }];
   }));
 
@@ -133,13 +134,14 @@ function renderGraph() {
     }
     button.setAttribute("role", "listitem");
     button.innerHTML = `<span>${node.label}</span><small>${node.type}${node.relevance ? ` · ${node.relevance}` : ""}</small>`;
-    button.style.width = `${80 + metrics.get(node.id)[sizeMetric.value] * 48}px`;
+    button.style.width = `${Math.min(80 + metrics.get(node.id)[sizeMetric.value] * 48, width < 520 ? 88 : 140)}px`;
     button.addEventListener("click", () => selectNode(node.id));
     button.addEventListener("pointerdown", (event) => beginDrag(event, node.id, nodeRadius, width, height));
     return [node.id, button];
   }));
   graphElement.replaceChildren(svg, ...buttons.values());
   graphElement.onclick = (event) => { if (event.target === graphElement || event.target === svg) resetSelection(); };
+  graphElement.onpointerdown = (event) => { if (event.target === graphElement || event.target === svg) beginPan(event); };
   graphElement.classList.toggle("three-d", dimension === "3d");
   status.textContent = context
     ? `Edge context · ${nodes.length} nodes · ${edges.length} recorded relationships · click the canvas to return`
@@ -149,18 +151,18 @@ function renderGraph() {
     for (const { edge, line } of lines) {
       const source = layout.get(edge.source);
       const target = layout.get(edge.target);
-      const sourceX = width / 2 + (source.x - width / 2) * graphZoom;
-      const sourceY = height / 2 + (source.y - height / 2) * graphZoom;
-      const targetX = width / 2 + (target.x - width / 2) * graphZoom;
-      const targetY = height / 2 + (target.y - height / 2) * graphZoom;
+      const sourceX = width / 2 + (source.x - width / 2) * graphZoom + graphPan.x;
+      const sourceY = height / 2 + (source.y - height / 2) * graphZoom + graphPan.y;
+      const targetX = width / 2 + (target.x - width / 2) * graphZoom + graphPan.x;
+      const targetY = height / 2 + (target.y - height / 2) * graphZoom + graphPan.y;
       line.setAttribute("x1", sourceX); line.setAttribute("y1", sourceY);
       line.setAttribute("x2", targetX); line.setAttribute("y2", targetY);
     }
     for (const [id, button] of buttons) {
       const point = layout.get(id);
-      button.style.left = `${width / 2 + (point.x - width / 2) * graphZoom}px`;
-      button.style.top = `${height / 2 + (point.y - height / 2) * graphZoom}px`;
-      button.style.transform = `translate(-50%, -50%) scale(${graphZoom})`;
+      button.style.left = `${width / 2 + (point.x - width / 2) * graphZoom + graphPan.x}px`;
+      button.style.top = `${height / 2 + (point.y - height / 2) * graphZoom + graphPan.y}px`;
+      button.style.transform = "translate(-50%, -50%)";
     }
   };
 
@@ -172,7 +174,7 @@ function renderGraph() {
         const dx = b.x - a.x; const dy = b.y - a.y;
         const distance = Math.hypot(dx, dy) || 0.01;
         const unitX = dx / distance; const unitY = dy / distance;
-        const push = (9500 / (distance * distance)) + Math.max(0, nodeRadius * 2 - distance) * 0.15;
+        const push = (18000 / (distance * distance)) + Math.max(0, nodeRadius * 2 - distance) * 0.7;
         if (!a.pinned) { a.vx -= unitX * push; a.vy -= unitY * push; }
         if (!b.pinned) { b.vx += unitX * push; b.vy += unitY * push; }
       }
@@ -181,16 +183,16 @@ function renderGraph() {
       const a = layout.get(edge.source); const b = layout.get(edge.target);
       const dx = b.x - a.x; const dy = b.y - a.y;
       const distance = Math.hypot(dx, dy) || 0.01;
-      const pull = (distance - 185) * 0.012;
+      const pull = (distance - (width < 520 ? 165 : 235)) * 0.008;
       const unitX = dx / distance; const unitY = dy / distance;
       if (!a.pinned) { a.vx += unitX * pull; a.vy += unitY * pull; }
       if (!b.pinned) { b.vx -= unitX * pull; b.vy -= unitY * pull; }
     }
     for (const point of points) {
       if (point.pinned) continue;
-      point.vx += (width / 2 - point.x) * 0.0015;
-      point.vy += (height / 2 - point.y) * 0.0015;
-      point.vx *= 0.72; point.vy *= 0.72;
+      point.vx += (width / 2 - point.x) * 0.00035;
+      point.vy += (height / 2 - point.y) * 0.00035;
+      point.vx *= 0.78; point.vy *= 0.78;
       point.x = Math.max(nodeRadius, Math.min(width - nodeRadius, point.x + point.vx * heat));
       point.y = Math.max(nodeRadius, Math.min(height - nodeRadius, point.y + point.vy * heat));
     }
@@ -282,6 +284,14 @@ function resetSelection() {
   renderGraph();
 }
 
+function beginPan(event) {
+  const start = { x: event.clientX, y: event.clientY, panX: graphPan.x, panY: graphPan.y };
+  graphElement.setPointerCapture(event.pointerId);
+  const move = (moveEvent) => { graphPan = { x: start.panX + moveEvent.clientX - start.x, y: start.panY + moveEvent.clientY - start.y }; redrawGraph(); };
+  const release = () => { graphElement.removeEventListener("pointermove", move); graphElement.removeEventListener("pointerup", release); graphElement.removeEventListener("pointercancel", release); };
+  graphElement.addEventListener("pointermove", move); graphElement.addEventListener("pointerup", release); graphElement.addEventListener("pointercancel", release);
+}
+
 function beginDrag(event, id, nodeRadius, width, height) {
   const point = layout.get(id);
   if (!point) return;
@@ -290,8 +300,8 @@ function beginDrag(event, id, nodeRadius, width, height) {
   point.pinned = true;
   const move = (moveEvent) => {
     const bounds = graphElement.getBoundingClientRect();
-    point.x = Math.max(nodeRadius, Math.min(width - nodeRadius, width / 2 + (moveEvent.clientX - bounds.left - width / 2) / graphZoom));
-    point.y = Math.max(nodeRadius, Math.min(height - nodeRadius, height / 2 + (moveEvent.clientY - bounds.top - height / 2) / graphZoom));
+    point.x = Math.max(nodeRadius, Math.min(width - nodeRadius, width / 2 + (moveEvent.clientX - bounds.left - width / 2 - graphPan.x) / graphZoom));
+    point.y = Math.max(nodeRadius, Math.min(height - nodeRadius, height / 2 + (moveEvent.clientY - bounds.top - height / 2 - graphPan.y) / graphZoom));
     point.vx = 0; point.vy = 0;
     redrawGraph();
   };
@@ -434,7 +444,7 @@ yearSlider.addEventListener("input", () => { activeYear = Number(yearSlider.valu
 zoomSlider.addEventListener("input", () => setGraphZoom(Number(zoomSlider.value)));
 document.querySelector("[data-action='zoom-in']").addEventListener("click", () => setGraphZoom(graphZoom + .1));
 document.querySelector("[data-action='zoom-out']").addEventListener("click", () => setGraphZoom(graphZoom - .1));
-document.querySelector("[data-action='zoom-reset']").addEventListener("click", () => setGraphZoom(1));
+document.querySelector("[data-action='zoom-reset']").addEventListener("click", () => { graphPan = { x: 0, y: 0 }; setGraphZoom(1); });
 window.addEventListener("resize", renderGraph);
 populatePathSelects();
 renderGraph();
