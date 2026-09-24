@@ -7,7 +7,11 @@
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "validate": "node scripts/validate-graph.mjs"
+    "validate": "node scripts/validate-graph.mjs",
+    "enrich:musicbrainz": "node scripts/enrich-musicbrainz.mjs",
+    "enrich:musicbrainz:people": "node scripts/enrich-musicbrainz.mjs --phase=people",
+    "enrich:musicbrainz:projects": "node scripts/enrich-musicbrainz.mjs --phase=projects",
+    "enrich:musicbrainz:releases": "node scripts/enrich-musicbrainz.mjs --phase=releases"
   },
   "devDependencies": {
     "vite": "^7.0.0"
