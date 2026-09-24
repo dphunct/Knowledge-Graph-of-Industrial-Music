@@ -5,7 +5,7 @@
   "description": "An interactive knowledge graph of industrial music.",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "vite build",
+    "build": "node scripts/publish-graph-data.mjs && vite build",
     "preview": "vite preview --host 0.0.0.0",
     "validate": "node scripts/validate-graph.mjs",
     "enrich:musicbrainz": "node scripts/enrich-musicbrainz.mjs",
