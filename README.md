@@ -20,3 +20,7 @@ Codespaces automatically forwards the preview on port 4173. Run `npm run build` 
 The first working explorer is a static Vite application. It reads its portable graph from `data/industrial-graph.json`; no database, server, or hosted application is required. Run `npm run validate` before changing graph data, then `npm run dev` to explore it locally.
 
 The seed graph is intentionally small and labels every relationship as `needs-citation` until its evidence is curated. See `docs/product-scope.md` for the industrial relevance boundary and data rules.
+
+## Publishing
+
+Merges to `main` build and deploy the site through GitHub Pages. In the repository settings, set **Pages → Build and deployment → Source** to **GitHub Actions** once. The public site will then be available at `https://dphunct.github.io/Knowledge-Graph-of-Industrial-Music/`.
