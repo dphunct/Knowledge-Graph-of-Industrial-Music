@@ -12,6 +12,8 @@ const search = document.querySelector("#search");
 const pathFrom = document.querySelector("#path-from");
 const pathTo = document.querySelector("#path-to");
 const sizeMetric = document.querySelector("#size-metric");
+const degreeLimit = document.querySelector("#degree-limit");
+const fadeDistance = document.querySelector("#fade-distance");
 const yearSlider = document.querySelector("#year");
 const yearValue = document.querySelector("#year-value");
 const zoomSlider = document.querySelector("#graph-zoom");
@@ -97,6 +99,9 @@ function renderGraph() {
   let nodes = visibleNodes().filter((node) => !term || `${node.label} ${(node.aliases || []).join(" ")}`.toLowerCase().includes(term));
   const context = focusedEdge ? edgeContext(focusedEdge) : null;
   if (context) nodes = graph.nodes.filter((node) => context.ids.has(node.id));
+  const distances = selectedId ? hopDistances(selectedId) : new Map();
+  const visibleDegrees = degreeLimit.value === "all" ? Infinity : Number(degreeLimit.value);
+  if (selectedId && Number.isFinite(visibleDegrees)) nodes = nodes.filter((node) => distances.get(node.id) <= visibleDegrees);
   const visibleIds = new Set(nodes.map(({ id }) => id));
   const width = graphElement.clientWidth || 760;
   const height = graphElement.clientHeight || 450;
@@ -121,11 +126,10 @@ function renderGraph() {
     // orbit also begins a 2D pan and can be mistaken for a reset click.
     graphElement.onclick = null;
     graphElement.onpointerdown = null;
-    renderThreeGraph(nodes, edges, width, height);
+    renderThreeGraph(nodes, edges, width, height, distances);
     status.textContent = `${context ? "Edge context · " : ""}${nodes.length} visible nodes · ${edges.length} relationships · drag to orbit, scroll to zoom`;
     return;
   }
-  const distances = selectedId ? hopDistances(selectedId) : new Map();
   const lines = edges.map((edge) => {
     const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
     line.classList.add(highlightedPath.includes(edge.source) && highlightedPath.includes(edge.target) ? "highlighted" : "edge");
@@ -140,7 +144,8 @@ function renderGraph() {
     const distance = distances.get(node.id);
     button.className = `node ${node.type} ${selectedId === node.id ? "selected" : ""}`;
     if (selectedId) {
-      const opacity = distance === undefined || distance > 4 ? .16 : distance <= 1 ? 1 : 1 - (distance - 1) * .25;
+      const fadeHops = Number(fadeDistance.value);
+      const opacity = distance === undefined || distance > fadeHops ? .16 : 1 - (distance / fadeHops) * .84;
       button.style.opacity = `${opacity}`;
     }
     button.setAttribute("role", "listitem");
@@ -219,7 +224,7 @@ function renderGraph() {
   simulate();
 }
 
-function renderThreeGraph(nodes, edges, width, height) {
+function renderThreeGraph(nodes, edges, width, height, distances) {
   const scene = new THREE.Scene();
   scene.add(new THREE.HemisphereLight(0xf6cfbd, 0x140f16, 2.2));
   const keyLight = new THREE.PointLight(0xff9870, 3.5, 1100); keyLight.position.set(-180, 240, 420); scene.add(keyLight);
@@ -262,7 +267,10 @@ function renderThreeGraph(nodes, edges, width, height) {
   }
   for (const node of nodes) {
     const radius = 7 + visualMetric(node) * 62;
-    const mesh = new THREE.Mesh(new THREE.SphereGeometry(radius, 24, 24), new THREE.MeshPhongMaterial({ map: textureFor(node.type), shininess: 70, transparent: true, opacity: selectedId && selectedId !== node.id ? .45 : 1 }));
+    const distance = distances.get(node.id);
+    const fadeHops = Number(fadeDistance.value);
+    const opacity = !selectedId ? 1 : distance === undefined || distance > fadeHops ? .16 : 1 - (distance / fadeHops) * .84;
+    const mesh = new THREE.Mesh(new THREE.SphereGeometry(radius, 24, 24), new THREE.MeshPhongMaterial({ map: textureFor(node.type), shininess: 70, transparent: true, opacity }));
     mesh.position.copy(points.get(node.id)); mesh.userData.nodeId = node.id; scene.add(mesh); meshes.push(mesh);
     const label = document.createElement("canvas"); label.width = 320; label.height = 64;
     const context2d = label.getContext("2d"); context2d.fillStyle = "#f5f0e8"; context2d.font = "700 30px Manrope"; context2d.textAlign = "center"; context2d.fillText(node.label, 160, 42);
@@ -486,6 +494,8 @@ document.querySelector("[data-action='rearrange']").addEventListener("click", ()
 });
 document.querySelector("[data-action='dimension']").addEventListener("click", (event) => { dimension = dimension === "2d" ? "3d" : "2d"; event.currentTarget.textContent = dimension === "3d" ? "3D / 2D" : "2D / 3D"; renderGraph(); });
 sizeMetric.addEventListener("change", renderGraph);
+degreeLimit.addEventListener("change", renderGraph);
+fadeDistance.addEventListener("change", renderGraph);
 search.addEventListener("input", renderGraph);
 yearSlider.addEventListener("input", () => { activeYear = Number(yearSlider.value); yearValue.textContent = activeYear; focusedEdge = null; renderGraph(); });
 zoomSlider.addEventListener("input", () => setGraphZoom(Number(zoomSlider.value)));
