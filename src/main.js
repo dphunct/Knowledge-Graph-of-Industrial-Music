@@ -1,7 +1,6 @@
 import "./style.css";
 
-const graphUrl = new URL("data/industrial-graph.json", import.meta.env.BASE_URL);
-const graphResponse = await fetch(graphUrl);
+const graphResponse = await fetch(`${import.meta.env.BASE_URL}data/industrial-graph.json`);
 if (!graphResponse.ok) throw new Error(`Could not load graph data (${graphResponse.status}).`);
 const graph = await graphResponse.json();
 const byId = new Map(graph.nodes.map((node) => [node.id, node]));
