@@ -26,6 +26,7 @@ The following pull requests implement the current application work and must be m
 - Compound relationships in filtered views and focused edge context.
 - Selected-node neighborhood fading, edge inspection, canvas reset, and control help.
 - Responsive phone through extra-large layouts.
+- **In progress:** a viewport-aware visualization pass: stronger edges, type-aware node gradients, drag-to-pan on dense canvases, and a rearrange action that resets around the active viewport and filters.
 
 ## Next: knowledge expansion
 
