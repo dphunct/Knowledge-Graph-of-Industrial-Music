@@ -113,7 +113,18 @@ function renderGraph() {
     const angle = index * 2.399963229728653;
     const radius = Math.sqrt(index + 1) * Math.min(width, height) * .14;
     const depth = (((index * 0.61803398875) % 1) * 2 - 1) * Math.min(width, height) * .65;
-    return [node.id, { x: width / 2 + Math.cos(angle) * radius, y: height / 2 + Math.sin(angle) * radius, z: depth, vx: 0, vy: 0, pinned: false }];
+    const isSelected = node.id === selectedId;
+    // A selection becomes the stable center of the force layout. The rest of
+    // the map can settle around it, keeping the chosen sphere in view as its
+    // relationships spread out.
+    return [node.id, {
+      x: isSelected ? width / 2 : width / 2 + Math.cos(angle) * radius,
+      y: isSelected ? height / 2 : height / 2 + Math.sin(angle) * radius,
+      z: isSelected ? 0 : depth,
+      vx: 0,
+      vy: 0,
+      pinned: isSelected
+    }];
   }));
 
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -368,6 +379,8 @@ function beginDrag(event, id, nodeRadius, width, height) {
 function selectNode(id) {
   selectedId = id;
   highlightedPath = []; focusedEdge = null;
+  // A prior pan should not leave the newly selected sphere off-center.
+  graphPan = { x: 0, y: 0 };
   const node = byId.get(id);
   const connections = nodeEdges(id);
   const aliases = node.aliases?.length ? `<p><strong>Also known as</strong> ${node.aliases.join(", ")}</p>` : "";
