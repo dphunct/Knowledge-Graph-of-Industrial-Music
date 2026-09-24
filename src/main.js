@@ -457,14 +457,33 @@ function formatPath(path) {
   return path ? path.map(labelFor).join(" → ") : "No connecting path has been recorded in the current view.";
 }
 
+function rankingScope(question) {
+  const normalizedQuestion = question.toLowerCase();
+  const type = /\b(people|persons|artists)\b/.test(normalizedQuestion) ? "person"
+    : /\b(projects|bands|groups)\b/.test(normalizedQuestion) ? "project"
+      : /\b(releases|albums|records)\b/.test(normalizedQuestion) ? "release" : null;
+  const nodes = type ? graph.nodes.filter((node) => node.type === type && activeAtYear(node)) : currentNodes;
+  const edges = type ? visibleEdges(nodes) : currentEdges;
+  return { nodes, metrics: graphMetrics(nodes, edges), label: type ? `${type === "person" ? "people" : `${type}s`} visible by ${activeYear}` : activeView === "all" ? "the current graph" : `the current ${activeView} view` };
+}
+
+function rankingMetric(question) {
+  const normalizedQuestion = question.toLowerCase();
+  if (/page\s*rank/.test(normalizedQuestion)) return { key: "pageRank", label: "PageRank" };
+  if (/bridge|connector/.test(normalizedQuestion)) return { key: "betweenness", label: "bridge importance" };
+  if (/direct connection|most connected|connection count/.test(normalizedQuestion)) return { key: "degree", label: "direct connections" };
+  return { key: "composite", label: "equally weighted composite score" };
+}
+
 function interpretGraphQuestion(question) {
   const normalizedQuestion = question.toLowerCase();
   const entities = mentionedNodes(question);
   if (/(highest|top|rank|score|most connected|largest)/.test(normalizedQuestion)) {
-    const ranked = [...metrics.entries()].map(([id, score]) => ({ node: byId.get(id), score })).sort((left, right) => right.score.composite - left.score.composite).slice(0, 5);
+    const scope = rankingScope(question);
+    const metric = rankingMetric(question);
+    const ranked = [...scope.metrics.entries()].map(([id, score]) => ({ node: byId.get(id), score })).sort((left, right) => right.score[metric.key] - left.score[metric.key]).slice(0, 5);
     if (!ranked.length) return null;
-    const scope = activeView === "all" ? "the current graph" : `the current ${activeView} view`;
-    return `Composite score is equally weighted across direct connections, bridge importance, and PageRank. In ${scope}, ${ranked.map(({ node, score }, index) => `${index + 1}. ${node.label} (${Math.round(score.composite * 100)})`).join("; ")}.`;
+    return `${metric.label[0].toUpperCase()}${metric.label.slice(1)} in ${scope.label}: ${ranked.map(({ node, score }, index) => `${index + 1}. ${node.label} (${Math.round(score[metric.key] * 100)})`).join("; ")}.`;
   }
   if (entities.length >= 2 && /(related|connect|relationship|path|between)/.test(normalizedQuestion)) {
     const path = shortestPath(entities[0].id, entities[1].id);
