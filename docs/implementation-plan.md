@@ -38,6 +38,8 @@ The following pull requests implement the current application work and must be m
 
 The current review chain implements focused relationship context, temporal filtering, orbitable WebGL 3D, and control help. A later refinement should add relationship-specific evidence panels and richer 3D layout controls.
 
+1. Add an accessible zoom bar with explicit zoom-in, zoom-out, and reset controls. It must scale and pan the 2D graph without changing the underlying data, and map to camera distance in the 3D view while preserving the selected node or edge context.
+
 ## Next: browser-local explanation
 
 WebLLM is an in-browser WebGPU inference engine with a chat-completion API, not a complete chat UI. The implementation must provide:
