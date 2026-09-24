@@ -43,12 +43,19 @@
         </div>
       </section>
       <label class="year-control"><span>Show relationships active by <output id="year-value">2026</output> <button class="help-button" type="button" data-help="The year control filters items with recorded start and end years. Items without researched dates remain visible so unknown does not become false absence.">?</button></span><input id="year" type="range" min="1975" max="2026" value="2026" step="1" /></label>
-      <p id="help-text" class="help-text" aria-live="polite">Hover or activate a ? for a short explanation of a control.</p>
+      <div id="control-tooltip" class="control-tooltip" role="tooltip" hidden></div>
 
       <section class="workspace">
         <div class="graph-panel">
           <div class="legend"><span><i class="person"></i> person</span><span><i class="project"></i> project</span><span><i class="release"></i> release</span></div>
           <div id="graph" class="graph" role="list" aria-label="Knowledge graph"></div>
+          <div class="zoom-controls" role="group" aria-label="Graph zoom controls">
+            <button type="button" data-action="zoom-out" aria-label="Zoom out">−</button>
+            <label>Zoom <input id="graph-zoom" type="range" min="0.6" max="2" value="1" step="0.05" /></label>
+            <button type="button" data-action="zoom-in" aria-label="Zoom in">+</button>
+            <button type="button" data-action="zoom-reset">Reset zoom</button>
+            <output id="zoom-value">100%</output>
+          </div>
           <p id="graph-status" class="graph-status"></p>
         </div>
         <aside id="detail" class="detail" aria-live="polite">
