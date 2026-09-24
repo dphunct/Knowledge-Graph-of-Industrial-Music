@@ -273,7 +273,11 @@
       "aliases": [
         "Alain Jourgensen",
         "Hypo Luxa",
-        "Buck Satan"
+        "Buck Satan",
+        "Alejandro Ramírez Jourgensen",
+        "Alien Jourgensen",
+        "Allen David Jourgensen",
+        "Allen Jourgensen"
       ],
       "summary": "Musician and producer; founder of Ministry.",
       "musicbrainz": {
@@ -321,7 +325,11 @@
       "label": "Paul Barker",
       "type": "person",
       "aliases": [
-        "Hermes Pan"
+        "Hermes Pan",
+        "Frenchie L'Amour",
+        "Ion",
+        "Paul Gordon Barker",
+        "Flowering Blight"
       ],
       "summary": "Musician and producer associated with Ministry.",
       "musicbrainz": {
@@ -331,6 +339,10 @@
         "verifiedByRuns": [
           "pass-6",
           "pass-7"
+        ],
+        "alternateIds": [
+          "5dbd3f77-05a0-41fd-b6a1-f9466bb98fe2",
+          "edae6e50-ecce-4f15-a15c-37cff05d4a54"
         ]
       },
       "provenance": [
@@ -353,6 +365,21 @@
           "title": "Discogs artist entry: Paul Barker",
           "url": "https://www.discogs.com/artist/1298641",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz: Lead Into Gold",
+          "url": "https://musicbrainz.org/artist/aedd2d07-66ca-4496-8156-ac6cde7e87b4",
+          "note": "Lists Frenchie L'Amour as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Frenchie L'Amour",
+          "url": "https://musicbrainz.org/artist/5dbd3f77-05a0-41fd-b6a1-f9466bb98fe2",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Flowering Blight",
+          "url": "https://musicbrainz.org/artist/edae6e50-ecce-4f15-a15c-37cff05d4a54",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -412,7 +439,8 @@
       "label": "Nivek Ogre",
       "type": "person",
       "aliases": [
-        "Kevin Ogilvie"
+        "Kevin Ogilvie",
+        "Kevin Graham Ogilvie"
       ],
       "summary": "Vocalist and co-founder of Skinny Puppy.",
       "musicbrainz": {
@@ -460,7 +488,9 @@
       "label": "Bill Leeb",
       "type": "person",
       "aliases": [
-        "Wilhelm Schroeder"
+        "Wilhelm Schroeder",
+        "Wilhelm Anton Leeb",
+        "Wilhelm Schroder"
       ],
       "summary": "Musician; founder of Front Line Assembly.",
       "musicbrainz": {
@@ -470,6 +500,9 @@
         "verifiedByRuns": [
           "pass-6",
           "pass-7"
+        ],
+        "alternateIds": [
+          "201da624-a67d-4ba9-87c0-39136e78ccf3"
         ]
       },
       "provenance": [
@@ -492,6 +525,16 @@
           "title": "Discogs artist entry: Bill Leeb",
           "url": "https://www.discogs.com/artist/81282",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz: Skinny Puppy",
+          "url": "https://musicbrainz.org/artist/5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
+          "note": "Lists Wilhelm Schroeder as a member from 1984 to 1986."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Wilhelm Schroeder",
+          "url": "https://musicbrainz.org/artist/201da624-a67d-4ba9-87c0-39136e78ccf3",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -541,7 +584,11 @@
       "discogs": {
         "artistId": "10658",
         "url": "https://www.discogs.com/artist/10658"
-      }
+      },
+      "aliases": [
+        "Bobby Vegas",
+        "Nowell Rhys Fulber"
+      ]
     },
     {
       "id": "sascha-konietzko",
@@ -581,7 +628,11 @@
       "discogs": {
         "artistId": "56841",
         "url": "https://www.discogs.com/artist/56841"
-      }
+      },
+      "aliases": [
+        "Sascha K.",
+        "Sascha Kegel Konietzko"
+      ]
     },
     {
       "id": "richard-23",
@@ -626,7 +677,8 @@
       "discogs": {
         "artistId": "232851",
         "url": "https://www.discogs.com/artist/232851"
-      }
+      },
+      "aliases": []
     },
     {
       "id": "dwayne-goettel",
@@ -653,6 +705,11 @@
           "title": "Discogs artist entry: Dwayne Goettel",
           "url": "https://www.discogs.com/artist/136932",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Dwayne Goettel",
+          "url": "https://musicbrainz.org/artist/528d8a44-92f0-4614-aeb4-cb3516c0f2cd",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -662,7 +719,12 @@
       "discogs": {
         "artistId": "136932",
         "url": "https://www.discogs.com/artist/136932"
-      }
+      },
+      "aliases": [
+        "D. R. Goettel",
+        "D. Rudolph Goettel",
+        "Dwayne R. Goettel"
+      ]
     },
     {
       "id": "luc-van-acker",
@@ -689,6 +751,11 @@
           "title": "Discogs artist entry: Luc Van Acker",
           "url": "https://www.discogs.com/artist/29223",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Luc Van Acker",
+          "url": "https://musicbrainz.org/artist/be6d9ea3-adfb-47ea-9064-4302b00f9e27",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -698,7 +765,11 @@
       "discogs": {
         "artistId": "29223",
         "url": "https://www.discogs.com/artist/29223"
-      }
+      },
+      "aliases": [
+        "Luc Maria René van Acker",
+        "Luk van Acker"
+      ]
     },
     {
       "id": "chris-connelly",
@@ -730,6 +801,11 @@
           "title": "Discogs artist entry: Chris Connelly",
           "url": "https://www.discogs.com/artist/565103",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Chris Connelly",
+          "url": "https://musicbrainz.org/artist/ecb41014-1d7a-4987-a107-df49b2d8d77c",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -739,7 +815,11 @@
       "discogs": {
         "artistId": "565103",
         "url": "https://www.discogs.com/artist/565103"
-      }
+      },
+      "aliases": [
+        "Christopher John Connelly",
+        "Gallopin’ Scorpio Saddlebutt"
+      ]
     },
     {
       "id": "daniel-bressanutti",
@@ -771,6 +851,11 @@
           "title": "Discogs artist entry: Daniel Bressanutti",
           "url": "https://www.discogs.com/artist/148769",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Daniel Bressanutti",
+          "url": "https://musicbrainz.org/artist/319cc50d-a877-49a3-8f87-8efe22f60e09",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -780,7 +865,11 @@
       "discogs": {
         "artistId": "148769",
         "url": "https://www.discogs.com/artist/148769"
-      }
+      },
+      "aliases": [
+        "Daniel B.",
+        "Daniel Joseph José Bressanutti"
+      ]
     },
     {
       "id": "patrick-codenys",
@@ -797,7 +886,15 @@
           "title": "MusicBrainz: Front 242",
           "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626",
           "note": "Lists Patrick Codenys as a member from 1982."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Patrick Codenys",
+          "url": "https://musicbrainz.org/artist/70adfe31-83d6-43d9-b9f4-7ab5eff483f4",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Patrick Gérard André Codenys"
       ]
     },
     {
@@ -825,6 +922,11 @@
           "title": "Discogs artist entry: Jean-Luc de Meyer",
           "url": "https://www.discogs.com/artist/92674",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Jean-Luc de Meyer",
+          "url": "https://musicbrainz.org/artist/2c444dd6-75b6-42e0-9f7e-a0a086c48ba9",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -834,7 +936,11 @@
       "discogs": {
         "artistId": "92674",
         "url": "https://www.discogs.com/artist/92674"
-      }
+      },
+      "aliases": [
+        "Jean-Luc Denis André de Meyer",
+        "Lederman / De Meyer"
+      ]
     },
     {
       "id": "raymond-watts",
@@ -861,6 +967,11 @@
           "title": "Discogs artist entry: Raymond Watts",
           "url": "https://www.discogs.com/artist/101943",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Raymond Watts",
+          "url": "https://musicbrainz.org/artist/6a0ce9fd-5cda-4b3e-9b32-e411f2c2a57f",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -870,7 +981,14 @@
       "discogs": {
         "artistId": "101943",
         "url": "https://www.discogs.com/artist/101943"
-      }
+      },
+      "aliases": [
+        "Nains",
+        "Nainz",
+        "Nainz Watts",
+        "R.G. Watts",
+        "Raymond George Watts"
+      ]
     },
     {
       "id": "en-esch",
@@ -897,6 +1015,11 @@
           "title": "Discogs artist entry: En Esch",
           "url": "https://www.discogs.com/artist/74966",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: En Esch",
+          "url": "https://musicbrainz.org/artist/e3537eb6-fdd0-4015-a854-705222eb4731",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -906,7 +1029,8 @@
       "discogs": {
         "artistId": "74966",
         "url": "https://www.discogs.com/artist/74966"
-      }
+      },
+      "aliases": []
     },
     {
       "id": "michael-balch",
@@ -933,6 +1057,11 @@
           "title": "Discogs artist entry: Michael Balch",
           "url": "https://www.discogs.com/artist/101570",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Michael Balch",
+          "url": "https://musicbrainz.org/artist/7e557e6e-e9b6-4041-b407-3290224465a0",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -942,7 +1071,10 @@
       "discogs": {
         "artistId": "101570",
         "url": "https://www.discogs.com/artist/101570"
-      }
+      },
+      "aliases": [
+        "Michael Bruce Balch"
+      ]
     },
     {
       "id": "faces-forms-and-illusions",
@@ -1734,7 +1866,10 @@
       "discogs": {
         "artistId": "27457",
         "url": "https://www.discogs.com/artist/27457"
-      }
+      },
+      "aliases": [
+        "Michael Trent Reznor"
+      ]
     },
     {
       "id": "supernaut",
@@ -1784,6 +1919,11 @@
           "title": "Discogs artist entry: Stephen George",
           "url": "https://www.discogs.com/artist/139779",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Stephen George",
+          "url": "https://musicbrainz.org/artist/754fa1fd-84d6-4f07-b70e-f39df342fe33",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -1793,7 +1933,11 @@
       "discogs": {
         "artistId": "139779",
         "url": "https://www.discogs.com/artist/139779"
-      }
+      },
+      "aliases": [
+        "Steve O “Tonemaster” George",
+        "Steven George"
+      ]
     },
     {
       "id": "bill-rieflin",
@@ -1820,6 +1964,11 @@
           "title": "Discogs artist entry: Bill Rieflin",
           "url": "https://www.discogs.com/artist/132196",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Bill Rieflin",
+          "url": "https://musicbrainz.org/artist/f40bf2d1-1da5-4146-96ab-865242554a66",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -1829,7 +1978,11 @@
       "discogs": {
         "artistId": "132196",
         "url": "https://www.discogs.com/artist/132196"
-      }
+      },
+      "aliases": [
+        "William Fredrick Rieflin",
+        "William Rieflin"
+      ]
     },
     {
       "id": "louis-svitek",
@@ -1856,6 +2009,11 @@
           "title": "Discogs artist entry: Louis Svitek",
           "url": "https://www.discogs.com/artist/79643",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Louis Svitek",
+          "url": "https://musicbrainz.org/artist/05af9acb-49ef-4c1f-9431-06a4ea3909bf",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -1865,7 +2023,11 @@
       "discogs": {
         "artistId": "79643",
         "url": "https://www.discogs.com/artist/79643"
-      }
+      },
+      "aliases": [
+        "Louie Svitek",
+        "Louis James Svitek, Jr."
+      ]
     },
     {
       "id": "max-brody",
@@ -1892,6 +2054,11 @@
           "title": "Discogs artist entry: Max Brody",
           "url": "https://www.discogs.com/artist/314536",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Max Brody",
+          "url": "https://musicbrainz.org/artist/9acbaf6a-9101-43ce-a749-c137dbfb1127",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -1901,7 +2068,10 @@
       "discogs": {
         "artistId": "314536",
         "url": "https://www.discogs.com/artist/314536"
-      }
+      },
+      "aliases": [
+        "Matthew Woods Brody"
+      ]
     },
     {
       "id": "john-monte",
@@ -1928,6 +2098,11 @@
           "title": "Discogs artist entry: John Monte",
           "url": "https://www.discogs.com/artist/419845",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: John Monte",
+          "url": "https://musicbrainz.org/artist/d4df74ef-312c-4302-a768-78140cf1a630",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -1937,7 +2112,8 @@
       "discogs": {
         "artistId": "419845",
         "url": "https://www.discogs.com/artist/419845"
-      }
+      },
+      "aliases": []
     },
     {
       "id": "mark-baker",
@@ -1954,8 +2130,14 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists Mark Baker as a member from 2004 to 2005."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Mark Baker",
+          "url": "https://musicbrainz.org/artist/4ad95d38-a326-4f41-953a-63e84de39ab4",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "tommy-victor",
@@ -1982,6 +2164,11 @@
           "title": "Discogs artist entry: Tommy Victor",
           "url": "https://www.discogs.com/artist/185073",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Tommy Victor",
+          "url": "https://musicbrainz.org/artist/56edb00b-c5d5-426a-a756-993f64b6ad2e",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -1991,7 +2178,10 @@
       "discogs": {
         "artistId": "185073",
         "url": "https://www.discogs.com/artist/185073"
-      }
+      },
+      "aliases": [
+        "Thomas Michael Victor"
+      ]
     },
     {
       "id": "paul-raven",
@@ -2018,6 +2208,11 @@
           "title": "Discogs artist entry: Paul Raven",
           "url": "https://www.discogs.com/artist/22534",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Paul Raven",
+          "url": "https://musicbrainz.org/artist/ec5f36d7-ebe5-461e-afd6-c2839f0f3325",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -2027,7 +2222,10 @@
       "discogs": {
         "artistId": "22534",
         "url": "https://www.discogs.com/artist/22534"
-      }
+      },
+      "aliases": [
+        "Paul Vincent Raven"
+      ]
     },
     {
       "id": "sin-quirin",
@@ -2054,6 +2252,11 @@
           "title": "Discogs artist entry: Sin Quirin",
           "url": "https://www.discogs.com/artist/908109",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Sin Quirin",
+          "url": "https://musicbrainz.org/artist/3b1c8626-31d0-4f1e-97be-99449a411c3c",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -2063,7 +2266,10 @@
       "discogs": {
         "artistId": "908109",
         "url": "https://www.discogs.com/artist/908109"
-      }
+      },
+      "aliases": [
+        "Sinhue Quirin"
+      ]
     },
     {
       "id": "tony-campos",
@@ -2090,6 +2296,11 @@
           "title": "Discogs artist entry: Tony Campos",
           "url": "https://www.discogs.com/artist/514478",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Tony Campos",
+          "url": "https://musicbrainz.org/artist/19183df5-e496-4fe3-b670-b299549ab317",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -2099,7 +2310,8 @@
       "discogs": {
         "artistId": "514478",
         "url": "https://www.discogs.com/artist/514478"
-      }
+      },
+      "aliases": []
     },
     {
       "id": "burton-c-bell",
@@ -2126,6 +2338,11 @@
           "title": "Discogs artist entry: Burton C. Bell",
           "url": "https://www.discogs.com/artist/252676",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Burton C. Bell",
+          "url": "https://musicbrainz.org/artist/d0ec013f-6b1e-4f9a-b964-dccfe75f294e",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -2135,7 +2352,10 @@
       "discogs": {
         "artistId": "252676",
         "url": "https://www.discogs.com/artist/252676"
-      }
+      },
+      "aliases": [
+        "Burton Christopher Bell"
+      ]
     },
     {
       "id": "aaron-rossi",
@@ -2162,6 +2382,11 @@
           "title": "Discogs artist entry: Aaron Rossi",
           "url": "https://www.discogs.com/artist/1021076",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Aaron Rossi",
+          "url": "https://musicbrainz.org/artist/c117e211-c0f0-4062-a86b-7fa7df4bd460",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -2171,7 +2396,11 @@
       "discogs": {
         "artistId": "1021076",
         "url": "https://www.discogs.com/artist/1021076"
-      }
+      },
+      "aliases": [
+        "Aaron John Rossi",
+        "The Beast"
+      ]
     },
     {
       "id": "cesar-soto",
@@ -2188,8 +2417,14 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists Cesar Soto as a member from 2015."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Cesar Soto",
+          "url": "https://musicbrainz.org/artist/ceb53e53-8ff1-4328-ae74-09d3a5d7515c",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "derek-abrams",
@@ -2206,7 +2441,15 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists Derek Abrams as a member from 2017-09."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Derek Abrams",
+          "url": "https://musicbrainz.org/artist/2a512157-d31c-4ebd-bbb4-c965ab8e58b6",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Derek S. Abrams"
       ]
     },
     {
@@ -2234,6 +2477,11 @@
           "title": "Discogs artist entry: John Bechdel",
           "url": "https://www.discogs.com/artist/371783",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: John Bechdel",
+          "url": "https://musicbrainz.org/artist/a3198035-1a65-4a48-8b48-0dc83e0325a9",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -2243,7 +2491,8 @@
       "discogs": {
         "artistId": "371783",
         "url": "https://www.discogs.com/artist/371783"
-      }
+      },
+      "aliases": []
     },
     {
       "id": "john-davis",
@@ -2260,8 +2509,14 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists John Davis as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: John Davis",
+          "url": "https://musicbrainz.org/artist/406189b8-6147-4ff5-b1b0-cb59b1c4f9d5",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "shay-jones",
@@ -2278,8 +2533,14 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists Shay Jones as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Shay Jones",
+          "url": "https://musicbrainz.org/artist/e6ecaed1-63f1-45d2-be0d-c5122f971f1c",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "robert-roberts",
@@ -2296,8 +2557,14 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists Robert Roberts as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Robert Roberts",
+          "url": "https://musicbrainz.org/artist/302786f8-2c0f-41bb-9b7c-336e3844197c",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "martin-sorenson",
@@ -2314,8 +2581,14 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists Martin Sorenson as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Martin Sorenson",
+          "url": "https://musicbrainz.org/artist/f152f783-eebe-4523-ade3-450508ef461e",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "tia-sprocket",
@@ -2332,7 +2605,16 @@
           "title": "MusicBrainz: Ministry",
           "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
           "note": "Lists Tia Sprocket as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Tia Sprocket",
+          "url": "https://musicbrainz.org/artist/9ac3cf69-a8ea-48dd-b281-69d44d2bb6d2",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Tia Palm",
+        "Tia Palmisano"
       ]
     },
     {
@@ -2360,6 +2642,11 @@
           "title": "Discogs artist entry: William Tucker",
           "url": "https://www.discogs.com/artist/79621",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: William Tucker",
+          "url": "https://musicbrainz.org/artist/7b505163-5792-47fa-9800-253fad24a8ac",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -2369,7 +2656,8 @@
       "discogs": {
         "artistId": "79621",
         "url": "https://www.discogs.com/artist/79621"
-      }
+      },
+      "aliases": []
     },
     {
       "id": "jeff-ward",
@@ -2396,6 +2684,11 @@
           "title": "Discogs artist entry: Jeff Ward",
           "url": "https://www.discogs.com/artist/428861",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Jeff Ward",
+          "url": "https://musicbrainz.org/artist/90023d8a-3907-45ec-a2aa-b8da61a6d0bd",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -2405,7 +2698,8 @@
       "discogs": {
         "artistId": "428861",
         "url": "https://www.discogs.com/artist/428861"
-      }
+      },
+      "aliases": []
     },
     {
       "id": "rey-washam",
@@ -2432,6 +2726,11 @@
           "title": "Discogs artist entry: Rey Washam",
           "url": "https://www.discogs.com/artist/274329",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Rey Washam",
+          "url": "https://musicbrainz.org/artist/33b09380-db28-4c9c-9fdd-ab5c20049c61",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -2441,7 +2740,10 @@
       "discogs": {
         "artistId": "274329",
         "url": "https://www.discogs.com/artist/274329"
-      }
+      },
+      "aliases": [
+        "Reynolds Washam"
+      ]
     },
     {
       "id": "mike-scaccia",
@@ -2468,6 +2770,11 @@
           "title": "Discogs artist entry: Mike Scaccia",
           "url": "https://www.discogs.com/artist/264545",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Mike Scaccia",
+          "url": "https://musicbrainz.org/artist/44df943b-832d-49f9-89c3-cb592dc0e9a3",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -2477,48 +2784,10 @@
       "discogs": {
         "artistId": "264545",
         "url": "https://www.discogs.com/artist/264545"
-      }
-    },
-    {
-      "id": "wilhelm-schroeder",
-      "label": "Wilhelm Schroeder",
-      "type": "person",
-      "summary": "Musician documented by MusicBrainz as a member of Skinny Puppy.",
-      "musicbrainz": {
-        "id": "201da624-a67d-4ba9-87c0-39136e78ccf3",
-        "entity": "artist",
-        "url": "https://musicbrainz.org/artist/201da624-a67d-4ba9-87c0-39136e78ccf3"
       },
-      "provenance": [
-        {
-          "title": "MusicBrainz: Skinny Puppy",
-          "url": "https://musicbrainz.org/artist/5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
-          "note": "Lists Wilhelm Schroeder as a member from 1984 to 1986."
-        },
-        {
-          "title": "Wikidata: Wilhelm Schroeder",
-          "url": "https://www.wikidata.org/wiki/Q4909880",
-          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
-        },
-        {
-          "title": "Discogs artist entry: Wilhelm Schroeder",
-          "url": "https://www.discogs.com/artist/26680",
-          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
-        },
-        {
-          "title": "Discogs artist entry: Wilhelm Schroeder",
-          "url": "https://www.discogs.com/artist/81282",
-          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
-        }
-      ],
-      "wikidata": {
-        "id": "Q4909880",
-        "url": "https://www.wikidata.org/wiki/Q4909880"
-      },
-      "discogs": {
-        "artistId": "81282",
-        "url": "https://www.discogs.com/artist/81282"
-      }
+      "aliases": [
+        "Michael Ralph Scaccia"
+      ]
     },
     {
       "id": "mark-walk",
@@ -2545,6 +2814,11 @@
           "title": "Discogs artist entry: Mark Walk",
           "url": "https://www.discogs.com/artist/46826",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Mark Walk",
+          "url": "https://musicbrainz.org/artist/241cfb26-6834-4387-8898-d4bdc84a30ea",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -2554,7 +2828,8 @@
       "discogs": {
         "artistId": "46826",
         "url": "https://www.discogs.com/artist/46826"
-      }
+      },
+      "aliases": []
     },
     {
       "id": "justin-bennett",
@@ -2581,6 +2856,11 @@
           "title": "Discogs artist entry: Justin Bennett",
           "url": "https://www.discogs.com/artist/664170",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Justin Bennett",
+          "url": "https://musicbrainz.org/artist/e23650c5-46dd-47be-b177-068311415b5e",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -2590,7 +2870,10 @@
       "discogs": {
         "artistId": "664170",
         "url": "https://www.discogs.com/artist/664170"
-      }
+      },
+      "aliases": [
+        "Justin Gabriel Isaac Bennett"
+      ]
     },
     {
       "id": "matthew-setzer",
@@ -2607,8 +2890,14 @@
           "title": "MusicBrainz: Skinny Puppy",
           "url": "https://musicbrainz.org/artist/5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
           "note": "Lists Matthew Setzer as a member from 2015 to 2023-12-05."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Matthew Setzer",
+          "url": "https://musicbrainz.org/artist/12016484-6011-479e-82ad-00cec78a5481",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "dirk-bergen",
@@ -2625,8 +2914,14 @@
           "title": "MusicBrainz: Front 242",
           "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626",
           "note": "Lists Dirk Bergen as a member from 1981 to 1983."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Dirk Bergen",
+          "url": "https://musicbrainz.org/artist/be2f9727-b880-47a5-9235-5347027b3f08",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "devin-townsend",
@@ -2653,6 +2948,11 @@
           "title": "Discogs artist entry: Devin Townsend",
           "url": "https://www.discogs.com/artist/251249",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Devin Townsend",
+          "url": "https://musicbrainz.org/artist/93e8c41e-8e4f-4d08-bbf5-bc1a903b2423",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -2662,7 +2962,14 @@
       "discogs": {
         "artistId": "251249",
         "url": "https://www.discogs.com/artist/251249"
-      }
+      },
+      "aliases": [
+        "Big Mac Daddy and a Side of Fries",
+        "Devon Townsend",
+        "Dr. Skinny",
+        "Lord Stenchlor",
+        "Ocean Machine"
+      ]
     },
     {
       "id": "jed-simon",
@@ -2689,6 +2996,11 @@
           "title": "Discogs artist entry: Jed Simon",
           "url": "https://www.discogs.com/artist/373766",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Jed Simon",
+          "url": "https://musicbrainz.org/artist/bca263b8-ff61-4a06-a0f2-f3a163c33e25",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -2698,7 +3010,11 @@
       "discogs": {
         "artistId": "373766",
         "url": "https://www.discogs.com/artist/373766"
-      }
+      },
+      "aliases": [
+        "Ace Longback",
+        "El Smooché, Lord of Electric Wynde"
+      ]
     },
     {
       "id": "adrian-white",
@@ -2725,6 +3041,11 @@
           "title": "Discogs artist entry: Adrian White",
           "url": "https://www.discogs.com/artist/506000",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Adrian White",
+          "url": "https://musicbrainz.org/artist/8ce6ef90-0e4b-4864-ae23-98b52da5c1cc",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -2734,7 +3055,11 @@
       "discogs": {
         "artistId": "506000",
         "url": "https://www.discogs.com/artist/506000"
-      }
+      },
+      "aliases": [
+        "Dances With Chickens",
+        "Underwator"
+      ]
     },
     {
       "id": "chris-peterson",
@@ -2761,6 +3086,11 @@
           "title": "Discogs artist entry: Chris Peterson",
           "url": "https://www.discogs.com/artist/81283",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Chris Peterson",
+          "url": "https://musicbrainz.org/artist/5d86aa2f-35fd-4801-b810-2fe4fb5bc6f5",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -2770,7 +3100,10 @@
       "discogs": {
         "artistId": "81283",
         "url": "https://www.discogs.com/artist/81283"
-      }
+      },
+      "aliases": [
+        "Christopher Garet Peterson"
+      ]
     },
     {
       "id": "jeremy-inkel",
@@ -2797,6 +3130,11 @@
           "title": "Discogs artist entry: Jeremy Inkel",
           "url": "https://www.discogs.com/artist/337501",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Jeremy Inkel",
+          "url": "https://musicbrainz.org/artist/beb40247-76e3-471a-be5b-249feff5ac3b",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -2806,7 +3144,10 @@
       "discogs": {
         "artistId": "337501",
         "url": "https://www.discogs.com/artist/337501"
-      }
+      },
+      "aliases": [
+        "Jeremy Michel Neville Inkel"
+      ]
     },
     {
       "id": "jared-slingerland",
@@ -2833,6 +3174,11 @@
           "title": "Discogs artist entry: Jared Slingerland",
           "url": "https://www.discogs.com/artist/535877",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Jared Slingerland",
+          "url": "https://musicbrainz.org/artist/fe54b169-947c-4c0d-89ac-3623f147c51e",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -2842,7 +3188,8 @@
       "discogs": {
         "artistId": "535877",
         "url": "https://www.discogs.com/artist/535877"
-      }
+      },
+      "aliases": []
     },
     {
       "id": "jason-filipchuk",
@@ -2859,7 +3206,15 @@
           "title": "MusicBrainz: Front Line Assembly",
           "url": "https://musicbrainz.org/artist/b847e9d2-c931-4daf-900c-42c7b2c42e16",
           "note": "Lists Jason Filipchuk as a member from 2009."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Jason Filipchuk",
+          "url": "https://musicbrainz.org/artist/3f2cdb0c-41a2-449c-bd7c-a2cdb242c692",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "The Hobbyist"
       ]
     },
     {
@@ -2877,8 +3232,14 @@
           "title": "MusicBrainz: KMFDM",
           "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
           "note": "Lists Udo Sturm as a member from 1984-02-29 to 1984."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Udo Sturm",
+          "url": "https://musicbrainz.org/artist/9549f633-19ec-439e-b5d9-37be68efc5ae",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "rudolf-naomi",
@@ -2895,7 +3256,15 @@
           "title": "MusicBrainz: KMFDM",
           "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
           "note": "Lists Rudolf Naomi as a member from 1985 to 1986."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Rudolf Naomi",
+          "url": "https://musicbrainz.org/artist/cbb01256-174d-495c-bbdd-a08baca46b89",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Rudolph Naomi"
       ]
     },
     {
@@ -2923,6 +3292,11 @@
           "title": "Discogs artist entry: Günter Schulz",
           "url": "https://www.discogs.com/artist/36585",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Günter Schulz",
+          "url": "https://musicbrainz.org/artist/e49d3c7d-87eb-481a-a4ab-1acca304879c",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -2932,7 +3306,12 @@
       "discogs": {
         "artistId": "36585",
         "url": "https://www.discogs.com/artist/36585"
-      }
+      },
+      "aliases": [
+        "Guenter Schulz",
+        "Guenter Shulz",
+        "Svetlana Ambrosius"
+      ]
     },
     {
       "id": "mark-durante",
@@ -2959,6 +3338,11 @@
           "title": "Discogs artist entry: Mark Durante",
           "url": "https://www.discogs.com/artist/234171",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Mark Durante",
+          "url": "https://musicbrainz.org/artist/85b5bf43-4fe0-4748-bcf9-b38345e9b387",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -2968,7 +3352,8 @@
       "discogs": {
         "artistId": "234171",
         "url": "https://www.discogs.com/artist/234171"
-      }
+      },
+      "aliases": []
     },
     {
       "id": "skold",
@@ -3000,6 +3385,11 @@
           "title": "Discogs artist entry: Skold",
           "url": "https://www.discogs.com/artist/378806",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Skold",
+          "url": "https://musicbrainz.org/artist/66d8b7c7-8096-4096-b528-04489969e452",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -3009,7 +3399,11 @@
       "discogs": {
         "artistId": "378806",
         "url": "https://www.discogs.com/artist/378806"
-      }
+      },
+      "aliases": [
+        "Thim Sköld",
+        "Tim Skold"
+      ]
     },
     {
       "id": "jules-hodgson",
@@ -3036,6 +3430,11 @@
           "title": "Discogs artist entry: Jules Hodgson",
           "url": "https://www.discogs.com/artist/309912",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Jules Hodgson",
+          "url": "https://musicbrainz.org/artist/26aed065-8e9f-4fe8-95f7-eeb4a49500eb",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -3045,7 +3444,12 @@
       "discogs": {
         "artistId": "309912",
         "url": "https://www.discogs.com/artist/309912"
-      }
+      },
+      "aliases": [
+        "Joolz Hodgson",
+        "Jules Hodgeson",
+        "Julian Hodgson"
+      ]
     },
     {
       "id": "lucia-cifarelli",
@@ -3072,6 +3476,11 @@
           "title": "Discogs artist entry: Lucia Cifarelli",
           "url": "https://www.discogs.com/artist/496835",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Lucia Cifarelli",
+          "url": "https://musicbrainz.org/artist/9ad0ca72-92b1-4a12-9d8a-0ba12fd5874b",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -3081,7 +3490,10 @@
       "discogs": {
         "artistId": "496835",
         "url": "https://www.discogs.com/artist/496835"
-      }
+      },
+      "aliases": [
+        "Lucia"
+      ]
     },
     {
       "id": "andy-selway",
@@ -3098,8 +3510,14 @@
           "title": "MusicBrainz: KMFDM",
           "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
           "note": "Lists Andy Selway as a member from 2002."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Andy Selway",
+          "url": "https://musicbrainz.org/artist/a47c092f-d0cf-4369-a730-7722cd0442e8",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "steve-white",
@@ -3126,6 +3544,11 @@
           "title": "Discogs artist entry: Steve White",
           "url": "https://www.discogs.com/artist/228375",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Steve White",
+          "url": "https://musicbrainz.org/artist/c1a08e7b-6d7d-4d7c-9bff-2502375549a8",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -3135,7 +3558,8 @@
       "discogs": {
         "artistId": "228375",
         "url": "https://www.discogs.com/artist/228375"
-      }
+      },
+      "aliases": []
     },
     {
       "id": "andee-blacksugar",
@@ -3152,8 +3576,14 @@
           "title": "MusicBrainz: KMFDM",
           "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
           "note": "Lists Andee Blacksugar as a member from 2017."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Andee Blacksugar",
+          "url": "https://musicbrainz.org/artist/54966f8b-c2e6-4544-beb5-8efb3fa4ffd3",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "tidor-nieddu",
@@ -3170,8 +3600,14 @@
           "title": "MusicBrainz: KMFDM",
           "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
           "note": "Lists Tidor Nieddu as a member from 2025."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Tidor Nieddu",
+          "url": "https://musicbrainz.org/artist/1d056e94-70e1-4a08-9adf-fc451582c355",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "stevie-banch",
@@ -3188,8 +3624,14 @@
           "title": "MusicBrainz: Revolting Cocks",
           "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
           "note": "Lists Stevie Banch as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Stevie Banch",
+          "url": "https://musicbrainz.org/artist/5797aba7-6168-450e-baae-d6c6a3befc0f",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "josh-bradford",
@@ -3206,8 +3648,14 @@
           "title": "MusicBrainz: Revolting Cocks",
           "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
           "note": "Lists Josh Bradford as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Josh Bradford",
+          "url": "https://musicbrainz.org/artist/b1791ace-26fd-4b7c-94ff-04da7984afac",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "duane-denison",
@@ -3239,6 +3687,11 @@
           "title": "Discogs artist entry: Duane Denison",
           "url": "https://www.discogs.com/artist/400594",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Duane Denison",
+          "url": "https://musicbrainz.org/artist/6a22c1ff-42c8-4c53-afa8-58f4766b9096",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -3248,7 +3701,11 @@
       "discogs": {
         "artistId": "79656",
         "url": "https://www.discogs.com/artist/79656"
-      }
+      },
+      "aliases": [
+        "Duane Dennison",
+        "Duane Paul Denison"
+      ]
     },
     {
       "id": "sean-joyce",
@@ -3265,8 +3722,14 @@
           "title": "MusicBrainz: Revolting Cocks",
           "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
           "note": "Lists Sean Joyce as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Sean Joyce",
+          "url": "https://musicbrainz.org/artist/d1099784-fd8f-4204-94a8-1fa956fd7d39",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "phil-owen",
@@ -3283,7 +3746,16 @@
           "title": "MusicBrainz: Revolting Cocks",
           "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
           "note": "Lists Phil Owen as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Phil Owen",
+          "url": "https://musicbrainz.org/artist/dc047664-dd07-428d-8f3a-b50db87a6bc9",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Phildo Owen",
+        "Philip C. Owen"
       ]
     },
     {
@@ -3311,6 +3783,11 @@
           "title": "Discogs artist entry: Clayton Worbeck",
           "url": "https://www.discogs.com/artist/765918",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Clayton Worbeck",
+          "url": "https://musicbrainz.org/artist/9c94f186-6c21-4cd0-bf1a-a2a044a6b043",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -3320,7 +3797,8 @@
       "discogs": {
         "artistId": "765918",
         "url": "https://www.discogs.com/artist/765918"
-      }
+      },
+      "aliases": []
     },
     {
       "id": "j3-seuqcaj",
@@ -3337,8 +3815,14 @@
           "title": "MusicBrainz: A Chud Convention",
           "url": "https://musicbrainz.org/artist/14c43e52-0267-453f-bcc6-c2201aac2c82",
           "note": "Lists J3 sEUQCAJ as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: J3 sEUQCAJ",
+          "url": "https://musicbrainz.org/artist/fd5f0dd3-5a83-428f-8f02-68a19322983a",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "s3-evets",
@@ -3355,8 +3839,14 @@
           "title": "MusicBrainz: A Chud Convention",
           "url": "https://musicbrainz.org/artist/14c43e52-0267-453f-bcc6-c2201aac2c82",
           "note": "Lists S3 eVETS as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: S3 eVETS",
+          "url": "https://musicbrainz.org/artist/4a836c98-4918-4f96-8b2b-9fb29a568d84",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "don-harrison",
@@ -3373,8 +3863,14 @@
           "title": "MusicBrainz: Hilt",
           "url": "https://musicbrainz.org/artist/42509bd3-6fa1-459a-8e40-127a3ef8663b",
           "note": "Lists Don Harrison as a member from 1989 to 1989."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Don Harrison",
+          "url": "https://musicbrainz.org/artist/49266a79-78c5-4ceb-8671-06a697478d12",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "alan-nelson",
@@ -3391,7 +3887,15 @@
           "title": "MusicBrainz: Hilt",
           "url": "https://musicbrainz.org/artist/42509bd3-6fa1-459a-8e40-127a3ef8663b",
           "note": "Lists Alan Nelson as a member from 2000-02-01."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Alan Nelson",
+          "url": "https://musicbrainz.org/artist/1ab87aa5-d2cc-43f8-ab1a-7580423230d9",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Al Nelson"
       ]
     },
     {
@@ -3419,6 +3923,11 @@
           "title": "Discogs artist entry: Dave Ogilvie",
           "url": "https://www.discogs.com/artist/50753",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Dave Ogilvie",
+          "url": "https://musicbrainz.org/artist/9007d5ec-8abb-496d-9f49-8c89b9ba1381",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -3428,7 +3937,12 @@
       "discogs": {
         "artistId": "50753",
         "url": "https://www.discogs.com/artist/50753"
-      }
+      },
+      "aliases": [
+        "Dave \"Rave\" Ogilvie",
+        "David Denton Ogilvie",
+        "David Ogilvie"
+      ]
     },
     {
       "id": "ryan-moore",
@@ -3445,8 +3959,14 @@
           "title": "MusicBrainz: Download",
           "url": "https://musicbrainz.org/artist/a31c5ea9-b550-447a-b2ee-99b08e8c4825",
           "note": "Lists Ryan Moore as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Ryan Moore",
+          "url": "https://musicbrainz.org/artist/55d72bde-0387-42f1-b829-738ff47da699",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "mark-spybey",
@@ -3463,8 +3983,14 @@
           "title": "MusicBrainz: Download",
           "url": "https://musicbrainz.org/artist/a31c5ea9-b550-447a-b2ee-99b08e8c4825",
           "note": "Lists Mark Spybey as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Mark Spybey",
+          "url": "https://musicbrainz.org/artist/a2edc27d-1a43-48e0-a61d-7563641c3a5b",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "anthony-valcic",
@@ -3491,6 +4017,11 @@
           "title": "Discogs artist entry: Anthony Valcic",
           "url": "https://www.discogs.com/artist/72803",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Anthony Valcic",
+          "url": "https://musicbrainz.org/artist/726995e9-1c54-4bcc-838c-3cbeb55ce730",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -3500,7 +4031,12 @@
       "discogs": {
         "artistId": "72803",
         "url": "https://www.discogs.com/artist/72803"
-      }
+      },
+      "aliases": [
+        "A. Valcic",
+        "Anthony Valvic",
+        "Tone Valcic"
+      ]
     },
     {
       "id": "phil-western",
@@ -3527,6 +4063,11 @@
           "title": "Discogs artist entry: Phil Western",
           "url": "https://www.discogs.com/artist/9862",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Phil Western",
+          "url": "https://musicbrainz.org/artist/291767b4-b137-452f-8547-b578cd029fa4",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -3536,7 +4077,11 @@
       "discogs": {
         "artistId": "9862",
         "url": "https://www.discogs.com/artist/9862"
-      }
+      },
+      "aliases": [
+        "Phillip Charles Western",
+        "Phillip Western"
+      ]
     },
     {
       "id": "jello-biafra",
@@ -3563,6 +4108,11 @@
           "title": "Discogs artist entry: Jello Biafra",
           "url": "https://www.discogs.com/artist/37752",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Jello Biafra",
+          "url": "https://musicbrainz.org/artist/2280ca0e-6968-4349-8c36-cb0cbd6ee95f",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -3572,7 +4122,8 @@
       "discogs": {
         "artistId": "37752",
         "url": "https://www.discogs.com/artist/37752"
-      }
+      },
+      "aliases": []
     },
     {
       "id": "marc-verhaeghen",
@@ -3589,7 +4140,15 @@
           "title": "MusicBrainz: Noise Unit",
           "url": "https://musicbrainz.org/artist/7dd6f063-dcac-47e7-98d1-26eaeaac2971",
           "note": "Lists Marc Verhaeghen as a member from 1989 to 1990."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Marc Verhaeghen",
+          "url": "https://musicbrainz.org/artist/e6d22027-273b-40eb-891f-5e46c59fce0a",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Marc Louisa John Verhaeghen"
       ]
     },
     {
@@ -3607,7 +4166,16 @@
           "title": "MusicBrainz: Noise Unit",
           "url": "https://musicbrainz.org/artist/7dd6f063-dcac-47e7-98d1-26eaeaac2971",
           "note": "Lists Daniel Myer as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Daniel Myer",
+          "url": "https://musicbrainz.org/artist/c72846d9-066f-495a-9ca3-8ca7256ac2b6",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Daniel Meier",
+        "Daniel Meir"
       ]
     },
     {
@@ -3640,6 +4208,11 @@
           "title": "Discogs artist entry: Richard H. Kirk",
           "url": "https://www.discogs.com/artist/2001847",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Richard H. Kirk",
+          "url": "https://musicbrainz.org/artist/39fe04bf-ba1a-481d-9836-b96beb549033",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -3649,7 +4222,12 @@
       "discogs": {
         "artistId": "2238",
         "url": "https://www.discogs.com/artist/2238"
-      }
+      },
+      "aliases": [
+        "Harold Sandoz",
+        "Richard Harold Kirk",
+        "Richard Kirk"
+      ]
     },
     {
       "id": "stephen-mallinder",
@@ -3676,6 +4254,11 @@
           "title": "Discogs artist entry: Stephen Mallinder",
           "url": "https://www.discogs.com/artist/24050",
           "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Stephen Mallinder",
+          "url": "https://musicbrainz.org/artist/adad4d39-c1e6-4533-b4dc-76e6ac328299",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
       ],
       "wikidata": {
@@ -3685,65 +4268,10 @@
       "discogs": {
         "artistId": "24050",
         "url": "https://www.discogs.com/artist/24050"
-      }
-    },
-    {
-      "id": "flowering-blight",
-      "label": "Flowering Blight",
-      "type": "person",
-      "summary": "Musician documented by MusicBrainz as a member of Lead Into Gold.",
-      "musicbrainz": {
-        "id": "edae6e50-ecce-4f15-a15c-37cff05d4a54",
-        "entity": "artist",
-        "url": "https://musicbrainz.org/artist/edae6e50-ecce-4f15-a15c-37cff05d4a54"
       },
-      "provenance": [
-        {
-          "title": "MusicBrainz: Lead Into Gold",
-          "url": "https://musicbrainz.org/artist/aedd2d07-66ca-4496-8156-ac6cde7e87b4",
-          "note": "Lists Flowering Blight as a member."
-        },
-        {
-          "title": "Wikidata: Flowering Blight",
-          "url": "https://www.wikidata.org/wiki/Q4590538",
-          "note": "Cross-reference resolved through the exact MusicBrainz identifier."
-        },
-        {
-          "title": "Discogs artist entry: Flowering Blight",
-          "url": "https://www.discogs.com/artist/100041",
-          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
-        },
-        {
-          "title": "Discogs artist entry: Flowering Blight",
-          "url": "https://www.discogs.com/artist/1298641",
-          "note": "Catalog cross-reference supplied by Wikidata; Discogs content is not imported by this script."
-        }
-      ],
-      "wikidata": {
-        "id": "Q4590538",
-        "url": "https://www.wikidata.org/wiki/Q4590538"
-      },
-      "discogs": {
-        "artistId": "1298641",
-        "url": "https://www.discogs.com/artist/1298641"
-      }
-    },
-    {
-      "id": "frenchie-l-amour",
-      "label": "Frenchie L'Amour",
-      "type": "person",
-      "summary": "Musician documented by MusicBrainz as a member of Lead Into Gold.",
-      "musicbrainz": {
-        "id": "5dbd3f77-05a0-41fd-b6a1-f9466bb98fe2",
-        "entity": "artist",
-        "url": "https://musicbrainz.org/artist/5dbd3f77-05a0-41fd-b6a1-f9466bb98fe2"
-      },
-      "provenance": [
-        {
-          "title": "MusicBrainz: Lead Into Gold",
-          "url": "https://musicbrainz.org/artist/aedd2d07-66ca-4496-8156-ac6cde7e87b4",
-          "note": "Lists Frenchie L'Amour as a member."
-        }
+      "aliases": [
+        "Stephen William Mallinder",
+        "Tennessee King"
       ]
     },
     {
@@ -4210,8 +4738,14 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Chris Vrenna as a member from 1988-10 to 1990."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Chris Vrenna",
+          "url": "https://musicbrainz.org/artist/0923598e-2b97-4527-b984-5feed94c168d",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "ron-musarra",
@@ -4228,8 +4762,14 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Ron Musarra as a member from 1988 to 1988."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Ron Musarra",
+          "url": "https://musicbrainz.org/artist/031e4b1f-460d-487d-ab01-9bae0992d4bc",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "nick-rushe",
@@ -4246,8 +4786,14 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Nick Rushe as a member from 1989 to 1989."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Nick Rushe",
+          "url": "https://musicbrainz.org/artist/4d4e2261-02d2-4796-83bf-5bbadcbba629",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "gary-talpas",
@@ -4264,8 +4810,14 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Gary Talpas as a member from 1989 to 1989."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Gary Talpas",
+          "url": "https://musicbrainz.org/artist/2cd8c19a-d942-456e-86de-72d581662ff9",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "richard-patrick",
@@ -4282,7 +4834,15 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Richard Patrick as a member from 1989 to 1993."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Richard Patrick",
+          "url": "https://musicbrainz.org/artist/5bcda370-1cd4-40ce-89a5-6ec6a0a7fc79",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Richard Michael Patrick"
       ]
     },
     {
@@ -4300,8 +4860,14 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists David Haymes as a member from 1990 to 1990."
+        },
+        {
+          "title": "MusicBrainz artist aliases: David Haymes",
+          "url": "https://musicbrainz.org/artist/2014c417-f5ca-4f7e-b616-ba835608b5b6",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "lee-mars",
@@ -4318,8 +4884,14 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Lee Mars as a member from 1990 to 1991."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Lee Mars",
+          "url": "https://musicbrainz.org/artist/40adef79-bcdd-4bd3-a2ee-1e2d371cd6bc",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "martin-atkins",
@@ -4336,7 +4908,16 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Martin Atkins as a member from 1991 to 1991."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Martin Atkins",
+          "url": "https://musicbrainz.org/artist/4fdcc071-4125-433c-9b57-de2084d8d48f",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Martin Clive Atkins",
+        "The Girl Brothers"
       ]
     },
     {
@@ -4354,7 +4935,15 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists James Woolley as a member from 1991 to 1994."
+        },
+        {
+          "title": "MusicBrainz artist aliases: James Woolley",
+          "url": "https://musicbrainz.org/artist/1f4ffb9e-2425-40fb-b054-68e80e2ef83d",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "James Wooley"
       ]
     },
     {
@@ -4372,7 +4961,15 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Danny Lohner as a member from 1993 to 2003."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Danny Lohner",
+          "url": "https://musicbrainz.org/artist/136b2664-686f-4ae4-acf9-6f34446636d4",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Daniel Patrick Lohner"
       ]
     },
     {
@@ -4390,8 +4987,14 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Robin Finck as a member from 1994 to 1996."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Robin Finck",
+          "url": "https://musicbrainz.org/artist/30343313-1e24-4758-950f-4a96309d7893",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "charlie-clouser",
@@ -4408,7 +5011,15 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Charlie Clouser as a member from 1994 to 2001."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Charlie Clouser",
+          "url": "https://musicbrainz.org/artist/2947dcd0-e65f-4293-af4b-3fe309e0dea0",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Charles Alexander Clouser"
       ]
     },
     {
@@ -4426,8 +5037,14 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Kevin McMahon as a member from 1996 to 1996."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Kevin McMahon",
+          "url": "https://musicbrainz.org/artist/28128435-f8c0-401c-a60d-ab3536cd573a",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "keith-hillebrandt",
@@ -4444,8 +5061,14 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Keith Hillebrandt as a member from 1997 to 1999."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Keith Hillebrandt",
+          "url": "https://musicbrainz.org/artist/ddd579af-9ca1-41ff-96a4-6e55212923c0",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "jerome-dillon",
@@ -4462,7 +5085,15 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Jerome Dillon as a member from 1999 to 2005-10-01."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Jerome Dillon",
+          "url": "https://musicbrainz.org/artist/e45b9930-0363-4a20-86f4-2ff05544d0a9",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Lynn Jerome Dillon"
       ]
     },
     {
@@ -4480,7 +5111,22 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Atticus Ross as a member from 2004."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Atticus Ross",
+          "url": "https://musicbrainz.org/artist/1fefa8b3-806b-4ab9-a066-66574b22aa16",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Aticcus Ross",
+        "Atticcus Ross",
+        "Atticus Matthew Cowper Ross",
+        "Atticus Matthew Ross",
+        "Atticus Ros",
+        "Atticuss Ros",
+        "Oni Sakti",
+        "Ross"
       ]
     },
     {
@@ -4498,8 +5144,14 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Alex Carapetis as a member from 2005-10-07 to 2005-12-01."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Alex Carapetis",
+          "url": "https://musicbrainz.org/artist/d735f972-f612-49e6-8815-f32994dad1af",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "aaron-north",
@@ -4516,8 +5168,14 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Aaron North as a member from 2005 to 2007."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Aaron North",
+          "url": "https://musicbrainz.org/artist/2fd475b9-4a31-4b8c-8368-7b71118f2d71",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "jeordie-white",
@@ -4534,7 +5192,16 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Jeordie White as a member from 2005 to 2007."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Jeordie White",
+          "url": "https://musicbrainz.org/artist/ab4625d4-9947-481c-af95-5955b0b13023",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Jeordie Osbourne White",
+        "Twiggy Ramirez"
       ]
     },
     {
@@ -4552,8 +5219,14 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Alessandro Cortini as a member from 2005 to 2008-12."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Alessandro Cortini",
+          "url": "https://musicbrainz.org/artist/7b88250d-891d-4186-9b16-b94c930be1b2",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "josh-freese",
@@ -4570,8 +5243,14 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Josh Freese as a member from 2005 to 2008-12."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Josh Freese",
+          "url": "https://musicbrainz.org/artist/1ba97964-8d70-4b33-a361-d1a4ed222672",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "justin-meldal-johnsen",
@@ -4588,8 +5267,14 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Justin Meldal‐Johnsen as a member from 2008 to 2009."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Justin Meldal‐Johnsen",
+          "url": "https://musicbrainz.org/artist/673f2360-45c1-43d3-b0d2-cf6d798b2fdd",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "ilan-rubin",
@@ -4606,7 +5291,15 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Ilan Rubin as a member from 2008 to 2009."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Ilan Rubin",
+          "url": "https://musicbrainz.org/artist/6b76ebd2-c44e-4059-b5ff-2854ccef92c1",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Ilan Samuel Rubin"
       ]
     },
     {
@@ -4624,7 +5317,16 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Adrian Belew as a member from 2013 to 2013."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Adrian Belew",
+          "url": "https://musicbrainz.org/artist/73c3f499-60e2-44e1-81dd-7fe2191461fa",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Andrian Belew",
+        "Robert Steven Belew"
       ]
     },
     {
@@ -4642,7 +5344,15 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Joshua Eustis as a member from 2013 to 2013."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Joshua Eustis",
+          "url": "https://musicbrainz.org/artist/3b5ed43f-9dfa-494b-a8f1-b152b6e75512",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Joshua Leeds Eustis"
       ]
     },
     {
@@ -4660,7 +5370,15 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Lisa Fischer as a member from 2013 to 2013."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Lisa Fischer",
+          "url": "https://musicbrainz.org/artist/f887110a-ddd9-4a4e-b9ea-e567523ef6e2",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Lisa Fisher"
       ]
     },
     {
@@ -4678,8 +5396,14 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Sharlotte Gibson as a member from 2013 to 2013."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Sharlotte Gibson",
+          "url": "https://musicbrainz.org/artist/844bdcef-7a35-41a2-ae27-c30ef94e7c03",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "pino-palladino",
@@ -4696,7 +5420,19 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Pino Palladino as a member from 2013 to 2013."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Pino Palladino",
+          "url": "https://musicbrainz.org/artist/0dfd6aab-9056-4764-89b0-80bee7c9f998",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Giuseppe Henry Palladino",
+        "Pino",
+        "Pino Balladino",
+        "Pino Paladino",
+        "Pino Palidino"
       ]
     },
     {
@@ -4714,7 +5450,17 @@
           "title": "MusicBrainz: Nine Inch Nails",
           "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
           "note": "Lists Stu Brooks as a member from 2026-02."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Stu Brooks",
+          "url": "https://musicbrainz.org/artist/2d8e6fbf-d30d-47e2-89f9-76eba6b1860e",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Bassie",
+        "Stewart Leslie Brooks",
+        "Stu “Bassie” Brooks"
       ]
     },
     {
@@ -4732,7 +5478,17 @@
           "title": "MusicBrainz: Depeche Mode",
           "url": "https://musicbrainz.org/artist/8538e728-ca0b-4321-b7e5-cff6565dd4c0",
           "note": "Lists Vince Clarke as a member from 1980 to 1981."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Vince Clarke",
+          "url": "https://musicbrainz.org/artist/6ef12fc1-40f4-41ea-ac52-f487840255bd",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Vincent Clarke",
+        "Vincent John Martin",
+        "Vincent John Martin Clarke"
       ]
     },
     {
@@ -4750,7 +5506,18 @@
           "title": "MusicBrainz: Depeche Mode",
           "url": "https://musicbrainz.org/artist/8538e728-ca0b-4321-b7e5-cff6565dd4c0",
           "note": "Lists Andrew Fletcher as a member from 1980 to 2022-05-26."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Andrew Fletcher",
+          "url": "https://musicbrainz.org/artist/0042aa4d-a972-4a2a-b7cf-8044d09bbc67",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Andrew John Fletcher",
+        "Andrew John Leonard Fletcher",
+        "Andy Fletcher",
+        "Fletch"
       ]
     },
     {
@@ -4768,7 +5535,17 @@
           "title": "MusicBrainz: Depeche Mode",
           "url": "https://musicbrainz.org/artist/8538e728-ca0b-4321-b7e5-cff6565dd4c0",
           "note": "Lists Dave Gahan as a member from 1980."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Dave Gahan",
+          "url": "https://musicbrainz.org/artist/d547b148-cf1f-421b-9464-ce7411ba44b8",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Dave Grahan",
+        "David Gahan",
+        "Gahan"
       ]
     },
     {
@@ -4786,7 +5563,18 @@
           "title": "MusicBrainz: Depeche Mode",
           "url": "https://musicbrainz.org/artist/8538e728-ca0b-4321-b7e5-cff6565dd4c0",
           "note": "Lists Martin L. Gore as a member from 1980."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Martin L. Gore",
+          "url": "https://musicbrainz.org/artist/e08ac443-f1d2-4666-abd1-fa5859592981",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "M. Gore",
+        "ML Gore",
+        "Martin Gore",
+        "Martin Lee Gore"
       ]
     },
     {
@@ -4804,7 +5592,15 @@
           "title": "MusicBrainz: Depeche Mode",
           "url": "https://musicbrainz.org/artist/8538e728-ca0b-4321-b7e5-cff6565dd4c0",
           "note": "Lists Alan Wilder as a member from 1982 to 1995-06."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Alan Wilder",
+          "url": "https://musicbrainz.org/artist/9785d4c6-0922-408b-9ca7-bf46c0548f71",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Alan Charles Wilder"
       ]
     },
     {
@@ -4822,8 +5618,14 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists Olivia Newton Bundy as a member from 1989 to 1990."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Olivia Newton Bundy",
+          "url": "https://musicbrainz.org/artist/91cf97ed-350e-48e4-a0c4-d6aa69dcb439",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "zsa-zsa-speck",
@@ -4840,7 +5642,15 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists Zsa Zsa Speck as a member from 1989 to 1990."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Zsa Zsa Speck",
+          "url": "https://musicbrainz.org/artist/d0c854d8-b878-4633-9422-badcdf452d04",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Perry Pandrea"
       ]
     },
     {
@@ -4858,7 +5668,18 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists Daisy Berkowitz as a member from 1989 to 1996."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Daisy Berkowitz",
+          "url": "https://musicbrainz.org/artist/e9a9acf3-673e-441a-90a6-8d05e8e1e892",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "SMP",
+        "Scott Mitchell",
+        "Scott Mitchell Putesky",
+        "Scott Putesky"
       ]
     },
     {
@@ -4876,7 +5697,17 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists Marilyn Manson as a member from 1989."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/80cadd99-f560-41e3-babd-16292bbd248a",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Brian Hugh Warner",
+        "Brian Warner",
+        "Mr. Manson"
       ]
     },
     {
@@ -4894,7 +5725,16 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists Gidget Gein as a member from 1990 to 1993-12."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Gidget Gein",
+          "url": "https://musicbrainz.org/artist/5057eba4-da15-45df-9948-8b8899c3b3ee",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Brad Stewart",
+        "Bradley Mark Stewart"
       ]
     },
     {
@@ -4912,7 +5752,17 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists Madonna Wayne Gacy as a member from 1990 to 2007."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Madonna Wayne Gacy",
+          "url": "https://musicbrainz.org/artist/60c083b5-e3c9-4410-9f9a-0b5f4b4d5c2c",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Pogo",
+        "Stephen Bier, Jr.",
+        "Stephen Gregory Bier, Jr."
       ]
     },
     {
@@ -4930,7 +5780,16 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists Sara Lee Lucas as a member from 1991 to 1995."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Sara Lee Lucas",
+          "url": "https://musicbrainz.org/artist/47284622-a77f-48df-bb1c-3320c8cb6f33",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Fred \"Freddie\" Streithorst, Jr.",
+        "Frederick Streithorst, Jr."
       ]
     },
     {
@@ -4948,7 +5807,15 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists Ginger Fish as a member from 1995 to 2004."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Ginger Fish",
+          "url": "https://musicbrainz.org/artist/8bb2d3b9-efce-49cc-b26f-3f1cb29d2eb0",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Kenneth Robert Wilson"
       ]
     },
     {
@@ -4966,7 +5833,16 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists Zim Zum as a member from 1996 to 1998."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Zim Zum",
+          "url": "https://musicbrainz.org/artist/54869a23-d2b2-476f-9fc8-aed594b8eed5",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Timothy Linton",
+        "Timothy Michael Linton"
       ]
     },
     {
@@ -4984,7 +5860,17 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists John 5 as a member from 1998 to 2004."
+        },
+        {
+          "title": "MusicBrainz artist aliases: John 5",
+          "url": "https://musicbrainz.org/artist/66ac10d4-37cc-4b84-91dd-4863e3dc9a32",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "John Five",
+        "John Lowery",
+        "John William Lowery"
       ]
     },
     {
@@ -5002,8 +5888,14 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists Mark Chaussee as a member from 2004 to 2005."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Mark Chaussee",
+          "url": "https://musicbrainz.org/artist/34795fb6-83c2-4a3a-9c76-be75de22c761",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "rob-holliday",
@@ -5020,8 +5912,14 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists Rob Holliday as a member from 2007 to 2008."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Rob Holliday",
+          "url": "https://musicbrainz.org/artist/6eb510ad-dc0e-4b12-b501-1a4a9b70867c",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "wes-borland",
@@ -5038,7 +5936,15 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists Wes Borland as a member from 2008 to 2008."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Wes Borland",
+          "url": "https://musicbrainz.org/artist/6ed22d35-c6fd-4846-8108-1f71d1ee0f82",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Wesley Louden Borland"
       ]
     },
     {
@@ -5056,8 +5962,14 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists Andy Gerold as a member from 2009 to 2009."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Andy Gerold",
+          "url": "https://musicbrainz.org/artist/ebc1e655-c5b1-47cd-abab-0075ff580092",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "fred-sablan",
@@ -5074,8 +5986,14 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists Fred Sablan as a member from 2010-07 to 2014."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Fred Sablan",
+          "url": "https://musicbrainz.org/artist/338d8fd9-d595-410d-8762-4e5286da3cbe",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "gil-sharone",
@@ -5092,8 +6010,14 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists Gil Sharone as a member from 2013 to 2019-03-27."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Gil Sharone",
+          "url": "https://musicbrainz.org/artist/71799f19-2e9e-4562-a6af-924ae33e726e",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "tyler-bates",
@@ -5110,7 +6034,26 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists Tyler Bates as a member from 2014 to 2018."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Tyler Bates",
+          "url": "https://musicbrainz.org/artist/03cfec4a-9885-444c-9e74-5fbab5861106",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Bates",
+        "Lucas Bates",
+        "Tayler Bates",
+        "Tiler Bates",
+        "Tyler Bate",
+        "Tyler Batess",
+        "Tyler Battes",
+        "Tyler Betas",
+        "Tyler Lee Bates",
+        "Tyler Lucas",
+        "Tyler Lucas Bates",
+        "Tylor Bates"
       ]
     },
     {
@@ -5128,7 +6071,17 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists Juan Alderete as a member from 2017-11-05 to 2020."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Juan Alderete",
+          "url": "https://musicbrainz.org/artist/9b50efa7-a1b4-4136-88d6-513163546848",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "John Alderete",
+        "John Peter Alderete",
+        "Juan Alderete de la Pena"
       ]
     },
     {
@@ -5146,8 +6099,14 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists Brandon Pertzborn as a member from 2019-06-18 to 2020."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Brandon Pertzborn",
+          "url": "https://musicbrainz.org/artist/31713871-0bfb-4a7c-b82b-2657670dd19d",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "reba-meyers",
@@ -5164,7 +6123,15 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists Reba Meyers as a member from 2024 to 2026."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Reba Meyers",
+          "url": "https://musicbrainz.org/artist/e30333ae-4220-4466-a50e-056e888ffe0e",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Reba Lilith Meyers"
       ]
     },
     {
@@ -5182,7 +6149,15 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists Piggy D. as a member from 2024."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Piggy D.",
+          "url": "https://musicbrainz.org/artist/92a0f3b8-65a0-4205-8869-7c2af67aa974",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Matt Montgomery"
       ]
     },
     {
@@ -5200,8 +6175,14 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists Nick Annis as a member from 2026-04."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Nick Annis",
+          "url": "https://musicbrainz.org/artist/6976af55-fc14-470f-a4d8-11697b32c1d1",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "paul-wiley",
@@ -5218,8 +6199,14 @@
           "title": "MusicBrainz: Marilyn Manson",
           "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
           "note": "Lists Paul Wiley as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Paul Wiley",
+          "url": "https://musicbrainz.org/artist/33088fea-8359-4e82-b099-6d051dcc9224",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "rudy-ratzinger",
@@ -5236,7 +6223,15 @@
           "title": "MusicBrainz: :wumpscut:",
           "url": "https://musicbrainz.org/artist/e4e79264-c1ec-490c-b823-b2918204cd4f",
           "note": "Lists Rudy Ratzinger as a member from 1991-05."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Rudy Ratzinger",
+          "url": "https://musicbrainz.org/artist/3d1c0b65-8650-4db6-a1c2-2da7ef5744bf",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Rudolf Ratzinger"
       ]
     },
     {
@@ -5254,7 +6249,19 @@
           "title": "MusicBrainz: Rammstein",
           "url": "https://musicbrainz.org/artist/b2d122f9-eadb-4930-a196-8f221eeb0c66",
           "note": "Lists Richard Z. Kruspe as a member from 1994-02."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Richard Z. Kruspe",
+          "url": "https://musicbrainz.org/artist/2c449bbd-b19e-456b-af78-f2e592ff2245",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Richard Kruspe",
+        "Richard Kruspe-Bernstein",
+        "Richard Z. Kruspe-Bernstein",
+        "Richard Zven Kruspe",
+        "Scholle"
       ]
     },
     {
@@ -5272,7 +6279,17 @@
           "title": "MusicBrainz: Rammstein",
           "url": "https://musicbrainz.org/artist/b2d122f9-eadb-4930-a196-8f221eeb0c66",
           "note": "Lists Paul Landers as a member from 1994-02."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Paul Landers",
+          "url": "https://musicbrainz.org/artist/438cfe24-e99c-4b74-94ff-7289ede0bb46",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Heiko Paul Hiersche",
+        "Heiko Paul Landers",
+        "Paul H. Landers"
       ]
     },
     {
@@ -5290,8 +6307,14 @@
           "title": "MusicBrainz: Rammstein",
           "url": "https://musicbrainz.org/artist/b2d122f9-eadb-4930-a196-8f221eeb0c66",
           "note": "Lists Till Lindemann as a member from 1994-02."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Till Lindemann",
+          "url": "https://musicbrainz.org/artist/f71f8e0d-c109-4a50-9826-2559981d915e",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "christian-lorenz",
@@ -5308,7 +6331,18 @@
           "title": "MusicBrainz: Rammstein",
           "url": "https://musicbrainz.org/artist/b2d122f9-eadb-4930-a196-8f221eeb0c66",
           "note": "Lists Christian Lorenz as a member from 1994-02."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Christian Lorenz",
+          "url": "https://musicbrainz.org/artist/11f64d5e-77a6-48f7-ac1f-6d17b3ac2ba9",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Christian \"Flake\" Lorenz",
+        "Doktor Christian Lorenz",
+        "Flake",
+        "Flake Lorenz"
       ]
     },
     {
@@ -5326,7 +6360,15 @@
           "title": "MusicBrainz: Rammstein",
           "url": "https://musicbrainz.org/artist/b2d122f9-eadb-4930-a196-8f221eeb0c66",
           "note": "Lists Oliver Riedel as a member from 1994-02."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Oliver Riedel",
+          "url": "https://musicbrainz.org/artist/730e20a5-66d3-4052-9143-a3ea7b56f568",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Orgien-Olli"
       ]
     },
     {
@@ -5344,7 +6386,15 @@
           "title": "MusicBrainz: Rammstein",
           "url": "https://musicbrainz.org/artist/b2d122f9-eadb-4930-a196-8f221eeb0c66",
           "note": "Lists Christoph Schneider as a member from 1994-02."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Christoph Schneider",
+          "url": "https://musicbrainz.org/artist/bb9fe2b7-87fa-43e6-95ca-bc4592d8d5bc",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Christoph Doom Schneider"
       ]
     },
     {
@@ -5362,8 +6412,14 @@
           "title": "MusicBrainz: 7 Minutes of Nausea",
           "url": "https://musicbrainz.org/artist/96843ba2-97ec-4120-8c25-044e001e95ed",
           "note": "Lists Mick Hollows as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Mick Hollows",
+          "url": "https://musicbrainz.org/artist/55638639-ef78-4f4e-a96b-ec6e68f5472e",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "scut",
@@ -5380,8 +6436,14 @@
           "title": "MusicBrainz: 7 Minutes of Nausea",
           "url": "https://musicbrainz.org/artist/96843ba2-97ec-4120-8c25-044e001e95ed",
           "note": "Lists Scut as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Scut",
+          "url": "https://musicbrainz.org/artist/0f281666-1cdf-491c-9379-ca47bed40a80",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "matthias-weigand",
@@ -5398,8 +6460,14 @@
           "title": "MusicBrainz: 7 Minutes of Nausea",
           "url": "https://musicbrainz.org/artist/96843ba2-97ec-4120-8c25-044e001e95ed",
           "note": "Lists Matthias Weigand as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Matthias Weigand",
+          "url": "https://musicbrainz.org/artist/40b77382-5e24-4cd8-bc43-c0bdcf8bbc83",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "youth",
@@ -5416,7 +6484,19 @@
           "title": "MusicBrainz: Killing Joke",
           "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
           "note": "Lists Youth as a member from 1979 to 1982."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Youth",
+          "url": "https://musicbrainz.org/artist/0a1811e9-4251-4669-b5ab-0534c145806f",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Elastic Line Soul Machine",
+        "Liquid High",
+        "Stargazer",
+        "Yoof",
+        "Youth Meets Jah Wobble"
       ]
     },
     {
@@ -5434,8 +6514,14 @@
           "title": "MusicBrainz: Killing Joke",
           "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
           "note": "Lists Paul Ferguson as a member from 1979 to 1986."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Paul Ferguson",
+          "url": "https://musicbrainz.org/artist/beffec12-3c55-4a31-a666-2726c1f173c1",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "jaz-coleman",
@@ -5452,7 +6538,15 @@
           "title": "MusicBrainz: Killing Joke",
           "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
           "note": "Lists Jaz Coleman as a member from 1979."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Jaz Coleman",
+          "url": "https://musicbrainz.org/artist/282de6ac-ba23-41f3-9fef-67c531b56167",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Jeremy Coleman"
       ]
     },
     {
@@ -5470,8 +6564,14 @@
           "title": "MusicBrainz: Killing Joke",
           "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
           "note": "Lists Reza Udhin as a member from 2005."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Reza Udhin",
+          "url": "https://musicbrainz.org/artist/24a3a217-7405-4fed-9d76-6f7d708b6dcf",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "geordie-walker",
@@ -5488,7 +6588,15 @@
           "title": "MusicBrainz: Killing Joke",
           "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
           "note": "Lists Geordie Walker as a member from 2023-11-26."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Geordie Walker",
+          "url": "https://musicbrainz.org/artist/f8cec1ac-ade6-46af-96c8-b600b10374eb",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Kevin Walker"
       ]
     },
     {
@@ -5506,8 +6614,14 @@
           "title": "MusicBrainz: Laibach",
           "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
           "note": "Lists Dejan Knez as a member from 1980-06-01 to 2004."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Dejan Knez",
+          "url": "https://musicbrainz.org/artist/50c35596-7d04-4292-8459-82f60f484d6a",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "sre-ko-bajda",
@@ -5524,8 +6638,14 @@
           "title": "MusicBrainz: Laibach",
           "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
           "note": "Lists Srečko Bajda as a member from 1980-06-01."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Srečko Bajda",
+          "url": "https://musicbrainz.org/artist/ed14263e-d8b8-4f84-9d17-06e8a3f65b83",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "andrej-lupinc",
@@ -5542,8 +6662,14 @@
           "title": "MusicBrainz: Laibach",
           "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
           "note": "Lists Andrej Lupinc as a member from 1980-06-01."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Andrej Lupinc",
+          "url": "https://musicbrainz.org/artist/e49d4e83-4023-4b89-99d0-1cde59303aef",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "bine-zerko",
@@ -5560,8 +6686,14 @@
           "title": "MusicBrainz: Laibach",
           "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
           "note": "Lists Bine Zerko as a member from 1980-06-01."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Bine Zerko",
+          "url": "https://musicbrainz.org/artist/2152e040-46c6-4b48-b51d-970f2ae571a2",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "toma-hostnik",
@@ -5578,8 +6710,14 @@
           "title": "MusicBrainz: Laibach",
           "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
           "note": "Lists Tomaž Hostnik as a member from 1980 to 1982-12-21."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Tomaž Hostnik",
+          "url": "https://musicbrainz.org/artist/2696805e-6021-413d-9ace-033e639c7e9c",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "milan-fras",
@@ -5596,8 +6734,14 @@
           "title": "MusicBrainz: Laibach",
           "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
           "note": "Lists Milan Fras as a member from 1983."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Milan Fras",
+          "url": "https://musicbrainz.org/artist/b12eb96c-dea8-42d3-88f0-12a0899eeefc",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "janez-gabri",
@@ -5614,8 +6758,14 @@
           "title": "MusicBrainz: Laibach",
           "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
           "note": "Lists Janez Gabrič as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Janez Gabrič",
+          "url": "https://musicbrainz.org/artist/c158ee2e-a59d-446e-9fe8-6b8ae7be55b9",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "luka-jamnik",
@@ -5632,8 +6782,14 @@
           "title": "MusicBrainz: Laibach",
           "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
           "note": "Lists Luka Jamnik as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Luka Jamnik",
+          "url": "https://musicbrainz.org/artist/6991bca5-0a66-4893-aca6-bd86c9aa5020",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "ivan-novak",
@@ -5650,7 +6806,15 @@
           "title": "MusicBrainz: Laibach",
           "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
           "note": "Lists Ivan Novak as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Ivan Novak",
+          "url": "https://musicbrainz.org/artist/258fc0e2-5817-47f6-b9ec-15af9125653e",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Jani Novak"
       ]
     },
     {
@@ -5668,8 +6832,14 @@
           "title": "MusicBrainz: Laibach",
           "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
           "note": "Lists Sašo Vollmaier as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Sašo Vollmaier",
+          "url": "https://musicbrainz.org/artist/4e135c09-ade6-443d-b89c-8f0a11f39b3c",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "damjan-bizilj",
@@ -5686,7 +6856,15 @@
           "title": "MusicBrainz: Laibach",
           "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
           "note": "Lists Damjan Bizilj as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Damjan Bizilj",
+          "url": "https://musicbrainz.org/artist/edcc9731-a2b0-4ab1-965a-0c045c3614b3",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Helga Neuer"
       ]
     },
     {
@@ -5704,8 +6882,14 @@
           "title": "MusicBrainz: Laibach",
           "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
           "note": "Lists Tone Dimnik as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Tone Dimnik",
+          "url": "https://musicbrainz.org/artist/23556ab0-fb06-44fa-8cf6-1be31f638e68",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "ervin-marko-ek",
@@ -5722,8 +6906,14 @@
           "title": "MusicBrainz: Laibach",
           "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
           "note": "Lists Ervin Markošek as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Ervin Markošek",
+          "url": "https://musicbrainz.org/artist/44beed20-55a4-48f1-8ba0-733b3bac1f66",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "matej-mr-nik",
@@ -5740,8 +6930,14 @@
           "title": "MusicBrainz: Laibach",
           "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
           "note": "Lists Matej Mršnik as a member."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Matej Mršnik",
+          "url": "https://musicbrainz.org/artist/a04a19c2-1982-4731-8fdb-74c9ad8ba61e",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "dave-gibney",
@@ -5758,8 +6954,14 @@
           "title": "MusicBrainz: Fear Factory",
           "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
           "note": "Lists Dave Gibney as a member from 1989 to 1991."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Dave Gibney",
+          "url": "https://musicbrainz.org/artist/b59e865f-4e5a-48dd-83e3-37a4575b4290",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "dino-cazares",
@@ -5776,8 +6978,14 @@
           "title": "MusicBrainz: Fear Factory",
           "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
           "note": "Lists Dino Cazares as a member from 1989 to 2002."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Dino Cazares",
+          "url": "https://musicbrainz.org/artist/ebd0f3b6-48f2-4e5c-a72b-6ac34696ef35",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "raymond-herrera",
@@ -5794,8 +7002,14 @@
           "title": "MusicBrainz: Fear Factory",
           "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
           "note": "Lists Raymond Herrera as a member from 1989 to 2009."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Raymond Herrera",
+          "url": "https://musicbrainz.org/artist/bc933f46-f045-454a-b2e6-7e64811947a0",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "andy-romero",
@@ -5812,8 +7026,14 @@
           "title": "MusicBrainz: Fear Factory",
           "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
           "note": "Lists Andy Romero as a member from 1991 to 1992."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Andy Romero",
+          "url": "https://musicbrainz.org/artist/d99d495a-8aec-4180-8863-8d5e1468e1f7",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "andrew-shives",
@@ -5830,8 +7050,14 @@
           "title": "MusicBrainz: Fear Factory",
           "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
           "note": "Lists Andrew Shives as a member from 1992 to 1993."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Andrew Shives",
+          "url": "https://musicbrainz.org/artist/90553281-0b27-4ee6-975e-e05f6d650633",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "christian-olde-wolbers",
@@ -5848,7 +7074,16 @@
           "title": "MusicBrainz: Fear Factory",
           "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
           "note": "Lists Christian Olde Wolbers as a member from 1993 to 2002."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Christian Olde Wolbers",
+          "url": "https://musicbrainz.org/artist/f2d39886-29ba-4254-bc70-d9a6f8cba26e",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "C. Olde Wolbers",
+        "C.O.W."
       ]
     },
     {
@@ -5866,7 +7101,15 @@
           "title": "MusicBrainz: Fear Factory",
           "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
           "note": "Lists Byron Stroud as a member from 2003 to 2012."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Byron Stroud",
+          "url": "https://musicbrainz.org/artist/eeb2d9ef-e5d7-41da-87ce-82926b611ec0",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Sickie Moochmaster, Lorde of Greased Thunder"
       ]
     },
     {
@@ -5884,7 +7127,15 @@
           "title": "MusicBrainz: Fear Factory",
           "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
           "note": "Lists Gene Hoglan as a member from 2009 to 2012."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Gene Hoglan",
+          "url": "https://musicbrainz.org/artist/b007f65c-c831-442c-bbf4-378638b236a4",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Eugene Victor Hoglan II"
       ]
     },
     {
@@ -5902,7 +7153,16 @@
           "title": "MusicBrainz: Fear Factory",
           "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
           "note": "Lists Matt DeVries as a member from 2012."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Matt DeVries",
+          "url": "https://musicbrainz.org/artist/5e6bfa5d-e635-4ca4-ae36-758b019f25a2",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Matt V De Vries",
+        "Matthew DeVries"
       ]
     },
     {
@@ -5920,8 +7180,14 @@
           "title": "MusicBrainz: Fear Factory",
           "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
           "note": "Lists Mike Heller as a member from 2012."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Mike Heller",
+          "url": "https://musicbrainz.org/artist/552dca97-18c4-401a-81a1-f4d811a40a49",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "milo-silvestro",
@@ -5938,8 +7204,14 @@
           "title": "MusicBrainz: Fear Factory",
           "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
           "note": "Lists Milo Silvestro as a member from 2023."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Milo Silvestro",
+          "url": "https://musicbrainz.org/artist/a27c91c9-ec0e-488d-b831-dbd90cc32389",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "beate-bartel",
@@ -5956,7 +7228,15 @@
           "title": "MusicBrainz: Einstürzende Neubauten",
           "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
           "note": "Lists Beate Bartel as a member from 1980 to 1980."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Beate Bartel",
+          "url": "https://musicbrainz.org/artist/009778db-cc8b-4f58-aae5-2c34da688a98",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "B. Bartel"
       ]
     },
     {
@@ -5974,7 +7254,15 @@
           "title": "MusicBrainz: Einstürzende Neubauten",
           "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
           "note": "Lists Gudrun Gut as a member from 1980 to 1980."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Gudrun Gut",
+          "url": "https://musicbrainz.org/artist/22e67027-3c07-44d5-8501-8eed7b13286b",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Gudrun Bredemann"
       ]
     },
     {
@@ -5992,8 +7280,14 @@
           "title": "MusicBrainz: Einstürzende Neubauten",
           "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
           "note": "Lists Blixa Bargeld as a member from 1980."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Blixa Bargeld",
+          "url": "https://musicbrainz.org/artist/b6471e10-c91e-482d-8eb6-2bfe5cf737e5",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "andrew-chudy",
@@ -6003,14 +7297,30 @@
       "musicbrainz": {
         "id": "76533eaf-5df9-4f80-a21a-fbcf551dec42",
         "entity": "artist",
-        "url": "https://musicbrainz.org/artist/76533eaf-5df9-4f80-a21a-fbcf551dec42"
+        "url": "https://musicbrainz.org/artist/76533eaf-5df9-4f80-a21a-fbcf551dec42",
+        "alternateIds": [
+          "7f7b89cf-3fda-404d-8772-e0d970f8cc1d"
+        ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Einstürzende Neubauten",
           "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
           "note": "Lists Andrew Chudy as a member from 1980."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Andrew Chudy",
+          "url": "https://musicbrainz.org/artist/76533eaf-5df9-4f80-a21a-fbcf551dec42",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
+        },
+        {
+          "title": "MusicBrainz artist aliases: N.U. Unruh",
+          "url": "https://musicbrainz.org/artist/7f7b89cf-3fda-404d-8772-e0d970f8cc1d",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "N. U. Unruh"
       ]
     },
     {
@@ -6028,25 +7338,16 @@
           "title": "MusicBrainz: Einstürzende Neubauten",
           "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
           "note": "Lists Alexander Hacke as a member from 1980."
-        }
-      ]
-    },
-    {
-      "id": "n-u-unruh",
-      "label": "N.U. Unruh",
-      "type": "person",
-      "summary": "Musician documented by MusicBrainz as a member of Einstürzende Neubauten.",
-      "musicbrainz": {
-        "id": "7f7b89cf-3fda-404d-8772-e0d970f8cc1d",
-        "entity": "artist",
-        "url": "https://musicbrainz.org/artist/7f7b89cf-3fda-404d-8772-e0d970f8cc1d"
-      },
-      "provenance": [
+        },
         {
-          "title": "MusicBrainz: Einstürzende Neubauten",
-          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
-          "note": "Lists N.U. Unruh as a member from 1980."
+          "title": "MusicBrainz artist aliases: Alexander Hacke",
+          "url": "https://musicbrainz.org/artist/64710735-6c39-44e8-8d5b-ffced2a98991",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Alex Hacke",
+        "Alexander von Borsig"
       ]
     },
     {
@@ -6064,7 +7365,15 @@
           "title": "MusicBrainz: Einstürzende Neubauten",
           "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
           "note": "Lists Mark Chung as a member from 1981 to 1994."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Mark Chung",
+          "url": "https://musicbrainz.org/artist/3ae3afb8-9ee3-4230-8558-827ca1fb74da",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Marc Chung"
       ]
     },
     {
@@ -6082,8 +7391,14 @@
           "title": "MusicBrainz: Einstürzende Neubauten",
           "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
           "note": "Lists F.M. Einheit as a member from 1981 to 1995."
+        },
+        {
+          "title": "MusicBrainz artist aliases: F.M. Einheit",
+          "url": "https://musicbrainz.org/artist/63a3b285-3cec-444c-ab76-5b1e306c7011",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "roland-wolf",
@@ -6100,8 +7415,14 @@
           "title": "MusicBrainz: Einstürzende Neubauten",
           "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
           "note": "Lists Roland Wolf as a member from 1995 to 1995."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Roland Wolf",
+          "url": "https://musicbrainz.org/artist/89d87aa7-a40c-4f15-b308-533130a5ba7f",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "jochen-arbeit",
@@ -6118,8 +7439,14 @@
           "title": "MusicBrainz: Einstürzende Neubauten",
           "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
           "note": "Lists Jochen Arbeit as a member from 1996."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Jochen Arbeit",
+          "url": "https://musicbrainz.org/artist/5982653b-c55d-4c6c-93ae-18d740e02501",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "rudi-moser",
@@ -6136,7 +7463,15 @@
           "title": "MusicBrainz: Einstürzende Neubauten",
           "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
           "note": "Lists Rudi Moser as a member from 1996."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Rudi Moser",
+          "url": "https://musicbrainz.org/artist/bc6e9371-dc4a-49c5-97c2-4d1b495dc595",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Rudolf Moser"
       ]
     },
     {
@@ -6154,8 +7489,14 @@
           "title": "MusicBrainz: Einstürzende Neubauten",
           "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
           "note": "Lists Ash Wednesday as a member from 1997."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Ash Wednesday",
+          "url": "https://musicbrainz.org/artist/a7b0cbb3-3d1b-4432-8758-77b0677e4337",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "racso-agroyam",
@@ -6172,7 +7513,15 @@
           "title": "MusicBrainz: Hocico",
           "url": "https://musicbrainz.org/artist/b16fd684-831e-4128-8120-6626e76f88c6",
           "note": "Lists Racso Agroyam as a member from 1993."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Racso Agroyam",
+          "url": "https://musicbrainz.org/artist/c4d0cdff-c371-4ee1-8818-c86ad287aa64",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Oscar Omar Mayorga Garcia"
       ]
     },
     {
@@ -6190,7 +7539,15 @@
           "title": "MusicBrainz: Hocico",
           "url": "https://musicbrainz.org/artist/b16fd684-831e-4128-8120-6626e76f88c6",
           "note": "Lists Erk Aicrag as a member from 1993."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Erk Aicrag",
+          "url": "https://musicbrainz.org/artist/1ae50b34-1e5f-4c80-8c88-176d78a2cb2b",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Eric Gutierrez"
       ]
     },
     {
@@ -6208,8 +7565,14 @@
           "title": "MusicBrainz: Severed Heads",
           "url": "https://musicbrainz.org/artist/4976edcf-58c3-49b6-b6f1-2d8277e60d26",
           "note": "Lists Richard Fielding as a member from 1979 to 1982."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Richard Fielding",
+          "url": "https://musicbrainz.org/artist/8bfc65b9-f0b0-4d2e-836e-cc98602543c5",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "tom-ellard",
@@ -6226,7 +7589,15 @@
           "title": "MusicBrainz: Severed Heads",
           "url": "https://musicbrainz.org/artist/4976edcf-58c3-49b6-b6f1-2d8277e60d26",
           "note": "Lists Tom Ellard as a member from 1979."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Tom Ellard",
+          "url": "https://musicbrainz.org/artist/e551cffd-296d-4232-a95d-6ceae879162d",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Thomas Temple Ellard"
       ]
     },
     {
@@ -6244,7 +7615,16 @@
           "title": "MusicBrainz: Severed Heads",
           "url": "https://musicbrainz.org/artist/4976edcf-58c3-49b6-b6f1-2d8277e60d26",
           "note": "Lists Garry Bradbury as a member from 1981 to 1985."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Garry Bradbury",
+          "url": "https://musicbrainz.org/artist/ca57924c-3d48-4bb5-90b5-a0717e665175",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
+      ],
+      "aliases": [
+        "Bradbury",
+        "Gary Bradbury"
       ]
     },
     {
@@ -6262,8 +7642,14 @@
           "title": "MusicBrainz: Severed Heads",
           "url": "https://musicbrainz.org/artist/4976edcf-58c3-49b6-b6f1-2d8277e60d26",
           "note": "Lists Simon Knuckey as a member from 1982 to 1984."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Simon Knuckey",
+          "url": "https://musicbrainz.org/artist/50137659-39b3-4eb7-80c7-b29f65ed1c6e",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     },
     {
       "id": "paul-deering",
@@ -6280,8 +7666,14 @@
           "title": "MusicBrainz: Severed Heads",
           "url": "https://musicbrainz.org/artist/4976edcf-58c3-49b6-b6f1-2d8277e60d26",
           "note": "Lists Paul Deering as a member from 1984 to 1985."
+        },
+        {
+          "title": "MusicBrainz artist aliases: Paul Deering",
+          "url": "https://musicbrainz.org/artist/1e72415b-dc52-4484-b8b2-10e8de03748a",
+          "note": "Aliases imported from this exact MusicBrainz artist identity."
         }
-      ]
+      ],
+      "aliases": []
     }
   ],
   "edges": [
@@ -6372,7 +7764,8 @@
         "bass",
         "synthesizer"
       ],
-      "sourceStatus": "needs-citation"
+      "sourceStatus": "needs-citation",
+      "provenance": []
     },
     {
       "source": "bill-leeb",
@@ -6383,7 +7776,8 @@
         "vocals",
         "programming"
       ],
-      "sourceStatus": "needs-citation"
+      "sourceStatus": "needs-citation",
+      "provenance": []
     },
     {
       "source": "rhys-fulber",
@@ -6393,7 +7787,8 @@
         "programming",
         "production"
       ],
-      "sourceStatus": "needs-citation"
+      "sourceStatus": "needs-citation",
+      "provenance": []
     },
     {
       "source": "sascha-konietzko",
@@ -6458,7 +7853,8 @@
         "vocals",
         "guitar"
       ],
-      "sourceStatus": "needs-citation"
+      "sourceStatus": "needs-citation",
+      "provenance": []
     },
     {
       "source": "al-jourgensen",
@@ -6531,6 +7927,11 @@
           "title": "MusicBrainz: Paul Barker",
           "url": "https://musicbrainz.org/artist/5bec856f-b78b-4216-8af5-1c0c6365bcbe",
           "note": "Lists Paul Barker as a Lead Into Gold member; MusicBrainz does not provide dates."
+        },
+        {
+          "title": "MusicBrainz: Lead Into Gold",
+          "url": "https://musicbrainz.org/artist/aedd2d07-66ca-4496-8156-ac6cde7e87b4",
+          "note": "Lists Frenchie L'Amour as a member."
         }
       ]
     },
@@ -7008,7 +8409,8 @@
       "target": "stigmata",
       "type": "contains",
       "roles": [],
-      "sourceStatus": "needs-citation"
+      "sourceStatus": "needs-citation",
+      "provenance": []
     },
     {
       "source": "al-jourgensen",
@@ -7021,7 +8423,8 @@
         "producer"
       ],
       "performingAs": "Hypo Luxa",
-      "sourceStatus": "needs-citation"
+      "sourceStatus": "needs-citation",
+      "provenance": []
     },
     {
       "source": "paul-barker",
@@ -7033,7 +8436,8 @@
         "producer"
       ],
       "performingAs": "Hermes Pan",
-      "sourceStatus": "needs-citation"
+      "sourceStatus": "needs-citation",
+      "provenance": []
     },
     {
       "source": "revolting-cocks",
@@ -7734,7 +9138,7 @@
       ]
     },
     {
-      "source": "wilhelm-schroeder",
+      "source": "bill-leeb",
       "target": "skinny-puppy",
       "type": "member_of",
       "roles": [],
@@ -8832,7 +10236,7 @@
       ]
     },
     {
-      "source": "wilhelm-schroeder",
+      "source": "bill-leeb",
       "target": "cyberaktif",
       "type": "member_of",
       "roles": [],
@@ -8906,34 +10310,6 @@
           "title": "MusicBrainz: Acid Horse",
           "url": "https://musicbrainz.org/artist/ea9ea256-362b-41b7-9ad6-cc308d9909a2",
           "note": "Lists Bill Rieflin as a member from 1989 to 1989."
-        }
-      ]
-    },
-    {
-      "source": "flowering-blight",
-      "target": "lead-into-gold",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Lead Into Gold",
-          "url": "https://musicbrainz.org/artist/aedd2d07-66ca-4496-8156-ac6cde7e87b4",
-          "note": "Lists Flowering Blight as a member."
-        }
-      ]
-    },
-    {
-      "source": "frenchie-l-amour",
-      "target": "lead-into-gold",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Lead Into Gold",
-          "url": "https://musicbrainz.org/artist/aedd2d07-66ca-4496-8156-ac6cde7e87b4",
-          "note": "Lists Frenchie L'Amour as a member."
         }
       ]
     },
@@ -11048,21 +12424,6 @@
       ]
     },
     {
-      "source": "n-u-unruh",
-      "target": "einst-rzende-neubauten",
-      "type": "member_of",
-      "roles": [],
-      "validFrom": 1980,
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Einstürzende Neubauten",
-          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
-          "note": "Lists N.U. Unruh as a member from 1980."
-        }
-      ]
-    },
-    {
       "source": "mark-chung",
       "target": "einst-rzende-neubauten",
       "type": "member_of",
@@ -11265,7 +12626,7 @@
       ]
     },
     {
-      "source": "wilhelm-schroeder",
+      "source": "bill-leeb",
       "target": "front-line-assembly",
       "type": "member_of",
       "roles": [],
@@ -11279,7 +12640,7 @@
       ]
     },
     {
-      "source": "wilhelm-schroeder",
+      "source": "bill-leeb",
       "target": "noise-unit",
       "type": "member_of",
       "roles": [],
@@ -11293,7 +12654,7 @@
       ]
     },
     {
-      "source": "flowering-blight",
+      "source": "paul-barker",
       "target": "acid-horse",
       "type": "member_of",
       "roles": [],
@@ -11307,7 +12668,7 @@
       ]
     },
     {
-      "source": "wilhelm-schroeder",
+      "source": "bill-leeb",
       "target": "delerium",
       "type": "member_of",
       "roles": [],

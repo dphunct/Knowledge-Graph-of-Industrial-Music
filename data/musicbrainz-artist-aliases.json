@@ -1,0 +1,2733 @@
+{
+  "provider": "MusicBrainz with existing exact Wikidata cross-references",
+  "retrievedAt": "2026-09-24T19:25:15.408Z",
+  "pacingMs": 1100,
+  "method": "Aliases are read only from each graph person's exact MusicBrainz artist identity. Nodes are merged only when one graph label is an explicitly documented alias of another graph identity, or two existing exact MusicBrainz-to-Wikidata mappings resolve to the same Wikidata identity.",
+  "artists": [
+    {
+      "id": "al-jourgensen",
+      "label": "Al Jourgensen",
+      "musicbrainzId": "6c0dadab-266a-4601-8394-5b8e19e90def",
+      "aliases": [
+        {
+          "name": "Alain Jourgensen",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Alejandro Ramírez Jourgensen",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Alien Jourgensen",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Allen David Jourgensen",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Allen Jourgensen",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Hypo Luxa",
+          "type": "Artist name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "paul-barker",
+      "label": "Paul Barker",
+      "musicbrainzId": "5bec856f-b78b-4216-8af5-1c0c6365bcbe",
+      "aliases": [
+        {
+          "name": "Frenchie L'Amour",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Hermes Pan",
+          "type": "Artist name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Ion",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Paul Gordon Barker",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "cevin-key",
+      "label": "cEvin Key",
+      "musicbrainzId": "e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
+      "aliases": []
+    },
+    {
+      "id": "nivek-ogre",
+      "label": "Nivek Ogre",
+      "musicbrainzId": "5778f668-1a4c-482f-beb9-08b15b0f861c",
+      "aliases": [
+        {
+          "name": "Kevin Graham Ogilvie",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Kevin Graham Ogilvie",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Kevin Ogilvie",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "bill-leeb",
+      "label": "Bill Leeb",
+      "musicbrainzId": "e10b76e5-dc32-4e9f-83b9-4f717400b19f",
+      "aliases": [
+        {
+          "name": "Wilhelm Anton Leeb",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "rhys-fulber",
+      "label": "Rhys Fulber",
+      "musicbrainzId": "7ee30fce-cd3d-437d-9ff0-b2ef195bda33",
+      "aliases": [
+        {
+          "name": "Bobby Vegas",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Nowell Rhys Fulber",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "sascha-konietzko",
+      "label": "Sascha Konietzko",
+      "musicbrainzId": "8d2b70fb-a338-4702-8ce2-3211a4704d6f",
+      "aliases": [
+        {
+          "name": "Sascha K.",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Sascha Kegel Konietzko",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "richard-23",
+      "label": "Richard 23",
+      "musicbrainzId": "49197759-80b0-4f46-934c-c5d2fed17ac3",
+      "aliases": []
+    },
+    {
+      "id": "dwayne-goettel",
+      "label": "Dwayne Goettel",
+      "musicbrainzId": "528d8a44-92f0-4614-aeb4-cb3516c0f2cd",
+      "aliases": [
+        {
+          "name": "D. R. Goettel",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "D. Rudolph Goettel",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Dwayne R. Goettel",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "luc-van-acker",
+      "label": "Luc Van Acker",
+      "musicbrainzId": "be6d9ea3-adfb-47ea-9064-4302b00f9e27",
+      "aliases": [
+        {
+          "name": "Luc Maria René van Acker",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Luk van Acker",
+          "type": "Search hint",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "chris-connelly",
+      "label": "Chris Connelly",
+      "musicbrainzId": "ecb41014-1d7a-4987-a107-df49b2d8d77c",
+      "aliases": [
+        {
+          "name": "Christopher John Connelly",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Gallopin’ Scorpio Saddlebutt",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "daniel-bressanutti",
+      "label": "Daniel Bressanutti",
+      "musicbrainzId": "319cc50d-a877-49a3-8f87-8efe22f60e09",
+      "aliases": [
+        {
+          "name": "Daniel B.",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Daniel Joseph José Bressanutti",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "patrick-codenys",
+      "label": "Patrick Codenys",
+      "musicbrainzId": "70adfe31-83d6-43d9-b9f4-7ab5eff483f4",
+      "aliases": [
+        {
+          "name": "Patrick Gérard André Codenys",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "jean-luc-de-meyer",
+      "label": "Jean-Luc de Meyer",
+      "musicbrainzId": "2c444dd6-75b6-42e0-9f7e-a0a086c48ba9",
+      "aliases": [
+        {
+          "name": "Jean-Luc Denis André de Meyer",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Lederman / De Meyer",
+          "type": "Search hint",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "raymond-watts",
+      "label": "Raymond Watts",
+      "musicbrainzId": "6a0ce9fd-5cda-4b3e-9b32-e411f2c2a57f",
+      "aliases": [
+        {
+          "name": "Nains",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Nainz",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Nainz Watts",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "R.G. Watts",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Raymond George Watts",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "en-esch",
+      "label": "En Esch",
+      "musicbrainzId": "e3537eb6-fdd0-4015-a854-705222eb4731",
+      "aliases": []
+    },
+    {
+      "id": "michael-balch",
+      "label": "Michael Balch",
+      "musicbrainzId": "7e557e6e-e9b6-4041-b407-3290224465a0",
+      "aliases": [
+        {
+          "name": "Michael Bruce Balch",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "trent-reznor",
+      "label": "Trent Reznor",
+      "musicbrainzId": "bc880664-6751-4998-984d-ebdbff15d229",
+      "aliases": [
+        {
+          "name": "Michael Trent Reznor",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "stephen-george",
+      "label": "Stephen George",
+      "musicbrainzId": "754fa1fd-84d6-4f07-b70e-f39df342fe33",
+      "aliases": [
+        {
+          "name": "Steve O “Tonemaster” George",
+          "type": "Artist name",
+          "locale": "en",
+          "primary": false
+        },
+        {
+          "name": "Steven George",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "bill-rieflin",
+      "label": "Bill Rieflin",
+      "musicbrainzId": "f40bf2d1-1da5-4146-96ab-865242554a66",
+      "aliases": [
+        {
+          "name": "William Fredrick Rieflin",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "William Rieflin",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "louis-svitek",
+      "label": "Louis Svitek",
+      "musicbrainzId": "05af9acb-49ef-4c1f-9431-06a4ea3909bf",
+      "aliases": [
+        {
+          "name": "Louie Svitek",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Louis James Svitek, Jr.",
+          "type": "Legal name",
+          "locale": "en",
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "max-brody",
+      "label": "Max Brody",
+      "musicbrainzId": "9acbaf6a-9101-43ce-a749-c137dbfb1127",
+      "aliases": [
+        {
+          "name": "Matthew Woods Brody",
+          "type": "Legal name",
+          "locale": "en",
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "john-monte",
+      "label": "John Monte",
+      "musicbrainzId": "d4df74ef-312c-4302-a768-78140cf1a630",
+      "aliases": []
+    },
+    {
+      "id": "mark-baker",
+      "label": "Mark Baker",
+      "musicbrainzId": "4ad95d38-a326-4f41-953a-63e84de39ab4",
+      "aliases": []
+    },
+    {
+      "id": "tommy-victor",
+      "label": "Tommy Victor",
+      "musicbrainzId": "56edb00b-c5d5-426a-a756-993f64b6ad2e",
+      "aliases": [
+        {
+          "name": "Thomas Michael Victor",
+          "type": "Legal name",
+          "locale": "en",
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "paul-raven",
+      "label": "Paul Raven",
+      "musicbrainzId": "ec5f36d7-ebe5-461e-afd6-c2839f0f3325",
+      "aliases": [
+        {
+          "name": "Paul Vincent Raven",
+          "type": "Legal name",
+          "locale": "en",
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "sin-quirin",
+      "label": "Sin Quirin",
+      "musicbrainzId": "3b1c8626-31d0-4f1e-97be-99449a411c3c",
+      "aliases": [
+        {
+          "name": "Sinhue Quirin",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "tony-campos",
+      "label": "Tony Campos",
+      "musicbrainzId": "19183df5-e496-4fe3-b670-b299549ab317",
+      "aliases": []
+    },
+    {
+      "id": "burton-c-bell",
+      "label": "Burton C. Bell",
+      "musicbrainzId": "d0ec013f-6b1e-4f9a-b964-dccfe75f294e",
+      "aliases": [
+        {
+          "name": "Burton Christopher Bell",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "aaron-rossi",
+      "label": "Aaron Rossi",
+      "musicbrainzId": "c117e211-c0f0-4062-a86b-7fa7df4bd460",
+      "aliases": [
+        {
+          "name": "Aaron John Rossi",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "The Beast",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "cesar-soto",
+      "label": "Cesar Soto",
+      "musicbrainzId": "ceb53e53-8ff1-4328-ae74-09d3a5d7515c",
+      "aliases": []
+    },
+    {
+      "id": "derek-abrams",
+      "label": "Derek Abrams",
+      "musicbrainzId": "2a512157-d31c-4ebd-bbb4-c965ab8e58b6",
+      "aliases": [
+        {
+          "name": "Derek S. Abrams",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "john-bechdel",
+      "label": "John Bechdel",
+      "musicbrainzId": "a3198035-1a65-4a48-8b48-0dc83e0325a9",
+      "aliases": []
+    },
+    {
+      "id": "john-davis",
+      "label": "John Davis",
+      "musicbrainzId": "406189b8-6147-4ff5-b1b0-cb59b1c4f9d5",
+      "aliases": []
+    },
+    {
+      "id": "shay-jones",
+      "label": "Shay Jones",
+      "musicbrainzId": "e6ecaed1-63f1-45d2-be0d-c5122f971f1c",
+      "aliases": []
+    },
+    {
+      "id": "robert-roberts",
+      "label": "Robert Roberts",
+      "musicbrainzId": "302786f8-2c0f-41bb-9b7c-336e3844197c",
+      "aliases": []
+    },
+    {
+      "id": "martin-sorenson",
+      "label": "Martin Sorenson",
+      "musicbrainzId": "f152f783-eebe-4523-ade3-450508ef461e",
+      "aliases": []
+    },
+    {
+      "id": "tia-sprocket",
+      "label": "Tia Sprocket",
+      "musicbrainzId": "9ac3cf69-a8ea-48dd-b281-69d44d2bb6d2",
+      "aliases": [
+        {
+          "name": "Tia Palm",
+          "type": "Artist name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Tia Palmisano",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "william-tucker",
+      "label": "William Tucker",
+      "musicbrainzId": "7b505163-5792-47fa-9800-253fad24a8ac",
+      "aliases": []
+    },
+    {
+      "id": "jeff-ward",
+      "label": "Jeff Ward",
+      "musicbrainzId": "90023d8a-3907-45ec-a2aa-b8da61a6d0bd",
+      "aliases": []
+    },
+    {
+      "id": "rey-washam",
+      "label": "Rey Washam",
+      "musicbrainzId": "33b09380-db28-4c9c-9fdd-ab5c20049c61",
+      "aliases": [
+        {
+          "name": "Reynolds Washam",
+          "type": "Legal name",
+          "locale": "en",
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "mike-scaccia",
+      "label": "Mike Scaccia",
+      "musicbrainzId": "44df943b-832d-49f9-89c3-cb592dc0e9a3",
+      "aliases": [
+        {
+          "name": "Michael Ralph Scaccia",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "wilhelm-schroeder",
+      "label": "Wilhelm Schroeder",
+      "musicbrainzId": "201da624-a67d-4ba9-87c0-39136e78ccf3",
+      "aliases": [
+        {
+          "name": "Wilhelm Schroder",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "mark-walk",
+      "label": "Mark Walk",
+      "musicbrainzId": "241cfb26-6834-4387-8898-d4bdc84a30ea",
+      "aliases": []
+    },
+    {
+      "id": "justin-bennett",
+      "label": "Justin Bennett",
+      "musicbrainzId": "e23650c5-46dd-47be-b177-068311415b5e",
+      "aliases": [
+        {
+          "name": "Justin Gabriel Isaac Bennett",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "matthew-setzer",
+      "label": "Matthew Setzer",
+      "musicbrainzId": "12016484-6011-479e-82ad-00cec78a5481",
+      "aliases": []
+    },
+    {
+      "id": "dirk-bergen",
+      "label": "Dirk Bergen",
+      "musicbrainzId": "be2f9727-b880-47a5-9235-5347027b3f08",
+      "aliases": []
+    },
+    {
+      "id": "devin-townsend",
+      "label": "Devin Townsend",
+      "musicbrainzId": "93e8c41e-8e4f-4d08-bbf5-bc1a903b2423",
+      "aliases": [
+        {
+          "name": "Big Mac Daddy and a Side of Fries",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Devon Townsend",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Dr. Skinny",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Lord Stenchlor",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Ocean Machine",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "jed-simon",
+      "label": "Jed Simon",
+      "musicbrainzId": "bca263b8-ff61-4a06-a0f2-f3a163c33e25",
+      "aliases": [
+        {
+          "name": "Ace Longback",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "El Smooché, Lord of Electric Wynde",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "adrian-white",
+      "label": "Adrian White",
+      "musicbrainzId": "8ce6ef90-0e4b-4864-ae23-98b52da5c1cc",
+      "aliases": [
+        {
+          "name": "Dances With Chickens",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Underwator",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "chris-peterson",
+      "label": "Chris Peterson",
+      "musicbrainzId": "5d86aa2f-35fd-4801-b810-2fe4fb5bc6f5",
+      "aliases": [
+        {
+          "name": "Christopher Garet Peterson",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "jeremy-inkel",
+      "label": "Jeremy Inkel",
+      "musicbrainzId": "beb40247-76e3-471a-be5b-249feff5ac3b",
+      "aliases": [
+        {
+          "name": "Jeremy Michel Neville Inkel",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "jared-slingerland",
+      "label": "Jared Slingerland",
+      "musicbrainzId": "fe54b169-947c-4c0d-89ac-3623f147c51e",
+      "aliases": []
+    },
+    {
+      "id": "jason-filipchuk",
+      "label": "Jason Filipchuk",
+      "musicbrainzId": "3f2cdb0c-41a2-449c-bd7c-a2cdb242c692",
+      "aliases": [
+        {
+          "name": "The Hobbyist",
+          "type": "Artist name",
+          "locale": "en_CA",
+          "primary": true
+        }
+      ]
+    },
+    {
+      "id": "udo-sturm",
+      "label": "Udo Sturm",
+      "musicbrainzId": "9549f633-19ec-439e-b5d9-37be68efc5ae",
+      "aliases": []
+    },
+    {
+      "id": "rudolf-naomi",
+      "label": "Rudolf Naomi",
+      "musicbrainzId": "cbb01256-174d-495c-bbdd-a08baca46b89",
+      "aliases": [
+        {
+          "name": "Rudolph Naomi",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "g-nter-schulz",
+      "label": "Günter Schulz",
+      "musicbrainzId": "e49d3c7d-87eb-481a-a4ab-1acca304879c",
+      "aliases": [
+        {
+          "name": "Guenter Schulz",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Guenter Shulz",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Svetlana Ambrosius",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "mark-durante",
+      "label": "Mark Durante",
+      "musicbrainzId": "85b5bf43-4fe0-4748-bcf9-b38345e9b387",
+      "aliases": []
+    },
+    {
+      "id": "skold",
+      "label": "Skold",
+      "musicbrainzId": "66d8b7c7-8096-4096-b528-04489969e452",
+      "aliases": [
+        {
+          "name": "Thim Sköld",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Tim Skold",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Tim Sköld",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "jules-hodgson",
+      "label": "Jules Hodgson",
+      "musicbrainzId": "26aed065-8e9f-4fe8-95f7-eeb4a49500eb",
+      "aliases": [
+        {
+          "name": "Joolz Hodgson",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Jules Hodgeson",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Julian Hodgson",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "lucia-cifarelli",
+      "label": "Lucia Cifarelli",
+      "musicbrainzId": "9ad0ca72-92b1-4a12-9d8a-0ba12fd5874b",
+      "aliases": [
+        {
+          "name": "Lucia",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "andy-selway",
+      "label": "Andy Selway",
+      "musicbrainzId": "a47c092f-d0cf-4369-a730-7722cd0442e8",
+      "aliases": []
+    },
+    {
+      "id": "steve-white",
+      "label": "Steve White",
+      "musicbrainzId": "c1a08e7b-6d7d-4d7c-9bff-2502375549a8",
+      "aliases": []
+    },
+    {
+      "id": "andee-blacksugar",
+      "label": "Andee Blacksugar",
+      "musicbrainzId": "54966f8b-c2e6-4544-beb5-8efb3fa4ffd3",
+      "aliases": []
+    },
+    {
+      "id": "tidor-nieddu",
+      "label": "Tidor Nieddu",
+      "musicbrainzId": "1d056e94-70e1-4a08-9adf-fc451582c355",
+      "aliases": []
+    },
+    {
+      "id": "stevie-banch",
+      "label": "Stevie Banch",
+      "musicbrainzId": "5797aba7-6168-450e-baae-d6c6a3befc0f",
+      "aliases": []
+    },
+    {
+      "id": "josh-bradford",
+      "label": "Josh Bradford",
+      "musicbrainzId": "b1791ace-26fd-4b7c-94ff-04da7984afac",
+      "aliases": []
+    },
+    {
+      "id": "duane-denison",
+      "label": "Duane Denison",
+      "musicbrainzId": "6a22c1ff-42c8-4c53-afa8-58f4766b9096",
+      "aliases": [
+        {
+          "name": "Duane Dennison",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Duane Paul Denison",
+          "type": "Artist name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "sean-joyce",
+      "label": "Sean Joyce",
+      "musicbrainzId": "d1099784-fd8f-4204-94a8-1fa956fd7d39",
+      "aliases": []
+    },
+    {
+      "id": "phil-owen",
+      "label": "Phil Owen",
+      "musicbrainzId": "dc047664-dd07-428d-8f3a-b50db87a6bc9",
+      "aliases": [
+        {
+          "name": "Phildo Owen",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Philip C. Owen",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "clayton-worbeck",
+      "label": "Clayton Worbeck",
+      "musicbrainzId": "9c94f186-6c21-4cd0-bf1a-a2a044a6b043",
+      "aliases": []
+    },
+    {
+      "id": "j3-seuqcaj",
+      "label": "J3 sEUQCAJ",
+      "musicbrainzId": "fd5f0dd3-5a83-428f-8f02-68a19322983a",
+      "aliases": []
+    },
+    {
+      "id": "s3-evets",
+      "label": "S3 eVETS",
+      "musicbrainzId": "4a836c98-4918-4f96-8b2b-9fb29a568d84",
+      "aliases": []
+    },
+    {
+      "id": "don-harrison",
+      "label": "Don Harrison",
+      "musicbrainzId": "49266a79-78c5-4ceb-8671-06a697478d12",
+      "aliases": []
+    },
+    {
+      "id": "alan-nelson",
+      "label": "Alan Nelson",
+      "musicbrainzId": "1ab87aa5-d2cc-43f8-ab1a-7580423230d9",
+      "aliases": [
+        {
+          "name": "Al Nelson",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "dave-ogilvie",
+      "label": "Dave Ogilvie",
+      "musicbrainzId": "9007d5ec-8abb-496d-9f49-8c89b9ba1381",
+      "aliases": [
+        {
+          "name": "Dave \"Rave\" Ogilvie",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "David Denton Ogilvie",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "David Ogilvie",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "ryan-moore",
+      "label": "Ryan Moore",
+      "musicbrainzId": "55d72bde-0387-42f1-b829-738ff47da699",
+      "aliases": []
+    },
+    {
+      "id": "mark-spybey",
+      "label": "Mark Spybey",
+      "musicbrainzId": "a2edc27d-1a43-48e0-a61d-7563641c3a5b",
+      "aliases": []
+    },
+    {
+      "id": "anthony-valcic",
+      "label": "Anthony Valcic",
+      "musicbrainzId": "726995e9-1c54-4bcc-838c-3cbeb55ce730",
+      "aliases": [
+        {
+          "name": "A. Valcic",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Anthony Valvic",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Tone Valcic",
+          "type": "Artist name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "phil-western",
+      "label": "Phil Western",
+      "musicbrainzId": "291767b4-b137-452f-8547-b578cd029fa4",
+      "aliases": [
+        {
+          "name": "Phillip Charles Western",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Phillip Western",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "jello-biafra",
+      "label": "Jello Biafra",
+      "musicbrainzId": "2280ca0e-6968-4349-8c36-cb0cbd6ee95f",
+      "aliases": []
+    },
+    {
+      "id": "marc-verhaeghen",
+      "label": "Marc Verhaeghen",
+      "musicbrainzId": "e6d22027-273b-40eb-891f-5e46c59fce0a",
+      "aliases": [
+        {
+          "name": "Marc Louisa John Verhaeghen",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "daniel-myer",
+      "label": "Daniel Myer",
+      "musicbrainzId": "c72846d9-066f-495a-9ca3-8ca7256ac2b6",
+      "aliases": [
+        {
+          "name": "Daniel Meier",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Daniel Meir",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "richard-h-kirk",
+      "label": "Richard H. Kirk",
+      "musicbrainzId": "39fe04bf-ba1a-481d-9836-b96beb549033",
+      "aliases": [
+        {
+          "name": "Harold Sandoz",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Richard Harold Kirk",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Richard Kirk",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "stephen-mallinder",
+      "label": "Stephen Mallinder",
+      "musicbrainzId": "adad4d39-c1e6-4533-b4dc-76e6ac328299",
+      "aliases": [
+        {
+          "name": "Stephen William Mallinder",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Tennessee King",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "flowering-blight",
+      "label": "Flowering Blight",
+      "musicbrainzId": "edae6e50-ecce-4f15-a15c-37cff05d4a54",
+      "aliases": []
+    },
+    {
+      "id": "chris-vrenna",
+      "label": "Chris Vrenna",
+      "musicbrainzId": "0923598e-2b97-4527-b984-5feed94c168d",
+      "aliases": []
+    },
+    {
+      "id": "ron-musarra",
+      "label": "Ron Musarra",
+      "musicbrainzId": "031e4b1f-460d-487d-ab01-9bae0992d4bc",
+      "aliases": []
+    },
+    {
+      "id": "nick-rushe",
+      "label": "Nick Rushe",
+      "musicbrainzId": "4d4e2261-02d2-4796-83bf-5bbadcbba629",
+      "aliases": []
+    },
+    {
+      "id": "gary-talpas",
+      "label": "Gary Talpas",
+      "musicbrainzId": "2cd8c19a-d942-456e-86de-72d581662ff9",
+      "aliases": []
+    },
+    {
+      "id": "richard-patrick",
+      "label": "Richard Patrick",
+      "musicbrainzId": "5bcda370-1cd4-40ce-89a5-6ec6a0a7fc79",
+      "aliases": [
+        {
+          "name": "Richard Michael Patrick",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "david-haymes",
+      "label": "David Haymes",
+      "musicbrainzId": "2014c417-f5ca-4f7e-b616-ba835608b5b6",
+      "aliases": []
+    },
+    {
+      "id": "lee-mars",
+      "label": "Lee Mars",
+      "musicbrainzId": "40adef79-bcdd-4bd3-a2ee-1e2d371cd6bc",
+      "aliases": []
+    },
+    {
+      "id": "martin-atkins",
+      "label": "Martin Atkins",
+      "musicbrainzId": "4fdcc071-4125-433c-9b57-de2084d8d48f",
+      "aliases": [
+        {
+          "name": "Martin Clive Atkins",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "The Girl Brothers",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "james-woolley",
+      "label": "James Woolley",
+      "musicbrainzId": "1f4ffb9e-2425-40fb-b054-68e80e2ef83d",
+      "aliases": [
+        {
+          "name": "James Wooley",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "danny-lohner",
+      "label": "Danny Lohner",
+      "musicbrainzId": "136b2664-686f-4ae4-acf9-6f34446636d4",
+      "aliases": [
+        {
+          "name": "Daniel Patrick Lohner",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "robin-finck",
+      "label": "Robin Finck",
+      "musicbrainzId": "30343313-1e24-4758-950f-4a96309d7893",
+      "aliases": []
+    },
+    {
+      "id": "charlie-clouser",
+      "label": "Charlie Clouser",
+      "musicbrainzId": "2947dcd0-e65f-4293-af4b-3fe309e0dea0",
+      "aliases": [
+        {
+          "name": "Charles Alexander Clouser",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "kevin-mcmahon",
+      "label": "Kevin McMahon",
+      "musicbrainzId": "28128435-f8c0-401c-a60d-ab3536cd573a",
+      "aliases": []
+    },
+    {
+      "id": "keith-hillebrandt",
+      "label": "Keith Hillebrandt",
+      "musicbrainzId": "ddd579af-9ca1-41ff-96a4-6e55212923c0",
+      "aliases": []
+    },
+    {
+      "id": "jerome-dillon",
+      "label": "Jerome Dillon",
+      "musicbrainzId": "e45b9930-0363-4a20-86f4-2ff05544d0a9",
+      "aliases": [
+        {
+          "name": "Lynn Jerome Dillon",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "atticus-ross",
+      "label": "Atticus Ross",
+      "musicbrainzId": "1fefa8b3-806b-4ab9-a066-66574b22aa16",
+      "aliases": [
+        {
+          "name": "Aticcus Ross",
+          "type": "Search hint",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Atticcus Ross",
+          "type": "Search hint",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Atticus Matthew Cowper Ross",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Atticus Matthew Ross",
+          "type": "Search hint",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Atticus Ros",
+          "type": "Search hint",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Atticuss Ros",
+          "type": "Search hint",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Oni Sakti",
+          "type": "Search hint",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Ross",
+          "type": "Search hint",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "alex-carapetis",
+      "label": "Alex Carapetis",
+      "musicbrainzId": "d735f972-f612-49e6-8815-f32994dad1af",
+      "aliases": []
+    },
+    {
+      "id": "aaron-north",
+      "label": "Aaron North",
+      "musicbrainzId": "2fd475b9-4a31-4b8c-8368-7b71118f2d71",
+      "aliases": []
+    },
+    {
+      "id": "jeordie-white",
+      "label": "Jeordie White",
+      "musicbrainzId": "ab4625d4-9947-481c-af95-5955b0b13023",
+      "aliases": [
+        {
+          "name": "Jeordie Osbourne White",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Twiggy Ramirez",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "alessandro-cortini",
+      "label": "Alessandro Cortini",
+      "musicbrainzId": "7b88250d-891d-4186-9b16-b94c930be1b2",
+      "aliases": []
+    },
+    {
+      "id": "josh-freese",
+      "label": "Josh Freese",
+      "musicbrainzId": "1ba97964-8d70-4b33-a361-d1a4ed222672",
+      "aliases": []
+    },
+    {
+      "id": "justin-meldal-johnsen",
+      "label": "Justin Meldal‐Johnsen",
+      "musicbrainzId": "673f2360-45c1-43d3-b0d2-cf6d798b2fdd",
+      "aliases": []
+    },
+    {
+      "id": "ilan-rubin",
+      "label": "Ilan Rubin",
+      "musicbrainzId": "6b76ebd2-c44e-4059-b5ff-2854ccef92c1",
+      "aliases": [
+        {
+          "name": "Ilan Samuel Rubin",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "adrian-belew",
+      "label": "Adrian Belew",
+      "musicbrainzId": "73c3f499-60e2-44e1-81dd-7fe2191461fa",
+      "aliases": [
+        {
+          "name": "Andrian Belew",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Robert Steven Belew",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "エイドリアン・ブリュー",
+          "type": "Artist name",
+          "locale": "ja",
+          "primary": true
+        }
+      ]
+    },
+    {
+      "id": "joshua-eustis",
+      "label": "Joshua Eustis",
+      "musicbrainzId": "3b5ed43f-9dfa-494b-a8f1-b152b6e75512",
+      "aliases": [
+        {
+          "name": "Joshua Leeds Eustis",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "lisa-fischer",
+      "label": "Lisa Fischer",
+      "musicbrainzId": "f887110a-ddd9-4a4e-b9ea-e567523ef6e2",
+      "aliases": [
+        {
+          "name": "Lisa Fisher",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "sharlotte-gibson",
+      "label": "Sharlotte Gibson",
+      "musicbrainzId": "844bdcef-7a35-41a2-ae27-c30ef94e7c03",
+      "aliases": []
+    },
+    {
+      "id": "pino-palladino",
+      "label": "Pino Palladino",
+      "musicbrainzId": "0dfd6aab-9056-4764-89b0-80bee7c9f998",
+      "aliases": [
+        {
+          "name": "Giuseppe Henry Palladino",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Pino",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Pino Balladino",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Pino Paladino",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Pino Palidino",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "stu-brooks",
+      "label": "Stu Brooks",
+      "musicbrainzId": "2d8e6fbf-d30d-47e2-89f9-76eba6b1860e",
+      "aliases": [
+        {
+          "name": "Bassie",
+          "type": "Artist name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Stewart Leslie Brooks",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Stu “Bassie” Brooks",
+          "type": "Artist name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "vince-clarke",
+      "label": "Vince Clarke",
+      "musicbrainzId": "6ef12fc1-40f4-41ea-ac52-f487840255bd",
+      "aliases": [
+        {
+          "name": "Vincent Clarke",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Vincent John Martin",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Vincent John Martin Clarke",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "andrew-fletcher",
+      "label": "Andrew Fletcher",
+      "musicbrainzId": "0042aa4d-a972-4a2a-b7cf-8044d09bbc67",
+      "aliases": [
+        {
+          "name": "Andrew John Fletcher",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Andrew John Leonard Fletcher",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Andy Fletcher",
+          "type": null,
+          "locale": "en",
+          "primary": false
+        },
+        {
+          "name": "Fletch",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "dave-gahan",
+      "label": "Dave Gahan",
+      "musicbrainzId": "d547b148-cf1f-421b-9464-ce7411ba44b8",
+      "aliases": [
+        {
+          "name": "Dave Grahan",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "David Gahan",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Gahan",
+          "type": null,
+          "locale": "en",
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "martin-l-gore",
+      "label": "Martin L. Gore",
+      "musicbrainzId": "e08ac443-f1d2-4666-abd1-fa5859592981",
+      "aliases": [
+        {
+          "name": "M. Gore",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "ML Gore",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Martin Gore",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Martin Lee Gore",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "alan-wilder",
+      "label": "Alan Wilder",
+      "musicbrainzId": "9785d4c6-0922-408b-9ca7-bf46c0548f71",
+      "aliases": [
+        {
+          "name": "Alan Charles Wilder",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "olivia-newton-bundy",
+      "label": "Olivia Newton Bundy",
+      "musicbrainzId": "91cf97ed-350e-48e4-a0c4-d6aa69dcb439",
+      "aliases": []
+    },
+    {
+      "id": "zsa-zsa-speck",
+      "label": "Zsa Zsa Speck",
+      "musicbrainzId": "d0c854d8-b878-4633-9422-badcdf452d04",
+      "aliases": [
+        {
+          "name": "Perry Pandrea",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "daisy-berkowitz",
+      "label": "Daisy Berkowitz",
+      "musicbrainzId": "e9a9acf3-673e-441a-90a6-8d05e8e1e892",
+      "aliases": [
+        {
+          "name": "SMP",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Scott Mitchell",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Scott Mitchell Putesky",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Scott Putesky",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "marilyn-manson-80cadd99",
+      "label": "Marilyn Manson",
+      "musicbrainzId": "80cadd99-f560-41e3-babd-16292bbd248a",
+      "aliases": [
+        {
+          "name": "Brian Hugh Warner",
+          "type": "Legal name",
+          "locale": "en",
+          "primary": false
+        },
+        {
+          "name": "Brian Warner",
+          "type": null,
+          "locale": "en",
+          "primary": false
+        },
+        {
+          "name": "Mr. Manson",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "gidget-gein",
+      "label": "Gidget Gein",
+      "musicbrainzId": "5057eba4-da15-45df-9948-8b8899c3b3ee",
+      "aliases": [
+        {
+          "name": "Brad Stewart",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Bradley Mark Stewart",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "madonna-wayne-gacy",
+      "label": "Madonna Wayne Gacy",
+      "musicbrainzId": "60c083b5-e3c9-4410-9f9a-0b5f4b4d5c2c",
+      "aliases": [
+        {
+          "name": "Pogo",
+          "type": "Artist name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Stephen Bier, Jr.",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Stephen Gregory Bier, Jr.",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "sara-lee-lucas",
+      "label": "Sara Lee Lucas",
+      "musicbrainzId": "47284622-a77f-48df-bb1c-3320c8cb6f33",
+      "aliases": [
+        {
+          "name": "Fred \"Freddie\" Streithorst, Jr.",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Frederick Streithorst, Jr.",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "ginger-fish",
+      "label": "Ginger Fish",
+      "musicbrainzId": "8bb2d3b9-efce-49cc-b26f-3f1cb29d2eb0",
+      "aliases": [
+        {
+          "name": "Kenneth Robert Wilson",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "zim-zum",
+      "label": "Zim Zum",
+      "musicbrainzId": "54869a23-d2b2-476f-9fc8-aed594b8eed5",
+      "aliases": [
+        {
+          "name": "Timothy Linton",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Timothy Michael Linton",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Timothy Michael Linton",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "john-5",
+      "label": "John 5",
+      "musicbrainzId": "66ac10d4-37cc-4b84-91dd-4863e3dc9a32",
+      "aliases": [
+        {
+          "name": "John Five",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "John Lowery",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "John William Lowery",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "mark-chaussee",
+      "label": "Mark Chaussee",
+      "musicbrainzId": "34795fb6-83c2-4a3a-9c76-be75de22c761",
+      "aliases": []
+    },
+    {
+      "id": "rob-holliday",
+      "label": "Rob Holliday",
+      "musicbrainzId": "6eb510ad-dc0e-4b12-b501-1a4a9b70867c",
+      "aliases": []
+    },
+    {
+      "id": "wes-borland",
+      "label": "Wes Borland",
+      "musicbrainzId": "6ed22d35-c6fd-4846-8108-1f71d1ee0f82",
+      "aliases": [
+        {
+          "name": "Wesley Louden Borland",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "andy-gerold",
+      "label": "Andy Gerold",
+      "musicbrainzId": "ebc1e655-c5b1-47cd-abab-0075ff580092",
+      "aliases": []
+    },
+    {
+      "id": "fred-sablan",
+      "label": "Fred Sablan",
+      "musicbrainzId": "338d8fd9-d595-410d-8762-4e5286da3cbe",
+      "aliases": []
+    },
+    {
+      "id": "gil-sharone",
+      "label": "Gil Sharone",
+      "musicbrainzId": "71799f19-2e9e-4562-a6af-924ae33e726e",
+      "aliases": []
+    },
+    {
+      "id": "tyler-bates",
+      "label": "Tyler Bates",
+      "musicbrainzId": "03cfec4a-9885-444c-9e74-5fbab5861106",
+      "aliases": [
+        {
+          "name": "Bates",
+          "type": "Search hint",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Lucas Bates",
+          "type": "Search hint",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Tayler Bates",
+          "type": "Search hint",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Tiler Bates",
+          "type": "Search hint",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Tyler Bate",
+          "type": "Search hint",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Tyler Batess",
+          "type": "Search hint",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Tyler Battes",
+          "type": "Search hint",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Tyler Betas",
+          "type": "Search hint",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Tyler Lee Bates",
+          "type": "Search hint",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Tyler Lucas",
+          "type": "Search hint",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Tyler Lucas Bates",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Tylor Bates",
+          "type": "Search hint",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "juan-alderete",
+      "label": "Juan Alderete",
+      "musicbrainzId": "9b50efa7-a1b4-4136-88d6-513163546848",
+      "aliases": [
+        {
+          "name": "John Alderete",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "John Peter Alderete",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Juan Alderete de la Pena",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "brandon-pertzborn",
+      "label": "Brandon Pertzborn",
+      "musicbrainzId": "31713871-0bfb-4a7c-b82b-2657670dd19d",
+      "aliases": []
+    },
+    {
+      "id": "reba-meyers",
+      "label": "Reba Meyers",
+      "musicbrainzId": "e30333ae-4220-4466-a50e-056e888ffe0e",
+      "aliases": [
+        {
+          "name": "Reba Lilith Meyers",
+          "type": "Legal name",
+          "locale": "en",
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "piggy-d",
+      "label": "Piggy D.",
+      "musicbrainzId": "92a0f3b8-65a0-4205-8869-7c2af67aa974",
+      "aliases": [
+        {
+          "name": "Matt Montgomery",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "nick-annis",
+      "label": "Nick Annis",
+      "musicbrainzId": "6976af55-fc14-470f-a4d8-11697b32c1d1",
+      "aliases": []
+    },
+    {
+      "id": "paul-wiley",
+      "label": "Paul Wiley",
+      "musicbrainzId": "33088fea-8359-4e82-b099-6d051dcc9224",
+      "aliases": []
+    },
+    {
+      "id": "rudy-ratzinger",
+      "label": "Rudy Ratzinger",
+      "musicbrainzId": "3d1c0b65-8650-4db6-a1c2-2da7ef5744bf",
+      "aliases": [
+        {
+          "name": "Rudolf Ratzinger",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "richard-z-kruspe",
+      "label": "Richard Z. Kruspe",
+      "musicbrainzId": "2c449bbd-b19e-456b-af78-f2e592ff2245",
+      "aliases": [
+        {
+          "name": "Richard Kruspe",
+          "type": null,
+          "locale": "en",
+          "primary": false
+        },
+        {
+          "name": "Richard Kruspe-Bernstein",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Richard Z. Kruspe-Bernstein",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Richard Zven Kruspe",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Scholle",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "paul-landers",
+      "label": "Paul Landers",
+      "musicbrainzId": "438cfe24-e99c-4b74-94ff-7289ede0bb46",
+      "aliases": [
+        {
+          "name": "Heiko Paul Hiersche",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Heiko Paul Landers",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Paul H. Landers",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "till-lindemann",
+      "label": "Till Lindemann",
+      "musicbrainzId": "f71f8e0d-c109-4a50-9826-2559981d915e",
+      "aliases": []
+    },
+    {
+      "id": "christian-lorenz",
+      "label": "Christian Lorenz",
+      "musicbrainzId": "11f64d5e-77a6-48f7-ac1f-6d17b3ac2ba9",
+      "aliases": [
+        {
+          "name": "Christian \"Flake\" Lorenz",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Doktor Christian Lorenz",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Flake",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Flake Lorenz",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "oliver-riedel",
+      "label": "Oliver Riedel",
+      "musicbrainzId": "730e20a5-66d3-4052-9143-a3ea7b56f568",
+      "aliases": [
+        {
+          "name": "Orgien-Olli",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "christoph-schneider",
+      "label": "Christoph Schneider",
+      "musicbrainzId": "bb9fe2b7-87fa-43e6-95ca-bc4592d8d5bc",
+      "aliases": [
+        {
+          "name": "Christoph Doom Schneider",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "mick-hollows",
+      "label": "Mick Hollows",
+      "musicbrainzId": "55638639-ef78-4f4e-a96b-ec6e68f5472e",
+      "aliases": []
+    },
+    {
+      "id": "scut",
+      "label": "Scut",
+      "musicbrainzId": "0f281666-1cdf-491c-9379-ca47bed40a80",
+      "aliases": []
+    },
+    {
+      "id": "matthias-weigand",
+      "label": "Matthias Weigand",
+      "musicbrainzId": "40b77382-5e24-4cd8-bc43-c0bdcf8bbc83",
+      "aliases": []
+    },
+    {
+      "id": "youth",
+      "label": "Youth",
+      "musicbrainzId": "0a1811e9-4251-4669-b5ab-0534c145806f",
+      "aliases": [
+        {
+          "name": "Elastic Line Soul Machine",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Liquid High",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Stargazer",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Yoof",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Youth Meets Jah Wobble",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "paul-ferguson",
+      "label": "Paul Ferguson",
+      "musicbrainzId": "beffec12-3c55-4a31-a666-2726c1f173c1",
+      "aliases": []
+    },
+    {
+      "id": "jaz-coleman",
+      "label": "Jaz Coleman",
+      "musicbrainzId": "282de6ac-ba23-41f3-9fef-67c531b56167",
+      "aliases": [
+        {
+          "name": "Jeremy Coleman",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "reza-udhin",
+      "label": "Reza Udhin",
+      "musicbrainzId": "24a3a217-7405-4fed-9d76-6f7d708b6dcf",
+      "aliases": []
+    },
+    {
+      "id": "geordie-walker",
+      "label": "Geordie Walker",
+      "musicbrainzId": "f8cec1ac-ade6-46af-96c8-b600b10374eb",
+      "aliases": [
+        {
+          "name": "Kevin Walker",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "dejan-knez",
+      "label": "Dejan Knez",
+      "musicbrainzId": "50c35596-7d04-4292-8459-82f60f484d6a",
+      "aliases": []
+    },
+    {
+      "id": "sre-ko-bajda",
+      "label": "Srečko Bajda",
+      "musicbrainzId": "ed14263e-d8b8-4f84-9d17-06e8a3f65b83",
+      "aliases": []
+    },
+    {
+      "id": "andrej-lupinc",
+      "label": "Andrej Lupinc",
+      "musicbrainzId": "e49d4e83-4023-4b89-99d0-1cde59303aef",
+      "aliases": []
+    },
+    {
+      "id": "bine-zerko",
+      "label": "Bine Zerko",
+      "musicbrainzId": "2152e040-46c6-4b48-b51d-970f2ae571a2",
+      "aliases": []
+    },
+    {
+      "id": "toma-hostnik",
+      "label": "Tomaž Hostnik",
+      "musicbrainzId": "2696805e-6021-413d-9ace-033e639c7e9c",
+      "aliases": []
+    },
+    {
+      "id": "milan-fras",
+      "label": "Milan Fras",
+      "musicbrainzId": "b12eb96c-dea8-42d3-88f0-12a0899eeefc",
+      "aliases": []
+    },
+    {
+      "id": "janez-gabri",
+      "label": "Janez Gabrič",
+      "musicbrainzId": "c158ee2e-a59d-446e-9fe8-6b8ae7be55b9",
+      "aliases": []
+    },
+    {
+      "id": "luka-jamnik",
+      "label": "Luka Jamnik",
+      "musicbrainzId": "6991bca5-0a66-4893-aca6-bd86c9aa5020",
+      "aliases": []
+    },
+    {
+      "id": "ivan-novak",
+      "label": "Ivan Novak",
+      "musicbrainzId": "258fc0e2-5817-47f6-b9ec-15af9125653e",
+      "aliases": [
+        {
+          "name": "Jani Novak",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "sa-o-vollmaier",
+      "label": "Sašo Vollmaier",
+      "musicbrainzId": "4e135c09-ade6-443d-b89c-8f0a11f39b3c",
+      "aliases": []
+    },
+    {
+      "id": "damjan-bizilj",
+      "label": "Damjan Bizilj",
+      "musicbrainzId": "edcc9731-a2b0-4ab1-965a-0c045c3614b3",
+      "aliases": [
+        {
+          "name": "Helga Neuer",
+          "type": "Artist name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "tone-dimnik",
+      "label": "Tone Dimnik",
+      "musicbrainzId": "23556ab0-fb06-44fa-8cf6-1be31f638e68",
+      "aliases": []
+    },
+    {
+      "id": "ervin-marko-ek",
+      "label": "Ervin Markošek",
+      "musicbrainzId": "44beed20-55a4-48f1-8ba0-733b3bac1f66",
+      "aliases": []
+    },
+    {
+      "id": "matej-mr-nik",
+      "label": "Matej Mršnik",
+      "musicbrainzId": "a04a19c2-1982-4731-8fdb-74c9ad8ba61e",
+      "aliases": []
+    },
+    {
+      "id": "dave-gibney",
+      "label": "Dave Gibney",
+      "musicbrainzId": "b59e865f-4e5a-48dd-83e3-37a4575b4290",
+      "aliases": []
+    },
+    {
+      "id": "dino-cazares",
+      "label": "Dino Cazares",
+      "musicbrainzId": "ebd0f3b6-48f2-4e5c-a72b-6ac34696ef35",
+      "aliases": []
+    },
+    {
+      "id": "raymond-herrera",
+      "label": "Raymond Herrera",
+      "musicbrainzId": "bc933f46-f045-454a-b2e6-7e64811947a0",
+      "aliases": []
+    },
+    {
+      "id": "andy-romero",
+      "label": "Andy Romero",
+      "musicbrainzId": "d99d495a-8aec-4180-8863-8d5e1468e1f7",
+      "aliases": []
+    },
+    {
+      "id": "andrew-shives",
+      "label": "Andrew Shives",
+      "musicbrainzId": "90553281-0b27-4ee6-975e-e05f6d650633",
+      "aliases": []
+    },
+    {
+      "id": "christian-olde-wolbers",
+      "label": "Christian Olde Wolbers",
+      "musicbrainzId": "f2d39886-29ba-4254-bc70-d9a6f8cba26e",
+      "aliases": [
+        {
+          "name": "C. Olde Wolbers",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "C.O.W.",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "byron-stroud",
+      "label": "Byron Stroud",
+      "musicbrainzId": "eeb2d9ef-e5d7-41da-87ce-82926b611ec0",
+      "aliases": [
+        {
+          "name": "Sickie Moochmaster, Lorde of Greased Thunder",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "gene-hoglan",
+      "label": "Gene Hoglan",
+      "musicbrainzId": "b007f65c-c831-442c-bbf4-378638b236a4",
+      "aliases": [
+        {
+          "name": "Eugene Victor Hoglan II",
+          "type": "Legal name",
+          "locale": "en",
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "matt-devries",
+      "label": "Matt DeVries",
+      "musicbrainzId": "5e6bfa5d-e635-4ca4-ae36-758b019f25a2",
+      "aliases": [
+        {
+          "name": "Matt V De Vries",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Matthew DeVries",
+          "type": null,
+          "locale": "en",
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "mike-heller",
+      "label": "Mike Heller",
+      "musicbrainzId": "552dca97-18c4-401a-81a1-f4d811a40a49",
+      "aliases": []
+    },
+    {
+      "id": "milo-silvestro",
+      "label": "Milo Silvestro",
+      "musicbrainzId": "a27c91c9-ec0e-488d-b831-dbd90cc32389",
+      "aliases": []
+    },
+    {
+      "id": "beate-bartel",
+      "label": "Beate Bartel",
+      "musicbrainzId": "009778db-cc8b-4f58-aae5-2c34da688a98",
+      "aliases": [
+        {
+          "name": "B. Bartel",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "gudrun-gut",
+      "label": "Gudrun Gut",
+      "musicbrainzId": "22e67027-3c07-44d5-8501-8eed7b13286b",
+      "aliases": [
+        {
+          "name": "Gudrun Bredemann",
+          "type": "Legal name",
+          "locale": "en",
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "blixa-bargeld",
+      "label": "Blixa Bargeld",
+      "musicbrainzId": "b6471e10-c91e-482d-8eb6-2bfe5cf737e5",
+      "aliases": []
+    },
+    {
+      "id": "andrew-chudy",
+      "label": "Andrew Chudy",
+      "musicbrainzId": "76533eaf-5df9-4f80-a21a-fbcf551dec42",
+      "aliases": [
+        {
+          "name": "N. U. Unruh",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "alexander-hacke",
+      "label": "Alexander Hacke",
+      "musicbrainzId": "64710735-6c39-44e8-8d5b-ffced2a98991",
+      "aliases": [
+        {
+          "name": "Alex Hacke",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Alexander von Borsig",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "mark-chung",
+      "label": "Mark Chung",
+      "musicbrainzId": "3ae3afb8-9ee3-4230-8558-827ca1fb74da",
+      "aliases": [
+        {
+          "name": "Marc Chung",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "f-m-einheit",
+      "label": "F.M. Einheit",
+      "musicbrainzId": "63a3b285-3cec-444c-ab76-5b1e306c7011",
+      "aliases": []
+    },
+    {
+      "id": "roland-wolf",
+      "label": "Roland Wolf",
+      "musicbrainzId": "89d87aa7-a40c-4f15-b308-533130a5ba7f",
+      "aliases": []
+    },
+    {
+      "id": "jochen-arbeit",
+      "label": "Jochen Arbeit",
+      "musicbrainzId": "5982653b-c55d-4c6c-93ae-18d740e02501",
+      "aliases": []
+    },
+    {
+      "id": "rudi-moser",
+      "label": "Rudi Moser",
+      "musicbrainzId": "bc6e9371-dc4a-49c5-97c2-4d1b495dc595",
+      "aliases": [
+        {
+          "name": "Rudolf Moser",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "ash-wednesday",
+      "label": "Ash Wednesday",
+      "musicbrainzId": "a7b0cbb3-3d1b-4432-8758-77b0677e4337",
+      "aliases": []
+    },
+    {
+      "id": "racso-agroyam",
+      "label": "Racso Agroyam",
+      "musicbrainzId": "c4d0cdff-c371-4ee1-8818-c86ad287aa64",
+      "aliases": [
+        {
+          "name": "Oscar Omar Mayorga Garcia",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "erk-aicrag",
+      "label": "Erk Aicrag",
+      "musicbrainzId": "1ae50b34-1e5f-4c80-8c88-176d78a2cb2b",
+      "aliases": [
+        {
+          "name": "Eric Gutierrez",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "richard-fielding",
+      "label": "Richard Fielding",
+      "musicbrainzId": "8bfc65b9-f0b0-4d2e-836e-cc98602543c5",
+      "aliases": []
+    },
+    {
+      "id": "tom-ellard",
+      "label": "Tom Ellard",
+      "musicbrainzId": "e551cffd-296d-4232-a95d-6ceae879162d",
+      "aliases": [
+        {
+          "name": "Thomas Temple Ellard",
+          "type": "Legal name",
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "garry-bradbury",
+      "label": "Garry Bradbury",
+      "musicbrainzId": "ca57924c-3d48-4bb5-90b5-a0717e665175",
+      "aliases": [
+        {
+          "name": "Bradbury",
+          "type": null,
+          "locale": null,
+          "primary": false
+        },
+        {
+          "name": "Gary Bradbury",
+          "type": null,
+          "locale": null,
+          "primary": false
+        }
+      ]
+    },
+    {
+      "id": "simon-knuckey",
+      "label": "Simon Knuckey",
+      "musicbrainzId": "50137659-39b3-4eb7-80c7-b29f65ed1c6e",
+      "aliases": []
+    },
+    {
+      "id": "paul-deering",
+      "label": "Paul Deering",
+      "musicbrainzId": "1e72415b-dc52-4484-b8b2-10e8de03748a",
+      "aliases": []
+    }
+  ],
+  "consolidations": [
+    {
+      "survivor": {
+        "id": "paul-barker",
+        "label": "Paul Barker",
+        "degree": 9
+      },
+      "removed": {
+        "id": "flowering-blight",
+        "label": "Flowering Blight",
+        "degreeBeforeMerge": 2,
+        "musicbrainzId": "edae6e50-ecce-4f15-a15c-37cff05d4a54"
+      },
+      "documentedAlias": null,
+      "aliasType": null,
+      "evidence": "Shared exact Wikidata identity Q4590538",
+      "selectionReason": "more recorded relationships"
+    },
+    {
+      "survivor": {
+        "id": "bill-leeb",
+        "label": "Bill Leeb",
+        "degree": 11
+      },
+      "removed": {
+        "id": "wilhelm-schroeder",
+        "label": "Wilhelm Schroeder",
+        "degreeBeforeMerge": 5,
+        "musicbrainzId": "201da624-a67d-4ba9-87c0-39136e78ccf3"
+      },
+      "documentedAlias": null,
+      "aliasType": null,
+      "evidence": "Shared exact Wikidata identity Q4909880",
+      "selectionReason": "more recorded relationships"
+    }
+  ]
+}

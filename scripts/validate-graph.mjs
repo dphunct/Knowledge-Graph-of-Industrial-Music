@@ -4,6 +4,7 @@ const graph = JSON.parse(await readFile(new URL("../data/industrial-graph.json",
 const ids = new Set();
 for (const node of graph.nodes) {
   if (!node.id || !node.label || !node.type) throw new Error(`Invalid node: ${JSON.stringify(node)}`);
+  if (node.musicbrainz?.alternateIds && (!Array.isArray(node.musicbrainz.alternateIds) || node.musicbrainz.alternateIds.some((id) => typeof id !== "string"))) throw new Error(`Invalid alternate MusicBrainz identifiers: ${node.id}`);
   if (node.validFrom && (!Number.isInteger(node.validFrom) || node.validFrom < 1900)) throw new Error(`Invalid temporal node data: ${node.id}`);
   if (ids.has(node.id)) throw new Error(`Duplicate node id: ${node.id}`);
   ids.add(node.id);
