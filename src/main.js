@@ -16,6 +16,7 @@ const yearSlider = document.querySelector("#year");
 const yearValue = document.querySelector("#year-value");
 const zoomSlider = document.querySelector("#graph-zoom");
 const zoomValue = document.querySelector("#zoom-value");
+const controlTooltip = document.querySelector("#control-tooltip");
 const llmStatus = document.querySelector("#llm-status");
 const llmAnswer = document.querySelector("#llm-answer");
 const metrics = graphMetrics(graph.nodes, graph.edges);
@@ -403,9 +404,27 @@ document.querySelectorAll("[data-view]").forEach((button) => button.addEventList
   document.querySelectorAll("[data-view]").forEach((item) => item.classList.toggle("active", item === button));
   renderGraph();
 }));
-document.querySelectorAll("[data-help]").forEach((button) => button.addEventListener("click", () => {
-  document.querySelector("#help-text").textContent = button.dataset.help;
-}));
+function showTooltip(button) {
+  controlTooltip.textContent = button.dataset.help;
+  controlTooltip.hidden = false;
+  const bounds = button.getBoundingClientRect();
+  controlTooltip.style.left = `${Math.min(window.innerWidth - 18, Math.max(18, bounds.left + bounds.width / 2))}px`;
+  controlTooltip.style.top = `${bounds.bottom + 8}px`;
+  button.setAttribute("aria-describedby", "control-tooltip");
+}
+
+function hideTooltip(button) {
+  controlTooltip.hidden = true;
+  button.removeAttribute("aria-describedby");
+}
+
+document.querySelectorAll("[data-help]").forEach((button) => {
+  button.addEventListener("pointerenter", () => showTooltip(button));
+  button.addEventListener("pointerleave", () => hideTooltip(button));
+  button.addEventListener("focus", () => showTooltip(button));
+  button.addEventListener("blur", () => hideTooltip(button));
+  button.addEventListener("click", (event) => event.preventDefault());
+});
 document.querySelector("[data-action='rearrange']").addEventListener("click", renderGraph);
 document.querySelector("[data-action='dimension']").addEventListener("click", (event) => { dimension = dimension === "2d" ? "3d" : "2d"; event.currentTarget.textContent = dimension === "3d" ? "3D / 2D" : "2D / 3D"; renderGraph(); });
 sizeMetric.addEventListener("change", renderGraph);
