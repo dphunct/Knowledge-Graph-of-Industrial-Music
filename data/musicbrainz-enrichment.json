@@ -2,8 +2,8 @@
   "provider": "MusicBrainz",
   "runs": [
     {
-      "key": "pass-2",
-      "startedAt": "2026-09-24T03:15:13.663Z",
+      "key": "pass-4",
+      "startedAt": "2026-09-24T03:31:29.469Z",
       "scope": {
         "people": 9,
         "projects": 7,
@@ -20,7 +20,7 @@
           "id": "al-jourgensen",
           "label": "Al Jourgensen",
           "type": "person",
-          "query": "artist:\"Al Jourgensen\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "6c0dadab-266a-4601-8394-5b8e19e90def",
             "resource": "artist",
@@ -28,14 +28,7 @@
             "label": "Al Jourgensen",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "6c0dadab-266a-4601-8394-5b8e19e90def",
-              "label": "Al Jourgensen",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "founder",
@@ -298,7 +291,7 @@
           "id": "paul-barker",
           "label": "Paul Barker",
           "type": "person",
-          "query": "artist:\"Paul Barker\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "5bec856f-b78b-4216-8af5-1c0c6365bcbe",
             "resource": "artist",
@@ -306,26 +299,7 @@
             "label": "Paul Barker",
             "disambiguation": "industrial bassist/producer/engineer"
           },
-          "candidates": [
-            {
-              "id": "5bec856f-b78b-4216-8af5-1c0c6365bcbe",
-              "label": "Paul Barker",
-              "score": 100,
-              "disambiguation": "industrial bassist/producer/engineer"
-            },
-            {
-              "id": "c8f0d9ae-ebb3-4022-b6c3-30bbacbfbd3b",
-              "label": "Paul Barker",
-              "score": 96,
-              "disambiguation": "Podge of Mau Maus"
-            },
-            {
-              "id": "b807240c-6533-4b9d-9b17-b8b9b8885e7d",
-              "label": "Paul Barker",
-              "score": 96,
-              "disambiguation": "photography"
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "collaboration",
@@ -566,7 +540,7 @@
           "id": "cevin-key",
           "label": "cEvin Key",
           "type": "person",
-          "query": "artist:\"cEvin Key\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
             "resource": "artist",
@@ -574,14 +548,7 @@
             "label": "cEvin Key",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
-              "label": "cEvin Key",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "is person",
@@ -897,16 +864,190 @@
           "id": "nivek-ogre",
           "label": "Nivek Ogre",
           "type": "person",
-          "query": "artist:\"Nivek Ogre\"",
-          "selected": null,
-          "candidates": []
+          "query": "alias:\"Nivek Ogre\" OR alias:\"Kevin Ogilvie\"",
+          "selected": {
+            "id": "5778f668-1a4c-482f-beb9-08b15b0f861c",
+            "resource": "artist",
+            "url": "https://musicbrainz.org/artist/5778f668-1a4c-482f-beb9-08b15b0f861c",
+            "label": "Ogre",
+            "disambiguation": "Canadian industrial vocalist aka Nivek Ogre"
+          },
+          "candidates": [
+            {
+              "id": "5778f668-1a4c-482f-beb9-08b15b0f861c",
+              "label": "Ogre",
+              "score": 100,
+              "disambiguation": "Canadian industrial vocalist aka Nivek Ogre"
+            }
+          ],
+          "relationships": [
+            {
+              "type": "member of band",
+              "direction": "forward",
+              "begin": "1982",
+              "end": "1996",
+              "targetType": "artist",
+              "target": "Skinny Puppy"
+            },
+            {
+              "type": "member of band",
+              "direction": "forward",
+              "begin": "2003",
+              "end": "2023-12-05",
+              "targetType": "artist",
+              "target": "Skinny Puppy"
+            },
+            {
+              "type": "member of band",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "artist",
+              "target": "Pigface"
+            },
+            {
+              "type": "member of band",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "artist",
+              "target": "The Petty Tyrants"
+            },
+            {
+              "type": "member of band",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "artist",
+              "target": "A Chud Convention"
+            },
+            {
+              "type": "member of band",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "artist",
+              "target": "Muteual Mortuary"
+            },
+            {
+              "type": "member of band",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "artist",
+              "target": "Rx"
+            },
+            {
+              "type": "member of band",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "artist",
+              "target": "ohGr"
+            },
+            {
+              "type": "member of band",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "artist",
+              "target": "PTP"
+            },
+            {
+              "type": "member of band",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "artist",
+              "target": "W.E.L.T."
+            },
+            {
+              "type": "member of band",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "artist",
+              "target": "Raw Dog"
+            },
+            {
+              "type": "vocal supporting musician",
+              "direction": "forward",
+              "begin": "1997",
+              "end": "1999",
+              "targetType": "artist",
+              "target": "KMFDM"
+            },
+            {
+              "type": "discogs",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "url",
+              "target": "https://www.discogs.com/artist/503984"
+            },
+            {
+              "type": "discogs",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "url",
+              "target": "https://www.discogs.com/artist/70019"
+            },
+            {
+              "type": "free streaming",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "url",
+              "target": "https://open.spotify.com/artist/19EIeZ8cKnPHnqAcXzqE2r"
+            },
+            {
+              "type": "free streaming",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "url",
+              "target": "https://open.spotify.com/artist/1AC3zwN76ur5OHWP5KLVDQ"
+            },
+            {
+              "type": "free streaming",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "url",
+              "target": "https://www.deezer.com/artist/4131546"
+            },
+            {
+              "type": "free streaming",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "url",
+              "target": "https://www.deezer.com/artist/981223"
+            },
+            {
+              "type": "wikidata",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "url",
+              "target": "https://www.wikidata.org/wiki/Q3046801"
+            }
+          ],
+          "releases": [],
+          "aliases": [
+            "Kevin Graham Ogilvie",
+            "Kevin Graham Ogilvie",
+            "Kevin Ogilvie",
+            "Nivek Ogre"
+          ]
         },
         {
           "phase": "people",
           "id": "bill-leeb",
           "label": "Bill Leeb",
           "type": "person",
-          "query": "artist:\"Bill Leeb\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "e10b76e5-dc32-4e9f-83b9-4f717400b19f",
             "resource": "artist",
@@ -914,14 +1055,7 @@
             "label": "Bill Leeb",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "e10b76e5-dc32-4e9f-83b9-4f717400b19f",
-              "label": "Bill Leeb",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "is person",
@@ -1079,7 +1213,7 @@
           "id": "rhys-fulber",
           "label": "Rhys Fulber",
           "type": "person",
-          "query": "artist:\"Rhys Fulber\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "7ee30fce-cd3d-437d-9ff0-b2ef195bda33",
             "resource": "artist",
@@ -1087,14 +1221,7 @@
             "label": "Rhys Fulber",
             "disambiguation": "Canadian electronic musician"
           },
-          "candidates": [
-            {
-              "id": "7ee30fce-cd3d-437d-9ff0-b2ef195bda33",
-              "label": "Rhys Fulber",
-              "score": 100,
-              "disambiguation": "Canadian electronic musician"
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "instrumental supporting musician",
@@ -1469,7 +1596,7 @@
           "id": "sascha-konietzko",
           "label": "Sascha Konietzko",
           "type": "person",
-          "query": "artist:\"Sascha Konietzko\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "8d2b70fb-a338-4702-8ce2-3211a4704d6f",
             "resource": "artist",
@@ -1477,14 +1604,7 @@
             "label": "Sascha Konietzko",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "8d2b70fb-a338-4702-8ce2-3211a4704d6f",
-              "label": "Sascha Konietzko",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "is person",
@@ -1618,7 +1738,7 @@
           "id": "richard-23",
           "label": "Richard 23",
           "type": "person",
-          "query": "artist:\"Richard 23\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "49197759-80b0-4f46-934c-c5d2fed17ac3",
             "resource": "artist",
@@ -1626,14 +1746,7 @@
             "label": "Richard 23",
             "disambiguation": "Front 242 vocalist"
           },
-          "candidates": [
-            {
-              "id": "49197759-80b0-4f46-934c-c5d2fed17ac3",
-              "label": "Richard 23",
-              "score": 100,
-              "disambiguation": "Front 242 vocalist"
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "is person",
@@ -1726,7 +1839,7 @@
           "id": "trent-reznor",
           "label": "Trent Reznor",
           "type": "person",
-          "query": "artist:\"Trent Reznor\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "bc880664-6751-4998-984d-ebdbff15d229",
             "resource": "artist",
@@ -1734,14 +1847,7 @@
             "label": "Trent Reznor",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "bc880664-6751-4998-984d-ebdbff15d229",
-              "label": "Trent Reznor",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "married",
@@ -2457,7 +2563,7 @@
           "id": "ministry",
           "label": "Ministry",
           "type": "project",
-          "query": "artist:\"Ministry\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "13df2a46-f72f-40e7-aa63-26fcf62c7048",
             "resource": "artist",
@@ -2465,38 +2571,7 @@
             "label": "Ministry",
             "disambiguation": "US industrial metal band"
           },
-          "candidates": [
-            {
-              "id": "13df2a46-f72f-40e7-aa63-26fcf62c7048",
-              "label": "Ministry",
-              "score": 100,
-              "disambiguation": "US industrial metal band"
-            },
-            {
-              "id": "6b784289-5c23-41f2-9938-7e6a321beea5",
-              "label": "Fireball Ministry",
-              "score": 70,
-              "disambiguation": ""
-            },
-            {
-              "id": "9de44e3d-8c91-4199-a24c-bb1389cfe43f",
-              "label": "Shekinah Glory Ministry",
-              "score": 69,
-              "disambiguation": ""
-            },
-            {
-              "id": "766c3417-9ed4-43c6-b30e-63115b591d7d",
-              "label": "Oasis Ministry",
-              "score": 66,
-              "disambiguation": "Christian band"
-            },
-            {
-              "id": "f444b752-42a6-4ca7-ac84-b1535762211b",
-              "label": "Ministry of Magic",
-              "score": 65,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "collaboration",
@@ -3302,7 +3377,7 @@
           "id": "skinny-puppy",
           "label": "Skinny Puppy",
           "type": "project",
-          "query": "artist:\"Skinny Puppy\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
             "resource": "artist",
@@ -3310,14 +3385,7 @@
             "label": "Skinny Puppy",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
-              "label": "Skinny Puppy",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "member of band",
@@ -3967,7 +4035,7 @@
           "id": "front-242",
           "label": "Front 242",
           "type": "project",
-          "query": "artist:\"Front 242\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "8fb6c00f-61d8-4f27-98f9-53e1ba481626",
             "resource": "artist",
@@ -3975,14 +4043,7 @@
             "label": "Front 242",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "8fb6c00f-61d8-4f27-98f9-53e1ba481626",
-              "label": "Front 242",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "instrumental supporting musician",
@@ -4458,7 +4519,7 @@
           "id": "front-line-assembly",
           "label": "Front Line Assembly",
           "type": "project",
-          "query": "artist:\"Front Line Assembly\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "b847e9d2-c931-4daf-900c-42c7b2c42e16",
             "resource": "artist",
@@ -4466,14 +4527,7 @@
             "label": "Front Line Assembly",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "b847e9d2-c931-4daf-900c-42c7b2c42e16",
-              "label": "Front Line Assembly",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "instrumental supporting musician",
@@ -5015,7 +5069,7 @@
           "id": "kmfdm",
           "label": "KMFDM",
           "type": "project",
-          "query": "artist:\"KMFDM\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "45074d7c-5307-44a8-854f-ae072e1622ae",
             "resource": "artist",
@@ -5023,14 +5077,7 @@
             "label": "KMFDM",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "45074d7c-5307-44a8-854f-ae072e1622ae",
-              "label": "KMFDM",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "collaboration",
@@ -5962,7 +6009,7 @@
           "id": "revolting-cocks",
           "label": "Revolting Cocks",
           "type": "project",
-          "query": "artist:\"Revolting Cocks\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "2865730a-5757-4005-875e-84d6274cb1c0",
             "resource": "artist",
@@ -5970,14 +6017,7 @@
             "label": "Revolting Cocks",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "2865730a-5757-4005-875e-84d6274cb1c0",
-              "label": "Revolting Cocks",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "member of band",
@@ -6375,7 +6415,7 @@
           "id": "1000-homo-djs",
           "label": "1000 Homo DJs",
           "type": "project",
-          "query": "artist:\"1000 Homo DJs\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "4c44479c-8fde-4754-b9e2-5129eb6fb28d",
             "resource": "artist",
@@ -6383,14 +6423,7 @@
             "label": "1000 Homo DJs",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "4c44479c-8fde-4754-b9e2-5129eb6fb28d",
-              "label": "1000 Homo DJs",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "member of band",
@@ -6562,7 +6595,7 @@
           "id": "land-of-rape-and-honey",
           "label": "The Land of Rape and Honey",
           "type": "release",
-          "query": "release-group:\"The Land of Rape and Honey\" AND artist:\"Ministry\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "7a18b986-afcc-359c-add1-7aa3a79104a2",
             "resource": "release-group",
@@ -6570,14 +6603,7 @@
             "label": "The Land of Rape and Honey",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "7a18b986-afcc-359c-add1-7aa3a79104a2",
-              "label": "The Land of Rape and Honey",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "included in",
@@ -6695,7 +6721,7 @@
           "id": "stigmata",
           "label": "Stigmata",
           "type": "release",
-          "query": "release-group:\"Stigmata\" AND artist:\"Ministry\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "ffd7f995-6354-38df-9c84-902769328a1e",
             "resource": "release-group",
@@ -6703,20 +6729,7 @@
             "label": "Stigmata",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "ffd7f995-6354-38df-9c84-902769328a1e",
-              "label": "Stigmata",
-              "score": 100,
-              "disambiguation": ""
-            },
-            {
-              "id": "ba9ebc44-0c38-463c-9970-3ee7e5c62a26",
-              "label": "Stigmata (Remixes)",
-              "score": 90,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "single from",
@@ -6764,7 +6777,7 @@
           "id": "big-sexy-land",
           "label": "Big Sexy Land",
           "type": "release",
-          "query": "release-group:\"Big Sexy Land\" AND artist:\"Revolting Cocks\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "3e823e3f-4993-36d8-8c74-3ceaf68959e7",
             "resource": "release-group",
@@ -6772,14 +6785,7 @@
             "label": "Big Sexy Land",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "3e823e3f-4993-36d8-8c74-3ceaf68959e7",
-              "label": "Big Sexy Land",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "single from",
@@ -6853,7 +6859,7 @@
           "id": "beers-steers-and-queers",
           "label": "Beers, Steers & Queers",
           "type": "release",
-          "query": "release-group:\"Beers, Steers & Queers\" AND artist:\"Revolting Cocks\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "b316cc6e-edf7-3394-9c89-1a116ba2dc62",
             "resource": "release-group",
@@ -6861,20 +6867,7 @@
             "label": "Beers, Steers & Queers",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "b316cc6e-edf7-3394-9c89-1a116ba2dc62",
-              "label": "Beers, Steers & Queers",
-              "score": 100,
-              "disambiguation": ""
-            },
-            {
-              "id": "acc7fdf3-a15a-36c9-9186-a452b185733f",
-              "label": "Beers, Steers & Queers (Remixes)",
-              "score": 92,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "discogs",
@@ -6944,7 +6937,7 @@
           "id": "tactical-neural-implant",
           "label": "Tactical Neural Implant",
           "type": "release",
-          "query": "release-group:\"Tactical Neural Implant\" AND artist:\"Front Line Assembly\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "611e2a82-9f19-3ad0-98a8-42397143b09d",
             "resource": "release-group",
@@ -6952,20 +6945,7 @@
             "label": "Tactical Neural Implant",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "611e2a82-9f19-3ad0-98a8-42397143b09d",
-              "label": "Tactical Neural Implant",
-              "score": 100,
-              "disambiguation": ""
-            },
-            {
-              "id": "62f797a3-b78e-41ac-88bc-48716a63871c",
-              "label": "Tactical Neural Implant / Millennium",
-              "score": 85,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "included in",
@@ -7049,7 +7029,7 @@
           "id": "mindphaser",
           "label": "Mindphaser",
           "type": "release",
-          "query": "release-group:\"Mindphaser\" AND artist:\"Front Line Assembly\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "f7329a5b-8972-38f0-8f4a-1a90b79829db",
             "resource": "release-group",
@@ -7057,14 +7037,7 @@
             "label": "Mindphaser",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "f7329a5b-8972-38f0-8f4a-1a90b79829db",
-              "label": "Mindphaser",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "single from",
@@ -7118,7 +7091,7 @@
           "id": "supernaut",
           "label": "Supernaut",
           "type": "release",
-          "query": "release-group:\"Supernaut\" AND artist:\"1000 Homo DJs\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "6a928917-424c-38b2-b4c1-5de2d741d039",
             "resource": "release-group",
@@ -7126,20 +7099,7 @@
             "label": "Supernaut",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "6a928917-424c-38b2-b4c1-5de2d741d039",
-              "label": "Supernaut",
-              "score": 100,
-              "disambiguation": ""
-            },
-            {
-              "id": "18dd5f7d-d172-3d32-a0a4-89ae084cbf58",
-              "label": "Supernaut",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "discogs",
@@ -7167,11 +7127,11 @@
           "aliases": []
         }
       ],
-      "completedAt": "2026-09-24T03:16:26.752Z"
+      "completedAt": "2026-09-24T03:31:58.882Z"
     },
     {
-      "key": "pass-3",
-      "startedAt": "2026-09-24T03:26:51.367Z",
+      "key": "pass-5",
+      "startedAt": "2026-09-24T03:32:20.098Z",
       "scope": {
         "people": 9,
         "projects": 7,
@@ -7188,7 +7148,7 @@
           "id": "al-jourgensen",
           "label": "Al Jourgensen",
           "type": "person",
-          "query": "artist:\"Al Jourgensen\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "6c0dadab-266a-4601-8394-5b8e19e90def",
             "resource": "artist",
@@ -7196,14 +7156,7 @@
             "label": "Al Jourgensen",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "6c0dadab-266a-4601-8394-5b8e19e90def",
-              "label": "Al Jourgensen",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "founder",
@@ -7466,7 +7419,7 @@
           "id": "paul-barker",
           "label": "Paul Barker",
           "type": "person",
-          "query": "artist:\"Paul Barker\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "5bec856f-b78b-4216-8af5-1c0c6365bcbe",
             "resource": "artist",
@@ -7474,26 +7427,7 @@
             "label": "Paul Barker",
             "disambiguation": "industrial bassist/producer/engineer"
           },
-          "candidates": [
-            {
-              "id": "5bec856f-b78b-4216-8af5-1c0c6365bcbe",
-              "label": "Paul Barker",
-              "score": 100,
-              "disambiguation": "industrial bassist/producer/engineer"
-            },
-            {
-              "id": "c8f0d9ae-ebb3-4022-b6c3-30bbacbfbd3b",
-              "label": "Paul Barker",
-              "score": 96,
-              "disambiguation": "Podge of Mau Maus"
-            },
-            {
-              "id": "b807240c-6533-4b9d-9b17-b8b9b8885e7d",
-              "label": "Paul Barker",
-              "score": 96,
-              "disambiguation": "photography"
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "collaboration",
@@ -7734,7 +7668,7 @@
           "id": "cevin-key",
           "label": "cEvin Key",
           "type": "person",
-          "query": "artist:\"cEvin Key\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
             "resource": "artist",
@@ -7742,14 +7676,7 @@
             "label": "cEvin Key",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
-              "label": "cEvin Key",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "is person",
@@ -8065,16 +7992,190 @@
           "id": "nivek-ogre",
           "label": "Nivek Ogre",
           "type": "person",
-          "query": "artist:\"Nivek Ogre\"",
-          "selected": null,
-          "candidates": []
+          "query": "alias:\"Nivek Ogre\" OR alias:\"Kevin Ogilvie\"",
+          "selected": {
+            "id": "5778f668-1a4c-482f-beb9-08b15b0f861c",
+            "resource": "artist",
+            "url": "https://musicbrainz.org/artist/5778f668-1a4c-482f-beb9-08b15b0f861c",
+            "label": "Ogre",
+            "disambiguation": "Canadian industrial vocalist aka Nivek Ogre"
+          },
+          "candidates": [
+            {
+              "id": "5778f668-1a4c-482f-beb9-08b15b0f861c",
+              "label": "Ogre",
+              "score": 100,
+              "disambiguation": "Canadian industrial vocalist aka Nivek Ogre"
+            }
+          ],
+          "relationships": [
+            {
+              "type": "member of band",
+              "direction": "forward",
+              "begin": "1982",
+              "end": "1996",
+              "targetType": "artist",
+              "target": "Skinny Puppy"
+            },
+            {
+              "type": "member of band",
+              "direction": "forward",
+              "begin": "2003",
+              "end": "2023-12-05",
+              "targetType": "artist",
+              "target": "Skinny Puppy"
+            },
+            {
+              "type": "member of band",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "artist",
+              "target": "Pigface"
+            },
+            {
+              "type": "member of band",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "artist",
+              "target": "The Petty Tyrants"
+            },
+            {
+              "type": "member of band",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "artist",
+              "target": "A Chud Convention"
+            },
+            {
+              "type": "member of band",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "artist",
+              "target": "Muteual Mortuary"
+            },
+            {
+              "type": "member of band",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "artist",
+              "target": "Rx"
+            },
+            {
+              "type": "member of band",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "artist",
+              "target": "ohGr"
+            },
+            {
+              "type": "member of band",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "artist",
+              "target": "PTP"
+            },
+            {
+              "type": "member of band",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "artist",
+              "target": "W.E.L.T."
+            },
+            {
+              "type": "member of band",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "artist",
+              "target": "Raw Dog"
+            },
+            {
+              "type": "vocal supporting musician",
+              "direction": "forward",
+              "begin": "1997",
+              "end": "1999",
+              "targetType": "artist",
+              "target": "KMFDM"
+            },
+            {
+              "type": "discogs",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "url",
+              "target": "https://www.discogs.com/artist/503984"
+            },
+            {
+              "type": "discogs",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "url",
+              "target": "https://www.discogs.com/artist/70019"
+            },
+            {
+              "type": "free streaming",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "url",
+              "target": "https://open.spotify.com/artist/19EIeZ8cKnPHnqAcXzqE2r"
+            },
+            {
+              "type": "free streaming",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "url",
+              "target": "https://open.spotify.com/artist/1AC3zwN76ur5OHWP5KLVDQ"
+            },
+            {
+              "type": "free streaming",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "url",
+              "target": "https://www.deezer.com/artist/4131546"
+            },
+            {
+              "type": "free streaming",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "url",
+              "target": "https://www.deezer.com/artist/981223"
+            },
+            {
+              "type": "wikidata",
+              "direction": "forward",
+              "begin": null,
+              "end": null,
+              "targetType": "url",
+              "target": "https://www.wikidata.org/wiki/Q3046801"
+            }
+          ],
+          "releases": [],
+          "aliases": [
+            "Kevin Graham Ogilvie",
+            "Kevin Graham Ogilvie",
+            "Kevin Ogilvie",
+            "Nivek Ogre"
+          ]
         },
         {
           "phase": "people",
           "id": "bill-leeb",
           "label": "Bill Leeb",
           "type": "person",
-          "query": "artist:\"Bill Leeb\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "e10b76e5-dc32-4e9f-83b9-4f717400b19f",
             "resource": "artist",
@@ -8082,14 +8183,7 @@
             "label": "Bill Leeb",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "e10b76e5-dc32-4e9f-83b9-4f717400b19f",
-              "label": "Bill Leeb",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "is person",
@@ -8247,7 +8341,7 @@
           "id": "rhys-fulber",
           "label": "Rhys Fulber",
           "type": "person",
-          "query": "artist:\"Rhys Fulber\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "7ee30fce-cd3d-437d-9ff0-b2ef195bda33",
             "resource": "artist",
@@ -8255,14 +8349,7 @@
             "label": "Rhys Fulber",
             "disambiguation": "Canadian electronic musician"
           },
-          "candidates": [
-            {
-              "id": "7ee30fce-cd3d-437d-9ff0-b2ef195bda33",
-              "label": "Rhys Fulber",
-              "score": 100,
-              "disambiguation": "Canadian electronic musician"
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "instrumental supporting musician",
@@ -8637,7 +8724,7 @@
           "id": "sascha-konietzko",
           "label": "Sascha Konietzko",
           "type": "person",
-          "query": "artist:\"Sascha Konietzko\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "8d2b70fb-a338-4702-8ce2-3211a4704d6f",
             "resource": "artist",
@@ -8645,14 +8732,7 @@
             "label": "Sascha Konietzko",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "8d2b70fb-a338-4702-8ce2-3211a4704d6f",
-              "label": "Sascha Konietzko",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "is person",
@@ -8786,7 +8866,7 @@
           "id": "richard-23",
           "label": "Richard 23",
           "type": "person",
-          "query": "artist:\"Richard 23\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "49197759-80b0-4f46-934c-c5d2fed17ac3",
             "resource": "artist",
@@ -8794,14 +8874,7 @@
             "label": "Richard 23",
             "disambiguation": "Front 242 vocalist"
           },
-          "candidates": [
-            {
-              "id": "49197759-80b0-4f46-934c-c5d2fed17ac3",
-              "label": "Richard 23",
-              "score": 100,
-              "disambiguation": "Front 242 vocalist"
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "is person",
@@ -8894,7 +8967,7 @@
           "id": "trent-reznor",
           "label": "Trent Reznor",
           "type": "person",
-          "query": "artist:\"Trent Reznor\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "bc880664-6751-4998-984d-ebdbff15d229",
             "resource": "artist",
@@ -8902,14 +8975,7 @@
             "label": "Trent Reznor",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "bc880664-6751-4998-984d-ebdbff15d229",
-              "label": "Trent Reznor",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "married",
@@ -9625,7 +9691,7 @@
           "id": "ministry",
           "label": "Ministry",
           "type": "project",
-          "query": "artist:\"Ministry\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "13df2a46-f72f-40e7-aa63-26fcf62c7048",
             "resource": "artist",
@@ -9633,38 +9699,7 @@
             "label": "Ministry",
             "disambiguation": "US industrial metal band"
           },
-          "candidates": [
-            {
-              "id": "13df2a46-f72f-40e7-aa63-26fcf62c7048",
-              "label": "Ministry",
-              "score": 100,
-              "disambiguation": "US industrial metal band"
-            },
-            {
-              "id": "6b784289-5c23-41f2-9938-7e6a321beea5",
-              "label": "Fireball Ministry",
-              "score": 70,
-              "disambiguation": ""
-            },
-            {
-              "id": "9de44e3d-8c91-4199-a24c-bb1389cfe43f",
-              "label": "Shekinah Glory Ministry",
-              "score": 69,
-              "disambiguation": ""
-            },
-            {
-              "id": "766c3417-9ed4-43c6-b30e-63115b591d7d",
-              "label": "Oasis Ministry",
-              "score": 66,
-              "disambiguation": "Christian band"
-            },
-            {
-              "id": "f444b752-42a6-4ca7-ac84-b1535762211b",
-              "label": "Ministry of Magic",
-              "score": 65,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "collaboration",
@@ -10470,7 +10505,7 @@
           "id": "skinny-puppy",
           "label": "Skinny Puppy",
           "type": "project",
-          "query": "artist:\"Skinny Puppy\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
             "resource": "artist",
@@ -10478,14 +10513,7 @@
             "label": "Skinny Puppy",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
-              "label": "Skinny Puppy",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "member of band",
@@ -11135,7 +11163,7 @@
           "id": "front-242",
           "label": "Front 242",
           "type": "project",
-          "query": "artist:\"Front 242\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "8fb6c00f-61d8-4f27-98f9-53e1ba481626",
             "resource": "artist",
@@ -11143,14 +11171,7 @@
             "label": "Front 242",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "8fb6c00f-61d8-4f27-98f9-53e1ba481626",
-              "label": "Front 242",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "instrumental supporting musician",
@@ -11626,7 +11647,7 @@
           "id": "front-line-assembly",
           "label": "Front Line Assembly",
           "type": "project",
-          "query": "artist:\"Front Line Assembly\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "b847e9d2-c931-4daf-900c-42c7b2c42e16",
             "resource": "artist",
@@ -11634,14 +11655,7 @@
             "label": "Front Line Assembly",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "b847e9d2-c931-4daf-900c-42c7b2c42e16",
-              "label": "Front Line Assembly",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "instrumental supporting musician",
@@ -12183,7 +12197,7 @@
           "id": "kmfdm",
           "label": "KMFDM",
           "type": "project",
-          "query": "artist:\"KMFDM\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "45074d7c-5307-44a8-854f-ae072e1622ae",
             "resource": "artist",
@@ -12191,14 +12205,7 @@
             "label": "KMFDM",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "45074d7c-5307-44a8-854f-ae072e1622ae",
-              "label": "KMFDM",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "collaboration",
@@ -13130,7 +13137,7 @@
           "id": "revolting-cocks",
           "label": "Revolting Cocks",
           "type": "project",
-          "query": "artist:\"Revolting Cocks\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "2865730a-5757-4005-875e-84d6274cb1c0",
             "resource": "artist",
@@ -13138,14 +13145,7 @@
             "label": "Revolting Cocks",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "2865730a-5757-4005-875e-84d6274cb1c0",
-              "label": "Revolting Cocks",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "member of band",
@@ -13543,7 +13543,7 @@
           "id": "1000-homo-djs",
           "label": "1000 Homo DJs",
           "type": "project",
-          "query": "artist:\"1000 Homo DJs\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "4c44479c-8fde-4754-b9e2-5129eb6fb28d",
             "resource": "artist",
@@ -13551,14 +13551,7 @@
             "label": "1000 Homo DJs",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "4c44479c-8fde-4754-b9e2-5129eb6fb28d",
-              "label": "1000 Homo DJs",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "member of band",
@@ -13730,7 +13723,7 @@
           "id": "land-of-rape-and-honey",
           "label": "The Land of Rape and Honey",
           "type": "release",
-          "query": "release-group:\"The Land of Rape and Honey\" AND artist:\"Ministry\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "7a18b986-afcc-359c-add1-7aa3a79104a2",
             "resource": "release-group",
@@ -13738,14 +13731,7 @@
             "label": "The Land of Rape and Honey",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "7a18b986-afcc-359c-add1-7aa3a79104a2",
-              "label": "The Land of Rape and Honey",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "included in",
@@ -13863,7 +13849,7 @@
           "id": "stigmata",
           "label": "Stigmata",
           "type": "release",
-          "query": "release-group:\"Stigmata\" AND artist:\"Ministry\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "ffd7f995-6354-38df-9c84-902769328a1e",
             "resource": "release-group",
@@ -13871,20 +13857,7 @@
             "label": "Stigmata",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "ffd7f995-6354-38df-9c84-902769328a1e",
-              "label": "Stigmata",
-              "score": 100,
-              "disambiguation": ""
-            },
-            {
-              "id": "ba9ebc44-0c38-463c-9970-3ee7e5c62a26",
-              "label": "Stigmata (Remixes)",
-              "score": 90,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "single from",
@@ -13932,7 +13905,7 @@
           "id": "big-sexy-land",
           "label": "Big Sexy Land",
           "type": "release",
-          "query": "release-group:\"Big Sexy Land\" AND artist:\"Revolting Cocks\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "3e823e3f-4993-36d8-8c74-3ceaf68959e7",
             "resource": "release-group",
@@ -13940,14 +13913,7 @@
             "label": "Big Sexy Land",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "3e823e3f-4993-36d8-8c74-3ceaf68959e7",
-              "label": "Big Sexy Land",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "single from",
@@ -14021,7 +13987,7 @@
           "id": "beers-steers-and-queers",
           "label": "Beers, Steers & Queers",
           "type": "release",
-          "query": "release-group:\"Beers, Steers & Queers\" AND artist:\"Revolting Cocks\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "b316cc6e-edf7-3394-9c89-1a116ba2dc62",
             "resource": "release-group",
@@ -14029,20 +13995,7 @@
             "label": "Beers, Steers & Queers",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "b316cc6e-edf7-3394-9c89-1a116ba2dc62",
-              "label": "Beers, Steers & Queers",
-              "score": 100,
-              "disambiguation": ""
-            },
-            {
-              "id": "acc7fdf3-a15a-36c9-9186-a452b185733f",
-              "label": "Beers, Steers & Queers (Remixes)",
-              "score": 92,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "discogs",
@@ -14112,7 +14065,7 @@
           "id": "tactical-neural-implant",
           "label": "Tactical Neural Implant",
           "type": "release",
-          "query": "release-group:\"Tactical Neural Implant\" AND artist:\"Front Line Assembly\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "611e2a82-9f19-3ad0-98a8-42397143b09d",
             "resource": "release-group",
@@ -14120,20 +14073,7 @@
             "label": "Tactical Neural Implant",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "611e2a82-9f19-3ad0-98a8-42397143b09d",
-              "label": "Tactical Neural Implant",
-              "score": 100,
-              "disambiguation": ""
-            },
-            {
-              "id": "62f797a3-b78e-41ac-88bc-48716a63871c",
-              "label": "Tactical Neural Implant / Millennium",
-              "score": 85,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "included in",
@@ -14217,7 +14157,7 @@
           "id": "mindphaser",
           "label": "Mindphaser",
           "type": "release",
-          "query": "release-group:\"Mindphaser\" AND artist:\"Front Line Assembly\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "f7329a5b-8972-38f0-8f4a-1a90b79829db",
             "resource": "release-group",
@@ -14225,14 +14165,7 @@
             "label": "Mindphaser",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "f7329a5b-8972-38f0-8f4a-1a90b79829db",
-              "label": "Mindphaser",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "single from",
@@ -14286,7 +14219,7 @@
           "id": "supernaut",
           "label": "Supernaut",
           "type": "release",
-          "query": "release-group:\"Supernaut\" AND artist:\"1000 Homo DJs\"",
+          "query": "confirmed MusicBrainz ID",
           "selected": {
             "id": "6a928917-424c-38b2-b4c1-5de2d741d039",
             "resource": "release-group",
@@ -14294,20 +14227,7 @@
             "label": "Supernaut",
             "disambiguation": ""
           },
-          "candidates": [
-            {
-              "id": "6a928917-424c-38b2-b4c1-5de2d741d039",
-              "label": "Supernaut",
-              "score": 100,
-              "disambiguation": ""
-            },
-            {
-              "id": "18dd5f7d-d172-3d32-a0a4-89ae084cbf58",
-              "label": "Supernaut",
-              "score": 100,
-              "disambiguation": ""
-            }
-          ],
+          "candidates": [],
           "relationships": [
             {
               "type": "discogs",
@@ -14335,7 +14255,7 @@
           "aliases": []
         }
       ],
-      "completedAt": "2026-09-24T03:29:46.951Z"
+      "completedAt": "2026-09-24T03:32:48.942Z"
     }
   ],
   "providerPolicy": {
