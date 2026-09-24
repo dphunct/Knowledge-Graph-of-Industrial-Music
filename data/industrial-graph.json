@@ -7,60 +7,973 @@
     "temporalPolicy": "validFrom and validTo describe when a node or relationship is known to apply; absent values mean not yet researched."
   },
   "nodes": [
-    {"id":"ministry","label":"Ministry","type":"project","relevance":"core","years":"1981–present","validFrom":1981,"summary":"American industrial project founded by Al Jourgensen."},
-    {"id":"skinny-puppy","label":"Skinny Puppy","type":"project","relevance":"core","years":"1982–2023","validFrom":1982,"validTo":2023,"summary":"Canadian industrial group centered on cEvin Key and Nivek Ogre."},
-    {"id":"front-242","label":"Front 242","type":"project","relevance":"core","years":"1981–present","validFrom":1981,"summary":"Belgian electronic body music group."},
-    {"id":"front-line-assembly","label":"Front Line Assembly","type":"project","relevance":"core","years":"1986–present","validFrom":1986,"summary":"Canadian industrial project founded by Bill Leeb."},
-    {"id":"kmfdm","label":"KMFDM","type":"project","relevance":"core","years":"1984–present","validFrom":1984,"summary":"German-founded industrial rock group."},
-    {"id":"revolting-cocks","label":"Revolting Cocks","type":"project","relevance":"core","years":"1985–present","validFrom":1985,"summary":"Industrial supergroup with Ministry and Front 242 connections."},
-    {"id":"al-jourgensen","label":"Al Jourgensen","type":"person","aliases":["Alain Jourgensen","Hypo Luxa","Buck Satan"],"summary":"Musician and producer; founder of Ministry."},
-    {"id":"paul-barker","label":"Paul Barker","type":"person","aliases":["Hermes Pan"],"summary":"Musician and producer associated with Ministry."},
-    {"id":"cevin-key","label":"cEvin Key","type":"person","aliases":["Kevin Crompton"],"summary":"Musician and co-founder of Skinny Puppy."},
-    {"id":"nivek-ogre","label":"Nivek Ogre","type":"person","aliases":["Kevin Ogilvie"],"summary":"Vocalist and co-founder of Skinny Puppy."},
-    {"id":"bill-leeb","label":"Bill Leeb","type":"person","aliases":["Wilhelm Schroeder"],"summary":"Musician; founder of Front Line Assembly."},
-    {"id":"rhys-fulber","label":"Rhys Fulber","type":"person","summary":"Composer and producer associated with Front Line Assembly."},
-    {"id":"sascha-konietzko","label":"Sascha Konietzko","type":"person","summary":"Musician and founder of KMFDM."},
-    {"id":"richard-23","label":"Richard 23","type":"person","summary":"Musician associated with Front 242 and Revolting Cocks."},
-    {"id":"land-of-rape-and-honey","label":"The Land of Rape and Honey","type":"release","releaseType":"album","year":1988,"validFrom":1988,"summary":"Ministry studio album."},
-    {"id":"stigmata","label":"Stigmata","type":"release","releaseType":"song","year":1988,"validFrom":1988,"summary":"Song from The Land of Rape and Honey."}
-    ,{"id":"big-sexy-land","label":"Big Sexy Land","type":"release","releaseType":"album","year":1986,"validFrom":1986,"summary":"Revolting Cocks album released through Wax Trax! Records."}
-    ,{"id":"beers-steers-and-queers","label":"Beers, Steers & Queers","type":"release","releaseType":"album","year":1990,"validFrom":1990,"summary":"Revolting Cocks album released in 1990."}
-    ,{"id":"tactical-neural-implant","label":"Tactical Neural Implant","type":"release","releaseType":"album","year":1992,"validFrom":1992,"summary":"Front Line Assembly album with Bill Leeb and Rhys Fulber credits."}
-    ,{"id":"mindphaser","label":"Mindphaser","type":"release","releaseType":"song","year":1992,"validFrom":1992,"summary":"Front Line Assembly song from Tactical Neural Implant."}
-    ,{"id":"1000-homo-djs","label":"1000 Homo DJs","type":"project","relevance":"core","summary":"Industrial side project documented through its recordings of Supernaut."}
-    ,{"id":"trent-reznor","label":"Trent Reznor","type":"person","relevance":"boundary","summary":"Contextual collaborator: vocalist on the Trent Reznor vocal version of 1000 Homo DJs' Supernaut."}
-    ,{"id":"supernaut","label":"Supernaut","type":"release","releaseType":"song","summary":"1000 Homo DJs recording of the Black Sabbath song, documented with distinct Al Jourgensen and Trent Reznor vocal versions."}
+    {
+      "id": "ministry",
+      "label": "Ministry",
+      "type": "project",
+      "relevance": "core",
+      "years": "1981–present",
+      "validFrom": 1981,
+      "summary": "American industrial project founded by Al Jourgensen.",
+      "musicbrainz": {
+        "id": "13df2a46-f72f-40e7-aa63-26fcf62c7048",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
+        "verifiedByRuns": [
+          "pass-1",
+          "pass-2"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Ministry",
+          "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
+          "note": "Exact match confirmed in pass-1 and pass-2."
+        }
+      ]
+    },
+    {
+      "id": "skinny-puppy",
+      "label": "Skinny Puppy",
+      "type": "project",
+      "relevance": "core",
+      "years": "1982–2023",
+      "validFrom": 1982,
+      "validTo": 2023,
+      "summary": "Canadian industrial group centered on cEvin Key and Nivek Ogre.",
+      "musicbrainz": {
+        "id": "5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
+        "verifiedByRuns": [
+          "pass-1",
+          "pass-2"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Skinny Puppy",
+          "url": "https://musicbrainz.org/artist/5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
+          "note": "Exact match confirmed in pass-1 and pass-2."
+        }
+      ]
+    },
+    {
+      "id": "front-242",
+      "label": "Front 242",
+      "type": "project",
+      "relevance": "core",
+      "years": "1981–present",
+      "validFrom": 1981,
+      "summary": "Belgian electronic body music group.",
+      "musicbrainz": {
+        "id": "8fb6c00f-61d8-4f27-98f9-53e1ba481626",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626",
+        "verifiedByRuns": [
+          "pass-1",
+          "pass-2"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Front 242",
+          "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626",
+          "note": "Exact match confirmed in pass-1 and pass-2."
+        }
+      ]
+    },
+    {
+      "id": "front-line-assembly",
+      "label": "Front Line Assembly",
+      "type": "project",
+      "relevance": "core",
+      "years": "1986–present",
+      "validFrom": 1986,
+      "summary": "Canadian industrial project founded by Bill Leeb.",
+      "musicbrainz": {
+        "id": "b847e9d2-c931-4daf-900c-42c7b2c42e16",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/b847e9d2-c931-4daf-900c-42c7b2c42e16",
+        "verifiedByRuns": [
+          "pass-1",
+          "pass-2"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Front Line Assembly",
+          "url": "https://musicbrainz.org/artist/b847e9d2-c931-4daf-900c-42c7b2c42e16",
+          "note": "Exact match confirmed in pass-1 and pass-2."
+        }
+      ]
+    },
+    {
+      "id": "kmfdm",
+      "label": "KMFDM",
+      "type": "project",
+      "relevance": "core",
+      "years": "1984–present",
+      "validFrom": 1984,
+      "summary": "German-founded industrial rock group.",
+      "musicbrainz": {
+        "id": "45074d7c-5307-44a8-854f-ae072e1622ae",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
+        "verifiedByRuns": [
+          "pass-1",
+          "pass-2"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: KMFDM",
+          "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
+          "note": "Exact match confirmed in pass-1 and pass-2."
+        }
+      ]
+    },
+    {
+      "id": "revolting-cocks",
+      "label": "Revolting Cocks",
+      "type": "project",
+      "relevance": "core",
+      "years": "1985–present",
+      "validFrom": 1985,
+      "summary": "Industrial supergroup with Ministry and Front 242 connections.",
+      "musicbrainz": {
+        "id": "2865730a-5757-4005-875e-84d6274cb1c0",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
+        "verifiedByRuns": [
+          "pass-1",
+          "pass-2"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Revolting Cocks",
+          "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
+          "note": "Exact match confirmed in pass-1 and pass-2."
+        }
+      ]
+    },
+    {
+      "id": "al-jourgensen",
+      "label": "Al Jourgensen",
+      "type": "person",
+      "aliases": [
+        "Alain Jourgensen",
+        "Hypo Luxa",
+        "Buck Satan"
+      ],
+      "summary": "Musician and producer; founder of Ministry.",
+      "musicbrainz": {
+        "id": "6c0dadab-266a-4601-8394-5b8e19e90def",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/6c0dadab-266a-4601-8394-5b8e19e90def",
+        "verifiedByRuns": [
+          "pass-1",
+          "pass-2"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Al Jourgensen",
+          "url": "https://musicbrainz.org/artist/6c0dadab-266a-4601-8394-5b8e19e90def",
+          "note": "Exact match confirmed in pass-1 and pass-2."
+        }
+      ]
+    },
+    {
+      "id": "paul-barker",
+      "label": "Paul Barker",
+      "type": "person",
+      "aliases": [
+        "Hermes Pan"
+      ],
+      "summary": "Musician and producer associated with Ministry.",
+      "musicbrainz": {
+        "id": "5bec856f-b78b-4216-8af5-1c0c6365bcbe",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/5bec856f-b78b-4216-8af5-1c0c6365bcbe",
+        "verifiedByRuns": [
+          "pass-1",
+          "pass-2"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Paul Barker",
+          "url": "https://musicbrainz.org/artist/5bec856f-b78b-4216-8af5-1c0c6365bcbe",
+          "note": "Exact match confirmed in pass-1 and pass-2."
+        }
+      ]
+    },
+    {
+      "id": "cevin-key",
+      "label": "cEvin Key",
+      "type": "person",
+      "aliases": [
+        "Kevin Crompton"
+      ],
+      "summary": "Musician and co-founder of Skinny Puppy.",
+      "musicbrainz": {
+        "id": "e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
+        "verifiedByRuns": [
+          "pass-1",
+          "pass-2"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: cEvin Key",
+          "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
+          "note": "Exact match confirmed in pass-1 and pass-2."
+        }
+      ]
+    },
+    {
+      "id": "nivek-ogre",
+      "label": "Nivek Ogre",
+      "type": "person",
+      "aliases": [
+        "Kevin Ogilvie"
+      ],
+      "summary": "Vocalist and co-founder of Skinny Puppy."
+    },
+    {
+      "id": "bill-leeb",
+      "label": "Bill Leeb",
+      "type": "person",
+      "aliases": [
+        "Wilhelm Schroeder"
+      ],
+      "summary": "Musician; founder of Front Line Assembly.",
+      "musicbrainz": {
+        "id": "e10b76e5-dc32-4e9f-83b9-4f717400b19f",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/e10b76e5-dc32-4e9f-83b9-4f717400b19f",
+        "verifiedByRuns": [
+          "pass-1",
+          "pass-2"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Bill Leeb",
+          "url": "https://musicbrainz.org/artist/e10b76e5-dc32-4e9f-83b9-4f717400b19f",
+          "note": "Exact match confirmed in pass-1 and pass-2."
+        }
+      ]
+    },
+    {
+      "id": "rhys-fulber",
+      "label": "Rhys Fulber",
+      "type": "person",
+      "summary": "Composer and producer associated with Front Line Assembly.",
+      "musicbrainz": {
+        "id": "7ee30fce-cd3d-437d-9ff0-b2ef195bda33",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/7ee30fce-cd3d-437d-9ff0-b2ef195bda33",
+        "verifiedByRuns": [
+          "pass-1",
+          "pass-2"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Rhys Fulber",
+          "url": "https://musicbrainz.org/artist/7ee30fce-cd3d-437d-9ff0-b2ef195bda33",
+          "note": "Exact match confirmed in pass-1 and pass-2."
+        }
+      ]
+    },
+    {
+      "id": "sascha-konietzko",
+      "label": "Sascha Konietzko",
+      "type": "person",
+      "summary": "Musician and founder of KMFDM.",
+      "musicbrainz": {
+        "id": "8d2b70fb-a338-4702-8ce2-3211a4704d6f",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/8d2b70fb-a338-4702-8ce2-3211a4704d6f",
+        "verifiedByRuns": [
+          "pass-1",
+          "pass-2"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Sascha Konietzko",
+          "url": "https://musicbrainz.org/artist/8d2b70fb-a338-4702-8ce2-3211a4704d6f",
+          "note": "Exact match confirmed in pass-1 and pass-2."
+        }
+      ]
+    },
+    {
+      "id": "richard-23",
+      "label": "Richard 23",
+      "type": "person",
+      "summary": "Musician associated with Front 242 and Revolting Cocks.",
+      "musicbrainz": {
+        "id": "49197759-80b0-4f46-934c-c5d2fed17ac3",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/49197759-80b0-4f46-934c-c5d2fed17ac3",
+        "verifiedByRuns": [
+          "pass-1",
+          "pass-2"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Richard 23",
+          "url": "https://musicbrainz.org/artist/49197759-80b0-4f46-934c-c5d2fed17ac3",
+          "note": "Exact match confirmed in pass-1 and pass-2."
+        }
+      ]
+    },
+    {
+      "id": "land-of-rape-and-honey",
+      "label": "The Land of Rape and Honey",
+      "type": "release",
+      "releaseType": "album",
+      "year": 1988,
+      "validFrom": 1988,
+      "summary": "Ministry studio album.",
+      "musicbrainz": {
+        "id": "7a18b986-afcc-359c-add1-7aa3a79104a2",
+        "entity": "release-group",
+        "url": "https://musicbrainz.org/release-group/7a18b986-afcc-359c-add1-7aa3a79104a2",
+        "verifiedByRuns": [
+          "pass-1",
+          "pass-2"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: The Land of Rape and Honey",
+          "url": "https://musicbrainz.org/release-group/7a18b986-afcc-359c-add1-7aa3a79104a2",
+          "note": "Exact match confirmed in pass-1 and pass-2."
+        }
+      ]
+    },
+    {
+      "id": "stigmata",
+      "label": "Stigmata",
+      "type": "release",
+      "releaseType": "song",
+      "year": 1988,
+      "validFrom": 1988,
+      "summary": "Song from The Land of Rape and Honey.",
+      "musicbrainz": {
+        "id": "ffd7f995-6354-38df-9c84-902769328a1e",
+        "entity": "release-group",
+        "url": "https://musicbrainz.org/release-group/ffd7f995-6354-38df-9c84-902769328a1e",
+        "verifiedByRuns": [
+          "pass-1",
+          "pass-2"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Stigmata",
+          "url": "https://musicbrainz.org/release-group/ffd7f995-6354-38df-9c84-902769328a1e",
+          "note": "Exact match confirmed in pass-1 and pass-2."
+        }
+      ]
+    },
+    {
+      "id": "big-sexy-land",
+      "label": "Big Sexy Land",
+      "type": "release",
+      "releaseType": "album",
+      "year": 1986,
+      "validFrom": 1986,
+      "summary": "Revolting Cocks album released through Wax Trax! Records.",
+      "musicbrainz": {
+        "id": "3e823e3f-4993-36d8-8c74-3ceaf68959e7",
+        "entity": "release-group",
+        "url": "https://musicbrainz.org/release-group/3e823e3f-4993-36d8-8c74-3ceaf68959e7",
+        "verifiedByRuns": [
+          "pass-1",
+          "pass-2"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Big Sexy Land",
+          "url": "https://musicbrainz.org/release-group/3e823e3f-4993-36d8-8c74-3ceaf68959e7",
+          "note": "Exact match confirmed in pass-1 and pass-2."
+        }
+      ]
+    },
+    {
+      "id": "beers-steers-and-queers",
+      "label": "Beers, Steers & Queers",
+      "type": "release",
+      "releaseType": "album",
+      "year": 1990,
+      "validFrom": 1990,
+      "summary": "Revolting Cocks album released in 1990.",
+      "musicbrainz": {
+        "id": "b316cc6e-edf7-3394-9c89-1a116ba2dc62",
+        "entity": "release-group",
+        "url": "https://musicbrainz.org/release-group/b316cc6e-edf7-3394-9c89-1a116ba2dc62",
+        "verifiedByRuns": [
+          "pass-1",
+          "pass-2"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Beers, Steers & Queers",
+          "url": "https://musicbrainz.org/release-group/b316cc6e-edf7-3394-9c89-1a116ba2dc62",
+          "note": "Exact match confirmed in pass-1 and pass-2."
+        }
+      ]
+    },
+    {
+      "id": "tactical-neural-implant",
+      "label": "Tactical Neural Implant",
+      "type": "release",
+      "releaseType": "album",
+      "year": 1992,
+      "validFrom": 1992,
+      "summary": "Front Line Assembly album with Bill Leeb and Rhys Fulber credits.",
+      "musicbrainz": {
+        "id": "611e2a82-9f19-3ad0-98a8-42397143b09d",
+        "entity": "release-group",
+        "url": "https://musicbrainz.org/release-group/611e2a82-9f19-3ad0-98a8-42397143b09d",
+        "verifiedByRuns": [
+          "pass-1",
+          "pass-2"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Tactical Neural Implant",
+          "url": "https://musicbrainz.org/release-group/611e2a82-9f19-3ad0-98a8-42397143b09d",
+          "note": "Exact match confirmed in pass-1 and pass-2."
+        }
+      ]
+    },
+    {
+      "id": "mindphaser",
+      "label": "Mindphaser",
+      "type": "release",
+      "releaseType": "song",
+      "year": 1992,
+      "validFrom": 1992,
+      "summary": "Front Line Assembly song from Tactical Neural Implant.",
+      "musicbrainz": {
+        "id": "f7329a5b-8972-38f0-8f4a-1a90b79829db",
+        "entity": "release-group",
+        "url": "https://musicbrainz.org/release-group/f7329a5b-8972-38f0-8f4a-1a90b79829db",
+        "verifiedByRuns": [
+          "pass-1",
+          "pass-2"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Mindphaser",
+          "url": "https://musicbrainz.org/release-group/f7329a5b-8972-38f0-8f4a-1a90b79829db",
+          "note": "Exact match confirmed in pass-1 and pass-2."
+        }
+      ]
+    },
+    {
+      "id": "1000-homo-djs",
+      "label": "1000 Homo DJs",
+      "type": "project",
+      "relevance": "core",
+      "summary": "Industrial side project documented through its recordings of Supernaut.",
+      "musicbrainz": {
+        "id": "4c44479c-8fde-4754-b9e2-5129eb6fb28d",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/4c44479c-8fde-4754-b9e2-5129eb6fb28d",
+        "verifiedByRuns": [
+          "pass-1",
+          "pass-2"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: 1000 Homo DJs",
+          "url": "https://musicbrainz.org/artist/4c44479c-8fde-4754-b9e2-5129eb6fb28d",
+          "note": "Exact match confirmed in pass-1 and pass-2."
+        }
+      ]
+    },
+    {
+      "id": "trent-reznor",
+      "label": "Trent Reznor",
+      "type": "person",
+      "relevance": "boundary",
+      "summary": "Contextual collaborator: vocalist on the Trent Reznor vocal version of 1000 Homo DJs' Supernaut.",
+      "musicbrainz": {
+        "id": "bc880664-6751-4998-984d-ebdbff15d229",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/bc880664-6751-4998-984d-ebdbff15d229",
+        "verifiedByRuns": [
+          "pass-1",
+          "pass-2"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Trent Reznor",
+          "url": "https://musicbrainz.org/artist/bc880664-6751-4998-984d-ebdbff15d229",
+          "note": "Exact match confirmed in pass-1 and pass-2."
+        }
+      ]
+    },
+    {
+      "id": "supernaut",
+      "label": "Supernaut",
+      "type": "release",
+      "releaseType": "song",
+      "summary": "1000 Homo DJs recording of the Black Sabbath song, documented with distinct Al Jourgensen and Trent Reznor vocal versions.",
+      "musicbrainz": {
+        "id": "6a928917-424c-38b2-b4c1-5de2d741d039",
+        "entity": "release-group",
+        "url": "https://musicbrainz.org/release-group/6a928917-424c-38b2-b4c1-5de2d741d039",
+        "verifiedByRuns": [
+          "pass-1",
+          "pass-2"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Supernaut",
+          "url": "https://musicbrainz.org/release-group/6a928917-424c-38b2-b4c1-5de2d741d039",
+          "note": "Exact match confirmed in pass-1 and pass-2."
+        }
+      ]
+    }
   ],
   "edges": [
-    {"source":"al-jourgensen","target":"ministry","type":"member_of","roles":["founder","vocals","guitar","keyboards"],"sourceStatus":"needs-citation"},
-    {"source":"paul-barker","target":"ministry","type":"member_of","roles":["bass","keyboards","programming"],"sourceStatus":"needs-citation"},
-    {"source":"cevin-key","target":"skinny-puppy","type":"member_of","roles":["founder","keyboards","programming"],"sourceStatus":"needs-citation"},
-    {"source":"nivek-ogre","target":"skinny-puppy","type":"member_of","roles":["founder","vocals"],"sourceStatus":"needs-citation"},
-    {"source":"bill-leeb","target":"skinny-puppy","type":"member_of","roles":["bass","synthesizer"],"sourceStatus":"needs-citation"},
-    {"source":"bill-leeb","target":"front-line-assembly","type":"member_of","roles":["founder","vocals","programming"],"sourceStatus":"needs-citation"},
-    {"source":"rhys-fulber","target":"front-line-assembly","type":"member_of","roles":["programming","production"],"sourceStatus":"needs-citation"},
-    {"source":"sascha-konietzko","target":"kmfdm","type":"member_of","roles":["founder","bass","vocals"],"sourceStatus":"needs-citation"},
-    {"source":"richard-23","target":"front-242","type":"member_of","roles":["vocals","percussion"],"sourceStatus":"needs-citation"},
-    {"source":"richard-23","target":"revolting-cocks","type":"member_of","roles":["vocals"],"sourceStatus":"needs-citation"},
-    {"source":"al-jourgensen","target":"revolting-cocks","type":"member_of","roles":["vocals","guitar"],"sourceStatus":"needs-citation"},
-    {"source":"ministry","target":"land-of-rape-and-honey","type":"released","roles":[],"sourceStatus":"verified","provenance":[{"title":"MusicBrainz: The Land of Rape and Honey","url":"https://musicbrainz.org/release-group/7a18b986-afcc-359c-add1-7aa3a79104a2","note":"Release group lists Ministry as artist and 1988 as the release year."}]},
-    {"source":"land-of-rape-and-honey","target":"stigmata","type":"contains","roles":[],"sourceStatus":"needs-citation"},
-    {"source":"al-jourgensen","target":"stigmata","type":"song_credit","roles":["vocals","guitar","writer","producer"],"performingAs":"Hypo Luxa","sourceStatus":"needs-citation"},
-    {"source":"paul-barker","target":"stigmata","type":"song_credit","roles":["bass","writer","producer"],"performingAs":"Hermes Pan","sourceStatus":"needs-citation"}
-    ,{"source":"revolting-cocks","target":"big-sexy-land","type":"released","roles":[],"validFrom":1986,"sourceStatus":"verified","provenance":[{"title":"MusicBrainz: Big Sexy Land","url":"https://musicbrainz.org/release/7da5e772-753b-411e-a363-4fa11b1df6c6","note":"Release record identifies Revolting Cocks as artist; the Wax Trax! label listing dates the US release to 1986-11."}]}
-    ,{"source":"al-jourgensen","target":"big-sexy-land","type":"release_credit","roles":["performer","producer","engineer"],"validFrom":1986,"sourceStatus":"verified","provenance":[{"title":"MusicBrainz: Big Sexy Land","url":"https://musicbrainz.org/release/7da5e772-753b-411e-a363-4fa11b1df6c6","note":"Track credits list Alain Jourgensen as performer, engineer, and producer."}]}
-    ,{"source":"richard-23","target":"big-sexy-land","type":"release_credit","roles":["performer"],"validFrom":1986,"sourceStatus":"verified","provenance":[{"title":"MusicBrainz: Big Sexy Land","url":"https://musicbrainz.org/release/7da5e772-753b-411e-a363-4fa11b1df6c6","note":"Track credits list Richard 23 as a performer."}]}
-    ,{"source":"revolting-cocks","target":"beers-steers-and-queers","type":"released","roles":[],"validFrom":1990,"sourceStatus":"verified","provenance":[{"title":"MusicBrainz: Beers, Steers & Queers","url":"https://musicbrainz.org/release/b03b4fbb-04a7-4768-8766-100886e90592","note":"Release record identifies Revolting Cocks as artist and lists a US release event in 1990-05."}]}
-    ,{"source":"al-jourgensen","target":"beers-steers-and-queers","type":"release_credit","roles":["performer","writer"],"validFrom":1990,"sourceStatus":"verified","provenance":[{"title":"MusicBrainz: Beers, Steers & Queers","url":"https://musicbrainz.org/release/b03b4fbb-04a7-4768-8766-100886e90592","note":"Track credits list Alain Jourgensen as performer, lyricist, and composer."}]}
-    ,{"source":"paul-barker","target":"beers-steers-and-queers","type":"release_credit","roles":["performer","writer"],"validFrom":1990,"sourceStatus":"verified","provenance":[{"title":"MusicBrainz: Beers, Steers & Queers","url":"https://musicbrainz.org/release/b03b4fbb-04a7-4768-8766-100886e90592","note":"Track credits list Paul Barker as performer and composer."}]}
-    ,{"source":"front-line-assembly","target":"tactical-neural-implant","type":"released","roles":[],"validFrom":1992,"sourceStatus":"verified","provenance":[{"title":"MusicBrainz: Tactical Neural Implant","url":"https://musicbrainz.org/release/e3f60669-25fa-48cc-a88d-326962723be9","note":"Release record identifies Front Line Assembly as artist and lists a 1992 release event."}]}
-    ,{"source":"bill-leeb","target":"tactical-neural-implant","type":"release_credit","roles":["performer","programming","producer","writer"],"validFrom":1992,"sourceStatus":"verified","provenance":[{"title":"MusicBrainz: Tactical Neural Implant","url":"https://musicbrainz.org/release/e3f60669-25fa-48cc-a88d-326962723be9","note":"Track credits list Bill Leeb as performer, programmer, producer, and writer."}]}
-    ,{"source":"rhys-fulber","target":"tactical-neural-implant","type":"release_credit","roles":["performer","programming","producer","writer"],"validFrom":1992,"sourceStatus":"verified","provenance":[{"title":"MusicBrainz: Tactical Neural Implant","url":"https://musicbrainz.org/release/e3f60669-25fa-48cc-a88d-326962723be9","note":"Track credits list Rhys Fulber as performer, programmer, producer, and writer."}]}
-    ,{"source":"tactical-neural-implant","target":"mindphaser","type":"contains","roles":[],"validFrom":1992,"sourceStatus":"verified","provenance":[{"title":"MusicBrainz: Tactical Neural Implant","url":"https://musicbrainz.org/release/e3f60669-25fa-48cc-a88d-326962723be9","note":"The tracklist includes Mindphaser."}]}
-    ,{"source":"bill-leeb","target":"mindphaser","type":"song_credit","roles":["performer","programming","producer","writer"],"validFrom":1992,"sourceStatus":"verified","provenance":[{"title":"MusicBrainz: Tactical Neural Implant","url":"https://musicbrainz.org/release/e3f60669-25fa-48cc-a88d-326962723be9","note":"Mindphaser credits list Bill Leeb as performer, programmer, producer, and writer."}]}
-    ,{"source":"rhys-fulber","target":"mindphaser","type":"song_credit","roles":["performer","programming","producer","writer"],"validFrom":1992,"sourceStatus":"verified","provenance":[{"title":"MusicBrainz: Tactical Neural Implant","url":"https://musicbrainz.org/release/e3f60669-25fa-48cc-a88d-326962723be9","note":"Mindphaser credits list Rhys Fulber as performer, programmer, producer, and writer."}]}
-    ,{"source":"1000-homo-djs","target":"supernaut","type":"released","roles":[],"sourceStatus":"verified","provenance":[{"title":"MusicBrainz: Black Box: WaxTrax! Records: The First 13 Years","url":"https://musicbrainz.org/release/f40133d1-e9c5-4343-8ec0-710f310de645","note":"The tracklist credits 1000 Homo DJs for Supernaut (Trent Reznor vocal version)."}]}
-    ,{"source":"trent-reznor","target":"supernaut","type":"song_credit","roles":["vocals"],"sourceStatus":"verified","provenance":[{"title":"MusicBrainz: Black Box: WaxTrax! Records: The First 13 Years","url":"https://musicbrainz.org/release/f40133d1-e9c5-4343-8ec0-710f310de645","note":"The track listing explicitly credits Trent Reznor on vocals."}]}
-    ,{"source":"al-jourgensen","target":"supernaut","type":"song_credit","roles":["vocals"],"sourceStatus":"verified","provenance":[{"title":"MusicBrainz: Cover Up","url":"https://musicbrainz.org/release/dc793be3-82ab-4dce-b1b5-33808b0c2e1d","note":"The release identifies Supernaut (Al vocal) as a 1000 Homo DJs recording and credits Al Jourgensen on vocals."}]}
+    {
+      "source": "al-jourgensen",
+      "target": "ministry",
+      "type": "member_of",
+      "roles": [
+        "founder",
+        "vocals",
+        "guitar",
+        "keyboards"
+      ],
+      "sourceStatus": "needs-citation"
+    },
+    {
+      "source": "paul-barker",
+      "target": "ministry",
+      "type": "member_of",
+      "roles": [
+        "bass",
+        "keyboards",
+        "programming"
+      ],
+      "sourceStatus": "needs-citation"
+    },
+    {
+      "source": "cevin-key",
+      "target": "skinny-puppy",
+      "type": "member_of",
+      "roles": [
+        "founder",
+        "keyboards",
+        "programming"
+      ],
+      "sourceStatus": "needs-citation"
+    },
+    {
+      "source": "nivek-ogre",
+      "target": "skinny-puppy",
+      "type": "member_of",
+      "roles": [
+        "founder",
+        "vocals"
+      ],
+      "sourceStatus": "needs-citation"
+    },
+    {
+      "source": "bill-leeb",
+      "target": "skinny-puppy",
+      "type": "member_of",
+      "roles": [
+        "bass",
+        "synthesizer"
+      ],
+      "sourceStatus": "needs-citation"
+    },
+    {
+      "source": "bill-leeb",
+      "target": "front-line-assembly",
+      "type": "member_of",
+      "roles": [
+        "founder",
+        "vocals",
+        "programming"
+      ],
+      "sourceStatus": "needs-citation"
+    },
+    {
+      "source": "rhys-fulber",
+      "target": "front-line-assembly",
+      "type": "member_of",
+      "roles": [
+        "programming",
+        "production"
+      ],
+      "sourceStatus": "needs-citation"
+    },
+    {
+      "source": "sascha-konietzko",
+      "target": "kmfdm",
+      "type": "member_of",
+      "roles": [
+        "founder",
+        "bass",
+        "vocals"
+      ],
+      "sourceStatus": "needs-citation"
+    },
+    {
+      "source": "richard-23",
+      "target": "front-242",
+      "type": "member_of",
+      "roles": [
+        "vocals",
+        "percussion"
+      ],
+      "sourceStatus": "needs-citation"
+    },
+    {
+      "source": "richard-23",
+      "target": "revolting-cocks",
+      "type": "member_of",
+      "roles": [
+        "vocals"
+      ],
+      "sourceStatus": "needs-citation"
+    },
+    {
+      "source": "al-jourgensen",
+      "target": "revolting-cocks",
+      "type": "member_of",
+      "roles": [
+        "vocals",
+        "guitar"
+      ],
+      "sourceStatus": "needs-citation"
+    },
+    {
+      "source": "ministry",
+      "target": "land-of-rape-and-honey",
+      "type": "released",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: The Land of Rape and Honey",
+          "url": "https://musicbrainz.org/release-group/7a18b986-afcc-359c-add1-7aa3a79104a2",
+          "note": "Release group lists Ministry as artist and 1988 as the release year."
+        }
+      ]
+    },
+    {
+      "source": "land-of-rape-and-honey",
+      "target": "stigmata",
+      "type": "contains",
+      "roles": [],
+      "sourceStatus": "needs-citation"
+    },
+    {
+      "source": "al-jourgensen",
+      "target": "stigmata",
+      "type": "song_credit",
+      "roles": [
+        "vocals",
+        "guitar",
+        "writer",
+        "producer"
+      ],
+      "performingAs": "Hypo Luxa",
+      "sourceStatus": "needs-citation"
+    },
+    {
+      "source": "paul-barker",
+      "target": "stigmata",
+      "type": "song_credit",
+      "roles": [
+        "bass",
+        "writer",
+        "producer"
+      ],
+      "performingAs": "Hermes Pan",
+      "sourceStatus": "needs-citation"
+    },
+    {
+      "source": "revolting-cocks",
+      "target": "big-sexy-land",
+      "type": "released",
+      "roles": [],
+      "validFrom": 1986,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Big Sexy Land",
+          "url": "https://musicbrainz.org/release/7da5e772-753b-411e-a363-4fa11b1df6c6",
+          "note": "Release record identifies Revolting Cocks as artist; the Wax Trax! label listing dates the US release to 1986-11."
+        }
+      ]
+    },
+    {
+      "source": "al-jourgensen",
+      "target": "big-sexy-land",
+      "type": "release_credit",
+      "roles": [
+        "performer",
+        "producer",
+        "engineer"
+      ],
+      "validFrom": 1986,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Big Sexy Land",
+          "url": "https://musicbrainz.org/release/7da5e772-753b-411e-a363-4fa11b1df6c6",
+          "note": "Track credits list Alain Jourgensen as performer, engineer, and producer."
+        }
+      ]
+    },
+    {
+      "source": "richard-23",
+      "target": "big-sexy-land",
+      "type": "release_credit",
+      "roles": [
+        "performer"
+      ],
+      "validFrom": 1986,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Big Sexy Land",
+          "url": "https://musicbrainz.org/release/7da5e772-753b-411e-a363-4fa11b1df6c6",
+          "note": "Track credits list Richard 23 as a performer."
+        }
+      ]
+    },
+    {
+      "source": "revolting-cocks",
+      "target": "beers-steers-and-queers",
+      "type": "released",
+      "roles": [],
+      "validFrom": 1990,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Beers, Steers & Queers",
+          "url": "https://musicbrainz.org/release/b03b4fbb-04a7-4768-8766-100886e90592",
+          "note": "Release record identifies Revolting Cocks as artist and lists a US release event in 1990-05."
+        }
+      ]
+    },
+    {
+      "source": "al-jourgensen",
+      "target": "beers-steers-and-queers",
+      "type": "release_credit",
+      "roles": [
+        "performer",
+        "writer"
+      ],
+      "validFrom": 1990,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Beers, Steers & Queers",
+          "url": "https://musicbrainz.org/release/b03b4fbb-04a7-4768-8766-100886e90592",
+          "note": "Track credits list Alain Jourgensen as performer, lyricist, and composer."
+        }
+      ]
+    },
+    {
+      "source": "paul-barker",
+      "target": "beers-steers-and-queers",
+      "type": "release_credit",
+      "roles": [
+        "performer",
+        "writer"
+      ],
+      "validFrom": 1990,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Beers, Steers & Queers",
+          "url": "https://musicbrainz.org/release/b03b4fbb-04a7-4768-8766-100886e90592",
+          "note": "Track credits list Paul Barker as performer and composer."
+        }
+      ]
+    },
+    {
+      "source": "front-line-assembly",
+      "target": "tactical-neural-implant",
+      "type": "released",
+      "roles": [],
+      "validFrom": 1992,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Tactical Neural Implant",
+          "url": "https://musicbrainz.org/release/e3f60669-25fa-48cc-a88d-326962723be9",
+          "note": "Release record identifies Front Line Assembly as artist and lists a 1992 release event."
+        }
+      ]
+    },
+    {
+      "source": "bill-leeb",
+      "target": "tactical-neural-implant",
+      "type": "release_credit",
+      "roles": [
+        "performer",
+        "programming",
+        "producer",
+        "writer"
+      ],
+      "validFrom": 1992,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Tactical Neural Implant",
+          "url": "https://musicbrainz.org/release/e3f60669-25fa-48cc-a88d-326962723be9",
+          "note": "Track credits list Bill Leeb as performer, programmer, producer, and writer."
+        }
+      ]
+    },
+    {
+      "source": "rhys-fulber",
+      "target": "tactical-neural-implant",
+      "type": "release_credit",
+      "roles": [
+        "performer",
+        "programming",
+        "producer",
+        "writer"
+      ],
+      "validFrom": 1992,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Tactical Neural Implant",
+          "url": "https://musicbrainz.org/release/e3f60669-25fa-48cc-a88d-326962723be9",
+          "note": "Track credits list Rhys Fulber as performer, programmer, producer, and writer."
+        }
+      ]
+    },
+    {
+      "source": "tactical-neural-implant",
+      "target": "mindphaser",
+      "type": "contains",
+      "roles": [],
+      "validFrom": 1992,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Tactical Neural Implant",
+          "url": "https://musicbrainz.org/release/e3f60669-25fa-48cc-a88d-326962723be9",
+          "note": "The tracklist includes Mindphaser."
+        }
+      ]
+    },
+    {
+      "source": "bill-leeb",
+      "target": "mindphaser",
+      "type": "song_credit",
+      "roles": [
+        "performer",
+        "programming",
+        "producer",
+        "writer"
+      ],
+      "validFrom": 1992,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Tactical Neural Implant",
+          "url": "https://musicbrainz.org/release/e3f60669-25fa-48cc-a88d-326962723be9",
+          "note": "Mindphaser credits list Bill Leeb as performer, programmer, producer, and writer."
+        }
+      ]
+    },
+    {
+      "source": "rhys-fulber",
+      "target": "mindphaser",
+      "type": "song_credit",
+      "roles": [
+        "performer",
+        "programming",
+        "producer",
+        "writer"
+      ],
+      "validFrom": 1992,
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Tactical Neural Implant",
+          "url": "https://musicbrainz.org/release/e3f60669-25fa-48cc-a88d-326962723be9",
+          "note": "Mindphaser credits list Rhys Fulber as performer, programmer, producer, and writer."
+        }
+      ]
+    },
+    {
+      "source": "1000-homo-djs",
+      "target": "supernaut",
+      "type": "released",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Black Box: WaxTrax! Records: The First 13 Years",
+          "url": "https://musicbrainz.org/release/f40133d1-e9c5-4343-8ec0-710f310de645",
+          "note": "The tracklist credits 1000 Homo DJs for Supernaut (Trent Reznor vocal version)."
+        }
+      ]
+    },
+    {
+      "source": "trent-reznor",
+      "target": "supernaut",
+      "type": "song_credit",
+      "roles": [
+        "vocals"
+      ],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Black Box: WaxTrax! Records: The First 13 Years",
+          "url": "https://musicbrainz.org/release/f40133d1-e9c5-4343-8ec0-710f310de645",
+          "note": "The track listing explicitly credits Trent Reznor on vocals."
+        }
+      ]
+    },
+    {
+      "source": "al-jourgensen",
+      "target": "supernaut",
+      "type": "song_credit",
+      "roles": [
+        "vocals"
+      ],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Cover Up",
+          "url": "https://musicbrainz.org/release/dc793be3-82ab-4dce-b1b5-33808b0c2e1d",
+          "note": "The release identifies Supernaut (Al vocal) as a 1000 Homo DJs recording and credits Al Jourgensen on vocals."
+        }
+      ]
+    }
   ]
 }
