@@ -11,6 +11,7 @@ const status = document.querySelector("#graph-status");
 const search = document.querySelector("#search");
 const pathFrom = document.querySelector("#path-from");
 const pathTo = document.querySelector("#path-to");
+const pathOptions = document.querySelector("#path-options");
 const sizeMetric = document.querySelector("#size-metric");
 const degreeLimit = document.querySelector("#degree-limit");
 const fadeDistance = document.querySelector("#fade-distance");
@@ -404,11 +405,19 @@ function selectNode(id) {
 }
 
 function populatePathSelects() {
+  const suggestions = [];
   for (const node of [...graph.nodes].sort((a, b) => a.label.localeCompare(b.label))) {
-    for (const select of [pathFrom, pathTo]) select.add(new Option(node.label, node.id));
+    suggestions.push(`<option value="${node.label}">${node.type}</option>`);
+    for (const alias of node.aliases || []) suggestions.push(`<option value="${alias}">${node.label} · ${node.type}</option>`);
   }
-  pathFrom.value = "al-jourgensen";
-  pathTo.value = "richard-23";
+  pathOptions.innerHTML = suggestions.join("");
+  pathFrom.value = "Al Jourgensen";
+  pathTo.value = "Richard 23";
+}
+
+function pathInputNode(input) {
+  const query = input.value.trim().toLocaleLowerCase();
+  return graph.nodes.find((node) => node.label.toLocaleLowerCase() === query || node.aliases?.some((alias) => alias.toLocaleLowerCase() === query));
 }
 
 function shortestPath(start, target, edges = currentEdges) {
@@ -508,7 +517,13 @@ document.querySelector("#ask-chatgpt").addEventListener("click", () => {
 
 document.querySelector("#path-form").addEventListener("submit", (event) => {
   event.preventDefault();
-  const path = shortestPath(pathFrom.value, pathTo.value);
+  const from = pathInputNode(pathFrom);
+  const to = pathInputNode(pathTo);
+  if (!from || !to) {
+    document.querySelector("#path-result").textContent = "Choose a listed person, project, or release in both fields.";
+    return;
+  }
+  const path = shortestPath(from.id, to.id);
   document.querySelector("#path-result").innerHTML = path
     ? `Browser explanation: <strong>${path.map(labelFor).join(" → ")}</strong>. This is the shortest recorded connection in the local map; select a sphere to inspect roles and provenance status.`
     : "No connecting path has been recorded in this seed graph.";
