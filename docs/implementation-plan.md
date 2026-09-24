@@ -42,18 +42,29 @@ The current review chain implements focused relationship context, temporal filte
 
 ## Next: browser-local explanation
 
-WebLLM is an in-browser WebGPU inference engine with a chat-completion API, not a complete chat UI. The implementation must provide:
+The optional answer helper should feel like a simple way to ask about what is currently on screen. It should make clear that it can only work from the graph's recorded information.
 
-1. A user-visible chat/explanation interface, model-load progress, memory/storage disclosure, and unsupported-browser fallback.
-2. A small compatible model loaded only after the user opts in; no API key or server is required.
-3. A constrained prompt containing only the deterministic graph-query result and provenance, so the model explains but never discovers or invents relationships.
-4. The existing deterministic prose as the no-WebGPU/no-model fallback.
+1. Use plain prompts such as “What is your question?” and “Ask,” with friendly progress and browser-support messages.
+2. Keep answers grounded in the selected node, edge, or path. When the graph cannot answer, say: “I am only a simple bot with limited resources and can't handle this request.”
+3. Keep the helper optional and keep the graph usable when it is unavailable.
+4. **Future feature:** offer an opt-in “Ask ChatGPT” path that sends the user's question and the relevant cited graph data to ChatGPT for more complex reasoning. Explain what data will be shared before sending it, and keep ChatGPT answers visually distinct from recorded graph facts.
+
+## Next: visualization UX pass
+
+1. Make edges more legible with thicker default strokes and stronger selected-path contrast.
+2. Give node bodies subtle type-aware gradients while retaining accessible label contrast.
+3. Repair and test panning across mouse and touch input, including zoomed mobile views.
+4. Change “Rearrange” so it fits and optimizes the layout for the current viewport and active filters, rather than reusing the original canvas bounds.
 
 ## Next: community feedback
 
 1. Add a Feedback section with links to GitHub Issue Forms for correcting or adding information. The form must require at least one cited source URL and ask contributors to distinguish fact, correction, and interpretation.
 2. Add a separate Feature request form for ideas that improve the page or explorer.
 3. Add a concise contributor note that unsupported factual changes remain in the research queue rather than being silently added to the graph.
+
+## Later version: generic MusicBrainz visualizer
+
+Build a separate, provider-aware MusicBrainz visualizer that begins with a user-selected entity and expands only at the user's request. It must distinguish MusicBrainz artists, release groups, releases, recordings, and works; pace requests to provider policy; label all live results as unreviewed session data; and provide a deliberate route for promoting cited facts into a curated graph.
 
 ## Quality gates
 
