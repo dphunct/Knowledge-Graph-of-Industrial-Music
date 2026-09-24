@@ -423,7 +423,25 @@ function populatePathSelects() {
 
 function pathInputNode(input) {
   const query = input.value.trim().toLocaleLowerCase();
-  return graph.nodes.find((node) => node.label.toLocaleLowerCase() === query || node.aliases?.some((alias) => alias.toLocaleLowerCase() === query));
+  if (!query) return null;
+  const matches = [];
+  for (const node of graph.nodes) {
+    if (node.label.toLocaleLowerCase() === query) matches.push({ node, matchedName: node.label, isAlias: false, exact: true });
+    for (const alias of node.aliases || []) {
+      if (alias.toLocaleLowerCase() === query) matches.push({ node, matchedName: alias, isAlias: true, exact: true });
+    }
+  }
+  const exact = matches[0];
+  if (exact) return exact;
+  // The native suggestion list narrows as someone types. Allow its one unique
+  // remaining person/project to be submitted without making them type every
+  // character, but never guess when more than one identity matches.
+  const partials = [];
+  for (const node of graph.nodes) {
+    const matchingName = [node.label, ...(node.aliases || [])].find((name) => name.toLocaleLowerCase().startsWith(query));
+    if (matchingName) partials.push({ node, matchedName: matchingName, isAlias: matchingName.toLocaleLowerCase() !== node.label.toLocaleLowerCase() });
+  }
+  return partials.length === 1 ? partials[0] : null;
 }
 
 function shortestPath(start, target, edges = currentEdges) {
@@ -548,9 +566,10 @@ document.querySelector("#path-form").addEventListener("submit", (event) => {
     document.querySelector("#path-result").textContent = "Choose a listed person, project, or release in both fields.";
     return;
   }
-  const path = shortestPath(from.id, to.id);
+  const path = shortestPath(from.node.id, to.node.id);
+  const aliases = [from, to].filter(({ isAlias }) => isAlias).map(({ matchedName, node }) => `<strong>${matchedName}</strong> is ${node.label}.`);
   document.querySelector("#path-result").innerHTML = path
-    ? `Browser explanation: <strong>${path.map(labelFor).join(" → ")}</strong>. This is the shortest recorded connection in the local map; select a sphere to inspect roles and provenance status.`
+    ? `${aliases.join(" ")}${aliases.length ? " " : ""}Browser explanation: <strong>${path.map(labelFor).join(" → ")}</strong>. This is the shortest recorded connection in the local map; select a sphere to inspect roles and provenance status.`
     : "No connecting path has been recorded in this seed graph.";
   if (path) {
     highlightedPath = path;
