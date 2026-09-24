@@ -614,6 +614,42 @@
       ]
     },
     {
+      "id": "a-chud-convention",
+      "label": "A Chud Convention",
+      "type": "project",
+      "relevance": "core",
+      "summary": "Industrial project documented in MusicBrainz membership data for cEvin Key and Nivek Ogre.",
+      "musicbrainz": { "id": "14c43e52-0267-453f-bcc6-c2201aac2c82", "entity": "artist", "url": "https://musicbrainz.org/artist/14c43e52-0267-453f-bcc6-c2201aac2c82" },
+      "provenance": [{ "title": "MusicBrainz: cEvin Key", "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd", "note": "Lists cEvin Key as a member." }]
+    },
+    {
+      "id": "hilt",
+      "label": "Hilt",
+      "type": "project",
+      "relevance": "core",
+      "summary": "Industrial project documented in MusicBrainz membership data for cEvin Key.",
+      "musicbrainz": { "id": "42509bd3-6fa1-459a-8e40-127a3ef8663b", "entity": "artist", "url": "https://musicbrainz.org/artist/42509bd3-6fa1-459a-8e40-127a3ef8663b" },
+      "provenance": [{ "title": "MusicBrainz: cEvin Key", "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd", "note": "Lists cEvin Key as a member." }]
+    },
+    {
+      "id": "doubting-thomas",
+      "label": "Doubting Thomas",
+      "type": "project",
+      "relevance": "core",
+      "summary": "Industrial project documented in MusicBrainz membership data for cEvin Key.",
+      "musicbrainz": { "id": "66331dd7-5279-4e8f-8e41-1aec4f143638", "entity": "artist", "url": "https://musicbrainz.org/artist/66331dd7-5279-4e8f-8e41-1aec4f143638" },
+      "provenance": [{ "title": "MusicBrainz: cEvin Key", "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd", "note": "Lists cEvin Key as a member." }]
+    },
+    {
+      "id": "download",
+      "label": "Download",
+      "type": "project",
+      "relevance": "core",
+      "summary": "Industrial project documented in MusicBrainz membership data for cEvin Key.",
+      "musicbrainz": { "id": "a31c5ea9-b550-447a-b2ee-99b08e8c4825", "entity": "artist", "url": "https://musicbrainz.org/artist/a31c5ea9-b550-447a-b2ee-99b08e8c4825" },
+      "provenance": [{ "title": "MusicBrainz: cEvin Key", "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd", "note": "Lists cEvin Key as a member." }]
+    },
+    {
       "id": "land-of-rape-and-honey",
       "label": "The Land of Rape and Honey",
       "type": "release",
@@ -1616,6 +1652,46 @@
           "note": "Lists No Name, No Slogan with a first release year of 1989."
         }
       ]
+    },
+    {
+      "source": "cevin-key",
+      "target": "a-chud-convention",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: cEvin Key", "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd", "note": "Lists cEvin Key as a member; MusicBrainz does not provide dates." }]
+    },
+    {
+      "source": "nivek-ogre",
+      "target": "a-chud-convention",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: Nivek Ogre", "url": "https://musicbrainz.org/artist/5778f668-1a4c-482f-beb9-08b15b0f861c", "note": "Lists Nivek Ogre as a member; MusicBrainz does not provide dates." }]
+    },
+    {
+      "source": "cevin-key",
+      "target": "hilt",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: cEvin Key", "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd", "note": "Lists cEvin Key as a member; MusicBrainz does not provide dates." }]
+    },
+    {
+      "source": "cevin-key",
+      "target": "doubting-thomas",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: cEvin Key", "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd", "note": "Lists cEvin Key as a member; MusicBrainz does not provide dates." }]
+    },
+    {
+      "source": "cevin-key",
+      "target": "download",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: cEvin Key", "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd", "note": "Lists cEvin Key as a member; MusicBrainz does not provide dates." }]
     },
     {
       "source": "ministry",
