@@ -12,14 +12,25 @@ const year = (value) => value ? Number.parseInt(value.slice(0, 4), 10) : undefin
 const slug = (value) => value.toLocaleLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "person";
 
 async function request(path) {
-  const remaining = pauseMs - (Date.now() - lastRequestAt);
-  if (remaining > 0) await sleep(remaining);
-  const response = await fetch(`${api}${path}${path.includes("?") ? "&" : "?"}fmt=json`, {
-    headers: { Accept: "application/json", "User-Agent": "IndustrialKnowledgeGraph/0.1 (https://github.com/dphunct/Knowledge-Graph-of-Industrial-Music)" }
-  });
-  lastRequestAt = Date.now();
-  if (!response.ok) throw new Error(`${response.status} ${response.statusText}: ${path}`);
-  return response.json();
+  const url = `${api}${path}${path.includes("?") ? "&" : "?"}fmt=json`;
+  let failure;
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    const remaining = pauseMs - (Date.now() - lastRequestAt);
+    if (remaining > 0) await sleep(remaining);
+    try {
+      const response = await fetch(url, {
+        headers: { Accept: "application/json", "User-Agent": "IndustrialKnowledgeGraph/0.1 (https://github.com/dphunct/Knowledge-Graph-of-Industrial-Music)" }
+      });
+      lastRequestAt = Date.now();
+      if (response.ok) return response.json();
+      failure = new Error(`${response.status} ${response.statusText}: ${path}`);
+      if (response.status < 500 && response.status !== 429) throw failure;
+    } catch (error) {
+      failure = error;
+    }
+    if (attempt < 2) await sleep((attempt + 1) * 2000);
+  }
+  throw failure;
 }
 
 function uniqueId(label, mbid) {
