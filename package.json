@@ -11,7 +11,8 @@
     "enrich:musicbrainz": "node scripts/enrich-musicbrainz.mjs",
     "enrich:musicbrainz:people": "node scripts/enrich-musicbrainz.mjs --phase=people",
     "enrich:musicbrainz:projects": "node scripts/enrich-musicbrainz.mjs --phase=projects",
-    "enrich:musicbrainz:releases": "node scripts/enrich-musicbrainz.mjs --phase=releases"
+    "enrich:musicbrainz:releases": "node scripts/enrich-musicbrainz.mjs --phase=releases",
+    "import:musicbrainz:members": "node scripts/import-project-members.mjs"
   },
   "devDependencies": {
     "vite": "^7.0.0"
