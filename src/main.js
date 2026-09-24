@@ -42,6 +42,9 @@ const nodeEdges = (id) => graph.edges.filter((edge) => edge.source === id || edg
 const labelFor = (id) => byId.get(id).label;
 const activeAtYear = (item) => (!item.validFrom || Number(item.validFrom) <= activeYear) && (!item.validTo || Number(item.validTo) >= activeYear);
 const provenanceLinks = (item) => (item.provenance || []).map((source) => `<a href="${source.url}" target="_blank" rel="noopener noreferrer">${source.title} ↗</a>${source.note ? ` <span>${source.note}</span>` : ""}`).join("<br />");
+// A power curve makes each metric’s low, middle, and high values visibly
+// distinct without changing the underlying graph calculation.
+const visualMetric = (node) => Math.pow(metrics.get(node.id)[sizeMetric.value], 1.55);
 
 function visibleNodes() {
   const typeForView = { people: "person", projects: "project", releases: "release" };
@@ -98,14 +101,14 @@ function renderGraph() {
   const width = graphElement.clientWidth || 760;
   const height = graphElement.clientHeight || 450;
   const sizeFor = (node) => {
-    const metric = metrics.get(node.id)[sizeMetric.value];
-    return Math.round((width < 520 ? 44 : 50) + metric * (width < 520 ? 62 : 126));
+    return Math.round((width < 520 ? 42 : 46) + visualMetric(node) * (width < 520 ? 82 : 150));
   };
   cancelAnimationFrame(animationFrame);
   layout = new Map(nodes.map((node, index) => {
     const angle = index * 2.399963229728653;
     const radius = Math.sqrt(index + 1) * Math.min(width, height) * .14;
-    return [node.id, { x: width / 2 + Math.cos(angle) * radius, y: height / 2 + Math.sin(angle) * radius, z: Math.sin(angle * 1.7) * 90, vx: 0, vy: 0, pinned: false }];
+    const depth = (((index * 0.61803398875) % 1) * 2 - 1) * Math.min(width, height) * .65;
+    return [node.id, { x: width / 2 + Math.cos(angle) * radius, y: height / 2 + Math.sin(angle) * radius, z: depth, vx: 0, vy: 0, pinned: false }];
   }));
 
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -249,7 +252,7 @@ function renderThreeGraph(nodes, edges, width, height) {
     return new THREE.CanvasTexture(canvas);
   };
   const points = new Map();
-  for (const [id, point] of layout) points.set(id, new THREE.Vector3((point.x - width / 2) * 1.1, (height / 2 - point.y) * 1.1, point.z * 1.8));
+  for (const [id, point] of layout) points.set(id, new THREE.Vector3((point.x - width / 2) * 1.1, (height / 2 - point.y) * 1.1, point.z * .9));
   for (const edge of edges) {
     const start = points.get(edge.source); const end = points.get(edge.target); const direction = end.clone().sub(start); const length = direction.length();
     const selected = highlightedPath.includes(edge.source) && highlightedPath.includes(edge.target);
@@ -258,8 +261,7 @@ function renderThreeGraph(nodes, edges, width, height) {
     mesh.position.copy(start).add(end).multiplyScalar(.5); mesh.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), direction.normalize()); scene.add(mesh);
   }
   for (const node of nodes) {
-    const metric = metrics.get(node.id)[sizeMetric.value];
-    const radius = 10 + metric * 46;
+    const radius = 7 + visualMetric(node) * 62;
     const mesh = new THREE.Mesh(new THREE.SphereGeometry(radius, 24, 24), new THREE.MeshPhongMaterial({ map: textureFor(node.type), shininess: 70, transparent: true, opacity: selectedId && selectedId !== node.id ? .45 : 1 }));
     mesh.position.copy(points.get(node.id)); mesh.userData.nodeId = node.id; scene.add(mesh); meshes.push(mesh);
     const label = document.createElement("canvas"); label.width = 320; label.height = 64;
