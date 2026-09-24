@@ -2,6 +2,15 @@
 
 Status is evidence-based: **done** means merged and built; **next** means agreed but not yet implemented.
 
+## In review
+
+The following pull requests implement the current application work and must be merged in order:
+
+1. #11 — interaction fixes, responsive layout, and this plan.
+2. #12 — expanded edge context, control help, and structured feedback forms.
+3. #13 — WebGL 3D view with orbit controls and the year slider.
+4. #14 — opt-in, browser-local WebLLM explainer with deterministic fallback.
+
 ## Done
 
 - Static GitHub Pages application and deployment workflow.
@@ -14,8 +23,9 @@ Status is evidence-based: **done** means merged and built; **next** means agreed
 
 - Name-only graph nodes and a graph-first wide layout.
 - Everything, people, projects, and releases filters.
-- Compound relationships in filtered views.
-- Selected-node neighborhood fading, edge inspection, and canvas reset.
+- Compound relationships in filtered views and focused edge context.
+- Selected-node neighborhood fading, edge inspection, canvas reset, and control help.
+- Responsive phone through extra-large layouts.
 
 ## Next: knowledge expansion
 
@@ -26,10 +36,7 @@ Status is evidence-based: **done** means merged and built; **next** means agreed
 
 ## Next: explorer depth
 
-1. Make compound-edge inspection expand the shared intermediate projects as a focused subgraph. For example, an artist-to-artist edge reveals shared projects/releases; a release-to-release edge reveals the artists, projects, and credits connecting them.
-2. Add the year slider, filtering nodes and edges by temporal validity.
-3. Replace the current depth styling with a true 3D renderer, including orbit controls and selection preservation across 2D/3D transitions.
-4. Add accessible hover/help controls for search, graph metric sizing, view filters, 2D/3D controls, and edge interactions.
+The current review chain implements focused relationship context, temporal filtering, orbitable WebGL 3D, and control help. A later refinement should add relationship-specific evidence panels and richer 3D layout controls.
 
 ## Next: browser-local explanation
 
