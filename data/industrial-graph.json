@@ -27,6 +27,9 @@
     ,{"id":"beers-steers-and-queers","label":"Beers, Steers & Queers","type":"release","releaseType":"album","year":1990,"validFrom":1990,"summary":"Revolting Cocks album released in 1990."}
     ,{"id":"tactical-neural-implant","label":"Tactical Neural Implant","type":"release","releaseType":"album","year":1992,"validFrom":1992,"summary":"Front Line Assembly album with Bill Leeb and Rhys Fulber credits."}
     ,{"id":"mindphaser","label":"Mindphaser","type":"release","releaseType":"song","year":1992,"validFrom":1992,"summary":"Front Line Assembly song from Tactical Neural Implant."}
+    ,{"id":"1000-homo-djs","label":"1000 Homo DJs","type":"project","relevance":"core","summary":"Industrial side project documented through its recordings of Supernaut."}
+    ,{"id":"trent-reznor","label":"Trent Reznor","type":"person","relevance":"boundary","summary":"Contextual collaborator: vocalist on the Trent Reznor vocal version of 1000 Homo DJs' Supernaut."}
+    ,{"id":"supernaut","label":"Supernaut","type":"release","releaseType":"song","summary":"1000 Homo DJs recording of the Black Sabbath song, documented with distinct Al Jourgensen and Trent Reznor vocal versions."}
   ],
   "edges": [
     {"source":"al-jourgensen","target":"ministry","type":"member_of","roles":["founder","vocals","guitar","keyboards"],"sourceStatus":"needs-citation"},
@@ -56,5 +59,8 @@
     ,{"source":"tactical-neural-implant","target":"mindphaser","type":"contains","roles":[],"validFrom":1992,"sourceStatus":"verified","provenance":[{"title":"MusicBrainz: Tactical Neural Implant","url":"https://musicbrainz.org/release/e3f60669-25fa-48cc-a88d-326962723be9","note":"The tracklist includes Mindphaser."}]}
     ,{"source":"bill-leeb","target":"mindphaser","type":"song_credit","roles":["performer","programming","producer","writer"],"validFrom":1992,"sourceStatus":"verified","provenance":[{"title":"MusicBrainz: Tactical Neural Implant","url":"https://musicbrainz.org/release/e3f60669-25fa-48cc-a88d-326962723be9","note":"Mindphaser credits list Bill Leeb as performer, programmer, producer, and writer."}]}
     ,{"source":"rhys-fulber","target":"mindphaser","type":"song_credit","roles":["performer","programming","producer","writer"],"validFrom":1992,"sourceStatus":"verified","provenance":[{"title":"MusicBrainz: Tactical Neural Implant","url":"https://musicbrainz.org/release/e3f60669-25fa-48cc-a88d-326962723be9","note":"Mindphaser credits list Rhys Fulber as performer, programmer, producer, and writer."}]}
+    ,{"source":"1000-homo-djs","target":"supernaut","type":"released","roles":[],"sourceStatus":"verified","provenance":[{"title":"MusicBrainz: Black Box: WaxTrax! Records: The First 13 Years","url":"https://musicbrainz.org/release/f40133d1-e9c5-4343-8ec0-710f310de645","note":"The tracklist credits 1000 Homo DJs for Supernaut (Trent Reznor vocal version)."}]}
+    ,{"source":"trent-reznor","target":"supernaut","type":"song_credit","roles":["vocals"],"sourceStatus":"verified","provenance":[{"title":"MusicBrainz: Black Box: WaxTrax! Records: The First 13 Years","url":"https://musicbrainz.org/release/f40133d1-e9c5-4343-8ec0-710f310de645","note":"The track listing explicitly credits Trent Reznor on vocals."}]}
+    ,{"source":"al-jourgensen","target":"supernaut","type":"song_credit","roles":["vocals"],"sourceStatus":"verified","provenance":[{"title":"MusicBrainz: Cover Up","url":"https://musicbrainz.org/release/dc793be3-82ab-4dce-b1b5-33808b0c2e1d","note":"The release identifies Supernaut (Al vocal) as a 1000 Homo DJs recording and credits Al Jourgensen on vocals."}]}
   ]
 }
