@@ -36,6 +36,7 @@ let graphZoom = Number(zoomSlider.value);
 let threeCamera = null;
 let threeControls = null;
 let graphPan = { x: 0, y: 0 };
+let suppressCanvasClick = false;
 
 const nodeEdges = (id) => graph.edges.filter((edge) => edge.source === id || edge.target === id);
 const labelFor = (id) => byId.get(id).label;
@@ -96,11 +97,14 @@ function renderGraph() {
   const visibleIds = new Set(nodes.map(({ id }) => id));
   const width = graphElement.clientWidth || 760;
   const height = graphElement.clientHeight || 450;
-  const nodeRadius = 62;
+  const sizeFor = (node) => {
+    const metric = metrics.get(node.id)[sizeMetric.value];
+    return Math.round((width < 520 ? 54 : 66) + metric * (width < 520 ? 42 : 78));
+  };
   cancelAnimationFrame(animationFrame);
   layout = new Map(nodes.map((node, index) => {
     const angle = index * 2.399963229728653;
-    const radius = Math.max(width, height) * (0.22 + (index % 4) * 0.09);
+    const radius = Math.sqrt(index + 1) * Math.min(width, height) * .14;
     return [node.id, { x: width / 2 + Math.cos(angle) * radius, y: height / 2 + Math.sin(angle) * radius, z: Math.sin(angle * 1.7) * 90, vx: 0, vy: 0, pinned: false }];
   }));
 
@@ -119,7 +123,7 @@ function renderGraph() {
     const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
     line.classList.add(highlightedPath.includes(edge.source) && highlightedPath.includes(edge.target) ? "highlighted" : "edge");
     line.style.pointerEvents = "stroke";
-    line.addEventListener("click", (event) => { event.stopPropagation(); showEdge(edge); });
+    line.addEventListener("click", (event) => { event.stopPropagation(); if (!suppressCanvasClick) showEdge(edge); });
     svg.append(line);
     return { edge, line };
   });
@@ -134,14 +138,14 @@ function renderGraph() {
     }
     button.setAttribute("role", "listitem");
     button.innerHTML = `<span>${node.label}</span><small>${node.type}${node.relevance ? ` · ${node.relevance}` : ""}</small>`;
-    button.style.width = `${Math.min(80 + metrics.get(node.id)[sizeMetric.value] * 48, width < 520 ? 88 : 140)}px`;
+    button.style.width = `${sizeFor(node)}px`;
     button.addEventListener("click", () => selectNode(node.id));
-    button.addEventListener("pointerdown", (event) => beginDrag(event, node.id, nodeRadius, width, height));
+    button.addEventListener("pointerdown", (event) => { event.stopPropagation(); beginDrag(event, node.id, sizeFor(node) / 2, width, height); });
     return [node.id, button];
   }));
   graphElement.replaceChildren(svg, ...buttons.values());
-  graphElement.onclick = (event) => { if (event.target === graphElement || event.target === svg) resetSelection(); };
-  graphElement.onpointerdown = (event) => { if (event.target === graphElement || event.target === svg) beginPan(event); };
+  graphElement.onclick = (event) => { if (!suppressCanvasClick && (event.target === graphElement || event.target === svg)) resetSelection(); };
+  graphElement.onpointerdown = (event) => { if (!event.target.closest?.(".node")) beginPan(event); };
   graphElement.classList.toggle("three-d", dimension === "3d");
   status.textContent = context
     ? `Edge context · ${nodes.length} nodes · ${edges.length} recorded relationships · click the canvas to return`
@@ -162,7 +166,7 @@ function renderGraph() {
       const point = layout.get(id);
       button.style.left = `${width / 2 + (point.x - width / 2) * graphZoom + graphPan.x}px`;
       button.style.top = `${height / 2 + (point.y - height / 2) * graphZoom + graphPan.y}px`;
-      button.style.transform = "translate(-50%, -50%)";
+      button.style.transform = `translate(-50%, -50%) scale(${graphZoom})`;
     }
   };
 
@@ -174,7 +178,8 @@ function renderGraph() {
         const dx = b.x - a.x; const dy = b.y - a.y;
         const distance = Math.hypot(dx, dy) || 0.01;
         const unitX = dx / distance; const unitY = dy / distance;
-        const push = (18000 / (distance * distance)) + Math.max(0, nodeRadius * 2 - distance) * 0.7;
+        const minimumDistance = sizeFor(nodes[left]) / 2 + sizeFor(nodes[right]) / 2 + 18;
+        const push = (25000 / (distance * distance)) + Math.max(0, minimumDistance - distance) * 1.1;
         if (!a.pinned) { a.vx -= unitX * push; a.vy -= unitY * push; }
         if (!b.pinned) { b.vx += unitX * push; b.vy += unitY * push; }
       }
@@ -183,18 +188,19 @@ function renderGraph() {
       const a = layout.get(edge.source); const b = layout.get(edge.target);
       const dx = b.x - a.x; const dy = b.y - a.y;
       const distance = Math.hypot(dx, dy) || 0.01;
-      const pull = (distance - (width < 520 ? 165 : 235)) * 0.008;
+      const pull = (distance - (width < 520 ? 150 : 220)) * 0.006;
       const unitX = dx / distance; const unitY = dy / distance;
       if (!a.pinned) { a.vx += unitX * pull; a.vy += unitY * pull; }
       if (!b.pinned) { b.vx -= unitX * pull; b.vy -= unitY * pull; }
     }
-    for (const point of points) {
+    for (const [pointIndex, point] of points.entries()) {
       if (point.pinned) continue;
       point.vx += (width / 2 - point.x) * 0.00035;
       point.vy += (height / 2 - point.y) * 0.00035;
       point.vx *= 0.78; point.vy *= 0.78;
-      point.x = Math.max(nodeRadius, Math.min(width - nodeRadius, point.x + point.vx * heat));
-      point.y = Math.max(nodeRadius, Math.min(height - nodeRadius, point.y + point.vy * heat));
+      const radius = sizeFor(nodes[pointIndex]) / 2;
+      point.x = Math.max(radius, Math.min(width - radius, point.x + point.vx * heat));
+      point.y = Math.max(radius, Math.min(height - radius, point.y + point.vy * heat));
     }
     redrawGraph();
     if (heat > 0.015) animationFrame = requestAnimationFrame(() => simulate(heat * 0.985));
@@ -287,8 +293,16 @@ function resetSelection() {
 function beginPan(event) {
   const start = { x: event.clientX, y: event.clientY, panX: graphPan.x, panY: graphPan.y };
   graphElement.setPointerCapture(event.pointerId);
-  const move = (moveEvent) => { graphPan = { x: start.panX + moveEvent.clientX - start.x, y: start.panY + moveEvent.clientY - start.y }; redrawGraph(); };
-  const release = () => { graphElement.removeEventListener("pointermove", move); graphElement.removeEventListener("pointerup", release); graphElement.removeEventListener("pointercancel", release); };
+  let moved = false;
+  const move = (moveEvent) => {
+    const deltaX = moveEvent.clientX - start.x; const deltaY = moveEvent.clientY - start.y;
+    if (Math.hypot(deltaX, deltaY) > 5) moved = true;
+    if (moved) { graphPan = { x: start.panX + deltaX, y: start.panY + deltaY }; redrawGraph(); }
+  };
+  const release = () => {
+    if (moved) { suppressCanvasClick = true; window.setTimeout(() => { suppressCanvasClick = false; }, 0); }
+    graphElement.removeEventListener("pointermove", move); graphElement.removeEventListener("pointerup", release); graphElement.removeEventListener("pointercancel", release);
+  };
   graphElement.addEventListener("pointermove", move); graphElement.addEventListener("pointerup", release); graphElement.addEventListener("pointercancel", release);
 }
 
@@ -437,7 +451,13 @@ document.querySelectorAll("[data-help]").forEach((button) => {
   button.addEventListener("blur", () => hideTooltip(button));
   button.addEventListener("click", (event) => event.preventDefault());
 });
-document.querySelector("[data-action='rearrange']").addEventListener("click", renderGraph);
+document.querySelector("[data-action='rearrange']").addEventListener("click", () => {
+  graphPan = { x: 0, y: 0 };
+  graphZoom = Math.min(1, Math.max(.6, Number((Math.min(graphElement.clientWidth || 760, graphElement.clientHeight || 450) / 540).toFixed(2))));
+  zoomSlider.value = graphZoom;
+  zoomValue.textContent = `${Math.round(graphZoom * 100)}%`;
+  renderGraph();
+});
 document.querySelector("[data-action='dimension']").addEventListener("click", (event) => { dimension = dimension === "2d" ? "3d" : "2d"; event.currentTarget.textContent = dimension === "3d" ? "3D / 2D" : "2D / 3D"; renderGraph(); });
 sizeMetric.addEventListener("change", renderGraph);
 search.addEventListener("input", renderGraph);
