@@ -1,8 +1,6 @@
 import "./style.css";
+import graph from "../data/industrial-graph.json";
 
-const graphResponse = await fetch(`${import.meta.env.BASE_URL}data/industrial-graph.json`);
-if (!graphResponse.ok) throw new Error(`Could not load graph data (${graphResponse.status}).`);
-const graph = await graphResponse.json();
 const byId = new Map(graph.nodes.map((node) => [node.id, node]));
 const graphElement = document.querySelector("#graph");
 const detail = document.querySelector("#detail");
