@@ -1,5 +1,6 @@
 import "./style.css";
 import graph from "../data/industrial-graph.json";
+import { graphMetrics } from "./metrics.js";
 
 const byId = new Map(graph.nodes.map((node) => [node.id, node]));
 const graphElement = document.querySelector("#graph");
@@ -8,6 +9,8 @@ const status = document.querySelector("#graph-status");
 const search = document.querySelector("#search");
 const pathFrom = document.querySelector("#path-from");
 const pathTo = document.querySelector("#path-to");
+const sizeMetric = document.querySelector("#size-metric");
+const metrics = graphMetrics(graph.nodes, graph.edges);
 let activeView = "all";
 let selectedId = null;
 let highlightedPath = [];
@@ -15,6 +18,7 @@ let animationFrame;
 let layout = new Map();
 let redrawGraph = () => {};
 let restartSimulation = () => {};
+let dimension = "2d";
 
 const nodeEdges = (id) => graph.edges.filter((edge) => edge.source === id || edge.target === id);
 const labelFor = (id) => byId.get(id).label;
@@ -34,7 +38,7 @@ function renderGraph() {
   layout = new Map(nodes.map((node, index) => {
     const angle = index * 2.399963229728653;
     const radius = Math.min(width, height) * (0.2 + (index % 4) * 0.075);
-    return [node.id, { x: width / 2 + Math.cos(angle) * radius, y: height / 2 + Math.sin(angle) * radius, vx: 0, vy: 0, pinned: false }];
+    return [node.id, { x: width / 2 + Math.cos(angle) * radius, y: height / 2 + Math.sin(angle) * radius, z: Math.sin(angle * 1.7) * 90, vx: 0, vy: 0, pinned: false }];
   }));
 
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -54,11 +58,13 @@ function renderGraph() {
     button.className = `node ${node.type} ${selectedId === node.id ? "selected" : ""}`;
     button.setAttribute("role", "listitem");
     button.innerHTML = `<span>${node.label}</span><small>${node.type}${node.relevance ? ` · ${node.relevance}` : ""}</small>`;
+    button.style.width = `${80 + metrics.get(node.id)[sizeMetric.value] * 48}px`;
     button.addEventListener("click", () => selectNode(node.id));
     button.addEventListener("pointerdown", (event) => beginDrag(event, node.id, nodeRadius, width, height));
     return [node.id, button];
   }));
   graphElement.replaceChildren(svg, ...buttons.values());
+  graphElement.classList.toggle("three-d", dimension === "3d");
   status.textContent = `${nodes.length} visible nodes · ${edges.length} visible relationships · drag nodes to explore`;
 
   redrawGraph = () => {
@@ -72,6 +78,7 @@ function renderGraph() {
       const point = layout.get(id);
       button.style.left = `${point.x}px`;
       button.style.top = `${point.y}px`;
+      button.style.transform = dimension === "3d" ? `translate(-50%, -50%) translateZ(${point.z}px) scale(${1 + point.z / 700})` : "translate(-50%, -50%)";
     }
   };
 
@@ -149,9 +156,10 @@ function selectNode(id) {
   const related = connections.map((edge) => {
     const other = edge.source === id ? edge.target : edge.source;
     const role = edge.roles.length ? ` — ${edge.roles.join(", ")}` : "";
-    return `<li><button type="button" data-node="${other}">${labelFor(other)}</button><span>${edge.type.replace("_", " ")}${role}</span></li>`;
+    return `<li><button type="button" data-node="${other}">${labelFor(other)}</button><span>${edge.type.replace("_", " ")}${role} · ${edge.sourceStatus.replace("-", " ")}</span></li>`;
   }).join("");
-  detail.innerHTML = `<p class="eyebrow">${node.type}${node.relevance ? ` · ${node.relevance} relevance` : ""}</p><h2>${node.label}</h2><p>${node.summary || "No description recorded yet."}</p>${node.years ? `<p><strong>Active</strong> ${node.years}</p>` : ""}${aliases}<h3>Known relationships</h3><ul class="relationships">${related || "<li>No relationships recorded.</li>"}</ul>`;
+  const metric = metrics.get(id); const score = (value) => Math.round(value * 100);
+  detail.innerHTML = `<p class="eyebrow">${node.type}${node.relevance ? ` · ${node.relevance} relevance` : ""}</p><h2>${node.label}</h2><p>${node.summary || "No description recorded yet."}</p>${node.years ? `<p><strong>Active</strong> ${node.years}</p>` : ""}${aliases}<h3>Graph influence</h3><p>Composite ${score(metric.composite)} · connections ${score(metric.degree)} · bridge ${score(metric.betweenness)} · PageRank ${score(metric.pageRank)}</p><h3>Known relationships</h3><ul class="relationships">${related || "<li>No relationships recorded.</li>"}</ul>`;
   detail.querySelectorAll("[data-node]").forEach((button) => button.addEventListener("click", () => selectNode(button.dataset.node)));
   renderGraph();
 }
@@ -183,7 +191,7 @@ document.querySelector("#path-form").addEventListener("submit", (event) => {
   event.preventDefault();
   const path = shortestPath(pathFrom.value, pathTo.value);
   document.querySelector("#path-result").innerHTML = path
-    ? `Shortest recorded path: <strong>${path.map(labelFor).join(" → ")}</strong>.`
+    ? `Browser explanation: <strong>${path.map(labelFor).join(" → ")}</strong>. This is the shortest recorded connection in the local graph; select a node to inspect roles and provenance status.`
     : "No connecting path has been recorded in this seed graph.";
   if (path) {
     highlightedPath = path;
@@ -199,6 +207,8 @@ document.querySelectorAll("[data-view]").forEach((button) => button.addEventList
   renderGraph();
 }));
 document.querySelector("[data-action='rearrange']").addEventListener("click", renderGraph);
+document.querySelector("[data-action='dimension']").addEventListener("click", () => { dimension = dimension === "2d" ? "3d" : "2d"; renderGraph(); });
+sizeMetric.addEventListener("change", renderGraph);
 search.addEventListener("input", renderGraph);
 window.addEventListener("resize", renderGraph);
 populatePathSelects();
