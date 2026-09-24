@@ -55,6 +55,10 @@ WebLLM is an in-browser WebGPU inference engine with a chat-completion API, not 
 2. Add a separate Feature request form for ideas that improve the page or explorer.
 3. Add a concise contributor note that unsupported factual changes remain in the research queue rather than being silently added to the graph.
 
+## Later version: generic MusicBrainz visualizer
+
+Build a separate, provider-aware MusicBrainz visualizer that begins with a user-selected entity and expands only at the user's request. It must distinguish MusicBrainz artists, release groups, releases, recordings, and works; pace requests to provider policy; label all live results as unreviewed session data; and provide a deliberate route for promoting cited facts into a curated graph.
+
 ## Quality gates
 
 - `npm run validate` must pass before merging data changes.

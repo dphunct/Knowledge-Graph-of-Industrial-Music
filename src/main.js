@@ -313,13 +313,14 @@ function selectNode(id) {
   const node = byId.get(id);
   const connections = nodeEdges(id);
   const aliases = node.aliases?.length ? `<p><strong>Also known as</strong> ${node.aliases.join(", ")}</p>` : "";
+  const sources = provenanceLinks(node) ? `<p class="provenance"><strong>Sources</strong><br />${provenanceLinks(node)}</p>` : "";
   const related = connections.map((edge) => {
     const other = edge.source === id ? edge.target : edge.source;
     const role = edge.roles.length ? ` — ${edge.roles.join(", ")}` : "";
     return `<li><button type="button" data-node="${other}">${labelFor(other)}</button><span>${edge.type.replace("_", " ")}${role} · ${edge.sourceStatus.replace("-", " ")}</span>${provenanceLinks(edge) ? `<span class="provenance">${provenanceLinks(edge)}</span>` : ""}</li>`;
   }).join("");
   const metric = metrics.get(id); const score = (value) => Math.round(value * 100);
-  detail.innerHTML = `<p class="eyebrow">${node.type}${node.relevance ? ` · ${node.relevance} relevance` : ""}</p><h2>${node.label}</h2><p>${node.summary || "No description recorded yet."}</p>${node.years ? `<p><strong>Active</strong> ${node.years}</p>` : ""}${aliases}<h3>Graph influence</h3><p>Composite ${score(metric.composite)} · connections ${score(metric.degree)} · bridge ${score(metric.betweenness)} · PageRank ${score(metric.pageRank)}</p><h3>Known relationships</h3><ul class="relationships">${related || "<li>No relationships recorded.</li>"}</ul>`;
+  detail.innerHTML = `<p class="eyebrow">${node.type}${node.relevance ? ` · ${node.relevance} relevance` : ""}</p><h2>${node.label}</h2><p>${node.summary || "No description recorded yet."}</p>${node.years ? `<p><strong>Active</strong> ${node.years}</p>` : ""}${aliases}${sources}<h3>Graph influence</h3><p>Composite ${score(metric.composite)} · connections ${score(metric.degree)} · bridge ${score(metric.betweenness)} · PageRank ${score(metric.pageRank)}</p><h3>Known relationships</h3><ul class="relationships">${related || "<li>No relationships recorded.</li>"}</ul>`;
   detail.querySelectorAll("[data-node]").forEach((button) => button.addEventListener("click", () => selectNode(button.dataset.node)));
   renderGraph();
 }
