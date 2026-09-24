@@ -8,6 +8,7 @@ const graph = JSON.parse(await readFile(graphUrl));
 let lastRequestAt = 0;
 const requestedOffset = Number(process.argv.find((argument) => argument.startsWith("--offset="))?.split("=")[1] || 0);
 const requestedLimit = Number(process.argv.find((argument) => argument.startsWith("--limit="))?.split("=")[1] || 20);
+const missingOnly = process.argv.includes("--missing-only");
 
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 const chunks = (items, size) => Array.from({ length: Math.ceil(items.length / size) }, (_, index) => items.slice(index * size, (index + 1) * size));
@@ -33,7 +34,7 @@ function addProvenance(node, title, url, note) {
   if (!node.provenance.some((item) => item.url === url)) node.provenance.push({ title, url, note });
 }
 
-const eligibleNodes = graph.nodes.filter((item) => item.musicbrainz?.id);
+const eligibleNodes = graph.nodes.filter((item) => item.musicbrainz?.id && (!missingOnly || !item.wikidata));
 const batch = eligibleNodes.slice(requestedOffset, requestedOffset + requestedLimit);
 const candidates = [];
 for (const node of batch) {
@@ -87,7 +88,7 @@ const report = {
   provider: "Wikidata API",
   retrievedAt: new Date().toISOString(),
   pacingMs: pauseMs,
-  batch: { offset: requestedOffset, limit: requestedLimit, totalEligible: eligibleNodes.length },
+  batch: { offset: requestedOffset, limit: requestedLimit, missingOnly, totalEligible: eligibleNodes.length },
   method: "Exact MusicBrainz identifier verification after label search; only exact mapped P463 membership claims are imported.",
   mappedEntities: graph.nodes.filter((node) => node.wikidata).map((node) => ({ id: node.id, label: node.label, wikidata: node.wikidata, discogs: node.discogs || null })),
   importedRelationships: graph.edges.filter((edge) => edge.provenance?.some((source) => source.title.startsWith("Wikidata membership claim:"))).map((edge) => ({ source: edge.source, target: edge.target, provenance: edge.provenance.filter((source) => source.title.startsWith("Wikidata membership claim:")) })),
