@@ -99,7 +99,7 @@ function renderGraph() {
   const height = graphElement.clientHeight || 450;
   const sizeFor = (node) => {
     const metric = metrics.get(node.id)[sizeMetric.value];
-    return Math.round((width < 520 ? 54 : 66) + metric * (width < 520 ? 42 : 78));
+    return Math.round((width < 520 ? 44 : 50) + metric * (width < 520 ? 62 : 126));
   };
   cancelAnimationFrame(animationFrame);
   layout = new Map(nodes.map((node, index) => {
@@ -218,6 +218,9 @@ function renderGraph() {
 
 function renderThreeGraph(nodes, edges, width, height) {
   const scene = new THREE.Scene();
+  scene.add(new THREE.HemisphereLight(0xf6cfbd, 0x140f16, 2.2));
+  const keyLight = new THREE.PointLight(0xff9870, 3.5, 1100); keyLight.position.set(-180, 240, 420); scene.add(keyLight);
+  const rimLight = new THREE.PointLight(0x9f94df, 2.2, 1000); rimLight.position.set(240, -160, 300); scene.add(rimLight);
   const camera = new THREE.PerspectiveCamera(48, width / height, 1, 2000);
   camera.position.set(0, 0, 680);
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -229,7 +232,7 @@ function renderThreeGraph(nodes, edges, width, height) {
   graphElement.replaceChildren(renderer.domElement);
   const controls = new OrbitControls(camera, renderer.domElement);
   controls.enableDamping = true;
-  controls.minDistance = 260; controls.maxDistance = 1100;
+  controls.minDistance = 180; controls.maxDistance = 1800;
   threeCamera = camera; threeControls = controls;
   applyThreeZoom();
   let orbitMoved = false;
@@ -237,21 +240,32 @@ function renderThreeGraph(nodes, edges, width, height) {
   controls.addEventListener("change", () => { orbitMoved = true; });
   const raycaster = new THREE.Raycaster(); const pointer = new THREE.Vector2();
   const meshes = [];
-  const colors = { person: 0xee946d, project: 0x80b7a6, release: 0xa79ada, song: 0xedaa85 };
+  const gradients = { person: ["#ffb184", "#55271d"], project: ["#9bd2bf", "#1d453b"], release: ["#c4b9ff", "#312750"], song: ["#ffc08e", "#5c3320"] };
+  const textureFor = (type) => {
+    const canvas = document.createElement("canvas"); canvas.width = 128; canvas.height = 128;
+    const context = canvas.getContext("2d"); const gradient = context.createRadialGradient(42, 32, 4, 64, 64, 75);
+    gradient.addColorStop(0, gradients[type][0]); gradient.addColorStop(1, gradients[type][1]);
+    context.fillStyle = gradient; context.fillRect(0, 0, 128, 128);
+    return new THREE.CanvasTexture(canvas);
+  };
   const points = new Map();
   for (const [id, point] of layout) points.set(id, new THREE.Vector3((point.x - width / 2) * 1.1, (height / 2 - point.y) * 1.1, point.z * 1.8));
   for (const edge of edges) {
-    const geometry = new THREE.BufferGeometry().setFromPoints([points.get(edge.source), points.get(edge.target)]);
-    scene.add(new THREE.Line(geometry, new THREE.LineBasicMaterial({ color: 0x806d62, transparent: true, opacity: .7 })));
+    const start = points.get(edge.source); const end = points.get(edge.target); const direction = end.clone().sub(start); const length = direction.length();
+    const selected = highlightedPath.includes(edge.source) && highlightedPath.includes(edge.target);
+    const geometry = new THREE.CylinderGeometry(selected ? 1.7 : .9, selected ? 1.7 : .9, length, 8);
+    const mesh = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({ color: selected ? 0xff9a68 : 0x806d62, transparent: true, opacity: selected ? 1 : .8 }));
+    mesh.position.copy(start).add(end).multiplyScalar(.5); mesh.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), direction.normalize()); scene.add(mesh);
   }
   for (const node of nodes) {
     const metric = metrics.get(node.id)[sizeMetric.value];
-    const mesh = new THREE.Mesh(new THREE.SphereGeometry(16 + metric * 22, 20, 20), new THREE.MeshBasicMaterial({ color: colors[node.type], transparent: true, opacity: selectedId && selectedId !== node.id ? .45 : 1 }));
+    const radius = 10 + metric * 46;
+    const mesh = new THREE.Mesh(new THREE.SphereGeometry(radius, 24, 24), new THREE.MeshPhongMaterial({ map: textureFor(node.type), shininess: 70, transparent: true, opacity: selectedId && selectedId !== node.id ? .45 : 1 }));
     mesh.position.copy(points.get(node.id)); mesh.userData.nodeId = node.id; scene.add(mesh); meshes.push(mesh);
     const label = document.createElement("canvas"); label.width = 320; label.height = 64;
     const context2d = label.getContext("2d"); context2d.fillStyle = "#f5f0e8"; context2d.font = "700 30px Manrope"; context2d.textAlign = "center"; context2d.fillText(node.label, 160, 42);
     const sprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: new THREE.CanvasTexture(label), transparent: true }));
-    sprite.position.copy(mesh.position); sprite.position.y -= 34; sprite.scale.set(112, 22, 1); scene.add(sprite);
+    sprite.position.copy(mesh.position); sprite.position.y -= radius + 16; sprite.scale.set(112, 22, 1); scene.add(sprite);
   }
   const click = (event) => {
     // OrbitControls emits a click after a rotation. Keep the rotated camera
@@ -276,7 +290,7 @@ function applyThreeZoom() {
 }
 
 function setGraphZoom(next) {
-  graphZoom = Math.max(.6, Math.min(2, Math.round(next * 20) / 20));
+  graphZoom = Math.max(.4, Math.min(3, Math.round(next * 20) / 20));
   zoomSlider.value = graphZoom;
   zoomValue.textContent = `${Math.round(graphZoom * 100)}%`;
   if (dimension === "3d") applyThreeZoom(); else redrawGraph();
