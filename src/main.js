@@ -49,6 +49,7 @@ let threeControls = null;
 let graphPan = { x: 0, y: 0 };
 let suppressCanvasClick = false;
 let resizeTimer;
+let zoomRange = { min: .01, max: 100, fit: 1 };
 const maximumRenderedSpheres = 300;
 
 const nodeEdges = (id) => graph.edges.filter((edge) => edge.source === id || edge.target === id);
@@ -156,6 +157,7 @@ function renderGraph() {
       pinned: isSelected
     }];
   }));
+  updateZoomRange(width, height, nodes, sizeFor);
 
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.classList.add("edges");
@@ -250,9 +252,11 @@ function renderGraph() {
       point.vx += (width / 2 - point.x) * 0.00008;
       point.vy += (height / 2 - point.y) * 0.00008;
       point.vx *= 0.78; point.vy *= 0.78;
-      const radius = sizeFor(nodes[pointIndex]) / 2;
-      point.x = Math.max(-width * .5 + radius, Math.min(width * 1.5 - radius, point.x + point.vx * heat));
-      point.y = Math.max(-height * .5 + radius, Math.min(height * 1.5 - radius, point.y + point.vy * heat));
+      // This is an infinite working plane. The gentle center force provides a
+      // readable shape while allowing the outer graph to taper naturally past
+      // the current viewport instead of accumulating against a hard wall.
+      point.x += point.vx * heat;
+      point.y += point.vy * heat;
     }
     redrawGraph();
     if (heat > 0.015) animationFrame = requestAnimationFrame(() => simulate(heat * 0.985));
@@ -280,7 +284,7 @@ function renderThreeGraph(nodes, edges, width, height, distances) {
   graphElement.replaceChildren(renderer.domElement);
   const controls = new OrbitControls(camera, renderer.domElement);
   controls.enableDamping = true;
-  controls.minDistance = 180; controls.maxDistance = 1800;
+  controls.minDistance = 4; controls.maxDistance = 50000;
   threeCamera = camera; threeControls = controls;
   applyThreeZoom();
   let orbitMoved = false;
@@ -339,8 +343,31 @@ function applyThreeZoom() {
   threeControls.update();
 }
 
+function updateZoomRange(width, height, nodes, sizeFor) {
+  if (!nodes.length) return;
+  const points = [...layout.values()];
+  const largestDiameter = Math.max(...nodes.map((node) => sizeFor(node)));
+  const minX = Math.min(...points.map((point) => point.x - largestDiameter / 2));
+  const maxX = Math.max(...points.map((point) => point.x + largestDiameter / 2));
+  const minY = Math.min(...points.map((point) => point.y - largestDiameter / 2));
+  const maxY = Math.max(...points.map((point) => point.y + largestDiameter / 2));
+  const fit = Math.min(width / Math.max(maxX - minX, 1), height / Math.max(maxY - minY, 1)) * .88;
+  zoomRange = {
+    // Ten times farther out than the fitted map still exposes the entire
+    // graph, even when labels become deliberately unreadable.
+    min: Math.max(.003, fit / 10),
+    // A node can grow beyond the viewport; this is derived from the current
+    // largest sphere instead of a fixed percentage ceiling.
+    max: Math.max(12, Math.max(width, height) * 1.2 / Math.max(largestDiameter, 1)),
+    fit
+  };
+  zoomSlider.min = `${zoomRange.min}`;
+  zoomSlider.max = `${zoomRange.max}`;
+  zoomSlider.step = `${Math.max(.001, zoomRange.min / 4)}`;
+}
+
 function setGraphZoom(next) {
-  graphZoom = Math.max(.4, Math.min(3, Math.round(next * 20) / 20));
+  graphZoom = Math.max(zoomRange.min, Math.min(zoomRange.max, next));
   zoomSlider.value = graphZoom;
   zoomValue.textContent = `${Math.round(graphZoom * 100)}%`;
   if (dimension === "3d") applyThreeZoom(); else redrawGraph();
@@ -388,8 +415,8 @@ function beginDrag(event, id, nodeRadius, width, height) {
   point.pinned = true;
   const move = (moveEvent) => {
     const bounds = graphElement.getBoundingClientRect();
-    point.x = Math.max(-width * .5 + nodeRadius, Math.min(width * 1.5 - nodeRadius, width / 2 + (moveEvent.clientX - bounds.left - width / 2 - graphPan.x) / graphZoom));
-    point.y = Math.max(-height * .5 + nodeRadius, Math.min(height * 1.5 - nodeRadius, height / 2 + (moveEvent.clientY - bounds.top - height / 2 - graphPan.y) / graphZoom));
+    point.x = width / 2 + (moveEvent.clientX - bounds.left - width / 2 - graphPan.x) / graphZoom;
+    point.y = height / 2 + (moveEvent.clientY - bounds.top - height / 2 - graphPan.y) / graphZoom;
     point.vx = 0; point.vy = 0;
     redrawGraph();
   };
@@ -636,7 +663,7 @@ document.querySelectorAll("[data-help]").forEach((button) => {
 });
 document.querySelector("[data-action='rearrange']").addEventListener("click", () => {
   graphPan = { x: 0, y: 0 };
-  graphZoom = Math.min(1, Math.max(.6, Number((Math.min(graphElement.clientWidth || 760, graphElement.clientHeight || 450) / 540).toFixed(2))));
+  graphZoom = zoomRange.fit;
   zoomSlider.value = graphZoom;
   zoomValue.textContent = `${Math.round(graphZoom * 100)}%`;
   renderGraph();
@@ -648,9 +675,9 @@ fadeDistance.addEventListener("change", renderGraph);
 search.addEventListener("input", renderGraph);
 yearSlider.addEventListener("input", () => { activeYear = Number(yearSlider.value); yearValue.textContent = activeYear; focusedEdge = null; renderGraph(); });
 zoomSlider.addEventListener("input", () => setGraphZoom(Number(zoomSlider.value)));
-document.querySelector("[data-action='zoom-in']").addEventListener("click", () => setGraphZoom(graphZoom + .1));
-document.querySelector("[data-action='zoom-out']").addEventListener("click", () => setGraphZoom(graphZoom - .1));
-document.querySelector("[data-action='zoom-reset']").addEventListener("click", () => { graphPan = { x: 0, y: 0 }; setGraphZoom(1); });
+document.querySelector("[data-action='zoom-in']").addEventListener("click", () => setGraphZoom(graphZoom * 1.35));
+document.querySelector("[data-action='zoom-out']").addEventListener("click", () => setGraphZoom(graphZoom / 1.35));
+document.querySelector("[data-action='zoom-reset']").addEventListener("click", () => { graphPan = { x: 0, y: 0 }; setGraphZoom(zoomRange.fit); });
 function updateFullscreenControls() {
   const isFullscreen = document.fullscreenElement === graphPanel;
   fullscreenButton.textContent = isFullscreen ? "Exit full screen" : "Full screen";

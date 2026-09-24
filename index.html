@@ -56,9 +56,9 @@
           <div id="graph" class="graph" role="list" aria-label="Knowledge graph"></div>
           <div class="zoom-controls" role="group" aria-label="Graph zoom controls">
             <button type="button" data-action="zoom-out" aria-label="Zoom out">−</button>
-            <label>Zoom <input id="graph-zoom" type="range" min="0.4" max="3" value="1" step="0.05" /></label>
+            <label>Zoom <input id="graph-zoom" type="range" min="0.01" max="100" value="1" step="0.01" /></label>
             <button type="button" data-action="zoom-in" aria-label="Zoom in">+</button>
-            <button type="button" data-action="zoom-reset">Reset zoom</button>
+            <button type="button" data-action="zoom-reset">Fit graph</button>
             <button type="button" data-action="fullscreen" aria-pressed="false">Full screen</button><button class="help-button" type="button" data-help="Focus the map with Full screen or press F. Press Escape or use Exit full screen to return. The map rearranges itself for the available space, and its wider working area gives you room to pan and zoom.">?</button>
             <output id="zoom-value">100%</output>
           </div>
