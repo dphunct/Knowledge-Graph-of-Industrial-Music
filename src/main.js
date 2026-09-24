@@ -420,7 +420,7 @@ function selectNode(id) {
     return `<li><button type="button" data-node="${other}">${labelFor(other)}</button><span>${edge.type.replace("_", " ")}${role} · ${edge.sourceStatus.replace("-", " ")}</span>${provenanceLinks(edge) ? `<span class="provenance">${provenanceLinks(edge)}</span>` : ""}</li>`;
   }).join("");
   const metric = metrics.get(id); const score = (value) => Math.round(value * 100);
-  detail.innerHTML = `<p class="eyebrow">${node.type}${node.relevance ? ` · ${node.relevance} relevance` : ""}</p><h2>${node.label}</h2><p>${node.summary || "No description recorded yet."}</p>${node.years ? `<p><strong>Active</strong> ${node.years}</p>` : ""}${aliases}${sources}<h3>Graph influence</h3><p>Composite ${score(metric.composite)} · connections ${score(metric.degree)} · bridge ${score(metric.betweenness)} · PageRank ${score(metric.pageRank)}</p><button class="open-relationships" type="button" data-open-relationships>View ${connections.length} recorded connection${connections.length === 1 ? "" : "s"}</button>`;
+  detail.innerHTML = `<p class="eyebrow">${node.type}${node.relevance ? ` · ${node.relevance} relevance` : ""}</p><h2>${node.label}</h2><p>${node.summary || "No description recorded yet."}</p>${node.years ? `<p><strong>Active</strong> ${node.years}</p>` : ""}${aliases}${sources}<h3>Graph influence</h3><p>Composite ${score(metric.composite)} · contribution ${score(metric.contribution)} · connections ${score(metric.degree)} · bridge ${score(metric.betweenness)} · PageRank ${score(metric.pageRank)}</p><button class="open-relationships" type="button" data-open-relationships>View ${connections.length} recorded connection${connections.length === 1 ? "" : "s"}</button>`;
   detail.querySelector("[data-open-relationships]").addEventListener("click", () => openRelationships(node, connections, related));
   renderGraph();
 }
@@ -523,6 +523,7 @@ function rankingMetric(question) {
   const normalizedQuestion = question.toLowerCase();
   if (/page\s*rank/.test(normalizedQuestion)) return { key: "pageRank", label: "PageRank" };
   if (/bridge|connector/.test(normalizedQuestion)) return { key: "betweenness", label: "bridge importance" };
+  if (/contribution|participation|weighted connection/.test(normalizedQuestion)) return { key: "contribution", label: "contribution strength" };
   if (/direct connection|most connected|connection count/.test(normalizedQuestion)) return { key: "degree", label: "direct connections" };
   return { key: "composite", label: "equally weighted composite score" };
 }
