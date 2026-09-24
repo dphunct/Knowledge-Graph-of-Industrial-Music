@@ -424,6 +424,50 @@
       "provenance": [{ "title": "MusicBrainz: Front Line Assembly", "url": "https://musicbrainz.org/artist/b847e9d2-c931-4daf-900c-42c7b2c42e16", "note": "Lists Michael Balch as a member from 1988 to 1989." }]
     },
     {
+      "id": "faces-forms-and-illusions",
+      "label": "Faces, Forms and Illusions",
+      "type": "release",
+      "releaseType": "album",
+      "year": 1989,
+      "validFrom": 1989,
+      "summary": "Delerium album listed by MusicBrainz with a first release date of 1989-01-06.",
+      "musicbrainz": { "id": "2a7d5dfb-7943-3679-983a-abc8acaa2757", "entity": "release-group", "url": "https://musicbrainz.org/release-group/2a7d5dfb-7943-3679-983a-abc8acaa2757" },
+      "provenance": [{ "title": "MusicBrainz: Delerium", "url": "https://musicbrainz.org/artist/4279aba0-1bde-40a9-8fb2-c63d165dc554", "note": "Lists Faces, Forms and Illusions with a first release date of 1989-01-06." }]
+    },
+    {
+      "id": "grinding-into-emptiness",
+      "label": "Grinding Into Emptiness",
+      "type": "release",
+      "releaseType": "album",
+      "year": 1989,
+      "validFrom": 1989,
+      "summary": "Noise Unit album listed by MusicBrainz with a first release year of 1989.",
+      "musicbrainz": { "id": "4ca20df2-1806-3517-af8f-4364aa4962ca", "entity": "release-group", "url": "https://musicbrainz.org/release-group/4ca20df2-1806-3517-af8f-4364aa4962ca" },
+      "provenance": [{ "title": "MusicBrainz: Noise Unit", "url": "https://musicbrainz.org/artist/7dd6f063-dcac-47e7-98d1-26eaeaac2971", "note": "Lists Grinding Into Emptiness with a first release year of 1989." }]
+    },
+    {
+      "id": "tenebrae-vision",
+      "label": "Tenebrae Vision",
+      "type": "release",
+      "releaseType": "album",
+      "year": 1990,
+      "validFrom": 1990,
+      "summary": "Cyberaktif album listed by MusicBrainz with a first release year of 1990.",
+      "musicbrainz": { "id": "35e19a8c-9c10-377b-9e0e-cc4a2cb87e5d", "entity": "release-group", "url": "https://musicbrainz.org/release-group/35e19a8c-9c10-377b-9e0e-cc4a2cb87e5d" },
+      "provenance": [{ "title": "MusicBrainz: Cyberaktif", "url": "https://musicbrainz.org/artist/6967bbb5-d814-40e9-84be-eef3d10b6662", "note": "Lists Tenebrae Vision with a first release year of 1990." }]
+    },
+    {
+      "id": "no-name-no-slogan",
+      "label": "No Name, No Slogan",
+      "type": "release",
+      "releaseType": "single",
+      "year": 1989,
+      "validFrom": 1989,
+      "summary": "Acid Horse single listed by MusicBrainz with a first release year of 1989.",
+      "musicbrainz": { "id": "af3aad81-b6ff-312e-a42a-3805b445f110", "entity": "release-group", "url": "https://musicbrainz.org/release-group/af3aad81-b6ff-312e-a42a-3805b445f110" },
+      "provenance": [{ "title": "MusicBrainz: Acid Horse", "url": "https://musicbrainz.org/artist/ea9ea256-362b-41b7-9ad6-cc308d9909a2", "note": "Lists No Name, No Slogan with a first release year of 1989." }]
+    },
+    {
       "id": "land-of-rape-and-honey",
       "label": "The Land of Rape and Honey",
       "type": "release",
@@ -705,20 +749,16 @@
       "summary": "Industrial project connected in MusicBrainz membership data to Al Jourgensen, Paul Barker, and Nivek Ogre.",
       "provenance": [
         {
-          "title": "MusicBrainz: PTP",
-          "url": "https://musicbrainz.org/artist/25947d2b-4fd4-4e8c-aed2-e3af1c2df02e",
-          "note": "Exact match confirmed in pass-8 and pass-9."
+          "title": "MusicBrainz: Al Jourgensen",
+          "url": "https://musicbrainz.org/artist/6c0dadab-266a-4601-8394-5b8e19e90def",
+          "note": "Lists Al Jourgensen as a PTP member."
+        },
+        {
+          "title": "MusicBrainz: Paul Barker",
+          "url": "https://musicbrainz.org/artist/5bec856f-b78b-4216-8af5-1c0c6365bcbe",
+          "note": "Lists Paul Barker as a PTP member."
         }
-      ],
-      "musicbrainz": {
-        "id": "25947d2b-4fd4-4e8c-aed2-e3af1c2df02e",
-        "entity": "artist",
-        "url": "https://musicbrainz.org/artist/25947d2b-4fd4-4e8c-aed2-e3af1c2df02e",
-        "verifiedByRuns": [
-          "pass-8",
-          "pass-9"
-        ]
-      }
+      ]
     },
     {
       "id": "trent-reznor",
@@ -1238,6 +1278,42 @@
       "validTo": 1989,
       "sourceStatus": "verified",
       "provenance": [{ "title": "MusicBrainz: Front Line Assembly", "url": "https://musicbrainz.org/artist/b847e9d2-c931-4daf-900c-42c7b2c42e16", "note": "Lists Michael Balch as a member from 1988 to 1989." }]
+    },
+    {
+      "source": "delerium",
+      "target": "faces-forms-and-illusions",
+      "type": "released",
+      "roles": [],
+      "validFrom": 1989,
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: Delerium", "url": "https://musicbrainz.org/artist/4279aba0-1bde-40a9-8fb2-c63d165dc554", "note": "Lists Faces, Forms and Illusions with a first release date of 1989-01-06." }]
+    },
+    {
+      "source": "noise-unit",
+      "target": "grinding-into-emptiness",
+      "type": "released",
+      "roles": [],
+      "validFrom": 1989,
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: Noise Unit", "url": "https://musicbrainz.org/artist/7dd6f063-dcac-47e7-98d1-26eaeaac2971", "note": "Lists Grinding Into Emptiness with a first release year of 1989." }]
+    },
+    {
+      "source": "cyberaktif",
+      "target": "tenebrae-vision",
+      "type": "released",
+      "roles": [],
+      "validFrom": 1990,
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: Cyberaktif", "url": "https://musicbrainz.org/artist/6967bbb5-d814-40e9-84be-eef3d10b6662", "note": "Lists Tenebrae Vision with a first release year of 1990." }]
+    },
+    {
+      "source": "acid-horse",
+      "target": "no-name-no-slogan",
+      "type": "released",
+      "roles": [],
+      "validFrom": 1989,
+      "sourceStatus": "verified",
+      "provenance": [{ "title": "MusicBrainz: Acid Horse", "url": "https://musicbrainz.org/artist/ea9ea256-362b-41b7-9ad6-cc308d9909a2", "note": "Lists No Name, No Slogan with a first release year of 1989." }]
     },
     {
       "source": "ministry",
