@@ -356,72 +356,162 @@
       "label": "Dwayne Goettel",
       "type": "person",
       "summary": "Musician documented by MusicBrainz as a Skinny Puppy member from 1986 until 1995.",
-      "musicbrainz": { "id": "528d8a44-92f0-4614-aeb4-cb3516c0f2cd", "entity": "artist", "url": "https://musicbrainz.org/artist/528d8a44-92f0-4614-aeb4-cb3516c0f2cd" },
-      "provenance": [{ "title": "MusicBrainz: Skinny Puppy", "url": "https://musicbrainz.org/artist/5a24bc1a-c093-4a82-84ed-8d7f2da0570d", "note": "Lists Dwayne Rudolph Goettel as a member from 1986 to 1995-08-23." }]
+      "musicbrainz": {
+        "id": "528d8a44-92f0-4614-aeb4-cb3516c0f2cd",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/528d8a44-92f0-4614-aeb4-cb3516c0f2cd"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Skinny Puppy",
+          "url": "https://musicbrainz.org/artist/5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
+          "note": "Lists Dwayne Rudolph Goettel as a member from 1986 to 1995-08-23."
+        }
+      ]
     },
     {
       "id": "luc-van-acker",
       "label": "Luc Van Acker",
       "type": "person",
       "summary": "Musician documented by MusicBrainz as a Revolting Cocks member from 1985 to 1993.",
-      "musicbrainz": { "id": "be6d9ea3-adfb-47ea-9064-4302b00f9e27", "entity": "artist", "url": "https://musicbrainz.org/artist/be6d9ea3-adfb-47ea-9064-4302b00f9e27" },
-      "provenance": [{ "title": "MusicBrainz: Revolting Cocks", "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0", "note": "Lists Luc Van Acker as a member from 1985 to 1993." }]
+      "musicbrainz": {
+        "id": "be6d9ea3-adfb-47ea-9064-4302b00f9e27",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/be6d9ea3-adfb-47ea-9064-4302b00f9e27"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Revolting Cocks",
+          "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
+          "note": "Lists Luc Van Acker as a member from 1985 to 1993."
+        }
+      ]
     },
     {
       "id": "chris-connelly",
       "label": "Chris Connelly",
       "type": "person",
       "summary": "Musician documented by MusicBrainz as a Revolting Cocks member from 1988 to 1994.",
-      "musicbrainz": { "id": "ecb41014-1d7a-4987-a107-df49b2d8d77c", "entity": "artist", "url": "https://musicbrainz.org/artist/ecb41014-1d7a-4987-a107-df49b2d8d77c" },
-      "provenance": [{ "title": "MusicBrainz: Revolting Cocks", "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0", "note": "Lists Chris Connelly as a member from 1988 to 1994." }]
+      "musicbrainz": {
+        "id": "ecb41014-1d7a-4987-a107-df49b2d8d77c",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/ecb41014-1d7a-4987-a107-df49b2d8d77c"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Revolting Cocks",
+          "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
+          "note": "Lists Chris Connelly as a member from 1988 to 1994."
+        }
+      ]
     },
     {
       "id": "daniel-bressanutti",
       "label": "Daniel Bressanutti",
       "type": "person",
       "summary": "Musician documented by MusicBrainz as a Front 242 member from 1981.",
-      "musicbrainz": { "id": "319cc50d-a877-49a3-8f87-8efe22f60e09", "entity": "artist", "url": "https://musicbrainz.org/artist/319cc50d-a877-49a3-8f87-8efe22f60e09" },
-      "provenance": [{ "title": "MusicBrainz: Front 242", "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626", "note": "Lists Daniel Bressanutti as a member from 1981." }]
+      "musicbrainz": {
+        "id": "319cc50d-a877-49a3-8f87-8efe22f60e09",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/319cc50d-a877-49a3-8f87-8efe22f60e09"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Front 242",
+          "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626",
+          "note": "Lists Daniel Bressanutti as a member from 1981."
+        }
+      ]
     },
     {
       "id": "patrick-codenys",
       "label": "Patrick Codenys",
       "type": "person",
       "summary": "Musician documented by MusicBrainz as a Front 242 member from 1982.",
-      "musicbrainz": { "id": "70adfe31-83d6-43d9-b9f4-7ab5eff483f4", "entity": "artist", "url": "https://musicbrainz.org/artist/70adfe31-83d6-43d9-b9f4-7ab5eff483f4" },
-      "provenance": [{ "title": "MusicBrainz: Front 242", "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626", "note": "Lists Patrick Codenys as a member from 1982." }]
+      "musicbrainz": {
+        "id": "70adfe31-83d6-43d9-b9f4-7ab5eff483f4",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/70adfe31-83d6-43d9-b9f4-7ab5eff483f4"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Front 242",
+          "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626",
+          "note": "Lists Patrick Codenys as a member from 1982."
+        }
+      ]
     },
     {
       "id": "jean-luc-de-meyer",
       "label": "Jean-Luc de Meyer",
       "type": "person",
       "summary": "Musician documented by MusicBrainz as a Front 242 member from 1982.",
-      "musicbrainz": { "id": "2c444dd6-75b6-42e0-9f7e-a0a086c48ba9", "entity": "artist", "url": "https://musicbrainz.org/artist/2c444dd6-75b6-42e0-9f7e-a0a086c48ba9" },
-      "provenance": [{ "title": "MusicBrainz: Front 242", "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626", "note": "Lists Jean-Luc de Meyer as a member from 1982." }]
+      "musicbrainz": {
+        "id": "2c444dd6-75b6-42e0-9f7e-a0a086c48ba9",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/2c444dd6-75b6-42e0-9f7e-a0a086c48ba9"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Front 242",
+          "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626",
+          "note": "Lists Jean-Luc de Meyer as a member from 1982."
+        }
+      ]
     },
     {
       "id": "raymond-watts",
       "label": "Raymond Watts",
       "type": "person",
       "summary": "Musician documented by MusicBrainz as a KMFDM member in several periods between 1984 and 2004.",
-      "musicbrainz": { "id": "6a0ce9fd-5cda-4b3e-9b32-e411f2c2a57f", "entity": "artist", "url": "https://musicbrainz.org/artist/6a0ce9fd-5cda-4b3e-9b32-e411f2c2a57f" },
-      "provenance": [{ "title": "MusicBrainz: KMFDM", "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae", "note": "Lists Raymond Watts in several KMFDM membership periods." }]
+      "musicbrainz": {
+        "id": "6a0ce9fd-5cda-4b3e-9b32-e411f2c2a57f",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/6a0ce9fd-5cda-4b3e-9b32-e411f2c2a57f"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: KMFDM",
+          "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
+          "note": "Lists Raymond Watts in several KMFDM membership periods."
+        }
+      ]
     },
     {
       "id": "en-esch",
       "label": "En Esch",
       "type": "person",
       "summary": "Musician documented by MusicBrainz as a KMFDM member from 1985 to 1999.",
-      "musicbrainz": { "id": "e3537eb6-fdd0-4015-a854-705222eb4731", "entity": "artist", "url": "https://musicbrainz.org/artist/e3537eb6-fdd0-4015-a854-705222eb4731" },
-      "provenance": [{ "title": "MusicBrainz: KMFDM", "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae", "note": "Lists En Esch as a member from 1985 to 1999-01-22." }]
+      "musicbrainz": {
+        "id": "e3537eb6-fdd0-4015-a854-705222eb4731",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/e3537eb6-fdd0-4015-a854-705222eb4731"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: KMFDM",
+          "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
+          "note": "Lists En Esch as a member from 1985 to 1999-01-22."
+        }
+      ]
     },
     {
       "id": "michael-balch",
       "label": "Michael Balch",
       "type": "person",
       "summary": "Musician documented by MusicBrainz as a Front Line Assembly member from 1988 to 1989.",
-      "musicbrainz": { "id": "7e557e6e-e9b6-4041-b407-3290224465a0", "entity": "artist", "url": "https://musicbrainz.org/artist/7e557e6e-e9b6-4041-b407-3290224465a0" },
-      "provenance": [{ "title": "MusicBrainz: Front Line Assembly", "url": "https://musicbrainz.org/artist/b847e9d2-c931-4daf-900c-42c7b2c42e16", "note": "Lists Michael Balch as a member from 1988 to 1989." }]
+      "musicbrainz": {
+        "id": "7e557e6e-e9b6-4041-b407-3290224465a0",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/7e557e6e-e9b6-4041-b407-3290224465a0"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Front Line Assembly",
+          "url": "https://musicbrainz.org/artist/b847e9d2-c931-4daf-900c-42c7b2c42e16",
+          "note": "Lists Michael Balch as a member from 1988 to 1989."
+        }
+      ]
     },
     {
       "id": "faces-forms-and-illusions",
@@ -431,8 +521,22 @@
       "year": 1989,
       "validFrom": 1989,
       "summary": "Delerium album listed by MusicBrainz with a first release date of 1989-01-06.",
-      "musicbrainz": { "id": "2a7d5dfb-7943-3679-983a-abc8acaa2757", "entity": "release-group", "url": "https://musicbrainz.org/release-group/2a7d5dfb-7943-3679-983a-abc8acaa2757" },
-      "provenance": [{ "title": "MusicBrainz: Delerium", "url": "https://musicbrainz.org/artist/4279aba0-1bde-40a9-8fb2-c63d165dc554", "note": "Lists Faces, Forms and Illusions with a first release date of 1989-01-06." }]
+      "musicbrainz": {
+        "id": "2a7d5dfb-7943-3679-983a-abc8acaa2757",
+        "entity": "release-group",
+        "url": "https://musicbrainz.org/release-group/2a7d5dfb-7943-3679-983a-abc8acaa2757",
+        "verifiedByRuns": [
+          "pass-14",
+          "pass-15"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Faces, Forms and Illusions",
+          "url": "https://musicbrainz.org/release-group/2a7d5dfb-7943-3679-983a-abc8acaa2757",
+          "note": "Exact match confirmed in pass-14 and pass-15."
+        }
+      ]
     },
     {
       "id": "grinding-into-emptiness",
@@ -442,8 +546,22 @@
       "year": 1989,
       "validFrom": 1989,
       "summary": "Noise Unit album listed by MusicBrainz with a first release year of 1989.",
-      "musicbrainz": { "id": "4ca20df2-1806-3517-af8f-4364aa4962ca", "entity": "release-group", "url": "https://musicbrainz.org/release-group/4ca20df2-1806-3517-af8f-4364aa4962ca" },
-      "provenance": [{ "title": "MusicBrainz: Noise Unit", "url": "https://musicbrainz.org/artist/7dd6f063-dcac-47e7-98d1-26eaeaac2971", "note": "Lists Grinding Into Emptiness with a first release year of 1989." }]
+      "musicbrainz": {
+        "id": "4ca20df2-1806-3517-af8f-4364aa4962ca",
+        "entity": "release-group",
+        "url": "https://musicbrainz.org/release-group/4ca20df2-1806-3517-af8f-4364aa4962ca",
+        "verifiedByRuns": [
+          "pass-14",
+          "pass-15"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Grinding Into Emptiness",
+          "url": "https://musicbrainz.org/release-group/4ca20df2-1806-3517-af8f-4364aa4962ca",
+          "note": "Exact match confirmed in pass-14 and pass-15."
+        }
+      ]
     },
     {
       "id": "tenebrae-vision",
@@ -453,8 +571,22 @@
       "year": 1990,
       "validFrom": 1990,
       "summary": "Cyberaktif album listed by MusicBrainz with a first release year of 1990.",
-      "musicbrainz": { "id": "35e19a8c-9c10-377b-9e0e-cc4a2cb87e5d", "entity": "release-group", "url": "https://musicbrainz.org/release-group/35e19a8c-9c10-377b-9e0e-cc4a2cb87e5d" },
-      "provenance": [{ "title": "MusicBrainz: Cyberaktif", "url": "https://musicbrainz.org/artist/6967bbb5-d814-40e9-84be-eef3d10b6662", "note": "Lists Tenebrae Vision with a first release year of 1990." }]
+      "musicbrainz": {
+        "id": "35e19a8c-9c10-377b-9e0e-cc4a2cb87e5d",
+        "entity": "release-group",
+        "url": "https://musicbrainz.org/release-group/35e19a8c-9c10-377b-9e0e-cc4a2cb87e5d",
+        "verifiedByRuns": [
+          "pass-14",
+          "pass-15"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Tenebrae Vision",
+          "url": "https://musicbrainz.org/release-group/35e19a8c-9c10-377b-9e0e-cc4a2cb87e5d",
+          "note": "Exact match confirmed in pass-14 and pass-15."
+        }
+      ]
     },
     {
       "id": "no-name-no-slogan",
@@ -464,8 +596,22 @@
       "year": 1989,
       "validFrom": 1989,
       "summary": "Acid Horse single listed by MusicBrainz with a first release year of 1989.",
-      "musicbrainz": { "id": "af3aad81-b6ff-312e-a42a-3805b445f110", "entity": "release-group", "url": "https://musicbrainz.org/release-group/af3aad81-b6ff-312e-a42a-3805b445f110" },
-      "provenance": [{ "title": "MusicBrainz: Acid Horse", "url": "https://musicbrainz.org/artist/ea9ea256-362b-41b7-9ad6-cc308d9909a2", "note": "Lists No Name, No Slogan with a first release year of 1989." }]
+      "musicbrainz": {
+        "id": "af3aad81-b6ff-312e-a42a-3805b445f110",
+        "entity": "release-group",
+        "url": "https://musicbrainz.org/release-group/af3aad81-b6ff-312e-a42a-3805b445f110",
+        "verifiedByRuns": [
+          "pass-14",
+          "pass-15"
+        ]
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: No Name, No Slogan",
+          "url": "https://musicbrainz.org/release-group/af3aad81-b6ff-312e-a42a-3805b445f110",
+          "note": "Exact match confirmed in pass-14 and pass-15."
+        }
+      ]
     },
     {
       "id": "land-of-rape-and-honey",
@@ -480,15 +626,15 @@
         "entity": "release-group",
         "url": "https://musicbrainz.org/release-group/7a18b986-afcc-359c-add1-7aa3a79104a2",
         "verifiedByRuns": [
-          "pass-6",
-          "pass-7"
+          "pass-14",
+          "pass-15"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: The Land of Rape and Honey",
           "url": "https://musicbrainz.org/release-group/7a18b986-afcc-359c-add1-7aa3a79104a2",
-          "note": "Exact match confirmed in pass-6 and pass-7."
+          "note": "Exact match confirmed in pass-14 and pass-15."
         }
       ]
     },
@@ -505,15 +651,15 @@
         "entity": "release-group",
         "url": "https://musicbrainz.org/release-group/ffd7f995-6354-38df-9c84-902769328a1e",
         "verifiedByRuns": [
-          "pass-6",
-          "pass-7"
+          "pass-14",
+          "pass-15"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Stigmata",
           "url": "https://musicbrainz.org/release-group/ffd7f995-6354-38df-9c84-902769328a1e",
-          "note": "Exact match confirmed in pass-6 and pass-7."
+          "note": "Exact match confirmed in pass-14 and pass-15."
         }
       ]
     },
@@ -530,15 +676,15 @@
         "entity": "release-group",
         "url": "https://musicbrainz.org/release-group/3e823e3f-4993-36d8-8c74-3ceaf68959e7",
         "verifiedByRuns": [
-          "pass-6",
-          "pass-7"
+          "pass-14",
+          "pass-15"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Big Sexy Land",
           "url": "https://musicbrainz.org/release-group/3e823e3f-4993-36d8-8c74-3ceaf68959e7",
-          "note": "Exact match confirmed in pass-6 and pass-7."
+          "note": "Exact match confirmed in pass-14 and pass-15."
         }
       ]
     },
@@ -555,15 +701,15 @@
         "entity": "release-group",
         "url": "https://musicbrainz.org/release-group/b316cc6e-edf7-3394-9c89-1a116ba2dc62",
         "verifiedByRuns": [
-          "pass-6",
-          "pass-7"
+          "pass-14",
+          "pass-15"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Beers, Steers & Queers",
           "url": "https://musicbrainz.org/release-group/b316cc6e-edf7-3394-9c89-1a116ba2dc62",
-          "note": "Exact match confirmed in pass-6 and pass-7."
+          "note": "Exact match confirmed in pass-14 and pass-15."
         }
       ]
     },
@@ -580,15 +726,15 @@
         "entity": "release-group",
         "url": "https://musicbrainz.org/release-group/611e2a82-9f19-3ad0-98a8-42397143b09d",
         "verifiedByRuns": [
-          "pass-6",
-          "pass-7"
+          "pass-14",
+          "pass-15"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Tactical Neural Implant",
           "url": "https://musicbrainz.org/release-group/611e2a82-9f19-3ad0-98a8-42397143b09d",
-          "note": "Exact match confirmed in pass-6 and pass-7."
+          "note": "Exact match confirmed in pass-14 and pass-15."
         }
       ]
     },
@@ -605,15 +751,15 @@
         "entity": "release-group",
         "url": "https://musicbrainz.org/release-group/f7329a5b-8972-38f0-8f4a-1a90b79829db",
         "verifiedByRuns": [
-          "pass-6",
-          "pass-7"
+          "pass-14",
+          "pass-15"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Mindphaser",
           "url": "https://musicbrainz.org/release-group/f7329a5b-8972-38f0-8f4a-1a90b79829db",
-          "note": "Exact match confirmed in pass-6 and pass-7."
+          "note": "Exact match confirmed in pass-14 and pass-15."
         }
       ]
     },
@@ -671,8 +817,18 @@
       "relevance": "core",
       "validFrom": 1987,
       "summary": "Industrial project documented in MusicBrainz membership data for Bill Leeb and Rhys Fulber.",
-      "musicbrainz": { "id": "4279aba0-1bde-40a9-8fb2-c63d165dc554", "entity": "artist", "url": "https://musicbrainz.org/artist/4279aba0-1bde-40a9-8fb2-c63d165dc554" },
-      "provenance": [{ "title": "MusicBrainz: Bill Leeb", "url": "https://musicbrainz.org/artist/e10b76e5-dc32-4e9f-83b9-4f717400b19f", "note": "Lists Bill Leeb as a Delerium member from 1987." }]
+      "musicbrainz": {
+        "id": "4279aba0-1bde-40a9-8fb2-c63d165dc554",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/4279aba0-1bde-40a9-8fb2-c63d165dc554"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Bill Leeb",
+          "url": "https://musicbrainz.org/artist/e10b76e5-dc32-4e9f-83b9-4f717400b19f",
+          "note": "Lists Bill Leeb as a Delerium member from 1987."
+        }
+      ]
     },
     {
       "id": "noise-unit",
@@ -681,8 +837,18 @@
       "relevance": "core",
       "validFrom": 1989,
       "summary": "Industrial project documented in MusicBrainz membership data for Bill Leeb and Rhys Fulber.",
-      "musicbrainz": { "id": "7dd6f063-dcac-47e7-98d1-26eaeaac2971", "entity": "artist", "url": "https://musicbrainz.org/artist/7dd6f063-dcac-47e7-98d1-26eaeaac2971" },
-      "provenance": [{ "title": "MusicBrainz: Bill Leeb", "url": "https://musicbrainz.org/artist/e10b76e5-dc32-4e9f-83b9-4f717400b19f", "note": "Lists Bill Leeb as a Noise Unit member from 1989." }]
+      "musicbrainz": {
+        "id": "7dd6f063-dcac-47e7-98d1-26eaeaac2971",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/7dd6f063-dcac-47e7-98d1-26eaeaac2971"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Bill Leeb",
+          "url": "https://musicbrainz.org/artist/e10b76e5-dc32-4e9f-83b9-4f717400b19f",
+          "note": "Lists Bill Leeb as a Noise Unit member from 1989."
+        }
+      ]
     },
     {
       "id": "cyberaktif",
@@ -690,8 +856,18 @@
       "type": "project",
       "relevance": "core",
       "summary": "Industrial project documented in MusicBrainz membership data for cEvin Key and Rhys Fulber.",
-      "musicbrainz": { "id": "6967bbb5-d814-40e9-84be-eef3d10b6662", "entity": "artist", "url": "https://musicbrainz.org/artist/6967bbb5-d814-40e9-84be-eef3d10b6662" },
-      "provenance": [{ "title": "MusicBrainz: cEvin Key", "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd", "note": "Lists cEvin Key as a Cyberaktif member." }]
+      "musicbrainz": {
+        "id": "6967bbb5-d814-40e9-84be-eef3d10b6662",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/6967bbb5-d814-40e9-84be-eef3d10b6662"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: cEvin Key",
+          "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
+          "note": "Lists cEvin Key as a Cyberaktif member."
+        }
+      ]
     },
     {
       "id": "acid-horse",
@@ -794,15 +970,15 @@
         "entity": "release-group",
         "url": "https://musicbrainz.org/release-group/6a928917-424c-38b2-b4c1-5de2d741d039",
         "verifiedByRuns": [
-          "pass-6",
-          "pass-7"
+          "pass-14",
+          "pass-15"
         ]
       },
       "provenance": [
         {
           "title": "MusicBrainz: Supernaut",
           "url": "https://musicbrainz.org/release-group/6a928917-424c-38b2-b4c1-5de2d741d039",
-          "note": "Exact match confirmed in pass-6 and pass-7."
+          "note": "Exact match confirmed in pass-14 and pass-15."
         }
       ]
     }
@@ -1124,7 +1300,13 @@
       "roles": [],
       "validFrom": 1987,
       "sourceStatus": "verified",
-      "provenance": [{ "title": "MusicBrainz: Bill Leeb", "url": "https://musicbrainz.org/artist/e10b76e5-dc32-4e9f-83b9-4f717400b19f", "note": "Lists Bill Leeb as a Delerium member from 1987." }]
+      "provenance": [
+        {
+          "title": "MusicBrainz: Bill Leeb",
+          "url": "https://musicbrainz.org/artist/e10b76e5-dc32-4e9f-83b9-4f717400b19f",
+          "note": "Lists Bill Leeb as a Delerium member from 1987."
+        }
+      ]
     },
     {
       "source": "rhys-fulber",
@@ -1134,7 +1316,13 @@
       "validFrom": 1989,
       "validTo": 2000,
       "sourceStatus": "verified",
-      "provenance": [{ "title": "MusicBrainz: Rhys Fulber", "url": "https://musicbrainz.org/artist/7ee30fce-cd3d-437d-9ff0-b2ef195bda33", "note": "Lists Rhys Fulber as a Delerium member from 1989 to 2000." }]
+      "provenance": [
+        {
+          "title": "MusicBrainz: Rhys Fulber",
+          "url": "https://musicbrainz.org/artist/7ee30fce-cd3d-437d-9ff0-b2ef195bda33",
+          "note": "Lists Rhys Fulber as a Delerium member from 1989 to 2000."
+        }
+      ]
     },
     {
       "source": "bill-leeb",
@@ -1143,7 +1331,13 @@
       "roles": [],
       "validFrom": 1989,
       "sourceStatus": "verified",
-      "provenance": [{ "title": "MusicBrainz: Bill Leeb", "url": "https://musicbrainz.org/artist/e10b76e5-dc32-4e9f-83b9-4f717400b19f", "note": "Lists Bill Leeb as a Noise Unit member from 1989." }]
+      "provenance": [
+        {
+          "title": "MusicBrainz: Bill Leeb",
+          "url": "https://musicbrainz.org/artist/e10b76e5-dc32-4e9f-83b9-4f717400b19f",
+          "note": "Lists Bill Leeb as a Noise Unit member from 1989."
+        }
+      ]
     },
     {
       "source": "rhys-fulber",
@@ -1153,7 +1347,13 @@
       "validFrom": 1990,
       "validTo": 1997,
       "sourceStatus": "verified",
-      "provenance": [{ "title": "MusicBrainz: Rhys Fulber", "url": "https://musicbrainz.org/artist/7ee30fce-cd3d-437d-9ff0-b2ef195bda33", "note": "Lists Rhys Fulber as a Noise Unit member from 1990 to 1997." }]
+      "provenance": [
+        {
+          "title": "MusicBrainz: Rhys Fulber",
+          "url": "https://musicbrainz.org/artist/7ee30fce-cd3d-437d-9ff0-b2ef195bda33",
+          "note": "Lists Rhys Fulber as a Noise Unit member from 1990 to 1997."
+        }
+      ]
     },
     {
       "source": "cevin-key",
@@ -1161,7 +1361,13 @@
       "type": "member_of",
       "roles": [],
       "sourceStatus": "verified",
-      "provenance": [{ "title": "MusicBrainz: cEvin Key", "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd", "note": "Lists cEvin Key as a Cyberaktif member; MusicBrainz does not provide dates." }]
+      "provenance": [
+        {
+          "title": "MusicBrainz: cEvin Key",
+          "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
+          "note": "Lists cEvin Key as a Cyberaktif member; MusicBrainz does not provide dates."
+        }
+      ]
     },
     {
       "source": "rhys-fulber",
@@ -1170,7 +1376,13 @@
       "roles": [],
       "validFrom": 2024,
       "sourceStatus": "verified",
-      "provenance": [{ "title": "MusicBrainz: Rhys Fulber", "url": "https://musicbrainz.org/artist/7ee30fce-cd3d-437d-9ff0-b2ef195bda33", "note": "Lists Rhys Fulber as a Cyberaktif member from 2024." }]
+      "provenance": [
+        {
+          "title": "MusicBrainz: Rhys Fulber",
+          "url": "https://musicbrainz.org/artist/7ee30fce-cd3d-437d-9ff0-b2ef195bda33",
+          "note": "Lists Rhys Fulber as a Cyberaktif member from 2024."
+        }
+      ]
     },
     {
       "source": "dwayne-goettel",
@@ -1180,7 +1392,13 @@
       "validFrom": 1986,
       "validTo": 1995,
       "sourceStatus": "verified",
-      "provenance": [{ "title": "MusicBrainz: Skinny Puppy", "url": "https://musicbrainz.org/artist/5a24bc1a-c093-4a82-84ed-8d7f2da0570d", "note": "Lists Dwayne Rudolph Goettel as a member from 1986 to 1995-08-23." }]
+      "provenance": [
+        {
+          "title": "MusicBrainz: Skinny Puppy",
+          "url": "https://musicbrainz.org/artist/5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
+          "note": "Lists Dwayne Rudolph Goettel as a member from 1986 to 1995-08-23."
+        }
+      ]
     },
     {
       "source": "luc-van-acker",
@@ -1190,7 +1408,13 @@
       "validFrom": 1985,
       "validTo": 1993,
       "sourceStatus": "verified",
-      "provenance": [{ "title": "MusicBrainz: Revolting Cocks", "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0", "note": "Lists Luc Van Acker as a member from 1985 to 1993." }]
+      "provenance": [
+        {
+          "title": "MusicBrainz: Revolting Cocks",
+          "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
+          "note": "Lists Luc Van Acker as a member from 1985 to 1993."
+        }
+      ]
     },
     {
       "source": "chris-connelly",
@@ -1200,7 +1424,13 @@
       "validFrom": 1988,
       "validTo": 1994,
       "sourceStatus": "verified",
-      "provenance": [{ "title": "MusicBrainz: Revolting Cocks", "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0", "note": "Lists Chris Connelly as a member from 1988 to 1994." }]
+      "provenance": [
+        {
+          "title": "MusicBrainz: Revolting Cocks",
+          "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
+          "note": "Lists Chris Connelly as a member from 1988 to 1994."
+        }
+      ]
     },
     {
       "source": "daniel-bressanutti",
@@ -1209,7 +1439,13 @@
       "roles": [],
       "validFrom": 1981,
       "sourceStatus": "verified",
-      "provenance": [{ "title": "MusicBrainz: Front 242", "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626", "note": "Lists Daniel Bressanutti as a member from 1981." }]
+      "provenance": [
+        {
+          "title": "MusicBrainz: Front 242",
+          "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626",
+          "note": "Lists Daniel Bressanutti as a member from 1981."
+        }
+      ]
     },
     {
       "source": "patrick-codenys",
@@ -1218,7 +1454,13 @@
       "roles": [],
       "validFrom": 1982,
       "sourceStatus": "verified",
-      "provenance": [{ "title": "MusicBrainz: Front 242", "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626", "note": "Lists Patrick Codenys as a member from 1982." }]
+      "provenance": [
+        {
+          "title": "MusicBrainz: Front 242",
+          "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626",
+          "note": "Lists Patrick Codenys as a member from 1982."
+        }
+      ]
     },
     {
       "source": "jean-luc-de-meyer",
@@ -1227,7 +1469,13 @@
       "roles": [],
       "validFrom": 1982,
       "sourceStatus": "verified",
-      "provenance": [{ "title": "MusicBrainz: Front 242", "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626", "note": "Lists Jean-Luc de Meyer as a member from 1982." }]
+      "provenance": [
+        {
+          "title": "MusicBrainz: Front 242",
+          "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626",
+          "note": "Lists Jean-Luc de Meyer as a member from 1982."
+        }
+      ]
     },
     {
       "source": "raymond-watts",
@@ -1237,7 +1485,13 @@
       "validFrom": 1984,
       "validTo": 1988,
       "sourceStatus": "verified",
-      "provenance": [{ "title": "MusicBrainz: KMFDM", "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae", "note": "Lists Raymond Watts as a member from 1984 to 1988." }]
+      "provenance": [
+        {
+          "title": "MusicBrainz: KMFDM",
+          "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
+          "note": "Lists Raymond Watts as a member from 1984 to 1988."
+        }
+      ]
     },
     {
       "source": "raymond-watts",
@@ -1247,7 +1501,13 @@
       "validFrom": 1994,
       "validTo": 1995,
       "sourceStatus": "verified",
-      "provenance": [{ "title": "MusicBrainz: KMFDM", "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae", "note": "Lists Raymond Watts as a member from 1994 to 1995." }]
+      "provenance": [
+        {
+          "title": "MusicBrainz: KMFDM",
+          "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
+          "note": "Lists Raymond Watts as a member from 1994 to 1995."
+        }
+      ]
     },
     {
       "source": "raymond-watts",
@@ -1257,7 +1517,13 @@
       "validFrom": 2002,
       "validTo": 2004,
       "sourceStatus": "verified",
-      "provenance": [{ "title": "MusicBrainz: KMFDM", "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae", "note": "Lists Raymond Watts as a member from 2002 to 2004." }]
+      "provenance": [
+        {
+          "title": "MusicBrainz: KMFDM",
+          "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
+          "note": "Lists Raymond Watts as a member from 2002 to 2004."
+        }
+      ]
     },
     {
       "source": "en-esch",
@@ -1267,7 +1533,13 @@
       "validFrom": 1985,
       "validTo": 1999,
       "sourceStatus": "verified",
-      "provenance": [{ "title": "MusicBrainz: KMFDM", "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae", "note": "Lists En Esch as a member from 1985 to 1999-01-22." }]
+      "provenance": [
+        {
+          "title": "MusicBrainz: KMFDM",
+          "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
+          "note": "Lists En Esch as a member from 1985 to 1999-01-22."
+        }
+      ]
     },
     {
       "source": "michael-balch",
@@ -1277,7 +1549,13 @@
       "validFrom": 1988,
       "validTo": 1989,
       "sourceStatus": "verified",
-      "provenance": [{ "title": "MusicBrainz: Front Line Assembly", "url": "https://musicbrainz.org/artist/b847e9d2-c931-4daf-900c-42c7b2c42e16", "note": "Lists Michael Balch as a member from 1988 to 1989." }]
+      "provenance": [
+        {
+          "title": "MusicBrainz: Front Line Assembly",
+          "url": "https://musicbrainz.org/artist/b847e9d2-c931-4daf-900c-42c7b2c42e16",
+          "note": "Lists Michael Balch as a member from 1988 to 1989."
+        }
+      ]
     },
     {
       "source": "delerium",
@@ -1286,7 +1564,13 @@
       "roles": [],
       "validFrom": 1989,
       "sourceStatus": "verified",
-      "provenance": [{ "title": "MusicBrainz: Delerium", "url": "https://musicbrainz.org/artist/4279aba0-1bde-40a9-8fb2-c63d165dc554", "note": "Lists Faces, Forms and Illusions with a first release date of 1989-01-06." }]
+      "provenance": [
+        {
+          "title": "MusicBrainz: Delerium",
+          "url": "https://musicbrainz.org/artist/4279aba0-1bde-40a9-8fb2-c63d165dc554",
+          "note": "Lists Faces, Forms and Illusions with a first release date of 1989-01-06."
+        }
+      ]
     },
     {
       "source": "noise-unit",
@@ -1295,7 +1579,13 @@
       "roles": [],
       "validFrom": 1989,
       "sourceStatus": "verified",
-      "provenance": [{ "title": "MusicBrainz: Noise Unit", "url": "https://musicbrainz.org/artist/7dd6f063-dcac-47e7-98d1-26eaeaac2971", "note": "Lists Grinding Into Emptiness with a first release year of 1989." }]
+      "provenance": [
+        {
+          "title": "MusicBrainz: Noise Unit",
+          "url": "https://musicbrainz.org/artist/7dd6f063-dcac-47e7-98d1-26eaeaac2971",
+          "note": "Lists Grinding Into Emptiness with a first release year of 1989."
+        }
+      ]
     },
     {
       "source": "cyberaktif",
@@ -1304,7 +1594,13 @@
       "roles": [],
       "validFrom": 1990,
       "sourceStatus": "verified",
-      "provenance": [{ "title": "MusicBrainz: Cyberaktif", "url": "https://musicbrainz.org/artist/6967bbb5-d814-40e9-84be-eef3d10b6662", "note": "Lists Tenebrae Vision with a first release year of 1990." }]
+      "provenance": [
+        {
+          "title": "MusicBrainz: Cyberaktif",
+          "url": "https://musicbrainz.org/artist/6967bbb5-d814-40e9-84be-eef3d10b6662",
+          "note": "Lists Tenebrae Vision with a first release year of 1990."
+        }
+      ]
     },
     {
       "source": "acid-horse",
@@ -1313,7 +1609,13 @@
       "roles": [],
       "validFrom": 1989,
       "sourceStatus": "verified",
-      "provenance": [{ "title": "MusicBrainz: Acid Horse", "url": "https://musicbrainz.org/artist/ea9ea256-362b-41b7-9ad6-cc308d9909a2", "note": "Lists No Name, No Slogan with a first release year of 1989." }]
+      "provenance": [
+        {
+          "title": "MusicBrainz: Acid Horse",
+          "url": "https://musicbrainz.org/artist/ea9ea256-362b-41b7-9ad6-cc308d9909a2",
+          "note": "Lists No Name, No Slogan with a first release year of 1989."
+        }
+      ]
     },
     {
       "source": "ministry",
