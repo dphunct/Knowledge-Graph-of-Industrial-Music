@@ -21,7 +21,9 @@ const zoomValue = document.querySelector("#zoom-value");
 const controlTooltip = document.querySelector("#control-tooltip");
 const llmStatus = document.querySelector("#llm-status");
 const llmAnswer = document.querySelector("#llm-answer");
-const metrics = graphMetrics(graph.nodes, graph.edges);
+let metrics = graphMetrics(graph.nodes, graph.edges);
+let currentNodes = graph.nodes;
+let currentEdges = graph.edges;
 let activeView = "all";
 let selectedId = null;
 let highlightedPath = [];
@@ -103,6 +105,12 @@ function renderGraph() {
   const visibleDegrees = degreeLimit.value === "all" ? Infinity : Number(degreeLimit.value);
   if (selectedId && Number.isFinite(visibleDegrees)) nodes = nodes.filter((node) => distances.get(node.id) <= visibleDegrees);
   const visibleIds = new Set(nodes.map(({ id }) => id));
+  const edges = context ? graph.edges.filter((edge) => visibleIds.has(edge.source) && visibleIds.has(edge.target) && activeAtYear(edge)) : visibleEdges(nodes);
+  // Every metric is recalculated from the current view, so People, Projects,
+  // and Releases compare like with like instead of against the whole graph.
+  currentNodes = nodes;
+  currentEdges = edges;
+  metrics = graphMetrics(nodes, edges);
   const width = graphElement.clientWidth || 760;
   const height = graphElement.clientHeight || 450;
   const sizeFor = (node) => {
@@ -113,14 +121,24 @@ function renderGraph() {
     const angle = index * 2.399963229728653;
     const radius = Math.sqrt(index + 1) * Math.min(width, height) * .14;
     const depth = (((index * 0.61803398875) % 1) * 2 - 1) * Math.min(width, height) * .65;
-    return [node.id, { x: width / 2 + Math.cos(angle) * radius, y: height / 2 + Math.sin(angle) * radius, z: depth, vx: 0, vy: 0, pinned: false }];
+    const isSelected = node.id === selectedId;
+    // A selection becomes the stable center of the force layout. The rest of
+    // the map can settle around it, keeping the chosen sphere in view as its
+    // relationships spread out.
+    return [node.id, {
+      x: isSelected ? width / 2 : width / 2 + Math.cos(angle) * radius,
+      y: isSelected ? height / 2 : height / 2 + Math.sin(angle) * radius,
+      z: isSelected ? 0 : depth,
+      vx: 0,
+      vy: 0,
+      pinned: isSelected
+    }];
   }));
 
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.classList.add("edges");
   svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
   svg.setAttribute("aria-hidden", "true");
-  const edges = context ? graph.edges.filter((edge) => visibleIds.has(edge.source) && visibleIds.has(edge.target) && activeAtYear(edge)) : visibleEdges(nodes);
   if (dimension === "3d") {
     // Remove 2D canvas handlers left from the prior mode. Otherwise a drag to
     // orbit also begins a 2D pan and can be mistaken for a reset click.
@@ -368,6 +386,8 @@ function beginDrag(event, id, nodeRadius, width, height) {
 function selectNode(id) {
   selectedId = id;
   highlightedPath = []; focusedEdge = null;
+  // A prior pan should not leave the newly selected sphere off-center.
+  graphPan = { x: 0, y: 0 };
   const node = byId.get(id);
   const connections = nodeEdges(id);
   const aliases = node.aliases?.length ? `<p><strong>Also known as</strong> ${node.aliases.join(", ")}</p>` : "";
@@ -391,14 +411,14 @@ function populatePathSelects() {
   pathTo.value = "richard-23";
 }
 
-function shortestPath(start, target) {
+function shortestPath(start, target, edges = currentEdges) {
   const queue = [[start]];
   const visited = new Set([start]);
   while (queue.length) {
     const path = queue.shift();
     const current = path.at(-1);
     if (current === target) return path;
-    for (const edge of nodeEdges(current)) {
+    for (const edge of edges.filter((item) => item.source === current || item.target === current)) {
       const next = edge.source === current ? edge.target : edge.source;
       if (!visited.has(next)) { visited.add(next); queue.push([...path, next]); }
     }
@@ -418,6 +438,38 @@ function deterministicContext() {
   return document.querySelector("#path-result").textContent;
 }
 
+function mentionedNodes(question) {
+  const normalizedQuestion = question.toLowerCase();
+  return currentNodes.filter((node) => [node.label, ...(node.aliases || [])].some((name) => normalizedQuestion.includes(name.toLowerCase())))
+    .sort((left, right) => right.label.length - left.label.length);
+}
+
+function formatPath(path) {
+  return path ? path.map(labelFor).join(" → ") : "No connecting path has been recorded in the current view.";
+}
+
+function interpretGraphQuestion(question) {
+  const normalizedQuestion = question.toLowerCase();
+  const entities = mentionedNodes(question);
+  if (/(highest|top|rank|score|most connected|largest)/.test(normalizedQuestion)) {
+    const ranked = [...metrics.entries()].map(([id, score]) => ({ node: byId.get(id), score })).sort((left, right) => right.score.composite - left.score.composite).slice(0, 5);
+    if (!ranked.length) return null;
+    const scope = activeView === "all" ? "the current graph" : `the current ${activeView} view`;
+    return `Composite score is equally weighted across direct connections, bridge importance, and PageRank. In ${scope}, ${ranked.map(({ node, score }, index) => `${index + 1}. ${node.label} (${Math.round(score.composite * 100)})`).join("; ")}.`;
+  }
+  if (entities.length >= 2 && /(related|connect|relationship|path|between)/.test(normalizedQuestion)) {
+    const path = shortestPath(entities[0].id, entities[1].id);
+    return path ? `${entities[0].label} and ${entities[1].label} are connected in the current view by: ${formatPath(path)}.` : `No connection between ${entities[0].label} and ${entities[1].label} has been recorded in the current view.`;
+  }
+  if (entities.length && /(tell me|about|who is|what is|relationships|connected)/.test(normalizedQuestion)) {
+    const node = entities[0];
+    const relationships = currentEdges.filter((edge) => edge.source === node.id || edge.target === node.id).map((edge) => labelFor(edge.source === node.id ? edge.target : edge.source));
+    const score = metrics.get(node.id);
+    return `${node.label}: ${node.summary || "No description has been recorded."} Recorded connections in the current view: ${relationships.join(", ") || "none"}. Composite score: ${Math.round(score.composite * 100)}.`;
+  }
+  return null;
+}
+
 document.querySelector("#enable-llm").addEventListener("click", async (event) => {
   if (!navigator.gpu) { llmStatus.textContent = "This browser cannot turn on the answer helper. You can still explore the recorded relationships."; return; }
   event.currentTarget.disabled = true;
@@ -435,6 +487,8 @@ document.querySelector("#enable-llm").addEventListener("click", async (event) =>
 document.querySelector("#llm-form").addEventListener("submit", async (event) => {
   event.preventDefault();
   const question = document.querySelector("#llm-question").value.trim() || "Explain this recorded graph result.";
+  const interpreted = interpretGraphQuestion(question);
+  if (interpreted) { llmAnswer.textContent = interpreted; return; }
   const context = deterministicContext();
   const limitedAnswer = "I am only a simple bot with limited resources and can't handle this request. Try selecting a sphere or revealing a path first.";
   if (!localEngine) { llmAnswer.textContent = selectedId || highlightedPath.length ? context : limitedAnswer; return; }
@@ -443,6 +497,13 @@ document.querySelector("#llm-form").addEventListener("submit", async (event) => 
     const result = await localEngine.chat.completions.create({ messages: [{ role: "system", content: "Answer only from the supplied graph facts. Do not add people, releases, dates, sources, or relationships. If the facts do not answer the question, say exactly: I am only a simple bot with limited resources and can't handle this request." }, { role: "user", content: `Question: ${question}\n\nRecorded graph result: ${context}` }] });
     llmAnswer.textContent = result.choices[0]?.message?.content || limitedAnswer;
   } catch { llmAnswer.textContent = limitedAnswer; }
+});
+
+document.querySelector("#ask-chatgpt").addEventListener("click", () => {
+  const question = document.querySelector("#llm-question").value.trim() || "What can this industrial music knowledge graph tell me?";
+  const dataUrl = new URL("data/industrial-graph.json", window.location.href).href;
+  const prompt = `Use this public JSON knowledge-graph file as evidence: ${dataUrl}\n\nQuestion: ${question}\n\nAnswer only from the file when possible. State uncertainty and identify missing evidence rather than inventing relationships. If you cannot open the link, ask me to upload the downloaded JSON file instead.`;
+  window.open(`https://chatgpt.com/?q=${encodeURIComponent(prompt)}`, "_blank", "noopener,noreferrer");
 });
 
 document.querySelector("#path-form").addEventListener("submit", (event) => {
