@@ -14,6 +14,8 @@ const pathTo = document.querySelector("#path-to");
 const sizeMetric = document.querySelector("#size-metric");
 const yearSlider = document.querySelector("#year");
 const yearValue = document.querySelector("#year-value");
+const llmStatus = document.querySelector("#llm-status");
+const llmAnswer = document.querySelector("#llm-answer");
 const metrics = graphMetrics(graph.nodes, graph.edges);
 let activeView = "all";
 let selectedId = null;
@@ -26,6 +28,7 @@ let dimension = "2d";
 let focusedEdge = null;
 let disposeThree = () => {};
 let activeYear = Number(yearSlider.value);
+let localEngine = null;
 
 const nodeEdges = (id) => graph.edges.filter((edge) => edge.source === id || edge.target === id);
 const labelFor = (id) => byId.get(id).label;
@@ -315,6 +318,44 @@ function shortestPath(start, target) {
   }
   return null;
 }
+
+function deterministicContext() {
+  if (selectedId) {
+    const node = byId.get(selectedId);
+    const relationships = nodeEdges(selectedId).map((edge) => {
+      const other = edge.source === selectedId ? edge.target : edge.source;
+      return `${node.label} ${edge.type.replace("_", " ")} ${labelFor(other)}${edge.roles?.length ? ` (${edge.roles.join(", ")})` : ""}`;
+    });
+    return `Selected node: ${node.label}. Recorded relationships: ${relationships.join("; ") || "none"}.`;
+  }
+  return document.querySelector("#path-result").textContent;
+}
+
+document.querySelector("#enable-llm").addEventListener("click", async (event) => {
+  if (!navigator.gpu) { llmStatus.textContent = "WebGPU is unavailable in this browser, so the deterministic explanation remains active."; return; }
+  event.currentTarget.disabled = true;
+  llmStatus.textContent = "Preparing the local model download…";
+  try {
+    const { CreateMLCEngine } = await import("@mlc-ai/web-llm");
+    localEngine = await CreateMLCEngine("Llama-3.2-1B-Instruct-q4f16_1-MLC", { initProgressCallback: (report) => { llmStatus.textContent = report.text; } });
+    llmStatus.textContent = "Local explainer ready. The model runs in this browser.";
+  } catch (error) {
+    llmStatus.textContent = `Local model unavailable: ${error.message}. Deterministic explanations remain available.`;
+    event.currentTarget.disabled = false;
+  }
+});
+
+document.querySelector("#llm-form").addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const question = document.querySelector("#llm-question").value.trim() || "Explain this recorded graph result.";
+  const context = deterministicContext();
+  if (!localEngine) { llmAnswer.textContent = `${context} Enable the local explainer to turn this deterministic result into additional prose.`; return; }
+  llmAnswer.textContent = "Writing from the recorded graph result…";
+  try {
+    const result = await localEngine.chat.completions.create({ messages: [{ role: "system", content: "Explain only the supplied graph facts. Do not add people, releases, dates, sources, or relationships. State uncertainty when data is missing." }, { role: "user", content: `Question: ${question}\n\nRecorded graph result: ${context}` }] });
+    llmAnswer.textContent = result.choices[0]?.message?.content || context;
+  } catch (error) { llmAnswer.textContent = `${context} Local explanation failed: ${error.message}`; }
+});
 
 document.querySelector("#path-form").addEventListener("submit", (event) => {
   event.preventDefault();
