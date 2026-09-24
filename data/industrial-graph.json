@@ -2299,6 +2299,234 @@
           "note": "Lists Frenchie L'Amour as a member."
         }
       ]
+    },
+    {
+      "id": "nine-inch-nails",
+      "label": "Nine Inch Nails",
+      "type": "project",
+      "relevance": "core",
+      "summary": "Industrial project indexed by MusicBrainz; relationships are awaiting separate, cited research.",
+      "musicbrainz": {
+        "id": "b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Nine Inch Nails",
+          "url": "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+          "note": "Canonical artist record explicitly carries the industrial tag."
+        }
+      ]
+    },
+    {
+      "id": "depeche-mode",
+      "label": "Depeche Mode",
+      "type": "project",
+      "relevance": "core",
+      "summary": "Industrial project indexed by MusicBrainz; relationships are awaiting separate, cited research.",
+      "musicbrainz": {
+        "id": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/8538e728-ca0b-4321-b7e5-cff6565dd4c0"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Depeche Mode",
+          "url": "https://musicbrainz.org/artist/8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+          "note": "Canonical artist record explicitly carries the industrial tag."
+        }
+      ]
+    },
+    {
+      "id": "marilyn-manson",
+      "label": "Marilyn Manson",
+      "type": "project",
+      "relevance": "core",
+      "summary": "Industrial project indexed by MusicBrainz; relationships are awaiting separate, cited research.",
+      "musicbrainz": {
+        "id": "5dfdca28-9ddc-4853-933c-8bc97d87beec",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Canonical artist record explicitly carries the industrial tag."
+        }
+      ]
+    },
+    {
+      "id": "wumpscut",
+      "label": ":wumpscut:",
+      "type": "project",
+      "relevance": "core",
+      "summary": "Industrial project indexed by MusicBrainz; relationships are awaiting separate, cited research.",
+      "musicbrainz": {
+        "id": "e4e79264-c1ec-490c-b823-b2918204cd4f",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/e4e79264-c1ec-490c-b823-b2918204cd4f"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: :wumpscut:",
+          "url": "https://musicbrainz.org/artist/e4e79264-c1ec-490c-b823-b2918204cd4f",
+          "note": "Canonical artist record explicitly carries the industrial tag."
+        }
+      ]
+    },
+    {
+      "id": "rammstein",
+      "label": "Rammstein",
+      "type": "project",
+      "relevance": "core",
+      "summary": "Industrial project indexed by MusicBrainz; relationships are awaiting separate, cited research.",
+      "musicbrainz": {
+        "id": "b2d122f9-eadb-4930-a196-8f221eeb0c66",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/b2d122f9-eadb-4930-a196-8f221eeb0c66"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Rammstein",
+          "url": "https://musicbrainz.org/artist/b2d122f9-eadb-4930-a196-8f221eeb0c66",
+          "note": "Canonical artist record explicitly carries the industrial tag."
+        }
+      ]
+    },
+    {
+      "id": "7-minutes-of-nausea",
+      "label": "7 Minutes of Nausea",
+      "type": "project",
+      "relevance": "core",
+      "summary": "Industrial project indexed by MusicBrainz; relationships are awaiting separate, cited research.",
+      "musicbrainz": {
+        "id": "96843ba2-97ec-4120-8c25-044e001e95ed",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/96843ba2-97ec-4120-8c25-044e001e95ed"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: 7 Minutes of Nausea",
+          "url": "https://musicbrainz.org/artist/96843ba2-97ec-4120-8c25-044e001e95ed",
+          "note": "Canonical artist record explicitly carries the industrial tag."
+        }
+      ]
+    },
+    {
+      "id": "killing-joke",
+      "label": "Killing Joke",
+      "type": "project",
+      "relevance": "core",
+      "summary": "Industrial project indexed by MusicBrainz; relationships are awaiting separate, cited research.",
+      "musicbrainz": {
+        "id": "f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Killing Joke",
+          "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
+          "note": "Canonical artist record explicitly carries the industrial tag."
+        }
+      ]
+    },
+    {
+      "id": "laibach",
+      "label": "Laibach",
+      "type": "project",
+      "relevance": "core",
+      "summary": "Industrial project indexed by MusicBrainz; relationships are awaiting separate, cited research.",
+      "musicbrainz": {
+        "id": "c779e090-909f-4403-a90e-c1d08cdbb719",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Laibach",
+          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
+          "note": "Canonical artist record explicitly carries the industrial tag."
+        }
+      ]
+    },
+    {
+      "id": "fear-factory",
+      "label": "Fear Factory",
+      "type": "project",
+      "relevance": "core",
+      "summary": "Industrial project indexed by MusicBrainz; relationships are awaiting separate, cited research.",
+      "musicbrainz": {
+        "id": "c17f08f4-2542-46fb-97f3-3202d60c225a",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Fear Factory",
+          "url": "https://musicbrainz.org/artist/c17f08f4-2542-46fb-97f3-3202d60c225a",
+          "note": "Canonical artist record explicitly carries the industrial tag."
+        }
+      ]
+    },
+    {
+      "id": "einst-rzende-neubauten",
+      "label": "Einstürzende Neubauten",
+      "type": "project",
+      "relevance": "core",
+      "summary": "Industrial project indexed by MusicBrainz; relationships are awaiting separate, cited research.",
+      "musicbrainz": {
+        "id": "6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Einstürzende Neubauten",
+          "url": "https://musicbrainz.org/artist/6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
+          "note": "Canonical artist record explicitly carries the industrial tag."
+        }
+      ]
+    },
+    {
+      "id": "hocico",
+      "label": "Hocico",
+      "type": "project",
+      "relevance": "core",
+      "summary": "Industrial project indexed by MusicBrainz; relationships are awaiting separate, cited research.",
+      "musicbrainz": {
+        "id": "b16fd684-831e-4128-8120-6626e76f88c6",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/b16fd684-831e-4128-8120-6626e76f88c6"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Hocico",
+          "url": "https://musicbrainz.org/artist/b16fd684-831e-4128-8120-6626e76f88c6",
+          "note": "Canonical artist record explicitly carries the industrial tag."
+        }
+      ]
+    },
+    {
+      "id": "severed-heads",
+      "label": "Severed Heads",
+      "type": "project",
+      "relevance": "core",
+      "summary": "Industrial project indexed by MusicBrainz; relationships are awaiting separate, cited research.",
+      "musicbrainz": {
+        "id": "4976edcf-58c3-49b6-b6f1-2d8277e60d26",
+        "entity": "artist",
+        "url": "https://musicbrainz.org/artist/4976edcf-58c3-49b6-b6f1-2d8277e60d26"
+      },
+      "provenance": [
+        {
+          "title": "MusicBrainz: Severed Heads",
+          "url": "https://musicbrainz.org/artist/4976edcf-58c3-49b6-b6f1-2d8277e60d26",
+          "note": "Canonical artist record explicitly carries the industrial tag."
+        }
+      ]
     }
   ],
   "edges": [
