@@ -43,6 +43,10 @@
           <button type="button" data-action="dimension">2D / 3D</button><button class="help-button" type="button" data-help="2D is the current working view. The 3D control is a depth preview while the planned renderer with orbit controls is being built.">?</button>
         </div>
       </section>
+      <section class="neighborhood-controls" aria-label="Selected node neighborhood controls">
+        <label>Show up to <select id="degree-limit"><option value="all" selected>all degrees</option><option value="1">1 degree</option><option value="2">2 degrees</option><option value="3">3 degrees</option><option value="4">4 degrees</option><option value="5">5 degrees</option><option value="6">6 degrees</option></select> from selected node <button class="help-button" type="button" data-help="After selecting a node, this hides nodes farther away than the chosen number of recorded relationship hops. “All degrees” leaves the current view unchanged.">?</button></label>
+        <label>Fade to gray over <select id="fade-distance"><option value="1">1 degree</option><option value="2">2 degrees</option><option value="3">3 degrees</option><option value="4" selected>4 degrees</option><option value="5">5 degrees</option><option value="6">6 degrees</option></select> <button class="help-button" type="button" data-help="After selecting a node, this controls how gradually more-distant relationships fade. Nodes beyond this distance use the subdued gray state.">?</button></label>
+      </section>
       <label class="year-control"><span>Show relationships active by <output id="year-value">2026</output> <button class="help-button" type="button" data-help="The year control filters items with recorded start and end years. Items without researched dates remain visible so unknown does not become false absence.">?</button></span><input id="year" type="range" min="1975" max="2026" value="2026" step="1" /></label>
       <div id="control-tooltip" class="control-tooltip" role="tooltip" hidden></div>
 
