@@ -49,10 +49,12 @@ async function enrich(node) {
   const owner = artist ? "" : ownerFor(node);
   const names = [node.label, ...(node.aliases || [])];
   const field = artist ? "artist" : "releasegroup";
-  const query = owner ? `${field}:\"${node.label}\" AND artist:\"${owner}\"` : names.map((name) => `${artist ? "alias" : field}:\"${name}\"`).join(" OR ");
+  const query = owner
+    ? `${field}:\"${node.label}\" AND artist:\"${owner}\"`
+    : names.map((name) => artist ? `(artist:\"${name}\" OR alias:\"${name}\")` : `${field}:\"${name}\"`).join(" OR ");
   const search = await request(`/${resource}?query=${encodeURIComponent(query)}&limit=5`);
   const candidates = search[artist ? "artists" : "release-groups"] || [];
-  const selected = exactCandidate(candidates, node.label) || (artist && candidates.length === 1 && candidates[0].score === 100 ? candidates[0] : null);
+  const selected = exactCandidate(candidates, node.label);
   if (!selected) return { id: node.id, label: node.label, type: node.type, query, selected: null, candidates: candidates.map((item) => ({ id: item.id, label: item.name || item.title, score: item.score, disambiguation: item.disambiguation || "" })) };
   const detail = await request(`/${resource}/${selected.id}?inc=${includes}`);
   return formatResult(node, resource, selected.id, detail, query, candidates);
@@ -63,7 +65,20 @@ function formatResult(node, resource, id, detail, query, candidates = []) {
     id: node.id, label: node.label, type: node.type, query,
     selected: { id, resource, url: `https://musicbrainz.org/${resource}/${id}`, label: detail.name || detail.title, disambiguation: detail.disambiguation || "" },
     candidates: candidates.map((item) => ({ id: item.id, label: item.name || item.title, score: item.score, disambiguation: item.disambiguation || "" })),
-    relationships: (detail.relations || []).map((relation) => ({ type: relation.type, direction: relation.direction, begin: relation.begin || null, end: relation.end || null, targetType: relation["target-type"], target: relation.artist?.name || relation["release-group"]?.title || relation.url?.resource || "" })),
+    relationships: (detail.relations || []).map((relation) => {
+      const target = relation.artist || relation["release-group"];
+      const targetType = relation["target-type"] === "release_group" ? "release-group" : relation["target-type"];
+      return {
+        type: relation.type,
+        direction: relation.direction,
+        begin: relation.begin || null,
+        end: relation.end || null,
+        targetType,
+        targetId: target?.id || null,
+        targetUrl: target ? `https://musicbrainz.org/${targetType}/${target.id}` : relation.url?.resource || null,
+        target: target?.name || target?.title || relation.url?.resource || ""
+      };
+    }),
     releases: (detail["release-groups"] || detail.releases || []).slice(0, limit).map((release) => ({ id: release.id, title: release.title, firstReleaseDate: release["first-release-date"] || release.date || null, primaryType: release["primary-type"] || null })),
     aliases: (detail.aliases || []).map((alias) => alias.name)
   };
@@ -103,7 +118,8 @@ for (const phase of phases) {
     process.stdout.write(`${phase[0]}: ${node.label}\n`);
     try { run.results.push({ phase: phase[0], ...(await enrich(node)) }); }
     catch (error) { run.results.push({ phase: phase[0], id: node.id, label: node.label, type: node.type, error: error.message }); }
-    run.completedAt = run.phases.length === 3 && run.results.length >= graph.nodes.length ? new Date().toISOString() : null;
+    const scopedCount = phases.reduce((total, [, nodes]) => total + nodes.length, 0);
+    run.completedAt = run.phases.length === phases.length && run.results.length >= scopedCount ? new Date().toISOString() : null;
     await writeFile(outputUrl, `${JSON.stringify({ ...previous, runs: previous.runs.slice(-2) }, null, 2)}\n`);
   }
 }
