@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Industrial Music Knowledge Graph",
+    "version": "0.1.0",
+    "scope": "A deliberately small, evidence-ready seed graph. Inclusion is not a claim of exhaustive membership or discography.",
+    "relationshipDefault": "member_of"
+  },
+  "nodes": [
+    {"id":"ministry","label":"Ministry","type":"project","relevance":"core","years":"1981–present","summary":"American industrial project founded by Al Jourgensen."},
+    {"id":"skinny-puppy","label":"Skinny Puppy","type":"project","relevance":"core","years":"1982–2023","summary":"Canadian industrial group centered on cEvin Key and Nivek Ogre."},
+    {"id":"front-242","label":"Front 242","type":"project","relevance":"core","years":"1981–present","summary":"Belgian electronic body music group."},
+    {"id":"front-line-assembly","label":"Front Line Assembly","type":"project","relevance":"core","years":"1986–present","summary":"Canadian industrial project founded by Bill Leeb."},
+    {"id":"kmfdm","label":"KMFDM","type":"project","relevance":"core","years":"1984–present","summary":"German-founded industrial rock group."},
+    {"id":"revolting-cocks","label":"Revolting Cocks","type":"project","relevance":"core","years":"1985–present","summary":"Industrial supergroup with Ministry and Front 242 connections."},
+    {"id":"al-jourgensen","label":"Al Jourgensen","type":"person","aliases":["Alain Jourgensen","Hypo Luxa","Buck Satan"],"summary":"Musician and producer; founder of Ministry."},
+    {"id":"paul-barker","label":"Paul Barker","type":"person","aliases":["Hermes Pan"],"summary":"Musician and producer associated with Ministry."},
+    {"id":"cevin-key","label":"cEvin Key","type":"person","aliases":["Kevin Crompton"],"summary":"Musician and co-founder of Skinny Puppy."},
+    {"id":"nivek-ogre","label":"Nivek Ogre","type":"person","aliases":["Kevin Ogilvie"],"summary":"Vocalist and co-founder of Skinny Puppy."},
+    {"id":"bill-leeb","label":"Bill Leeb","type":"person","aliases":["Wilhelm Schroeder"],"summary":"Musician; founder of Front Line Assembly."},
+    {"id":"rhys-fulber","label":"Rhys Fulber","type":"person","summary":"Composer and producer associated with Front Line Assembly."},
+    {"id":"sascha-konietzko","label":"Sascha Konietzko","type":"person","summary":"Musician and founder of KMFDM."},
+    {"id":"richard-23","label":"Richard 23","type":"person","summary":"Musician associated with Front 242 and Revolting Cocks."},
+    {"id":"land-of-rape-and-honey","label":"The Land of Rape and Honey","type":"release","releaseType":"album","year":1988,"summary":"Ministry studio album."},
+    {"id":"stigmata","label":"Stigmata","type":"release","releaseType":"song","year":1988,"summary":"Song from The Land of Rape and Honey."}
+  ],
+  "edges": [
+    {"source":"al-jourgensen","target":"ministry","type":"member_of","roles":["founder","vocals","guitar","keyboards"],"sourceStatus":"needs-citation"},
+    {"source":"paul-barker","target":"ministry","type":"member_of","roles":["bass","keyboards","programming"],"sourceStatus":"needs-citation"},
+    {"source":"cevin-key","target":"skinny-puppy","type":"member_of","roles":["founder","keyboards","programming"],"sourceStatus":"needs-citation"},
+    {"source":"nivek-ogre","target":"skinny-puppy","type":"member_of","roles":["founder","vocals"],"sourceStatus":"needs-citation"},
+    {"source":"bill-leeb","target":"skinny-puppy","type":"member_of","roles":["bass","synthesizer"],"sourceStatus":"needs-citation"},
+    {"source":"bill-leeb","target":"front-line-assembly","type":"member_of","roles":["founder","vocals","programming"],"sourceStatus":"needs-citation"},
+    {"source":"rhys-fulber","target":"front-line-assembly","type":"member_of","roles":["programming","production"],"sourceStatus":"needs-citation"},
+    {"source":"sascha-konietzko","target":"kmfdm","type":"member_of","roles":["founder","bass","vocals"],"sourceStatus":"needs-citation"},
+    {"source":"richard-23","target":"front-242","type":"member_of","roles":["vocals","percussion"],"sourceStatus":"needs-citation"},
+    {"source":"richard-23","target":"revolting-cocks","type":"member_of","roles":["vocals"],"sourceStatus":"needs-citation"},
+    {"source":"al-jourgensen","target":"revolting-cocks","type":"member_of","roles":["vocals","guitar"],"sourceStatus":"needs-citation"},
+    {"source":"ministry","target":"land-of-rape-and-honey","type":"released","roles":[],"sourceStatus":"needs-citation"},
+    {"source":"land-of-rape-and-honey","target":"stigmata","type":"contains","roles":[],"sourceStatus":"needs-citation"},
+    {"source":"al-jourgensen","target":"stigmata","type":"song_credit","roles":["vocals","guitar","writer","producer"],"performingAs":"Hypo Luxa","sourceStatus":"needs-citation"},
+    {"source":"paul-barker","target":"stigmata","type":"song_credit","roles":["bass","writer","producer"],"performingAs":"Hermes Pan","sourceStatus":"needs-citation"}
+  ]
+}

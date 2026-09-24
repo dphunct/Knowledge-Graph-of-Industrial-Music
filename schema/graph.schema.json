@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Industrial music graph",
+  "type": "object",
+  "required": ["meta", "nodes", "edges"],
+  "properties": {
+    "meta": {"type": "object"},
+    "nodes": {"type": "array", "items": {"type": "object", "required": ["id", "label", "type"]}},
+    "edges": {"type": "array", "items": {"type": "object", "required": ["source", "target", "type", "roles", "sourceStatus"]}}
+  }
+}

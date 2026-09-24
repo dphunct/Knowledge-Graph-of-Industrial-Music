@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="An interactive knowledge graph of industrial music."
+    />
+    <title>Industrial Music Knowledge Graph</title>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="masthead">
+        <p class="eyebrow">An evidence-first music explorer</p>
+        <h1>Industrial Music<br /><em>Knowledge Graph</em></h1>
+        <p class="lede">Trace the people, projects, releases, and songs that form the industrial music network.</p>
+      </header>
+
+      <section class="controls" aria-label="Graph controls">
+        <label class="search"><span>Find a person or project</span><input id="search" type="search" placeholder="e.g. Ministry, cEvin Key" /></label>
+        <div class="view-controls" role="group" aria-label="Graph view">
+          <button class="active" type="button" data-view="all">Network</button>
+          <button type="button" data-view="people">People</button>
+          <button type="button" data-view="projects">Projects</button>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <div class="graph-panel">
+          <div class="legend"><span><i class="person"></i> person</span><span><i class="project"></i> project</span><span><i class="release"></i> release</span></div>
+          <div id="graph" class="graph" role="list" aria-label="Knowledge graph"></div>
+          <p id="graph-status" class="graph-status"></p>
+        </div>
+        <aside id="detail" class="detail" aria-live="polite">
+          <p class="eyebrow">Start exploring</p>
+          <h2>Select a node</h2>
+          <p>Each relationship carries a role and source status. The graph is intentionally small until individual facts are verified and sourced.</p>
+        </aside>
+      </section>
+
+      <section class="query-panel" aria-labelledby="path-title">
+        <div>
+          <p class="eyebrow">Path finder</p>
+          <h2 id="path-title">How are two nodes connected?</h2>
+        </div>
+        <form id="path-form">
+          <label>From <select id="path-from"></select></label>
+          <label>To <select id="path-to"></select></label>
+          <button type="submit">Reveal path</button>
+        </form>
+        <p id="path-result" class="path-result">Choose two nodes to find their shortest known connection.</p>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
