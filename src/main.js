@@ -45,6 +45,7 @@ let threeControls = null;
 let graphPan = { x: 0, y: 0 };
 let suppressCanvasClick = false;
 let resizeTimer;
+const maximumRenderedSpheres = 300;
 
 const nodeEdges = (id) => graph.edges.filter((edge) => edge.source === id || edge.target === id);
 const labelFor = (id) => byId.get(id).label;
@@ -108,6 +109,16 @@ function renderGraph() {
   const distances = selectedId ? hopDistances(selectedId) : new Map();
   const visibleDegrees = degreeLimit.value === "all" ? Infinity : Number(degreeLimit.value);
   if (selectedId && Number.isFinite(visibleDegrees)) nodes = nodes.filter((node) => distances.get(node.id) <= visibleDegrees);
+  const totalMatchingNodes = nodes.length;
+  if (nodes.length > maximumRenderedSpheres) {
+    const connectionCounts = new Map(nodes.map((node) => [node.id, 0]));
+    for (const edge of graph.edges) {
+      if (connectionCounts.has(edge.source)) connectionCounts.set(edge.source, connectionCounts.get(edge.source) + 1);
+      if (connectionCounts.has(edge.target)) connectionCounts.set(edge.target, connectionCounts.get(edge.target) + 1);
+    }
+    nodes = [...nodes].sort((left, right) => (right.id === selectedId) - (left.id === selectedId) || connectionCounts.get(right.id) - connectionCounts.get(left.id) || left.label.localeCompare(right.label)).slice(0, maximumRenderedSpheres);
+  }
+  const omittedNodeCount = totalMatchingNodes - nodes.length;
   const visibleIds = new Set(nodes.map(({ id }) => id));
   const edges = context ? graph.edges.filter((edge) => visibleIds.has(edge.source) && visibleIds.has(edge.target) && activeAtYear(edge)) : visibleEdges(nodes);
   // Every metric is recalculated from the current view, so People, Projects,
@@ -152,7 +163,7 @@ function renderGraph() {
     graphElement.onclick = null;
     graphElement.onpointerdown = null;
     renderThreeGraph(nodes, edges, width, height, distances);
-    status.textContent = `${context ? "Connection details · " : ""}${nodes.length} visible spheres · ${edges.length} connection lines · drag to orbit, scroll to zoom`;
+    status.textContent = `${context ? "Connection details · " : ""}${nodes.length} visible spheres${omittedNodeCount ? ` of ${totalMatchingNodes}; search to narrow the remaining ${omittedNodeCount} · ` : " · "}${edges.length} connection lines · drag to orbit, scroll to zoom`;
     return;
   }
   const lines = edges.map((edge) => {
@@ -186,7 +197,7 @@ function renderGraph() {
   graphElement.classList.toggle("three-d", dimension === "3d");
   status.textContent = context
     ? `Connection details · ${nodes.length} spheres · ${edges.length} recorded relationships · click the canvas to return`
-    : `${nodes.length} visible spheres · ${edges.length} visible connection lines · drag spheres to explore`;
+    : `${nodes.length} visible spheres${omittedNodeCount ? ` of ${totalMatchingNodes}; search to narrow the remaining ${omittedNodeCount}` : ""} · ${edges.length} visible connection lines · drag spheres to explore`;
 
   redrawGraph = () => {
     for (const { edge, line } of lines) {
