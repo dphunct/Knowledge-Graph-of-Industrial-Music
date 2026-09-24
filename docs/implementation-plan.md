@@ -31,7 +31,7 @@ The following pull requests implement the current application work and must be m
 ## Next: knowledge expansion
 
 1. Add sourced core industrial projects and members using the expansion boundary rules.
-2. Add release and song credits without conflating membership and session credits.
+2. Add release and song credits without conflating membership and session credits. **The repeatable MusicBrainz release-group pass is implemented; it only adds exact canonical artist-to-release relationships and records its provider audit separately.**
 3. Add per-fact provenance URLs and confidence notes.
 4. Populate relationship validity periods for the future year view.
 
