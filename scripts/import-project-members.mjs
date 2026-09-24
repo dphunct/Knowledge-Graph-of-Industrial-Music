@@ -62,7 +62,7 @@ for (const project of graph.nodes.filter((node) => node.type === "project")) {
   report.projects.push({ id: project.id, label: project.label, musicbrainzId: project.musicbrainz.id, members: members.map((relation) => ({ id: relation.artist.id, label: relation.artist.name, begin: relation.begin || null, end: relation.end || null })) });
   for (const relation of members) {
     const member = relation.artist;
-    let person = graph.nodes.find((node) => node.musicbrainz?.entity === "artist" && node.musicbrainz.id === member.id);
+    let person = graph.nodes.find((node) => node.musicbrainz?.entity === "artist" && (node.musicbrainz.id === member.id || node.musicbrainz.alternateIds?.includes(member.id)));
     if (!person) {
       person = { id: uniqueId(member.name, member.id), label: member.name, type: "person", summary: `Musician documented by MusicBrainz as a member of ${project.label}.`, musicbrainz: { id: member.id, entity: "artist", url: `https://musicbrainz.org/artist/${member.id}` }, provenance: [source(project, member, relation)] };
       graph.nodes.push(person);
