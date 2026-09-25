@@ -440,21 +440,39 @@ function selectNode(id) {
   const connections = nodeEdges(id);
   const aliases = node.aliases?.length ? `<p><strong>Also known as</strong> ${node.aliases.join(", ")}</p>` : "";
   const sources = provenanceLinks(node) ? `<p class="provenance"><strong>Sources</strong><br />${provenanceLinks(node)}</p>` : "";
-  const related = connections.sort((left, right) => labelFor(left.source === id ? left.target : left.source).localeCompare(labelFor(right.source === id ? right.target : right.source))).map((edge) => {
-    const other = edge.source === id ? edge.target : edge.source;
-    const role = edge.roles.length ? ` — ${edge.roles.join(", ")}` : "";
-    return `<li><button type="button" data-node="${other}">${labelFor(other)}</button><span>${edge.type.replace("_", " ")}${role} · ${edge.sourceStatus.replace("-", " ")}</span>${provenanceLinks(edge) ? `<span class="provenance">${provenanceLinks(edge)}</span>` : ""}</li>`;
-  }).join("");
   const metric = metrics.get(id); const score = (value) => Math.round(value * 100);
   detail.innerHTML = `<p class="eyebrow">${node.type}${node.relevance ? ` · ${node.relevance} relevance` : ""}</p><h2>${node.label}</h2><p>${node.summary || "No description recorded yet."}</p>${node.years ? `<p><strong>Active</strong> ${node.years}</p>` : ""}${aliases}${sources}<h3>Graph influence</h3><p>Composite ${score(metric.composite)} · contribution ${score(metric.contribution)} · connections ${score(metric.degree)} · bridge ${score(metric.betweenness)} · PageRank ${score(metric.pageRank)}</p><button class="open-relationships" type="button" data-open-relationships>View ${connections.length} recorded connection${connections.length === 1 ? "" : "s"}</button>`;
-  detail.querySelector("[data-open-relationships]").addEventListener("click", () => openRelationships(node, connections, related));
+  detail.querySelector("[data-open-relationships]").addEventListener("click", () => openRelationships(node, connections));
   renderGraph();
 }
 
-function openRelationships(node, connections, related) {
+function relationshipGroups(node, connections) {
+  const categories = [
+    { type: "person", label: "People" },
+    { type: "project", label: "Projects" },
+    { type: "release", label: "Releases" }
+  ];
+  const grouped = new Map(categories.map((category) => [category.type, []]));
+  for (const edge of connections) {
+    const other = edge.source === node.id ? edge.target : edge.source;
+    const otherNode = byId.get(other);
+    if (otherNode && grouped.has(otherNode.type)) grouped.get(otherNode.type).push({ edge, other, otherNode });
+  }
+  return categories.map(({ type, label }) => {
+    const items = grouped.get(type).sort((left, right) => left.otherNode.label.localeCompare(right.otherNode.label));
+    if (!items.length) return "";
+    const entries = items.map(({ edge, other, otherNode }) => {
+      const role = edge.roles.length ? ` — ${edge.roles.join(", ")}` : "";
+      return `<li><button type="button" data-node="${other}">${otherNode.label}</button><span>${edge.type.replace("_", " ")}${role} · ${edge.sourceStatus.replace("-", " ")}</span>${provenanceLinks(edge) ? `<span class="provenance">${provenanceLinks(edge)}</span>` : ""}</li>`;
+    }).join("");
+    return `<section class="relationship-group relationship-group--${type}"><h3><i aria-hidden="true"></i>${label} <span>${items.length}</span></h3><ul>${entries}</ul></section>`;
+  }).join("");
+}
+
+function openRelationships(node, connections) {
   relationshipsTitle.textContent = `${node.label} — recorded connections`;
-  relationshipsSummary.textContent = `${connections.length} relationship${connections.length === 1 ? "" : "s"} documented for ${node.label}. Select an entry to make it the active sphere.`;
-  relationshipsList.innerHTML = related || "<li>No relationships recorded.</li>";
+  relationshipsSummary.textContent = `${connections.length} relationship${connections.length === 1 ? "" : "s"} documented for ${node.label}, grouped by the connected sphere type. Select an entry to make it the active sphere.`;
+  relationshipsList.innerHTML = relationshipGroups(node, connections) || "<p>No relationships recorded.</p>";
   relationshipsList.querySelectorAll("[data-node]").forEach((button) => button.addEventListener("click", () => {
     relationshipsDialog.close();
     selectNode(button.dataset.node);
