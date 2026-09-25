@@ -114,10 +114,9 @@
               >
                 Projects</button
               ><button
-                class="active"
                 type="button"
                 data-type-toggle="release"
-                aria-pressed="true"
+                aria-pressed="false"
               >
                 Releases
               </button>
@@ -165,18 +164,16 @@
             </button>
           </div>
           <div class="control-band-actions">
-            <button type="button" data-action="rearrange">Rearrange</button
-            ><button
-              class="active"
-              type="button"
-              data-action="dimension"
-              aria-pressed="true"
-            >
-              3D / 2D</button
-            ><button
+            <button type="button" data-action="rearrange">Rearrange</button>
+            <div class="dimension-controls" role="group" aria-label="Map view">
+              <span class="control-group-label">View</span>
+              <button class="active" type="button" data-dimension="3d" aria-pressed="true">3D</button>
+              <button type="button" data-dimension="2d" aria-pressed="false">2D</button>
+            </div>
+            <button
               class="help-button"
               type="button"
-              data-help="The map starts in 3D. Drag to orbit and scroll to zoom. Use this control to switch to the 2D working map."
+              data-help="Choose 3D to orbit the map, or 2D for a flat working view. The current view is highlighted."
             >
               ?
             </button>
