@@ -14,60 +14,278 @@
     <main class="app-shell">
       <header class="masthead">
         <p class="eyebrow">An evidence-first music explorer</p>
-        <h1>Industrial Music<br class="title-break" /><em>Knowledge Graph</em></h1>
-        <p class="lede">Trace the people, projects, releases, and songs that form the industrial music network.</p>
-        <p class="screen-note">This can work on a mobile device, but a larger screen—such as a laptop or desktop—gives the clearest view of the network.</p>
+        <h1>
+          Industrial Music<br class="title-break" /><em>Knowledge Graph</em>
+        </h1>
+        <p class="lede">
+          Trace the people, projects, releases, and songs that form the
+          industrial music network.
+        </p>
+        <p class="screen-note">
+          This can work on a mobile device, but a larger screen—such as a laptop
+          or desktop—gives the clearest view of the network.
+        </p>
       </header>
 
       <section class="origin" aria-labelledby="origin-title">
-        <a class="origin-image" href="https://www.facebook.com/groups/WaxTraxRecords1980/posts/2594226704425911/" target="_blank" rel="noopener noreferrer">
-          <img src="%BASE_URL%assets/waxtraxmeme.jpg" alt="Industrial music relationship meme showing people and projects connected by white lines" />
+        <a
+          class="origin-image"
+          href="https://www.facebook.com/groups/WaxTraxRecords1980/posts/2594226704425911/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="%BASE_URL%assets/waxtraxmeme.jpg"
+            alt="Industrial music relationship meme showing people and projects connected by white lines"
+          />
         </a>
         <div>
           <p class="eyebrow">The spark</p>
           <h2 id="origin-title">The meme that triggered this project</h2>
-          <p>This graph started as an effort to reverse-engineer, expand, and substantiate the dense web of people and projects shown in this Wax Trax meme.</p>
-          <a class="text-link" href="https://www.facebook.com/groups/WaxTraxRecords1980/posts/2594226704425911/" target="_blank" rel="noopener noreferrer">View the original post ↗</a>
+          <p>
+            This graph started as an effort to reverse-engineer, expand, and
+            substantiate the dense web of people and projects shown in this Wax
+            Trax meme.
+          </p>
+          <a
+            class="text-link"
+            href="https://www.facebook.com/groups/WaxTraxRecords1980/posts/2594226704425911/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View the original post ↗</a
+          >
         </div>
       </section>
 
       <section class="controls control-band" aria-label="Graph controls">
         <div class="control-band-primary">
-          <label class="search"><span>Find a person, project, or alias <button class="help-button" type="button" data-help="Searches names and recorded aliases in the selected view. An alias takes you to its canonical person; it does not invent or fetch new relationships.">?</button></span><input id="search" type="search" placeholder="e.g. Ministry, cEvin Key, Hypo Luxa" /></label>
-          <label class="metric-control"><span>Size spheres by <button class="help-button" type="button" data-help="Scores compare only the spheres in the current view. Contribution strength gives documented person-to-project memberships a low baseline, then increases them for recorded tenure and release groups that explicitly credit both the person and project. It never assumes every member played on every release. Composite score equally combines contribution strength, bridge importance, and PageRank.">?</button></span><select id="size-metric"><option value="degree" selected>Direct connections</option><option value="contribution">Contribution strength</option><option value="composite">Composite score</option><option value="betweenness">Bridge importance</option><option value="pageRank">PageRank</option></select></label>
+          <label class="search"
+            ><span
+              >Find a person, project, or alias
+              <button
+                class="help-button"
+                type="button"
+                data-help="Searches names and recorded aliases in the selected view. An alias takes you to its canonical person; it does not invent or fetch new relationships."
+              >
+                ?
+              </button></span
+            ><input
+              id="search"
+              type="search"
+              placeholder="e.g. Ministry, cEvin Key, Hypo Luxa"
+          /></label>
+          <label class="metric-control"
+            ><span
+              >Size spheres by
+              <button
+                class="help-button"
+                type="button"
+                data-help="Scores compare only the spheres in the current view. Contribution strength gives documented person-to-project memberships a low baseline, then increases them for recorded tenure and release groups that explicitly credit both the person and project. It never assumes every member played on every release. Composite score equally combines contribution strength, bridge importance, and PageRank."
+              >
+                ?
+              </button></span
+            ><select id="size-metric">
+              <option value="degree" selected>Direct connections</option>
+              <option value="contribution">Contribution strength</option>
+              <option value="composite">Composite score</option>
+              <option value="betweenness">Bridge importance</option>
+              <option value="pageRank">PageRank</option>
+            </select></label
+          >
         </div>
         <div class="control-band-secondary">
-          <div class="control-group" aria-label="Visible sphere types"><span class="control-group-label">Visible in map</span><div class="view-controls" role="group"><button class="active" type="button" data-type-toggle="person" aria-pressed="true">People</button><button class="active" type="button" data-type-toggle="project" aria-pressed="true">Projects</button><button class="active" type="button" data-type-toggle="release" aria-pressed="true">Releases</button></div><button class="help-button control-group-help" type="button" data-help="Turn People, Projects, and Releases on or off independently. When exactly People or Projects is shown, the map keeps its projected connections so those spheres remain connected.">?</button></div>
-          <div class="control-group neighborhood-controls" aria-label="Selected sphere behavior"><span class="control-group-label">When selected</span><label>Show up to <select id="degree-limit"><option value="all" selected>all degrees</option><option value="1">1 degree</option><option value="2">2 degrees</option><option value="3">3 degrees</option><option value="4">4 degrees</option><option value="5">5 degrees</option><option value="6">6 degrees</option></select></label><label>Fade over <select id="fade-distance"><option value="1">1 degree</option><option value="2">2 degrees</option><option value="3">3 degrees</option><option value="4" selected>4 degrees</option><option value="5">5 degrees</option><option value="6">6 degrees</option></select></label><button class="help-button control-group-help" type="button" data-help="Show up to limits the number of recorded connection steps visible after selecting a sphere. Fade over controls how gradually more-distant spheres become gray.">?</button></div>
-          <div class="control-band-actions"><button type="button" data-action="rearrange">Rearrange</button><button class="active" type="button" data-action="dimension" aria-pressed="true">3D / 2D</button><button class="help-button" type="button" data-help="The map starts in 3D. Drag to orbit and scroll to zoom. Use this control to switch to the 2D working map.">?</button></div>
+          <div class="control-group" aria-label="Visible sphere types">
+            <span class="control-group-label">Visible in map</span>
+            <div class="view-controls" role="group">
+              <button
+                class="active"
+                type="button"
+                data-type-toggle="person"
+                aria-pressed="true"
+              >
+                People</button
+              ><button
+                class="active"
+                type="button"
+                data-type-toggle="project"
+                aria-pressed="true"
+              >
+                Projects</button
+              ><button
+                class="active"
+                type="button"
+                data-type-toggle="release"
+                aria-pressed="true"
+              >
+                Releases
+              </button>
+            </div>
+            <button
+              class="help-button control-group-help"
+              type="button"
+              data-help="Turn People, Projects, and Releases on or off independently. When exactly People or Projects is shown, the map keeps its projected connections so those spheres remain connected."
+            >
+              ?
+            </button>
+          </div>
+          <div
+            class="control-group neighborhood-controls"
+            aria-label="Selected sphere behavior"
+          >
+            <span class="control-group-label">When selected</span
+            ><label
+              >Show up to
+              <select id="degree-limit">
+                <option value="all" selected>all degrees</option>
+                <option value="1">1 degree</option>
+                <option value="2">2 degrees</option>
+                <option value="3">3 degrees</option>
+                <option value="4">4 degrees</option>
+                <option value="5">5 degrees</option>
+                <option value="6">6 degrees</option>
+              </select></label
+            ><label
+              >Fade over
+              <select id="fade-distance">
+                <option value="1">1 degree</option>
+                <option value="2">2 degrees</option>
+                <option value="3">3 degrees</option>
+                <option value="4" selected>4 degrees</option>
+                <option value="5">5 degrees</option>
+                <option value="6">6 degrees</option>
+              </select></label
+            ><button
+              class="help-button control-group-help"
+              type="button"
+              data-help="Show up to limits the number of recorded connection steps visible after selecting a sphere. Fade over controls how gradually more-distant spheres become gray."
+            >
+              ?
+            </button>
+          </div>
+          <div class="control-band-actions">
+            <button type="button" data-action="rearrange">Rearrange</button
+            ><button
+              class="active"
+              type="button"
+              data-action="dimension"
+              aria-pressed="true"
+            >
+              3D / 2D</button
+            ><button
+              class="help-button"
+              type="button"
+              data-help="The map starts in 3D. Drag to orbit and scroll to zoom. Use this control to switch to the 2D working map."
+            >
+              ?
+            </button>
+          </div>
         </div>
       </section>
-      <label class="year-control year-control--wide"><span>Show relationships active by <output id="year-value">2026</output> <button class="help-button" type="button" data-help="The year control filters items with recorded start and end years. Items without researched dates remain visible so unknown does not become false absence.">?</button></span><input id="year" type="range" min="1975" max="2026" value="2026" step="1" /></label>
-      <div id="control-tooltip" class="control-tooltip" role="tooltip" hidden></div>
+      <label class="year-control year-control--wide"
+        ><span
+          >Show relationships active by <output id="year-value">2026</output>
+          <button
+            class="help-button"
+            type="button"
+            data-help="The year control filters items with recorded start and end years. Items without researched dates remain visible so unknown does not become false absence."
+          >
+            ?
+          </button></span
+        ><input
+          id="year"
+          type="range"
+          min="1975"
+          max="2026"
+          value="2026"
+          step="1"
+      /></label>
+      <div
+        id="control-tooltip"
+        class="control-tooltip"
+        role="tooltip"
+        hidden
+      ></div>
 
       <section class="workspace">
         <div class="graph-panel">
-          <div class="legend"><span><i class="person"></i> person</span><span><i class="project"></i> project</span><span><i class="release"></i> release</span></div>
-          <div id="graph" class="graph" role="list" aria-label="Knowledge graph"></div>
-          <div class="zoom-controls" role="group" aria-label="Graph zoom controls">
-            <button type="button" data-action="zoom-out" aria-label="Zoom out">−</button>
-            <label>Zoom <input id="graph-zoom" type="range" min="0.01" max="100" value="1" step="0.01" /></label>
-            <button type="button" data-action="zoom-in" aria-label="Zoom in">+</button>
+          <div class="legend">
+            <span><i class="person"></i> person</span
+            ><span><i class="project"></i> project</span
+            ><span><i class="release"></i> release</span>
+          </div>
+          <div
+            id="graph"
+            class="graph"
+            role="list"
+            aria-label="Knowledge graph"
+          ></div>
+          <div
+            class="zoom-controls"
+            role="group"
+            aria-label="Graph zoom controls"
+          >
+            <button type="button" data-action="zoom-out" aria-label="Zoom out">
+              −
+            </button>
+            <label
+              >Zoom
+              <input
+                id="graph-zoom"
+                type="range"
+                min="0.01"
+                max="100"
+                value="1"
+                step="0.01"
+            /></label>
+            <button type="button" data-action="zoom-in" aria-label="Zoom in">
+              +
+            </button>
             <button type="button" data-action="zoom-reset">Fit graph</button>
-            <button type="button" data-action="fullscreen" aria-pressed="false">Full screen</button><button class="help-button" type="button" data-help="Focus the map with Full screen or press F. Press Escape or use Exit full screen to return. The map rearranges itself for the available space, and its wider working area gives you room to pan and zoom.">?</button>
+            <button type="button" data-action="fullscreen" aria-pressed="false">
+              Full screen</button
+            ><button
+              class="help-button"
+              type="button"
+              data-help="Focus the map with Full screen or press F. Press Escape or use Exit full screen to return. The map rearranges itself for the available space, and its wider working area gives you room to pan and zoom."
+            >
+              ?
+            </button>
             <output id="zoom-value">100%</output>
           </div>
-          <p id="graph-status" class="graph-status">Tip: drag the background to pan; Full screen or F opens a focused map view.</p>
+          <p id="graph-status" class="graph-status">
+            Tip: drag the background to pan; Full screen or F opens a focused
+            map view.
+          </p>
         </div>
         <aside id="detail" class="detail" aria-live="polite">
           <p class="eyebrow">Start exploring</p>
           <h2>Select a sphere or line</h2>
-          <p>Each relationship carries a role and source status. The graph is intentionally small until individual facts are verified and sourced.</p>
+          <p>
+            Each relationship carries a role and source status. The graph is
+            intentionally small until individual facts are verified and sourced.
+          </p>
         </aside>
       </section>
 
-      <dialog id="relationships-dialog" class="relationships-dialog" aria-labelledby="relationships-title">
-        <div class="dialog-heading"><div><p class="eyebrow">Recorded connections</p><h2 id="relationships-title">Known relationships</h2></div><button type="button" class="dialog-close" data-close-relationships aria-label="Close recorded connections">Close</button></div>
+      <dialog
+        id="relationships-dialog"
+        class="relationships-dialog"
+        aria-labelledby="relationships-title"
+      >
+        <div class="dialog-heading">
+          <div>
+            <p class="eyebrow">Recorded connections</p>
+            <h2 id="relationships-title">Known relationships</h2>
+          </div>
+          <button
+            type="button"
+            class="dialog-close"
+            data-close-relationships
+            aria-label="Close recorded connections"
+          >
+            Close
+          </button>
+        </div>
         <p id="relationships-summary" class="dialog-summary"></p>
         <div id="relationships-list" class="relationships"></div>
       </dialog>
@@ -78,30 +296,92 @@
           <h2 id="path-title">How are two people or projects connected?</h2>
         </div>
         <form id="path-form">
-          <label>From <input id="path-from" type="search" list="path-options" autocomplete="off" placeholder="Type a name or alias" /></label>
-          <label>To <input id="path-to" type="search" list="path-options" autocomplete="off" placeholder="Type a name or alias" /></label>
+          <label
+            >From
+            <input
+              id="path-from"
+              type="search"
+              list="path-options"
+              autocomplete="off"
+              placeholder="Type a name or alias"
+          /></label>
+          <label
+            >To
+            <input
+              id="path-to"
+              type="search"
+              list="path-options"
+              autocomplete="off"
+              placeholder="Type a name or alias"
+          /></label>
           <datalist id="path-options"></datalist>
           <button type="submit">Reveal path</button>
         </form>
-        <p id="path-result" class="path-result">Type a name in each field, choose a suggestion, then reveal their shortest known connection.</p>
+        <p id="path-result" class="path-result">
+          Type a name in each field, choose a suggestion, then reveal their
+          shortest known connection.
+        </p>
       </section>
 
       <section class="feedback" aria-labelledby="feedback-title">
         <p class="eyebrow">Help improve the record</p>
         <h2 id="feedback-title">Correct the graph or request a feature</h2>
-        <p>Factual corrections and additions need at least one cited source. Unsupported claims remain in the research queue rather than being silently added.</p>
-        <div><a class="feedback-link" href="https://github.com/dphunct/Knowledge-Graph-of-Industrial-Music/issues/new?template=graph-fact.yml">Correct or add information</a><a class="feedback-link" href="https://github.com/dphunct/Knowledge-Graph-of-Industrial-Music/issues/new?template=feature-request.yml">Request a feature</a></div>
+        <p>
+          Factual corrections and additions need at least one cited source.
+          Unsupported claims remain in the research queue rather than being
+          silently added.
+        </p>
+        <div>
+          <a
+            class="feedback-link"
+            href="https://github.com/dphunct/Knowledge-Graph-of-Industrial-Music/issues/new?template=graph-fact.yml"
+            >Correct or add information</a
+          ><a
+            class="feedback-link"
+            href="https://github.com/dphunct/Knowledge-Graph-of-Industrial-Music/issues/new?template=feature-request.yml"
+            >Request a feature</a
+          >
+        </div>
       </section>
 
       <section class="local-explainer" aria-labelledby="explainer-title">
         <p class="eyebrow">Optional answer helper</p>
         <h2 id="explainer-title">Ask the graph</h2>
-        <p>Ask about people, projects, releases, connections, or rankings in the current view. Simple graph questions are answered locally. You can turn on the answer helper if your browser supports it for a fuller explanation of the information currently shown.</p>
+        <p>
+          Ask about people, projects, releases, connections, or rankings in the
+          current view. Simple graph questions are answered locally. You can
+          turn on the answer helper if your browser supports it for a fuller
+          explanation of the information currently shown.
+        </p>
         <button id="enable-llm" type="button">Turn on answer helper</button>
-        <p id="llm-status" class="llm-status">Choose a sphere or path, then ask a question.</p>
-        <form id="llm-form"><label>What is your question? <input id="llm-question" type="text" placeholder="How is Al Jourgensen related to Marilyn Manson?" /></label><button type="submit">Ask</button><button id="ask-chatgpt" class="secondary-action" type="button">Continue in ChatGPT</button></form>
-        <p id="llm-answer" class="llm-answer">Try “Who has the highest composite score?”, “Which projects have the highest PageRank?”, or “Tell me about Al Jourgensen.”</p>
-        <p class="chatgpt-note">Opens ChatGPT in a new tab with your question and a link to this public JSON file. ChatGPT uses your own signed-in session; this site does not receive your account information. <a id="download-graph-data" href="data/industrial-graph.json" download>Download the graph data</a> if you want to attach the file directly.</p>
+        <p id="llm-status" class="llm-status">
+          Choose a sphere or path, then ask a question.
+        </p>
+        <form id="llm-form">
+          <label
+            >What is your question?
+            <input
+              id="llm-question"
+              type="text"
+              placeholder="How is Al Jourgensen related to Marilyn Manson?" /></label
+          ><button type="submit">Ask</button
+          ><button id="ask-chatgpt" class="secondary-action" type="button">
+            Continue in ChatGPT
+          </button>
+        </form>
+        <p id="llm-answer" class="llm-answer">
+          Try “Who has the highest composite score?”, “Which projects have the
+          highest PageRank?”, or “Tell me about Al Jourgensen.”
+        </p>
+        <p class="chatgpt-note">
+          Opens ChatGPT in a new tab with your question and a link to this
+          public JSON file. ChatGPT uses your own signed-in session; this site
+          does not receive your account information.
+          <a id="download-graph-data" href="data/industrial-graph.json" download
+            >Download the graph data</a
+          >
+          if you want to attach the file directly.
+        </p>
       </section>
     </main>
     <script type="module" src="/src/main.js"></script>
