@@ -59,6 +59,7 @@
 
       <section class="controls control-band" aria-label="Graph controls">
         <div class="control-band-primary">
+          <div class="control-band-searches">
           <form class="search find-control" id="find-form"
             ><label for="search"
               >Find and show
@@ -92,6 +93,8 @@
               autocomplete="off"
               placeholder="Refine the visible map"
             /><button type="button" data-action="clear-filter">Clear filter</button></label>
+          </div>
+          <div class="control-band-settings">
           <label class="metric-control"
             ><span
               >Size spheres by
@@ -110,6 +113,41 @@
               <option value="pageRank">PageRank</option>
             </select></label
           >
+          <div
+            class="control-group neighborhood-controls"
+            aria-label="Selected sphere behavior"
+          >
+            <span class="control-group-label">When selected</span
+            ><label
+              >Show up to
+              <select id="degree-limit">
+                <option value="all" selected>all degrees</option>
+                <option value="1">1 degree</option>
+                <option value="2">2 degrees</option>
+                <option value="3">3 degrees</option>
+                <option value="4">4 degrees</option>
+                <option value="5">5 degrees</option>
+                <option value="6">6 degrees</option>
+              </select></label
+            ><label
+              >Fade over
+              <select id="fade-distance">
+                <option value="1">1 degree</option>
+                <option value="2">2 degrees</option>
+                <option value="3">3 degrees</option>
+                <option value="4" selected>4 degrees</option>
+                <option value="5">5 degrees</option>
+                <option value="6">6 degrees</option>
+              </select></label
+            ><button
+              class="help-button control-group-help"
+              type="button"
+              data-help="Show up to limits the number of recorded connection steps visible after selecting a sphere. Fade over controls how gradually more-distant spheres become gray."
+            >
+              ?
+            </button>
+          </div>
+          </div>
         </div>
         <div class="control-band-secondary">
           <div class="control-group" aria-label="Visible sphere types">
@@ -141,40 +179,6 @@
               class="help-button control-group-help"
               type="button"
               data-help="Turn People, Projects, and Releases on or off independently. When exactly People or Projects is shown, the map keeps its projected connections so those spheres remain connected."
-            >
-              ?
-            </button>
-          </div>
-          <div
-            class="control-group neighborhood-controls"
-            aria-label="Selected sphere behavior"
-          >
-            <span class="control-group-label">When selected</span
-            ><label
-              >Show up to
-              <select id="degree-limit">
-                <option value="all" selected>all degrees</option>
-                <option value="1">1 degree</option>
-                <option value="2">2 degrees</option>
-                <option value="3">3 degrees</option>
-                <option value="4">4 degrees</option>
-                <option value="5">5 degrees</option>
-                <option value="6">6 degrees</option>
-              </select></label
-            ><label
-              >Fade over
-              <select id="fade-distance">
-                <option value="1">1 degree</option>
-                <option value="2">2 degrees</option>
-                <option value="3">3 degrees</option>
-                <option value="4" selected>4 degrees</option>
-                <option value="5">5 degrees</option>
-                <option value="6">6 degrees</option>
-              </select></label
-            ><button
-              class="help-button control-group-help"
-              type="button"
-              data-help="Show up to limits the number of recorded connection steps visible after selecting a sphere. Fade over controls how gradually more-distant spheres become gray."
             >
               ?
             </button>
