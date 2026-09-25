@@ -65,15 +65,17 @@
               <button
                 class="help-button"
                 type="button"
-                data-help="Searches names and recorded aliases in the selected view. An alias takes you to its canonical person; it does not invent or fetch new relationships."
+                data-help="Choose an exact name or alias to select it, center it, and show its recorded connections. While typing, the map narrows to matching names."
               >
                 ?
               </button></span
             ><input
               id="search"
               type="search"
+              list="search-options"
+              autocomplete="off"
               placeholder="e.g. Ministry, cEvin Key, Hypo Luxa"
-          /></label>
+            /><datalist id="search-options"></datalist></label>
           <label class="metric-control"
             ><span
               >Size spheres by
@@ -241,6 +243,8 @@
               +
             </button>
             <button type="button" data-action="zoom-reset">Fit graph</button>
+            <button type="button" data-action="clear-selection">Clear</button>
+            <button type="button" data-action="compare">Compare</button>
             <button type="button" data-action="fullscreen" aria-pressed="false">
               Full screen</button
             ><button
@@ -288,6 +292,16 @@
         </div>
         <p id="relationships-summary" class="dialog-summary"></p>
         <div id="relationships-list" class="relationships"></div>
+      </dialog>
+
+      <dialog id="compare-dialog" class="relationships-dialog compare-dialog" aria-labelledby="compare-title">
+        <div class="dialog-heading"><div><p class="eyebrow">Compare spheres</p><h2 id="compare-title">Compare two items</h2></div><button type="button" class="dialog-close" data-close-compare>Close</button></div>
+        <form id="compare-form" class="compare-form">
+          <label>First item <input id="compare-first" type="search" list="search-options" autocomplete="off" placeholder="Type a name or alias" /></label>
+          <label>Second item <input id="compare-second" type="search" list="search-options" autocomplete="off" placeholder="Type a name or alias" /></label>
+          <button type="submit">Compare</button>
+        </form>
+        <div id="compare-result" class="compare-result" aria-live="polite">Choose two listed items to compare their recorded overview and shortest connection.</div>
       </dialog>
 
       <section class="query-panel" aria-labelledby="path-title">
