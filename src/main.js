@@ -45,7 +45,7 @@ let metrics = graphMetrics(graph.nodes, graph.edges);
 const fullGraphMetrics = graphMetrics(graph.nodes, graph.edges);
 let currentNodes = graph.nodes;
 let currentEdges = graph.edges;
-let activeTypes = new Set(["person", "project", "release"]);
+let activeTypes = new Set(["person", "project"]);
 let selectedId = null;
 let highlightedPath = [];
 let animationFrame;
@@ -1162,19 +1162,17 @@ document
     zoomValue.textContent = `${Math.round(graphZoom * 100)}%`;
     renderGraph();
   });
-document
-  .querySelector("[data-action='dimension']")
-  .addEventListener("click", (event) => {
-    dimension = dimension === "2d" ? "3d" : "2d";
-    event.currentTarget.textContent =
-      dimension === "3d" ? "3D / 2D" : "2D / 3D";
-    event.currentTarget.classList.toggle("active", dimension === "3d");
-    event.currentTarget.setAttribute(
-      "aria-pressed",
-      String(dimension === "3d"),
-    );
+document.querySelectorAll("[data-dimension]").forEach((button) =>
+  button.addEventListener("click", () => {
+    dimension = button.dataset.dimension;
+    document.querySelectorAll("[data-dimension]").forEach((choice) => {
+      const selected = choice.dataset.dimension === dimension;
+      choice.classList.toggle("active", selected);
+      choice.setAttribute("aria-pressed", String(selected));
+    });
     renderGraph();
-  });
+  }),
+);
 sizeMetric.addEventListener("change", renderGraph);
 degreeLimit.addEventListener("change", renderGraph);
 fadeDistance.addEventListener("change", renderGraph);
