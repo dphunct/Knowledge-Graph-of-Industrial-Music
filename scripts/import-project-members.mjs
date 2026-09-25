@@ -1,15 +1,24 @@
 import { readFile, writeFile } from "node:fs/promises";
 
 const graphUrl = new URL("../data/industrial-graph.json", import.meta.url);
-const reportUrl = new URL("../data/musicbrainz-project-rosters.json", import.meta.url);
+const reportUrl = new URL(
+  "../data/musicbrainz-project-rosters.json",
+  import.meta.url,
+);
 const api = "https://musicbrainz.org/ws/2";
 const pauseMs = 1100;
 const graph = JSON.parse(await readFile(graphUrl));
 let lastRequestAt = 0;
 
-const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
-const year = (value) => value ? Number.parseInt(value.slice(0, 4), 10) : undefined;
-const slug = (value) => value.toLocaleLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "person";
+const sleep = (milliseconds) =>
+  new Promise((resolve) => setTimeout(resolve, milliseconds));
+const year = (value) =>
+  value ? Number.parseInt(value.slice(0, 4), 10) : undefined;
+const slug = (value) =>
+  value
+    .toLocaleLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "") || "person";
 
 async function request(path) {
   const url = `${api}${path}${path.includes("?") ? "&" : "?"}fmt=json`;
@@ -19,7 +28,11 @@ async function request(path) {
     if (remaining > 0) await sleep(remaining);
     try {
       const response = await fetch(url, {
-        headers: { Accept: "application/json", "User-Agent": "IndustrialKnowledgeGraph/0.1 (https://github.com/dphunct/Knowledge-Graph-of-Industrial-Music)" }
+        headers: {
+          Accept: "application/json",
+          "User-Agent":
+            "IndustrialKnowledgeGraph/0.1 (https://github.com/dphunct/Knowledge-Graph-of-Industrial-Music)",
+        },
       });
       lastRequestAt = Date.now();
       if (response.ok) return response.json();
@@ -46,34 +59,96 @@ function source(project, member, relation) {
   return {
     title: `MusicBrainz: ${project.label}`,
     url: project.musicbrainz.url,
-    note: `Lists ${member.name} as a member${range ? ` from ${range}` : ""}.`
+    note: `Lists ${member.name} as a member${range ? ` from ${range}` : ""}.`,
   };
 }
 
-const report = { provider: "MusicBrainz", retrievedAt: new Date().toISOString(), pacingMs: pauseMs, projects: [], skipped: [] };
+const report = {
+  provider: "MusicBrainz",
+  retrievedAt: new Date().toISOString(),
+  pacingMs: pauseMs,
+  projects: [],
+  skipped: [],
+};
 for (const project of graph.nodes.filter((node) => node.type === "project")) {
   if (!project.musicbrainz?.id || project.musicbrainz.entity !== "artist") {
-    report.skipped.push({ id: project.id, label: project.label, reason: "No verified MusicBrainz artist identity" });
+    report.skipped.push({
+      id: project.id,
+      label: project.label,
+      reason: "No verified MusicBrainz artist identity",
+    });
     continue;
   }
   process.stdout.write(`project: ${project.label}\n`);
-  const detail = await request(`/artist/${project.musicbrainz.id}?inc=artist-rels`);
-  const members = (detail.relations || []).filter((relation) => relation.type === "member of band" && relation.direction === "backward" && relation.artist?.id);
-  report.projects.push({ id: project.id, label: project.label, musicbrainzId: project.musicbrainz.id, members: members.map((relation) => ({ id: relation.artist.id, label: relation.artist.name, begin: relation.begin || null, end: relation.end || null })) });
+  const detail = await request(
+    `/artist/${project.musicbrainz.id}?inc=artist-rels`,
+  );
+  const members = (detail.relations || []).filter(
+    (relation) =>
+      relation.type === "member of band" &&
+      relation.direction === "backward" &&
+      relation.artist?.id,
+  );
+  report.projects.push({
+    id: project.id,
+    label: project.label,
+    musicbrainzId: project.musicbrainz.id,
+    members: members.map((relation) => ({
+      id: relation.artist.id,
+      label: relation.artist.name,
+      begin: relation.begin || null,
+      end: relation.end || null,
+    })),
+  });
   for (const relation of members) {
     const member = relation.artist;
-    let person = graph.nodes.find((node) => node.musicbrainz?.entity === "artist" && (node.musicbrainz.id === member.id || node.musicbrainz.alternateIds?.includes(member.id)));
+    let person = graph.nodes.find(
+      (node) =>
+        node.musicbrainz?.entity === "artist" &&
+        (node.musicbrainz.id === member.id ||
+          node.musicbrainz.alternateIds?.includes(member.id)),
+    );
     if (!person) {
-      person = { id: uniqueId(member.name, member.id), label: member.name, type: "person", summary: `Musician documented by MusicBrainz as a member of ${project.label}.`, musicbrainz: { id: member.id, entity: "artist", url: `https://musicbrainz.org/artist/${member.id}` }, provenance: [source(project, member, relation)] };
+      person = {
+        id: uniqueId(member.name, member.id),
+        label: member.name,
+        type: "person",
+        summary: `Musician documented by MusicBrainz as a member of ${project.label}.`,
+        musicbrainz: {
+          id: member.id,
+          entity: "artist",
+          url: `https://musicbrainz.org/artist/${member.id}`,
+        },
+        provenance: [source(project, member, relation)],
+      };
       graph.nodes.push(person);
     }
     const validFrom = year(relation.begin);
     const validTo = year(relation.end);
-    const exists = graph.edges.some((edge) => edge.source === person.id && edge.target === project.id && edge.type === "member_of" && edge.validFrom === validFrom && edge.validTo === validTo);
-    if (!exists) graph.edges.push({ source: person.id, target: project.id, type: "member_of", roles: [], ...(validFrom ? { validFrom } : {}), ...(validTo ? { validTo } : {}), sourceStatus: "verified", provenance: [source(project, member, relation)] });
+    const exists = graph.edges.some(
+      (edge) =>
+        edge.source === person.id &&
+        edge.target === project.id &&
+        edge.type === "member_of" &&
+        edge.validFrom === validFrom &&
+        edge.validTo === validTo,
+    );
+    if (!exists)
+      graph.edges.push({
+        source: person.id,
+        target: project.id,
+        type: "member_of",
+        roles: [],
+        ...(validFrom ? { validFrom } : {}),
+        ...(validTo ? { validTo } : {}),
+        sourceStatus: "verified",
+        provenance: [source(project, member, relation)],
+      });
   }
 }
 
 await writeFile(reportUrl, `${JSON.stringify(report, null, 2)}\n`);
 await writeFile(graphUrl, `${JSON.stringify(graph, null, 2)}\n`);
-console.log(`Imported ${report.projects.length} project rosters; ${report.skipped.length} project skipped. Graph now has ${graph.nodes.length} nodes and ${graph.edges.length} edges.`);
+console.log(
+  `Imported ${report.projects.length} project rosters; ${report.skipped.length} project skipped. Graph now has ${graph.nodes.length} nodes and ${graph.edges.length} edges.`,
+);
