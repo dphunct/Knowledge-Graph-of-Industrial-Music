@@ -7,7 +7,16 @@ const reportUrl = new URL(
 );
 const api = "https://musicbrainz.org/ws/2";
 const pauseMs = 1100;
-const candidateLimit = 25;
+const candidateLimit = Number(
+  process.argv
+    .find((argument) => argument.startsWith("--limit="))
+    ?.split("=")[1] || 25,
+);
+const requestedOffset = Number(
+  process.argv
+    .find((argument) => argument.startsWith("--offset="))
+    ?.split("=")[1] || 0,
+);
 const graph = JSON.parse(await readFile(graphUrl));
 let lastRequestAt = 0;
 
@@ -45,7 +54,7 @@ function uniqueId(label, mbid) {
 }
 
 const search = await request(
-  `/artist?query=${encodeURIComponent("tag:industrial AND type:group")}&limit=${candidateLimit}`,
+  `/artist?query=${encodeURIComponent("tag:industrial AND type:group")}&limit=${candidateLimit}&offset=${requestedOffset}`,
 );
 const knownIds = new Set(
   graph.nodes.map((node) =>
@@ -58,6 +67,7 @@ const report = {
   pacingMs: pauseMs,
   query: "tag:industrial AND type:group",
   candidateLimit,
+  offset: requestedOffset,
   added: [],
   skipped: [],
 };

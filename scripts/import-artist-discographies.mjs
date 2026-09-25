@@ -19,6 +19,9 @@ const requestedLimit = Number(
     .find((argument) => argument.startsWith("--limit="))
     ?.split("=")[1] || Infinity,
 );
+const requestedType = process.argv
+  .find((argument) => argument.startsWith("--type="))
+  ?.split("=")[1];
 let lastRequestAt = 0;
 
 const sleep = (milliseconds) =>
@@ -116,6 +119,7 @@ function addRelease(release) {
 
 const artists = graph.nodes
   .filter((node) => node.type === "person" || node.type === "project")
+  .filter((node) => !requestedType || node.type === requestedType)
   .filter(
     (node) => node.musicbrainz?.entity === "artist" && node.musicbrainz.id,
   )
@@ -130,6 +134,7 @@ const report = {
     offset: requestedOffset,
     limit: Number.isFinite(requestedLimit) ? requestedLimit : null,
     totalEligible: artists.length,
+    type: requestedType || "person and project",
   },
   method:
     "Every release group is retrieved by exact MusicBrainz artist identity, with pagination. Only release groups returned for a current person or project are added; each relationship preserves the exact release-group artist credit as provenance.",

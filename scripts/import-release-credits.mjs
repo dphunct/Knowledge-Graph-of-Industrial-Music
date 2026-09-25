@@ -8,6 +8,16 @@ const reportUrl = new URL(
 const api = "https://musicbrainz.org/ws/2";
 const pauseMs = 1100;
 const graph = JSON.parse(await readFile(graphUrl));
+const requestedOffset = Number(
+  process.argv
+    .find((argument) => argument.startsWith("--offset="))
+    ?.split("=")[1] || 0,
+);
+const requestedLimit = Number(
+  process.argv
+    .find((argument) => argument.startsWith("--limit="))
+    ?.split("=")[1] || Infinity,
+);
 let lastRequestAt = 0;
 
 const sleep = (milliseconds) =>
@@ -46,10 +56,18 @@ const report = {
   provider: "MusicBrainz",
   retrievedAt: new Date().toISOString(),
   pacingMs: pauseMs,
+  batch: null,
   releases: [],
   skipped: [],
 };
-for (const release of graph.nodes.filter((node) => node.type === "release")) {
+const releases = graph.nodes.filter((node) => node.type === "release");
+const batch = releases.slice(requestedOffset, requestedOffset + requestedLimit);
+report.batch = {
+  offset: requestedOffset,
+  limit: Number.isFinite(requestedLimit) ? requestedLimit : null,
+  totalEligible: releases.length,
+};
+for (const release of batch) {
   if (
     !release.musicbrainz?.id ||
     release.musicbrainz.entity !== "release-group"
