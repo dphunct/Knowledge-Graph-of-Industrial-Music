@@ -22,6 +22,7 @@ const relationshipsSummary = document.querySelector("#relationships-summary");
 const relationshipsList = document.querySelector("#relationships-list");
 const status = document.querySelector("#graph-status");
 const search = document.querySelector("#search");
+const searchOptions = document.querySelector("#search-options");
 const pathFrom = document.querySelector("#path-from");
 const pathTo = document.querySelector("#path-to");
 const pathOptions = document.querySelector("#path-options");
@@ -36,7 +37,12 @@ const controlTooltip = document.querySelector("#control-tooltip");
 const fullscreenButton = document.querySelector("[data-action='fullscreen']");
 const llmStatus = document.querySelector("#llm-status");
 const llmAnswer = document.querySelector("#llm-answer");
+const compareDialog = document.querySelector("#compare-dialog");
+const compareFirst = document.querySelector("#compare-first");
+const compareSecond = document.querySelector("#compare-second");
+const compareResult = document.querySelector("#compare-result");
 let metrics = graphMetrics(graph.nodes, graph.edges);
+const fullGraphMetrics = graphMetrics(graph.nodes, graph.edges);
 let currentNodes = graph.nodes;
 let currentEdges = graph.edges;
 let activeTypes = new Set(["person", "project", "release"]);
@@ -91,6 +97,7 @@ function visibleEdges(nodes) {
 
 function edgeContext(edge) {
   const ids = new Set([edge.source, edge.target]);
+  for (const id of edge.via || []) ids.add(id);
   const sourceNeighbors = new Set(
     nodeEdges(edge.source).map((item) =>
       item.source === edge.source ? item.target : item.source,
@@ -234,10 +241,11 @@ function renderGraph() {
   const lines = edges.map((edge) => {
     const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
     line.classList.add(
-      highlightedPath.includes(edge.source) &&
-        highlightedPath.includes(edge.target)
+      highlightedPath.includes(edge.source) && highlightedPath.includes(edge.target)
         ? "highlighted"
-        : "edge",
+        : edge.type === "inferred"
+          ? "inferred"
+          : "edge",
     );
     line.style.pointerEvents = "stroke";
     line.addEventListener("click", (event) => {
@@ -417,6 +425,7 @@ function renderThreeGraph(nodes, edges, width, height, distances) {
   const raycaster = new THREE.Raycaster();
   const pointer = new THREE.Vector2();
   const meshes = [];
+  const edgeMeshes = [];
   const gradients = {
     person: ["#ffb184", "#55271d"],
     project: ["#9bd2bf", "#1d453b"],
@@ -472,7 +481,9 @@ function renderThreeGraph(nodes, edges, width, height, distances) {
       new THREE.Vector3(0, 1, 0),
       direction.normalize(),
     );
+    mesh.userData.edge = edge;
     scene.add(mesh);
+    edgeMeshes.push(mesh);
   }
   for (const node of nodes) {
     const radius = 7 + visualMetric(node) * 62;
@@ -526,8 +537,13 @@ function renderThreeGraph(nodes, edges, width, height, distances) {
     pointer.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
     pointer.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
     raycaster.setFromCamera(pointer, camera);
-    const hit = raycaster.intersectObjects(meshes)[0];
-    if (hit) selectNode(hit.object.userData.nodeId);
+    const nodeHit = raycaster.intersectObjects(meshes)[0];
+    if (nodeHit) {
+      selectNode(nodeHit.object.userData.nodeId);
+      return;
+    }
+    const edgeHit = raycaster.intersectObjects(edgeMeshes)[0];
+    if (edgeHit) showEdge(edgeHit.object.userData.edge);
     else resetSelection();
   };
   renderer.domElement.addEventListener("click", click);
@@ -619,17 +635,22 @@ function showEdge(edge) {
     ? `<p><strong>Shared intermediaries</strong> ${context.shared.map((id) => escapeHtml(labelFor(id))).join(", ")}</p>`
     : "";
   const citations = related.map(provenanceLinks).filter(Boolean).join("<br />");
-  detail.innerHTML = `<p class="eyebrow">connection details</p><h2>${escapeHtml(labelFor(edge.source))} ↔ ${escapeHtml(labelFor(edge.target))}</h2><p>${related.length ? related.map((item) => `${escapeHtml(item.type.replace("_", " "))}${item.roles.length ? ` — ${item.roles.map(escapeHtml).join(", ")}` : ""}`).join("<br />") : "Projected compound relationship in this filtered view."}</p>${citations ? `<p class="provenance"><strong>Sources</strong><br />${citations}</p>` : ""}${shared}<p>The map now shows the surrounding recorded people, projects, and releases for this connection.</p><button class="return-graph" type="button" data-reset-graph>Return to full map</button>`;
+  const inferredBy = edge.via?.length
+    ? `<p><strong>Inferred through hidden sphere${edge.via.length === 1 ? "" : "s"}</strong> ${edge.via.map((id) => escapeHtml(labelFor(id))).join(", ")}. This is a display-only bridge, not a recorded direct relationship.</p>`
+    : "";
+  detail.innerHTML = `<p class="eyebrow">${edge.type === "inferred" ? "inferred connection" : "connection details"}</p><h2>${escapeHtml(labelFor(edge.source))} ↔ ${escapeHtml(labelFor(edge.target))}</h2><p>${related.length ? related.map((item) => `${escapeHtml(item.type.replace("_", " "))}${item.roles.length ? ` — ${item.roles.map(escapeHtml).join(", ")}` : ""}`).join("<br />") : "No recorded direct relationship is shown for this display-only connection."}</p>${citations ? `<p class="provenance"><strong>Sources</strong><br />${citations}</p>` : ""}${inferredBy}${shared}<p>The map now shows the surrounding recorded people, projects, and releases for this connection.</p><button class="return-graph" type="button" data-reset-graph>Clear selection</button>`;
   detail
     .querySelector("[data-reset-graph]")
     .addEventListener("click", resetSelection);
   renderGraph();
 }
 
-function resetSelection() {
+function resetSelection({ clearSearch = false } = {}) {
   selectedId = null;
   highlightedPath = [];
   focusedEdge = null;
+  graphPan = { x: 0, y: 0 };
+  if (clearSearch) search.value = "";
   detail.innerHTML = `<p class="eyebrow">Start exploring</p><h2>Select a sphere or line</h2><p>Click a sphere to inspect its relationships, or a line to inspect the connection. Click the background to reset.</p>`;
   renderGraph();
 }
@@ -788,6 +809,7 @@ function populatePathSelects() {
       );
   }
   pathOptions.innerHTML = suggestions.join("");
+  searchOptions.innerHTML = suggestions.join("");
   pathFrom.value = "Al Jourgensen";
   pathTo.value = "Richard 23";
 }
@@ -848,6 +870,29 @@ function shortestPath(start, target, edges = currentEdges) {
     }
   }
   return null;
+}
+
+function searchAndSelect(allowUniquePartial = false) {
+  const match = pathInputNode(search);
+  if (!match || (!match.exact && !allowUniquePartial)) return false;
+  search.value = "";
+  selectNode(match.node.id);
+  status.textContent = `${match.isAlias ? `${match.matchedName} is ${match.node.label}. ` : ""}Selected ${match.node.label} and centered its connections.`;
+  return true;
+}
+
+function compareNodes() {
+  const first = pathInputNode(compareFirst);
+  const second = pathInputNode(compareSecond);
+  if (!first || !second) {
+    compareResult.textContent = "Choose a listed person, project, or release in both fields.";
+    return;
+  }
+  const activeEdges = graph.edges.filter(activeAtYear);
+  const path = shortestPath(first.node.id, second.node.id, activeEdges);
+  const score = (node) => Math.round((fullGraphMetrics.get(node.id)?.composite || 0) * 100);
+  const aliases = [first, second].filter((item) => item.isAlias).map((item) => `${escapeHtml(item.matchedName)} is ${escapeHtml(item.node.label)}.`).join(" ");
+  compareResult.innerHTML = `<section><h3>${escapeHtml(first.node.label)} <span>${escapeHtml(first.node.type)}</span></h3><p>${escapeHtml(first.node.summary || "No description recorded yet.")}</p><p>Composite influence: ${score(first.node)}</p></section><section><h3>${escapeHtml(second.node.label)} <span>${escapeHtml(second.node.type)}</span></h3><p>${escapeHtml(second.node.summary || "No description recorded yet.")}</p><p>Composite influence: ${score(second.node)}</p></section><p class="compare-path">${aliases}${aliases ? " " : ""}${path ? `Shortest recorded connection: <strong>${path.map((id) => escapeHtml(labelFor(id))).join(" → ")}</strong>.` : "No connecting path has been recorded by the selected year."}</p>`;
 }
 
 function deterministicContext() {
@@ -1133,7 +1178,14 @@ document
 sizeMetric.addEventListener("change", renderGraph);
 degreeLimit.addEventListener("change", renderGraph);
 fadeDistance.addEventListener("change", renderGraph);
-search.addEventListener("input", renderGraph);
+search.addEventListener("input", () => {
+  if (!searchAndSelect(false)) renderGraph();
+});
+search.addEventListener("change", () => searchAndSelect(true));
+search.addEventListener("keydown", (event) => {
+  if (event.key === "Enter" && searchAndSelect(true)) event.preventDefault();
+  if (event.key === "Escape") resetSelection({ clearSearch: true });
+});
 yearSlider.addEventListener("input", () => {
   activeYear = Number(yearSlider.value);
   yearValue.textContent = activeYear;
@@ -1155,6 +1207,19 @@ document
     graphPan = { x: 0, y: 0 };
     setGraphZoom(zoomRange.fit);
   });
+document
+  .querySelector("[data-action='clear-selection']")
+  .addEventListener("click", () => resetSelection({ clearSearch: true }));
+document.querySelector("[data-action='compare']").addEventListener("click", () => {
+  if (selectedId) compareFirst.value = labelFor(selectedId);
+  compareDialog.showModal();
+  compareSecond.focus();
+});
+document.querySelector("[data-close-compare]").addEventListener("click", () => compareDialog.close());
+document.querySelector("#compare-form").addEventListener("submit", (event) => {
+  event.preventDefault();
+  compareNodes();
+});
 function updateFullscreenControls() {
   const isFullscreen = document.fullscreenElement === graphPanel;
   fullscreenButton.textContent = isFullscreen
