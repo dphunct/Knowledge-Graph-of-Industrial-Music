@@ -40,6 +40,9 @@ const controlTooltip = document.querySelector("#control-tooltip");
 const fullscreenButton = document.querySelector("[data-action='fullscreen']");
 const llmStatus = document.querySelector("#llm-status");
 const llmAnswer = document.querySelector("#llm-answer");
+const llmQuestion = document.querySelector("#llm-question");
+const llmForm = document.querySelector("#llm-form");
+const askButton = llmForm.querySelector("button[type='submit']");
 const compareDialog = document.querySelector("#compare-dialog");
 const compareFirst = document.querySelector("#compare-first");
 const compareSecond = document.querySelector("#compare-second");
@@ -69,6 +72,10 @@ let suppressCanvasClick = false;
 let resizeTimer;
 let zoomRange = { min: 0.01, max: 100, fit: 1 };
 const maximumRenderedSpheres = 300;
+
+function updateAskAvailability() {
+  askButton.disabled = !localEngine || !llmQuestion.value.trim();
+}
 
 const nodeEdges = (id) => incidentEdges(graph.edges, id);
 const labelFor = (id) => byId.get(id).label;
@@ -1161,6 +1168,8 @@ document
         },
       });
       llmStatus.textContent = "Answer helper ready.";
+      llmQuestion.disabled = false;
+      updateAskAvailability();
     } catch (error) {
       llmStatus.textContent =
         "The answer helper could not start. You can still explore the recorded relationships.";
@@ -1168,13 +1177,12 @@ document
     }
   });
 
-document
-  .querySelector("#llm-form")
-  .addEventListener("submit", async (event) => {
+llmQuestion.addEventListener("input", updateAskAvailability);
+
+llmForm.addEventListener("submit", async (event) => {
     event.preventDefault();
-    const question =
-      document.querySelector("#llm-question").value.trim() ||
-      "Explain this recorded graph result.";
+    const question = llmQuestion.value.trim();
+    if (!question || !localEngine) return;
     const interpreted = interpretGraphQuestion(question);
     if (interpreted) {
       llmAnswer.textContent = interpreted;
