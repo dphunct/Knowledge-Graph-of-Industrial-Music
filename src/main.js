@@ -925,8 +925,6 @@ function populatePathSelects() {
   }
   pathOptions.innerHTML = suggestions.join("");
   searchOptions.innerHTML = suggestions.join("");
-  pathFrom.value = "Al Jourgensen";
-  pathTo.value = "Richard 23";
 }
 
 function pathInputNode(input) {
