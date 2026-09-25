@@ -259,6 +259,17 @@
             <button type="button" data-action="zoom-in" aria-label="Zoom in">
               +
             </button>
+            <label class="depth-control"
+              >3D spread
+              <input
+                id="three-depth"
+                type="range"
+                min="0.6"
+                max="2.4"
+                value="1.35"
+                step="0.05"
+              /><output id="three-depth-value">Balanced</output></label
+            >
             <button type="button" data-action="zoom-reset">Fit graph</button>
             <button type="button" data-action="clear-selection">Clear</button>
             <button type="button" data-action="compare">Compare</button>
@@ -267,7 +278,7 @@
             ><button
               class="help-button"
               type="button"
-              data-help="Focus the map with Full screen or press F. Press Escape or use Exit full screen to return. The map rearranges itself for the available space, and its wider working area gives you room to pan and zoom."
+              data-help="Focus the map with Full screen or press F. Press Escape or use Exit full screen to return. In 3D, spread controls how much depth the map uses: compact keeps it close, balanced fills a sphere, and deep makes layered connections easier to orbit through."
             >
               ?
             </button>

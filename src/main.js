@@ -34,6 +34,8 @@ const yearSlider = document.querySelector("#year");
 const yearValue = document.querySelector("#year-value");
 const zoomSlider = document.querySelector("#graph-zoom");
 const zoomValue = document.querySelector("#zoom-value");
+const threeDepth = document.querySelector("#three-depth");
+const threeDepthValue = document.querySelector("#three-depth-value");
 const controlTooltip = document.querySelector("#control-tooltip");
 const fullscreenButton = document.querySelector("[data-action='fullscreen']");
 const llmStatus = document.querySelector("#llm-status");
@@ -61,6 +63,7 @@ let localEngine = null;
 let graphZoom = Number(zoomSlider.value);
 let threeCamera = null;
 let threeControls = null;
+let threeBaseDistance = 680;
 let graphPan = { x: 0, y: 0 };
 let suppressCanvasClick = false;
 let resizeTimer;
@@ -230,6 +233,7 @@ function renderGraph() {
   svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
   svg.setAttribute("aria-hidden", "true");
   graphElement.classList.toggle("three-d", dimension === "3d");
+  threeDepth.closest("label").hidden = dimension !== "3d";
   if (dimension === "3d") {
     // Remove 2D canvas handlers left from the prior mode. Otherwise a drag to
     // orbit also begins a 2D pan and can be mistaken for a reset click.
@@ -388,6 +392,37 @@ function renderGraph() {
   simulate();
 }
 
+function createThreeDimensionalLayout(nodes, width, height) {
+  const spread = Number(threeDepth.value);
+  const count = Math.max(nodes.length, 1);
+  const goldenAngle = Math.PI * (3 - Math.sqrt(5));
+  // Fibonacci-sphere points distribute evenly across a volume-friendly shell.
+  // The force solver below can then pull related spheres together without
+  // inheriting a planar spiral as its starting condition.
+  const radius = Math.max(
+    Math.min(width, height) * 0.42,
+    Math.cbrt(count) * 62,
+  );
+  return new Map(
+    nodes.map((node, index) => {
+      if (node.id === selectedId) return [node.id, new THREE.Vector3()];
+      const vertical = 1 - (2 * (index + 0.5)) / count;
+      const ring = Math.sqrt(Math.max(0, 1 - vertical * vertical));
+      const angle = index * goldenAngle;
+      // Spread increases all three dimensions, with Z receiving a modest
+      // extra multiplier so an orbit reveals meaningful depth.
+      return [
+        node.id,
+        new THREE.Vector3(
+          Math.cos(angle) * ring * radius * spread,
+          vertical * radius * spread,
+          Math.sin(angle) * ring * radius * spread * 1.22,
+        ),
+      ];
+    }),
+  );
+}
+
 function renderThreeGraph(nodes, edges, width, height, distances) {
   const scene = new THREE.Scene();
   scene.add(new THREE.HemisphereLight(0xf6cfbd, 0x140f16, 2.2));
@@ -427,6 +462,7 @@ function renderThreeGraph(nodes, edges, width, height, distances) {
   const pointer = new THREE.Vector2();
   const meshes = [];
   const edgeMeshes = [];
+  const labels = [];
   const gradients = {
     person: ["#ffb184", "#55271d"],
     project: ["#9bd2bf", "#1d453b"],
@@ -445,16 +481,24 @@ function renderThreeGraph(nodes, edges, width, height, distances) {
     context.fillRect(0, 0, 128, 128);
     return new THREE.CanvasTexture(canvas);
   };
-  const points = new Map();
-  for (const [id, point] of layout)
-    points.set(
-      id,
-      new THREE.Vector3(
-        (point.x - width / 2) * 1.1,
-        (height / 2 - point.y) * 1.1,
-        point.z * 0.9,
-      ),
-    );
+  const points = createThreeDimensionalLayout(nodes, width, height);
+  const velocities = new Map(
+    nodes.map((node) => [node.id, new THREE.Vector3()]),
+  );
+  const pinnedId = selectedId;
+  const sizeById = new Map(
+    nodes.map((node) => [node.id, 7 + visualMetric(node) * 62]),
+  );
+  const visibleRadius = Math.max(
+    1,
+    ...[...points.values()].map((point) => point.length()),
+  );
+  // Keep the whole spherical layout available at 100%; the existing zoom
+  // control remains deliberately unbounded in both directions.
+  threeBaseDistance =
+    (visibleRadius / Math.tan(THREE.MathUtils.degToRad(camera.fov / 2))) *
+    1.2;
+  applyThreeZoom();
   for (const edge of edges) {
     const start = points.get(edge.source);
     const end = points.get(edge.target);
@@ -483,6 +527,7 @@ function renderThreeGraph(nodes, edges, width, height, distances) {
       direction.normalize(),
     );
     mesh.userData.edge = edge;
+    mesh.userData.length = length;
     scene.add(mesh);
     edgeMeshes.push(mesh);
   }
@@ -525,7 +570,9 @@ function renderThreeGraph(nodes, edges, width, height, distances) {
     sprite.position.copy(mesh.position);
     sprite.position.y -= radius + 16;
     sprite.scale.set(112, 22, 1);
+    sprite.userData.nodeId = node.id;
     scene.add(sprite);
+    labels.push(sprite);
   }
   const click = (event) => {
     // OrbitControls emits a click after a rotation. Keep the rotated camera
@@ -549,7 +596,74 @@ function renderThreeGraph(nodes, edges, width, height, distances) {
   };
   renderer.domElement.addEventListener("click", click);
   let frame;
+  let heat = 0.8;
+  const settle = () => {
+    if (heat < 0.006) return;
+    const pointEntries = [...points.entries()];
+    for (let left = 0; left < pointEntries.length; left += 1) {
+      for (let right = left + 1; right < pointEntries.length; right += 1) {
+        const [leftId, a] = pointEntries[left];
+        const [rightId, b] = pointEntries[right];
+        const direction = b.clone().sub(a);
+        const distance = Math.max(direction.length(), 0.01);
+        direction.multiplyScalar(1 / distance);
+        const minimumDistance =
+          sizeById.get(leftId) + sizeById.get(rightId) + 16;
+        const push =
+          20000 / (distance * distance) +
+          Math.max(0, minimumDistance - distance) * 0.75;
+        if (leftId !== pinnedId)
+          velocities.get(leftId).addScaledVector(direction, -push);
+        if (rightId !== pinnedId)
+          velocities.get(rightId).addScaledVector(direction, push);
+      }
+    }
+    for (const edge of edges) {
+      const a = points.get(edge.source);
+      const b = points.get(edge.target);
+      if (!a || !b) continue;
+      const direction = b.clone().sub(a);
+      const distance = Math.max(direction.length(), 0.01);
+      direction.multiplyScalar(1 / distance);
+      const pull = (distance - 150) * 0.0035;
+      if (edge.source !== pinnedId)
+        velocities.get(edge.source).addScaledVector(direction, pull);
+      if (edge.target !== pinnedId)
+        velocities.get(edge.target).addScaledVector(direction, -pull);
+    }
+    for (const [id, point] of points) {
+      if (id === pinnedId) {
+        point.set(0, 0, 0);
+        continue;
+      }
+      const velocity = velocities.get(id);
+      // A gentle central pull prevents sparse components from drifting away,
+      // while leaving all three dimensions free to find usable space.
+      velocity.addScaledVector(point, -0.00075);
+      velocity.multiplyScalar(0.8);
+      point.addScaledVector(velocity, heat);
+    }
+    for (const mesh of meshes) mesh.position.copy(points.get(mesh.userData.nodeId));
+    for (const mesh of edgeMeshes) {
+      const start = points.get(mesh.userData.edge.source);
+      const end = points.get(mesh.userData.edge.target);
+      const direction = end.clone().sub(start);
+      mesh.position.copy(start).add(end).multiplyScalar(0.5);
+      mesh.scale.y = direction.length() / mesh.userData.length;
+      mesh.quaternion.setFromUnitVectors(
+        new THREE.Vector3(0, 1, 0),
+        direction.normalize(),
+      );
+    }
+    for (const sprite of labels) {
+      const mesh = meshes.find((item) => item.userData.nodeId === sprite.userData.nodeId);
+      sprite.position.copy(mesh.position);
+      sprite.position.y -= sizeById.get(sprite.userData.nodeId) + 16;
+    }
+    heat *= 0.985;
+  };
   const draw = () => {
+    settle();
     controls.update();
     renderer.render(scene, camera);
     frame = requestAnimationFrame(draw);
@@ -572,7 +686,7 @@ function applyThreeZoom() {
     .sub(threeControls.target)
     .normalize();
   threeCamera.position.copy(
-    threeControls.target.clone().add(direction.multiplyScalar(680 / graphZoom)),
+    threeControls.target.clone().add(direction.multiplyScalar(threeBaseDistance / graphZoom)),
   );
   threeControls.update();
 }
@@ -1199,6 +1313,12 @@ document.querySelectorAll("[data-dimension]").forEach((button) =>
 sizeMetric.addEventListener("change", renderGraph);
 degreeLimit.addEventListener("change", renderGraph);
 fadeDistance.addEventListener("change", renderGraph);
+threeDepth.addEventListener("input", () => {
+  const depth = Number(threeDepth.value);
+  threeDepthValue.textContent =
+    depth < 1 ? "Compact" : depth < 1.8 ? "Balanced" : "Deep";
+  if (dimension === "3d") renderGraph();
+});
 document.querySelector("#find-form").addEventListener("submit", (event) => {
   event.preventDefault();
   if (!searchAndSelect(true))
