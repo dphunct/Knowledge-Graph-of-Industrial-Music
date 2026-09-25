@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-09-25T14:46:49.735Z",
+  "source": "data/musicbrainz-project-rosters.json",
+  "scannedMemberships": 402,
+  "missingMemberships": [],
+  "unresolvedRosterPeople": [],
+  "missingProjects": [],
+  "totals": {
+    "missingMemberships": 0,
+    "unresolvedRosterPeople": 0,
+    "missingProjects": 0
+  }
+}

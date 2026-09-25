@@ -1,0 +1,271 @@
+{
+  "generatedAt": "2026-09-25T14:46:12.769Z",
+  "source": "data/musicbrainz-project-rosters.json",
+  "scannedMemberships": 402,
+  "addedMemberships": [
+    {
+      "person": "John Bechdel",
+      "project": "Ministry"
+    },
+    {
+      "person": "John Davis",
+      "project": "Ministry"
+    },
+    {
+      "person": "Shay Jones",
+      "project": "Ministry"
+    },
+    {
+      "person": "Robert Roberts",
+      "project": "Ministry"
+    },
+    {
+      "person": "Martin Sorenson",
+      "project": "Ministry"
+    },
+    {
+      "person": "Tia Sprocket",
+      "project": "Ministry"
+    },
+    {
+      "person": "William Tucker",
+      "project": "Ministry"
+    },
+    {
+      "person": "Jeff Ward",
+      "project": "Ministry"
+    },
+    {
+      "person": "Rey Washam",
+      "project": "Ministry"
+    },
+    {
+      "person": "Mike Scaccia",
+      "project": "Ministry"
+    },
+    {
+      "person": "Rhys Fulber",
+      "project": "Front Line Assembly"
+    },
+    {
+      "person": "Bill Leeb",
+      "project": "Front Line Assembly"
+    },
+    {
+      "person": "Stevie Banch",
+      "project": "Revolting Cocks"
+    },
+    {
+      "person": "Paul Barker",
+      "project": "Revolting Cocks"
+    },
+    {
+      "person": "Josh Bradford",
+      "project": "Revolting Cocks"
+    },
+    {
+      "person": "Duane Denison",
+      "project": "Revolting Cocks"
+    },
+    {
+      "person": "Al Jourgensen",
+      "project": "Revolting Cocks"
+    },
+    {
+      "person": "Sean Joyce",
+      "project": "Revolting Cocks"
+    },
+    {
+      "person": "Phil Owen",
+      "project": "Revolting Cocks"
+    },
+    {
+      "person": "Bill Rieflin",
+      "project": "Revolting Cocks"
+    },
+    {
+      "person": "William Tucker",
+      "project": "Revolting Cocks"
+    },
+    {
+      "person": "Jeff Ward",
+      "project": "Revolting Cocks"
+    },
+    {
+      "person": "Clayton Worbeck",
+      "project": "Revolting Cocks"
+    },
+    {
+      "person": "Mike Scaccia",
+      "project": "Revolting Cocks"
+    },
+    {
+      "person": "J3 sEUQCAJ",
+      "project": "A Chud Convention"
+    },
+    {
+      "person": "cEvin Key",
+      "project": "A Chud Convention"
+    },
+    {
+      "person": "Nivek Ogre",
+      "project": "A Chud Convention"
+    },
+    {
+      "person": "S3 eVETS",
+      "project": "A Chud Convention"
+    },
+    {
+      "person": "Dwayne Goettel",
+      "project": "Hilt"
+    },
+    {
+      "person": "cEvin Key",
+      "project": "Hilt"
+    },
+    {
+      "person": "Dave Ogilvie",
+      "project": "Hilt"
+    },
+    {
+      "person": "Dwayne Goettel",
+      "project": "Doubting Thomas"
+    },
+    {
+      "person": "cEvin Key",
+      "project": "Doubting Thomas"
+    },
+    {
+      "person": "Dwayne Goettel",
+      "project": "Download"
+    },
+    {
+      "person": "cEvin Key",
+      "project": "Download"
+    },
+    {
+      "person": "Ryan Moore",
+      "project": "Download"
+    },
+    {
+      "person": "Mark Spybey",
+      "project": "Download"
+    },
+    {
+      "person": "Anthony Valcic",
+      "project": "Download"
+    },
+    {
+      "person": "Phil Western",
+      "project": "Download"
+    },
+    {
+      "person": "Paul Barker",
+      "project": "1000 Homo DJs"
+    },
+    {
+      "person": "Al Jourgensen",
+      "project": "1000 Homo DJs"
+    },
+    {
+      "person": "Trent Reznor",
+      "project": "1000 Homo DJs"
+    },
+    {
+      "person": "Bill Rieflin",
+      "project": "1000 Homo DJs"
+    },
+    {
+      "person": "Bill Rieflin",
+      "project": "Lard"
+    },
+    {
+      "person": "Rey Washam",
+      "project": "Lard"
+    },
+    {
+      "person": "Daniel Myer",
+      "project": "Noise Unit"
+    },
+    {
+      "person": "Dwayne Goettel",
+      "project": "Cyberaktif"
+    },
+    {
+      "person": "cEvin Key",
+      "project": "Cyberaktif"
+    },
+    {
+      "person": "Bill Leeb",
+      "project": "Cyberaktif"
+    },
+    {
+      "person": "Paul Barker",
+      "project": "Lead Into Gold"
+    },
+    {
+      "person": "Al Jourgensen",
+      "project": "Lead Into Gold"
+    },
+    {
+      "person": "Paul Wiley",
+      "project": "Marilyn Manson"
+    },
+    {
+      "person": "Mick Hollows",
+      "project": "7 Minutes of Nausea"
+    },
+    {
+      "person": "Scut",
+      "project": "7 Minutes of Nausea"
+    },
+    {
+      "person": "Matthias Weigand",
+      "project": "7 Minutes of Nausea"
+    },
+    {
+      "person": "Danny Lohner",
+      "project": "Killing Joke"
+    },
+    {
+      "person": "Janez Gabrič",
+      "project": "Laibach"
+    },
+    {
+      "person": "Luka Jamnik",
+      "project": "Laibach"
+    },
+    {
+      "person": "Ivan Novak",
+      "project": "Laibach"
+    },
+    {
+      "person": "Sašo Vollmaier",
+      "project": "Laibach"
+    },
+    {
+      "person": "Damjan Bizilj",
+      "project": "Laibach"
+    },
+    {
+      "person": "Tone Dimnik",
+      "project": "Laibach"
+    },
+    {
+      "person": "Ervin Markošek",
+      "project": "Laibach"
+    },
+    {
+      "person": "Matej Mršnik",
+      "project": "Laibach"
+    }
+  ],
+  "citedExistingMemberships": [],
+  "unresolved": [],
+  "totals": {
+    "added": 64,
+    "citedExisting": 0,
+    "unresolved": 0,
+    "graphRelationships": 4204
+  }
+}
