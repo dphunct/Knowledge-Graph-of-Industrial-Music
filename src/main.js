@@ -31,14 +31,14 @@ const llmAnswer = document.querySelector("#llm-answer");
 let metrics = graphMetrics(graph.nodes, graph.edges);
 let currentNodes = graph.nodes;
 let currentEdges = graph.edges;
-let activeView = "all";
+let activeTypes = new Set(["person", "project", "release"]);
 let selectedId = null;
 let highlightedPath = [];
 let animationFrame;
 let layout = new Map();
 let redrawGraph = () => {};
 let restartSimulation = () => {};
-let dimension = "2d";
+let dimension = "3d";
 let focusedEdge = null;
 let disposeThree = () => {};
 let activeYear = Number(yearSlider.value);
@@ -61,8 +61,7 @@ const provenanceLinks = (item) => (item.provenance || []).map((source) => `<a hr
 const visualMetric = (node) => Math.pow(metrics.get(node.id)[sizeMetric.value], 1.55);
 
 function visibleNodes() {
-  const typeForView = { people: "person", projects: "project", releases: "release" };
-  return graph.nodes.filter((node) => (activeView === "all" || node.type === typeForView[activeView]) && activeAtYear(node));
+  return graph.nodes.filter((node) => activeTypes.has(node.type) && activeAtYear(node));
 }
 
 function hopDistances(start) {
@@ -80,9 +79,9 @@ function hopDistances(start) {
 function visibleEdges(nodes) {
   const ids = new Set(nodes.map(({ id }) => id));
   const direct = graph.edges.filter((edge) => ids.has(edge.source) && ids.has(edge.target) && activeAtYear(edge));
-  if (activeView === "all" || activeView === "releases") return direct;
+  if (activeTypes.size !== 1 || activeTypes.has("release")) return direct;
   const compound = new Map();
-  const pivotType = activeView === "people" ? "project" : "person";
+  const pivotType = activeTypes.has("person") ? "project" : "person";
   for (const pivot of graph.nodes.filter((node) => node.type === pivotType)) {
     const members = graph.edges.filter((edge) => activeAtYear(edge) && (edge.target === pivot.id || edge.source === pivot.id)).map((edge) => edge.source === pivot.id ? edge.target : edge.source).filter((id) => ids.has(id));
     for (let left = 0; left < members.length; left += 1) for (let right = left + 1; right < members.length; right += 1) compound.set([members[left], members[right]].sort().join("|"), { source: members[left], target: members[right], type: "compound" });
@@ -163,6 +162,7 @@ function renderGraph() {
   svg.classList.add("edges");
   svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
   svg.setAttribute("aria-hidden", "true");
+  graphElement.classList.toggle("three-d", dimension === "3d");
   if (dimension === "3d") {
     // Remove 2D canvas handlers left from the prior mode. Otherwise a drag to
     // orbit also begins a 2D pan and can be mistaken for a reset click.
@@ -200,7 +200,6 @@ function renderGraph() {
   graphElement.replaceChildren(svg, ...buttons.values());
   graphElement.onclick = (event) => { if (!suppressCanvasClick && (event.target === graphElement || event.target === svg)) resetSelection(); };
   graphElement.onpointerdown = (event) => { if (!event.target.closest?.(".node")) beginPan(event); };
-  graphElement.classList.toggle("three-d", dimension === "3d");
   status.textContent = context
     ? `Connection details · ${nodes.length} spheres · ${edges.length} recorded relationships · click the canvas to return`
     : `${nodes.length} visible spheres${omittedNodeCount ? ` of ${totalMatchingNodes}; search to narrow the remaining ${omittedNodeCount}` : ""} · ${edges.length} visible connection lines · drag spheres to explore`;
@@ -543,7 +542,8 @@ function rankingScope(question) {
       : /\b(releases|albums|records)\b/.test(normalizedQuestion) ? "release" : null;
   const nodes = type ? graph.nodes.filter((node) => node.type === type && activeAtYear(node)) : currentNodes;
   const edges = type ? visibleEdges(nodes) : currentEdges;
-  return { nodes, metrics: graphMetrics(nodes, edges), label: type ? `${type === "person" ? "people" : `${type}s`} visible by ${activeYear}` : activeView === "all" ? "the current graph" : `the current ${activeView} view` };
+  const enabledTypes = [...activeTypes].map((item) => item === "person" ? "people" : `${item}s`);
+  return { nodes, metrics: graphMetrics(nodes, edges), label: type ? `${type === "person" ? "people" : `${type}s`} visible by ${activeYear}` : enabledTypes.length === 3 ? "the current graph" : `the current ${enabledTypes.join(", ")} view` };
 }
 
 function rankingMetric(question) {
@@ -634,10 +634,19 @@ document.querySelector("#path-form").addEventListener("submit", (event) => {
     renderGraph();
   }
 });
-document.querySelectorAll("[data-view]").forEach((button) => button.addEventListener("click", () => {
-  activeView = button.dataset.view;
+document.querySelectorAll("[data-type-toggle]").forEach((button) => button.addEventListener("click", () => {
+  const type = button.dataset.typeToggle;
+  // Keep at least one category visible. A blank canvas does not communicate
+  // what the toggle state means and cannot be explored.
+  if (activeTypes.has(type) && activeTypes.size === 1) {
+    status.textContent = "Keep at least one sphere type visible.";
+    return;
+  }
+  if (activeTypes.has(type)) activeTypes.delete(type);
+  else activeTypes.add(type);
   highlightedPath = [];
-  document.querySelectorAll("[data-view]").forEach((item) => item.classList.toggle("active", item === button));
+  button.classList.toggle("active", activeTypes.has(type));
+  button.setAttribute("aria-pressed", String(activeTypes.has(type)));
   renderGraph();
 }));
 function showTooltip(button) {
@@ -668,7 +677,13 @@ document.querySelector("[data-action='rearrange']").addEventListener("click", ()
   zoomValue.textContent = `${Math.round(graphZoom * 100)}%`;
   renderGraph();
 });
-document.querySelector("[data-action='dimension']").addEventListener("click", (event) => { dimension = dimension === "2d" ? "3d" : "2d"; event.currentTarget.textContent = dimension === "3d" ? "3D / 2D" : "2D / 3D"; renderGraph(); });
+document.querySelector("[data-action='dimension']").addEventListener("click", (event) => {
+  dimension = dimension === "2d" ? "3d" : "2d";
+  event.currentTarget.textContent = dimension === "3d" ? "3D / 2D" : "2D / 3D";
+  event.currentTarget.classList.toggle("active", dimension === "3d");
+  event.currentTarget.setAttribute("aria-pressed", String(dimension === "3d"));
+  renderGraph();
+});
 sizeMetric.addEventListener("change", renderGraph);
 degreeLimit.addEventListener("change", renderGraph);
 fadeDistance.addEventListener("change", renderGraph);
