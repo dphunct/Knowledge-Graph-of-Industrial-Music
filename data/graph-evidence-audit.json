@@ -1,0 +1,80 @@
+{
+  "generatedAt": "2026-09-25T02:10:50.413Z",
+  "totals": {
+    "nodes": 4077,
+    "relationships": 4140,
+    "relationshipsWithProvenance": 4137,
+    "citedRelationshipPercentage": 99.93,
+    "relationshipsWithDates": 3522,
+    "datedRelationshipPercentage": 85.07
+  },
+  "relationshipTypes": {
+    "member_of": 230,
+    "contributed_to": 1,
+    "released": 3895,
+    "contains": 2,
+    "song_credit": 6,
+    "release_credit": 6
+  },
+  "uncitedRelationships": [
+    {
+      "source": "The Land of Rape and Honey",
+      "target": "Stigmata",
+      "type": "contains",
+      "roles": []
+    },
+    {
+      "source": "Al Jourgensen",
+      "target": "Stigmata",
+      "type": "song_credit",
+      "roles": [
+        "vocals",
+        "guitar",
+        "writer",
+        "producer"
+      ]
+    },
+    {
+      "source": "Paul Barker",
+      "target": "Stigmata",
+      "type": "song_credit",
+      "roles": [
+        "bass",
+        "writer",
+        "producer"
+      ]
+    }
+  ],
+  "undatedMemberships": [
+    {
+      "source": "Al Jourgensen",
+      "target": "PTP",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Paul Barker",
+      "target": "PTP",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Nivek Ogre",
+      "target": "PTP",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Paul Barker",
+      "target": "Acid Horse",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Zim Zum",
+      "target": "Marilyn Manson",
+      "type": "member_of",
+      "roles": []
+    }
+  ]
+}
