@@ -8,16 +8,16 @@ export function incidentEdges(edges, id) {
   return edges.filter((edge) => edge.source === id || edge.target === id);
 }
 
-export function isActiveAtYear(item, year) {
-  return (
-    (!item.validFrom || Number(item.validFrom) <= year) &&
-    (!item.validTo || Number(item.validTo) >= year)
-  );
+// The timeline is cumulative: a relationship remains part of the historical
+// record after a documented end date. validTo describes its tenure; it does
+// not erase the fact that the connection had been established by that year.
+export function isKnownByYear(item, year) {
+  return !item.validFrom || Number(item.validFrom) <= year;
 }
 
 export function nodesForVisibleTypes(nodes, activeTypes, year) {
   return nodes.filter(
-    (node) => activeTypes.has(node.type) && isActiveAtYear(node, year),
+    (node) => activeTypes.has(node.type) && isKnownByYear(node, year),
   );
 }
 
@@ -45,7 +45,7 @@ export function edgesForVisibleNodes(graph, nodes, activeTypes, year) {
     (edge) =>
       visibleIds.has(edge.source) &&
       visibleIds.has(edge.target) &&
-      isActiveAtYear(edge, year),
+      isKnownByYear(edge, year),
   );
 
   const connections = new Map(
@@ -56,10 +56,10 @@ export function edgesForVisibleNodes(graph, nodes, activeTypes, year) {
   // pretending it is a recorded direct fact. Connections are undirected,
   // unique, and never self-links; we only project through one hidden sphere.
   for (const pivot of graph.nodes.filter(
-    (node) => !activeTypes.has(node.type) && isActiveAtYear(node, year),
+    (node) => !activeTypes.has(node.type) && isKnownByYear(node, year),
   )) {
     const members = incidentEdges(graph.edges, pivot.id)
-      .filter((edge) => isActiveAtYear(edge, year))
+      .filter((edge) => isKnownByYear(edge, year))
       .map((edge) => (edge.source === pivot.id ? edge.target : edge.source))
       .filter((id) => visibleIds.has(id));
 
