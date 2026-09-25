@@ -8,8 +8,7 @@
     "build": "node scripts/publish-graph-data.mjs && vite build",
     "preview": "vite preview --host 0.0.0.0",
     "validate": "node scripts/validate-graph.mjs",
-    "format": "prettier --write \"{src,scripts}/**/*.{js,mjs}\" \"*.{js,mjs,json,html}\"",
-    "format:check": "prettier --check \"{src,scripts}/**/*.{js,mjs}\" \"*.{js,mjs,json,html}\"",
+    "audit:evidence": "node scripts/audit-graph-evidence.mjs",
     "enrich:musicbrainz": "node scripts/enrich-musicbrainz.mjs",
     "enrich:musicbrainz:people": "node scripts/enrich-musicbrainz.mjs --phase=people",
     "enrich:musicbrainz:projects": "node scripts/enrich-musicbrainz.mjs --phase=projects",
@@ -24,11 +23,10 @@
     "enrich:wikidata:missing": "node scripts/enrich-wikidata.mjs --missing-only --offset=0 --limit=20"
   },
   "devDependencies": {
-    "prettier": "^3.9.9",
-    "vite": "^8.3.1"
+    "vite": "^7.0.0"
   },
   "dependencies": {
     "@mlc-ai/web-llm": "^0.2.85",
-    "three": "^0.186.1"
+    "three": "^0.186.0"
   }
 }

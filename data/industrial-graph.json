@@ -79993,6 +79993,11 @@
           "title": "MusicBrainz: Al Jourgensen",
           "url": "https://musicbrainz.org/artist/6c0dadab-266a-4601-8394-5b8e19e90def",
           "note": "Lists Al Jourgensen as a member of Ministry from 1981."
+        },
+        {
+          "title": "MusicBrainz: Ministry",
+          "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
+          "note": "Lists Al Jourgensen as a member from 1981."
         }
       ]
     },
@@ -80013,6 +80018,11 @@
           "title": "MusicBrainz: Paul Barker",
           "url": "https://musicbrainz.org/artist/5bec856f-b78b-4216-8af5-1c0c6365bcbe",
           "note": "Lists Paul Barker as a member of Ministry from 1986 to 2004-01."
+        },
+        {
+          "title": "MusicBrainz: Ministry",
+          "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
+          "note": "Lists Paul Barker as a member from 1986 to 2004-01."
         }
       ]
     },
@@ -80033,6 +80043,11 @@
           "title": "MusicBrainz: cEvin Key",
           "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
           "note": "Lists cEvin Key as a Skinny Puppy member from 1982 to 1996."
+        },
+        {
+          "title": "MusicBrainz: Skinny Puppy",
+          "url": "https://musicbrainz.org/artist/5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
+          "note": "Lists cEvin Key as a member from 1982 to 1996."
         }
       ]
     },
@@ -80052,42 +80067,13 @@
           "title": "MusicBrainz: Nivek Ogre",
           "url": "https://musicbrainz.org/artist/5778f668-1a4c-482f-beb9-08b15b0f861c",
           "note": "Lists Nivek Ogre as a Skinny Puppy member from 1982 to 1996."
+        },
+        {
+          "title": "MusicBrainz: Skinny Puppy",
+          "url": "https://musicbrainz.org/artist/5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
+          "note": "Lists Ogre as a member from 1982 to 1996."
         }
       ]
-    },
-    {
-      "source": "bill-leeb",
-      "target": "skinny-puppy",
-      "type": "member_of",
-      "roles": [
-        "bass",
-        "synthesizer"
-      ],
-      "sourceStatus": "needs-citation",
-      "provenance": []
-    },
-    {
-      "source": "bill-leeb",
-      "target": "front-line-assembly",
-      "type": "member_of",
-      "roles": [
-        "founder",
-        "vocals",
-        "programming"
-      ],
-      "sourceStatus": "needs-citation",
-      "provenance": []
-    },
-    {
-      "source": "rhys-fulber",
-      "target": "front-line-assembly",
-      "type": "member_of",
-      "roles": [
-        "programming",
-        "production"
-      ],
-      "sourceStatus": "needs-citation",
-      "provenance": []
     },
     {
       "source": "sascha-konietzko",
@@ -80105,6 +80091,11 @@
           "title": "MusicBrainz: Sascha Konietzko",
           "url": "https://musicbrainz.org/artist/8d2b70fb-a338-4702-8ce2-3211a4704d6f",
           "note": "Lists Sascha Konietzko as a KMFDM member from 1984-02-29."
+        },
+        {
+          "title": "MusicBrainz: KMFDM",
+          "url": "https://musicbrainz.org/artist/45074d7c-5307-44a8-854f-ae072e1622ae",
+          "note": "Lists Sascha Konietzko as a member from 1984-02-29."
         }
       ]
     },
@@ -80123,6 +80114,11 @@
           "title": "MusicBrainz: Richard 23",
           "url": "https://musicbrainz.org/artist/49197759-80b0-4f46-934c-c5d2fed17ac3",
           "note": "Lists Richard 23 as a Front 242 member from 1983."
+        },
+        {
+          "title": "MusicBrainz: Front 242",
+          "url": "https://musicbrainz.org/artist/8fb6c00f-61d8-4f27-98f9-53e1ba481626",
+          "note": "Lists Richard 23 as a member from 1983."
         }
       ]
     },
@@ -80141,19 +80137,13 @@
           "title": "MusicBrainz: Richard 23",
           "url": "https://musicbrainz.org/artist/49197759-80b0-4f46-934c-c5d2fed17ac3",
           "note": "Lists Richard 23 as a Revolting Cocks member from 1985 to 1987."
+        },
+        {
+          "title": "MusicBrainz: Revolting Cocks",
+          "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
+          "note": "Lists Richard 23 as a member from 1985 to 1987."
         }
       ]
-    },
-    {
-      "source": "al-jourgensen",
-      "target": "revolting-cocks",
-      "type": "member_of",
-      "roles": [
-        "vocals",
-        "guitar"
-      ],
-      "sourceStatus": "needs-citation",
-      "provenance": []
     },
     {
       "source": "al-jourgensen",
@@ -80167,6 +80157,11 @@
           "title": "MusicBrainz: Al Jourgensen",
           "url": "https://musicbrainz.org/artist/6c0dadab-266a-4601-8394-5b8e19e90def",
           "note": "Lists Al Jourgensen as a member of Lard from 1988."
+        },
+        {
+          "title": "MusicBrainz: Lard",
+          "url": "https://musicbrainz.org/artist/4430600b-0fdb-43a1-be52-c81aa7ab1682",
+          "note": "Lists Al Jourgensen as a member from 1988."
         }
       ]
     },
@@ -80182,6 +80177,11 @@
           "title": "MusicBrainz: Paul Barker",
           "url": "https://musicbrainz.org/artist/5bec856f-b78b-4216-8af5-1c0c6365bcbe",
           "note": "Lists Paul Barker as a member of Lard from 1988."
+        },
+        {
+          "title": "MusicBrainz: Lard",
+          "url": "https://musicbrainz.org/artist/4430600b-0fdb-43a1-be52-c81aa7ab1682",
+          "note": "Lists Paul Barker as a member from 1988."
         }
       ]
     },
@@ -80198,39 +80198,11 @@
           "title": "MusicBrainz: Al Jourgensen",
           "url": "https://musicbrainz.org/artist/6c0dadab-266a-4601-8394-5b8e19e90def",
           "note": "Lists Al Jourgensen as an Acid Horse member in 1989."
-        }
-      ]
-    },
-    {
-      "source": "al-jourgensen",
-      "target": "lead-into-gold",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Al Jourgensen",
-          "url": "https://musicbrainz.org/artist/6c0dadab-266a-4601-8394-5b8e19e90def",
-          "note": "Lists Al Jourgensen as a Lead Into Gold member; MusicBrainz does not provide dates."
-        }
-      ]
-    },
-    {
-      "source": "paul-barker",
-      "target": "lead-into-gold",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Paul Barker",
-          "url": "https://musicbrainz.org/artist/5bec856f-b78b-4216-8af5-1c0c6365bcbe",
-          "note": "Lists Paul Barker as a Lead Into Gold member; MusicBrainz does not provide dates."
         },
         {
-          "title": "MusicBrainz: Lead Into Gold",
-          "url": "https://musicbrainz.org/artist/aedd2d07-66ca-4496-8156-ac6cde7e87b4",
-          "note": "Lists Frenchie L'Amour as a member."
+          "title": "MusicBrainz: Acid Horse",
+          "url": "https://musicbrainz.org/artist/ea9ea256-362b-41b7-9ad6-cc308d9909a2",
+          "note": "Lists Al Jourgensen as a member from 1989 to 1989."
         }
       ]
     },
@@ -80306,6 +80278,16 @@
           "title": "MusicBrainz: Bill Leeb",
           "url": "https://musicbrainz.org/artist/e10b76e5-dc32-4e9f-83b9-4f717400b19f",
           "note": "Lists Bill Leeb as a Delerium member from 1987."
+        },
+        {
+          "title": "MusicBrainz: Delerium",
+          "url": "https://musicbrainz.org/artist/4279aba0-1bde-40a9-8fb2-c63d165dc554",
+          "note": "Lists Bill Leeb as a member from 1987."
+        },
+        {
+          "title": "Wikidata membership claim: Wilhelm Schroeder → Delerium",
+          "url": "https://www.wikidata.org/wiki/Q4909880",
+          "note": "Exact mapped Wikidata entities state a membership or has-part relationship."
         }
       ]
     },
@@ -80322,6 +80304,11 @@
           "title": "MusicBrainz: Rhys Fulber",
           "url": "https://musicbrainz.org/artist/7ee30fce-cd3d-437d-9ff0-b2ef195bda33",
           "note": "Lists Rhys Fulber as a Delerium member from 1989 to 2000."
+        },
+        {
+          "title": "MusicBrainz: Delerium",
+          "url": "https://musicbrainz.org/artist/4279aba0-1bde-40a9-8fb2-c63d165dc554",
+          "note": "Lists Rhys Fulber as a member from 1989 to 2000."
         }
       ]
     },
@@ -80337,6 +80324,16 @@
           "title": "MusicBrainz: Bill Leeb",
           "url": "https://musicbrainz.org/artist/e10b76e5-dc32-4e9f-83b9-4f717400b19f",
           "note": "Lists Bill Leeb as a Noise Unit member from 1989."
+        },
+        {
+          "title": "MusicBrainz: Noise Unit",
+          "url": "https://musicbrainz.org/artist/7dd6f063-dcac-47e7-98d1-26eaeaac2971",
+          "note": "Lists Bill Leeb as a member from 1989."
+        },
+        {
+          "title": "Wikidata membership claim: Wilhelm Schroeder → Noise Unit",
+          "url": "https://www.wikidata.org/wiki/Q4909880",
+          "note": "Exact mapped Wikidata entities state a membership or has-part relationship."
         }
       ]
     },
@@ -80353,20 +80350,11 @@
           "title": "MusicBrainz: Rhys Fulber",
           "url": "https://musicbrainz.org/artist/7ee30fce-cd3d-437d-9ff0-b2ef195bda33",
           "note": "Lists Rhys Fulber as a Noise Unit member from 1990 to 1997."
-        }
-      ]
-    },
-    {
-      "source": "cevin-key",
-      "target": "cyberaktif",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
+        },
         {
-          "title": "MusicBrainz: cEvin Key",
-          "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
-          "note": "Lists cEvin Key as a Cyberaktif member; MusicBrainz does not provide dates."
+          "title": "MusicBrainz: Noise Unit",
+          "url": "https://musicbrainz.org/artist/7dd6f063-dcac-47e7-98d1-26eaeaac2971",
+          "note": "Lists Rhys Fulber as a member from 1990 to 1997."
         }
       ]
     },
@@ -80382,6 +80370,11 @@
           "title": "MusicBrainz: Rhys Fulber",
           "url": "https://musicbrainz.org/artist/7ee30fce-cd3d-437d-9ff0-b2ef195bda33",
           "note": "Lists Rhys Fulber as a Cyberaktif member from 2024."
+        },
+        {
+          "title": "MusicBrainz: Cyberaktif",
+          "url": "https://musicbrainz.org/artist/6967bbb5-d814-40e9-84be-eef3d10b6662",
+          "note": "Lists Rhys Fulber as a member from 2024."
         }
       ]
     },
@@ -80635,76 +80628,6 @@
           "title": "MusicBrainz release group: No Name, No Slogan",
           "url": "https://musicbrainz.org/release-group/af3aad81-b6ff-312e-a42a-3805b445f110",
           "note": "The release-group artist credit includes Acid Horse."
-        }
-      ]
-    },
-    {
-      "source": "cevin-key",
-      "target": "a-chud-convention",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: cEvin Key",
-          "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
-          "note": "Lists cEvin Key as a member; MusicBrainz does not provide dates."
-        }
-      ]
-    },
-    {
-      "source": "nivek-ogre",
-      "target": "a-chud-convention",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Nivek Ogre",
-          "url": "https://musicbrainz.org/artist/5778f668-1a4c-482f-beb9-08b15b0f861c",
-          "note": "Lists Nivek Ogre as a member; MusicBrainz does not provide dates."
-        }
-      ]
-    },
-    {
-      "source": "cevin-key",
-      "target": "hilt",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: cEvin Key",
-          "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
-          "note": "Lists cEvin Key as a member; MusicBrainz does not provide dates."
-        }
-      ]
-    },
-    {
-      "source": "cevin-key",
-      "target": "doubting-thomas",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: cEvin Key",
-          "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
-          "note": "Lists cEvin Key as a member; MusicBrainz does not provide dates."
-        }
-      ]
-    },
-    {
-      "source": "cevin-key",
-      "target": "download",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: cEvin Key",
-          "url": "https://musicbrainz.org/artist/e12cace3-8880-426a-a6dc-5e9b7ccfacfd",
-          "note": "Lists cEvin Key as a member; MusicBrainz does not provide dates."
         }
       ]
     },
@@ -81342,150 +81265,13 @@
       ]
     },
     {
-      "source": "john-bechdel",
-      "target": "ministry",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Ministry",
-          "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
-          "note": "Lists John Bechdel as a member."
-        }
-      ]
-    },
-    {
-      "source": "john-davis",
-      "target": "ministry",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Ministry",
-          "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
-          "note": "Lists John Davis as a member."
-        }
-      ]
-    },
-    {
-      "source": "shay-jones",
-      "target": "ministry",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Ministry",
-          "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
-          "note": "Lists Shay Jones as a member."
-        }
-      ]
-    },
-    {
-      "source": "robert-roberts",
-      "target": "ministry",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Ministry",
-          "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
-          "note": "Lists Robert Roberts as a member."
-        }
-      ]
-    },
-    {
-      "source": "martin-sorenson",
-      "target": "ministry",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Ministry",
-          "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
-          "note": "Lists Martin Sorenson as a member."
-        }
-      ]
-    },
-    {
-      "source": "tia-sprocket",
-      "target": "ministry",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Ministry",
-          "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
-          "note": "Lists Tia Sprocket as a member."
-        }
-      ]
-    },
-    {
-      "source": "william-tucker",
-      "target": "ministry",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Ministry",
-          "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
-          "note": "Lists William Tucker as a member."
-        }
-      ]
-    },
-    {
-      "source": "jeff-ward",
-      "target": "ministry",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Ministry",
-          "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
-          "note": "Lists Jeff Ward as a member."
-        }
-      ]
-    },
-    {
-      "source": "rey-washam",
-      "target": "ministry",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Ministry",
-          "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
-          "note": "Lists Rey Washam as a member."
-        }
-      ]
-    },
-    {
-      "source": "mike-scaccia",
-      "target": "ministry",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Ministry",
-          "url": "https://musicbrainz.org/artist/13df2a46-f72f-40e7-aa63-26fcf62c7048",
-          "note": "Lists Mike Scaccia as a member."
-        }
-      ]
-    },
-    {
       "source": "bill-leeb",
       "target": "skinny-puppy",
       "type": "member_of",
-      "roles": [],
+      "roles": [
+        "bass",
+        "synthesizer"
+      ],
       "validFrom": 1984,
       "validTo": 1986,
       "sourceStatus": "verified",
@@ -82018,188 +81804,6 @@
       ]
     },
     {
-      "source": "stevie-banch",
-      "target": "revolting-cocks",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Revolting Cocks",
-          "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
-          "note": "Lists Stevie Banch as a member."
-        }
-      ]
-    },
-    {
-      "source": "paul-barker",
-      "target": "revolting-cocks",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Revolting Cocks",
-          "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
-          "note": "Lists Paul Barker as a member."
-        }
-      ]
-    },
-    {
-      "source": "josh-bradford",
-      "target": "revolting-cocks",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Revolting Cocks",
-          "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
-          "note": "Lists Josh Bradford as a member."
-        }
-      ]
-    },
-    {
-      "source": "duane-denison",
-      "target": "revolting-cocks",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Revolting Cocks",
-          "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
-          "note": "Lists Duane Denison as a member."
-        }
-      ]
-    },
-    {
-      "source": "sean-joyce",
-      "target": "revolting-cocks",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Revolting Cocks",
-          "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
-          "note": "Lists Sean Joyce as a member."
-        }
-      ]
-    },
-    {
-      "source": "phil-owen",
-      "target": "revolting-cocks",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Revolting Cocks",
-          "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
-          "note": "Lists Phil Owen as a member."
-        }
-      ]
-    },
-    {
-      "source": "bill-rieflin",
-      "target": "revolting-cocks",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Revolting Cocks",
-          "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
-          "note": "Lists Bill Rieflin as a member."
-        }
-      ]
-    },
-    {
-      "source": "william-tucker",
-      "target": "revolting-cocks",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Revolting Cocks",
-          "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
-          "note": "Lists William Tucker as a member."
-        }
-      ]
-    },
-    {
-      "source": "jeff-ward",
-      "target": "revolting-cocks",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Revolting Cocks",
-          "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
-          "note": "Lists Jeff Ward as a member."
-        }
-      ]
-    },
-    {
-      "source": "clayton-worbeck",
-      "target": "revolting-cocks",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Revolting Cocks",
-          "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
-          "note": "Lists Clayton Worbeck as a member."
-        }
-      ]
-    },
-    {
-      "source": "mike-scaccia",
-      "target": "revolting-cocks",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Revolting Cocks",
-          "url": "https://musicbrainz.org/artist/2865730a-5757-4005-875e-84d6274cb1c0",
-          "note": "Lists Mike Scaccia as a member."
-        }
-      ]
-    },
-    {
-      "source": "j3-seuqcaj",
-      "target": "a-chud-convention",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: A Chud Convention",
-          "url": "https://musicbrainz.org/artist/14c43e52-0267-453f-bcc6-c2201aac2c82",
-          "note": "Lists J3 sEUQCAJ as a member."
-        }
-      ]
-    },
-    {
-      "source": "s3-evets",
-      "target": "a-chud-convention",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: A Chud Convention",
-          "url": "https://musicbrainz.org/artist/14c43e52-0267-453f-bcc6-c2201aac2c82",
-          "note": "Lists S3 eVETS as a member."
-        }
-      ]
-    },
-    {
       "source": "don-harrison",
       "target": "hilt",
       "type": "member_of",
@@ -82231,174 +81835,6 @@
       ]
     },
     {
-      "source": "dwayne-goettel",
-      "target": "hilt",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Hilt",
-          "url": "https://musicbrainz.org/artist/42509bd3-6fa1-459a-8e40-127a3ef8663b",
-          "note": "Lists Dwayne Rudolph Goettel as a member."
-        }
-      ]
-    },
-    {
-      "source": "dave-ogilvie",
-      "target": "hilt",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Hilt",
-          "url": "https://musicbrainz.org/artist/42509bd3-6fa1-459a-8e40-127a3ef8663b",
-          "note": "Lists Dave Ogilvie as a member."
-        }
-      ]
-    },
-    {
-      "source": "dwayne-goettel",
-      "target": "doubting-thomas",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Doubting Thomas",
-          "url": "https://musicbrainz.org/artist/66331dd7-5279-4e8f-8e41-1aec4f143638",
-          "note": "Lists Dwayne Rudolph Goettel as a member."
-        }
-      ]
-    },
-    {
-      "source": "dwayne-goettel",
-      "target": "download",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Download",
-          "url": "https://musicbrainz.org/artist/a31c5ea9-b550-447a-b2ee-99b08e8c4825",
-          "note": "Lists Dwayne Rudolph Goettel as a member."
-        }
-      ]
-    },
-    {
-      "source": "ryan-moore",
-      "target": "download",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Download",
-          "url": "https://musicbrainz.org/artist/a31c5ea9-b550-447a-b2ee-99b08e8c4825",
-          "note": "Lists Ryan Moore as a member."
-        }
-      ]
-    },
-    {
-      "source": "mark-spybey",
-      "target": "download",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Download",
-          "url": "https://musicbrainz.org/artist/a31c5ea9-b550-447a-b2ee-99b08e8c4825",
-          "note": "Lists Mark Spybey as a member."
-        }
-      ]
-    },
-    {
-      "source": "anthony-valcic",
-      "target": "download",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Download",
-          "url": "https://musicbrainz.org/artist/a31c5ea9-b550-447a-b2ee-99b08e8c4825",
-          "note": "Lists Anthony Valcic as a member."
-        }
-      ]
-    },
-    {
-      "source": "phil-western",
-      "target": "download",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Download",
-          "url": "https://musicbrainz.org/artist/a31c5ea9-b550-447a-b2ee-99b08e8c4825",
-          "note": "Lists Phil Western as a member."
-        }
-      ]
-    },
-    {
-      "source": "paul-barker",
-      "target": "1000-homo-djs",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: 1000 Homo DJs",
-          "url": "https://musicbrainz.org/artist/4c44479c-8fde-4754-b9e2-5129eb6fb28d",
-          "note": "Lists Paul Barker as a member."
-        }
-      ]
-    },
-    {
-      "source": "al-jourgensen",
-      "target": "1000-homo-djs",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: 1000 Homo DJs",
-          "url": "https://musicbrainz.org/artist/4c44479c-8fde-4754-b9e2-5129eb6fb28d",
-          "note": "Lists Al Jourgensen as a member."
-        }
-      ]
-    },
-    {
-      "source": "trent-reznor",
-      "target": "1000-homo-djs",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: 1000 Homo DJs",
-          "url": "https://musicbrainz.org/artist/4c44479c-8fde-4754-b9e2-5129eb6fb28d",
-          "note": "Lists Trent Reznor as a member."
-        }
-      ]
-    },
-    {
-      "source": "bill-rieflin",
-      "target": "1000-homo-djs",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: 1000 Homo DJs",
-          "url": "https://musicbrainz.org/artist/4c44479c-8fde-4754-b9e2-5129eb6fb28d",
-          "note": "Lists Bill Rieflin as a member."
-        }
-      ]
-    },
-    {
       "source": "jeff-ward",
       "target": "lard",
       "type": "member_of",
@@ -82426,34 +81862,6 @@
           "title": "MusicBrainz: Lard",
           "url": "https://musicbrainz.org/artist/4430600b-0fdb-43a1-be52-c81aa7ab1682",
           "note": "Lists Jello Biafra as a member from 1988."
-        }
-      ]
-    },
-    {
-      "source": "bill-rieflin",
-      "target": "lard",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Lard",
-          "url": "https://musicbrainz.org/artist/4430600b-0fdb-43a1-be52-c81aa7ab1682",
-          "note": "Lists Bill Rieflin as a member."
-        }
-      ]
-    },
-    {
-      "source": "rey-washam",
-      "target": "lard",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Lard",
-          "url": "https://musicbrainz.org/artist/4430600b-0fdb-43a1-be52-c81aa7ab1682",
-          "note": "Lists Rey Washam as a member."
         }
       ]
     },
@@ -82548,48 +81956,6 @@
           "title": "MusicBrainz: Noise Unit",
           "url": "https://musicbrainz.org/artist/7dd6f063-dcac-47e7-98d1-26eaeaac2971",
           "note": "Lists Chris Peterson as a member from 2004."
-        }
-      ]
-    },
-    {
-      "source": "daniel-myer",
-      "target": "noise-unit",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Noise Unit",
-          "url": "https://musicbrainz.org/artist/7dd6f063-dcac-47e7-98d1-26eaeaac2971",
-          "note": "Lists Daniel Myer as a member."
-        }
-      ]
-    },
-    {
-      "source": "dwayne-goettel",
-      "target": "cyberaktif",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Cyberaktif",
-          "url": "https://musicbrainz.org/artist/6967bbb5-d814-40e9-84be-eef3d10b6662",
-          "note": "Lists Dwayne Rudolph Goettel as a member."
-        }
-      ]
-    },
-    {
-      "source": "bill-leeb",
-      "target": "cyberaktif",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Cyberaktif",
-          "url": "https://musicbrainz.org/artist/6967bbb5-d814-40e9-84be-eef3d10b6662",
-          "note": "Lists Wilhelm Schroeder as a member."
         }
       ]
     },
@@ -83907,34 +83273,6 @@
       ]
     },
     {
-      "source": "paul-wiley",
-      "target": "marilyn-manson",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Marilyn Manson",
-          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
-          "note": "Lists Paul Wiley as a member."
-        }
-      ]
-    },
-    {
-      "source": "zim-zum",
-      "target": "marilyn-manson",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Marilyn Manson",
-          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
-          "note": "Lists Zim Zum as a member."
-        }
-      ]
-    },
-    {
       "source": "rudy-ratzinger",
       "target": "wumpscut",
       "type": "member_of",
@@ -84036,48 +83374,6 @@
           "title": "MusicBrainz: Rammstein",
           "url": "https://musicbrainz.org/artist/b2d122f9-eadb-4930-a196-8f221eeb0c66",
           "note": "Lists Christoph Schneider as a member from 1994-02."
-        }
-      ]
-    },
-    {
-      "source": "mick-hollows",
-      "target": "7-minutes-of-nausea",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: 7 Minutes of Nausea",
-          "url": "https://musicbrainz.org/artist/96843ba2-97ec-4120-8c25-044e001e95ed",
-          "note": "Lists Mick Hollows as a member."
-        }
-      ]
-    },
-    {
-      "source": "scut",
-      "target": "7-minutes-of-nausea",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: 7 Minutes of Nausea",
-          "url": "https://musicbrainz.org/artist/96843ba2-97ec-4120-8c25-044e001e95ed",
-          "note": "Lists Scut as a member."
-        }
-      ]
-    },
-    {
-      "source": "matthias-weigand",
-      "target": "7-minutes-of-nausea",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: 7 Minutes of Nausea",
-          "url": "https://musicbrainz.org/artist/96843ba2-97ec-4120-8c25-044e001e95ed",
-          "note": "Lists Matthias Weigand as a member."
         }
       ]
     },
@@ -84238,20 +83534,6 @@
       ]
     },
     {
-      "source": "danny-lohner",
-      "target": "killing-joke",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Killing Joke",
-          "url": "https://musicbrainz.org/artist/f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
-          "note": "Lists Danny Lohner as a member."
-        }
-      ]
-    },
-    {
       "source": "dejan-knez",
       "target": "laibach",
       "type": "member_of",
@@ -84340,118 +83622,6 @@
           "title": "MusicBrainz: Laibach",
           "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
           "note": "Lists Milan Fras as a member from 1983."
-        }
-      ]
-    },
-    {
-      "source": "janez-gabri",
-      "target": "laibach",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Laibach",
-          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
-          "note": "Lists Janez Gabrič as a member."
-        }
-      ]
-    },
-    {
-      "source": "luka-jamnik",
-      "target": "laibach",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Laibach",
-          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
-          "note": "Lists Luka Jamnik as a member."
-        }
-      ]
-    },
-    {
-      "source": "ivan-novak",
-      "target": "laibach",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Laibach",
-          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
-          "note": "Lists Ivan Novak as a member."
-        }
-      ]
-    },
-    {
-      "source": "sa-o-vollmaier",
-      "target": "laibach",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Laibach",
-          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
-          "note": "Lists Sašo Vollmaier as a member."
-        }
-      ]
-    },
-    {
-      "source": "damjan-bizilj",
-      "target": "laibach",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Laibach",
-          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
-          "note": "Lists Damjan Bizilj as a member."
-        }
-      ]
-    },
-    {
-      "source": "tone-dimnik",
-      "target": "laibach",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Laibach",
-          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
-          "note": "Lists Tone Dimnik as a member."
-        }
-      ]
-    },
-    {
-      "source": "ervin-marko-ek",
-      "target": "laibach",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Laibach",
-          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
-          "note": "Lists Ervin Markošek as a member."
-        }
-      ]
-    },
-    {
-      "source": "matej-mr-nik",
-      "target": "laibach",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "MusicBrainz: Laibach",
-          "url": "https://musicbrainz.org/artist/c779e090-909f-4403-a90e-c1d08cdbb719",
-          "note": "Lists Matej Mršnik as a member."
         }
       ]
     },
@@ -84980,34 +84150,6 @@
       ]
     },
     {
-      "source": "bill-leeb",
-      "target": "front-line-assembly",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "Wikidata membership claim: Wilhelm Schroeder → Front Line Assembly",
-          "url": "https://www.wikidata.org/wiki/Q4909880",
-          "note": "Exact mapped Wikidata entities state a membership or has-part relationship."
-        }
-      ]
-    },
-    {
-      "source": "bill-leeb",
-      "target": "noise-unit",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "Wikidata membership claim: Wilhelm Schroeder → Noise Unit",
-          "url": "https://www.wikidata.org/wiki/Q4909880",
-          "note": "Exact mapped Wikidata entities state a membership or has-part relationship."
-        }
-      ]
-    },
-    {
       "source": "paul-barker",
       "target": "acid-horse",
       "type": "member_of",
@@ -85017,20 +84159,6 @@
         {
           "title": "Wikidata membership claim: Flowering Blight → Acid Horse",
           "url": "https://www.wikidata.org/wiki/Q4590538",
-          "note": "Exact mapped Wikidata entities state a membership or has-part relationship."
-        }
-      ]
-    },
-    {
-      "source": "bill-leeb",
-      "target": "delerium",
-      "type": "member_of",
-      "roles": [],
-      "sourceStatus": "verified",
-      "provenance": [
-        {
-          "title": "Wikidata membership claim: Wilhelm Schroeder → Delerium",
-          "url": "https://www.wikidata.org/wiki/Q4909880",
           "note": "Exact mapped Wikidata entities state a membership or has-part relationship."
         }
       ]
@@ -142684,6 +141812,20 @@
           "title": "MusicBrainz release group: Conference of Starlings",
           "url": "https://musicbrainz.org/release-group/fee6bc17-64e0-457b-94ed-1a16b28c1488",
           "note": "The release-group artist credit includes Youth."
+        }
+      ]
+    },
+    {
+      "source": "zim-zum",
+      "target": "marilyn-manson",
+      "type": "member_of",
+      "roles": [],
+      "sourceStatus": "verified",
+      "provenance": [
+        {
+          "title": "MusicBrainz: Marilyn Manson",
+          "url": "https://musicbrainz.org/artist/5dfdca28-9ddc-4853-933c-8bc97d87beec",
+          "note": "Lists Zim Zum as a member."
         }
       ]
     }
