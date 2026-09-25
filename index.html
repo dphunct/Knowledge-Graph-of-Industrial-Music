@@ -59,23 +59,39 @@
 
       <section class="controls control-band" aria-label="Graph controls">
         <div class="control-band-primary">
-          <label class="search"
-            ><span
-              >Find a person, project, or alias
+          <form class="search find-control" id="find-form"
+            ><label for="search"
+              >Find and show
               <button
                 class="help-button"
                 type="button"
-                data-help="Choose an exact name or alias to select it, center it, and show its recorded connections. While typing, the map narrows to matching names."
+                data-help="Choose an exact name or alias, then use Find. The map selects that sphere, centers it, and shows its recorded connections. Finding does not hide any other spheres."
               >
                 ?
-              </button></span
+              </button></label
             ><input
               id="search"
               type="search"
               list="search-options"
               autocomplete="off"
               placeholder="e.g. Ministry, cEvin Key, Hypo Luxa"
-            /><datalist id="search-options"></datalist></label>
+            /><button type="submit">Find</button><datalist id="search-options"></datalist></form>
+          <label class="search filter-control" for="visible-filter"
+            ><span
+              >Filter visible
+              <button
+                class="help-button"
+                type="button"
+                data-help="Temporarily narrows the map to names and aliases containing this text. It does not select a sphere; clear the filter to restore the current map view."
+              >
+                ?
+              </button></span
+            ><input
+              id="visible-filter"
+              type="search"
+              autocomplete="off"
+              placeholder="Refine the visible map"
+            /><button type="button" data-action="clear-filter">Clear filter</button></label>
           <label class="metric-control"
             ><span
               >Size spheres by
