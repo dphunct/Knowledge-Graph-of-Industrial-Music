@@ -29,6 +29,8 @@ The graph is evidence-backed rather than dependent on a single database. MusicBr
 
 See `docs/knowledge-model.md` for the canonical node, relationship, provenance, and temporal conventions.
 
+See `docs/scoring-model.md` for how documented industrial contribution and the composite graph score are calculated.
+
 See `docs/chatgpt-setup.md` for the optional ChatGPT companion workflow and a workspace-eligible custom GPT configuration.
 
 ## Publishing

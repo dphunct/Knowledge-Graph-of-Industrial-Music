@@ -850,7 +850,7 @@ function selectNode(id) {
     : "";
   const metric = metrics.get(id);
   const score = (value) => Math.round(value * 100);
-  detail.innerHTML = `<p class="eyebrow">${escapeHtml(node.type)}${node.relevance ? ` · ${escapeHtml(node.relevance)} relevance` : ""}</p><h2>${escapeHtml(node.label)}</h2><p>${escapeHtml(node.summary || "No description recorded yet.")}</p>${node.years ? `<p><strong>Active</strong> ${escapeHtml(node.years)}</p>` : ""}${aliases}${sources}<h3>Graph influence</h3><p>Composite ${score(metric.composite)} · contribution ${score(metric.contribution)} · connections ${score(metric.degree)} · bridge ${score(metric.betweenness)} · PageRank ${score(metric.pageRank)}</p><button class="open-relationships" type="button" data-open-relationships>View ${connections.length} recorded connection${connections.length === 1 ? "" : "s"}</button>`;
+  detail.innerHTML = `<p class="eyebrow">${escapeHtml(node.type)}${node.relevance ? ` · ${escapeHtml(node.relevance)} relevance` : ""}</p><h2>${escapeHtml(node.label)}</h2><p>${escapeHtml(node.summary || "No description recorded yet.")}</p>${node.years ? `<p><strong>Active</strong> ${escapeHtml(node.years)}</p>` : ""}${aliases}${sources}<h3>Graph influence</h3><p>Composite ${score(metric.composite)} · industrial contribution ${score(metric.contribution)} · connections ${score(metric.degree)} · bridge ${score(metric.betweenness)} · PageRank ${score(metric.pageRank)}</p><button class="open-relationships" type="button" data-open-relationships>View ${connections.length} recorded connection${connections.length === 1 ? "" : "s"}</button>`;
   detail
     .querySelector("[data-open-relationships]")
     .addEventListener("click", () => openRelationships(node, connections));
@@ -1095,12 +1095,12 @@ function rankingMetric(question) {
   if (/bridge|connector/.test(normalizedQuestion))
     return { key: "betweenness", label: "bridge importance" };
   if (/contribution|participation|weighted connection/.test(normalizedQuestion))
-    return { key: "contribution", label: "contribution strength" };
+    return { key: "contribution", label: "industrial contribution" };
   if (
     /direct connection|most connected|connection count/.test(normalizedQuestion)
   )
     return { key: "degree", label: "direct connections" };
-  return { key: "composite", label: "equally weighted composite score" };
+  return { key: "composite", label: "composite score" };
 }
 
 function interpretGraphQuestion(question) {
