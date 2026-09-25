@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-09-25T14:46:50.072Z",
+  "generatedAt": "2026-09-25T17:34:50.438Z",
   "totals": {
-    "nodes": 4077,
-    "relationships": 4204,
-    "relationshipsWithProvenance": 4201,
+    "nodes": 4393,
+    "relationships": 4529,
+    "relationshipsWithProvenance": 4526,
     "citedRelationshipPercentage": 99.93,
-    "relationshipsWithDates": 3522,
-    "datedRelationshipPercentage": 83.78
+    "relationshipsWithDates": 3664,
+    "datedRelationshipPercentage": 80.9
   },
   "relationshipTypes": {
-    "member_of": 294,
+    "member_of": 566,
     "contributed_to": 1,
-    "released": 3895,
+    "released": 3948,
     "contains": 2,
     "song_credit": 6,
     "release_credit": 6
@@ -67,12 +67,6 @@
     {
       "source": "Paul Barker",
       "target": "Acid Horse",
-      "type": "member_of",
-      "roles": []
-    },
-    {
-      "source": "Zim Zum",
-      "target": "Marilyn Manson",
       "type": "member_of",
       "roles": []
     },
@@ -347,116 +341,1220 @@
       "roles": []
     },
     {
-      "source": "Daniel Myer",
-      "target": "Noise Unit",
-      "type": "member_of",
-      "roles": []
-    },
-    {
-      "source": "Dwayne Goettel",
-      "target": "Cyberaktif",
-      "type": "member_of",
-      "roles": []
-    },
-    {
-      "source": "cEvin Key",
-      "target": "Cyberaktif",
-      "type": "member_of",
-      "roles": []
-    },
-    {
-      "source": "Bill Leeb",
-      "target": "Cyberaktif",
-      "type": "member_of",
-      "roles": []
-    },
-    {
-      "source": "Paul Barker",
-      "target": "Lead Into Gold",
-      "type": "member_of",
-      "roles": []
-    },
-    {
-      "source": "Al Jourgensen",
-      "target": "Lead Into Gold",
-      "type": "member_of",
-      "roles": []
-    },
-    {
-      "source": "Paul Wiley",
+      "source": "Zim Zum",
       "target": "Marilyn Manson",
       "type": "member_of",
       "roles": []
     },
     {
-      "source": "Mick Hollows",
-      "target": "7 Minutes of Nausea",
+      "source": "Pieter Bourke",
+      "target": "Snog",
       "type": "member_of",
       "roles": []
     },
     {
-      "source": "Scut",
-      "target": "7 Minutes of Nausea",
+      "source": "David Thrussell",
+      "target": "Snog",
       "type": "member_of",
       "roles": []
     },
     {
-      "source": "Matthias Weigand",
-      "target": "7 Minutes of Nausea",
+      "source": "Niels van Hoorn",
+      "target": "The Legendary Pink Dots",
       "type": "member_of",
       "roles": []
     },
     {
-      "source": "Danny Lohner",
-      "target": "Killing Joke",
+      "source": "Edward Ka-Spel",
+      "target": "The Legendary Pink Dots",
       "type": "member_of",
       "roles": []
     },
     {
-      "source": "Janez Gabrič",
-      "target": "Laibach",
+      "source": "Martijn de Kleer",
+      "target": "The Legendary Pink Dots",
       "type": "member_of",
       "roles": []
     },
     {
-      "source": "Luka Jamnik",
-      "target": "Laibach",
+      "source": "Ryan Moore",
+      "target": "The Legendary Pink Dots",
       "type": "member_of",
       "roles": []
     },
     {
-      "source": "Ivan Novak",
-      "target": "Laibach",
+      "source": "The Silverman",
+      "target": "The Legendary Pink Dots",
       "type": "member_of",
       "roles": []
     },
     {
-      "source": "Sašo Vollmaier",
-      "target": "Laibach",
+      "source": "Raymond Steeg",
+      "target": "The Legendary Pink Dots",
       "type": "member_of",
       "roles": []
     },
     {
-      "source": "Damjan Bizilj",
-      "target": "Laibach",
+      "source": "Frank Verschuuren",
+      "target": "The Legendary Pink Dots",
       "type": "member_of",
       "roles": []
     },
     {
-      "source": "Tone Dimnik",
-      "target": "Laibach",
+      "source": "Patrick Q. Wright",
+      "target": "The Legendary Pink Dots",
       "type": "member_of",
       "roles": []
     },
     {
-      "source": "Ervin Markošek",
-      "target": "Laibach",
+      "source": "Freya Aswynn",
+      "target": "Current 93",
       "type": "member_of",
       "roles": []
     },
     {
-      "source": "Matej Mršnik",
-      "target": "Laibach",
+      "source": "James Blackshaw",
+      "target": "Current 93",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Ben Chasny",
+      "target": "Current 93",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Maja Elliott",
+      "target": "Current 93",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "David Kenny",
+      "target": "Current 93",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "James Malindaine-Lafayette",
+      "target": "Current 93",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Rose McDowall",
+      "target": "Current 93",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Boyd Rice",
+      "target": "Current 93",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Nick Saloman",
+      "target": "Current 93",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Jon Seagroatt",
+      "target": "Current 93",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Tony Wakeford",
+      "target": "Current 93",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Joolie Wood",
+      "target": "Current 93",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Justin Bennett",
+      "target": "My Life With the Thrill Kill Kult",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Laura Gomel",
+      "target": "My Life With the Thrill Kill Kult",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Levi Levi",
+      "target": "My Life With the Thrill Kill Kult",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Curse Mackey",
+      "target": "My Life With the Thrill Kill Kult",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Groovie Mann",
+      "target": "My Life With the Thrill Kill Kult",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Buzz McCoy",
+      "target": "My Life With the Thrill Kill Kult",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Adam Aaronson",
+      "target": "My Life With the Thrill Kill Kult",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "樋口豊",
+      "target": "BUCK‐TICK",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "星野英彦",
+      "target": "BUCK‐TICK",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "今井寿",
+      "target": "BUCK‐TICK",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "ヤガミトール",
+      "target": "BUCK‐TICK",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Brent Ashley",
+      "target": "Combichrist",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Andy LaPlegua",
+      "target": "Combichrist",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Joe Letz",
+      "target": "Combichrist",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Gregory Steward",
+      "target": "Combichrist",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Benjamin Johannes Luikenga",
+      "target": "Engelsblut",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Andrew Liles",
+      "target": "Nurse With Wound",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Colin Potter",
+      "target": "Nurse With Wound",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "David Tibet",
+      "target": "Nurse With Wound",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "M.S. Waldron",
+      "target": "Nurse With Wound",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Todd Bryerton",
+      "target": "Consolidated",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Kevin Carnes",
+      "target": "Consolidated",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "James Dickson",
+      "target": "Consolidated",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Mark Pistel",
+      "target": "Consolidated",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Philip Steir",
+      "target": "Consolidated",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Olivier Adams",
+      "target": "Lords of Acid",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Jade 4U",
+      "target": "Lords of Acid",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Erhan Kurkun",
+      "target": "Lords of Acid",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Deborah Ostrega",
+      "target": "Lords of Acid",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Sin Quirin",
+      "target": "Lords of Acid",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "DieTrich Thrall",
+      "target": "Lords of Acid",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Luc Van Acker",
+      "target": "Lords of Acid",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Frank Vloebergs",
+      "target": "Lords of Acid",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Mēa Fisher",
+      "target": "Lords of Acid",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Patti Adachi",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Steve Albini",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Michael Balch",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Paul Barker",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Beefcake the Mighty",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Jenny Bellestar",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Jello Biafra",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Black Francis",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Bella Black",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Terry Black",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "BobDog Catlin",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Bones",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Caspar Brötzmann",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Mary Byker",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Danny Carey",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Meg Lee Chin",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Jon S. Clayden",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Dana Cochrane",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Chris Connelly",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Steve Crittall",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Marston Daley",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Duane Denison",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Mike Dillon",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Taime Downe",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Duncan X",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "F.M. Einheit",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Hanin Elias",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "En Esch",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Gus Ferguson",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Paul Ferguson",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Jordan Fields",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Dirk Flanigan",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Flea",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Bart Flores",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Flour",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Fuzz",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Michael Gira",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Dwayne Goettel",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Laura Gomel",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Judd Gruenbaum",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Mick Harris",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Chris Haskett",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Marc Heal",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Keith Van Horne",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Neil Hubbard",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Barbara Hunter",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Sean Joyce",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "David Kendricks",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "cEvin Key",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Martin King",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Algis Kizys",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Krztoff",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Amy Larson",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Tom Lash",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Arturo de Leon",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Levi Levi",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Obioma Little",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Kim Ljung",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Jared Louche",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Lydia Lunch",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "John Lydon",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Curse Mackey",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Jim Marcus",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Douglas J. McCarthy",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Andy McGuire",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Jason McNinch",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Michael Melchiondo",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Jason Charles Miller",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Alexander Møklebust",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Kurt Moore",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Jason More",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Michie Nakatami",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Hope Nicholls",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Nivek Ogre",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Vikki Omega",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Genesis Breyer P-Orridge",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Dr Alex Paterson",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Eric Pounder",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Chris Randall",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Lesley Rankine",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Paul Raven",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Bobby Rea",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Laurie Reade",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Mary Dee Reynolds",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Trent Reznor",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Barb Ruchhoft",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Roberto Santiago",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Matthew Schultz",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Steven Seibold",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Sigtryggur Baldursson",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "David Sims",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Jim Sochaki",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Pat Sprawl",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Mark Spybey",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Siggy Sugarcube",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Louis Svitek",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "James Teitelbaum",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "J.G. Thirlwell",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Dave Trumfio",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Joe Trump",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "William Tucker",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Chris Vrenna",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Mark Walk",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Geordie Walker",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Michelle Walters",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Jeff Ward",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Scott Watanabe",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Andrew Weiss",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Astrid Welz",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "John Wills",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Becky Wreck",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "David Wright",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "山野敦子",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "山野直子",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Adam Yoffe",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Youth",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "David Yow",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Zaki",
+      "target": "Pigface",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Gini Ball",
+      "target": "Psychic TV",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Matthew Best",
+      "target": "Psychic TV",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Michael Campagna",
+      "target": "Psychic TV",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Andy Chatterley",
+      "target": "Psychic TV",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Philipp Erb",
+      "target": "Psychic TV",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Danny Hyde",
+      "target": "Psychic TV",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Hugo Longden",
+      "target": "Psychic TV",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Sean Maher",
+      "target": "Psychic TV",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Dave Martin",
+      "target": "Psychic TV",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "David Max",
+      "target": "Psychic TV",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Drew McDowall",
+      "target": "Psychic TV",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Richard Norris",
+      "target": "Psychic TV",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Richard Schiessl",
+      "target": "Psychic TV",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Ken Thomas",
+      "target": "Psychic TV",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Larry Thrasher",
+      "target": "Psychic TV",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "David Tibet",
+      "target": "Psychic TV",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Jordi Valls",
+      "target": "Psychic TV",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Dave Ball",
+      "target": "Psychic TV",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "John Gosling",
+      "target": "Psychic TV",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Alex Russell",
+      "target": "Psychic TV",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Philippe Fichot",
+      "target": "Die Form",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Mrs Fiend",
+      "target": "Alien Sex Fiend",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Nik Fiend",
+      "target": "Alien Sex Fiend",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Rat Fink",
+      "target": "Alien Sex Fiend",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Johnnie Ha Ha",
+      "target": "Alien Sex Fiend",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Yaxi Highriser",
+      "target": "Alien Sex Fiend",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Doc Milton",
+      "target": "Alien Sex Fiend",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Matt Rowlands",
+      "target": "Alien Sex Fiend",
       "type": "member_of",
       "roles": []
     }

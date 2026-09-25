@@ -5,6 +5,16 @@ const reportUrl = new URL("../data/musicbrainz-project-rosters.json", import.met
 const api = "https://musicbrainz.org/ws/2";
 const pauseMs = 1100;
 const graph = JSON.parse(await readFile(graphUrl));
+const requestedOffset = Number(
+  process.argv
+    .find((argument) => argument.startsWith("--offset="))
+    ?.split("=")[1] || 0,
+);
+const requestedLimit = Number(
+  process.argv
+    .find((argument) => argument.startsWith("--limit="))
+    ?.split("=")[1] || Infinity,
+);
 let lastRequestAt = 0;
 
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
@@ -63,8 +73,21 @@ function mergeMembershipFacts(target, duplicate) {
   target.sourceStatus = "verified";
 }
 
-const report = { provider: "MusicBrainz", retrievedAt: new Date().toISOString(), pacingMs: pauseMs, projects: [], skipped: [] };
-for (const project of graph.nodes.filter((node) => node.type === "project")) {
+const projects = graph.nodes.filter((node) => node.type === "project");
+const batch = projects.slice(requestedOffset, requestedOffset + requestedLimit);
+const report = {
+  provider: "MusicBrainz",
+  retrievedAt: new Date().toISOString(),
+  pacingMs: pauseMs,
+  batch: {
+    offset: requestedOffset,
+    limit: Number.isFinite(requestedLimit) ? requestedLimit : null,
+    totalEligible: projects.length,
+  },
+  projects: [],
+  skipped: [],
+};
+for (const project of batch) {
   if (!project.musicbrainz?.id || project.musicbrainz.entity !== "artist") {
     report.skipped.push({ id: project.id, label: project.label, reason: "No verified MusicBrainz artist identity" });
     continue;

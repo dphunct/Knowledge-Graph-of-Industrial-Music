@@ -1,147 +1,67 @@
 {
   "provider": "MusicBrainz",
-  "retrievedAt": "2026-09-24T14:14:08.364Z",
+  "retrievedAt": "2026-09-25T17:33:40.138Z",
   "pacingMs": 1100,
   "query": "tag:industrial AND type:group",
-  "candidateLimit": 25,
+  "candidateLimit": 10,
+  "offset": 50,
   "added": [
     {
-      "id": "nine-inch-nails",
-      "label": "Nine Inch Nails",
-      "musicbrainzId": "b7ffd2af-418f-4be2-bdd1-22f8b48613da",
-      "industrialTagCount": 18
-    },
-    {
-      "id": "depeche-mode",
-      "label": "Depeche Mode",
-      "musicbrainzId": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
-      "industrialTagCount": 1
-    },
-    {
-      "id": "marilyn-manson",
-      "label": "Marilyn Manson",
-      "musicbrainzId": "5dfdca28-9ddc-4853-933c-8bc97d87beec",
-      "industrialTagCount": 3
-    },
-    {
-      "id": "wumpscut",
-      "label": ":wumpscut:",
-      "musicbrainzId": "e4e79264-c1ec-490c-b823-b2918204cd4f",
-      "industrialTagCount": 1
-    },
-    {
-      "id": "rammstein",
-      "label": "Rammstein",
-      "musicbrainzId": "b2d122f9-eadb-4930-a196-8f221eeb0c66",
-      "industrialTagCount": 9
-    },
-    {
-      "id": "7-minutes-of-nausea",
-      "label": "7 Minutes of Nausea",
-      "musicbrainzId": "96843ba2-97ec-4120-8c25-044e001e95ed",
-      "industrialTagCount": 1
-    },
-    {
-      "id": "killing-joke",
-      "label": "Killing Joke",
-      "musicbrainzId": "f5aca88c-e3c1-4bc2-af33-68a9a9f7b56a",
-      "industrialTagCount": 1
-    },
-    {
-      "id": "laibach",
-      "label": "Laibach",
-      "musicbrainzId": "c779e090-909f-4403-a90e-c1d08cdbb719",
-      "industrialTagCount": 8
-    },
-    {
-      "id": "fear-factory",
-      "label": "Fear Factory",
-      "musicbrainzId": "c17f08f4-2542-46fb-97f3-3202d60c225a",
-      "industrialTagCount": 1
-    },
-    {
-      "id": "einst-rzende-neubauten",
-      "label": "Einstürzende Neubauten",
-      "musicbrainzId": "6e9ac29b-798c-4af7-8d9e-55cdc72a999c",
-      "industrialTagCount": 9
-    },
-    {
-      "id": "hocico",
-      "label": "Hocico",
-      "musicbrainzId": "b16fd684-831e-4128-8120-6626e76f88c6",
+      "id": "portion-control",
+      "label": "Portion Control",
+      "musicbrainzId": "fb5d85d1-558e-409e-a69d-84d59a8b0b8e",
       "industrialTagCount": 2
     },
     {
-      "id": "severed-heads",
-      "label": "Severed Heads",
-      "musicbrainzId": "4976edcf-58c3-49b6-b6f1-2d8277e60d26",
-      "industrialTagCount": 4
+      "id": "pigface",
+      "label": "Pigface",
+      "musicbrainzId": "11137c88-a9a2-4ffa-a97d-fb058c6d6ce2",
+      "industrialTagCount": 1
+    },
+    {
+      "id": "psychic-tv",
+      "label": "Psychic TV",
+      "musicbrainzId": "14c5a3a3-f5ed-4978-99af-486010e3a007",
+      "industrialTagCount": 2
+    },
+    {
+      "id": "die-form",
+      "label": "Die Form",
+      "musicbrainzId": "37b82095-355f-4f1f-b82e-d84fe29cfdbb",
+      "industrialTagCount": 1
+    },
+    {
+      "id": "project-pitchfork",
+      "label": "Project Pitchfork",
+      "musicbrainzId": "38e4df82-6079-42f8-91fa-904e0fecf78f",
+      "industrialTagCount": 1
+    },
+    {
+      "id": "alien-sex-fiend",
+      "label": "Alien Sex Fiend",
+      "musicbrainzId": "3580a118-49e3-4aa1-972a-f5f0ff750dd2",
+      "industrialTagCount": 1
     }
   ],
   "skipped": [
     {
-      "id": "ba0d6274-db14-4ef5-b28d-657ebde1a396",
-      "label": "The Smashing Pumpkins",
+      "id": "8cfaf3df-e098-4722-b840-dbc84d7aee20",
+      "label": "Angelspit",
       "reason": "No explicit industrial tag on canonical artist record"
     },
     {
-      "id": "13df2a46-f72f-40e7-aa63-26fcf62c7048",
-      "label": "Ministry",
-      "reason": "Already represented"
-    },
-    {
-      "id": "eeb1195b-f213-4ce1-b28c-8565211f8e43",
-      "label": "Guns N’ Roses",
+      "id": "f4a31f0a-51dd-4fa7-986d-3095c40c5ed9",
+      "label": "Evanescence",
       "reason": "No explicit industrial tag on canonical artist record"
     },
     {
-      "id": "b847e9d2-c931-4daf-900c-42c7b2c42e16",
-      "label": "Front Line Assembly",
-      "reason": "Already represented"
-    },
-    {
-      "id": "2841d983-f8c3-432a-af02-7407a84580a8",
-      "label": "Merzbow",
+      "id": "2c0ebaf9-74ee-4805-9ed4-07bd2cafb6df",
+      "label": "Шмели",
       "reason": "No explicit industrial tag on canonical artist record"
     },
     {
-      "id": "45074d7c-5307-44a8-854f-ae072e1622ae",
-      "label": "KMFDM",
-      "reason": "Already represented"
-    },
-    {
-      "id": "ac865b2e-bba8-4f5a-8756-dd40d5e39f46",
-      "label": "Korn",
-      "reason": "No explicit industrial tag on canonical artist record"
-    },
-    {
-      "id": "f59c5520-5f46-4d2c-b2c4-822eabf53419",
-      "label": "Linkin Park",
-      "reason": "No explicit industrial tag on canonical artist record"
-    },
-    {
-      "id": "5a24bc1a-c093-4a82-84ed-8d7f2da0570d",
-      "label": "Skinny Puppy",
-      "reason": "Already represented"
-    },
-    {
-      "id": "5700dcd4-c139-4f31-aa3e-6382b9af9032",
-      "label": "Kraftwerk",
-      "reason": "No explicit industrial tag on canonical artist record"
-    },
-    {
-      "id": "8fb6c00f-61d8-4f27-98f9-53e1ba481626",
-      "label": "Front 242",
-      "reason": "Already represented"
-    },
-    {
-      "id": "ce7bba8b-026b-4aa6-bddb-f98ed6d595e4",
-      "label": "Napalm Death",
-      "reason": "No explicit industrial tag on canonical artist record"
-    },
-    {
-      "id": "4a4ee089-93b1-4470-af9a-6ff575d32704",
-      "label": "The Prodigy",
+      "id": "6dfa03fb-8b02-4055-b7cc-e48f426b13f8",
+      "label": "Unheilig",
       "reason": "No explicit industrial tag on canonical artist record"
     }
   ]

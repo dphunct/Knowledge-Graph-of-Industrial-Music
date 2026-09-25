@@ -1,7 +1,12 @@
 {
   "provider": "MusicBrainz",
-  "retrievedAt": "2026-09-24T14:07:28.358Z",
+  "retrievedAt": "2026-09-25T17:34:37.341Z",
   "pacingMs": 1100,
+  "batch": {
+    "offset": 0,
+    "limit": 10,
+    "totalEligible": 3901
+  },
   "releases": [
     {
       "id": "faces-forms-and-illusions",
@@ -139,20 +144,6 @@
           "id": "front-line-assembly",
           "label": "Front Line Assembly",
           "musicbrainzId": "b847e9d2-c931-4daf-900c-42c7b2c42e16"
-        }
-      ],
-      "unmatchedArtistCredits": []
-    },
-    {
-      "id": "supernaut",
-      "label": "Supernaut",
-      "musicbrainzId": "6a928917-424c-38b2-b4c1-5de2d741d039",
-      "firstReleaseDate": "1991",
-      "matchedArtists": [
-        {
-          "id": "1000-homo-djs",
-          "label": "1000 Homo DJs",
-          "musicbrainzId": "4c44479c-8fde-4754-b9e2-5129eb6fb28d"
         }
       ],
       "unmatchedArtistCredits": []
