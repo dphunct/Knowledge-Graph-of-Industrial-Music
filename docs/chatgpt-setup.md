@@ -8,7 +8,7 @@ If an eligible ChatGPT Business, Enterprise, or Edu workspace allows custom GPT 
 
 Suggested conversation starters:
 
-- Who has the highest equally weighted composite score?
+- Who has the highest composite score?
 - How is Al Jourgensen related to Marilyn Manson?
 - Which projects connect these two people?
 - What evidence supports this relationship?
