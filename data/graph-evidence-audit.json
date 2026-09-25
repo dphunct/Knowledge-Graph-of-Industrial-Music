@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-09-25T02:10:50.413Z",
+  "generatedAt": "2026-09-25T14:46:50.072Z",
   "totals": {
     "nodes": 4077,
-    "relationships": 4140,
-    "relationshipsWithProvenance": 4137,
+    "relationships": 4204,
+    "relationshipsWithProvenance": 4201,
     "citedRelationshipPercentage": 99.93,
     "relationshipsWithDates": 3522,
-    "datedRelationshipPercentage": 85.07
+    "datedRelationshipPercentage": 83.78
   },
   "relationshipTypes": {
-    "member_of": 230,
+    "member_of": 294,
     "contributed_to": 1,
     "released": 3895,
     "contains": 2,
@@ -73,6 +73,390 @@
     {
       "source": "Zim Zum",
       "target": "Marilyn Manson",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "John Bechdel",
+      "target": "Ministry",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "John Davis",
+      "target": "Ministry",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Shay Jones",
+      "target": "Ministry",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Robert Roberts",
+      "target": "Ministry",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Martin Sorenson",
+      "target": "Ministry",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Tia Sprocket",
+      "target": "Ministry",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "William Tucker",
+      "target": "Ministry",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Jeff Ward",
+      "target": "Ministry",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Rey Washam",
+      "target": "Ministry",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Mike Scaccia",
+      "target": "Ministry",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Rhys Fulber",
+      "target": "Front Line Assembly",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Bill Leeb",
+      "target": "Front Line Assembly",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Stevie Banch",
+      "target": "Revolting Cocks",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Paul Barker",
+      "target": "Revolting Cocks",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Josh Bradford",
+      "target": "Revolting Cocks",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Duane Denison",
+      "target": "Revolting Cocks",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Al Jourgensen",
+      "target": "Revolting Cocks",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Sean Joyce",
+      "target": "Revolting Cocks",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Phil Owen",
+      "target": "Revolting Cocks",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Bill Rieflin",
+      "target": "Revolting Cocks",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "William Tucker",
+      "target": "Revolting Cocks",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Jeff Ward",
+      "target": "Revolting Cocks",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Clayton Worbeck",
+      "target": "Revolting Cocks",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Mike Scaccia",
+      "target": "Revolting Cocks",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "J3 sEUQCAJ",
+      "target": "A Chud Convention",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "cEvin Key",
+      "target": "A Chud Convention",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Nivek Ogre",
+      "target": "A Chud Convention",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "S3 eVETS",
+      "target": "A Chud Convention",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Dwayne Goettel",
+      "target": "Hilt",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "cEvin Key",
+      "target": "Hilt",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Dave Ogilvie",
+      "target": "Hilt",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Dwayne Goettel",
+      "target": "Doubting Thomas",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "cEvin Key",
+      "target": "Doubting Thomas",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Dwayne Goettel",
+      "target": "Download",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "cEvin Key",
+      "target": "Download",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Ryan Moore",
+      "target": "Download",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Mark Spybey",
+      "target": "Download",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Anthony Valcic",
+      "target": "Download",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Phil Western",
+      "target": "Download",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Paul Barker",
+      "target": "1000 Homo DJs",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Al Jourgensen",
+      "target": "1000 Homo DJs",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Trent Reznor",
+      "target": "1000 Homo DJs",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Bill Rieflin",
+      "target": "1000 Homo DJs",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Bill Rieflin",
+      "target": "Lard",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Rey Washam",
+      "target": "Lard",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Daniel Myer",
+      "target": "Noise Unit",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Dwayne Goettel",
+      "target": "Cyberaktif",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "cEvin Key",
+      "target": "Cyberaktif",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Bill Leeb",
+      "target": "Cyberaktif",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Paul Barker",
+      "target": "Lead Into Gold",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Al Jourgensen",
+      "target": "Lead Into Gold",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Paul Wiley",
+      "target": "Marilyn Manson",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Mick Hollows",
+      "target": "7 Minutes of Nausea",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Scut",
+      "target": "7 Minutes of Nausea",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Matthias Weigand",
+      "target": "7 Minutes of Nausea",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Danny Lohner",
+      "target": "Killing Joke",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Janez Gabrič",
+      "target": "Laibach",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Luka Jamnik",
+      "target": "Laibach",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Ivan Novak",
+      "target": "Laibach",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Sašo Vollmaier",
+      "target": "Laibach",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Damjan Bizilj",
+      "target": "Laibach",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Tone Dimnik",
+      "target": "Laibach",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Ervin Markošek",
+      "target": "Laibach",
+      "type": "member_of",
+      "roles": []
+    },
+    {
+      "source": "Matej Mršnik",
+      "target": "Laibach",
       "type": "member_of",
       "roles": []
     }
