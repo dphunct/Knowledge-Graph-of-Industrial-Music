@@ -6,7 +6,7 @@ import {
   edgesForVisibleNodes,
   hopDistances,
   incidentEdges,
-  isActiveAtYear,
+  isKnownByYear,
   nodesForVisibleTypes,
 } from "./graph-queries.js";
 import { escapeHtml, safeExternalUrl } from "./html.js";
@@ -69,7 +69,7 @@ const maximumRenderedSpheres = 300;
 
 const nodeEdges = (id) => incidentEdges(graph.edges, id);
 const labelFor = (id) => byId.get(id).label;
-const activeAtYear = (item) => isActiveAtYear(item, activeYear);
+const knownByYear = (item) => isKnownByYear(item, activeYear);
 const provenanceLinks = (item) =>
   (item.provenance || [])
     .map((source) => {
@@ -176,7 +176,7 @@ function renderGraph() {
         (edge) =>
           visibleIds.has(edge.source) &&
           visibleIds.has(edge.target) &&
-          activeAtYear(edge),
+          knownByYear(edge),
       )
     : visibleEdges(nodes);
   // Every metric is recalculated from the current view, so People, Projects,
@@ -873,6 +873,28 @@ function shortestPath(start, target, edges = currentEdges) {
   return null;
 }
 
+function pathRelationshipDetails(path) {
+  const steps = [];
+  for (let index = 0; index < path.length - 1; index += 1) {
+    const [source, target] = [path[index], path[index + 1]];
+    const relationships = graph.edges.filter(
+      (edge) =>
+        (edge.source === source && edge.target === target) ||
+        (edge.source === target && edge.target === source),
+    );
+    const facts = [...new Set(relationships.map((edge) => {
+      const dates = [edge.validFrom, edge.validTo].filter(Boolean);
+      const tenure = dates.length === 2 ? `${dates[0]}–${dates[1]}` : dates[0];
+      const roles = edge.roles?.length ? `; ${edge.roles.join(", ")}` : "";
+      return `${edge.type.replaceAll("_", " ")}${tenure ? ` (${tenure})` : ""}${roles}`;
+    }))];
+    steps.push(
+      `${escapeHtml(labelFor(source))} — ${escapeHtml(facts.join("; "))} — ${escapeHtml(labelFor(target))}`,
+    );
+  }
+  return `<span class="path-evidence"><strong>Recorded steps:</strong> ${steps.join(" · ")}</span>`;
+}
+
 function searchAndSelect(allowUniquePartial = false) {
   const match = pathInputNode(search);
   if (!match || (!match.exact && !allowUniquePartial)) return false;
@@ -889,8 +911,8 @@ function compareNodes() {
     compareResult.textContent = "Choose a listed person, project, or release in both fields.";
     return;
   }
-  const activeEdges = graph.edges.filter(activeAtYear);
-  const path = shortestPath(first.node.id, second.node.id, activeEdges);
+  const knownEdges = graph.edges.filter(knownByYear);
+  const path = shortestPath(first.node.id, second.node.id, knownEdges);
   const score = (node) => Math.round((fullGraphMetrics.get(node.id)?.composite || 0) * 100);
   const aliases = [first, second].filter((item) => item.isAlias).map((item) => `${escapeHtml(item.matchedName)} is ${escapeHtml(item.node.label)}.`).join(" ");
   compareResult.innerHTML = `<section><h3>${escapeHtml(first.node.label)} <span>${escapeHtml(first.node.type)}</span></h3><p>${escapeHtml(first.node.summary || "No description recorded yet.")}</p><p>Composite influence: ${score(first.node)}</p></section><section><h3>${escapeHtml(second.node.label)} <span>${escapeHtml(second.node.type)}</span></h3><p>${escapeHtml(second.node.summary || "No description recorded yet.")}</p><p>Composite influence: ${score(second.node)}</p></section><p class="compare-path">${aliases}${aliases ? " " : ""}${path ? `Shortest recorded connection: <strong>${path.map((id) => escapeHtml(labelFor(id))).join(" → ")}</strong>.` : "No connecting path has been recorded by the selected year."}</p>`;
@@ -935,7 +957,7 @@ function rankingScope(question) {
         ? "release"
         : null;
   const nodes = type
-    ? graph.nodes.filter((node) => node.type === type && activeAtYear(node))
+    ? graph.nodes.filter((node) => node.type === type && knownByYear(node))
     : currentNodes;
   const edges = type ? visibleEdges(nodes) : currentEdges;
   const enabledTypes = [...activeTypes].map((item) =>
@@ -1099,7 +1121,7 @@ document.querySelector("#path-form").addEventListener("submit", (event) => {
       "Choose a listed person, project, or release in both fields.";
     return;
   }
-  const path = shortestPath(from.node.id, to.node.id);
+  const path = shortestPath(from.node.id, to.node.id, graph.edges);
   const aliases = [from, to]
     .filter(({ isAlias }) => isAlias)
     .map(
@@ -1107,8 +1129,8 @@ document.querySelector("#path-form").addEventListener("submit", (event) => {
         `<strong>${escapeHtml(matchedName)}</strong> is ${escapeHtml(node.label)}.`,
     );
   document.querySelector("#path-result").innerHTML = path
-    ? `${aliases.join(" ")}${aliases.length ? " " : ""}Browser explanation: <strong>${path.map((id) => escapeHtml(labelFor(id))).join(" → ")}</strong>. This is the shortest recorded connection in the local map; select a sphere to inspect roles and provenance status.`
-    : "No connecting path has been recorded in this seed graph.";
+    ? `${aliases.join(" ")}${aliases.length ? " " : ""}Browser explanation: <strong>${path.map((id) => escapeHtml(labelFor(id))).join(" → ")}</strong>. ${pathRelationshipDetails(path)} This is the shortest recorded connection in the full local history; select a sphere to inspect roles and provenance status.`
+    : "No connecting path has been recorded in this graph's full history.";
   if (path) {
     highlightedPath = path;
     selectNode(path[0]);
