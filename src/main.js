@@ -23,6 +23,7 @@ const relationshipsList = document.querySelector("#relationships-list");
 const status = document.querySelector("#graph-status");
 const search = document.querySelector("#search");
 const searchOptions = document.querySelector("#search-options");
+const visibleFilter = document.querySelector("#visible-filter");
 const pathFrom = document.querySelector("#path-from");
 const pathTo = document.querySelector("#path-to");
 const pathOptions = document.querySelector("#path-options");
@@ -127,7 +128,7 @@ function edgeContext(edge) {
 function renderGraph() {
   disposeThree();
   disposeThree = () => {};
-  const term = search.value.trim().toLowerCase();
+  const term = visibleFilter.value.trim().toLowerCase();
   let nodes = visibleNodes().filter(
     (node) =>
       !term ||
@@ -235,7 +236,7 @@ function renderGraph() {
     graphElement.onclick = null;
     graphElement.onpointerdown = null;
     renderThreeGraph(nodes, edges, width, height, distances);
-    status.textContent = `${context ? "Connection details · " : ""}${nodes.length} visible spheres${omittedNodeCount ? ` of ${totalMatchingNodes}; search to narrow the remaining ${omittedNodeCount} · ` : " · "}${edges.length} connection lines · drag to orbit, scroll to zoom`;
+    status.textContent = `${context ? "Connection details · " : ""}${nodes.length} visible spheres${omittedNodeCount ? ` of ${totalMatchingNodes}; filter to narrow the remaining ${omittedNodeCount} · ` : " · "}${edges.length} connection lines · drag to orbit, scroll to zoom`;
     return;
   }
   const lines = edges.map((edge) => {
@@ -293,7 +294,7 @@ function renderGraph() {
   };
   status.textContent = context
     ? `Connection details · ${nodes.length} spheres · ${edges.length} recorded relationships · click the canvas to return`
-    : `${nodes.length} visible spheres${omittedNodeCount ? ` of ${totalMatchingNodes}; search to narrow the remaining ${omittedNodeCount}` : ""} · ${edges.length} visible connection lines · drag spheres to explore`;
+    : `${nodes.length} visible spheres${omittedNodeCount ? ` of ${totalMatchingNodes}; filter to narrow the remaining ${omittedNodeCount}` : ""} · ${edges.length} visible connection lines · drag spheres to explore`;
 
   redrawGraph = () => {
     for (const { edge, line } of lines) {
@@ -1176,13 +1177,30 @@ document.querySelectorAll("[data-dimension]").forEach((button) =>
 sizeMetric.addEventListener("change", renderGraph);
 degreeLimit.addEventListener("change", renderGraph);
 fadeDistance.addEventListener("change", renderGraph);
-search.addEventListener("input", () => {
-  if (!searchAndSelect(false)) renderGraph();
+document.querySelector("#find-form").addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (!searchAndSelect(true))
+    status.textContent = "Choose an exact name or alias from the suggestions, then select Find.";
 });
-search.addEventListener("change", () => searchAndSelect(true));
 search.addEventListener("keydown", (event) => {
-  if (event.key === "Enter" && searchAndSelect(true)) event.preventDefault();
-  if (event.key === "Escape") resetSelection({ clearSearch: true });
+  if (event.key === "Escape") {
+    search.value = "";
+    search.blur();
+  }
+});
+visibleFilter.addEventListener("input", () => {
+  if (
+    selectedId &&
+    !`${byId.get(selectedId).label} ${(byId.get(selectedId).aliases || []).join(" ")}`
+      .toLowerCase()
+      .includes(visibleFilter.value.trim().toLowerCase())
+  )
+    resetSelection();
+  else renderGraph();
+});
+document.querySelector("[data-action='clear-filter']").addEventListener("click", () => {
+  visibleFilter.value = "";
+  renderGraph();
 });
 yearSlider.addEventListener("input", () => {
   activeYear = Number(yearSlider.value);
