@@ -48,11 +48,16 @@ export function edgesForVisibleNodes(graph, nodes, activeTypes, year) {
       isActiveAtYear(edge, year),
   );
 
-  if (activeTypes.size !== 1 || activeTypes.has("release")) return directEdges;
+  const connections = new Map(
+    directEdges.map((edge) => [[edge.source, edge.target].sort().join("|"), edge]),
+  );
 
-  const pivotType = activeTypes.has("person") ? "project" : "person";
-  const compoundEdges = new Map();
-  for (const pivot of graph.nodes.filter((node) => node.type === pivotType)) {
+  // When a category is hidden, retain its one-hop structural effect without
+  // pretending it is a recorded direct fact. Connections are undirected,
+  // unique, and never self-links; we only project through one hidden sphere.
+  for (const pivot of graph.nodes.filter(
+    (node) => !activeTypes.has(node.type) && isActiveAtYear(node, year),
+  )) {
     const members = incidentEdges(graph.edges, pivot.id)
       .filter((edge) => isActiveAtYear(edge, year))
       .map((edge) => (edge.source === pivot.id ? edge.target : edge.source))
@@ -61,14 +66,15 @@ export function edgesForVisibleNodes(graph, nodes, activeTypes, year) {
     for (let left = 0; left < members.length; left += 1) {
       for (let right = left + 1; right < members.length; right += 1) {
         const [source, target] = [members[left], members[right]].sort();
-        compoundEdges.set(`${source}|${target}`, {
-          source,
-          target,
-          type: "compound",
-        });
+        if (source === target) continue;
+        const key = `${source}|${target}`;
+        const existing = connections.get(key);
+        if (existing?.type === "inferred") existing.via.push(pivot.id);
+        else if (!existing)
+          connections.set(key, { source, target, type: "inferred", via: [pivot.id] });
       }
     }
   }
 
-  return [...compoundEdges.values()];
+  return [...connections.values()];
 }
