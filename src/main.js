@@ -283,11 +283,17 @@ function renderGraph() {
       }
       button.setAttribute("role", "listitem");
       button.innerHTML = `<span>${escapeHtml(node.label)}</span><small>${escapeHtml(node.type)}${node.relevance ? ` · ${escapeHtml(node.relevance)}` : ""}</small>`;
-      button.style.width = `${sizeFor(node)}px`;
+      const sphereSize = sizeFor(node);
+      // Keep a 44px minimum target even after zooming out, without making the
+      // visual sphere itself larger than the selected size metric calls for.
+      const hitSize = Math.max(sphereSize, 44 / graphZoom);
+      button.style.width = `${hitSize}px`;
+      button.style.height = `${hitSize}px`;
+      button.style.setProperty("--sphere-size", `${sphereSize}px`);
       button.addEventListener("click", () => selectNode(node.id));
       button.addEventListener("pointerdown", (event) => {
         event.stopPropagation();
-        beginDrag(event, node.id, sizeFor(node) / 2, width, height);
+        beginDrag(event, node.id, sphereSize / 2, width, height);
       });
       return [node.id, button];
     }),
@@ -458,16 +464,28 @@ function renderThreeGraph(nodes, edges, width, height, distances) {
   threeCamera = camera;
   threeControls = controls;
   applyThreeZoom();
-  let orbitMoved = false;
-  controls.addEventListener("start", () => {
-    orbitMoved = false;
-  });
-  controls.addEventListener("change", () => {
-    orbitMoved = true;
-  });
+  let tapStart = null;
+  let tapMoved = false;
+  const tapThreshold = 8;
+  const beginTap = (event) => {
+    tapStart = { x: event.clientX, y: event.clientY };
+    tapMoved = false;
+  };
+  const trackTap = (event) => {
+    if (!tapStart) return;
+    tapMoved ||= Math.hypot(event.clientX - tapStart.x, event.clientY - tapStart.y) > tapThreshold;
+  };
+  const endTap = () => {
+    tapStart = null;
+  };
+  renderer.domElement.addEventListener("pointerdown", beginTap);
+  renderer.domElement.addEventListener("pointermove", trackTap);
+  renderer.domElement.addEventListener("pointerup", endTap);
+  renderer.domElement.addEventListener("pointercancel", endTap);
   const raycaster = new THREE.Raycaster();
   const pointer = new THREE.Vector2();
   const meshes = [];
+  const hitMeshes = [];
   const edgeMeshes = [];
   const labels = [];
   const gradients = {
@@ -560,6 +578,17 @@ function renderThreeGraph(nodes, edges, width, height, distances) {
     mesh.userData.nodeId = node.id;
     scene.add(mesh);
     meshes.push(mesh);
+    // This transparent shell increases the ray-cast target without changing
+    // the rendered sphere. It remains large enough for a practical phone tap.
+    const hitRadius = Math.max(radius * 1.65, width < 520 ? 30 : 20);
+    const hitMesh = new THREE.Mesh(
+      new THREE.SphereGeometry(hitRadius, 16, 16),
+      new THREE.MeshBasicMaterial({ transparent: true, opacity: 0, depthWrite: false }),
+    );
+    hitMesh.position.copy(mesh.position);
+    hitMesh.userData.nodeId = node.id;
+    scene.add(hitMesh);
+    hitMeshes.push(hitMesh);
     const label = document.createElement("canvas");
     label.width = 320;
     label.height = 64;
@@ -584,15 +613,15 @@ function renderThreeGraph(nodes, edges, width, height, distances) {
   const click = (event) => {
     // OrbitControls emits a click after a rotation. Keep the rotated camera
     // intact; only a genuine tap selects a node or resets the selection.
-    if (orbitMoved) {
-      orbitMoved = false;
+    if (tapMoved) {
+      tapMoved = false;
       return;
     }
     const rect = renderer.domElement.getBoundingClientRect();
     pointer.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
     pointer.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
     raycaster.setFromCamera(pointer, camera);
-    const nodeHit = raycaster.intersectObjects(meshes)[0];
+    const nodeHit = raycaster.intersectObjects(hitMeshes)[0];
     if (nodeHit) {
       selectNode(nodeHit.object.userData.nodeId);
       return;
@@ -667,6 +696,10 @@ function renderThreeGraph(nodes, edges, width, height, distances) {
       sprite.position.copy(mesh.position);
       sprite.position.y -= sizeById.get(sprite.userData.nodeId) + 16;
     }
+    for (const hitMesh of hitMeshes) {
+      const mesh = meshes.find((item) => item.userData.nodeId === hitMesh.userData.nodeId);
+      hitMesh.position.copy(mesh.position);
+    }
     heat *= 0.985;
   };
   const draw = () => {
@@ -681,6 +714,10 @@ function renderThreeGraph(nodes, edges, width, height, distances) {
     controls.dispose();
     renderer.dispose();
     renderer.domElement.removeEventListener("click", click);
+    renderer.domElement.removeEventListener("pointerdown", beginTap);
+    renderer.domElement.removeEventListener("pointermove", trackTap);
+    renderer.domElement.removeEventListener("pointerup", endTap);
+    renderer.domElement.removeEventListener("pointercancel", endTap);
     threeCamera = null;
     threeControls = null;
   };
